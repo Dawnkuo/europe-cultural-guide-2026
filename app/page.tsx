@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   ArrowDown,
@@ -7,59 +7,76 @@ import {
   MapPin,
   TicketCheck,
   TrainFront,
-} from "lucide-react";
-import { useMemo, useState } from "react";
-import { EuropeMap } from "./components/EuropeMap";
-import { OfflineStatus } from "./components/OfflineStatus";
-import { tripDays } from "./data/trip";
+} from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { EuropeMap } from './components/EuropeMap';
+import { OfflineStatus } from './components/OfflineStatus';
+import { tripDays } from './data/trip';
+import { withBasePath } from './lib/paths';
+
+export const dynamic = 'force-static';
 
 const cityCopy: Record<string, { country: string; chapter: string }> = {
-  巴黎: { country: "法国", chapter: "抵达与离境的两端，连接整段大陆旅程。" },
-  米兰: { country: "意大利", chapter: "哥特大教堂、达·芬奇与斯卡拉的第一章。" },
-  威尼斯: { country: "意大利", chapter: "从圣马可建筑群走向大运河的水城一日。" },
-  佛罗伦萨: { country: "意大利", chapter: "文艺复兴美术馆、穹顶与瓦萨里走廊。" },
-  比萨: { country: "意大利", chapter: "在奇迹广场阅读中世纪宗教建筑群。" },
-  罗马: { country: "意大利 / 梵蒂冈", chapter: "古罗马、巴洛克城市与梵蒂冈馆藏交叠。" },
-  巴塞罗那: { country: "西班牙", chapter: "高迪建筑、老城肌理与地中海边缘。" },
-  科隆: { country: "德国", chapter: "大教堂、莱茵河与北行巴黎的收束。" },
+  巴黎: { country: '法国', chapter: '抵达与离境的两端，连接整段大陆旅程。' },
+  米兰: { country: '意大利', chapter: '哥特大教堂、达·芬奇与斯卡拉的第一章。' },
+  威尼斯: {
+    country: '意大利',
+    chapter: '从圣马可建筑群走向大运河的水城一日。',
+  },
+  佛罗伦萨: {
+    country: '意大利',
+    chapter: '文艺复兴美术馆、穹顶与瓦萨里走廊。',
+  },
+  比萨: { country: '意大利', chapter: '在奇迹广场阅读中世纪宗教建筑群。' },
+  罗马: {
+    country: '意大利 / 梵蒂冈',
+    chapter: '古罗马、巴洛克城市与梵蒂冈馆藏交叠。',
+  },
+  巴塞罗那: { country: '西班牙', chapter: '高迪建筑、老城肌理与地中海边缘。' },
+  科隆: { country: '德国', chapter: '大教堂、莱茵河与北行巴黎的收束。' },
 };
 
 const notices = [
   {
     icon: TicketCheck,
-    label: "票面纠正",
-    title: "圣殿14:30，穹顶15:30",
-    body: "最终二维码时间与原行程记录相反；导览采用票面时间并保留冲突说明。",
+    label: '票面纠正',
+    title: '圣殿14:30，穹顶15:30',
+    body: '最终二维码时间与原行程记录相反；导览采用票面时间并保留冲突说明。',
   },
   {
     icon: TrainFront,
-    label: "交通待确认",
-    title: "比萨往返车票尚不可乘车",
-    body: "现有六份文件均标有非有效乘车票，需要补充实际电子票。",
+    label: '交通待确认',
+    title: '比萨往返车票尚不可乘车',
+    body: '现有六份文件均标有非有效乘车票，需要补充实际电子票。',
   },
   {
     icon: Hotel,
-    label: "住宿待确认",
-    title: "三处晚到入住需要确认",
-    body: "威尼斯、佛罗伦萨和罗马的抵达时间均晚于住宿资料所列接待截止时间。",
+    label: '住宿待确认',
+    title: '三处晚到入住需要确认',
+    body: '威尼斯、佛罗伦萨和罗马的抵达时间均晚于住宿资料所列接待截止时间。',
   },
 ] as const;
 
 export default function Home() {
-  const [selectedCity, setSelectedCity] = useState("罗马");
+  const [selectedCity, setSelectedCity] = useState('罗马');
   const selectedItems = useMemo(
     () =>
-      tripDays.flatMap((day) => day.items).filter((item) => {
-        if (selectedCity === "罗马") return item.city === "罗马" || item.city === "梵蒂冈";
-        return item.city === selectedCity;
-      }),
+      tripDays
+        .flatMap((day) => day.items)
+        .filter((item) => {
+          if (selectedCity === '罗马')
+            return item.city === '罗马' || item.city === '梵蒂冈';
+          return item.city === selectedCity;
+        }),
     [selectedCity],
   );
   const city = cityCopy[selectedCity];
 
   return (
     <main>
-      <a className="skip-link" href="#journey-map">跳到旅程地图</a>
+      <a className="skip-link" href="#journey-map">
+        跳到旅程地图
+      </a>
 
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="返回总览顶部">
@@ -69,12 +86,14 @@ export default function Home() {
         <nav aria-label="主导航">
           <a href="#journey-map">地图</a>
           <a href="#notices">提醒</a>
-          <a href="/itinerary">逐日行程</a>
-          <a href="/cities">城市文化</a>
+          <a href={withBasePath('/itinerary/')}>逐日行程</a>
+          <a href={withBasePath('/cities/')}>城市文化</a>
         </nav>
         <div className="header-actions">
           <OfflineStatus />
-          <a className="header-action" href="/bookings">凭证状态</a>
+          <a className="header-action" href={withBasePath('/bookings/')}>
+            凭证状态
+          </a>
         </div>
       </header>
 
@@ -82,7 +101,7 @@ export default function Home() {
         <img
           alt="从圣彼得广场望向圣彼得大教堂"
           className="hero__image"
-          src="/images/st-peters-hero.jpg"
+          src={withBasePath('/images/st-peters-hero.jpg')}
         />
         <div className="hero__shade" />
         <div className="hero__content">
@@ -93,9 +112,15 @@ export default function Home() {
             一份依照真实票据与既定顺序编排的离线文化档案。
           </p>
           <div className="hero__meta" aria-label="旅程概览">
-            <span><strong>13</strong> 日</span>
-            <span><strong>5</strong> 个国家</span>
-            <span><strong>8</strong> 座城市</span>
+            <span>
+              <strong>13</strong> 日
+            </span>
+            <span>
+              <strong>5</strong> 个国家
+            </span>
+            <span>
+              <strong>8</strong> 座城市
+            </span>
           </div>
         </div>
         <a className="hero__down" href="#journey-map" aria-label="查看旅程地图">
@@ -114,7 +139,10 @@ export default function Home() {
         </div>
 
         <div className="map-layout">
-          <EuropeMap selectedCity={selectedCity} onSelectCity={setSelectedCity} />
+          <EuropeMap
+            selectedCity={selectedCity}
+            onSelectCity={setSelectedCity}
+          />
           <aside className="map-caption" aria-live="polite">
             <p className="map-caption__index">{city.country}</p>
             <h3>{selectedCity}</h3>
@@ -122,18 +150,34 @@ export default function Home() {
             <dl>
               <div>
                 <dt>已排项目</dt>
-                <dd>{selectedItems.filter((item) => item.routePoint).length}</dd>
+                <dd>
+                  {selectedItems.filter((item) => item.routePoint).length}
+                </dd>
               </div>
               <div>
                 <dt>已订</dt>
-                <dd>{selectedItems.filter((item) => item.status === "已订").length}</dd>
+                <dd>
+                  {
+                    selectedItems.filter((item) => item.status === '已订')
+                      .length
+                  }
+                </dd>
               </div>
               <div>
                 <dt>待确认</dt>
-                <dd>{selectedItems.filter((item) => item.status === "待确认").length}</dd>
+                <dd>
+                  {
+                    selectedItems.filter((item) => item.status === '待确认')
+                      .length
+                  }
+                </dd>
               </div>
             </dl>
-            <a href={`/itinerary?city=${encodeURIComponent(selectedCity)}`}>
+            <a
+              href={withBasePath(
+                `/itinerary/?city=${encodeURIComponent(selectedCity)}`,
+              )}
+            >
               <CalendarDays aria-hidden="true" size={18} />
               查看逐日安排
             </a>
@@ -165,7 +209,7 @@ export default function Home() {
       <section className="journey-strip" aria-label="旅程城市顺序">
         {Object.entries(cityCopy).map(([name, value], index) => (
           <div key={name}>
-            <span>{String(index + 1).padStart(2, "0")}</span>
+            <span>{String(index + 1).padStart(2, '0')}</span>
             <strong>{name}</strong>
             <small>{value.country}</small>
           </div>
