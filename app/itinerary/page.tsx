@@ -1,15 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DayTimeline } from "../components/DayTimeline";
 import { SiteNav } from "../components/SiteNav";
 import { tripDays, tripCities } from "../data/trip";
 
 export default function ItineraryPage() {
-  const [cityFilter, setCityFilter] = useState(() => {
-    if (typeof window === "undefined") return "全部";
-    return new URLSearchParams(window.location.search).get("city") ?? "全部";
-  });
+  const [cityFilter, setCityFilter] = useState("全部");
+
+  useEffect(() => {
+    const city = new URLSearchParams(window.location.search).get("city");
+    if (city) setCityFilter(city);
+  }, []);
+
   const filteredDays = cityFilter === "全部"
     ? tripDays
     : tripDays.filter((day) => day.items.some((item) => item.city === cityFilter));
