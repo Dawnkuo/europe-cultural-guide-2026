@@ -47,6 +47,46 @@ describe("guide catalog", () => {
     );
   });
 
+  it.each([
+    ["罗马遗址联票", ["colosseum", "roman-forum", "palatine"]],
+    [
+      "比萨建筑群联票",
+      [
+        "leaning-tower",
+        "pisa-cathedral",
+        "pisa-baptistery",
+        "camposanto",
+        "sinopie",
+        "opera-pisa",
+      ],
+    ],
+    [
+      "威尼斯组合票景点",
+      [
+        "doges-palace",
+        "bridge-of-sighs",
+        "st-mark-campanile",
+        "st-mark-square",
+        "correr",
+        "st-mark-basilica",
+        "rialto",
+        "grand-canal",
+        "fenice",
+        "accademia-venice",
+        "gondola",
+      ],
+    ],
+  ])("keeps every %s attraction in its own chapter", (_label, itemIds) => {
+    const items = tripDays.flatMap((day) => day.items);
+    const slugs = itemIds.map((itemId) => {
+      const item = items.find((candidate) => candidate.id === itemId);
+      expect(item, itemId).toBeDefined();
+      return guideForTripItem(item!)?.slug;
+    });
+
+    expect(new Set(slugs).size).toBe(itemIds.length);
+  });
+
   it("uses unique stable slugs", () => {
     expect(new Set(guideCatalog.map((guide) => guide.slug)).size).toBe(
       guideCatalog.length,
