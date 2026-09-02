@@ -23,7 +23,7 @@ describe('GuidePage', () => {
       screen.getByRole('heading', { name: '科隆大教堂' }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: '空间关系' }),
+      screen.getByRole('heading', { name: '3D 导览地图' }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { name: '不可错过' }),

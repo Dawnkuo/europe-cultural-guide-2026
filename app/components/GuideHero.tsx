@@ -6,7 +6,7 @@ import { StatusLabel } from './StatusLabel';
 export function GuideHero({ guide }: { guide: GuideRecord }) {
   return (
     <header className="guide-hero" id="guide-top">
-      {/* oxlint-disable-next-line next/no-img-element -- Static export uses attributed local guide images. */}
+      {/* oxlint-disable-next-line next/no-img-element -- Static export uses local guide images. */}
       <img alt={guide.hero.alt} src={withBasePath(guide.hero.src)} />
       <div className="guide-hero__shade" />
       <div className="guide-hero__content">
@@ -29,7 +29,6 @@ export function GuideHero({ guide }: { guide: GuideRecord }) {
           ))}
         </div>
       </div>
-      <p className="guide-hero__credit">图像：{guide.hero.credit}</p>
       <a
         aria-label="继续阅读"
         className="guide-hero__down"

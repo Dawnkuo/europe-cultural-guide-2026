@@ -1,4 +1,4 @@
-import { AlertTriangle, ExternalLink } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
 import type { GuideRecord } from '../data/types';
 
 export function GuidePractical({ guide }: { guide: GuideRecord }) {
@@ -20,24 +20,6 @@ export function GuidePractical({ guide }: { guide: GuideRecord }) {
             </li>
           ))}
         </ul>
-        <div className="guide-sources">
-          <h3>来源与核验</h3>
-          {guide.sources.map((source) => (
-            <article key={`${source.institution}-${source.title}`}>
-              <p>{source.institution}</p>
-              {source.url ? (
-                <a href={source.url} rel="noreferrer" target="_blank">
-                  {source.title}
-                  <ExternalLink aria-hidden="true" size={13} />
-                </a>
-              ) : (
-                <strong>{source.title}</strong>
-              )}
-              <span>核验：{source.verifiedAt}</span>
-              <small>{source.note}</small>
-            </article>
-          ))}
-        </div>
       </div>
     </section>
   );

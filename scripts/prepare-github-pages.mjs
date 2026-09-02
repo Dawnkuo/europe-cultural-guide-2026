@@ -6,7 +6,7 @@ import { generateGuidePrecache } from './generate-guide-precache.mjs';
 const output = join(process.cwd(), 'dist', 'client');
 const repository =
   process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'europe-cultural-guide-2026';
-const routes = ['bookings', 'cities', 'guides', 'itinerary', 'sources'];
+const routes = ['bookings', 'cities', 'guides', 'itinerary'];
 
 for (const route of routes) {
   const directory = join(output, route);

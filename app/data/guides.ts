@@ -1,4 +1,5 @@
 import { cityProfiles } from './cities';
+import { guideMediaBySlug } from './guide-media.generated';
 import { guideContentBySlug } from './guides/content';
 import { tripDays } from './trip';
 import type { GuideRecord, TripItem } from './types';
@@ -17,7 +18,6 @@ type MergeDefinition = {
 const embeddedVaticanGuide = {
   path: '/vatican-guide/',
   label: '打开完整离线导览',
-  sourceRepository: 'https://github.com/Dawnkuo/vatican-offline-guide',
 };
 
 const mergeDefinitions: MergeDefinition[] = [
@@ -115,7 +115,6 @@ function buildFallbackGuide(
     hero: {
       src: profile?.image ?? '/images/st-peters-hero.jpg',
       alt: profile?.imageAlt ?? `${title}所在城市`,
-      credit: profile?.imageCredit ?? '城市章节图',
     },
     overview:
       `${title}是本次${first.item.city}行程中的文化观察点。` +
@@ -214,12 +213,27 @@ export const guideCatalog: GuideRecord[] = [
   .map((guide) => {
     const content =
       guideContentBySlug[guide.slug as keyof typeof guideContentBySlug];
-    if (!content || guide.embeddedGuide) return guide;
+    const enrichedGuide =
+      !content || guide.embeddedGuide
+        ? guide
+        : {
+            ...guide,
+            ...content,
+            hero: content.hero ?? guide.hero,
+          };
+    const media = guideMediaBySlug[guide.slug];
+    if (!media) return enrichedGuide;
 
     return {
-      ...guide,
-      ...content,
-      hero: content.hero ?? guide.hero,
+      ...enrichedGuide,
+      hero: {
+        src: media[0].image,
+        alt: media[0].imageAlt,
+      },
+      highlights: enrichedGuide.highlights.map((highlight, index) => ({
+        ...highlight,
+        ...media[index],
+      })),
     };
   })
   .sort((left, right) => {

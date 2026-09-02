@@ -18,12 +18,11 @@ export function GuideHighlights({ guide }: { guide: GuideRecord }) {
             </div>
             {highlight.image && (
               <div className="guide-highlight__media">
-                {/* oxlint-disable-next-line next/no-img-element -- Curated local artwork image with source credit. */}
+                {/* oxlint-disable-next-line next/no-img-element -- Curated local artwork image used by the offline guide. */}
                 <img
                   alt={highlight.imageAlt ?? highlight.title}
                   src={withBasePath(highlight.image)}
                 />
-                {highlight.imageCredit && <span>{highlight.imageCredit}</span>}
               </div>
             )}
             <div className="guide-highlight__copy">

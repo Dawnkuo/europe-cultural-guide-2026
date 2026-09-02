@@ -100,7 +100,6 @@ describe("guide catalog", () => {
       expect(guideCatalog.find((guide) => guide.slug === slug)?.embeddedGuide).toEqual({
         path: "/vatican-guide/",
         label: "打开完整离线导览",
-        sourceRepository: "https://github.com/Dawnkuo/vatican-offline-guide",
       });
       expect("externalGuide" in (guideCatalog.find((guide) => guide.slug === slug) ?? {})).toBe(false);
     }

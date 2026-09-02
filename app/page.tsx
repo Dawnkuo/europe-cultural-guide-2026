@@ -98,6 +98,7 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
+        {/* oxlint-disable-next-line next/no-img-element -- Static export uses a local hero image. */}
         <img
           alt="从圣彼得广场望向圣彼得大教堂"
           className="hero__image"
@@ -126,9 +127,6 @@ export default function Home() {
         <a className="hero__down" href="#journey-map" aria-label="查看旅程地图">
           <ArrowDown aria-hidden="true" size={20} />
         </a>
-        <p className="hero__credit">
-          圣彼得大教堂与广场 · Mstyslav Chernov / CC BY-SA 3.0
-        </p>
       </section>
 
       <section className="map-section" id="journey-map">

@@ -2,7 +2,7 @@ import { OfflineStatus } from './OfflineStatus';
 import { withBasePath } from '../lib/paths';
 
 type SiteNavProps = {
-  active?: 'itinerary' | 'cities' | 'guides' | 'bookings' | 'sources';
+  active?: 'itinerary' | 'cities' | 'guides' | 'bookings';
 };
 
 const links = [
@@ -10,7 +10,6 @@ const links = [
   { href: '/cities/', label: '城市文化', id: 'cities' },
   { href: '/guides/', label: '景点导览', id: 'guides' },
   { href: '/bookings/', label: '凭证状态', id: 'bookings' },
-  { href: '/sources/', label: '资料来源', id: 'sources' },
 ] as const;
 
 export function SiteNav({ active }: SiteNavProps) {

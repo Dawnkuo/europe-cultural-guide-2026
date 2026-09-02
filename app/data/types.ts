@@ -44,7 +44,6 @@ export type GuideHighlight = {
   lookFor: string;
   image?: string;
   imageAlt?: string;
-  imageCredit?: string;
 };
 
 export type GuideSource = {
@@ -80,7 +79,6 @@ export type GuideRecord = {
   hero: {
     src: string;
     alt: string;
-    credit: string;
   };
   overview: string;
   orientation: Array<{ title: string; body: string }>;
@@ -97,7 +95,6 @@ export type GuideRecord = {
   embeddedGuide?: {
     path: string;
     label: string;
-    sourceRepository: string;
   };
 };
 
@@ -118,13 +115,4 @@ export type BookingRecord = {
   status: VisitStatus;
   validity?: string;
   note?: string;
-};
-
-export type SourceRecord = {
-  id: string;
-  institution: string;
-  title: string;
-  url?: string;
-  verifiedAt: string;
-  note: string;
 };

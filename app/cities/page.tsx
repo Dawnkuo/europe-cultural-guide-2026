@@ -36,8 +36,8 @@ export default function CitiesPage() {
               key={profile.name}
             >
               <div className="city-chapter__media">
+                {/* oxlint-disable-next-line next/no-img-element -- Static export uses local offline imagery. */}
                 <img alt={profile.imageAlt} src={withBasePath(profile.image)} />
-                <span>{profile.imageCredit}</span>
               </div>
               <div className="city-chapter__copy">
                 <p className="city-chapter__index">
