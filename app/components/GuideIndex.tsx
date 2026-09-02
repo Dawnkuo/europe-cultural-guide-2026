@@ -61,9 +61,7 @@ export function GuideIndex({ guides }: { guides: GuideRecord[] }) {
         <p className="guide-index__count">{visible.length} 个章节</p>
         {visible.map((guide, index) => {
           const visit = guide.scheduledVisits[0];
-          const href = guide.embeddedGuide
-            ? withBasePath(`/guides/${guide.slug}/`)
-            : withBasePath(`/guides/${guide.slug}/`);
+          const href = withBasePath(`/guides/${guide.slug}/`);
 
           return (
             <a className="guide-index__row" href={href} key={guide.slug}>

@@ -1,4 +1,3 @@
-import { ExternalLink } from 'lucide-react';
 import { GuideHero } from '../../components/GuideHero';
 import { GuideHighlights } from '../../components/GuideHighlights';
 import { GuidePractical } from '../../components/GuidePractical';
@@ -32,32 +31,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
           <h1>没有找到这个景点章节</h1>
           <a href={withBasePath('/guides/')}>返回景点导览</a>
         </section>
-      </main>
-    );
-  }
-
-  if (guide.embeddedGuide) {
-    const embeddedHref = withBasePath(guide.embeddedGuide.path);
-    return (
-      <main className="subpage embedded-guide-page">
-        <SiteNav active="guides" />
-        <header className="embedded-guide-intro">
-          <p>{guide.city} · 本地完整离线素材</p>
-          <h1>{guide.title}</h1>
-          <span>
-            下面直接载入当前项目内的完整导览，包含三维空间、重点作品、路线、实用攻略和独立离线缓存。
-          </span>
-          <a href={embeddedHref}>
-            {guide.embeddedGuide.label}
-            <ExternalLink aria-hidden="true" size={16} />
-          </a>
-        </header>
-        <iframe
-          className="embedded-guide-frame"
-          loading="eager"
-          src={embeddedHref}
-          title={`${guide.title}完整离线导览`}
-        />
       </main>
     );
   }

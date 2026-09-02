@@ -1,5 +1,6 @@
 import { copyFile, cp, mkdir, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
+import { embedLocalGuide } from './embed-local-guide.mjs';
 import { generateGuidePrecache } from './generate-guide-precache.mjs';
 
 const output = join(process.cwd(), 'dist', 'client');
@@ -25,6 +26,13 @@ for (const page of guidePages) {
   await copyFile(join(guideOutput, page), join(directory, 'index.html'));
 }
 
+const directLocalGuideSlugs = ['vatican-museums', 'st-peters-basilica'];
+await embedLocalGuide({
+  source: join(output, 'vatican-guide'),
+  guideOutput,
+  slugs: directLocalGuideSlugs,
+});
+
 const guideRoutes = await generateGuidePrecache({
   output,
   slugs: guidePages.map((page) => page.slice(0, -'.html'.length)).sort(),
@@ -35,5 +43,5 @@ await cp(join(output, repository, '_next'), join(output, '_next'), {
 });
 
 console.log(
-  `Prepared ${routes.length} top-level routes and ${guideRoutes.length - 1} guide routes for GitHub Pages.`,
+  `Prepared ${routes.length} top-level routes and ${guideRoutes.length - 1} guide routes for GitHub Pages; ${directLocalGuideSlugs.length} routes directly contain the imported Vatican guide.`,
 );

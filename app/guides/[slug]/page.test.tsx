@@ -36,7 +36,7 @@ describe('GuidePage', () => {
     ).toBeInTheDocument();
   });
 
-  it("opens the imported Vatican material from this site's own path", async () => {
+  it('does not wrap the imported Vatican material in an iframe or external-style link', async () => {
     render(
       await GuidePage({
         params: Promise.resolve({ slug: 'vatican-museums' }),
@@ -44,7 +44,11 @@ describe('GuidePage', () => {
     );
 
     expect(
-      screen.getByRole('link', { name: '打开完整离线导览' }),
-    ).toHaveAttribute('href', '/vatican-guide/');
+      screen.getByRole('heading', { name: '梵蒂冈博物馆' }),
+    ).toBeInTheDocument();
+    expect(screen.queryByTitle(/完整离线导览/)).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('link', { name: '打开完整离线导览' }),
+    ).not.toBeInTheDocument();
   });
 });
