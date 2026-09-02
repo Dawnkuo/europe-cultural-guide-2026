@@ -98,6 +98,7 @@ export type GuideRecord = {
   sequence: Array<{ title: string; body: string }>;
   practical: string[];
   sources: GuideSource[];
+  externalGuide?: { url: string; label: string };
 };
 ```
 
@@ -208,6 +209,8 @@ Do not copy prose from official pages. Paraphrase facts, keep direct links, and 
 - [ ] **Step 4: Merge content packs into canonical records**
 
 `app/data/guides/content.ts` combines the six disjoint exports. `app/data/guides.ts` must fail fast in development when a guide slug has no curated content rather than silently publishing the fallback as complete.
+
+The `vatican-museums` and `st-peters-basilica` records are exempt from local content generation. Set both `externalGuide.url` values to `https://dawnkuo.github.io/vatican-offline-guide/`; the index and itinerary link directly to that independent offline guide.
 
 - [ ] **Step 5: Run completeness and mapping tests**
 
