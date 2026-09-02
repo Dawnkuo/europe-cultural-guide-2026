@@ -1,0 +1,67 @@
+import type { SourceRecord } from "./types";
+
+export const sourceRecords: SourceRecord[] = [
+  {
+    id: "tencent-itinerary",
+    institution: "腾讯文档",
+    title: "国庆行程安排：最终详细与最终行程",
+    url: "https://docs.qq.com/sheet/DR2ZZSW9YSHdCZ090?tab=BLA2a3",
+    verifiedAt: "2026-09-02",
+    note: "用于日期、原始顺序、备选项目和到达说明。",
+  },
+  {
+    id: "ticket-archive",
+    institution: "正式票据与确认文件",
+    title: "本地票务、交通与住宿资料",
+    verifiedAt: "2026-09-02",
+    note: "共核对48份文件；固定服务时间优先于行程摘要。",
+  },
+  {
+    id: "milan-duomo-official",
+    institution: "Duomo di Milano",
+    title: "米兰大教堂官方参观信息",
+    url: "https://www.duomomilano.it/en/",
+    verifiedAt: "2026-09-02",
+    note: "票面说明14:30为露台入口。",
+  },
+  {
+    id: "vatican-museums",
+    institution: "Vatican Museums",
+    title: "梵蒂冈博物馆官方网站",
+    url: "https://www.museivaticani.va/",
+    verifiedAt: "2026-09-02",
+    note: "Key Master Tour票据作为已确认服务依据。",
+  },
+  {
+    id: "park-guell",
+    institution: "Park Güell Barcelona",
+    title: "桂尔公园官方网站",
+    url: "https://parkguell.barcelona/",
+    verifiedAt: "2026-09-02",
+    note: "联票票面说明16:00对应高迪故居博物馆。",
+  },
+  {
+    id: "cologne-cathedral",
+    institution: "Kölner Dom",
+    title: "科隆大教堂官方网站",
+    url: "https://www.koelner-dom.de/",
+    verifiedAt: "2026-09-02",
+    note: "内部、南塔与珍宝馆有效窗口来自正式门票。",
+  },
+  {
+    id: "vatican-post",
+    institution: "Vatican City State",
+    title: "圣彼得广场邮局实用信息",
+    url: "https://www.vaticanstate.va/fr/services/poste-et-philatelie/la-poste/informations-utiles.html",
+    verifiedAt: "2026-09-02",
+    note: "官方邮政服务页列明周一至周六08:30–18:30；机构活动可能导致临时调整。",
+  },
+  {
+    id: "muhba-turo",
+    institution: "Barcelona History Museum (MUHBA)",
+    title: "Turó de la Rovira 参观信息",
+    url: "https://www.barcelona.cat/museuhistoria/ca/patrimonis/els-espais-del-muhba/muhba-turo-de-la-rovira",
+    verifiedAt: "2026-09-02",
+    note: "露天遗址整体自由进入；季节性时段只适用于带展陈的解释空间。",
+  },
+];
