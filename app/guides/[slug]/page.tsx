@@ -48,7 +48,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
             下面直接载入当前项目内的完整导览，包含三维空间、重点作品、路线、实用攻略和独立离线缓存。
           </span>
           <a href={embeddedHref}>
-            {guide.embeddedGuide.label}<ExternalLink aria-hidden="true" size={16} />
+            {guide.embeddedGuide.label}
+            <ExternalLink aria-hidden="true" size={16} />
           </a>
         </header>
         <iframe

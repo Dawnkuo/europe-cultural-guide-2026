@@ -6,6 +6,7 @@ import { StatusLabel } from './StatusLabel';
 export function GuideHero({ guide }: { guide: GuideRecord }) {
   return (
     <header className="guide-hero" id="guide-top">
+      {/* oxlint-disable-next-line next/no-img-element -- Static export uses attributed local guide images. */}
       <img alt={guide.hero.alt} src={withBasePath(guide.hero.src)} />
       <div className="guide-hero__shade" />
       <div className="guide-hero__content">
@@ -14,7 +15,9 @@ export function GuideHero({ guide }: { guide: GuideRecord }) {
           {guide.city} · {guide.country}
         </p>
         <h1>{guide.title}</h1>
-        {guide.originalTitle && <p className="guide-hero__original">{guide.originalTitle}</p>}
+        {guide.originalTitle && (
+          <p className="guide-hero__original">{guide.originalTitle}</p>
+        )}
         <div className="guide-hero__visits">
           {guide.scheduledVisits.map((visit) => (
             <div key={visit.itemId}>
@@ -27,7 +30,11 @@ export function GuideHero({ guide }: { guide: GuideRecord }) {
         </div>
       </div>
       <p className="guide-hero__credit">图像：{guide.hero.credit}</p>
-      <a aria-label="继续阅读" className="guide-hero__down" href="#guide-overview">
+      <a
+        aria-label="继续阅读"
+        className="guide-hero__down"
+        href="#guide-overview"
+      >
         <ArrowDown aria-hidden="true" size={18} />
       </a>
     </header>

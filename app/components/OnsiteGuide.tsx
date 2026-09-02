@@ -15,8 +15,15 @@ function localProgressStore() {
 export function OnsiteGuide({ guide }: { guide: GuideRecord }) {
   const storageKey = `guide-progress:${guide.slug}`;
   const [open, setOpen] = useState(false);
-  const [step, setStep] = useState(0);
-  const [mounted, setMounted] = useState(false);
+  const [step, setStep] = useState(() => {
+    if (typeof window === 'undefined') return 0;
+    const stored = Number(localProgressStore()?.getItem(storageKey));
+    return Number.isInteger(stored) &&
+      stored >= 0 &&
+      stored < guide.sequence.length
+      ? stored
+      : 0;
+  });
   const current = guide.sequence[step];
   const highlight = useMemo(
     () => guide.highlights[step % guide.highlights.length],
@@ -24,17 +31,8 @@ export function OnsiteGuide({ guide }: { guide: GuideRecord }) {
   );
 
   useEffect(() => {
-    const stored = Number(localProgressStore()?.getItem(storageKey));
-    if (Number.isInteger(stored) && stored >= 0 && stored < guide.sequence.length) {
-      setStep(stored);
-    }
-    setMounted(true);
-  }, [guide.sequence.length, storageKey]);
-
-  useEffect(() => {
-    if (!mounted) return;
     localProgressStore()?.setItem(storageKey, String(step));
-  }, [mounted, step, storageKey]);
+  }, [step, storageKey]);
 
   useEffect(() => {
     if (!open) return;
@@ -52,32 +50,45 @@ export function OnsiteGuide({ guide }: { guide: GuideRecord }) {
 
   return (
     <>
-      <button className="onsite-launch" onClick={() => setOpen(true)} type="button">
+      <button
+        className="onsite-launch"
+        onClick={() => setOpen(true)}
+        type="button"
+      >
         <MapPin aria-hidden="true" size={18} />
         开始现场导览
       </button>
 
       {open && (
-        <div
+        <dialog
           aria-label={`${guide.title}现场导览`}
-          aria-modal="true"
           className="onsite-guide"
-          role="dialog"
+          open
         >
           <header className="onsite-guide__header">
             <div>
               <p>{guide.city} · 现场模式</p>
               <h2>{guide.title}</h2>
             </div>
-            <button aria-label="关闭现场导览" onClick={() => setOpen(false)} type="button">
+            <button
+              aria-label="关闭现场导览"
+              onClick={() => setOpen(false)}
+              type="button"
+            >
               <X aria-hidden="true" />
             </button>
           </header>
 
           <div className="onsite-guide__progress">
-            <span>{step + 1} / {guide.sequence.length}</span>
+            <span>
+              {step + 1} / {guide.sequence.length}
+            </span>
             <div aria-hidden="true">
-              <i style={{ width: `${((step + 1) / guide.sequence.length) * 100}%` }} />
+              <i
+                style={{
+                  width: `${((step + 1) / guide.sequence.length) * 100}%`,
+                }}
+              />
             </div>
           </div>
 
@@ -103,19 +114,27 @@ export function OnsiteGuide({ guide }: { guide: GuideRecord }) {
             >
               <ArrowLeft aria-hidden="true" />
             </button>
-            <button className="onsite-guide__return" onClick={() => setOpen(false)} type="button">
+            <button
+              className="onsite-guide__return"
+              onClick={() => setOpen(false)}
+              type="button"
+            >
               返回完整章节
             </button>
             <button
               aria-label="下一站"
               disabled={step === guide.sequence.length - 1}
-              onClick={() => setStep((value) => Math.min(guide.sequence.length - 1, value + 1))}
+              onClick={() =>
+                setStep((value) =>
+                  Math.min(guide.sequence.length - 1, value + 1),
+                )
+              }
               type="button"
             >
               <ArrowRight aria-hidden="true" />
             </button>
           </footer>
-        </div>
+        </dialog>
       )}
     </>
   );

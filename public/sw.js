@@ -1,4 +1,4 @@
-const CACHE = 'europe-cultural-guide-v3';
+const CACHE = 'europe-cultural-guide-v4';
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '');
 const scoped = (path) => `${BASE_PATH}${path}`;
 const CORE = [
@@ -18,8 +18,28 @@ const CORE = [
   '/images/cologne.jpg',
 ].map(scoped);
 
+async function installOfflineRoutes() {
+  const cache = await caches.open(CACHE);
+  const manifestUrl = scoped('/guide-precache.json');
+
+  try {
+    const response = await fetch(manifestUrl, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Guide manifest ${response.status}`);
+    const manifest = await response.clone().json();
+    const guideRoutes = manifest.routes.map(scoped);
+    await cache.put(manifestUrl, response);
+    await cache.addAll([...CORE, ...guideRoutes]);
+  } catch (error) {
+    console.warn(
+      'Guide route manifest unavailable; caching the core shell only.',
+      error,
+    );
+    await cache.addAll(CORE);
+  }
+}
+
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE)));
+  event.waitUntil(installOfflineRoutes());
   self.skipWaiting();
 });
 
@@ -52,6 +72,8 @@ self.addEventListener('fetch', (event) => {
         }
         return response;
       })
-      .catch(async () => (await caches.match(event.request)) ?? Response.error()),
+      .catch(
+        async () => (await caches.match(event.request)) ?? Response.error(),
+      ),
   );
 });

@@ -42,16 +42,18 @@ export function GuideIndex({ guides }: { guides: GuideRecord[] }) {
         </div>
         <div>
           <span>类型</span>
-          {(['全部', 'landmark', 'museum', 'district'] as const).map((value) => (
-            <button
-              data-active={kind === value}
-              key={value}
-              onClick={() => setKind(value)}
-              type="button"
-            >
-              {value === '全部' ? value : kindLabels[value]}
-            </button>
-          ))}
+          {(['全部', 'landmark', 'museum', 'district'] as const).map(
+            (value) => (
+              <button
+                data-active={kind === value}
+                key={value}
+                onClick={() => setKind(value)}
+                type="button"
+              >
+                {value === '全部' ? value : kindLabels[value]}
+              </button>
+            ),
+          )}
         </div>
       </div>
 
@@ -69,10 +71,8 @@ export function GuideIndex({ guides }: { guides: GuideRecord[] }) {
                 {String(index + 1).padStart(2, '0')}
               </span>
               <div className="guide-index__media">
-                <img
-                  alt={guide.hero.alt}
-                  src={withBasePath(guide.hero.src)}
-                />
+                {/* oxlint-disable-next-line next/no-img-element -- Static export keeps local images base-path safe. */}
+                <img alt={guide.hero.alt} src={withBasePath(guide.hero.src)} />
               </div>
               <div className="guide-index__copy">
                 <p>

@@ -1,8 +1,8 @@
-import { AlertTriangle, ArrowDownRight, ListChecks } from "lucide-react";
-import { guideForTripItem } from "../data/guides";
-import type { TripDay, TripItem } from "../data/types";
-import { withBasePath } from "../lib/paths";
-import { StatusLabel } from "./StatusLabel";
+import { AlertTriangle, ArrowDownRight, ListChecks } from 'lucide-react';
+import { guideForTripItem } from '../data/guides';
+import type { TripDay, TripItem } from '../data/types';
+import { withBasePath } from '../lib/paths';
+import { StatusLabel } from './StatusLabel';
 
 function GuideTitle({ item }: { item: TripItem }) {
   const guide = guideForTripItem(item);
@@ -23,7 +23,7 @@ function TimelineItem({ item, index }: { item: TripItem; index: number }) {
   return (
     <article className="timeline-item" data-status={item.status}>
       <div className="timeline-item__rail" aria-hidden="true">
-        <span>{String(index + 1).padStart(2, "0")}</span>
+        <span>{String(index + 1).padStart(2, '0')}</span>
       </div>
       <div className="timeline-item__time">{item.time}</div>
       <div className="timeline-item__main">
@@ -31,21 +31,34 @@ function TimelineItem({ item, index }: { item: TripItem; index: number }) {
           <p>{item.city}</p>
           <StatusLabel status={item.status} />
         </div>
-        <h3><GuideTitle item={item} /></h3>
+        <h3>
+          <GuideTitle item={item} />
+        </h3>
         {item.arrival && (
-          <p className="arrival-note"><ArrowDownRight aria-hidden="true" size={16} />{item.arrival}</p>
+          <p className="arrival-note">
+            <ArrowDownRight aria-hidden="true" size={16} />
+            {item.arrival}
+          </p>
         )}
         {item.note && <p className="timeline-item__note">{item.note}</p>}
         {item.highlights && (
           <div className="highlight-sequence">
-            <p><ListChecks aria-hidden="true" size={16} />馆内顺序</p>
+            <p>
+              <ListChecks aria-hidden="true" size={16} />
+              馆内顺序
+            </p>
             <ol>
-              {item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+              {item.highlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
             </ol>
           </div>
         )}
         {item.conflict && (
-          <p className="conflict-note"><AlertTriangle aria-hidden="true" size={16} />{item.conflict}</p>
+          <p className="conflict-note">
+            <AlertTriangle aria-hidden="true" size={16} />
+            {item.conflict}
+          </p>
         )}
       </div>
     </article>
@@ -67,10 +80,14 @@ export function DayTimeline({ day }: { day: TripDay }) {
           <strong>{day.region}</strong>
           <p>{day.summary}</p>
         </div>
-        {day.detailPending && <span className="pending-detail">详细安排待补</span>}
+        {day.detailPending && (
+          <span className="pending-detail">详细安排待补</span>
+        )}
       </header>
       <div className="timeline-list">
-        {scheduled.map((item, index) => <TimelineItem item={item} index={index} key={item.id} />)}
+        {scheduled.map((item, index) => (
+          <TimelineItem item={item} index={index} key={item.id} />
+        ))}
       </div>
       {alternatives.length > 0 && (
         <div className="alternatives">
@@ -82,7 +99,9 @@ export function DayTimeline({ day }: { day: TripDay }) {
             {alternatives.map((item) => (
               <article key={item.id}>
                 <StatusLabel status={item.status} />
-                <h3><GuideTitle item={item} /></h3>
+                <h3>
+                  <GuideTitle item={item} />
+                </h3>
                 <p>{item.note}</p>
               </article>
             ))}

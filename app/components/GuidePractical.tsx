@@ -7,7 +7,9 @@ export function GuidePractical({ guide }: { guide: GuideRecord }) {
       <div className="guide-section__heading">
         <p>04 / Before you go</p>
         <h2>实用攻略</h2>
-        <span>票面与现场规则优先；运营信息记录核验日期，不把未确认事项写成事实。</span>
+        <span>
+          票面与现场规则优先；运营信息记录核验日期，不把未确认事项写成事实。
+        </span>
       </div>
       <div className="guide-practical__layout">
         <ul>
@@ -25,7 +27,8 @@ export function GuidePractical({ guide }: { guide: GuideRecord }) {
               <p>{source.institution}</p>
               {source.url ? (
                 <a href={source.url} rel="noreferrer" target="_blank">
-                  {source.title}<ExternalLink aria-hidden="true" size={13} />
+                  {source.title}
+                  <ExternalLink aria-hidden="true" size={13} />
                 </a>
               ) : (
                 <strong>{source.title}</strong>

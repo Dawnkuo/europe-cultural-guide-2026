@@ -13,9 +13,12 @@ export function GuideHighlights({ guide }: { guide: GuideRecord }) {
       <div className="guide-highlight-list">
         {guide.highlights.map((highlight, index) => (
           <article key={`${highlight.title}-${index}`}>
-            <div className="guide-highlight__index">{String(index + 1).padStart(2, '0')}</div>
+            <div className="guide-highlight__index">
+              {String(index + 1).padStart(2, '0')}
+            </div>
             {highlight.image && (
               <div className="guide-highlight__media">
+                {/* oxlint-disable-next-line next/no-img-element -- Curated local artwork image with source credit. */}
                 <img
                   alt={highlight.imageAlt ?? highlight.title}
                   src={withBasePath(highlight.image)}
@@ -24,13 +27,20 @@ export function GuideHighlights({ guide }: { guide: GuideRecord }) {
               </div>
             )}
             <div className="guide-highlight__copy">
-              <p>{[highlight.creator, highlight.period, highlight.location].filter(Boolean).join(' · ')}</p>
+              <p>
+                {[highlight.creator, highlight.period, highlight.location]
+                  .filter(Boolean)
+                  .join(' · ')}
+              </p>
               <h3>{highlight.title}</h3>
               {highlight.originalTitle && <em>{highlight.originalTitle}</em>}
               <div>{highlight.summary}</div>
               <aside>
                 <Eye aria-hidden="true" size={17} />
-                <span><strong>现场看什么</strong>{highlight.lookFor}</span>
+                <span>
+                  <strong>现场看什么</strong>
+                  {highlight.lookFor}
+                </span>
               </aside>
             </div>
           </article>

@@ -1,27 +1,32 @@
-import { readFileSync } from "node:fs";
-import { runInNewContext } from "node:vm";
-import { describe, expect, it, vi } from "vitest";
+import { readFileSync } from 'node:fs';
+import { runInNewContext } from 'node:vm';
+import { describe, expect, it, vi } from 'vitest';
 
-describe("service worker", () => {
-  it("prefers a fresh network response and keeps cache as the offline fallback", async () => {
+describe('service worker', () => {
+  it('prefers a fresh network response and keeps cache as the offline fallback', async () => {
     const handlers = new Map<string, (event: unknown) => void>();
     const cache = { addAll: vi.fn(), put: vi.fn() };
     const caches = {
       delete: vi.fn(),
       keys: vi.fn(async () => []),
-      match: vi.fn(async () => new Response("stale")),
+      match: vi.fn(async () => new Response('stale')),
       open: vi.fn(async () => cache),
     };
-    const networkFetch = vi.fn(async () => new Response("fresh", { status: 200 }));
+    const networkFetch = vi.fn(
+      async () => new Response('fresh', { status: 200 }),
+    );
     const self = {
-      addEventListener: (type: string, handler: (event: unknown) => void) => handlers.set(type, handler),
+      addEventListener: (type: string, handler: (event: unknown) => void) =>
+        handlers.set(type, handler),
       clients: { claim: vi.fn() },
-      location: { origin: "https://example.com" },
-      registration: { scope: "https://example.com/europe-cultural-guide-2026/" },
+      location: { origin: 'https://example.com' },
+      registration: {
+        scope: 'https://example.com/europe-cultural-guide-2026/',
+      },
       skipWaiting: vi.fn(),
     };
 
-    runInNewContext(readFileSync("public/sw.js", "utf8"), {
+    runInNewContext(readFileSync('public/sw.js', 'utf8'), {
       Promise,
       Request,
       Response,
@@ -32,14 +37,15 @@ describe("service worker", () => {
     });
 
     let responsePromise: Promise<Response> | undefined;
-    handlers.get("fetch")?.({
-      request: new Request("https://example.com/europe-cultural-guide-2026/"),
+    handlers.get('fetch')?.({
+      request: new Request('https://example.com/europe-cultural-guide-2026/'),
       respondWith: (promise: Promise<Response>) => {
         responsePromise = promise;
       },
     });
 
-    expect(await (await responsePromise).text()).toBe("fresh");
+    expect(responsePromise).toBeDefined();
+    expect(await (await responsePromise!).text()).toBe('fresh');
     expect(networkFetch).toHaveBeenCalledOnce();
   });
 });
