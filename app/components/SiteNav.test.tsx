@@ -17,5 +17,9 @@ describe('SiteNav', () => {
       'href',
       '/europe-cultural-guide-2026/cities/',
     );
+    expect(screen.getByRole('link', { name: '景点导览' })).toHaveAttribute(
+      'href',
+      '/europe-cultural-guide-2026/guides/',
+    );
   });
 });

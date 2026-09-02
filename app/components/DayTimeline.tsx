@@ -1,6 +1,23 @@
 import { AlertTriangle, ArrowDownRight, ListChecks } from "lucide-react";
+import { guideForTripItem } from "../data/guides";
 import type { TripDay, TripItem } from "../data/types";
+import { withBasePath } from "../lib/paths";
 import { StatusLabel } from "./StatusLabel";
+
+function GuideTitle({ item }: { item: TripItem }) {
+  const guide = guideForTripItem(item);
+
+  if (!guide) return <>{item.title}</>;
+
+  return (
+    <a
+      className="timeline-guide-link"
+      href={withBasePath(`/guides/${guide.slug}/`)}
+    >
+      {item.title}
+    </a>
+  );
+}
 
 function TimelineItem({ item, index }: { item: TripItem; index: number }) {
   return (
@@ -14,7 +31,7 @@ function TimelineItem({ item, index }: { item: TripItem; index: number }) {
           <p>{item.city}</p>
           <StatusLabel status={item.status} />
         </div>
-        <h3>{item.title}</h3>
+        <h3><GuideTitle item={item} /></h3>
         {item.arrival && (
           <p className="arrival-note"><ArrowDownRight aria-hidden="true" size={16} />{item.arrival}</p>
         )}
@@ -65,7 +82,7 @@ export function DayTimeline({ day }: { day: TripDay }) {
             {alternatives.map((item) => (
               <article key={item.id}>
                 <StatusLabel status={item.status} />
-                <h3>{item.title}</h3>
+                <h3><GuideTitle item={item} /></h3>
                 <p>{item.note}</p>
               </article>
             ))}

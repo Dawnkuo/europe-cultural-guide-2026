@@ -26,6 +26,19 @@ describe("ItineraryPage", () => {
     expect(screen.getAllByText("详细安排待补").length).toBe(3);
   });
 
+  it("links cultural stops to their canonical guide chapter", () => {
+    render(<ItineraryPage />);
+
+    expect(
+      screen.getByRole("link", { name: "米兰大教堂与露台" }),
+    ).toHaveAttribute("href", "/guides/milan-duomo/");
+    expect(screen.getAllByRole("link", { name: "老桥夜景" })).toHaveLength(2);
+    expect(screen.getAllByRole("link", { name: "老桥夜景" })[0]).toHaveAttribute(
+      "href",
+      "/guides/ponte-vecchio/",
+    );
+  });
+
   it("hydrates city-filtered links without a server/client mismatch", async () => {
     const browserWindow = globalThis.window;
     Object.defineProperty(globalThis, "window", { configurable: true, value: undefined });
