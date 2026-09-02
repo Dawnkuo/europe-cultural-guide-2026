@@ -1,4 +1,4 @@
-const CACHE = 'europe-cultural-guide-v2';
+const CACHE = 'europe-cultural-guide-v3';
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '');
 const scoped = (path) => `${BASE_PATH}${path}`;
 const CORE = [
@@ -44,18 +44,14 @@ self.addEventListener('fetch', (event) => {
     return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      const network = fetch(event.request)
-        .then((response) => {
-          if (response.ok) {
-            const copy = response.clone();
-            caches.open(CACHE).then((cache) => cache.put(event.request, copy));
-          }
-          return response;
-        })
-        .catch(() => cached);
-
-      return cached || network;
-    }),
+    fetch(event.request)
+      .then(async (response) => {
+        if (response.ok) {
+          const cache = await caches.open(CACHE);
+          await cache.put(event.request, response.clone());
+        }
+        return response;
+      })
+      .catch(async () => (await caches.match(event.request)) ?? Response.error()),
   );
 });
