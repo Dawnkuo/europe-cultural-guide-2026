@@ -98,7 +98,7 @@ export type GuideRecord = {
   sequence: Array<{ title: string; body: string }>;
   practical: string[];
   sources: GuideSource[];
-  externalGuide?: { url: string; label: string };
+  embeddedGuide?: { path: string; label: string; sourceRepository: string };
 };
 ```
 
@@ -210,7 +210,7 @@ Do not copy prose from official pages. Paraphrase facts, keep direct links, and 
 
 `app/data/guides/content.ts` combines the six disjoint exports. `app/data/guides.ts` must fail fast in development when a guide slug has no curated content rather than silently publishing the fallback as complete.
 
-The `vatican-museums` and `st-peters-basilica` records are exempt from local content generation. Set both `externalGuide.url` values to `https://dawnkuo.github.io/vatican-offline-guide/`; the index and itinerary link directly to that independent offline guide.
+The `vatican-museums` and `st-peters-basilica` records reuse the complete Vatican offline guide as local project material. Import the runtime files from `https://github.com/Dawnkuo/vatican-offline-guide` into `public/vatican-guide/`, set both `embeddedGuide.path` values to `/vatican-guide/`, and make index and itinerary links use the current site's base path. No link may depend on the old GitHub Pages deployment.
 
 - [ ] **Step 5: Run completeness and mapping tests**
 

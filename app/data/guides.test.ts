@@ -28,20 +28,41 @@ describe("guide catalog", () => {
     expect(guideForTripItem(first!)?.slug).toBe(guideForTripItem(second!)?.slug);
   });
 
+  it.each([
+    ["colosseum", "roman-forum"],
+    ["roman-forum", "palatine"],
+    ["leaning-tower", "pisa-cathedral"],
+    ["pisa-cathedral", "pisa-baptistery"],
+    ["doges-palace", "correr"],
+    ["st-mark-campanile", "st-mark-basilica"],
+  ])("keeps %s and %s as separate attraction chapters", (firstId, secondId) => {
+    const items = tripDays.flatMap((day) => day.items);
+    const first = items.find((item) => item.id === firstId);
+    const second = items.find((item) => item.id === secondId);
+
+    expect(first).toBeDefined();
+    expect(second).toBeDefined();
+    expect(guideForTripItem(first!)?.slug).not.toBe(
+      guideForTripItem(second!)?.slug,
+    );
+  });
+
   it("uses unique stable slugs", () => {
     expect(new Set(guideCatalog.map((guide) => guide.slug)).size).toBe(
       guideCatalog.length,
     );
   });
 
-  it("reuses the existing Vatican and Saint Peter offline guide", () => {
+  it("embeds the Vatican and Saint Peter offline guide inside this site", () => {
     const reusedSlugs = ["vatican-museums", "st-peters-basilica"];
 
     for (const slug of reusedSlugs) {
-      expect(guideCatalog.find((guide) => guide.slug === slug)?.externalGuide).toEqual({
-        url: "https://dawnkuo.github.io/vatican-offline-guide/",
-        label: "打开独立离线导览",
+      expect(guideCatalog.find((guide) => guide.slug === slug)?.embeddedGuide).toEqual({
+        path: "/vatican-guide/",
+        label: "打开完整离线导览",
+        sourceRepository: "https://github.com/Dawnkuo/vatican-offline-guide",
       });
+      expect("externalGuide" in (guideCatalog.find((guide) => guide.slug === slug) ?? {})).toBe(false);
     }
   });
 });

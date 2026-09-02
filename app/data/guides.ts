@@ -10,12 +10,13 @@ type MergeDefinition = {
   slug: string;
   title: string;
   itemIds: string[];
-  externalGuide?: GuideRecord["externalGuide"];
+  embeddedGuide?: GuideRecord["embeddedGuide"];
 };
 
-const vaticanOfflineGuide = {
-  url: "https://dawnkuo.github.io/vatican-offline-guide/",
-  label: "打开独立离线导览",
+const embeddedVaticanGuide = {
+  path: "/vatican-guide/",
+  label: "打开完整离线导览",
+  sourceRepository: "https://github.com/Dawnkuo/vatican-offline-guide",
 };
 
 const mergeDefinitions: MergeDefinition[] = [
@@ -33,13 +34,13 @@ const mergeDefinitions: MergeDefinition[] = [
     slug: "vatican-museums",
     title: "梵蒂冈博物馆",
     itemIds: ["key-master", "vatican-followup"],
-    externalGuide: vaticanOfflineGuide,
+    embeddedGuide: embeddedVaticanGuide,
   },
   {
     slug: "st-peters-basilica",
     title: "圣彼得大教堂",
     itemIds: ["st-peters-basilica", "st-peters-dome"],
-    externalGuide: vaticanOfflineGuide,
+    embeddedGuide: embeddedVaticanGuide,
   },
   {
     slug: "sagrada-familia",
@@ -82,7 +83,7 @@ function buildFallbackGuide(
   slug: string,
   title: string,
   entries: typeof culturalEntries,
-  externalGuide?: GuideRecord["externalGuide"],
+  embeddedGuide?: GuideRecord["embeddedGuide"],
 ): GuideRecord {
   const first = entries[0];
   const profile = cityProfileFor(first.item.city);
@@ -163,7 +164,7 @@ function buildFallbackGuide(
         note: "当前记录票面时间、预订状态和到达说明；文化资料将在城市内容包中补齐。",
       },
     ],
-    externalGuide,
+    embeddedGuide,
   };
 }
 
@@ -177,7 +178,7 @@ const mergedGuides = mergeDefinitions.map((definition) => {
     definition.slug,
     definition.title,
     entries,
-    definition.externalGuide,
+    definition.embeddedGuide,
   );
 });
 

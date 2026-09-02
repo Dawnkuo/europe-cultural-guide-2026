@@ -94,9 +94,10 @@ export type GuideRecord = {
   sequence: Array<{ title: string; body: string }>;
   practical: string[];
   sources: GuideSource[];
-  externalGuide?: {
-    url: string;
+  embeddedGuide?: {
+    path: string;
     label: string;
+    sourceRepository: string;
   };
 };
 
