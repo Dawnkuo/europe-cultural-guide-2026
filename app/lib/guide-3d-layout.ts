@@ -1,18 +1,33 @@
 import type { GuideSpatialType } from '../data/types';
+import {
+  buildGuideModel,
+  type GuideModelBasis,
+  type GuideScenePart,
+  type Vec3,
+} from './guide-3d-models';
 
 export type GuideSceneNode = {
   label: string;
-  position: [number, number, number];
-  scale: [number, number, number];
-  shape: 'box' | 'cylinder' | 'tower' | 'dome';
+  position: Vec3;
 };
 
 export type GuideSceneLayout = {
+  profile: string;
+  modelBasis: GuideModelBasis;
+  environment:
+    | 'interior'
+    | 'plaza'
+    | 'historic-site'
+    | 'waterfront'
+    | 'park'
+    | 'hillside'
+    | 'urban';
+  parts: GuideScenePart[];
   nodes: GuideSceneNode[];
   paths: Array<[number, number]>;
   camera: {
-    position: [number, number, number];
-    target: [number, number, number];
+    position: Vec3;
+    target: Vec3;
   };
   accent: number;
 };
@@ -34,50 +49,45 @@ function hashText(value: string) {
   return hash >>> 0;
 }
 
-function floorplanPosition(index: number, count: number) {
-  const x = (index - (count - 1) / 2) * 3.1;
-  const z = index === 0 || index === count - 1 ? 0 : index % 2 ? -0.85 : 0.85;
-  return [x, 0, z] as [number, number, number];
+function distance(left: Vec3, right: Vec3) {
+  return Math.hypot(right[0] - left[0], right[1] - left[1], right[2] - left[2]);
 }
 
-function sitePosition(index: number, count: number) {
-  const progress = count <= 1 ? 0 : index / (count - 1);
+function interpolate(left: Vec3, right: Vec3, progress: number): Vec3 {
   return [
-    (progress - 0.5) * 11,
-    progress * 1.7,
-    Math.sin(progress * Math.PI * 1.6) * 2.15,
-  ] as [number, number, number];
-}
-
-function viewpointPosition(index: number, count: number) {
-  if (index === 0) return [0, 0, 0] as [number, number, number];
-  const angle = ((index - 1) / Math.max(1, count - 1)) * Math.PI * 2 - Math.PI / 2;
-  const radius = 5.2 + (index % 2) * 0.7;
-  return [Math.cos(angle) * radius, 0.28 * index, Math.sin(angle) * radius] as [
-    number,
-    number,
-    number,
+    left[0] + (right[0] - left[0]) * progress,
+    left[1] + (right[1] - left[1]) * progress,
+    left[2] + (right[2] - left[2]) * progress,
   ];
 }
 
-function districtPosition(index: number, count: number) {
-  const columns = Math.min(3, Math.max(2, Math.ceil(Math.sqrt(count))));
-  const column = index % columns;
-  const row = Math.floor(index / columns);
-  const routeColumn = row % 2 === 0 ? column : columns - 1 - column;
-  return [
-    (routeColumn - (columns - 1) / 2) * 4.1,
-    0,
-    (row - 0.5) * 4.1,
-  ] as [number, number, number];
-}
+function sampleRoute(route: Vec3[], count: number) {
+  if (count <= 0) return [];
+  if (route.length === 0) {
+    return Array.from({ length: count }, () => [0, 0.15, 0] as Vec3);
+  }
+  if (route.length === 1 || count === 1) return [route[0]];
 
-function shapeFor(label: string, type: GuideSpatialType, index: number) {
-  if (/穹顶|圆厅|圆顶|穹隆/.test(label)) return 'dome' as const;
-  if (/塔|钟楼|尖塔|高处|屋顶|露台/.test(label)) return 'tower' as const;
-  if (/柱|广场|庭院|中庭|喷泉/.test(label)) return 'cylinder' as const;
-  if (type === 'viewpoints' && index === 0) return 'tower' as const;
-  return 'box' as const;
+  const segments = route.slice(1).map((point, index) => ({
+    from: route[index],
+    length: distance(route[index], point),
+    to: point,
+  }));
+  const total = segments.reduce((sum, segment) => sum + segment.length, 0);
+
+  return Array.from({ length: count }, (_, index) => {
+    const target = (index / (count - 1)) * total;
+    let traversed = 0;
+    for (const segment of segments) {
+      if (traversed + segment.length >= target) {
+        const progress =
+          segment.length === 0 ? 0 : (target - traversed) / segment.length;
+        return interpolate(segment.from, segment.to, progress);
+      }
+      traversed += segment.length;
+    }
+    return route.at(-1)!;
+  });
 }
 
 export function buildGuideSceneLayout({
@@ -86,49 +96,16 @@ export function buildGuideSceneLayout({
   stops,
 }: BuildGuideSceneLayoutInput): GuideSceneLayout {
   const seed = hashText(`${slug}:${type}`);
-  const positionFor = {
-    floorplan: floorplanPosition,
-    site: sitePosition,
-    viewpoints: viewpointPosition,
-    district: districtPosition,
-  }[type];
-
-  const nodes = stops.map((label, index) => {
-    const isStartOrEnd = index === 0 || index === stops.length - 1;
-    const width = type === 'district' ? 2.3 : isStartOrEnd ? 1.65 : 2.05;
-    const height =
-      type === 'viewpoints' && index === 0
-        ? 4.8
-        : type === 'district'
-          ? 2.1 + (index % 3) * 0.55
-          : isStartOrEnd
-            ? 1.65
-            : 2.35;
-
-    return {
-      label,
-      position: positionFor(index, stops.length),
-      scale: [
-        width,
-        height,
-        type === 'floorplan' ? 1.7 : width * 0.82,
-      ] as [number, number, number],
-      shape: shapeFor(label, type, index),
-    };
-  });
+  const model = buildGuideModel(slug, type);
+  const positions = sampleRoute(model.route, stops.length);
 
   return {
-    nodes,
-    paths: nodes.slice(1).map((_, index) => [index, index + 1]),
-    camera: {
-      position:
-        type === 'floorplan'
-          ? [10.5, 8.5, 12]
-          : type === 'viewpoints'
-            ? [11, 10, 11]
-            : [12, 9.5, 13],
-      target: [0, 1.4, 0],
-    },
+    ...model,
     accent: accents[seed % accents.length],
+    nodes: stops.map((label, index) => ({
+      label,
+      position: positions[index],
+    })),
+    paths: stops.slice(1).map((_, index) => [index, index + 1]),
   };
 }

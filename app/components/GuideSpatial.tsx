@@ -4,6 +4,10 @@ import { Pause, Play, RotateCcw } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type * as ThreeType from 'three';
 import type { GuideRecord } from '../data/types';
+import type {
+  GuideSceneMaterial,
+  GuideScenePart,
+} from '../lib/guide-3d-models';
 import { buildGuideSceneLayout } from '../lib/guide-3d-layout';
 import { withBasePath } from '../lib/paths';
 
@@ -14,7 +18,181 @@ const spatialLabels: Record<GuideRecord['spatial']['type'], string> = {
   district: '街区节点',
 };
 
+const materialColors: Record<GuideSceneMaterial, number> = {
+  stone: 0x8c887e,
+  'pale-stone': 0xc7c0b0,
+  brick: 0x936657,
+  marble: 0xd8d1c2,
+  metal: 0x5d6865,
+  glass: 0x6f9b9a,
+  roof: 0x806551,
+  water: 0x356b78,
+  earth: 0x6d5e48,
+  garden: 0x526b52,
+  route: 0x343936,
+};
+
 type FocusNode = (index: number | null) => void;
+
+function isOneOf(kind: string, words: string[]) {
+  return words.some((word) => kind.includes(word));
+}
+
+function makeArchGeometry(THREE: typeof ThreeType) {
+  const shape = new THREE.Shape();
+  shape.moveTo(-0.5, -0.5);
+  shape.lineTo(0.5, -0.5);
+  shape.lineTo(0.5, 0.5);
+  shape.lineTo(-0.5, 0.5);
+  shape.closePath();
+
+  const opening = new THREE.Path();
+  opening.moveTo(-0.29, -0.5);
+  opening.lineTo(-0.29, 0.02);
+  opening.absarc(0, 0.02, 0.29, Math.PI, 0, true);
+  opening.lineTo(0.29, -0.5);
+  opening.closePath();
+  shape.holes.push(opening);
+
+  const geometry = new THREE.ExtrudeGeometry(shape, {
+    bevelEnabled: false,
+    depth: 1,
+    steps: 1,
+  });
+  geometry.translate(0, 0, -0.5);
+  return geometry;
+}
+
+function makeTrianglePrism(THREE: typeof ThreeType) {
+  const shape = new THREE.Shape();
+  shape.moveTo(-0.5, -0.5);
+  shape.lineTo(0.5, -0.5);
+  shape.lineTo(0, 0.5);
+  shape.closePath();
+  const geometry = new THREE.ExtrudeGeometry(shape, {
+    bevelEnabled: false,
+    depth: 1,
+    steps: 1,
+  });
+  geometry.translate(0, 0, -0.5);
+  return geometry;
+}
+
+function geometryFor(THREE: typeof ThreeType, modelPart: GuideScenePart) {
+  const { kind } = modelPart;
+  if (kind === 'elliptical-ring') {
+    const geometry = new THREE.TorusGeometry(0.42, 0.095, 10, 64);
+    geometry.rotateX(Math.PI / 2);
+    return geometry;
+  }
+  if (kind === 'horseshoe-auditorium') {
+    const geometry = new THREE.TorusGeometry(
+      0.42,
+      0.12,
+      10,
+      48,
+      Math.PI * 1.55,
+    );
+    geometry.rotateX(Math.PI / 2);
+    geometry.rotateZ(Math.PI * 0.23);
+    return geometry;
+  }
+  if (
+    isOneOf(kind, ['bridge-arch', 'triumphal-arch', 'proscenium', 'arcade'])
+  ) {
+    return makeArchGeometry(THREE);
+  }
+  if (kind === 'pediment') {
+    return makeTrianglePrism(THREE);
+  }
+  if (kind === 'boat-hull') {
+    const geometry = new THREE.CapsuleGeometry(0.32, 1.7, 8, 18);
+    geometry.rotateX(Math.PI / 2);
+    return geometry;
+  }
+  if (isOneOf(kind, ['conical', 'dragon-roof'])) {
+    return new THREE.ConeGeometry(0.5, 1, 12);
+  }
+  if (isOneOf(kind, ['dome'])) {
+    return new THREE.SphereGeometry(
+      0.5,
+      32,
+      18,
+      0,
+      Math.PI * 2,
+      0,
+      Math.PI / 2,
+    );
+  }
+  if (isOneOf(kind, ['spire', 'pinnacle'])) {
+    return new THREE.ConeGeometry(0.5, 1, 12);
+  }
+  if (kind === 'glass-tower') {
+    return new THREE.CylinderGeometry(0.5, 0.62, 1, 3);
+  }
+  if (
+    isOneOf(kind, [
+      'column',
+      'drum',
+      'belfry',
+      'campanile',
+      'rotunda',
+      'apse',
+      'chimney',
+      'statue',
+      'monument',
+      'obelisk',
+      'fountain-basin',
+      'arena',
+      'terrain',
+      'font',
+    ])
+  ) {
+    const radialSegments = kind === 'terrain' ? 14 : 28;
+    return new THREE.CylinderGeometry(
+      0.5,
+      kind === 'terrain' ? 0.62 : 0.5,
+      1,
+      radialSegments,
+    );
+  }
+  return new THREE.BoxGeometry(1, 1, 1);
+}
+
+function materialFor(
+  THREE: typeof ThreeType,
+  modelPart: GuideScenePart,
+  accent: number,
+) {
+  const color = materialColors[modelPart.material];
+  if (modelPart.material === 'glass') {
+    return new THREE.MeshPhysicalMaterial({
+      color,
+      metalness: 0.15,
+      opacity: 0.68,
+      roughness: 0.2,
+      side: THREE.DoubleSide,
+      transparent: true,
+      transmission: 0.15,
+    });
+  }
+  if (modelPart.material === 'water') {
+    return new THREE.MeshPhysicalMaterial({
+      color,
+      metalness: 0.05,
+      opacity: 0.84,
+      roughness: 0.25,
+      transparent: true,
+    });
+  }
+  return new THREE.MeshStandardMaterial({
+    color,
+    emissive: modelPart.material === 'route' ? accent : 0x000000,
+    emissiveIntensity: modelPart.material === 'route' ? 0.05 : 0,
+    metalness: modelPart.material === 'metal' ? 0.52 : 0.06,
+    roughness: modelPart.material === 'metal' ? 0.45 : 0.76,
+  });
+}
 
 export function GuideSpatial({ guide }: { guide: GuideRecord }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -65,155 +243,129 @@ export function GuideSpatial({ guide }: { guide: GuideRecord }) {
         renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
         renderer.outputColorSpace = THREE.SRGBColorSpace;
         renderer.toneMapping = THREE.ACESFilmicToneMapping;
-        renderer.toneMappingExposure = 1.05;
+        renderer.toneMappingExposure = 1.12;
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0x0b0e0d);
-        scene.fog = new THREE.Fog(0x0b0e0d, 18, 36);
+        scene.fog = new THREE.Fog(0x0b0e0d, 20, 42);
 
-        const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 90);
+        const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
         camera.position.set(...layout.camera.position);
         const controls = new OrbitControls(camera, activeCanvas);
         controls.enableDamping = true;
         controls.dampingFactor = 0.07;
         controls.enablePan = false;
-        controls.minDistance = 6;
-        controls.maxDistance = 28;
-        controls.maxPolarAngle = Math.PI * 0.48;
+        controls.minDistance = 5;
+        controls.maxDistance = 32;
+        controls.maxPolarAngle = Math.PI * 0.49;
         controls.target.set(...layout.camera.target);
         controls.update();
 
-        scene.add(new THREE.HemisphereLight(0xf4ead7, 0x17201d, 2.1));
-        const keyLight = new THREE.DirectionalLight(0xffe4b4, 4.2);
-        keyLight.position.set(7, 12, 8);
+        scene.add(new THREE.HemisphereLight(0xf4ead7, 0x17201d, 2.2));
+        const keyLight = new THREE.DirectionalLight(0xffe4b4, 4.5);
+        keyLight.position.set(7, 13, 8);
+        keyLight.castShadow = true;
+        keyLight.shadow.mapSize.set(1024, 1024);
         scene.add(keyLight);
-        const rimLight = new THREE.DirectionalLight(layout.accent, 2.2);
-        rimLight.position.set(-8, 6, -7);
+        const rimLight = new THREE.DirectionalLight(layout.accent, 2.4);
+        rimLight.position.set(-8, 7, -7);
         scene.add(rimLight);
-
-        const floor = new THREE.Mesh(
-          new THREE.CircleGeometry(15, 96),
-          new THREE.MeshStandardMaterial({
-            color: 0x111715,
-            metalness: 0.08,
-            roughness: 0.92,
-          }),
-        );
-        floor.rotation.x = -Math.PI / 2;
-        floor.position.y = -0.06;
-        scene.add(floor);
-
-        const grid = new THREE.GridHelper(27, 27, layout.accent, 0x29312e);
-        grid.material.opacity = 0.22;
-        grid.material.transparent = true;
-        scene.add(grid);
 
         const root = new THREE.Group();
         scene.add(root);
+
+        const groundMaterial = new THREE.MeshStandardMaterial({
+          color:
+            layout.environment === 'park' || layout.environment === 'hillside'
+              ? 0x172018
+              : 0x111715,
+          metalness: 0.03,
+          roughness: 0.96,
+        });
+        const ground = new THREE.Mesh(
+          layout.environment === 'interior'
+            ? new THREE.BoxGeometry(18, 0.12, 14)
+            : new THREE.CircleGeometry(15.5, 96),
+          groundMaterial,
+        );
+        if (layout.environment !== 'interior') ground.rotation.x = -Math.PI / 2;
+        ground.position.y = -0.11;
+        ground.receiveShadow = true;
+        root.add(ground);
+
+        const grid = new THREE.GridHelper(28, 28, layout.accent, 0x29312e);
+        grid.material.opacity = layout.environment === 'interior' ? 0.08 : 0.14;
+        grid.material.transparent = true;
+        root.add(grid);
+
+        for (const modelPart of layout.parts) {
+          const geometry = geometryFor(THREE, modelPart);
+          const material = materialFor(THREE, modelPart, layout.accent);
+          const mesh = new THREE.Mesh(geometry, material);
+          mesh.position.set(...modelPart.position);
+          mesh.rotation.set(...modelPart.rotation);
+          mesh.scale.set(...modelPart.scale);
+          mesh.castShadow = modelPart.material !== 'water';
+          mesh.receiveShadow = true;
+          root.add(mesh);
+        }
+
         const nodeGroups: ThreeType.Group[] = [];
+        const markerMaterials: ThreeType.MeshStandardMaterial[] = [];
         const pickTargets: ThreeType.Object3D[] = [];
         const loadedTextures = new Set<ThreeType.Texture>();
 
-        function makeStructure(index: number) {
-          const node = layout.nodes[index];
+        layout.nodes.forEach((node, index) => {
           const group = new THREE.Group();
           group.position.set(...node.position);
           group.userData.nodeIndex = index;
-          const material = new THREE.MeshStandardMaterial({
-            color: index === 0 ? layout.accent : 0xb7b1a4,
-            emissive: index === 0 ? layout.accent : 0x000000,
-            emissiveIntensity: index === 0 ? 0.16 : 0,
-            metalness: 0.1,
-            roughness: 0.68,
-          });
-          const [width, height, depth] = node.scale;
-          let geometry: ThreeType.BufferGeometry;
-          if (node.shape === 'cylinder') {
-            geometry = new THREE.CylinderGeometry(
-              width * 0.55,
-              width * 0.7,
-              height,
-              28,
-            );
-          } else if (node.shape === 'tower') {
-            geometry = new THREE.CylinderGeometry(
-              width * 0.3,
-              width * 0.56,
-              height,
-              10,
-            );
-          } else if (node.shape === 'dome') {
-            geometry = new THREE.SphereGeometry(
-              width * 0.72,
-              28,
-              16,
-              0,
-              Math.PI * 2,
-              0,
-              Math.PI / 2,
-            );
-          } else {
-            geometry = new THREE.BoxGeometry(width, height, depth);
-          }
-          const mesh = new THREE.Mesh(geometry, material);
-          mesh.position.y = node.shape === 'dome' ? 0.03 : height / 2;
-          mesh.userData.nodeIndex = index;
-          group.add(mesh);
-          pickTargets.push(mesh);
 
+          const markerMaterial = new THREE.MeshStandardMaterial({
+            color:
+              index === 0
+                ? 0x78c7a4
+                : index === layout.nodes.length - 1
+                  ? 0xf0d085
+                  : layout.accent,
+            emissive: 0x000000,
+            emissiveIntensity: 0,
+            metalness: 0.2,
+            roughness: 0.45,
+          });
           const marker = new THREE.Mesh(
-            new THREE.RingGeometry(0.52, 0.72, 40),
+            new THREE.SphereGeometry(0.2, 20, 14),
+            markerMaterial,
+          );
+          marker.position.y = 0.15;
+          marker.userData.nodeIndex = index;
+          marker.castShadow = true;
+          group.add(marker);
+
+          const halo = new THREE.Mesh(
+            new THREE.RingGeometry(0.34, 0.48, 36),
             new THREE.MeshBasicMaterial({
-              color:
-                index === 0
-                  ? 0x78c7a4
-                  : index === layout.nodes.length - 1
-                    ? 0xf0d085
-                    : layout.accent,
+              color: markerMaterial.color,
+              opacity: 0.85,
               side: THREE.DoubleSide,
               transparent: true,
-              opacity: 0.9,
             }),
           );
-          marker.rotation.x = -Math.PI / 2;
-          marker.position.y = 0.05;
-          marker.userData.nodeIndex = index;
-          group.add(marker);
-          pickTargets.push(marker);
+          halo.rotation.x = -Math.PI / 2;
+          halo.position.y = 0.03;
+          halo.userData.nodeIndex = index;
+          group.add(halo);
+
           root.add(group);
           nodeGroups.push(group);
-        }
-
-        layout.nodes.forEach((_, index) => makeStructure(index));
-
-        const routeWidth =
-          guide.spatial.type === 'floorplan'
-            ? 1.15
-            : guide.spatial.type === 'district'
-              ? 0.82
-              : 0.42;
-        const routeMaterial = new THREE.MeshStandardMaterial({
-          color: guide.spatial.type === 'district' ? 0x252d2a : 0x303835,
-          metalness: 0.04,
-          roughness: 0.95,
-          transparent: true,
-          opacity: guide.spatial.type === 'viewpoints' ? 0 : 0.82,
+          markerMaterials.push(markerMaterial);
+          pickTargets.push(marker, halo);
         });
 
         for (const [from, to] of layout.paths) {
           const start = new THREE.Vector3(...layout.nodes[from].position);
           const end = new THREE.Vector3(...layout.nodes[to].position);
-          if (guide.spatial.type !== 'viewpoints') {
-            const midpoint = start.clone().add(end).multiplyScalar(0.5);
-            const distance = start.distanceTo(end);
-            const strip = new THREE.Mesh(
-              new THREE.BoxGeometry(distance, 0.08, routeWidth),
-              routeMaterial.clone(),
-            );
-            strip.position.set(midpoint.x, midpoint.y + 0.02, midpoint.z);
-            strip.rotation.y = -Math.atan2(end.z - start.z, end.x - start.x);
-            root.add(strip);
-          }
           start.y += 0.08;
           end.y += 0.08;
           const geometry = new THREE.BufferGeometry().setFromPoints([
@@ -224,9 +376,9 @@ export function GuideSpatial({ guide }: { guide: GuideRecord }) {
             geometry,
             new THREE.LineDashedMaterial({
               color: layout.accent,
-              dashSize: 0.28,
-              gapSize: 0.18,
-              opacity: 0.72,
+              dashSize: 0.25,
+              gapSize: 0.15,
+              opacity: 0.8,
               transparent: true,
             }),
           );
@@ -234,85 +386,75 @@ export function GuideSpatial({ guide }: { guide: GuideRecord }) {
           root.add(line);
         }
 
-        if (guide.spatial.type === 'viewpoints') {
-          const sightRing = new THREE.Mesh(
-            new THREE.RingGeometry(4.75, 4.9, 72),
-            new THREE.MeshBasicMaterial({
-              color: layout.accent,
-              opacity: 0.24,
-              side: THREE.DoubleSide,
-              transparent: true,
-            }),
-          );
-          sightRing.rotation.x = -Math.PI / 2;
-          sightRing.position.y = 0.02;
-          root.add(sightRing);
-        }
-
         const textureLoader = new THREE.TextureLoader();
-        imageSources.slice(0, layout.nodes.length).forEach((source, index) => {
-          if (!source) return;
-          textureLoader.load(
-            source,
-            (texture) => {
-              if (disposed) {
-                texture.dispose();
-                return;
-              }
-              loadedTextures.add(texture);
-              texture.colorSpace = THREE.SRGBColorSpace;
-              texture.anisotropy = Math.min(
-                8,
-                renderer.capabilities.getMaxAnisotropy(),
+        const geometryOnly = new URLSearchParams(window.location.search).has(
+          'qaGeometry',
+        );
+        if (!geometryOnly)
+          imageSources
+            .slice(0, layout.nodes.length)
+            .forEach((source, index) => {
+              if (!source) return;
+              textureLoader.load(
+                source,
+                (texture) => {
+                  if (disposed) {
+                    texture.dispose();
+                    return;
+                  }
+                  loadedTextures.add(texture);
+                  texture.colorSpace = THREE.SRGBColorSpace;
+                  texture.anisotropy = Math.min(
+                    8,
+                    renderer.capabilities.getMaxAnisotropy(),
+                  );
+                  const image = texture.image as {
+                    naturalHeight?: number;
+                    naturalWidth?: number;
+                    height?: number;
+                    width?: number;
+                  };
+                  const width = image.naturalWidth ?? image.width ?? 1;
+                  const height = image.naturalHeight ?? image.height ?? 1;
+                  const aspect = Math.max(0.65, Math.min(1.65, width / height));
+                  const panelHeight = 0.92;
+                  const panel = new THREE.Sprite(
+                    new THREE.SpriteMaterial({
+                      map: texture,
+                      color: 0xffffff,
+                      depthTest: true,
+                      toneMapped: false,
+                    }),
+                  );
+                  panel.position.set(index % 2 === 0 ? -0.58 : 0.58, 1.05, 0);
+                  panel.scale.set(panelHeight * aspect, panelHeight, 1);
+                  panel.userData.nodeIndex = index;
+                  nodeGroups[index]?.add(panel);
+                  pickTargets.push(panel);
+                },
+                undefined,
+                () => undefined,
               );
-              const image = texture.image as {
-                naturalHeight?: number;
-                naturalWidth?: number;
-                height?: number;
-                width?: number;
-              };
-              const width = image.naturalWidth ?? image.width ?? 1;
-              const height = image.naturalHeight ?? image.height ?? 1;
-              const aspect = Math.max(0.65, Math.min(1.65, width / height));
-              const panelHeight = 1.75;
-              const panel = new THREE.Sprite(
-                new THREE.SpriteMaterial({
-                  map: texture,
-                  color: 0xffffff,
-                  depthTest: true,
-                  toneMapped: false,
-                }),
-              );
-              panel.position.set(0, layout.nodes[index].scale[1] + 1.25, 0);
-              panel.scale.set(panelHeight * aspect, panelHeight, 1);
-              panel.userData.nodeIndex = index;
-              nodeGroups[index]?.add(panel);
-              pickTargets.push(panel);
-            },
-            undefined,
-            () => undefined,
-          );
-        });
+            });
 
         function focusNode(index: number | null) {
           setActiveNode(index);
           nodeGroups.forEach((group, nodeIndex) => {
             const selected = index === nodeIndex;
-            group.scale.setScalar(selected ? 1.16 : 1);
-            const material = (group.children[0] as ThreeType.Mesh)
-              .material as ThreeType.MeshStandardMaterial;
-            material.emissive.set(selected ? layout.accent : 0x000000);
-            material.emissiveIntensity = selected ? 0.28 : 0;
+            group.scale.setScalar(selected ? 1.18 : 1);
+            markerMaterials[nodeIndex].emissive.set(
+              selected ? layout.accent : 0x000000,
+            );
+            markerMaterials[nodeIndex].emissiveIntensity = selected ? 0.45 : 0;
           });
           if (index === null) {
             camera.position.set(...layout.camera.position);
             controls.target.set(...layout.camera.target);
           } else {
-            const node = layout.nodes[index];
-            const target = new THREE.Vector3(...node.position);
-            target.y += node.scale[1] * 0.55;
+            const target = new THREE.Vector3(...layout.nodes[index].position);
+            target.y += 0.65;
             controls.target.copy(target);
-            camera.position.set(target.x + 5.6, target.y + 4.4, target.z + 6.1);
+            camera.position.set(target.x + 4.8, target.y + 3.8, target.z + 5.3);
           }
           controls.update();
         }
@@ -347,7 +489,7 @@ export function GuideSpatial({ guide }: { guide: GuideRecord }) {
           if (disposed) return;
           const delta = Math.min((timestamp - previousTime) / 1000, 0.05);
           previousTime = timestamp;
-          if (rotatingRef.current) root.rotation.y += delta * 0.09;
+          if (rotatingRef.current) root.rotation.y += delta * 0.055;
           controls.update();
           renderer.render(scene, camera);
           activeCanvas.dataset.rendered = 'true';
@@ -393,7 +535,7 @@ export function GuideSpatial({ guide }: { guide: GuideRecord }) {
       focusNodeRef.current = () => undefined;
       unmountScene?.();
     };
-  }, [guide.spatial.type, imageSources, layout]);
+  }, [imageSources, layout]);
 
   function toggleRotation() {
     const next = !rotating;
@@ -470,8 +612,8 @@ export function GuideSpatial({ guide }: { guide: GuideRecord }) {
         </ol>
       </section>
       <p className="guide-disclaimer">
-        {guide.spatial.note}{' '}
-        3D 导览为示意性简化重建，图片节点对应本页关键作品或现场，不作为精确测绘或导航依据。
+        {guide.spatial.note} 3D
+        导览依据景点实体空间与公开导览平面进行简化重建，不作为现场精确测绘或导航依据。
       </p>
     </section>
   );

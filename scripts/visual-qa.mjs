@@ -9,7 +9,8 @@ await mkdir(outputDirectory, { recursive: true });
 
 const browser = await chromium.launch({
   headless: true,
-  executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  executablePath:
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
   args: ['--enable-webgl', '--ignore-gpu-blocklist', '--use-angle=swiftshader'],
 });
 
@@ -36,7 +37,10 @@ async function inspectGuide({ name, route, viewport }) {
       document.querySelector('.guide-spatial-3d__canvas')?.dataset.rendered ===
       'true',
   );
-  await page.waitForTimeout(900);
+  const pauseButton = page.getByRole('button', { name: '暂停自动旋转' });
+  if (await pauseButton.isVisible()) await pauseButton.click();
+  await page.getByRole('button', { name: '重置三维视角' }).click();
+  await page.waitForTimeout(450);
 
   const canvasBox = await canvas.boundingBox();
   if (!canvasBox || canvasBox.width < 280 || canvasBox.height < 300) {
@@ -46,13 +50,14 @@ async function inspectGuide({ name, route, viewport }) {
   const imageCount = await page.locator('.guide-highlight__media img').count();
   const loadedImages = await page
     .locator('.guide-highlight__media img')
-    .evaluateAll((images) =>
-      images.filter(
-        (image) =>
-          image instanceof HTMLImageElement &&
-          image.complete &&
-          image.naturalWidth > 0,
-      ).length,
+    .evaluateAll(
+      (images) =>
+        images.filter(
+          (image) =>
+            image instanceof HTMLImageElement &&
+            image.complete &&
+            image.naturalWidth > 0,
+        ).length,
     );
   if (imageCount < 3 || loadedImages !== imageCount) {
     throw new Error(`${name}: highlight images did not load`);
@@ -69,6 +74,7 @@ async function inspectGuide({ name, route, viewport }) {
   }
 
   const firstNode = page.locator('.guide-spatial-3d__nodes button').first();
+  const canvasStats = await assertCanvasPixels(canvas, name);
   await firstNode.click();
   if ((await firstNode.getAttribute('data-active')) !== 'true') {
     throw new Error(`${name}: 3D node focus did not activate`);
@@ -82,7 +88,6 @@ async function inspectGuide({ name, route, viewport }) {
     throw new Error(`${name}: horizontal overflow detected`);
   }
 
-  const canvasStats = await assertCanvasPixels(canvas, name);
   const pagePath = join(outputDirectory, `${name}-page.png`);
   await page.screenshot({ fullPage: true, path: pagePath });
   await page.close();
@@ -93,49 +98,81 @@ async function inspectGuide({ name, route, viewport }) {
       height: Math.round(canvasBox.height),
       spread: canvasStats.spread,
     },
+    canvasPath: canvasStats.imagePath,
     images: loadedImages,
     pagePath,
   };
 }
 
 try {
+  const desktopGuides = [
+    ['pantheon', '/guides/pantheon/'],
+    ['colosseum', '/guides/colosseum/'],
+    ['grand-canal', '/guides/grand-canal/'],
+    ['florence-duomo', '/guides/florence-duomo/'],
+    ['leaning-tower', '/guides/leaning-tower/'],
+    ['sagrada-familia', '/guides/sagrada-familia/'],
+    ['park-guell', '/guides/park-guell/'],
+    ['casa-batllo', '/guides/casa-batllo/'],
+    ['hohenzollern', '/guides/hohenzollern/'],
+    ['cologne-cathedral', '/guides/cologne-cathedral/'],
+    ['notre-dame-towers', '/guides/notre-dame-towers/'],
+    ['uffizi', '/guides/uffizi/'],
+  ];
   const results = [];
+  for (const [name, route] of desktopGuides) {
+    results.push(
+      await inspectGuide({
+        name: `${name}-desktop`,
+        route,
+        viewport: { width: 1440, height: 1000 },
+      }),
+    );
+  }
   results.push(
     await inspectGuide({
-      name: 'pantheon-desktop',
+      name: 'pantheon-mobile',
       route: '/guides/pantheon/',
-      viewport: { width: 1440, height: 1000 },
-    }),
-  );
-  results.push(
-    await inspectGuide({
-      name: 'picasso-desktop',
-      route: '/guides/picasso-barcelona/',
-      viewport: { width: 1440, height: 1000 },
-    }),
-  );
-  results.push(
-    await inspectGuide({
-      name: 'trastevere-desktop',
-      route: '/guides/trastevere/',
-      viewport: { width: 1440, height: 1000 },
-    }),
-  );
-  results.push(
-    await inspectGuide({
-      name: 'museum-ludwig-desktop',
-      route: '/guides/museum-ludwig/',
-      viewport: { width: 1440, height: 1000 },
-    }),
-  );
-  results.push(
-    await inspectGuide({
-      name: 'picasso-mobile',
-      route: '/guides/picasso-barcelona/',
       viewport: { width: 390, height: 844 },
     }),
   );
-  console.log(JSON.stringify(results, null, 2));
+
+  const vectors = [];
+  for (const result of results.filter((item) =>
+    item.name.endsWith('-desktop'),
+  )) {
+    const { data } = await sharp(result.canvasPath)
+      .resize(48, 32, { fit: 'fill' })
+      .greyscale()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    vectors.push({ name: result.name, data });
+  }
+  const closePairs = [];
+  for (let left = 0; left < vectors.length; left += 1) {
+    for (let right = left + 1; right < vectors.length; right += 1) {
+      let total = 0;
+      for (let index = 0; index < vectors[left].data.length; index += 1) {
+        total += Math.abs(
+          vectors[left].data[index] - vectors[right].data[index],
+        );
+      }
+      const difference = total / vectors[left].data.length;
+      if (difference < 5) {
+        closePairs.push({
+          difference: Number(difference.toFixed(2)),
+          left: vectors[left].name,
+          right: vectors[right].name,
+        });
+      }
+    }
+  }
+  if (closePairs.length > 0) {
+    throw new Error(
+      `3D scenes are visually too similar: ${JSON.stringify(closePairs)}`,
+    );
+  }
+  console.log(JSON.stringify({ closePairs, results }, null, 2));
 } finally {
   await browser.close();
 }

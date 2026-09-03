@@ -27,6 +27,11 @@ const mergeDefinitions: MergeDefinition[] = [
     itemIds: ['florence-duomo-exterior', 'brunelleschi-dome'],
   },
   {
+    slug: 'la-scala',
+    title: '斯卡拉歌剧院',
+    itemIds: ['la-scala-evening', 'la-scala-museum'],
+  },
+  {
     slug: 'ponte-vecchio',
     title: '老桥',
     itemIds: ['ponte-vecchio-night-27', 'ponte-vecchio-night-28'],
@@ -221,7 +226,14 @@ export const guideCatalog: GuideRecord[] = [
             ...content,
             hero: content.hero ?? guide.hero,
           };
-    const media = guideMediaBySlug[guide.slug];
+    const media =
+      guideMediaBySlug[guide.slug] ??
+      (guide.slug === 'la-scala'
+        ? [
+            ...(guideMediaBySlug['la-scala-evening'] ?? []),
+            ...(guideMediaBySlug['la-scala-museum'] ?? []),
+          ]
+        : undefined);
     if (!media) return enrichedGuide;
 
     return {
