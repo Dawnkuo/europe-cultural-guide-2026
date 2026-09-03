@@ -1,4 +1,4 @@
-const CACHE = 'europe-cultural-guide-v5';
+const CACHE = 'europe-cultural-guide-v6';
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '');
 const scoped = (path) => `${BASE_PATH}${path}`;
 const CORE = [
@@ -6,6 +6,7 @@ const CORE = [
   '/itinerary/',
   '/cities/',
   '/bookings/',
+  '/vatican-guide/',
   '/manifest.webmanifest',
   '/images/st-peters-hero.jpg',
   '/images/paris.jpg',

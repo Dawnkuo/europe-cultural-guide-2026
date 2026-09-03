@@ -1,64 +1,42 @@
-import { createHash } from "node:crypto";
-import { readFileSync, statSync } from "node:fs";
-import { resolve } from "node:path";
-import { describe, expect, it } from "vitest";
+import { existsSync, statSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { describe, expect, it } from 'vitest';
 
-type PrecacheManifest = {
-  version: string;
-  bytes: number;
-  files: Array<{ url: string; bytes: number; sha256: string }>;
-};
+const importRoot = resolve(process.cwd(), 'public/vatican-guide');
 
-const importRoot = resolve(process.cwd(), "public/vatican-guide");
+const reusedImages = [
+  'e74b56fe93a51192d6.webp',
+  '60870758ced9f2717c.webp',
+  '414f85f266b23488b8.webp',
+  'd17104dfc05130fee8.webp',
+  '942ae98cc350e8c5ec.webp',
+  '87a903cd3ef4e8f849.webp',
+  '0adf582fd3b337d9b7.webp',
+  '8468f3720f411fd64b.webp',
+  '87b056610ddec2ee19.webp',
+  '7c8ef6daf2c79cae8b.webp',
+];
 
-describe("embedded Vatican offline guide", () => {
-  function fileManifest() {
-    return JSON.parse(
-      readFileSync(resolve(importRoot, "precache.json"), "utf8"),
-    ) as PrecacheManifest;
-  }
-
-  function runtimeManifest() {
-    const declaration = readFileSync(resolve(importRoot, "sw.js"), "utf8")
-      .split("\n")
-      .find((line) => line.startsWith("const PRECACHE = "))!;
-    return JSON.parse(
-      declaration.slice("const PRECACHE = ".length, -1),
-    ) as PrecacheManifest;
-  }
-
-  it("keeps and verifies every runtime-precached asset inside the imported local directory", () => {
-    const manifest = fileManifest();
-
-    expect(runtimeManifest()).toEqual(manifest);
-    expect(manifest.bytes).toBe(
-      manifest.files.reduce((total, file) => total + file.bytes, 0),
-    );
-
-    for (const file of manifest.files) {
-      expect(file.url.startsWith("./")).toBe(true);
-      const path = resolve(importRoot, file.url.slice(2));
-      expect(path.startsWith(`${importRoot}/`)).toBe(true);
-      expect(statSync(path).size).toBe(file.bytes);
-      expect(
-        createHash("sha256").update(readFileSync(path)).digest("hex"),
-      ).toBe(file.sha256);
+describe('native Vatican guide material', () => {
+  it('keeps the reviewed local artwork and architecture images', () => {
+    for (const image of reusedImages) {
+      const path = resolve(importRoot, 'assets', 'images', image);
+      expect(existsSync(path)).toBe(true);
+      expect(statSync(path).size).toBeGreaterThan(0);
     }
   });
 
-  it("does not send visitors to the old hosted Vatican guide", () => {
-    const searchableFiles = [
-      "index.html",
-      "assets/app.js",
-      "assets/offline.js",
-      "sw.js",
-      "manifest.webmanifest",
-    ];
-
-    for (const file of searchableFiles) {
-      const body = readFileSync(resolve(importRoot, file), "utf8");
-      expect(body).not.toContain("dawnkuo.github.io/vatican-offline-guide");
-      expect(body).not.toContain('"/vatican-offline-guide/"');
+  it('does not retain the legacy solid-model runtime shell', () => {
+    for (const file of [
+      'index.html',
+      'assets/app.js',
+      'assets/app.css',
+      'assets/offline.js',
+      'manifest.webmanifest',
+      'precache.json',
+      'sw.js',
+    ]) {
+      expect(existsSync(resolve(importRoot, file))).toBe(false);
     }
   });
 });

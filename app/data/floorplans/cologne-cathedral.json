@@ -1,0 +1,615 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "treasury",
+      "label": "地下层：珍宝馆拱顶地窖",
+      "elevation": -3,
+      "stackOrder": 0,
+      "outline": [
+        [
+          2.5,
+          -0.7999999999999998
+        ],
+        [
+          6.5,
+          -0.7999999999999998
+        ],
+        [
+          6.5,
+          5.2
+        ],
+        [
+          2.5,
+          5.2
+        ],
+        [
+          2.5,
+          -0.7999999999999998
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "treasury-vaults",
+          "kind": "gallery",
+          "label": "中世纪拱顶珍宝馆",
+          "polygon": [
+            [
+              2.8,
+              -0.30000000000000004
+            ],
+            [
+              6.2,
+              -0.30000000000000004
+            ],
+            [
+              6.2,
+              3.9000000000000004
+            ],
+            [
+              2.8,
+              3.9000000000000004
+            ],
+            [
+              2.8,
+              -0.30000000000000004
+            ]
+          ]
+        },
+        {
+          "id": "treasury-entry",
+          "kind": "circulation",
+          "label": "北侧独立入口",
+          "polygon": [
+            [
+              3.4,
+              4.2
+            ],
+            [
+              5.6,
+              4.2
+            ],
+            [
+              5.6,
+              5.2
+            ],
+            [
+              3.4,
+              5.2
+            ],
+            [
+              3.4,
+              4.2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cathedral",
+      "label": "教堂层：五廊式中殿、耳堂与唱诗席",
+      "elevation": 0,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -3,
+          -8
+        ],
+        [
+          3,
+          -8
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          6,
+          -3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          -3,
+          8
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -6,
+          3
+        ],
+        [
+          -6,
+          -3
+        ],
+        [
+          -3,
+          -3
+        ],
+        [
+          -3,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "west-entry",
+          "kind": "circulation",
+          "label": "西立面旅游入口",
+          "polygon": [
+            [
+              -2.6,
+              6.05
+            ],
+            [
+              2.6,
+              6.05
+            ],
+            [
+              2.6,
+              7.55
+            ],
+            [
+              -2.6,
+              7.55
+            ],
+            [
+              -2.6,
+              6.05
+            ]
+          ]
+        },
+        {
+          "id": "nave",
+          "kind": "hall",
+          "label": "中殿与侧廊",
+          "polygon": [
+            [
+              -2.6,
+              -2.65
+            ],
+            [
+              2.6,
+              -2.65
+            ],
+            [
+              2.6,
+              5.85
+            ],
+            [
+              -2.6,
+              5.85
+            ],
+            [
+              -2.6,
+              -2.65
+            ]
+          ]
+        },
+        {
+          "id": "choir-shrine",
+          "kind": "chapel",
+          "label": "唱诗席与三王圣龛",
+          "polygon": [
+            [
+              -2.6,
+              -7.4
+            ],
+            [
+              2.6,
+              -7.4
+            ],
+            [
+              2.6,
+              -4.199999999999999
+            ],
+            [
+              -2.6,
+              -4.199999999999999
+            ],
+            [
+              -2.6,
+              -7.4
+            ]
+          ]
+        },
+        {
+          "id": "gero-chapel",
+          "kind": "chapel",
+          "label": "十字架小堂与Gero十字架",
+          "polygon": [
+            [
+              3.4999999999999996,
+              -2.8
+            ],
+            [
+              5.699999999999999,
+              -2.8
+            ],
+            [
+              5.699999999999999,
+              -0.5999999999999999
+            ],
+            [
+              3.4999999999999996,
+              -0.5999999999999999
+            ],
+            [
+              3.4999999999999996,
+              -2.8
+            ]
+          ]
+        },
+        {
+          "id": "south-transept",
+          "kind": "chapel",
+          "label": "南耳堂Richter彩窗",
+          "polygon": [
+            [
+              -5.699999999999999,
+              -2.2
+            ],
+            [
+              -3.4999999999999996,
+              -2.2
+            ],
+            [
+              -3.4999999999999996,
+              1.4
+            ],
+            [
+              -5.699999999999999,
+              1.4
+            ],
+            [
+              -5.699999999999999,
+              -2.2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belfry",
+      "label": "南塔钟室层",
+      "elevation": 4.2,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -3.85,
+          4.15
+        ],
+        [
+          -0.5500000000000003,
+          4.15
+        ],
+        [
+          -0.5500000000000003,
+          7.449999999999999
+        ],
+        [
+          -3.85,
+          7.449999999999999
+        ],
+        [
+          -3.85,
+          4.15
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "spiral-stair",
+          "kind": "circulation",
+          "label": "南塔螺旋梯",
+          "polygon": [
+            [
+              -3.3000000000000003,
+              4.6
+            ],
+            [
+              -2.1,
+              4.6
+            ],
+            [
+              -2.1,
+              7
+            ],
+            [
+              -3.3000000000000003,
+              7
+            ],
+            [
+              -3.3000000000000003,
+              4.6
+            ]
+          ]
+        },
+        {
+          "id": "bell-chamber",
+          "kind": "hall",
+          "label": "钟室层",
+          "polygon": [
+            [
+              -2.1,
+              4.6
+            ],
+            [
+              -0.9,
+              4.6
+            ],
+            [
+              -0.9,
+              7
+            ],
+            [
+              -2.1,
+              7
+            ],
+            [
+              -2.1,
+              4.6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "platform",
+      "label": "南塔约100米观景平台",
+      "elevation": 7.2,
+      "stackOrder": 3,
+      "outline": [
+        [
+          -3.85,
+          4.15
+        ],
+        [
+          -0.5500000000000003,
+          4.15
+        ],
+        [
+          -0.5500000000000003,
+          7.449999999999999
+        ],
+        [
+          -3.85,
+          7.449999999999999
+        ],
+        [
+          -3.85,
+          4.15
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "metal-stair",
+          "kind": "circulation",
+          "label": "上层金属梯",
+          "polygon": [
+            [
+              -3.3000000000000003,
+              4.6
+            ],
+            [
+              -2.1,
+              4.6
+            ],
+            [
+              -2.1,
+              7
+            ],
+            [
+              -3.3000000000000003,
+              7
+            ],
+            [
+              -3.3000000000000003,
+              4.6
+            ]
+          ]
+        },
+        {
+          "id": "view-platform",
+          "kind": "outdoor",
+          "label": "环形观景平台",
+          "polygon": [
+            [
+              -2.1,
+              4.6
+            ],
+            [
+              -0.9,
+              4.6
+            ],
+            [
+              -0.9,
+              7
+            ],
+            [
+              -2.1,
+              7
+            ],
+            [
+              -2.1,
+              4.6
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "cathedral",
+      "kind": "gate",
+      "position": [
+        0,
+        7.8
+      ],
+      "connects": [
+        "west-entry"
+      ]
+    },
+    {
+      "floorId": "treasury",
+      "kind": "gate",
+      "position": [
+        4.5,
+        4.8
+      ],
+      "connects": [
+        "treasury-entry"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "cathedral",
+      "spaceId": "west-entry",
+      "position": [
+        0,
+        6.8
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "choir-shrine",
+      "position": [
+        0,
+        -5.8
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "gero-chapel",
+      "position": [
+        4.6,
+        -1.7
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "south-transept",
+      "position": [
+        -4.6,
+        -0.4
+      ]
+    },
+    {
+      "floorId": "treasury",
+      "spaceId": "treasury-vaults",
+      "position": [
+        4.5,
+        1.8
+      ]
+    },
+    {
+      "floorId": "platform",
+      "spaceId": "view-platform",
+      "position": [
+        -1.5,
+        5.8
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "levels",
+        "route"
+      ],
+      "title": "Cologne Cathedral visitor circulation and accessibility",
+      "url": "https://www.koelner-dom.de/besuchen/barrierefreiheit",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "authoritative",
+      "scope": [
+        "footprint",
+        "spaces"
+      ],
+      "title": "WDR virtual tour of Cologne Cathedral",
+      "url": "https://dom360.wdr.de/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "treasury-stair",
+      "kind": "stairs",
+      "label": "珍宝馆下行楼梯",
+      "landings": [
+        {
+          "floorId": "cathedral",
+          "position": [
+            4.5,
+            3.8
+          ]
+        },
+        {
+          "floorId": "treasury",
+          "position": [
+            4.5,
+            3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south-tower-stair",
+      "kind": "stairs",
+      "label": "南塔螺旋梯",
+      "landings": [
+        {
+          "floorId": "cathedral",
+          "position": [
+            -2.7,
+            5.8
+          ]
+        },
+        {
+          "floorId": "belfry",
+          "position": [
+            -2.7,
+            5.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "upper-metal-stair",
+      "kind": "stairs",
+      "label": "上层金属梯",
+      "landings": [
+        {
+          "floorId": "belfry",
+          "position": [
+            -2.7,
+            5.8
+          ]
+        },
+        {
+          "floorId": "platform",
+          "position": [
+            -2.7,
+            5.8
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "second",
+      "label": "二层：A区与三面长廊",
+      "elevation": 0,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -7,
+          -5
+        ],
+        [
+          7,
+          -5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          4.8,
+          5
+        ],
+        [
+          4.8,
+          -2.8
+        ],
+        [
+          -4.8,
+          -2.8
+        ],
+        [
+          -4.8,
+          5
+        ],
+        [
+          -7,
+          5
+        ],
+        [
+          -7,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "east-corridor",
+          "kind": "gallery",
+          "label": "东长廊与中世纪展区",
+          "polygon": [
+            [
+              -6.9,
+              -2.7
+            ],
+            [
+              -4.9,
+              -2.7
+            ],
+            [
+              -4.9,
+              4.7
+            ],
+            [
+              -6.9,
+              4.7
+            ],
+            [
+              -6.9,
+              -2.7
+            ]
+          ]
+        },
+        {
+          "id": "a4",
+          "kind": "gallery",
+          "label": "A4 乔托与契马布埃",
+          "polygon": [
+            [
+              -6.9,
+              -4.7
+            ],
+            [
+              -4.9,
+              -4.7
+            ],
+            [
+              -4.9,
+              -2.9
+            ],
+            [
+              -6.9,
+              -2.9
+            ],
+            [
+              -6.9,
+              -4.7
+            ]
+          ]
+        },
+        {
+          "id": "a10-a12",
+          "kind": "gallery",
+          "label": "A10-A12 波提切利",
+          "polygon": [
+            [
+              -4.7,
+              -4.75
+            ],
+            [
+              -0.7000000000000002,
+              -4.75
+            ],
+            [
+              -0.7000000000000002,
+              -3.05
+            ],
+            [
+              -4.7,
+              -3.05
+            ],
+            [
+              -4.7,
+              -4.75
+            ]
+          ]
+        },
+        {
+          "id": "south-corridor",
+          "kind": "circulation",
+          "label": "南长廊",
+          "polygon": [
+            [
+              -1.6,
+              -4.85
+            ],
+            [
+              1.6,
+              -4.85
+            ],
+            [
+              1.6,
+              -3.15
+            ],
+            [
+              -1.6,
+              -3.15
+            ],
+            [
+              -1.6,
+              -4.85
+            ]
+          ]
+        },
+        {
+          "id": "a35",
+          "kind": "gallery",
+          "label": "A35 达·芬奇",
+          "polygon": [
+            [
+              1.75,
+              -4.75
+            ],
+            [
+              4.45,
+              -4.75
+            ],
+            [
+              4.45,
+              -3.05
+            ],
+            [
+              1.75,
+              -3.05
+            ],
+            [
+              1.75,
+              -4.75
+            ]
+          ]
+        },
+        {
+          "id": "a38",
+          "kind": "gallery",
+          "label": "A38 拉斐尔与米开朗琪罗",
+          "polygon": [
+            [
+              4.9,
+              -4
+            ],
+            [
+              6.9,
+              -4
+            ],
+            [
+              6.9,
+              -1.5999999999999999
+            ],
+            [
+              4.9,
+              -1.5999999999999999
+            ],
+            [
+              4.9,
+              -4
+            ]
+          ]
+        },
+        {
+          "id": "west-corridor",
+          "kind": "circulation",
+          "label": "西长廊与下楼方向",
+          "polygon": [
+            [
+              4.9,
+              -1.5
+            ],
+            [
+              6.9,
+              -1.5
+            ],
+            [
+              6.9,
+              4.7
+            ],
+            [
+              4.9,
+              4.7
+            ],
+            [
+              4.9,
+              -1.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first",
+      "label": "一层：B、C、D、E区",
+      "elevation": 3.2,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -7,
+          -5
+        ],
+        [
+          7,
+          -5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          -7,
+          5
+        ],
+        [
+          -7,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "b-c",
+          "kind": "gallery",
+          "label": "B、C展区",
+          "polygon": [
+            [
+              -6.85,
+              -2.95
+            ],
+            [
+              -4.75,
+              -2.95
+            ],
+            [
+              -4.75,
+              4.55
+            ],
+            [
+              -6.85,
+              4.55
+            ],
+            [
+              -6.85,
+              -2.95
+            ]
+          ]
+        },
+        {
+          "id": "d1-d18",
+          "kind": "gallery",
+          "label": "D1-D18展区",
+          "polygon": [
+            [
+              -4.4,
+              -4.8
+            ],
+            [
+              4.4,
+              -4.8
+            ],
+            [
+              4.4,
+              -3
+            ],
+            [
+              -4.4,
+              -3
+            ],
+            [
+              -4.4,
+              -4.8
+            ]
+          ]
+        },
+        {
+          "id": "d19",
+          "kind": "gallery",
+          "label": "D19 瓦萨里走廊集合点",
+          "polygon": [
+            [
+              4.75,
+              -4.1
+            ],
+            [
+              6.85,
+              -4.1
+            ],
+            [
+              6.85,
+              -1.4999999999999998
+            ],
+            [
+              4.75,
+              -1.4999999999999998
+            ],
+            [
+              4.75,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "d20-e7",
+          "kind": "gallery",
+          "label": "D20-D28与E区",
+          "polygon": [
+            [
+              4.75,
+              -1.3499999999999999
+            ],
+            [
+              6.85,
+              -1.3499999999999999
+            ],
+            [
+              6.85,
+              3.95
+            ],
+            [
+              4.75,
+              3.95
+            ],
+            [
+              4.75,
+              -1.3499999999999999
+            ]
+          ]
+        },
+        {
+          "id": "exit",
+          "kind": "service",
+          "label": "出口与后勤空间",
+          "polygon": [
+            [
+              -6.85,
+              3.5
+            ],
+            [
+              -4.75,
+              3.5
+            ],
+            [
+              -4.75,
+              4.9
+            ],
+            [
+              -6.85,
+              4.9
+            ],
+            [
+              -6.85,
+              3.5
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "second",
+      "kind": "archway",
+      "position": [
+        -4.9,
+        -3.9
+      ],
+      "connects": [
+        "a4",
+        "a10-a12"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "archway",
+      "position": [
+        4.9,
+        -3.9
+      ],
+      "connects": [
+        "a35",
+        "a38"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "door",
+      "position": [
+        4.9,
+        -2.8
+      ],
+      "connects": [
+        "d1-d18",
+        "d19"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "second",
+      "spaceId": "a4",
+      "position": [
+        -5.9,
+        -3.8
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "a10-a12",
+      "position": [
+        -2.7,
+        -3.9
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "a35",
+      "position": [
+        3.1,
+        -3.9
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "a38",
+      "position": [
+        5.9,
+        -2.8
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "d19",
+      "position": [
+        5.8,
+        -2.8
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Uffizi official visitor map, updated July 2026",
+      "url": "https://www.datocms-assets.com/103094/1772716618-exe_broch_gli-uffizi_gennaio2026_it.pdf",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "buontalenti-stair",
+      "kind": "stairs",
+      "label": "Buontalenti大阶梯",
+      "landings": [
+        {
+          "floorId": "second",
+          "position": [
+            5.8,
+            3.8
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            5.8,
+            3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "访客电梯",
+      "landings": [
+        {
+          "floorId": "second",
+          "position": [
+            6.2,
+            4.2
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            6.2,
+            4.2
+          ]
+        }
+      ]
+    }
+  ]
+}

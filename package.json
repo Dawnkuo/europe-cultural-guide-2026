@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
-    "build:github": "vinext build && node scripts/prepare-github-pages.mjs",
+    "build:github": "node scripts/clean-build.mjs && GITHUB_PAGES=true vinext build && node scripts/prepare-github-pages.mjs",
+    "floorplans:generate": "node scripts/generate-floorplan-data.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "test": "vitest",
     "lint": "oxlint",

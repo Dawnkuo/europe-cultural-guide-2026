@@ -12,12 +12,6 @@ type MergeDefinition = {
   slug: string;
   title: string;
   itemIds: string[];
-  embeddedGuide?: GuideRecord['embeddedGuide'];
-};
-
-const embeddedVaticanGuide = {
-  path: '/vatican-guide/',
-  label: '打开完整离线导览',
 };
 
 const mergeDefinitions: MergeDefinition[] = [
@@ -40,13 +34,11 @@ const mergeDefinitions: MergeDefinition[] = [
     slug: 'vatican-museums',
     title: '梵蒂冈博物馆',
     itemIds: ['key-master', 'vatican-followup'],
-    embeddedGuide: embeddedVaticanGuide,
   },
   {
     slug: 'st-peters-basilica',
     title: '圣彼得大教堂',
     itemIds: ['st-peters-basilica', 'st-peters-dome'],
-    embeddedGuide: embeddedVaticanGuide,
   },
   {
     slug: 'sagrada-familia',
@@ -89,7 +81,6 @@ function buildFallbackGuide(
   slug: string,
   title: string,
   entries: typeof culturalEntries,
-  embeddedGuide?: GuideRecord['embeddedGuide'],
 ): GuideRecord {
   const first = entries[0];
   const profile = cityProfileFor(first.item.city);
@@ -184,7 +175,6 @@ function buildFallbackGuide(
         note: '当前记录票面时间、预订状态和到达说明；文化资料将在城市内容包中补齐。',
       },
     ],
-    embeddedGuide,
   };
 }
 
@@ -194,12 +184,7 @@ const mergedGuides = mergeDefinitions.map((definition) => {
   const entries = culturalEntries.filter(({ item }) =>
     definition.itemIds.includes(item.id),
   );
-  return buildFallbackGuide(
-    definition.slug,
-    definition.title,
-    entries,
-    definition.embeddedGuide,
-  );
+  return buildFallbackGuide(definition.slug, definition.title, entries);
 });
 
 const individualGuides = culturalEntries
@@ -218,14 +203,13 @@ export const guideCatalog: GuideRecord[] = [
   .map((guide) => {
     const content =
       guideContentBySlug[guide.slug as keyof typeof guideContentBySlug];
-    const enrichedGuide =
-      !content || guide.embeddedGuide
-        ? guide
-        : {
-            ...guide,
-            ...content,
-            hero: content.hero ?? guide.hero,
-          };
+    const enrichedGuide = !content
+      ? guide
+      : {
+          ...guide,
+          ...content,
+          hero: content.hero ?? guide.hero,
+        };
     const media =
       guideMediaBySlug[guide.slug] ??
       (guide.slug === 'la-scala'

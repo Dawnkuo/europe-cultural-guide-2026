@@ -73,17 +73,12 @@ try {
         ),
       ]
         .filter((path) => /^\/guides\/[^/]+\/$/.test(path))
-        .filter(
-          (path) =>
-            path !== '/guides/vatican-museums/' &&
-            path !== '/guides/st-peters-basilica/',
-        )
-        .sort(),
+        .sort((left, right) => left.localeCompare(right)),
     basePath,
   );
   await indexPage.close();
-  if (routes.length !== 72) {
-    throw new Error(`Expected 72 local guide routes, found ${routes.length}`);
+  if (routes.length !== 74) {
+    throw new Error(`Expected 74 native guide routes, found ${routes.length}`);
   }
 
   const context = await browser.newContext({

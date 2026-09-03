@@ -1,0 +1,685 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "底层庭院",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -14,
+          -8
+        ],
+        [
+          8,
+          -8
+        ],
+        [
+          13,
+          -5
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          -14,
+          8
+        ],
+        [
+          -14,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "street-approach",
+          "kind": "outdoor",
+          "label": "Passeig de Gracia 转角与入口",
+          "polygon": [
+            [
+              -8,
+              -6.8
+            ],
+            [
+              8,
+              -6.8
+            ],
+            [
+              8,
+              -4.8
+            ],
+            [
+              -8,
+              -4.8
+            ],
+            [
+              -8,
+              -6.8
+            ]
+          ]
+        },
+        {
+          "id": "flower-courtyard",
+          "kind": "courtyard",
+          "label": "花卉庭院",
+          "polygon": [
+            [
+              -9.9,
+              -4.1
+            ],
+            [
+              -2.9000000000000004,
+              -4.1
+            ],
+            [
+              -2.9000000000000004,
+              4.9
+            ],
+            [
+              -9.9,
+              4.9
+            ],
+            [
+              -9.9,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "butterfly-courtyard",
+          "kind": "courtyard",
+          "label": "蝴蝶庭院",
+          "polygon": [
+            [
+              2,
+              -3
+            ],
+            [
+              9,
+              -3
+            ],
+            [
+              9,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              -3
+            ]
+          ]
+        },
+        {
+          "id": "ground-circulation",
+          "kind": "circulation",
+          "label": "庭院连廊与访客电梯",
+          "polygon": [
+            [
+              -9,
+              4.5
+            ],
+            [
+              9,
+              4.5
+            ],
+            [
+              9,
+              6.9
+            ],
+            [
+              -9,
+              6.9
+            ],
+            [
+              -9,
+              4.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apartment",
+      "label": "四层住宅公寓",
+      "elevation": 3,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -13,
+          -7.5
+        ],
+        [
+          7.5,
+          -7.5
+        ],
+        [
+          12,
+          -4.5
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          11,
+          7.5
+        ],
+        [
+          -13,
+          7.5
+        ],
+        [
+          -13,
+          -7.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "apartment-entry",
+          "kind": "circulation",
+          "label": "住宅公寓入口与环形动线",
+          "polygon": [
+            [
+              4.5,
+              3.1999999999999997
+            ],
+            [
+              10.5,
+              3.1999999999999997
+            ],
+            [
+              10.5,
+              6.4
+            ],
+            [
+              4.5,
+              6.4
+            ],
+            [
+              4.5,
+              3.1999999999999997
+            ]
+          ]
+        },
+        {
+          "id": "period-apartment",
+          "kind": "gallery",
+          "label": "1911 年住宅公寓陈设",
+          "polygon": [
+            [
+              -11,
+              -5.5
+            ],
+            [
+              6,
+              -5.5
+            ],
+            [
+              6,
+              4.5
+            ],
+            [
+              -11,
+              4.5
+            ],
+            [
+              -11,
+              -5.5
+            ]
+          ]
+        },
+        {
+          "id": "apartment-service-stair",
+          "kind": "circulation",
+          "label": "通往阁楼的服务楼梯",
+          "polygon": [
+            [
+              6.300000000000001,
+              -5
+            ],
+            [
+              10.3,
+              -5
+            ],
+            [
+              10.3,
+              -2
+            ],
+            [
+              6.300000000000001,
+              -2
+            ],
+            [
+              6.300000000000001,
+              -5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "attic",
+      "label": "鲸腹阁楼",
+      "elevation": 6,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -13,
+          -7.5
+        ],
+        [
+          7.5,
+          -7.5
+        ],
+        [
+          12,
+          -4.5
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          11,
+          7.5
+        ],
+        [
+          -13,
+          7.5
+        ],
+        [
+          -13,
+          -7.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "attic-arrival",
+          "kind": "circulation",
+          "label": "阁楼到达区",
+          "polygon": [
+            [
+              5.75,
+              -5
+            ],
+            [
+              10.25,
+              -5
+            ],
+            [
+              10.25,
+              -2
+            ],
+            [
+              5.75,
+              -2
+            ],
+            [
+              5.75,
+              -5
+            ]
+          ]
+        },
+        {
+          "id": "whale-attic",
+          "kind": "gallery",
+          "label": "鲸腹阁楼与高迪展览",
+          "polygon": [
+            [
+              -11,
+              -5.5
+            ],
+            [
+              8,
+              -5.5
+            ],
+            [
+              8,
+              5.5
+            ],
+            [
+              -11,
+              5.5
+            ],
+            [
+              -11,
+              -5.5
+            ]
+          ]
+        },
+        {
+          "id": "roof-stair-exits",
+          "kind": "circulation",
+          "label": "屋顶螺旋楼梯出口",
+          "polygon": [
+            [
+              -4.5,
+              3.7
+            ],
+            [
+              6.5,
+              3.7
+            ],
+            [
+              6.5,
+              6.7
+            ],
+            [
+              -4.5,
+              6.7
+            ],
+            [
+              -4.5,
+              3.7
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof",
+      "label": "武士屋顶",
+      "elevation": 9,
+      "stackOrder": 3,
+      "outline": [
+        [
+          -13,
+          -7.5
+        ],
+        [
+          7.5,
+          -7.5
+        ],
+        [
+          12,
+          -4.5
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          11,
+          7.5
+        ],
+        [
+          -13,
+          7.5
+        ],
+        [
+          -13,
+          -7.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "roof-arrival",
+          "kind": "circulation",
+          "label": "屋顶楼梯出口",
+          "polygon": [
+            [
+              -4,
+              3.7
+            ],
+            [
+              6,
+              3.7
+            ],
+            [
+              6,
+              6.7
+            ],
+            [
+              -4,
+              6.7
+            ],
+            [
+              -4,
+              3.7
+            ]
+          ]
+        },
+        {
+          "id": "warrior-roof",
+          "kind": "outdoor",
+          "label": "烟囱、通风塔与楼梯间群",
+          "polygon": [
+            [
+              -12,
+              -5.5
+            ],
+            [
+              9,
+              -5.5
+            ],
+            [
+              9,
+              5.5
+            ],
+            [
+              -12,
+              5.5
+            ],
+            [
+              -12,
+              -5.5
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        0,
+        -7.2
+      ],
+      "connects": [
+        "street-approach",
+        "flower-courtyard"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "archway",
+      "position": [
+        0,
+        4.8
+      ],
+      "connects": [
+        "flower-courtyard",
+        "ground-circulation"
+      ]
+    },
+    {
+      "floorId": "apartment",
+      "kind": "door",
+      "position": [
+        5,
+        4.8
+      ],
+      "connects": [
+        "apartment-entry",
+        "period-apartment"
+      ]
+    },
+    {
+      "floorId": "apartment",
+      "kind": "door",
+      "position": [
+        6.8,
+        -3.5
+      ],
+      "connects": [
+        "period-apartment",
+        "apartment-service-stair"
+      ]
+    },
+    {
+      "floorId": "attic",
+      "kind": "archway",
+      "position": [
+        5.8,
+        -3.5
+      ],
+      "connects": [
+        "attic-arrival",
+        "whale-attic"
+      ]
+    },
+    {
+      "floorId": "attic",
+      "kind": "archway",
+      "position": [
+        1,
+        4.4
+      ],
+      "connects": [
+        "whale-attic",
+        "roof-stair-exits"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "street-approach",
+      "position": [
+        0,
+        -6.6
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "flower-courtyard",
+      "position": [
+        -6.4,
+        0.4
+      ]
+    },
+    {
+      "floorId": "apartment",
+      "spaceId": "period-apartment",
+      "position": [
+        -2.5,
+        -0.5
+      ]
+    },
+    {
+      "floorId": "attic",
+      "spaceId": "whale-attic",
+      "position": [
+        -1.5,
+        0
+      ]
+    },
+    {
+      "floorId": "roof",
+      "spaceId": "warrior-roof",
+      "position": [
+        -1.5,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels"
+      ],
+      "title": "Casa Mila architecture and visitable spaces",
+      "url": "https://www.lapedrera.com/en/casa-mila/architecture/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "levels",
+        "route"
+      ],
+      "title": "Casa Mila accessibility and visitor circulation",
+      "url": "https://www.lapedrera.com/en/accessibility/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "courtyard-lift",
+      "kind": "lift",
+      "label": "庭院访客电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            8,
+            5.7
+          ]
+        },
+        {
+          "floorId": "apartment",
+          "position": [
+            8,
+            4.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apartment-attic-stair",
+      "kind": "stairs",
+      "label": "住宅公寓至鲸腹阁楼楼梯",
+      "landings": [
+        {
+          "floorId": "apartment",
+          "position": [
+            8.3,
+            -3.5
+          ]
+        },
+        {
+          "floorId": "attic",
+          "position": [
+            8,
+            -3.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "attic-roof-stair",
+      "kind": "stairs",
+      "label": "阁楼至屋顶螺旋楼梯",
+      "landings": [
+        {
+          "floorId": "attic",
+          "position": [
+            1,
+            5.2
+          ]
+        },
+        {
+          "floorId": "roof",
+          "position": [
+            1,
+            5.2
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "basilica",
+      "label": "教堂层：前厅、主堂与黄金祭坛",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -5.5,
+          6.5
+        ],
+        [
+          5.5,
+          6.5
+        ],
+        [
+          5.5,
+          2.4
+        ],
+        [
+          7,
+          2.4
+        ],
+        [
+          7,
+          -2.4
+        ],
+        [
+          5,
+          -2.4
+        ],
+        [
+          5,
+          -6.5
+        ],
+        [
+          -5,
+          -6.5
+        ],
+        [
+          -5,
+          -2.4
+        ],
+        [
+          -7,
+          -2.4
+        ],
+        [
+          -7,
+          2.4
+        ],
+        [
+          -5.5,
+          2.4
+        ],
+        [
+          -5.5,
+          6.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "porta-san-pietro",
+          "kind": "circulation",
+          "label": "圣彼得门与前厅",
+          "polygon": [
+            [
+              -5,
+              4.7
+            ],
+            [
+              -2,
+              4.7
+            ],
+            [
+              -2,
+              6.3
+            ],
+            [
+              -5,
+              6.3
+            ],
+            [
+              -5,
+              4.7
+            ]
+          ]
+        },
+        {
+          "id": "genesis-dome",
+          "kind": "hall",
+          "label": "《创世纪》穹顶",
+          "polygon": [
+            [
+              -0.9999999999999998,
+              3.9
+            ],
+            [
+              4.6,
+              3.9
+            ],
+            [
+              4.6,
+              6.1
+            ],
+            [
+              -0.9999999999999998,
+              6.1
+            ],
+            [
+              -0.9999999999999998,
+              3.9
+            ]
+          ]
+        },
+        {
+          "id": "nave",
+          "kind": "hall",
+          "label": "主堂中轴与金色马赛克穹顶",
+          "polygon": [
+            [
+              -4.5,
+              -2.2
+            ],
+            [
+              4.5,
+              -2.2
+            ],
+            [
+              4.5,
+              4
+            ],
+            [
+              -4.5,
+              4
+            ],
+            [
+              -4.5,
+              -2.2
+            ]
+          ]
+        },
+        {
+          "id": "pala-doro",
+          "kind": "chapel",
+          "label": "主祭坛及黄金祭坛",
+          "polygon": [
+            [
+              -3.4,
+              -6.1
+            ],
+            [
+              3.4,
+              -6.1
+            ],
+            [
+              3.4,
+              -3.5
+            ],
+            [
+              -3.4,
+              -3.5
+            ],
+            [
+              -3.4,
+              -6.1
+            ]
+          ]
+        },
+        {
+          "id": "foresti-stair",
+          "kind": "circulation",
+          "label": "Foresti楼梯入口",
+          "polygon": [
+            [
+              -6.55,
+              -1.4
+            ],
+            [
+              -5.05,
+              -1.4
+            ],
+            [
+              -5.05,
+              1
+            ],
+            [
+              -6.55,
+              1
+            ],
+            [
+              -6.55,
+              -1.4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "museum-loggia",
+      "label": "上层：圣马可博物馆与马廊",
+      "elevation": 3.6,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -5.5,
+          -3.2
+        ],
+        [
+          5.5,
+          -3.2
+        ],
+        [
+          5.5,
+          5.8
+        ],
+        [
+          -5.5,
+          5.8
+        ],
+        [
+          -5.5,
+          -3.2
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "foresti-landing",
+          "kind": "circulation",
+          "label": "Foresti楼梯上层",
+          "polygon": [
+            [
+              -5.15,
+              -2.5999999999999996
+            ],
+            [
+              -3.6500000000000004,
+              -2.5999999999999996
+            ],
+            [
+              -3.6500000000000004,
+              -0.19999999999999996
+            ],
+            [
+              -5.15,
+              -0.19999999999999996
+            ],
+            [
+              -5.15,
+              -2.5999999999999996
+            ]
+          ]
+        },
+        {
+          "id": "museum",
+          "kind": "gallery",
+          "label": "圣马可博物馆",
+          "polygon": [
+            [
+              -3.25,
+              -3
+            ],
+            [
+              3.25,
+              -3
+            ],
+            [
+              3.25,
+              1.4000000000000001
+            ],
+            [
+              -3.25,
+              1.4000000000000001
+            ],
+            [
+              -3.25,
+              -3
+            ]
+          ]
+        },
+        {
+          "id": "horses-loggia",
+          "kind": "outdoor",
+          "label": "原青铜驷马与圣马可马廊",
+          "polygon": [
+            [
+              -4.25,
+              2.75
+            ],
+            [
+              4.25,
+              2.75
+            ],
+            [
+              4.25,
+              5.25
+            ],
+            [
+              -4.25,
+              5.25
+            ],
+            [
+              -4.25,
+              2.75
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "basilica",
+      "kind": "gate",
+      "position": [
+        -3.5,
+        6.3
+      ],
+      "connects": [
+        "porta-san-pietro"
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "kind": "archway",
+      "position": [
+        -1.9,
+        5.3
+      ],
+      "connects": [
+        "porta-san-pietro",
+        "genesis-dome"
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "kind": "archway",
+      "position": [
+        0,
+        3.7
+      ],
+      "connects": [
+        "genesis-dome",
+        "nave"
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "kind": "archway",
+      "position": [
+        0,
+        -2.2
+      ],
+      "connects": [
+        "nave",
+        "pala-doro"
+      ]
+    },
+    {
+      "floorId": "museum-loggia",
+      "kind": "door",
+      "position": [
+        -3.5,
+        -1.2
+      ],
+      "connects": [
+        "foresti-landing",
+        "museum"
+      ]
+    },
+    {
+      "floorId": "museum-loggia",
+      "kind": "archway",
+      "position": [
+        0,
+        2.4
+      ],
+      "connects": [
+        "museum",
+        "horses-loggia"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "basilica",
+      "spaceId": "porta-san-pietro",
+      "position": [
+        -3.5,
+        5.5
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "spaceId": "genesis-dome",
+      "position": [
+        1.8,
+        5
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "spaceId": "nave",
+      "position": [
+        0,
+        0.9
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "spaceId": "pala-doro",
+      "position": [
+        0,
+        -4.8
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "spaceId": "foresti-stair",
+      "position": [
+        -5.8,
+        -0.2
+      ]
+    },
+    {
+      "floorId": "museum-loggia",
+      "spaceId": "horses-loggia",
+      "position": [
+        0,
+        4
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Basilica di San Marco official basilica, Pala d’Oro, museum and loggia route",
+      "url": "https://tickets.basilicasanmarco.it/en/product/tickets/basilica-s-marco-pala-d-oro-museum-loggia-cavalli/2524/9690",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels"
+      ],
+      "title": "Basilica di San Marco official visitor guide",
+      "url": "https://www.basilicasanmarco.it/en/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "foresti-stair",
+      "kind": "stairs",
+      "label": "Foresti楼梯",
+      "landings": [
+        {
+          "floorId": "basilica",
+          "position": [
+            -5.8,
+            -0.2
+          ]
+        },
+        {
+          "floorId": "museum-loggia",
+          "position": [
+            -4.4,
+            -1.4
+          ]
+        }
+      ]
+    }
+  ]
+}

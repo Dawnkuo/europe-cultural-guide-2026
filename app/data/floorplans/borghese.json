@@ -1,0 +1,449 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层：雕塑与古物展室",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -8,
+          -5
+        ],
+        [
+          8,
+          -5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          -8,
+          5
+        ],
+        [
+          -8,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "ticket-cloakroom",
+          "kind": "service",
+          "label": "票务与寄存区",
+          "polygon": [
+            [
+              -7.5,
+              2.45
+            ],
+            [
+              -4.9,
+              2.45
+            ],
+            [
+              -4.9,
+              4.55
+            ],
+            [
+              -7.5,
+              4.55
+            ],
+            [
+              -7.5,
+              2.45
+            ]
+          ]
+        },
+        {
+          "id": "room-3",
+          "kind": "gallery",
+          "label": "3室：阿波罗与达芙妮",
+          "polygon": [
+            [
+              -5,
+              -1.7
+            ],
+            [
+              -1.7999999999999998,
+              -1.7
+            ],
+            [
+              -1.7999999999999998,
+              1.7
+            ],
+            [
+              -5,
+              1.7
+            ],
+            [
+              -5,
+              -1.7
+            ]
+          ]
+        },
+        {
+          "id": "room-4",
+          "kind": "gallery",
+          "label": "4室：劫夺普洛塞庇娜",
+          "polygon": [
+            [
+              -1.4000000000000001,
+              -1.7
+            ],
+            [
+              1.8,
+              -1.7
+            ],
+            [
+              1.8,
+              1.7
+            ],
+            [
+              -1.4000000000000001,
+              1.7
+            ],
+            [
+              -1.4000000000000001,
+              -1.7
+            ]
+          ]
+        },
+        {
+          "id": "room-8",
+          "kind": "gallery",
+          "label": "8室：卡拉瓦乔群",
+          "polygon": [
+            [
+              2.2,
+              -1.7
+            ],
+            [
+              5.8,
+              -1.7
+            ],
+            [
+              5.8,
+              1.7
+            ],
+            [
+              2.2,
+              1.7
+            ],
+            [
+              2.2,
+              -1.7
+            ]
+          ]
+        },
+        {
+          "id": "exit",
+          "kind": "circulation",
+          "label": "地面层出口",
+          "polygon": [
+            [
+              5.05,
+              2.45
+            ],
+            [
+              7.55,
+              2.45
+            ],
+            [
+              7.55,
+              4.55
+            ],
+            [
+              5.05,
+              4.55
+            ],
+            [
+              5.05,
+              2.45
+            ]
+          ]
+        },
+        {
+          "id": "ground-landing",
+          "kind": "circulation",
+          "label": "主楼梯与电梯",
+          "polygon": [
+            [
+              -1.2,
+              -4.45
+            ],
+            [
+              1.2,
+              -4.45
+            ],
+            [
+              1.2,
+              -2.95
+            ],
+            [
+              -1.2,
+              -2.95
+            ],
+            [
+              -1.2,
+              -4.45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "upper",
+      "label": "上层：绘画展室",
+      "elevation": 3.1,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -8,
+          -5
+        ],
+        [
+          8,
+          -5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          -8,
+          5
+        ],
+        [
+          -8,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "painting-galleries",
+          "kind": "gallery",
+          "label": "拉斐尔、提香等上层绘画室",
+          "polygon": [
+            [
+              -6.75,
+              -3.75
+            ],
+            [
+              6.75,
+              -3.75
+            ],
+            [
+              6.75,
+              3.75
+            ],
+            [
+              -6.75,
+              3.75
+            ],
+            [
+              -6.75,
+              -3.75
+            ]
+          ]
+        },
+        {
+          "id": "upper-landing",
+          "kind": "circulation",
+          "label": "主楼梯与电梯",
+          "polygon": [
+            [
+              -1.2,
+              -4.45
+            ],
+            [
+              1.2,
+              -4.45
+            ],
+            [
+              1.2,
+              -2.95
+            ],
+            [
+              -1.2,
+              -2.95
+            ],
+            [
+              -1.2,
+              -4.45
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        -4.9,
+        0
+      ],
+      "connects": [
+        "ticket-cloakroom",
+        "room-3"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        -1.6,
+        0
+      ],
+      "connects": [
+        "room-3",
+        "room-4"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        2.1,
+        0
+      ],
+      "connects": [
+        "room-4",
+        "room-8"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        5.8,
+        1.8
+      ],
+      "connects": [
+        "room-8",
+        "exit"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "ticket-cloakroom",
+      "position": [
+        -6.2,
+        3.5
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "room-3",
+      "position": [
+        -3.4,
+        0
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "room-4",
+      "position": [
+        0.2,
+        0
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "room-8",
+      "position": [
+        4,
+        0
+      ]
+    },
+    {
+      "floorId": "upper",
+      "spaceId": "painting-galleries",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "exit",
+      "position": [
+        6.3,
+        3.5
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels"
+      ],
+      "title": "Galleria Borghese: official museum and room information",
+      "url": "https://galleriaborghese.beniculturali.it/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Galleria Borghese: official two-floor visitor route",
+      "url": "https://galleriaborghese.beniculturali.it/wp-content/uploads/Informativa.pdf",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "main-stair",
+      "kind": "stairs",
+      "label": "别墅主楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            0,
+            -3.7
+          ]
+        },
+        {
+          "floorId": "upper",
+          "position": [
+            0,
+            -3.7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "访客电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            0.8,
+            -3.7
+          ]
+        },
+        {
+          "floorId": "upper",
+          "position": [
+            0.8,
+            -3.7
+          ]
+        }
+      ]
+    }
+  ]
+}

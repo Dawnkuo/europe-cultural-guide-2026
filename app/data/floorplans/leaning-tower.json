@@ -1,0 +1,463 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "base",
+      "label": "基座与底层柱廊",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          0,
+          -4
+        ],
+        [
+          2.8,
+          -2.8
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2.8,
+          2.8
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          -2.8,
+          2.8
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -2.8,
+          -2.8
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "base-entry",
+          "kind": "circulation",
+          "label": "入口基座与浮雕",
+          "polygon": [
+            [
+              -1.2,
+              2
+            ],
+            [
+              1.2,
+              2
+            ],
+            [
+              1.2,
+              3.4000000000000004
+            ],
+            [
+              -1.2,
+              3.4000000000000004
+            ],
+            [
+              -1.2,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "exterior-loggia",
+          "label": "底层外部柱廊",
+          "kind": "outdoor",
+          "polygon": [
+            [
+              -2.5,
+              -1.8
+            ],
+            [
+              0,
+              -3.3
+            ],
+            [
+              2.5,
+              -1.8
+            ],
+            [
+              2.5,
+              1.8
+            ],
+            [
+              0,
+              3.3
+            ],
+            [
+              -2.5,
+              1.8
+            ],
+            [
+              -2.5,
+              -1.8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spiral",
+      "label": "内部螺旋登塔段",
+      "elevation": 3,
+      "stackOrder": 1,
+      "outline": [
+        [
+          0,
+          -4
+        ],
+        [
+          2.8,
+          -2.8
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2.8,
+          2.8
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          -2.8,
+          2.8
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -2.8,
+          -2.8
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "spiral-stair",
+          "label": "内部螺旋梯",
+          "kind": "circulation",
+          "polygon": [
+            [
+              -2.8,
+              -2.1
+            ],
+            [
+              0,
+              -3.2
+            ],
+            [
+              2.8,
+              -2.1
+            ],
+            [
+              2.8,
+              2.1
+            ],
+            [
+              0,
+              3.2
+            ],
+            [
+              -2.8,
+              2.1
+            ],
+            [
+              -2.8,
+              -2.1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belfry",
+      "label": "钟层",
+      "elevation": 6,
+      "stackOrder": 2,
+      "outline": [
+        [
+          0,
+          -4
+        ],
+        [
+          2.8,
+          -2.8
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2.8,
+          2.8
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          -2.8,
+          2.8
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -2.8,
+          -2.8
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "seven-bells",
+          "label": "七口钟与开敞钟廊",
+          "kind": "hall",
+          "polygon": [
+            [
+              -2.8,
+              -2.1
+            ],
+            [
+              0,
+              -3.2
+            ],
+            [
+              2.8,
+              -2.1
+            ],
+            [
+              2.8,
+              2.1
+            ],
+            [
+              0,
+              3.2
+            ],
+            [
+              -2.8,
+              2.1
+            ],
+            [
+              -2.8,
+              -2.1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summit",
+      "label": "顶部环台",
+      "elevation": 8.5,
+      "stackOrder": 3,
+      "outline": [
+        [
+          0,
+          -4
+        ],
+        [
+          2.8,
+          -2.8
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          2.8,
+          2.8
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          -2.8,
+          2.8
+        ],
+        [
+          -4,
+          0
+        ],
+        [
+          -2.8,
+          -2.8
+        ],
+        [
+          0,
+          -4
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "top-ring",
+          "kind": "outdoor",
+          "label": "顶部环形观景台",
+          "polygon": [
+            [
+              -2.7,
+              -2.7
+            ],
+            [
+              2.7,
+              -2.7
+            ],
+            [
+              2.7,
+              2.7
+            ],
+            [
+              -2.7,
+              2.7
+            ],
+            [
+              -2.7,
+              -2.7
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "base",
+      "kind": "gate",
+      "position": [
+        0,
+        3.5
+      ],
+      "connects": [
+        "base-entry",
+        "exterior-loggia"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "base",
+      "spaceId": "base-entry",
+      "position": [
+        0,
+        2.7
+      ]
+    },
+    {
+      "floorId": "base",
+      "spaceId": "exterior-loggia",
+      "position": [
+        -2.2,
+        0
+      ]
+    },
+    {
+      "floorId": "spiral",
+      "spaceId": "spiral-stair",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "belfry",
+      "spaceId": "seven-bells",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "summit",
+      "spaceId": "top-ring",
+      "position": [
+        0,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint"
+      ],
+      "title": "Opera della Primaziale Pisana: Square of Miracles map",
+      "url": "https://www.opapisa.it/en/mappa/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Opera della Primaziale Pisana: Leaning Tower guide",
+      "url": "https://www.opapisa.it/en/square-of-miracles/tower/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "marble-spiral",
+      "kind": "stairs",
+      "label": "内部石砌螺旋梯",
+      "landings": [
+        {
+          "floorId": "base",
+          "position": [
+            0,
+            0
+          ]
+        },
+        {
+          "floorId": "spiral",
+          "position": [
+            0,
+            0
+          ]
+        },
+        {
+          "floorId": "belfry",
+          "position": [
+            0,
+            0
+          ]
+        },
+        {
+          "floorId": "summit",
+          "position": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

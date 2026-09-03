@@ -1,0 +1,318 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "rotunda",
+      "label": "门廊与圆厅礼拜层",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -6,
+          -10
+        ],
+        [
+          6,
+          -10
+        ],
+        [
+          6,
+          -5
+        ],
+        [
+          5.2,
+          -3
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          5.2,
+          3
+        ],
+        [
+          3,
+          5.2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          -3,
+          5.2
+        ],
+        [
+          -5.2,
+          3
+        ],
+        [
+          -6,
+          0
+        ],
+        [
+          -5.2,
+          -3
+        ],
+        [
+          -6,
+          -5
+        ],
+        [
+          -6,
+          -10
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "piazza-front",
+          "kind": "outdoor",
+          "label": "广场正面与阿格里帕铭文",
+          "polygon": [
+            [
+              -5.25,
+              -9.7
+            ],
+            [
+              5.25,
+              -9.7
+            ],
+            [
+              5.25,
+              -8.3
+            ],
+            [
+              -5.25,
+              -8.3
+            ],
+            [
+              -5.25,
+              -9.7
+            ]
+          ]
+        },
+        {
+          "id": "portico",
+          "kind": "hall",
+          "label": "花岗岩柱门廊与青铜门",
+          "polygon": [
+            [
+              -5.25,
+              -8
+            ],
+            [
+              5.25,
+              -8
+            ],
+            [
+              5.25,
+              -5.800000000000001
+            ],
+            [
+              -5.25,
+              -5.800000000000001
+            ],
+            [
+              -5.25,
+              -8
+            ]
+          ]
+        },
+        {
+          "id": "rotunda-centre",
+          "label": "圆厅中心与穹顶天窗",
+          "kind": "hall",
+          "polygon": [
+            [
+              0,
+              -6
+            ],
+            [
+              3,
+              -5.2
+            ],
+            [
+              5.2,
+              -3
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              5.2,
+              3
+            ],
+            [
+              3,
+              5.2
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              -3,
+              5.2
+            ],
+            [
+              -5.2,
+              3
+            ],
+            [
+              -6,
+              0
+            ],
+            [
+              -5.2,
+              -3
+            ],
+            [
+              -3,
+              -5.2
+            ],
+            [
+              0,
+              -6
+            ]
+          ]
+        },
+        {
+          "id": "raphael-tomb",
+          "kind": "chapel",
+          "label": "拉斐尔墓与侧龛",
+          "polygon": [
+            [
+              3.7499999999999996,
+              0.7
+            ],
+            [
+              4.949999999999999,
+              0.7
+            ],
+            [
+              4.949999999999999,
+              2.0999999999999996
+            ],
+            [
+              3.7499999999999996,
+              2.0999999999999996
+            ],
+            [
+              3.7499999999999996,
+              0.7
+            ]
+          ]
+        },
+        {
+          "id": "high-altar",
+          "kind": "chapel",
+          "label": "主祭坛与离场方向",
+          "polygon": [
+            [
+              -1.1,
+              4.2
+            ],
+            [
+              1.1,
+              4.2
+            ],
+            [
+              1.1,
+              5.2
+            ],
+            [
+              -1.1,
+              5.2
+            ],
+            [
+              -1.1,
+              4.2
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "rotunda",
+      "kind": "gate",
+      "position": [
+        0,
+        -5.8
+      ],
+      "connects": [
+        "portico",
+        "rotunda-centre"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "rotunda",
+      "spaceId": "piazza-front",
+      "position": [
+        0,
+        -9
+      ]
+    },
+    {
+      "floorId": "rotunda",
+      "spaceId": "portico",
+      "position": [
+        0,
+        -6.9
+      ]
+    },
+    {
+      "floorId": "rotunda",
+      "spaceId": "rotunda-centre",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "rotunda",
+      "spaceId": "raphael-tomb",
+      "position": [
+        4.5,
+        1.4
+      ]
+    },
+    {
+      "floorId": "rotunda",
+      "spaceId": "high-altar",
+      "position": [
+        0,
+        4.7
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "route"
+      ],
+      "title": "Direzione Musei Nazionali Roma: Pantheon guide and interactive map",
+      "url": "https://direzionemuseiroma.cultura.gov.it/en/pantheon/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces"
+      ],
+      "title": "Direzione Musei Nazionali Roma: Pantheon historical background",
+      "url": "https://direzionemuseiroma.cultura.gov.it/en/pantheon/historical-background/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": []
+}

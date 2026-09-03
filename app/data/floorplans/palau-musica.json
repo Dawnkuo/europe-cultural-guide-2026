@@ -1,0 +1,534 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "门厅层",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -12,
+          -8
+        ],
+        [
+          12,
+          -8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          -12,
+          8
+        ],
+        [
+          -12,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "foyer",
+          "kind": "hall",
+          "label": "门厅",
+          "polygon": [
+            [
+              -9.5,
+              -7.05
+            ],
+            [
+              9.5,
+              -7.05
+            ],
+            [
+              9.5,
+              -2.55
+            ],
+            [
+              -9.5,
+              -2.55
+            ],
+            [
+              -9.5,
+              -7.05
+            ]
+          ]
+        },
+        {
+          "id": "main-stair",
+          "kind": "circulation",
+          "label": "主楼梯",
+          "polygon": [
+            [
+              -10.3,
+              -1.2000000000000002
+            ],
+            [
+              -5.3,
+              -1.2000000000000002
+            ],
+            [
+              -5.3,
+              6.8
+            ],
+            [
+              -10.3,
+              6.8
+            ],
+            [
+              -10.3,
+              -1.2000000000000002
+            ]
+          ]
+        },
+        {
+          "id": "ground-service",
+          "kind": "service",
+          "label": "票务与服务区",
+          "polygon": [
+            [
+              5.3,
+              -1.2000000000000002
+            ],
+            [
+              10.3,
+              -1.2000000000000002
+            ],
+            [
+              10.3,
+              6.8
+            ],
+            [
+              5.3,
+              6.8
+            ],
+            [
+              5.3,
+              -1.2000000000000002
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first",
+      "label": "音乐厅主层",
+      "elevation": 3,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -12,
+          -8
+        ],
+        [
+          12,
+          -8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          -12,
+          8
+        ],
+        [
+          -12,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "millet-hall",
+          "kind": "hall",
+          "label": "Lluis Millet 厅",
+          "polygon": [
+            [
+              -11,
+              -7.05
+            ],
+            [
+              -3,
+              -7.05
+            ],
+            [
+              -3,
+              -2.55
+            ],
+            [
+              -11,
+              -2.55
+            ],
+            [
+              -11,
+              -7.05
+            ]
+          ]
+        },
+        {
+          "id": "lower-auditorium",
+          "kind": "hall",
+          "label": "音乐厅下层座席",
+          "polygon": [
+            [
+              -8.5,
+              -2.5
+            ],
+            [
+              4.5,
+              -2.5
+            ],
+            [
+              4.5,
+              6.5
+            ],
+            [
+              -8.5,
+              6.5
+            ],
+            [
+              -8.5,
+              -2.5
+            ]
+          ]
+        },
+        {
+          "id": "stage",
+          "kind": "hall",
+          "label": "舞台、雕塑群与管风琴",
+          "polygon": [
+            [
+              4.8,
+              -2.5
+            ],
+            [
+              9.8,
+              -2.5
+            ],
+            [
+              9.8,
+              6.5
+            ],
+            [
+              4.8,
+              6.5
+            ],
+            [
+              4.8,
+              -2.5
+            ]
+          ]
+        },
+        {
+          "id": "first-circulation",
+          "kind": "circulation",
+          "label": "主楼梯上层平台",
+          "polygon": [
+            [
+              -10.5,
+              -1.5
+            ],
+            [
+              -7.5,
+              -1.5
+            ],
+            [
+              -7.5,
+              5.5
+            ],
+            [
+              -10.5,
+              5.5
+            ],
+            [
+              -10.5,
+              -1.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second",
+      "label": "音乐厅上层",
+      "elevation": 6,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -12,
+          -8
+        ],
+        [
+          12,
+          -8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          -12,
+          8
+        ],
+        [
+          -12,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "upper-seating",
+          "kind": "hall",
+          "label": "上层座席与彩玻璃穹顶视域",
+          "polygon": [
+            [
+              -9.5,
+              -3.5
+            ],
+            [
+              6.5,
+              -3.5
+            ],
+            [
+              6.5,
+              6.5
+            ],
+            [
+              -9.5,
+              6.5
+            ],
+            [
+              -9.5,
+              -3.5
+            ]
+          ]
+        },
+        {
+          "id": "upper-circulation",
+          "kind": "circulation",
+          "label": "上层楼梯与电梯平台",
+          "polygon": [
+            [
+              -10.5,
+              -2
+            ],
+            [
+              -7.5,
+              -2
+            ],
+            [
+              -7.5,
+              5
+            ],
+            [
+              -10.5,
+              5
+            ],
+            [
+              -10.5,
+              -2
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        0,
+        -7.2
+      ],
+      "connects": [
+        "foyer"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "archway",
+      "position": [
+        -6.5,
+        -2.8
+      ],
+      "connects": [
+        "foyer",
+        "main-stair"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "door",
+      "position": [
+        -7,
+        -3
+      ],
+      "connects": [
+        "first-circulation",
+        "millet-hall"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        -6.5,
+        2
+      ],
+      "connects": [
+        "first-circulation",
+        "lower-auditorium"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        4.5,
+        2
+      ],
+      "connects": [
+        "lower-auditorium",
+        "stage"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "archway",
+      "position": [
+        -7.5,
+        1.5
+      ],
+      "connects": [
+        "upper-circulation",
+        "upper-seating"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "foyer",
+      "position": [
+        0,
+        -4.8
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "millet-hall",
+      "position": [
+        -7,
+        -4.8
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "lower-auditorium",
+      "position": [
+        -2,
+        2
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "stage",
+      "position": [
+        7.3,
+        2
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "upper-seating",
+      "position": [
+        -1.5,
+        1.5
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels"
+      ],
+      "title": "Palau de la Musica Catalana auditorium plan",
+      "url": "https://www.palaumusica.cat/map-sala-de-concerts_129567.pdf",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "route"
+      ],
+      "title": "Palau de la Musica Catalana self-guided route",
+      "url": "https://www.palaumusica.cat/en/visites/self-guided-tour_1174326",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "main-stair",
+      "kind": "stairs",
+      "label": "主楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -7.8,
+            2.8
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            -9,
+            2
+          ]
+        },
+        {
+          "floorId": "second",
+          "position": [
+            -9,
+            1.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "访客电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            8,
+            2.8
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            -8.5,
+            4.5
+          ]
+        },
+        {
+          "floorId": "second",
+          "position": [
+            -8.5,
+            4.5
+          ]
+        }
+      ]
+    }
+  ]
+}

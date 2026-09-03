@@ -1,0 +1,435 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层：同心圆礼拜空间",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          0,
+          -5
+        ],
+        [
+          2.5,
+          -4.3
+        ],
+        [
+          4.3,
+          -2.5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          4.3,
+          2.5
+        ],
+        [
+          2.5,
+          4.3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          -2.5,
+          4.3
+        ],
+        [
+          -4.3,
+          2.5
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          -4.3,
+          -2.5
+        ],
+        [
+          -2.5,
+          -4.3
+        ],
+        [
+          0,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "exterior-loggia",
+          "label": "外部罗曼式与哥特式柱廊",
+          "kind": "outdoor",
+          "polygon": [
+            [
+              -1.6,
+              3.1
+            ],
+            [
+              0,
+              4.55
+            ],
+            [
+              1.6,
+              3.1
+            ],
+            [
+              1.15,
+              2.75
+            ],
+            [
+              -1.15,
+              2.75
+            ],
+            [
+              -1.6,
+              3.1
+            ]
+          ]
+        },
+        {
+          "id": "font",
+          "label": "八角洗礼池",
+          "kind": "chapel",
+          "polygon": [
+            [
+              0,
+              -1.6
+            ],
+            [
+              1.15,
+              -1.15
+            ],
+            [
+              1.6,
+              0
+            ],
+            [
+              1.15,
+              1.15
+            ],
+            [
+              0,
+              1.6
+            ],
+            [
+              -1.15,
+              1.15
+            ],
+            [
+              -1.6,
+              0
+            ],
+            [
+              -1.15,
+              -1.15
+            ],
+            [
+              0,
+              -1.6
+            ]
+          ]
+        },
+        {
+          "id": "pulpit",
+          "kind": "hall",
+          "label": "尼古拉·皮萨诺讲坛",
+          "polygon": [
+            [
+              1.9000000000000001,
+              -1.7000000000000002
+            ],
+            [
+              3.5,
+              -1.7000000000000002
+            ],
+            [
+              3.5,
+              0.09999999999999998
+            ],
+            [
+              1.9000000000000001,
+              0.09999999999999998
+            ],
+            [
+              1.9000000000000001,
+              -1.7000000000000002
+            ]
+          ]
+        },
+        {
+          "id": "spiral-ground",
+          "kind": "circulation",
+          "label": "女性廊螺旋梯入口",
+          "polygon": [
+            [
+              -3.5,
+              -1.1
+            ],
+            [
+              -2.0999999999999996,
+              -1.1
+            ],
+            [
+              -2.0999999999999996,
+              1.1
+            ],
+            [
+              -3.5,
+              1.1
+            ],
+            [
+              -3.5,
+              -1.1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gallery",
+      "label": "女性廊层",
+      "elevation": 3.3,
+      "stackOrder": 1,
+      "outline": [
+        [
+          0,
+          -5
+        ],
+        [
+          2.5,
+          -4.3
+        ],
+        [
+          4.3,
+          -2.5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          4.3,
+          2.5
+        ],
+        [
+          2.5,
+          4.3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          -2.5,
+          4.3
+        ],
+        [
+          -4.3,
+          2.5
+        ],
+        [
+          -5,
+          0
+        ],
+        [
+          -4.3,
+          -2.5
+        ],
+        [
+          -2.5,
+          -4.3
+        ],
+        [
+          0,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "womens-gallery",
+          "label": "女性廊与穹顶俯瞰",
+          "kind": "gallery",
+          "polygon": [
+            [
+              0,
+              -4.1
+            ],
+            [
+              2.05,
+              -3.5
+            ],
+            [
+              3.5,
+              -2.05
+            ],
+            [
+              4.1,
+              0
+            ],
+            [
+              3.5,
+              2.05
+            ],
+            [
+              2.05,
+              3.5
+            ],
+            [
+              0,
+              4.1
+            ],
+            [
+              -2.05,
+              3.5
+            ],
+            [
+              -3.5,
+              2.05
+            ],
+            [
+              -4.1,
+              0
+            ],
+            [
+              -3.5,
+              -2.05
+            ],
+            [
+              -2.05,
+              -3.5
+            ],
+            [
+              0,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "spiral-gallery",
+          "kind": "circulation",
+          "label": "螺旋梯上层出口",
+          "polygon": [
+            [
+              -3.5,
+              -1.1
+            ],
+            [
+              -2.0999999999999996,
+              -1.1
+            ],
+            [
+              -2.0999999999999996,
+              1.1
+            ],
+            [
+              -3.5,
+              1.1
+            ],
+            [
+              -3.5,
+              -1.1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        0,
+        4.8
+      ],
+      "connects": [
+        "exterior-loggia"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "exterior-loggia",
+      "position": [
+        0,
+        3.9
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "font",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "pulpit",
+      "position": [
+        2.7,
+        -0.8
+      ]
+    },
+    {
+      "floorId": "gallery",
+      "spaceId": "womens-gallery",
+      "position": [
+        0,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint"
+      ],
+      "title": "Opera della Primaziale Pisana: Square of Miracles map",
+      "url": "https://www.opapisa.it/en/mappa/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Opera della Primaziale Pisana: Baptistery guide",
+      "url": "https://www.opapisa.it/en/square-of-miracles/baptistery/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "gallery-spiral",
+      "kind": "stairs",
+      "label": "女性廊螺旋梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -2.8,
+            0
+          ]
+        },
+        {
+          "floorId": "gallery",
+          "position": [
+            -2.8,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

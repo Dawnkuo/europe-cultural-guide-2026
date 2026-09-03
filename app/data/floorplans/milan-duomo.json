@@ -1,0 +1,565 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "cathedral",
+      "label": "教堂层：西立面、中殿与后殿",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -4.8,
+          7.5
+        ],
+        [
+          4.8,
+          7.5
+        ],
+        [
+          4.8,
+          1.2
+        ],
+        [
+          6.2,
+          1.2
+        ],
+        [
+          6.2,
+          -2.2
+        ],
+        [
+          4.2,
+          -2.2
+        ],
+        [
+          4.2,
+          -7.2
+        ],
+        [
+          -4.2,
+          -7.2
+        ],
+        [
+          -4.2,
+          -2.2
+        ],
+        [
+          -6.2,
+          -2.2
+        ],
+        [
+          -6.2,
+          1.2
+        ],
+        [
+          -4.8,
+          1.2
+        ],
+        [
+          -4.8,
+          7.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "west-front",
+          "kind": "outdoor",
+          "label": "西立面与广场到达区",
+          "polygon": [
+            [
+              -4.3,
+              5.8999999999999995
+            ],
+            [
+              4.3,
+              5.8999999999999995
+            ],
+            [
+              4.3,
+              7.3
+            ],
+            [
+              -4.3,
+              7.3
+            ],
+            [
+              -4.3,
+              5.8999999999999995
+            ]
+          ]
+        },
+        {
+          "id": "nave",
+          "kind": "hall",
+          "label": "中殿柱列与侧廊",
+          "polygon": [
+            [
+              -4.2,
+              -0.5
+            ],
+            [
+              4.2,
+              -0.5
+            ],
+            [
+              4.2,
+              5.7
+            ],
+            [
+              -4.2,
+              5.7
+            ],
+            [
+              -4.2,
+              -0.5
+            ]
+          ]
+        },
+        {
+          "id": "choir",
+          "kind": "chapel",
+          "label": "后唱诗席与圣巴多罗买雕像",
+          "polygon": [
+            [
+              -2.9,
+              -3.6999999999999997
+            ],
+            [
+              2.9,
+              -3.6999999999999997
+            ],
+            [
+              2.9,
+              -0.8999999999999999
+            ],
+            [
+              -2.9,
+              -0.8999999999999999
+            ],
+            [
+              -2.9,
+              -3.6999999999999997
+            ]
+          ]
+        },
+        {
+          "id": "apse",
+          "kind": "chapel",
+          "label": "后殿与彩窗",
+          "polygon": [
+            [
+              -2.9,
+              -6.8
+            ],
+            [
+              2.9,
+              -6.8
+            ],
+            [
+              2.9,
+              -4.3999999999999995
+            ],
+            [
+              -2.9,
+              -4.3999999999999995
+            ],
+            [
+              -2.9,
+              -6.8
+            ]
+          ]
+        },
+        {
+          "id": "terrace-lift-entry",
+          "kind": "circulation",
+          "label": "露台电梯入口",
+          "polygon": [
+            [
+              4,
+              -0.9
+            ],
+            [
+              5.800000000000001,
+              -0.9
+            ],
+            [
+              5.800000000000001,
+              0.9
+            ],
+            [
+              4,
+              0.9
+            ],
+            [
+              4,
+              -0.9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lower-terrace",
+      "label": "约31米：首层露台",
+      "elevation": 3.4,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -4.8,
+          -6.7
+        ],
+        [
+          4.8,
+          -6.7
+        ],
+        [
+          4.8,
+          6.7
+        ],
+        [
+          -4.8,
+          6.7
+        ],
+        [
+          -4.8,
+          -6.7
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "lift-landing",
+          "kind": "circulation",
+          "label": "露台电梯平台",
+          "polygon": [
+            [
+              2.95,
+              3.9
+            ],
+            [
+              4.45,
+              3.9
+            ],
+            [
+              4.45,
+              5.7
+            ],
+            [
+              2.95,
+              5.7
+            ],
+            [
+              2.95,
+              3.9
+            ]
+          ]
+        },
+        {
+          "id": "lower-walkway",
+          "kind": "outdoor",
+          "label": "飞扶壁与首层露台步道",
+          "polygon": [
+            [
+              -3.6,
+              -5.2
+            ],
+            [
+              3.6,
+              -5.2
+            ],
+            [
+              3.6,
+              5.2
+            ],
+            [
+              -3.6,
+              5.2
+            ],
+            [
+              -3.6,
+              -5.2
+            ]
+          ]
+        },
+        {
+          "id": "upper-stair-foot",
+          "kind": "circulation",
+          "label": "中央露台上行楼梯",
+          "polygon": [
+            [
+              -1.1,
+              -6.05
+            ],
+            [
+              1.1,
+              -6.05
+            ],
+            [
+              1.1,
+              -4.55
+            ],
+            [
+              -1.1,
+              -4.55
+            ],
+            [
+              -1.1,
+              -6.05
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "central-terrace",
+      "label": "约45米：中央露台与大尖塔",
+      "elevation": 6.8,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -3.3,
+          -5
+        ],
+        [
+          3.3,
+          -5
+        ],
+        [
+          3.3,
+          3.5999999999999996
+        ],
+        [
+          -3.3,
+          3.5999999999999996
+        ],
+        [
+          -3.3,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "upper-stair-head",
+          "kind": "circulation",
+          "label": "中央露台楼梯口",
+          "polygon": [
+            [
+              -1,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3.4000000000000004
+            ],
+            [
+              -1,
+              3.4000000000000004
+            ],
+            [
+              -1,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "central-platform",
+          "kind": "outdoor",
+          "label": "中央露台与大尖塔视点",
+          "polygon": [
+            [
+              -2.6,
+              -3.3
+            ],
+            [
+              2.6,
+              -3.3
+            ],
+            [
+              2.6,
+              1.7
+            ],
+            [
+              -2.6,
+              1.7
+            ],
+            [
+              -2.6,
+              -3.3
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "cathedral",
+      "kind": "gate",
+      "position": [
+        0,
+        7.3
+      ],
+      "connects": [
+        "west-front"
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "kind": "archway",
+      "position": [
+        0,
+        5.5
+      ],
+      "connects": [
+        "west-front",
+        "nave"
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "kind": "archway",
+      "position": [
+        0,
+        -0.6
+      ],
+      "connects": [
+        "nave",
+        "choir"
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "kind": "archway",
+      "position": [
+        0,
+        -3.7
+      ],
+      "connects": [
+        "choir",
+        "apse"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "cathedral",
+      "spaceId": "west-front",
+      "position": [
+        0,
+        6.6
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "nave",
+      "position": [
+        0,
+        2.6
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "choir",
+      "position": [
+        0,
+        -2.3
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "apse",
+      "position": [
+        0,
+        -5.6
+      ]
+    },
+    {
+      "floorId": "lower-terrace",
+      "spaceId": "lower-walkway",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "central-terrace",
+      "spaceId": "central-platform",
+      "position": [
+        0,
+        -0.8
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Duomo di Milano official visitor leaflet",
+      "url": "https://www.duomomilano.it/wp-content/uploads/2025/03/Volantino-eng_202504.pdf",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Duomo di Milano official terraces guide",
+      "url": "https://www.duomomilano.it/en/art-and-culture/the-terraces/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "terrace-lift",
+      "kind": "lift",
+      "label": "露台电梯至首层露台",
+      "landings": [
+        {
+          "floorId": "cathedral",
+          "position": [
+            4.9,
+            0
+          ]
+        },
+        {
+          "floorId": "lower-terrace",
+          "position": [
+            3.7,
+            4.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "central-terrace-stair",
+      "kind": "stairs",
+      "label": "首层露台至中央露台楼梯",
+      "landings": [
+        {
+          "floorId": "lower-terrace",
+          "position": [
+            0,
+            -5.3
+          ]
+        },
+        {
+          "floorId": "central-terrace",
+          "position": [
+            0,
+            2.7
+          ]
+        }
+      ]
+    }
+  ]
+}

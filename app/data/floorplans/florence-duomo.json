@@ -1,0 +1,423 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "piazza",
+      "label": "广场与教堂基座",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -5,
+          -8
+        ],
+        [
+          5,
+          -8
+        ],
+        [
+          5,
+          -3
+        ],
+        [
+          8,
+          -3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          -5,
+          8
+        ],
+        [
+          -5,
+          3
+        ],
+        [
+          -8,
+          3
+        ],
+        [
+          -8,
+          -3
+        ],
+        [
+          -5,
+          -3
+        ],
+        [
+          -5,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "west-facade",
+          "kind": "outdoor",
+          "label": "西立面观察区",
+          "polygon": [
+            [
+              -3.75,
+              6.3
+            ],
+            [
+              3.75,
+              6.3
+            ],
+            [
+              3.75,
+              7.7
+            ],
+            [
+              -3.75,
+              7.7
+            ],
+            [
+              -3.75,
+              6.3
+            ]
+          ]
+        },
+        {
+          "id": "drum-side",
+          "kind": "outdoor",
+          "label": "侧墙与八角鼓座观察区",
+          "polygon": [
+            [
+              5.300000000000001,
+              -2.4
+            ],
+            [
+              7.5,
+              -2.4
+            ],
+            [
+              7.5,
+              2.4
+            ],
+            [
+              5.300000000000001,
+              2.4
+            ],
+            [
+              5.300000000000001,
+              -2.4
+            ]
+          ]
+        },
+        {
+          "id": "ticket-entry",
+          "kind": "circulation",
+          "label": "票面指定登顶入口",
+          "polygon": [
+            [
+              -4.8,
+              3.0999999999999996
+            ],
+            [
+              -3.2,
+              3.0999999999999996
+            ],
+            [
+              -3.2,
+              5.1
+            ],
+            [
+              -4.8,
+              5.1
+            ],
+            [
+              -4.8,
+              3.0999999999999996
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inner-rim",
+      "label": "穹顶内缘与双壳通道",
+      "elevation": 3.6,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -4,
+          -4
+        ],
+        [
+          4,
+          -4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          -4,
+          4
+        ],
+        [
+          -4,
+          -4
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "shell-stair",
+          "kind": "circulation",
+          "label": "双壳之间登顶楼梯",
+          "polygon": [
+            [
+              -3.1999999999999997,
+              -3.15
+            ],
+            [
+              -1.4,
+              -3.15
+            ],
+            [
+              -1.4,
+              3.15
+            ],
+            [
+              -3.1999999999999997,
+              3.15
+            ],
+            [
+              -3.1999999999999997,
+              -3.15
+            ]
+          ]
+        },
+        {
+          "id": "judgement-rim",
+          "kind": "hall",
+          "label": "《最后的审判》内缘平台",
+          "polygon": [
+            [
+              -0.6000000000000001,
+              -3.15
+            ],
+            [
+              3,
+              -3.15
+            ],
+            [
+              3,
+              3.15
+            ],
+            [
+              -0.6000000000000001,
+              3.15
+            ],
+            [
+              -0.6000000000000001,
+              -3.15
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lantern-terrace",
+      "label": "灯亭下方顶部露台",
+      "elevation": 7.2,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -3.8,
+          -3.8
+        ],
+        [
+          3.8,
+          -3.8
+        ],
+        [
+          3.8,
+          3.8
+        ],
+        [
+          -3.8,
+          3.8
+        ],
+        [
+          -3.8,
+          -3.8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "summit-terrace",
+          "kind": "outdoor",
+          "label": "穹顶顶部露台",
+          "polygon": [
+            [
+              -3.4,
+              -3.4
+            ],
+            [
+              3.4,
+              -3.4
+            ],
+            [
+              3.4,
+              3.4
+            ],
+            [
+              -3.4,
+              3.4
+            ],
+            [
+              -3.4,
+              -3.4
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "piazza",
+      "kind": "gate",
+      "position": [
+        -4,
+        5.4
+      ],
+      "connects": [
+        "ticket-entry"
+      ]
+    },
+    {
+      "floorId": "inner-rim",
+      "kind": "archway",
+      "position": [
+        -1.2,
+        0
+      ],
+      "connects": [
+        "shell-stair",
+        "judgement-rim"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "piazza",
+      "spaceId": "west-facade",
+      "position": [
+        0,
+        7
+      ]
+    },
+    {
+      "floorId": "piazza",
+      "spaceId": "drum-side",
+      "position": [
+        6.4,
+        0
+      ]
+    },
+    {
+      "floorId": "piazza",
+      "spaceId": "ticket-entry",
+      "position": [
+        -4,
+        4.1
+      ]
+    },
+    {
+      "floorId": "inner-rim",
+      "spaceId": "judgement-rim",
+      "position": [
+        1.2,
+        0
+      ]
+    },
+    {
+      "floorId": "lantern-terrace",
+      "spaceId": "summit-terrace",
+      "position": [
+        0,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels"
+      ],
+      "title": "Opera del Duomo: Cathedral and Brunelleschi dome architecture",
+      "url": "https://duomo.firenze.it/en/discover/cathedral",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "levels",
+        "route"
+      ],
+      "title": "Opera del Duomo: Brunelleschi Pass visitor route",
+      "url": "https://duomo.firenze.it/en/720/brunelleschi-pass",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "dome-ascent",
+      "kind": "stairs",
+      "label": "463级穹顶登顶楼梯",
+      "landings": [
+        {
+          "floorId": "piazza",
+          "position": [
+            -4,
+            4.1
+          ]
+        },
+        {
+          "floorId": "inner-rim",
+          "position": [
+            -2.3,
+            2.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "upper-shell-stair",
+      "kind": "stairs",
+      "label": "双壳通道至顶部露台",
+      "landings": [
+        {
+          "floorId": "inner-rim",
+          "position": [
+            -2.3,
+            -2.4
+          ]
+        },
+        {
+          "floorId": "lantern-terrace",
+          "position": [
+            -2.3,
+            -2.4
+          ]
+        }
+      ]
+    }
+  ]
+}

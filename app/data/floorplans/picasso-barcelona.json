@@ -1,0 +1,593 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "level-0",
+      "label": "Level 0 宫殿庭院",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -18,
+          -6
+        ],
+        [
+          18,
+          -6
+        ],
+        [
+          18,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          4.5
+        ],
+        [
+          3,
+          4.5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          -4,
+          6
+        ],
+        [
+          -4,
+          4.5
+        ],
+        [
+          -11,
+          4.5
+        ],
+        [
+          -11,
+          6
+        ],
+        [
+          -18,
+          6
+        ],
+        [
+          -18,
+          -6
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "montcada-entry",
+          "kind": "circulation",
+          "label": "Montcada 街入口",
+          "polygon": [
+            [
+              -17.5,
+              -5.5
+            ],
+            [
+              -14.5,
+              -5.5
+            ],
+            [
+              -14.5,
+              -3.5
+            ],
+            [
+              -17.5,
+              -3.5
+            ],
+            [
+              -17.5,
+              -5.5
+            ]
+          ]
+        },
+        {
+          "id": "palace-courts",
+          "kind": "courtyard",
+          "label": "五座宫殿庭院与外楼梯",
+          "polygon": [
+            [
+              -14,
+              -4.5
+            ],
+            [
+              0,
+              -4.5
+            ],
+            [
+              0,
+              4.5
+            ],
+            [
+              -14,
+              4.5
+            ],
+            [
+              -14,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "noguera-court",
+          "kind": "courtyard",
+          "label": "Noguera 庭院",
+          "polygon": [
+            [
+              0.5,
+              -4
+            ],
+            [
+              6.5,
+              -4
+            ],
+            [
+              6.5,
+              4
+            ],
+            [
+              0.5,
+              4
+            ],
+            [
+              0.5,
+              -4
+            ]
+          ]
+        },
+        {
+          "id": "ground-services",
+          "kind": "service",
+          "label": "票务、衣帽间与书店",
+          "polygon": [
+            [
+              8.5,
+              -4.5
+            ],
+            [
+              16.5,
+              -4.5
+            ],
+            [
+              16.5,
+              4.5
+            ],
+            [
+              8.5,
+              4.5
+            ],
+            [
+              8.5,
+              -4.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-1",
+      "label": "Level 1 常设展",
+      "elevation": 3,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -18,
+          -6
+        ],
+        [
+          18,
+          -6
+        ],
+        [
+          18,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          4.5
+        ],
+        [
+          3,
+          4.5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          -4,
+          6
+        ],
+        [
+          -4,
+          4.5
+        ],
+        [
+          -11,
+          4.5
+        ],
+        [
+          -11,
+          6
+        ],
+        [
+          -18,
+          6
+        ],
+        [
+          -18,
+          -6
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "rooms-1-7",
+          "kind": "gallery",
+          "label": "展厅 1–7：少年学院训练与家庭时期",
+          "polygon": [
+            [
+              -17.5,
+              -4.5
+            ],
+            [
+              -10.5,
+              -4.5
+            ],
+            [
+              -10.5,
+              4.5
+            ],
+            [
+              -17.5,
+              4.5
+            ],
+            [
+              -17.5,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "rooms-8-11",
+          "kind": "gallery",
+          "label": "展厅 8–11：蓝色时期与巴黎转折",
+          "polygon": [
+            [
+              -10,
+              -4.5
+            ],
+            [
+              -4,
+              -4.5
+            ],
+            [
+              -4,
+              4.5
+            ],
+            [
+              -10,
+              4.5
+            ],
+            [
+              -10,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "room-12",
+          "kind": "gallery",
+          "label": "展厅 12：1917 年巴塞罗那作品",
+          "polygon": [
+            [
+              -3.5,
+              -4.5
+            ],
+            [
+              0.5,
+              -4.5
+            ],
+            [
+              0.5,
+              4.5
+            ],
+            [
+              -3.5,
+              4.5
+            ],
+            [
+              -3.5,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "rooms-13-16",
+          "kind": "gallery",
+          "label": "展厅 13–16：《宫娥》系列",
+          "polygon": [
+            [
+              1,
+              -4.5
+            ],
+            [
+              9,
+              -4.5
+            ],
+            [
+              9,
+              4.5
+            ],
+            [
+              1,
+              4.5
+            ],
+            [
+              1,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "ceramics-annex",
+          "kind": "gallery",
+          "label": "陶瓷与捐赠脉络展区",
+          "polygon": [
+            [
+              10,
+              -4.5
+            ],
+            [
+              17,
+              -4.5
+            ],
+            [
+              17,
+              4.5
+            ],
+            [
+              10,
+              4.5
+            ],
+            [
+              10,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "upper-arrival",
+          "kind": "circulation",
+          "label": "宫殿外楼梯与电梯到达处",
+          "polygon": [
+            [
+              -17.5,
+              -5.5
+            ],
+            [
+              -15.5,
+              -5.5
+            ],
+            [
+              -15.5,
+              -3.5
+            ],
+            [
+              -17.5,
+              -3.5
+            ],
+            [
+              -17.5,
+              -5.5
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "level-0",
+      "kind": "gate",
+      "position": [
+        -17.2,
+        -4.5
+      ],
+      "connects": [
+        "montcada-entry",
+        "palace-courts"
+      ]
+    },
+    {
+      "floorId": "level-0",
+      "kind": "archway",
+      "position": [
+        0,
+        0
+      ],
+      "connects": [
+        "palace-courts",
+        "noguera-court"
+      ]
+    },
+    {
+      "floorId": "level-0",
+      "kind": "archway",
+      "position": [
+        7.5,
+        0
+      ],
+      "connects": [
+        "noguera-court",
+        "ground-services"
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "kind": "archway",
+      "position": [
+        -10.5,
+        0
+      ],
+      "connects": [
+        "rooms-1-7",
+        "rooms-8-11"
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "kind": "archway",
+      "position": [
+        -4,
+        0
+      ],
+      "connects": [
+        "rooms-8-11",
+        "room-12"
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "kind": "archway",
+      "position": [
+        0.5,
+        0
+      ],
+      "connects": [
+        "room-12",
+        "rooms-13-16"
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "kind": "archway",
+      "position": [
+        9.5,
+        0
+      ],
+      "connects": [
+        "rooms-13-16",
+        "ceramics-annex"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "level-0",
+      "spaceId": "palace-courts",
+      "position": [
+        -7,
+        0
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "spaceId": "rooms-1-7",
+      "position": [
+        -14,
+        0
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "spaceId": "rooms-8-11",
+      "position": [
+        -7,
+        0
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "spaceId": "room-12",
+      "position": [
+        -1.5,
+        0
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "spaceId": "rooms-13-16",
+      "position": [
+        5,
+        0
+      ]
+    },
+    {
+      "floorId": "level-1",
+      "spaceId": "ceramics-annex",
+      "position": [
+        13.5,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Museu Picasso Barcelona visitor floor map",
+      "url": "https://museupicassobcn.cat/sites/default/files/inline-images/Museu/planol/PLANOL_EN.pdf",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "palace-stair",
+      "kind": "stairs",
+      "label": "宫殿庭院外楼梯",
+      "landings": [
+        {
+          "floorId": "level-0",
+          "position": [
+            -14,
+            -3.8
+          ]
+        },
+        {
+          "floorId": "level-1",
+          "position": [
+            -16.5,
+            -4.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "Level 0–1 访客电梯",
+      "landings": [
+        {
+          "floorId": "level-0",
+          "position": [
+            10.5,
+            3.5
+          ]
+        },
+        {
+          "floorId": "level-1",
+          "position": [
+            10.5,
+            3.5
+          ]
+        }
+      ]
+    }
+  ]
+}

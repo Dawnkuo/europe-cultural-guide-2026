@@ -1,0 +1,251 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "cloister",
+      "label": "纪念墓园回廊层",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -10,
+          -5
+        ],
+        [
+          10,
+          -5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          -10,
+          5
+        ],
+        [
+          -10,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "central-court",
+          "kind": "courtyard",
+          "label": "中央露天墓地",
+          "polygon": [
+            [
+              -6.9,
+              -2.5
+            ],
+            [
+              6.9,
+              -2.5
+            ],
+            [
+              6.9,
+              2.5
+            ],
+            [
+              -6.9,
+              2.5
+            ],
+            [
+              -6.9,
+              -2.5
+            ]
+          ]
+        },
+        {
+          "id": "north-fresco",
+          "kind": "gallery",
+          "label": "北侧生命与死亡壁画回廊",
+          "polygon": [
+            [
+              -8.9,
+              -4.75
+            ],
+            [
+              8.9,
+              -4.75
+            ],
+            [
+              8.9,
+              -3.25
+            ],
+            [
+              -8.9,
+              -3.25
+            ],
+            [
+              -8.9,
+              -4.75
+            ]
+          ]
+        },
+        {
+          "id": "south-sarcophagi",
+          "kind": "gallery",
+          "label": "南侧石棺与罗马铭文回廊",
+          "polygon": [
+            [
+              -8.9,
+              3.25
+            ],
+            [
+              8.9,
+              3.25
+            ],
+            [
+              8.9,
+              4.75
+            ],
+            [
+              -8.9,
+              4.75
+            ],
+            [
+              -8.9,
+              3.25
+            ]
+          ]
+        },
+        {
+          "id": "east-monuments",
+          "kind": "gallery",
+          "label": "东侧地方纪念碑回廊",
+          "polygon": [
+            [
+              8.05,
+              -3.3
+            ],
+            [
+              9.55,
+              -3.3
+            ],
+            [
+              9.55,
+              3.3
+            ],
+            [
+              8.05,
+              3.3
+            ],
+            [
+              8.05,
+              -3.3
+            ]
+          ]
+        },
+        {
+          "id": "west-entry",
+          "kind": "circulation",
+          "label": "西侧入口回廊",
+          "polygon": [
+            [
+              -9.55,
+              -3.3
+            ],
+            [
+              -8.05,
+              -3.3
+            ],
+            [
+              -8.05,
+              3.3
+            ],
+            [
+              -9.55,
+              3.3
+            ],
+            [
+              -9.55,
+              -3.3
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "cloister",
+      "kind": "gate",
+      "position": [
+        -9.8,
+        0
+      ],
+      "connects": [
+        "west-entry"
+      ]
+    },
+    {
+      "floorId": "cloister",
+      "kind": "archway",
+      "position": [
+        0,
+        -2.8
+      ],
+      "connects": [
+        "central-court",
+        "north-fresco"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "cloister",
+      "spaceId": "central-court",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "cloister",
+      "spaceId": "north-fresco",
+      "position": [
+        0,
+        -4
+      ]
+    },
+    {
+      "floorId": "cloister",
+      "spaceId": "south-sarcophagi",
+      "position": [
+        0,
+        4
+      ]
+    },
+    {
+      "floorId": "cloister",
+      "spaceId": "east-monuments",
+      "position": [
+        8.8,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint"
+      ],
+      "title": "Opera della Primaziale Pisana: Square of Miracles map",
+      "url": "https://www.opapisa.it/en/mappa/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "route"
+      ],
+      "title": "Opera della Primaziale Pisana: Camposanto guide",
+      "url": "https://www.opapisa.it/en/square-of-miracles/camposanto/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": []
+}

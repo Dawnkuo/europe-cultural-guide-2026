@@ -1,6 +1,334 @@
 import { defineGuideContent } from './types';
 
 export const romeVaticanGuideContent = defineGuideContent({
+  'vatican-museums': {
+    originalTitle: 'Musei Vaticani',
+    hero: {
+      src: '/vatican-guide/assets/images/9e2540b0f966111eca.webp',
+      alt: '梵蒂冈城、圣彼得大教堂与博物馆建筑群鸟瞰',
+    },
+    overview:
+      '梵蒂冈博物馆不是一座单体建筑，而是沿历代教宗宫殿、庭院和长廊不断扩展的复合体。现场最重要的空间判断是：入口在Viale Vaticano，古典馆围绕观景楼庭院展开，三大长廊位于二层，拉斐尔画室之后下行进入波吉亚寓所和西斯廷礼拜堂。分层地图按官方游客图重绘，保留庭院挑空与跨层楼梯关系。',
+    orientation: [
+      {
+        title: '先分清三个标高',
+        body: '官方游客图把车马馆和民族学馆列为地下层，入口、古典馆、绘画馆与西斯廷礼拜堂列为一层，伊特鲁里亚馆、三大长廊与拉斐尔画室列为二层。',
+      },
+      {
+        title: '主线不是直线',
+        body: '常规主线先在观景楼区上楼，经过烛台廊、挂毯廊和地图廊，再从拉斐尔画室一侧下行到西斯廷礼拜堂；地图上的跨层连接比建筑外观更重要。',
+      },
+      {
+        title: '两次到访分开理解',
+        body: '现有行程包含清晨Key Master Tour与另一次博物馆参观；本章只展示既定票务和空间，不合并、不改动任何日期或顺序。',
+      },
+    ],
+    spatial: {
+      type: 'floorplan',
+      title: '官方游客图重绘的三层博物馆拓扑',
+      note: '所有楼层同时错位堆叠；松果庭院、方形花园和楼板挑空保持透空，节点切换会显示跨层楼梯。',
+      stops: [
+        '入口大厅与四门厅',
+        '梵蒂冈绘画馆',
+        '庇奥-克莱门蒂诺博物馆',
+        '松果庭院',
+        '格里高利伊特鲁里亚博物馆',
+        '烛台廊',
+        '挂毯廊',
+        '地图廊',
+        '拉斐尔画室',
+        '波吉亚寓所',
+        '西斯廷礼拜堂',
+        '出口与莫莫双螺旋坡道',
+      ],
+    },
+    highlights: [
+      {
+        title: '基督变容',
+        originalTitle: 'La Trasfigurazione',
+        creator: '拉斐尔及其工作室',
+        period: '1516-1520',
+        location: '绘画馆第8室',
+        image: '/vatican-guide/assets/images/87a903cd3ef4e8f849.webp',
+        imageAlt: '拉斐尔《基督变容》',
+        summary:
+          '拉斐尔晚年的巨幅祭坛画，把上方神圣显现与下方人群的混乱压缩在同一画面。',
+        lookFor:
+          '从上下两组人物之间的明暗断裂入手，再看斜向手势如何把视线引向基督。',
+      },
+      {
+        title: '拉奥孔与他的儿子们',
+        originalTitle: 'Laocoonte e i suoi figli',
+        creator:
+          '罗得岛雕塑家群，传统署名阿格桑德罗斯、波利多罗斯与阿塔诺多罗斯',
+        period: '约公元前40-前30年',
+        location: '庇奥-克莱门蒂诺博物馆八角庭院',
+        image: '/vatican-guide/assets/images/d17104dfc05130fee8.webp',
+        imageAlt: '《拉奥孔与他的儿子们》大理石群雕',
+        summary:
+          '群雕以蛇身、扭转躯干和递进表情把三个人物锁进同一场无法逃脱的悲剧。',
+        lookFor:
+          '比较父亲后弯的右臂、两个儿子的不同处境，以及蛇身形成的连续构图。',
+      },
+      {
+        title: '观景楼躯干像',
+        originalTitle: 'Torso del Belvedere',
+        creator: '署名雅典的阿波罗尼奥斯',
+        period: '公元前1世纪',
+        location: '缪斯厅',
+        image: '/vatican-guide/assets/images/2a88c00fb056997178.webp',
+        imageAlt: '观景楼躯干像',
+        summary: '残缺的男性躯干以极强的旋转张力影响了米开朗基罗的人体塑造。',
+        lookFor:
+          '不要补想缺失四肢，直接观察腹部、背部和骨盆如何形成相反方向的扭转。',
+      },
+      {
+        title: '地图廊拱顶',
+        originalTitle: 'Galleria delle Carte Geografiche',
+        creator: '伊格纳齐奥·丹蒂与画师团队',
+        period: '1580-1583',
+        location: '地图廊',
+        image: '/vatican-guide/assets/images/942ae98cc350e8c5ec.webp',
+        imageAlt: '梵蒂冈博物馆地图廊',
+        summary:
+          '长约120米的走廊以40幅地域地图把16世纪意大利半岛转化成一条可行走的地理图册。',
+        lookFor:
+          '墙面两侧分别对应亚平宁山脉两边，行走时同时观察地图与金色拱顶。',
+      },
+      {
+        title: '雅典学院',
+        originalTitle: 'La Scuola di Atene',
+        creator: '拉斐尔',
+        period: '1509-1511',
+        location: '拉斐尔画室签字厅',
+        image: '/vatican-guide/assets/images/414f85f266b23488b8.webp',
+        imageAlt: '拉斐尔《雅典学院》',
+        summary:
+          '古代哲学家被安置在理想化古典建筑中，中央柏拉图与亚里士多德构成思想和透视的双重轴心。',
+        lookFor: '先找到中央两人，再沿台阶、拱券和地面透视线辨认周围人物群。',
+      },
+      {
+        title: '创造亚当',
+        originalTitle: 'Creazione di Adamo',
+        creator: '米开朗基罗',
+        period: '约1511年',
+        location: '西斯廷礼拜堂天顶',
+        image: '/vatican-guide/assets/images/e74b56fe93a51192d6.webp',
+        imageAlt: '米开朗基罗《创造亚当》',
+        summary: '两只几乎相触的手把宏大的创世叙事压缩成一个带电般的间隙。',
+        lookFor:
+          '先定位天顶中段，再比较亚当松弛的身体与上帝一侧高速前冲的群像。',
+      },
+      {
+        title: '最后的审判',
+        originalTitle: 'Giudizio Universale',
+        creator: '米开朗基罗',
+        period: '1536-1541',
+        location: '西斯廷礼拜堂祭坛墙',
+        image: '/vatican-guide/assets/images/60870758ced9f2717c.webp',
+        imageAlt: '米开朗基罗《最后的审判》',
+        summary:
+          '数百个人体围绕中央基督形成旋转洪流，与较早完成的天顶画呈现截然不同的情绪。',
+        lookFor:
+          '从中央基督向外追踪上升与坠落的两股运动，再找圣巴多罗买手持人皮。',
+      },
+    ],
+    sequence: [
+      {
+        title: '从Viale Vaticano入口进入',
+        body: '安检和验票后确认四门厅位置；入口与圣彼得广场不是同一个门。',
+      },
+      {
+        title: '按票务活动完成清晨段',
+        body: 'Key Master Tour的集合、开门和早餐内容以票面及领队指示为准，不用普通参观顺序覆盖团体流程。',
+      },
+      {
+        title: '自由参观先补绘画馆与古典馆',
+        body: '绘画馆与庇奥-克莱门蒂诺位于一层不同翼，需留意回到主线的楼梯位置。',
+      },
+      {
+        title: '上二层穿过三大长廊',
+        body: '烛台廊、挂毯廊、地图廊依次展开，之后进入拉斐尔画室。',
+      },
+      {
+        title: '下行进入西斯廷礼拜堂',
+        body: '经波吉亚寓所抵达西斯廷礼拜堂；内部保持安静并遵守现场摄影规定。',
+      },
+      {
+        title: '按出口线离场',
+        body: '出口区留意莫莫双螺旋坡道；若现场封闭或改线，以工作人员指示为准。',
+      },
+    ],
+    practical: [
+      '两次到访的日期、集合时间与票种保持现有行程原样；本导览不重新安排时段。',
+      '馆内跨层多、路径长，任何临时封闭都会改变可走路线；节点图用于认路，现场指示优先。',
+      '西斯廷礼拜堂禁止喧哗，摄影和手机使用遵守当日现场规则。',
+      '官方地图标出的无障碍电梯路线与常规楼梯路线不同，需要时直接向工作人员说明。',
+    ],
+    sources: [
+      {
+        institution: 'Musei Vaticani',
+        title: 'Vatican Museums Map - Collections and Services',
+        url: 'https://www.museivaticani.va/content/dam/museivaticani/pdf/visita_musei/servizi_visitatori/mappa_musei_vaticani.pdf',
+        verifiedAt: '2026-09-03',
+        note: '用于楼层、展区、庭院、入口出口和跨层连接的内部核验。',
+      },
+    ],
+  },
+  'st-peters-basilica': {
+    originalTitle: 'Basilica Papale di San Pietro in Vaticano',
+    hero: {
+      src: '/vatican-guide/assets/images/7c8ef6daf2c79cae8b.webp',
+      alt: '圣彼得大教堂穹顶内部',
+    },
+    overview:
+      '圣彼得大教堂的现场体验实际跨越多个标高：地面的门廊、中殿、耳堂和后殿，地下的梵蒂冈墓穴，以及经电梯、屋顶平台、穹顶内环和窄梯到达的顶部观景台。分层地图依据圣彼得大教堂官方数字体验的正交平面重绘，默认拆开所有楼层，因此不会再被实心建筑外壳遮住。',
+    orientation: [
+      {
+        title: '圣殿与穹顶是两段动线',
+        body: '圣殿主层沿拉丁十字平面展开；穹顶入口、电梯和后续窄梯属于另一套垂直路线。',
+      },
+      {
+        title: '地下墓穴位于主祭坛下方',
+        body: '梵蒂冈墓穴不是与中殿并列的房间，而是位于圣殿地坪下；地图将其单独下沉显示。',
+      },
+      {
+        title: '票面时间不等于随意到场',
+        body: '既有预订含圣殿与电梯穹顶，具体集合、二维码和安检要求仍以最终票面为准。',
+      },
+    ],
+    spatial: {
+      type: 'floorplan',
+      title: '圣殿、地下墓穴与穹顶五层剖开图',
+      note: '屋顶被省略，所有楼层始终同时可见；切换节点时会明确显示楼梯或电梯连接。',
+      stops: [
+        '正立面门廊与青铜门',
+        '米开朗基罗《圣殇》礼拜堂',
+        '中央中殿',
+        '青铜华盖与穹顶交叉部',
+        '圣彼得宝座与后殿',
+        '梵蒂冈墓穴与圣彼得墓核心',
+        '右耳堂及穹顶入口方向',
+        '电梯终点与屋顶平台',
+        '穹顶内环与马赛克近观',
+        '灯笼顶部观景台',
+      ],
+    },
+    highlights: [
+      {
+        title: '圣殇',
+        originalTitle: 'Pieta',
+        creator: '米开朗基罗',
+        period: '1498-1499',
+        location: '入门右侧第一礼拜堂',
+        image: '/vatican-guide/assets/images/0adf582fd3b337d9b7.webp',
+        imageAlt: '米开朗基罗《圣殇》',
+        summary:
+          '米开朗基罗以高度抛光的大理石把死亡、哀悼和理想人体压缩成稳定的三角构图。',
+        lookFor: '从圣母宽大的衣褶看三角形底座，再看基督身体如何横向穿过构图。',
+      },
+      {
+        title: '青铜华盖',
+        originalTitle: 'Baldacchino di San Pietro',
+        creator: '吉安·洛伦佐·贝尼尼',
+        period: '1624-1633',
+        location: '主祭坛与穹顶交叉部',
+        image: '/vatican-guide/assets/images/8468f3720f411fd64b.webp',
+        imageAlt: '贝尼尼青铜华盖',
+        summary: '四根扭柱把巨大的穹顶尺度重新收拢到主祭坛和圣彼得墓上方。',
+        lookFor: '比较柱身的螺旋运动与上方流苏、蜜蜂和枝叶细节。',
+      },
+      {
+        title: '圣彼得宝座',
+        originalTitle: 'Cathedra Petri',
+        creator: '吉安·洛伦佐·贝尼尼',
+        period: '1657-1666',
+        location: '后殿',
+        image: '/vatican-guide/assets/images/87b056610ddec2ee19.webp',
+        imageAlt: '圣彼得宝座祭坛与金色光窗',
+        summary:
+          '青铜教父、云团和金色圣灵窗共同把后殿变成一场戏剧化的光学终点。',
+        lookFor: '站在中轴看椅座、四位教父和椭圆光窗的垂直叠合。',
+      },
+      {
+        title: '梵蒂冈墓穴与圣彼得墓',
+        creator: '16-17世纪形成的地下礼拜与墓葬空间',
+        period: '多时期',
+        location: '主祭坛下方',
+        image: '/vatican-guide/assets/images/a11b9555b83ba6826b.webp',
+        imageAlt: '梵蒂冈地下墓穴空间',
+        summary:
+          '地下层围绕被传统认定为圣彼得墓的位置组织，并容纳多位教宗墓葬。',
+        lookFor:
+          '注意地下平面与上方主祭坛、青铜华盖的垂直对应，而不是只看单座墓碑。',
+      },
+      {
+        title: '米开朗基罗穹顶',
+        creator: '米开朗基罗设计，贾科莫·德拉·波尔塔与多梅尼科·丰塔纳完成',
+        period: '1546年后设计，1590年完成主体',
+        location: '交叉部上方',
+        image: '/vatican-guide/assets/images/7c8ef6daf2c79cae8b.webp',
+        imageAlt: '圣彼得大教堂穹顶',
+        summary:
+          '双层穹顶从巨型支柱升起，内环让人近距离看到从地面几乎无法辨认的马赛克尺度。',
+        lookFor:
+          '在内环比较人物马赛克与真实人体尺寸，再从顶部观察肋骨和灯笼的结构。',
+      },
+      {
+        title: '灯笼观景台',
+        creator: '圣彼得大教堂穹顶建造团队',
+        period: '16世纪末',
+        location: '穹顶顶部',
+        image: '/vatican-guide/assets/images/2dc38eee47aef515d3.webp',
+        imageAlt: '圣彼得大教堂穹顶顶部视野',
+        summary:
+          '顶部观景台提供圣彼得广场轴线、梵蒂冈城与罗马城市肌理的完整视角。',
+        lookFor:
+          '先对准广场方尖碑与协和大道中轴，再转向博物馆建筑群辨认两地入口距离。',
+      },
+    ],
+    sequence: [
+      {
+        title: '按14:30票面时间集合并安检',
+        body: '集合点、二维码和安检要求以最终凭证为准；不要把穹顶时间误当作普通圣殿自由入场。',
+      },
+      {
+        title: '从门廊进入主层',
+        body: '先看右侧《圣殇》，再沿中央中殿走向交叉部。',
+      },
+      {
+        title: '在交叉部建立上下关系',
+        body: '同一轴线上依次对应地下圣彼得墓、主祭坛、青铜华盖和上方穹顶。',
+      },
+      {
+        title: '完成后殿与可开放区域',
+        body: '礼仪或安保可能封闭耳堂与地下墓穴；只走当日允许路线。',
+      },
+      {
+        title: '转入穹顶垂直动线',
+        body: '电梯到屋顶平台后仍需步行与爬窄梯，内环、夹层和顶部不是同一个平台。',
+      },
+      {
+        title: '顶部看完整城市轴线',
+        body: '在观景台辨认广场、协和大道与梵蒂冈博物馆方向，再按单向楼梯下行。',
+      },
+    ],
+    practical: [
+      '穹顶电梯只替代前一段楼梯，电梯终点之后仍有数百级台阶，通道狭窄且局部倾斜。',
+      '圣殿是宗教场所，礼仪和安保可能临时改变开放区域；不对未说明的关闭原因作推测。',
+      '地下墓穴能否进入取决于当日开放；地图保留其结构，但不表示票种必然包含。',
+      '本章不记录金额；人数、日期和时间完全沿用现有票务资料。',
+    ],
+    sources: [
+      {
+        institution: "St. Peter's Basilica",
+        title: "Explore St. Peter's Basilica - official digital experience",
+        url: 'https://virtual.basilicasanpietro.va/en/explore-the-basilica',
+        verifiedAt: '2026-09-03',
+        note: '用于圣殿、地下墓穴、穹顶与官方兴趣点的内部核验。',
+      },
+    ],
+  },
   pantheon: {
     originalTitle: 'Pantheon',
     overview:

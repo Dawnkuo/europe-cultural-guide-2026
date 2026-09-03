@@ -1,0 +1,619 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "crypt",
+      "label": "圣欧拉利娅地下墓室",
+      "elevation": -3,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -4,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          -4,
+          7
+        ],
+        [
+          -4,
+          0
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "eulalia-crypt",
+          "kind": "chapel",
+          "label": "圣欧拉利娅墓室与石棺",
+          "polygon": [
+            [
+              -3,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              -3,
+              6
+            ],
+            [
+              -3,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "crypt-stair",
+          "kind": "circulation",
+          "label": "墓室楼梯平台",
+          "polygon": [
+            [
+              -2,
+              0.09999999999999998
+            ],
+            [
+              2,
+              0.09999999999999998
+            ],
+            [
+              2,
+              1.2999999999999998
+            ],
+            [
+              -2,
+              1.2999999999999998
+            ],
+            [
+              -2,
+              0.09999999999999998
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cathedral",
+      "label": "主教座堂与回廊",
+      "elevation": 0,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -5,
+          -12
+        ],
+        [
+          5,
+          -12
+        ],
+        [
+          5,
+          -7
+        ],
+        [
+          11,
+          -7
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          -5,
+          12
+        ],
+        [
+          -5,
+          8
+        ],
+        [
+          -14,
+          8
+        ],
+        [
+          -14,
+          -7
+        ],
+        [
+          -5,
+          -7
+        ],
+        [
+          -5,
+          -12
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "nave",
+          "kind": "chapel",
+          "label": "中殿与侧廊小堂",
+          "polygon": [
+            [
+              -4.5,
+              -11
+            ],
+            [
+              4.5,
+              -11
+            ],
+            [
+              4.5,
+              7
+            ],
+            [
+              -4.5,
+              7
+            ],
+            [
+              -4.5,
+              -11
+            ]
+          ]
+        },
+        {
+          "id": "choir",
+          "kind": "hall",
+          "label": "唱诗席与金羊毛骑士团徽章",
+          "polygon": [
+            [
+              -3.5,
+              0
+            ],
+            [
+              3.5,
+              0
+            ],
+            [
+              3.5,
+              5
+            ],
+            [
+              -3.5,
+              5
+            ],
+            [
+              -3.5,
+              0
+            ]
+          ]
+        },
+        {
+          "id": "crypt-access",
+          "kind": "circulation",
+          "label": "地下墓室入口",
+          "polygon": [
+            [
+              -2,
+              -0.30000000000000004
+            ],
+            [
+              2,
+              -0.30000000000000004
+            ],
+            [
+              2,
+              1.7
+            ],
+            [
+              -2,
+              1.7
+            ],
+            [
+              -2,
+              -0.30000000000000004
+            ]
+          ]
+        },
+        {
+          "id": "lepanto-chapel",
+          "kind": "chapel",
+          "label": "勒班陀圣基督小堂",
+          "polygon": [
+            [
+              4.45,
+              -5
+            ],
+            [
+              9.95,
+              -5
+            ],
+            [
+              9.95,
+              2
+            ],
+            [
+              4.45,
+              2
+            ],
+            [
+              4.45,
+              -5
+            ]
+          ]
+        },
+        {
+          "id": "cloister",
+          "kind": "courtyard",
+          "label": "回廊、花园与十三只鹅",
+          "polygon": [
+            [
+              -13.5,
+              -6
+            ],
+            [
+              -5.5,
+              -6
+            ],
+            [
+              -5.5,
+              7
+            ],
+            [
+              -13.5,
+              7
+            ],
+            [
+              -13.5,
+              -6
+            ]
+          ]
+        },
+        {
+          "id": "roof-lift-chapel",
+          "kind": "circulation",
+          "label": "Holy Innocents 小堂旁屋顶电梯",
+          "polygon": [
+            [
+              3,
+              5.5
+            ],
+            [
+              5,
+              5.5
+            ],
+            [
+              5,
+              7.5
+            ],
+            [
+              3,
+              7.5
+            ],
+            [
+              3,
+              5.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof",
+      "label": "屋顶",
+      "elevation": 4,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -5,
+          -12
+        ],
+        [
+          5,
+          -12
+        ],
+        [
+          5,
+          -7
+        ],
+        [
+          11,
+          -7
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          -5,
+          12
+        ],
+        [
+          -5,
+          8
+        ],
+        [
+          -14,
+          8
+        ],
+        [
+          -14,
+          -7
+        ],
+        [
+          -5,
+          -7
+        ],
+        [
+          -5,
+          -12
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "roof-lift-arrival",
+          "kind": "circulation",
+          "label": "屋顶电梯到达处",
+          "polygon": [
+            [
+              3,
+              5.5
+            ],
+            [
+              5,
+              5.5
+            ],
+            [
+              5,
+              7.5
+            ],
+            [
+              3,
+              7.5
+            ],
+            [
+              3,
+              5.5
+            ]
+          ]
+        },
+        {
+          "id": "roof-walk",
+          "kind": "outdoor",
+          "label": "主教座堂屋顶与哥特区天际线",
+          "polygon": [
+            [
+              -4.5,
+              -9
+            ],
+            [
+              4.5,
+              -9
+            ],
+            [
+              4.5,
+              9
+            ],
+            [
+              -4.5,
+              9
+            ],
+            [
+              -4.5,
+              -9
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "cathedral",
+      "kind": "gate",
+      "position": [
+        0,
+        -11
+      ],
+      "connects": [
+        "nave"
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "kind": "archway",
+      "position": [
+        0,
+        0.7
+      ],
+      "connects": [
+        "choir",
+        "crypt-access"
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "kind": "archway",
+      "position": [
+        5.2,
+        -1.5
+      ],
+      "connects": [
+        "nave",
+        "lepanto-chapel"
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "kind": "door",
+      "position": [
+        -5.2,
+        0.5
+      ],
+      "connects": [
+        "nave",
+        "cloister"
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "kind": "door",
+      "position": [
+        4,
+        5.3
+      ],
+      "connects": [
+        "nave",
+        "roof-lift-chapel"
+      ]
+    },
+    {
+      "floorId": "crypt",
+      "kind": "archway",
+      "position": [
+        0,
+        1.2
+      ],
+      "connects": [
+        "crypt-stair",
+        "eulalia-crypt"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "cathedral",
+      "spaceId": "nave",
+      "position": [
+        0,
+        -2
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "choir",
+      "position": [
+        0,
+        2.5
+      ]
+    },
+    {
+      "floorId": "crypt",
+      "spaceId": "eulalia-crypt",
+      "position": [
+        0,
+        3.5
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "lepanto-chapel",
+      "position": [
+        7.2,
+        -1.5
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "cloister",
+      "position": [
+        -9.5,
+        0.5
+      ]
+    },
+    {
+      "floorId": "roof",
+      "spaceId": "roof-walk",
+      "position": [
+        0,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Barcelona Cathedral visitable spaces",
+      "url": "https://catedralbcn.org/en/tourist-visit/visitable-spaces/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces"
+      ],
+      "title": "Barcelona Cathedral chapels and saints plan",
+      "url": "https://catedralbcn.org/en/worship-and-prayer/saints/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "crypt-stair",
+      "kind": "stairs",
+      "label": "圣欧拉利娅墓室楼梯",
+      "landings": [
+        {
+          "floorId": "crypt",
+          "position": [
+            0,
+            0.7
+          ]
+        },
+        {
+          "floorId": "cathedral",
+          "position": [
+            0,
+            0.7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-lift",
+      "kind": "lift",
+      "label": "Holy Innocents 小堂旁屋顶电梯",
+      "landings": [
+        {
+          "floorId": "cathedral",
+          "position": [
+            4,
+            6.5
+          ]
+        },
+        {
+          "floorId": "roof",
+          "position": [
+            4,
+            6.5
+          ]
+        }
+      ]
+    }
+  ]
+}

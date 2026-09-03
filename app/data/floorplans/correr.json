@@ -1,0 +1,560 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层：拿破仑翼入口",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -6,
+          -4
+        ],
+        [
+          6,
+          -4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          -6,
+          4
+        ],
+        [
+          -6,
+          -4
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "napoleonic-entry",
+          "kind": "circulation",
+          "label": "拿破仑翼入口与大阶梯",
+          "polygon": [
+            [
+              -4.25,
+              0.55
+            ],
+            [
+              4.25,
+              0.55
+            ],
+            [
+              4.25,
+              3.05
+            ],
+            [
+              -4.25,
+              3.05
+            ],
+            [
+              -4.25,
+              0.55
+            ]
+          ]
+        },
+        {
+          "id": "lift-foot",
+          "kind": "circulation",
+          "label": "无障碍电梯入口",
+          "polygon": [
+            [
+              3.7499999999999996,
+              -3.0500000000000003
+            ],
+            [
+              5.449999999999999,
+              -3.0500000000000003
+            ],
+            [
+              5.449999999999999,
+              -1.35
+            ],
+            [
+              3.7499999999999996,
+              -1.35
+            ],
+            [
+              3.7499999999999996,
+              -3.0500000000000003
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first",
+      "label": "一层：新古典宫室与威尼斯生活展区",
+      "elevation": 3.2,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -7.5,
+          -5
+        ],
+        [
+          7.5,
+          -5
+        ],
+        [
+          7.5,
+          5
+        ],
+        [
+          -7.5,
+          5
+        ],
+        [
+          -7.5,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "ballroom",
+          "kind": "hall",
+          "label": "舞厅及新古典宫室",
+          "polygon": [
+            [
+              -6.9,
+              1
+            ],
+            [
+              -2.6999999999999997,
+              1
+            ],
+            [
+              -2.6999999999999997,
+              4.2
+            ],
+            [
+              -6.9,
+              4.2
+            ],
+            [
+              -6.9,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "venetian-life",
+          "kind": "gallery",
+          "label": "威尼斯生活与制度展区",
+          "polygon": [
+            [
+              -2.3,
+              0.20000000000000018
+            ],
+            [
+              2.3,
+              0.20000000000000018
+            ],
+            [
+              2.3,
+              4.2
+            ],
+            [
+              -2.3,
+              4.2
+            ],
+            [
+              -2.3,
+              0.20000000000000018
+            ]
+          ]
+        },
+        {
+          "id": "barbari-map",
+          "kind": "gallery",
+          "label": "德巴尔巴里城市图及木版",
+          "polygon": [
+            [
+              3,
+              0.20000000000000018
+            ],
+            [
+              6.6,
+              0.20000000000000018
+            ],
+            [
+              6.6,
+              4.2
+            ],
+            [
+              3,
+              4.2
+            ],
+            [
+              3,
+              0.20000000000000018
+            ]
+          ]
+        },
+        {
+          "id": "first-corridor",
+          "kind": "circulation",
+          "label": "新行政官邸连接走廊",
+          "polygon": [
+            [
+              -6.25,
+              -3.8
+            ],
+            [
+              6.25,
+              -3.8
+            ],
+            [
+              6.25,
+              -1.4000000000000001
+            ],
+            [
+              -6.25,
+              -1.4000000000000001
+            ],
+            [
+              -6.25,
+              -3.8
+            ]
+          ]
+        },
+        {
+          "id": "stair-head",
+          "kind": "circulation",
+          "label": "大阶梯上层",
+          "polygon": [
+            [
+              -6.7,
+              -4.55
+            ],
+            [
+              -4.8999999999999995,
+              -4.55
+            ],
+            [
+              -4.8999999999999995,
+              -3.05
+            ],
+            [
+              -6.7,
+              -3.05
+            ],
+            [
+              -6.7,
+              -4.55
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second",
+      "label": "二层：绘画馆与行政官邸出口段",
+      "elevation": 6.4,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -7.5,
+          -5
+        ],
+        [
+          7.5,
+          -5
+        ],
+        [
+          7.5,
+          5
+        ],
+        [
+          -7.5,
+          5
+        ],
+        [
+          -7.5,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "picture-gallery",
+          "kind": "gallery",
+          "label": "绘画馆",
+          "polygon": [
+            [
+              -6.800000000000001,
+              -1.8
+            ],
+            [
+              1.6,
+              -1.8
+            ],
+            [
+              1.6,
+              4.4
+            ],
+            [
+              -6.800000000000001,
+              4.4
+            ],
+            [
+              -6.800000000000001,
+              -1.8
+            ]
+          ]
+        },
+        {
+          "id": "procuratie-exit",
+          "kind": "circulation",
+          "label": "与行政官邸相连的出口段",
+          "polygon": [
+            [
+              2.1999999999999997,
+              -1.8
+            ],
+            [
+              6.4,
+              -1.8
+            ],
+            [
+              6.4,
+              4.4
+            ],
+            [
+              2.1999999999999997,
+              4.4
+            ],
+            [
+              2.1999999999999997,
+              -1.8
+            ]
+          ]
+        },
+        {
+          "id": "second-landing",
+          "kind": "circulation",
+          "label": "二层楼梯与电梯厅",
+          "polygon": [
+            [
+              -4.25,
+              -4.4
+            ],
+            [
+              4.25,
+              -4.4
+            ],
+            [
+              4.25,
+              -2.8
+            ],
+            [
+              -4.25,
+              -2.8
+            ],
+            [
+              -4.25,
+              -4.4
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        0,
+        3
+      ],
+      "connects": [
+        "napoleonic-entry"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        -2.6,
+        2.4
+      ],
+      "connects": [
+        "ballroom",
+        "venetian-life"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        2.4,
+        2.2
+      ],
+      "connects": [
+        "venetian-life",
+        "barbari-map"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "archway",
+      "position": [
+        1.6,
+        1.3
+      ],
+      "connects": [
+        "picture-gallery",
+        "procuratie-exit"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "napoleonic-entry",
+      "position": [
+        0,
+        1.8
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "ballroom",
+      "position": [
+        -4.8,
+        2.6
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "venetian-life",
+      "position": [
+        0,
+        2.2
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "barbari-map",
+      "position": [
+        4.8,
+        2.2
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "picture-gallery",
+      "position": [
+        -2.6,
+        1.3
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "procuratie-exit",
+      "position": [
+        4.3,
+        1.3
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Museo Correr official 2025 visitor route map",
+      "url": "https://correr.visitmuve.it/wp-content/uploads/sites/3/2026/01/MAPPA-PERCORSI-DI-VISITA-MUSEO-CORRER-2025.pdf",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels"
+      ],
+      "title": "Museo Correr official layout and collections guide",
+      "url": "https://correr.visitmuve.it/en/layout-and-collections/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "monumental-stair",
+      "kind": "stairs",
+      "label": "拿破仑翼纪念性大阶梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -4.2,
+            -2.2
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            -5.8,
+            -3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gallery-stair",
+      "kind": "stairs",
+      "label": "一层至二层绘画馆楼梯",
+      "landings": [
+        {
+          "floorId": "first",
+          "position": [
+            0,
+            -2.6
+          ]
+        },
+        {
+          "floorId": "second",
+          "position": [
+            0,
+            -3.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "各展览层访客电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            4.6,
+            -2.2
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            5.8,
+            -3.5
+          ]
+        },
+        {
+          "floorId": "second",
+          "position": [
+            3.2,
+            -3.6
+          ]
+        }
+      ]
+    }
+  ]
+}

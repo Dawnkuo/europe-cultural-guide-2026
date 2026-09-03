@@ -1,29 +1,36 @@
 'use client';
 
 import { Wifi, WifiOff } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useSyncExternalStore } from 'react';
 import { withBasePath } from '../lib/paths';
 
+function subscribeToConnectivity(onStoreChange: () => void) {
+  window.addEventListener('online', onStoreChange);
+  window.addEventListener('offline', onStoreChange);
+  return () => {
+    window.removeEventListener('online', onStoreChange);
+    window.removeEventListener('offline', onStoreChange);
+  };
+}
+
+function getConnectivitySnapshot() {
+  return navigator.onLine;
+}
+
 export function OfflineStatus() {
-  const [offline, setOffline] = useState(false);
+  const online = useSyncExternalStore(
+    subscribeToConnectivity,
+    getConnectivitySnapshot,
+    () => true,
+  );
+  const offline = !online;
 
   useEffect(() => {
-    const goOnline = () => setOffline(false);
-    const goOffline = () => setOffline(true);
-    setOffline(!navigator.onLine);
-    window.addEventListener('online', goOnline);
-    window.addEventListener('offline', goOffline);
-
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
         .register(withBasePath('/sw.js'))
         .catch(() => undefined);
     }
-
-    return () => {
-      window.removeEventListener('online', goOnline);
-      window.removeEventListener('offline', goOffline);
-    };
   }, []);
 
   const Icon = offline ? WifiOff : Wifi;

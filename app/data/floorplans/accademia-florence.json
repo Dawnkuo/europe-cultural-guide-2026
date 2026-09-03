@@ -1,0 +1,400 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层：米开朗琪罗与十九世纪收藏",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -7,
+          -5
+        ],
+        [
+          7,
+          -5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          -7,
+          7
+        ],
+        [
+          -7,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "colossus",
+          "kind": "hall",
+          "label": "巨像厅",
+          "polygon": [
+            [
+              -6.5,
+              1.4
+            ],
+            [
+              -3.0999999999999996,
+              1.4
+            ],
+            [
+              -3.0999999999999996,
+              6.199999999999999
+            ],
+            [
+              -6.5,
+              6.199999999999999
+            ],
+            [
+              -6.5,
+              1.4
+            ]
+          ]
+        },
+        {
+          "id": "prisoners",
+          "kind": "gallery",
+          "label": "囚徒长廊",
+          "polygon": [
+            [
+              -2.4,
+              -3.65
+            ],
+            [
+              0,
+              -3.65
+            ],
+            [
+              0,
+              4.45
+            ],
+            [
+              -2.4,
+              4.45
+            ],
+            [
+              -2.4,
+              -3.65
+            ]
+          ]
+        },
+        {
+          "id": "david",
+          "kind": "hall",
+          "label": "《大卫》圆厅",
+          "polygon": [
+            [
+              0.050000000000000044,
+              -4.5
+            ],
+            [
+              2.55,
+              -4.5
+            ],
+            [
+              2.55,
+              -1.7000000000000002
+            ],
+            [
+              0.050000000000000044,
+              -1.7000000000000002
+            ],
+            [
+              0.050000000000000044,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "gipsoteca",
+          "kind": "gallery",
+          "label": "巴托里尼石膏馆",
+          "polygon": [
+            [
+              2.8,
+              -4.2
+            ],
+            [
+              6.3999999999999995,
+              -4.2
+            ],
+            [
+              6.3999999999999995,
+              4.2
+            ],
+            [
+              2.8,
+              4.2
+            ],
+            [
+              2.8,
+              -4.2
+            ]
+          ]
+        },
+        {
+          "id": "main-stair-ground",
+          "kind": "circulation",
+          "label": "上层楼梯与电梯",
+          "polygon": [
+            [
+              -6.5,
+              -4.6
+            ],
+            [
+              -4.699999999999999,
+              -4.6
+            ],
+            [
+              -4.699999999999999,
+              -3
+            ],
+            [
+              -6.5,
+              -3
+            ],
+            [
+              -6.5,
+              -4.6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "upper",
+      "label": "上层：十三至十五世纪绘画",
+      "elevation": 3.1,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -7,
+          -5
+        ],
+        [
+          1,
+          -5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          -7,
+          5
+        ],
+        [
+          -7,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "gold-ground",
+          "kind": "gallery",
+          "label": "金地绘画展区",
+          "polygon": [
+            [
+              -4.7,
+              -4
+            ],
+            [
+              0.5,
+              -4
+            ],
+            [
+              0.5,
+              4
+            ],
+            [
+              -4.7,
+              4
+            ],
+            [
+              -4.7,
+              -4
+            ]
+          ]
+        },
+        {
+          "id": "main-stair-upper",
+          "kind": "circulation",
+          "label": "楼梯与电梯平台",
+          "polygon": [
+            [
+              -6.5,
+              -4.6
+            ],
+            [
+              -4.699999999999999,
+              -4.6
+            ],
+            [
+              -4.699999999999999,
+              -3
+            ],
+            [
+              -6.5,
+              -3
+            ],
+            [
+              -6.5,
+              -4.6
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "archway",
+      "position": [
+        -3,
+        1.7
+      ],
+      "connects": [
+        "colossus",
+        "prisoners"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "archway",
+      "position": [
+        0,
+        -3.1
+      ],
+      "connects": [
+        "prisoners",
+        "david"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "archway",
+      "position": [
+        2.8,
+        0
+      ],
+      "connects": [
+        "david",
+        "gipsoteca"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "colossus",
+      "position": [
+        -4.8,
+        3.8
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "prisoners",
+      "position": [
+        -1.2,
+        0.4
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "david",
+      "position": [
+        1.3,
+        -3.1
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "gipsoteca",
+      "position": [
+        4.6,
+        0
+      ]
+    },
+    {
+      "floorId": "upper",
+      "spaceId": "gold-ground",
+      "position": [
+        -2.1,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Galleria dell’Accademia Firenze 2026 visitor kit and floor map",
+      "url": "https://www.galleriaaccademiafirenze.it/wp-content/uploads/2026/02/Galleria-Accademia-Fi-Kit-visita-ENG.pdf",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "visitor-stair",
+      "kind": "stairs",
+      "label": "上层访客楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -5.6,
+            -3.8
+          ]
+        },
+        {
+          "floorId": "upper",
+          "position": [
+            -5.6,
+            -3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accessible-lift",
+      "kind": "lift",
+      "label": "无障碍电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -6.2,
+            -3.8
+          ]
+        },
+        {
+          "floorId": "upper",
+          "position": [
+            -6.2,
+            -3.8
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,17 +1,12 @@
-export type VisitStatus =
-  | "已订"
-  | "无需门票"
-  | "未订"
-  | "备选"
-  | "待确认";
+export type VisitStatus = '已订' | '无需门票' | '未订' | '备选' | '待确认';
 
 export type TripItemKind =
-  | "transport"
-  | "landmark"
-  | "museum"
-  | "district"
-  | "food"
-  | "hotel";
+  | 'transport'
+  | 'landmark'
+  | 'museum'
+  | 'district'
+  | 'food'
+  | 'hotel';
 
 export type TripItem = {
   id: string;
@@ -28,11 +23,7 @@ export type TripItem = {
   routePoint?: boolean;
 };
 
-export type GuideSpatialType =
-  | "floorplan"
-  | "site"
-  | "viewpoints"
-  | "district";
+export type GuideSpatialType = 'floorplan' | 'site' | 'viewpoints' | 'district';
 
 export type GuideHighlight = {
   title: string;
@@ -72,7 +63,7 @@ export type GuideRecord = {
   originalTitle?: string;
   city: string;
   country: string;
-  kind: Extract<TripItemKind, "landmark" | "museum" | "district">;
+  kind: Extract<TripItemKind, 'landmark' | 'museum' | 'district'>;
   aliases: string[];
   itemIds: string[];
   scheduledVisits: GuideVisit[];
@@ -92,10 +83,6 @@ export type GuideRecord = {
   sequence: Array<{ title: string; body: string }>;
   practical: string[];
   sources: GuideSource[];
-  embeddedGuide?: {
-    path: string;
-    label: string;
-  };
 };
 
 export type TripDay = {
@@ -109,7 +96,7 @@ export type TripDay = {
 
 export type BookingRecord = {
   id: string;
-  category: "门票" | "交通" | "住宿";
+  category: '门票' | '交通' | '住宿';
   title: string;
   date: string;
   status: VisitStatus;

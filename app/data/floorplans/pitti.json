@@ -1,0 +1,499 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层：庭院与大公珍宝馆",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -9,
+          -5
+        ],
+        [
+          9,
+          -5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          -9,
+          5
+        ],
+        [
+          -9,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "ammannati-court",
+          "kind": "courtyard",
+          "label": "阿曼纳蒂庭院",
+          "polygon": [
+            [
+              -3.25,
+              -3
+            ],
+            [
+              3.25,
+              -3
+            ],
+            [
+              3.25,
+              3
+            ],
+            [
+              -3.25,
+              3
+            ],
+            [
+              -3.25,
+              -3
+            ]
+          ]
+        },
+        {
+          "id": "treasury",
+          "kind": "gallery",
+          "label": "大公珍宝馆",
+          "polygon": [
+            [
+              -8.3,
+              -4.1
+            ],
+            [
+              -4.3,
+              -4.1
+            ],
+            [
+              -4.3,
+              4.1
+            ],
+            [
+              -8.3,
+              4.1
+            ],
+            [
+              -8.3,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "ground-circulation",
+          "kind": "circulation",
+          "label": "入口、寄存与楼梯厅",
+          "polygon": [
+            [
+              4.5,
+              -4.1
+            ],
+            [
+              8.3,
+              -4.1
+            ],
+            [
+              8.3,
+              4.1
+            ],
+            [
+              4.5,
+              4.1
+            ],
+            [
+              4.5,
+              -4.1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "piano-nobile",
+      "label": "一层：帕拉蒂纳画廊与皇家公寓",
+      "elevation": 3.2,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -9,
+          -5
+        ],
+        [
+          9,
+          -5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          -9,
+          5
+        ],
+        [
+          -9,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "palatine",
+          "kind": "gallery",
+          "label": "帕拉蒂纳画廊与行星厅",
+          "polygon": [
+            [
+              -7.95,
+              -4.1
+            ],
+            [
+              -0.4500000000000002,
+              -4.1
+            ],
+            [
+              -0.4500000000000002,
+              4.1
+            ],
+            [
+              -7.95,
+              4.1
+            ],
+            [
+              -7.95,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "royal-apartments",
+          "kind": "gallery",
+          "label": "皇家公寓入口与房间组",
+          "polygon": [
+            [
+              0.4500000000000002,
+              -4.1
+            ],
+            [
+              7.95,
+              -4.1
+            ],
+            [
+              7.95,
+              4.1
+            ],
+            [
+              0.4500000000000002,
+              4.1
+            ],
+            [
+              0.4500000000000002,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "piano-landing",
+          "kind": "circulation",
+          "label": "主楼梯与电梯厅",
+          "polygon": [
+            [
+              -1.2,
+              -4.55
+            ],
+            [
+              1.2,
+              -4.55
+            ],
+            [
+              1.2,
+              -3.25
+            ],
+            [
+              -1.2,
+              -3.25
+            ],
+            [
+              -1.2,
+              -4.55
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second",
+      "label": "二层：现代艺术馆与服饰馆",
+      "elevation": 6.4,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -9,
+          -5
+        ],
+        [
+          9,
+          -5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          -9,
+          5
+        ],
+        [
+          -9,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "modern-art",
+          "kind": "gallery",
+          "label": "现代艺术馆",
+          "polygon": [
+            [
+              -7.8999999999999995,
+              -4.1
+            ],
+            [
+              0.2999999999999998,
+              -4.1
+            ],
+            [
+              0.2999999999999998,
+              4.1
+            ],
+            [
+              -7.8999999999999995,
+              4.1
+            ],
+            [
+              -7.8999999999999995,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "costume",
+          "kind": "gallery",
+          "label": "服饰馆参观分支",
+          "polygon": [
+            [
+              2.7,
+              -4.1
+            ],
+            [
+              7.7,
+              -4.1
+            ],
+            [
+              7.7,
+              4.1
+            ],
+            [
+              2.7,
+              4.1
+            ],
+            [
+              2.7,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "second-landing",
+          "kind": "circulation",
+          "label": "楼梯与电梯厅",
+          "polygon": [
+            [
+              -1.2,
+              -4.55
+            ],
+            [
+              1.2,
+              -4.55
+            ],
+            [
+              1.2,
+              -3.25
+            ],
+            [
+              -1.2,
+              -3.25
+            ],
+            [
+              -1.2,
+              -4.55
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "archway",
+      "position": [
+        -3.3,
+        0
+      ],
+      "connects": [
+        "ammannati-court",
+        "treasury"
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "kind": "door",
+      "position": [
+        0,
+        0
+      ],
+      "connects": [
+        "palatine",
+        "royal-apartments"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "door",
+      "position": [
+        0.3,
+        0
+      ],
+      "connects": [
+        "modern-art",
+        "costume"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "ammannati-court",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "spaceId": "palatine",
+      "position": [
+        -4.2,
+        0
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "spaceId": "royal-apartments",
+      "position": [
+        4.2,
+        0
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "modern-art",
+      "position": [
+        -3.8,
+        0
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "costume",
+      "position": [
+        5.2,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels"
+      ],
+      "title": "Uffizi Galleries: Pitti Palace collections by floor",
+      "url": "https://www.uffizi.it/en/pitti-palace",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "route"
+      ],
+      "title": "Uffizi Galleries: official Pitti Palace floor-plan guide sample",
+      "url": "https://shop.uffizi.it/wp-content/uploads/2022/04/9788833400075-PITTIeng_assaggio.pdf",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "palace-stair",
+      "kind": "stairs",
+      "label": "宫殿主楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            6.4,
+            -3.2
+          ]
+        },
+        {
+          "floorId": "piano-nobile",
+          "position": [
+            0,
+            -3.9
+          ]
+        },
+        {
+          "floorId": "second",
+          "position": [
+            0,
+            -3.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "访客电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            7.1,
+            -3.2
+          ]
+        },
+        {
+          "floorId": "piano-nobile",
+          "position": [
+            0.8,
+            -3.9
+          ]
+        },
+        {
+          "floorId": "second",
+          "position": [
+            0.8,
+            -3.9
+          ]
+        }
+      ]
+    }
+  ]
+}

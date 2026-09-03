@@ -1,0 +1,1129 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "basement",
+      "label": "地下层：车马馆与民族学馆",
+      "elevation": -4,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -112,
+          -26
+        ],
+        [
+          38,
+          -26
+        ],
+        [
+          38,
+          48
+        ],
+        [
+          -56,
+          48
+        ],
+        [
+          -56,
+          72
+        ],
+        [
+          -112,
+          72
+        ],
+        [
+          -112,
+          -26
+        ]
+      ],
+      "voids": [
+        [
+          [
+            -39,
+            -1
+          ],
+          [
+            -5,
+            -1
+          ],
+          [
+            -5,
+            37
+          ],
+          [
+            -39,
+            37
+          ],
+          [
+            -39,
+            -1
+          ]
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "numismatic",
+          "kind": "gallery",
+          "label": "集邮与钱币博物馆",
+          "polygon": [
+            [
+              -108,
+              -20
+            ],
+            [
+              -84,
+              -20
+            ],
+            [
+              -84,
+              -2
+            ],
+            [
+              -108,
+              -2
+            ],
+            [
+              -108,
+              -20
+            ]
+          ]
+        },
+        {
+          "id": "anima-mundi",
+          "kind": "gallery",
+          "label": "民族学博物馆 Anima Mundi",
+          "polygon": [
+            [
+              -105,
+              30
+            ],
+            [
+              -77,
+              30
+            ],
+            [
+              -77,
+              66
+            ],
+            [
+              -105,
+              66
+            ],
+            [
+              -105,
+              30
+            ]
+          ]
+        },
+        {
+          "id": "carriages",
+          "kind": "gallery",
+          "label": "教皇车马馆",
+          "polygon": [
+            [
+              9,
+              -9
+            ],
+            [
+              33,
+              -9
+            ],
+            [
+              33,
+              43
+            ],
+            [
+              9,
+              43
+            ],
+            [
+              9,
+              -9
+            ]
+          ]
+        },
+        {
+          "id": "square-garden-basement",
+          "kind": "courtyard",
+          "label": "方形花园挑空",
+          "polygon": [
+            [
+              -39,
+              -1
+            ],
+            [
+              -5,
+              -1
+            ],
+            [
+              -5,
+              37
+            ],
+            [
+              -39,
+              37
+            ],
+            [
+              -39,
+              -1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first",
+      "label": "一层：入口、古典馆、绘画馆与西斯廷礼拜堂",
+      "elevation": 0,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -120,
+          -38
+        ],
+        [
+          118,
+          -38
+        ],
+        [
+          118,
+          39
+        ],
+        [
+          -56,
+          39
+        ],
+        [
+          -56,
+          96
+        ],
+        [
+          -112,
+          96
+        ],
+        [
+          -112,
+          39
+        ],
+        [
+          -120,
+          39
+        ],
+        [
+          -120,
+          -38
+        ]
+      ],
+      "voids": [
+        [
+          [
+            -60,
+            -18
+          ],
+          [
+            -8,
+            -18
+          ],
+          [
+            -8,
+            6
+          ],
+          [
+            -60,
+            6
+          ],
+          [
+            -60,
+            -18
+          ]
+        ],
+        [
+          [
+            -91,
+            49
+          ],
+          [
+            -73,
+            49
+          ],
+          [
+            -73,
+            81
+          ],
+          [
+            -91,
+            81
+          ],
+          [
+            -91,
+            49
+          ]
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "entrance",
+          "kind": "circulation",
+          "label": "入口大厅与四门厅",
+          "polygon": [
+            [
+              -119,
+              11
+            ],
+            [
+              -105,
+              11
+            ],
+            [
+              -105,
+              33
+            ],
+            [
+              -119,
+              33
+            ],
+            [
+              -119,
+              11
+            ]
+          ]
+        },
+        {
+          "id": "pio-clementino",
+          "kind": "gallery",
+          "label": "庇奥-克莱门蒂诺博物馆",
+          "polygon": [
+            [
+              -116,
+              -34
+            ],
+            [
+              -92,
+              -34
+            ],
+            [
+              -92,
+              -14
+            ],
+            [
+              -116,
+              -14
+            ],
+            [
+              -116,
+              -34
+            ]
+          ]
+        },
+        {
+          "id": "egyptian",
+          "kind": "gallery",
+          "label": "格里高利埃及博物馆",
+          "polygon": [
+            [
+              -91,
+              -35.5
+            ],
+            [
+              -73,
+              -35.5
+            ],
+            [
+              -73,
+              -26.5
+            ],
+            [
+              -91,
+              -26.5
+            ],
+            [
+              -91,
+              -35.5
+            ]
+          ]
+        },
+        {
+          "id": "chiaramonti",
+          "kind": "gallery",
+          "label": "奇拉蒙蒂馆与新翼",
+          "polygon": [
+            [
+              -72,
+              -35.5
+            ],
+            [
+              -32,
+              -35.5
+            ],
+            [
+              -32,
+              -26.5
+            ],
+            [
+              -72,
+              -26.5
+            ],
+            [
+              -72,
+              -35.5
+            ]
+          ]
+        },
+        {
+          "id": "pinecone-courtyard",
+          "kind": "courtyard",
+          "label": "松果庭院",
+          "polygon": [
+            [
+              -60,
+              -18
+            ],
+            [
+              -8,
+              -18
+            ],
+            [
+              -8,
+              6
+            ],
+            [
+              -60,
+              6
+            ],
+            [
+              -60,
+              -18
+            ]
+          ]
+        },
+        {
+          "id": "library",
+          "kind": "circulation",
+          "label": "梵蒂冈图书馆博物馆长廊",
+          "polygon": [
+            [
+              -27.5,
+              18
+            ],
+            [
+              77.5,
+              18
+            ],
+            [
+              77.5,
+              28
+            ],
+            [
+              -27.5,
+              28
+            ],
+            [
+              -27.5,
+              18
+            ]
+          ]
+        },
+        {
+          "id": "borgia",
+          "kind": "gallery",
+          "label": "波吉亚寓所",
+          "polygon": [
+            [
+              83.5,
+              -3
+            ],
+            [
+              104.5,
+              -3
+            ],
+            [
+              104.5,
+              11
+            ],
+            [
+              83.5,
+              11
+            ],
+            [
+              83.5,
+              -3
+            ]
+          ]
+        },
+        {
+          "id": "sistine",
+          "kind": "chapel",
+          "label": "西斯廷礼拜堂",
+          "polygon": [
+            [
+              100,
+              16
+            ],
+            [
+              116,
+              16
+            ],
+            [
+              116,
+              36
+            ],
+            [
+              100,
+              36
+            ],
+            [
+              100,
+              16
+            ]
+          ]
+        },
+        {
+          "id": "pinacoteca",
+          "kind": "gallery",
+          "label": "梵蒂冈绘画馆",
+          "polygon": [
+            [
+              -107,
+              42
+            ],
+            [
+              -87,
+              42
+            ],
+            [
+              -87,
+              92
+            ],
+            [
+              -107,
+              92
+            ],
+            [
+              -107,
+              42
+            ]
+          ]
+        },
+        {
+          "id": "square-garden-first",
+          "kind": "courtyard",
+          "label": "方形花园挑空",
+          "polygon": [
+            [
+              -91,
+              49
+            ],
+            [
+              -73,
+              49
+            ],
+            [
+              -73,
+              81
+            ],
+            [
+              -91,
+              81
+            ],
+            [
+              -91,
+              49
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second",
+      "label": "二层：伊特鲁里亚馆、三大长廊与拉斐尔画室",
+      "elevation": 5,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -112,
+          -34
+        ],
+        [
+          116,
+          -34
+        ],
+        [
+          116,
+          34
+        ],
+        [
+          86,
+          34
+        ],
+        [
+          86,
+          22
+        ],
+        [
+          -76,
+          22
+        ],
+        [
+          -76,
+          36
+        ],
+        [
+          -112,
+          36
+        ],
+        [
+          -112,
+          -34
+        ]
+      ],
+      "voids": [
+        [
+          [
+            -64,
+            -13
+          ],
+          [
+            -16,
+            -13
+          ],
+          [
+            -16,
+            5
+          ],
+          [
+            -64,
+            5
+          ],
+          [
+            -64,
+            -13
+          ]
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "etruscan",
+          "kind": "gallery",
+          "label": "格里高利伊特鲁里亚博物馆",
+          "polygon": [
+            [
+              -111,
+              -30
+            ],
+            [
+              -91,
+              -30
+            ],
+            [
+              -91,
+              4
+            ],
+            [
+              -111,
+              4
+            ],
+            [
+              -111,
+              -30
+            ]
+          ]
+        },
+        {
+          "id": "pinecone-courtyard-upper",
+          "kind": "courtyard",
+          "label": "松果庭院挑空",
+          "polygon": [
+            [
+              -64,
+              -13
+            ],
+            [
+              -16,
+              -13
+            ],
+            [
+              -16,
+              5
+            ],
+            [
+              -64,
+              5
+            ],
+            [
+              -64,
+              -13
+            ]
+          ]
+        },
+        {
+          "id": "candelabra",
+          "kind": "circulation",
+          "label": "烛台廊",
+          "polygon": [
+            [
+              -75,
+              10
+            ],
+            [
+              -47,
+              10
+            ],
+            [
+              -47,
+              20
+            ],
+            [
+              -75,
+              20
+            ],
+            [
+              -75,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "tapestries",
+          "kind": "circulation",
+          "label": "挂毯廊",
+          "polygon": [
+            [
+              -39,
+              10
+            ],
+            [
+              -5,
+              10
+            ],
+            [
+              -5,
+              20
+            ],
+            [
+              -39,
+              20
+            ],
+            [
+              -39,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "maps",
+          "kind": "circulation",
+          "label": "地图廊",
+          "polygon": [
+            [
+              -1,
+              10
+            ],
+            [
+              51,
+              10
+            ],
+            [
+              51,
+              20
+            ],
+            [
+              -1,
+              20
+            ],
+            [
+              -1,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "immaculate",
+          "kind": "gallery",
+          "label": "圣母无原罪厅",
+          "polygon": [
+            [
+              63.5,
+              10
+            ],
+            [
+              80.5,
+              10
+            ],
+            [
+              80.5,
+              20
+            ],
+            [
+              63.5,
+              20
+            ],
+            [
+              63.5,
+              10
+            ]
+          ]
+        },
+        {
+          "id": "raphael",
+          "kind": "gallery",
+          "label": "拉斐尔画室",
+          "polygon": [
+            [
+              87,
+              -1
+            ],
+            [
+              111,
+              -1
+            ],
+            [
+              111,
+              25
+            ],
+            [
+              87,
+              25
+            ],
+            [
+              87,
+              -1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "first",
+      "kind": "gate",
+      "position": [
+        -119,
+        22
+      ],
+      "connects": [
+        "entrance"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        -106,
+        7
+      ],
+      "connects": [
+        "entrance",
+        "pio-clementino"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        -92,
+        -29
+      ],
+      "connects": [
+        "pio-clementino",
+        "egyptian"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        -72,
+        -31
+      ],
+      "connects": [
+        "egyptian",
+        "chiaramonti"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "door",
+      "position": [
+        -101,
+        39
+      ],
+      "connects": [
+        "entrance",
+        "pinacoteca"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "door",
+      "position": [
+        84,
+        23
+      ],
+      "connects": [
+        "library",
+        "borgia"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "door",
+      "position": [
+        103,
+        19
+      ],
+      "connects": [
+        "borgia",
+        "sistine"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "archway",
+      "position": [
+        -78,
+        15
+      ],
+      "connects": [
+        "etruscan",
+        "candelabra"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "archway",
+      "position": [
+        -43,
+        15
+      ],
+      "connects": [
+        "candelabra",
+        "tapestries"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "archway",
+      "position": [
+        -3,
+        15
+      ],
+      "connects": [
+        "tapestries",
+        "maps"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "archway",
+      "position": [
+        63,
+        15
+      ],
+      "connects": [
+        "maps",
+        "immaculate"
+      ]
+    },
+    {
+      "floorId": "second",
+      "kind": "door",
+      "position": [
+        84,
+        15
+      ],
+      "connects": [
+        "immaculate",
+        "raphael"
+      ]
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "entrance-lift",
+      "kind": "lift",
+      "label": "入口大厅电梯",
+      "landings": [
+        {
+          "floorId": "basement",
+          "position": [
+            -104,
+            22
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            -112,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belvedere-stairs",
+      "kind": "stairs",
+      "label": "观景楼楼梯",
+      "landings": [
+        {
+          "floorId": "first",
+          "position": [
+            -94,
+            -20
+          ]
+        },
+        {
+          "floorId": "second",
+          "position": [
+            -94,
+            -13
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sistine-stairs",
+      "kind": "stairs",
+      "label": "拉斐尔画室至西斯廷礼拜堂楼梯",
+      "landings": [
+        {
+          "floorId": "second",
+          "position": [
+            104,
+            18
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            103,
+            18
+          ]
+        }
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "first",
+      "spaceId": "entrance",
+      "position": [
+        -112,
+        22
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "pinacoteca",
+      "position": [
+        -97,
+        67
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "pio-clementino",
+      "position": [
+        -104,
+        -24
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "pinecone-courtyard",
+      "position": [
+        -34,
+        -6
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "etruscan",
+      "position": [
+        -101,
+        -13
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "candelabra",
+      "position": [
+        -61,
+        15
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "tapestries",
+      "position": [
+        -22,
+        15
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "maps",
+      "position": [
+        25,
+        15
+      ]
+    },
+    {
+      "floorId": "second",
+      "spaceId": "raphael",
+      "position": [
+        99,
+        12
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "borgia",
+      "position": [
+        94,
+        4
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "sistine",
+      "position": [
+        108,
+        26
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "entrance",
+      "position": [
+        -112,
+        27
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "levels",
+        "route",
+        "spaces"
+      ],
+      "title": "Vatican Museums Map - Collections and Services",
+      "url": "https://www.museivaticani.va/content/dam/museivaticani/pdf/visita_musei/servizi_visitatori/mappa_musei_vaticani.pdf",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "levels",
+        "route",
+        "spaces"
+      ],
+      "title": "Visit itinerary without barriers - Vatican Museums",
+      "url": "https://www.museivaticani.va/content/dam/museivaticani/pdf/visita_musei/servizi_visitatori/mappa_disabili_en.pdf",
+      "verifiedAt": "2026-09-03"
+    }
+  ]
+}

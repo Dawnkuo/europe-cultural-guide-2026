@@ -1,0 +1,718 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "reception",
+      "label": "南塔入口与接待层",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -9,
+          -5
+        ],
+        [
+          9,
+          -5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          -9,
+          5
+        ],
+        [
+          -9,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "south-entry",
+          "kind": "circulation",
+          "label": "面对教堂右侧入口",
+          "polygon": [
+            [
+              2,
+              -4.5
+            ],
+            [
+              8,
+              -4.5
+            ],
+            [
+              8,
+              -0.5
+            ],
+            [
+              2,
+              -0.5
+            ],
+            [
+              2,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "reception-hall",
+          "kind": "hall",
+          "label": "下层接待厅",
+          "polygon": [
+            [
+              1,
+              0
+            ],
+            [
+              8,
+              0
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "id": "north-exit",
+          "kind": "circulation",
+          "label": "北塔出口",
+          "polygon": [
+            [
+              -8,
+              -4.5
+            ],
+            [
+              -2,
+              -4.5
+            ],
+            [
+              -2,
+              -0.5
+            ],
+            [
+              -8,
+              -0.5
+            ],
+            [
+              -8,
+              -4.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four-leaf",
+      "label": "四叶厅",
+      "elevation": 3,
+      "stackOrder": 1,
+      "outline": [
+        [
+          0.5,
+          -4
+        ],
+        [
+          8.5,
+          -4
+        ],
+        [
+          8.5,
+          4
+        ],
+        [
+          0.5,
+          4
+        ],
+        [
+          0.5,
+          -4
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "four-leaf-hall",
+          "kind": "gallery",
+          "label": "模型、声景与原奇美拉",
+          "polygon": [
+            [
+              1.5,
+              -3
+            ],
+            [
+              7.5,
+              -3
+            ],
+            [
+              7.5,
+              3
+            ],
+            [
+              1.5,
+              3
+            ],
+            [
+              1.5,
+              -3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belfries",
+      "label": "南北塔钟楼层",
+      "elevation": 6,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -9,
+          -4.5
+        ],
+        [
+          9,
+          -4.5
+        ],
+        [
+          9,
+          4.5
+        ],
+        [
+          -9,
+          4.5
+        ],
+        [
+          -9,
+          -4.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "south-belfry",
+          "kind": "hall",
+          "label": "南塔钟楼木构",
+          "polygon": [
+            [
+              2,
+              -3.5
+            ],
+            [
+              8,
+              -3.5
+            ],
+            [
+              8,
+              3.5
+            ],
+            [
+              2,
+              3.5
+            ],
+            [
+              2,
+              -3.5
+            ]
+          ]
+        },
+        {
+          "id": "belfry-crossing",
+          "kind": "circulation",
+          "label": "塔间转换通道",
+          "polygon": [
+            [
+              -1.75,
+              -2
+            ],
+            [
+              1.75,
+              -2
+            ],
+            [
+              1.75,
+              2
+            ],
+            [
+              -1.75,
+              2
+            ],
+            [
+              -1.75,
+              -2
+            ]
+          ]
+        },
+        {
+          "id": "north-belfry",
+          "kind": "hall",
+          "label": "北塔钟架与声景下降起点",
+          "polygon": [
+            [
+              -8,
+              -3.5
+            ],
+            [
+              -2,
+              -3.5
+            ],
+            [
+              -2,
+              3.5
+            ],
+            [
+              -8,
+              3.5
+            ],
+            [
+              -8,
+              -3.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chimera-gallery",
+      "label": "奇美拉长廊层",
+      "elevation": 9,
+      "stackOrder": 3,
+      "outline": [
+        [
+          -9,
+          -3.5
+        ],
+        [
+          9,
+          -3.5
+        ],
+        [
+          9,
+          3.5
+        ],
+        [
+          -9,
+          3.5
+        ],
+        [
+          -9,
+          -3.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "chimera-walk",
+          "kind": "outdoor",
+          "label": "奇美拉长廊",
+          "polygon": [
+            [
+              -8,
+              -1.5
+            ],
+            [
+              8,
+              -1.5
+            ],
+            [
+              8,
+              1.5
+            ],
+            [
+              -8,
+              1.5
+            ],
+            [
+              -8,
+              -1.5
+            ]
+          ]
+        },
+        {
+          "id": "south-terrace-stair",
+          "kind": "circulation",
+          "label": "南塔眺望台楼梯",
+          "polygon": [
+            [
+              3,
+              1.2000000000000002
+            ],
+            [
+              7,
+              1.2000000000000002
+            ],
+            [
+              7,
+              3.2
+            ],
+            [
+              3,
+              3.2
+            ],
+            [
+              3,
+              1.2000000000000002
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "upper-route",
+      "label": "南塔眺望台与屋顶路线",
+      "elevation": 12,
+      "stackOrder": 4,
+      "outline": [
+        [
+          -9,
+          -5
+        ],
+        [
+          9,
+          -5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          -9,
+          5
+        ],
+        [
+          -9,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "south-terrace",
+          "kind": "outdoor",
+          "label": "南塔 69 米眺望台",
+          "polygon": [
+            [
+              2,
+              -4.5
+            ],
+            [
+              8,
+              -4.5
+            ],
+            [
+              8,
+              -0.5
+            ],
+            [
+              2,
+              -0.5
+            ],
+            [
+              2,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "id": "bells-cistern-roof",
+          "kind": "outdoor",
+          "label": "大钟、蓄水池庭院与屋顶森林视角",
+          "polygon": [
+            [
+              -7,
+              0
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              -7,
+              4
+            ],
+            [
+              -7,
+              0
+            ]
+          ]
+        },
+        {
+          "id": "north-descent",
+          "kind": "circulation",
+          "label": "通往北塔钟楼的下降楼梯",
+          "polygon": [
+            [
+              -7.5,
+              -4
+            ],
+            [
+              -2.5,
+              -4
+            ],
+            [
+              -2.5,
+              -1
+            ],
+            [
+              -7.5,
+              -1
+            ],
+            [
+              -7.5,
+              -4
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "reception",
+      "kind": "gate",
+      "position": [
+        5,
+        -4.5
+      ],
+      "connects": [
+        "south-entry"
+      ]
+    },
+    {
+      "floorId": "reception",
+      "kind": "door",
+      "position": [
+        4.5,
+        -0.5
+      ],
+      "connects": [
+        "south-entry",
+        "reception-hall"
+      ]
+    },
+    {
+      "floorId": "belfries",
+      "kind": "archway",
+      "position": [
+        2.5,
+        0
+      ],
+      "connects": [
+        "south-belfry",
+        "belfry-crossing"
+      ]
+    },
+    {
+      "floorId": "belfries",
+      "kind": "archway",
+      "position": [
+        -2.5,
+        0
+      ],
+      "connects": [
+        "belfry-crossing",
+        "north-belfry"
+      ]
+    },
+    {
+      "floorId": "chimera-gallery",
+      "kind": "archway",
+      "position": [
+        4,
+        1.2
+      ],
+      "connects": [
+        "chimera-walk",
+        "south-terrace-stair"
+      ]
+    },
+    {
+      "floorId": "upper-route",
+      "kind": "gate",
+      "position": [
+        3,
+        -1
+      ],
+      "connects": [
+        "south-terrace",
+        "bells-cistern-roof"
+      ]
+    },
+    {
+      "floorId": "upper-route",
+      "kind": "gate",
+      "position": [
+        -3,
+        -1
+      ],
+      "connects": [
+        "bells-cistern-roof",
+        "north-descent"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "reception",
+      "spaceId": "reception-hall",
+      "position": [
+        4.5,
+        2
+      ]
+    },
+    {
+      "floorId": "four-leaf",
+      "spaceId": "four-leaf-hall",
+      "position": [
+        4.5,
+        0
+      ]
+    },
+    {
+      "floorId": "belfries",
+      "spaceId": "south-belfry",
+      "position": [
+        5,
+        0
+      ]
+    },
+    {
+      "floorId": "chimera-gallery",
+      "spaceId": "chimera-walk",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "upper-route",
+      "spaceId": "bells-cistern-roof",
+      "position": [
+        0,
+        2
+      ]
+    },
+    {
+      "floorId": "belfries",
+      "spaceId": "north-belfry",
+      "position": [
+        -5,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Notre-Dame Towers official visit guide",
+      "url": "https://www.tours-notre-dame-de-paris.fr/en/visit/visits-and-activities",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Notre-Dame Towers official route description",
+      "url": "https://www.tours-notre-dame-de-paris.fr/en/actualites/the-new-notre-dame-de-paris-towers-tour",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "north-descent-stair",
+      "kind": "stairs",
+      "label": "屋顶至北塔钟楼下降楼梯",
+      "landings": [
+        {
+          "floorId": "upper-route",
+          "position": [
+            -5,
+            -2.5
+          ]
+        },
+        {
+          "floorId": "belfries",
+          "position": [
+            -5,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south-oak-stair",
+      "kind": "stairs",
+      "label": "南塔双向橡木楼梯",
+      "landings": [
+        {
+          "floorId": "reception",
+          "position": [
+            4.5,
+            2
+          ]
+        },
+        {
+          "floorId": "four-leaf",
+          "position": [
+            4.5,
+            0
+          ]
+        },
+        {
+          "floorId": "belfries",
+          "position": [
+            5,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south-upper-stair",
+      "kind": "stairs",
+      "label": "南塔钟楼、奇美拉长廊与眺望台楼梯",
+      "landings": [
+        {
+          "floorId": "belfries",
+          "position": [
+            5,
+            0
+          ]
+        },
+        {
+          "floorId": "chimera-gallery",
+          "position": [
+            5,
+            2.2
+          ]
+        },
+        {
+          "floorId": "upper-route",
+          "position": [
+            5,
+            -2.5
+          ]
+        }
+      ]
+    }
+  ]
+}

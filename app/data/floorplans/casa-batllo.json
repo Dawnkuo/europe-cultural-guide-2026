@@ -1,0 +1,850 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "底层：入口与私人门厅",
+      "elevation": 0,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -4,
+          -5.5
+        ],
+        [
+          4,
+          -5.5
+        ],
+        [
+          4,
+          5.5
+        ],
+        [
+          -4,
+          5.5
+        ],
+        [
+          -4,
+          -5.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "street-entry",
+          "kind": "circulation",
+          "label": "格拉西亚大道入口",
+          "polygon": [
+            [
+              -2.9,
+              3.9999999999999996
+            ],
+            [
+              2.9,
+              3.9999999999999996
+            ],
+            [
+              2.9,
+              5.199999999999999
+            ],
+            [
+              -2.9,
+              5.199999999999999
+            ],
+            [
+              -2.9,
+              3.9999999999999996
+            ]
+          ]
+        },
+        {
+          "id": "private-lobby",
+          "kind": "hall",
+          "label": "Batlló家庭私人门厅",
+          "polygon": [
+            [
+              -3,
+              -0.6000000000000001
+            ],
+            [
+              0.20000000000000018,
+              -0.6000000000000001
+            ],
+            [
+              0.20000000000000018,
+              3.8000000000000003
+            ],
+            [
+              -3,
+              3.8000000000000003
+            ],
+            [
+              -3,
+              -0.6000000000000001
+            ]
+          ]
+        },
+        {
+          "id": "lightwell-ground",
+          "kind": "circulation",
+          "label": "双采光井与电梯",
+          "polygon": [
+            [
+              0.6000000000000001,
+              -2
+            ],
+            [
+              3,
+              -2
+            ],
+            [
+              3,
+              2.8
+            ],
+            [
+              0.6000000000000001,
+              2.8
+            ],
+            [
+              0.6000000000000001,
+              -2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noble",
+      "label": "主层：家庭住宅与后院",
+      "elevation": 2.8,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -4,
+          -5.5
+        ],
+        [
+          4,
+          -5.5
+        ],
+        [
+          4,
+          5.5
+        ],
+        [
+          -4,
+          5.5
+        ],
+        [
+          -4,
+          -5.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "main-salon",
+          "kind": "hall",
+          "label": "临街主厅与观景窗",
+          "polygon": [
+            [
+              -3.2,
+              2.2
+            ],
+            [
+              3.2,
+              2.2
+            ],
+            [
+              3.2,
+              4.8
+            ],
+            [
+              -3.2,
+              4.8
+            ],
+            [
+              -3.2,
+              2.2
+            ]
+          ]
+        },
+        {
+          "id": "office",
+          "kind": "gallery",
+          "label": "Batlló先生办公室",
+          "polygon": [
+            [
+              -3.2,
+              -0.20000000000000007
+            ],
+            [
+              -1,
+              -0.20000000000000007
+            ],
+            [
+              -1,
+              2
+            ],
+            [
+              -3.2,
+              2
+            ],
+            [
+              -3.2,
+              -0.20000000000000007
+            ]
+          ]
+        },
+        {
+          "id": "dining",
+          "kind": "gallery",
+          "label": "私人餐厅",
+          "polygon": [
+            [
+              -1.8499999999999999,
+              -2.4000000000000004
+            ],
+            [
+              2.25,
+              -2.4000000000000004
+            ],
+            [
+              2.25,
+              0.19999999999999996
+            ],
+            [
+              -1.8499999999999999,
+              0.19999999999999996
+            ],
+            [
+              -1.8499999999999999,
+              -2.4000000000000004
+            ]
+          ]
+        },
+        {
+          "id": "rear-courtyard",
+          "kind": "outdoor",
+          "label": "后立面与庭院",
+          "polygon": [
+            [
+              -3.25,
+              -5.25
+            ],
+            [
+              3.25,
+              -5.25
+            ],
+            [
+              3.25,
+              -3.75
+            ],
+            [
+              -3.25,
+              -3.75
+            ],
+            [
+              -3.25,
+              -5.25
+            ]
+          ]
+        },
+        {
+          "id": "lightwell-noble",
+          "kind": "circulation",
+          "label": "双采光井",
+          "polygon": [
+            [
+              1.75,
+              -1.6
+            ],
+            [
+              3.25,
+              -1.6
+            ],
+            [
+              3.25,
+              2.8000000000000003
+            ],
+            [
+              1.75,
+              2.8000000000000003
+            ],
+            [
+              1.75,
+              -1.6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "residence",
+      "label": "住宅层：私人住宅与采光井",
+      "elevation": 5.6,
+      "stackOrder": 3,
+      "outline": [
+        [
+          -4,
+          -5.5
+        ],
+        [
+          4,
+          -5.5
+        ],
+        [
+          4,
+          5.5
+        ],
+        [
+          -4,
+          5.5
+        ],
+        [
+          -4,
+          -5.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "private-residence",
+          "kind": "gallery",
+          "label": "Batlló私人住宅",
+          "polygon": [
+            [
+              -3.35,
+              -2.3
+            ],
+            [
+              1.15,
+              -2.3
+            ],
+            [
+              1.15,
+              4.5
+            ],
+            [
+              -3.35,
+              4.5
+            ],
+            [
+              -3.35,
+              -2.3
+            ]
+          ]
+        },
+        {
+          "id": "lightwell-residence",
+          "kind": "circulation",
+          "label": "双采光井与电梯",
+          "polygon": [
+            [
+              1.5999999999999999,
+              -2.4
+            ],
+            [
+              3.2,
+              -2.4
+            ],
+            [
+              3.2,
+              3.4
+            ],
+            [
+              1.5999999999999999,
+              3.4
+            ],
+            [
+              1.5999999999999999,
+              -2.4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "attic",
+      "label": "阁楼：服务空间与悬链拱",
+      "elevation": 8.4,
+      "stackOrder": 4,
+      "outline": [
+        [
+          -4,
+          -5.5
+        ],
+        [
+          4,
+          -5.5
+        ],
+        [
+          4,
+          5.5
+        ],
+        [
+          -4,
+          5.5
+        ],
+        [
+          -4,
+          -5.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "attic-arches",
+          "kind": "hall",
+          "label": "六十道悬链拱阁楼",
+          "polygon": [
+            [
+              -3.4,
+              -4.2
+            ],
+            [
+              3.4,
+              -4.2
+            ],
+            [
+              3.4,
+              4.6000000000000005
+            ],
+            [
+              -3.4,
+              4.6000000000000005
+            ],
+            [
+              -3.4,
+              -4.2
+            ]
+          ]
+        },
+        {
+          "id": "attic-stair",
+          "kind": "circulation",
+          "label": "屋顶楼梯",
+          "polygon": [
+            [
+              2,
+              -4.55
+            ],
+            [
+              3.2,
+              -4.55
+            ],
+            [
+              3.2,
+              -3.05
+            ],
+            [
+              2,
+              -3.05
+            ],
+            [
+              2,
+              -4.55
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof",
+      "label": "屋顶：龙脊与烟囱群",
+      "elevation": 11.2,
+      "stackOrder": 5,
+      "outline": [
+        [
+          -4,
+          -5.5
+        ],
+        [
+          4,
+          -5.5
+        ],
+        [
+          4,
+          5.5
+        ],
+        [
+          -4,
+          5.5
+        ],
+        [
+          -4,
+          -5.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "dragon-roof",
+          "kind": "outdoor",
+          "label": "龙脊屋顶",
+          "polygon": [
+            [
+              -1.5,
+              -4.6000000000000005
+            ],
+            [
+              1.5,
+              -4.6000000000000005
+            ],
+            [
+              1.5,
+              3.8000000000000003
+            ],
+            [
+              -1.5,
+              3.8000000000000003
+            ],
+            [
+              -1.5,
+              -4.6000000000000005
+            ]
+          ]
+        },
+        {
+          "id": "chimneys",
+          "kind": "outdoor",
+          "label": "四组烟囱",
+          "polygon": [
+            [
+              -3.0999999999999996,
+              -1.7999999999999998
+            ],
+            [
+              -1.7,
+              -1.7999999999999998
+            ],
+            [
+              -1.7,
+              4
+            ],
+            [
+              -3.0999999999999996,
+              4
+            ],
+            [
+              -3.0999999999999996,
+              -1.7999999999999998
+            ]
+          ]
+        },
+        {
+          "id": "roof-route",
+          "kind": "circulation",
+          "label": "屋顶参观步道",
+          "polygon": [
+            [
+              1.7,
+              -2.45
+            ],
+            [
+              3.0999999999999996,
+              -2.45
+            ],
+            [
+              3.0999999999999996,
+              4.05
+            ],
+            [
+              1.7,
+              4.05
+            ],
+            [
+              1.7,
+              -2.45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basement",
+      "label": "地下层：Kengo Kuma楼梯与Gaudí Cube",
+      "elevation": -2.8,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -4,
+          -5.5
+        ],
+        [
+          4,
+          -5.5
+        ],
+        [
+          4,
+          5.5
+        ],
+        [
+          -4,
+          5.5
+        ],
+        [
+          -4,
+          -5.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "kuma-stair",
+          "kind": "circulation",
+          "label": "Kengo Kuma楼梯与中庭",
+          "polygon": [
+            [
+              -3.05,
+              -2.5999999999999996
+            ],
+            [
+              -0.55,
+              -2.5999999999999996
+            ],
+            [
+              -0.55,
+              4.2
+            ],
+            [
+              -3.05,
+              4.2
+            ],
+            [
+              -3.05,
+              -2.5999999999999996
+            ]
+          ]
+        },
+        {
+          "id": "gaudi-cube",
+          "kind": "hall",
+          "label": "Gaudí Cube",
+          "polygon": [
+            [
+              -0.20000000000000018,
+              -1.85
+            ],
+            [
+              3,
+              -1.85
+            ],
+            [
+              3,
+              2.65
+            ],
+            [
+              -0.20000000000000018,
+              2.65
+            ],
+            [
+              -0.20000000000000018,
+              -1.85
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        0,
+        5.4
+      ],
+      "connects": [
+        "street-entry"
+      ]
+    },
+    {
+      "floorId": "noble",
+      "kind": "door",
+      "position": [
+        0,
+        -3.7
+      ],
+      "connects": [
+        "dining",
+        "rear-courtyard"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "street-entry",
+      "position": [
+        0,
+        4.6
+      ]
+    },
+    {
+      "floorId": "noble",
+      "spaceId": "main-salon",
+      "position": [
+        0,
+        3.5
+      ]
+    },
+    {
+      "floorId": "noble",
+      "spaceId": "rear-courtyard",
+      "position": [
+        0,
+        -4.5
+      ]
+    },
+    {
+      "floorId": "attic",
+      "spaceId": "attic-arches",
+      "position": [
+        0,
+        0.2
+      ]
+    },
+    {
+      "floorId": "roof",
+      "spaceId": "roof-route",
+      "position": [
+        2.4,
+        0.8
+      ]
+    },
+    {
+      "floorId": "basement",
+      "spaceId": "gaudi-cube",
+      "position": [
+        1.4,
+        0.4
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Casa Batlló official interior and visitor experience",
+      "url": "https://www.casabatllo.es/en/antoni-gaudi/casa-batllo/inside/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "authoritative",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels"
+      ],
+      "title": "Casa Batlló original floor plans, facade and section at 1:100",
+      "url": "https://upcommons.upc.edu/entities/publication/6a12900d-b5fc-4fc5-be8b-090d94fd19e7",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "main-stair",
+      "kind": "stairs",
+      "label": "家庭主楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -1.7,
+            1.6
+          ]
+        },
+        {
+          "floorId": "noble",
+          "position": [
+            -1.7,
+            1.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lightwell-lift-1",
+      "kind": "lift",
+      "label": "采光井电梯",
+      "landings": [
+        {
+          "floorId": "noble",
+          "position": [
+            2.4,
+            0.5
+          ]
+        },
+        {
+          "floorId": "residence",
+          "position": [
+            2.4,
+            0.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service-stair",
+      "kind": "stairs",
+      "label": "服务楼梯",
+      "landings": [
+        {
+          "floorId": "residence",
+          "position": [
+            2.6,
+            -3.8
+          ]
+        },
+        {
+          "floorId": "attic",
+          "position": [
+            2.6,
+            -3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-stair",
+      "kind": "stairs",
+      "label": "屋顶楼梯",
+      "landings": [
+        {
+          "floorId": "attic",
+          "position": [
+            2.6,
+            -3.8
+          ]
+        },
+        {
+          "floorId": "roof",
+          "position": [
+            2.6,
+            -3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kuma-descent",
+      "kind": "stairs",
+      "label": "Kengo Kuma下行楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -1.8,
+            0.8
+          ]
+        },
+        {
+          "floorId": "basement",
+          "position": [
+            -1.8,
+            0.8
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,111 +1,85 @@
-import type { GuideSpatialType } from '../data/types';
 import {
-  buildGuideModel,
-  type GuideModelBasis,
-  type GuideScenePart,
-  type Vec3,
-} from './guide-3d-models';
+  buildGuideExteriorSceneLayout,
+  guideSceneAccent,
+  type BuildGuideSceneLayoutInput,
+  type GuideExteriorSceneLayout,
+  type GuideSceneNode,
+} from './guide-exterior-layout';
+import {
+  compileFloorPlanRoute,
+  floorPlanPosition,
+  getGuideFloorPlan,
+  validateFloorPlan,
+  type CompiledFloorPlanRoute,
+  type FloorPlanFloor,
+  type FloorPlanOpening,
+  type FloorPlanSource,
+  type FloorPlanVerticalLink,
+} from './guide-floorplans';
 
-export type GuideSceneNode = {
-  label: string;
-  position: Vec3;
-};
+export {
+  buildGuideExteriorSceneLayout,
+  type GuideExteriorSceneLayout,
+  type GuideSceneNode,
+} from './guide-exterior-layout';
 
-export type GuideSceneLayout = {
-  profile: string;
-  modelBasis: GuideModelBasis;
-  environment:
-    | 'interior'
-    | 'plaza'
-    | 'historic-site'
-    | 'waterfront'
-    | 'park'
-    | 'hillside'
-    | 'urban';
-  parts: GuideScenePart[];
-  nodes: GuideSceneNode[];
+export type GuideStackedSceneLayout = {
+  mode: 'stacked-floorplan';
+  modelBasis: 'documented-floorplan';
+  floors: FloorPlanFloor[];
+  openings: FloorPlanOpening[];
+  sourceManifest: FloorPlanSource[];
+  verticalLinks: FloorPlanVerticalLink[];
+  nodes: Array<GuideSceneNode & { floorId: string; spaceId: string }>;
   paths: Array<[number, number]>;
-  camera: {
-    position: Vec3;
-    target: Vec3;
-  };
+  route: CompiledFloorPlanRoute;
   accent: number;
 };
 
-type BuildGuideSceneLayoutInput = {
-  slug: string;
-  type: GuideSpatialType;
-  stops: string[];
-};
-
-const accents = [0xc9a35f, 0xb95f4c, 0x6f9a8d, 0x8b7dac, 0xb58655];
-
-function hashText(value: string) {
-  let hash = 2166136261;
-  for (const character of value) {
-    hash ^= character.codePointAt(0) ?? 0;
-    hash = Math.imul(hash, 16777619);
-  }
-  return hash >>> 0;
-}
-
-function distance(left: Vec3, right: Vec3) {
-  return Math.hypot(right[0] - left[0], right[1] - left[1], right[2] - left[2]);
-}
-
-function interpolate(left: Vec3, right: Vec3, progress: number): Vec3 {
-  return [
-    left[0] + (right[0] - left[0]) * progress,
-    left[1] + (right[1] - left[1]) * progress,
-    left[2] + (right[2] - left[2]) * progress,
-  ];
-}
-
-function sampleRoute(route: Vec3[], count: number) {
-  if (count <= 0) return [];
-  if (route.length === 0) {
-    return Array.from({ length: count }, () => [0, 0.15, 0] as Vec3);
-  }
-  if (route.length === 1 || count === 1) return [route[0]];
-
-  const segments = route.slice(1).map((point, index) => ({
-    from: route[index],
-    length: distance(route[index], point),
-    to: point,
-  }));
-  const total = segments.reduce((sum, segment) => sum + segment.length, 0);
-
-  return Array.from({ length: count }, (_, index) => {
-    const target = (index / (count - 1)) * total;
-    let traversed = 0;
-    for (const segment of segments) {
-      if (traversed + segment.length >= target) {
-        const progress =
-          segment.length === 0 ? 0 : (target - traversed) / segment.length;
-        return interpolate(segment.from, segment.to, progress);
-      }
-      traversed += segment.length;
-    }
-    return route.at(-1)!;
-  });
-}
+export type GuideSceneLayout =
+  | GuideExteriorSceneLayout
+  | GuideStackedSceneLayout;
 
 export function buildGuideSceneLayout({
   slug,
   type,
   stops,
 }: BuildGuideSceneLayoutInput): GuideSceneLayout {
-  const seed = hashText(`${slug}:${type}`);
-  const model = buildGuideModel(slug, type);
-  const positions = sampleRoute(model.route, stops.length);
+  const floorPlan = getGuideFloorPlan(slug);
 
-  return {
-    ...model,
-    accent: accents[seed % accents.length],
-    nodes: stops.map((label, index) => ({
-      label,
-      position: positions[index],
-    })),
-    paths: stops.slice(1).map((_, index) => [index, index + 1]),
-  };
+  if (floorPlan) {
+    if (floorPlan.routeStops.length !== stops.length) {
+      throw new Error(
+        `${slug}: floor-plan route has ${floorPlan.routeStops.length} stops, expected ${stops.length}`,
+      );
+    }
+
+    const issues = validateFloorPlan(floorPlan);
+    if (issues.length > 0) {
+      throw new Error(`${slug}: invalid floor plan\n${issues.join('\n')}`);
+    }
+
+    return {
+      mode: floorPlan.mode,
+      modelBasis: 'documented-floorplan',
+      accent: guideSceneAccent(slug, type),
+      floors: floorPlan.floors,
+      openings: floorPlan.openings,
+      sourceManifest: floorPlan.sourceManifest,
+      verticalLinks: floorPlan.verticalLinks,
+      nodes: stops.map((label, index) => {
+        const routeStop = floorPlan.routeStops[index];
+        return {
+          floorId: routeStop.floorId,
+          label,
+          position: floorPlanPosition(floorPlan, routeStop),
+          spaceId: routeStop.spaceId,
+        };
+      }),
+      paths: stops.slice(1).map((_, index) => [index, index + 1]),
+      route: compileFloorPlanRoute(floorPlan),
+    };
+  }
+
+  return buildGuideExteriorSceneLayout({ slug, stops, type });
 }

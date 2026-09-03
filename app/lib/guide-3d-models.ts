@@ -1117,6 +1117,67 @@ function stPetersSquare(variant: number): Omit<GuideModelRecipe, 'profile'> {
   };
 }
 
+function vaticanMuseumsExterior(
+  variant: number,
+): Omit<GuideModelRecipe, 'profile'> {
+  const delta = fingerprintOffset(variant);
+  return {
+    camera: { position: [15, 11, 16], target: [0, 1.1, 0] },
+    environment: 'historic-site',
+    modelBasis: 'landmark-massing',
+    parts: [
+      part('pinecone-courtyard', [0, 0.04, 1.8], [5.5, 0.08, 5], 'route'),
+      part('belvedere-west-wing', [-4.5, 1.4, 0], [2, 2.8, 11], 'brick'),
+      part('belvedere-east-wing', [4.5, 1.4, 0], [2, 2.8, 11], 'pale-stone'),
+      part('bramante-corridor', [0, 1.5, -5], [7.2, 3, 1.4], 'stone'),
+      part('pinacoteca-wing', [-3.2, 1.15, 5.2], [4.6, 2.3, 1.8], 'brick'),
+      part('sistine-chapel', [3.2, 1.7, 5.2], [3.8 + delta, 3.4, 2.2], 'brick'),
+      part('octagonal-court', [-1.4, 0.08, -1.8], [2.8, 0.12, 2.8], 'marble'),
+    ],
+    route: [
+      [-5.8, 0.15, 5.2],
+      [-4.5, 0.15, 1.8],
+      [-1.4, 0.15, -1.8],
+      [0, 1.55, -5],
+      [4.5, 1.55, 0],
+      [3.2, 0.15, 5.2],
+    ],
+  };
+}
+
+function stPetersBasilica(variant: number): Omit<GuideModelRecipe, 'profile'> {
+  const delta = fingerprintOffset(variant);
+  return {
+    camera: { position: [14, 11, 17], target: [0, 2, -0.5] },
+    environment: 'plaza',
+    modelBasis: 'landmark-massing',
+    parts: [
+      part('basilica-nave', [0, 1.65, 0], [4.4, 3.3, 10.5], 'pale-stone'),
+      part('basilica-transept', [0, 1.75, -2.2], [9.2, 3.5, 3], 'pale-stone'),
+      part('basilica-apse', [0, 1.9, -5.5], [4.6, 3.8, 2.6], 'marble'),
+      part('michelangelo-drum', [0, 3.55, -2.2], [3.5, 2.2, 3.5], 'stone'),
+      part(
+        'michelangelo-dome',
+        [0, 5.2, -2.2],
+        [4.8 + delta, 2.7, 4.8],
+        'roof',
+      ),
+      part('lantern', [0, 7.1, -2.2], [0.65, 1.5, 0.65], 'marble'),
+      part('maderno-facade', [0, 2.1, 5.25], [10.5, 4.2, 1], 'marble'),
+      part('facade-clock-tower', [-4.3, 3.5, 5.1], [1.4, 2.2, 1.4], 'stone'),
+      part('facade-clock-tower', [4.3, 3.5, 5.1], [1.4, 2.2, 1.4], 'stone'),
+    ],
+    route: [
+      [0, 0.15, 6.5],
+      [0, 0.15, 4.5],
+      [-1.5, 0.15, 1.5],
+      [0, 0.15, -2.2],
+      [0, 3.6, -2.2],
+      [0, 7.2, -2.2],
+    ],
+  };
+}
+
 function gondolaModel(variant: number): Omit<GuideModelRecipe, 'profile'> {
   const model = canal(variant);
   model.parts = [
@@ -1996,6 +2057,14 @@ const definitions: Record<string, { factory: ModelFactory; label: string }> = {
   'st-peters-square': {
     factory: stPetersSquare,
     label: 'st-peters-elliptical-colonnade',
+  },
+  'vatican-museums': {
+    factory: vaticanMuseumsExterior,
+    label: 'vatican-belvedere-courtyards',
+  },
+  'st-peters-basilica': {
+    factory: stPetersBasilica,
+    label: 'st-peters-basilica-dome',
   },
   'vatican-post': {
     factory: documentedGallery,

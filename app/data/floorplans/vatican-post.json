@@ -1,0 +1,214 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "kiosk",
+      "label": "圣彼得广场左半圆邮政办事点",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -5,
+          -3
+        ],
+        [
+          5,
+          -3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          -5,
+          3
+        ],
+        [
+          -5,
+          -3
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "colonnade-approach",
+          "kind": "outdoor",
+          "label": "左半圆柱廊外部识别点",
+          "polygon": [
+            [
+              -4.8,
+              -2.4
+            ],
+            [
+              -2.8,
+              -2.4
+            ],
+            [
+              -2.8,
+              2.4
+            ],
+            [
+              -4.8,
+              2.4
+            ],
+            [
+              -4.8,
+              -2.4
+            ]
+          ]
+        },
+        {
+          "id": "stamp-counter",
+          "kind": "service",
+          "label": "邮票与集邮柜台",
+          "polygon": [
+            [
+              -2.3,
+              0
+            ],
+            [
+              0.7,
+              0
+            ],
+            [
+              0.7,
+              1.8
+            ],
+            [
+              -2.3,
+              1.8
+            ],
+            [
+              -2.3,
+              0
+            ]
+          ]
+        },
+        {
+          "id": "writing-place",
+          "kind": "service",
+          "label": "地址填写位置",
+          "polygon": [
+            [
+              1.1,
+              0.15000000000000002
+            ],
+            [
+              3.3000000000000003,
+              0.15000000000000002
+            ],
+            [
+              3.3000000000000003,
+              1.85
+            ],
+            [
+              1.1,
+              1.85
+            ],
+            [
+              1.1,
+              0.15000000000000002
+            ]
+          ]
+        },
+        {
+          "id": "post-counter",
+          "kind": "service",
+          "label": "盖戳柜台或投递口",
+          "polygon": [
+            [
+              -1.25,
+              -2.15
+            ],
+            [
+              3.25,
+              -2.15
+            ],
+            [
+              3.25,
+              -0.6499999999999999
+            ],
+            [
+              -1.25,
+              -0.6499999999999999
+            ],
+            [
+              -1.25,
+              -2.15
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "kiosk",
+      "kind": "gate",
+      "position": [
+        -2.8,
+        0
+      ],
+      "connects": [
+        "colonnade-approach",
+        "stamp-counter"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "kiosk",
+      "spaceId": "colonnade-approach",
+      "position": [
+        -3.8,
+        0
+      ]
+    },
+    {
+      "floorId": "kiosk",
+      "spaceId": "stamp-counter",
+      "position": [
+        -0.8,
+        0.9
+      ]
+    },
+    {
+      "floorId": "kiosk",
+      "spaceId": "writing-place",
+      "position": [
+        2.2,
+        1
+      ]
+    },
+    {
+      "floorId": "kiosk",
+      "spaceId": "post-counter",
+      "position": [
+        1,
+        -1.4
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "route"
+      ],
+      "title": "Poste Vaticane: postal services useful information",
+      "url": "https://postevaticane.va/en/the-service/postal-services/useful-information",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces"
+      ],
+      "title": "Vatican City State: new post office for St Peter’s Square",
+      "url": "https://www.vaticanstate.va/it/novita/1212-un-nuovo-ufficio-postale-per-piazza-san-pietro.html",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": []
+}

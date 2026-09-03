@@ -1,0 +1,853 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层：两侧入口、门厅、池座与舞台",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -7,
+          -6
+        ],
+        [
+          7,
+          -6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          -7,
+          6
+        ],
+        [
+          -7,
+          -6
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "museum-entry",
+          "kind": "circulation",
+          "label": "Largo Ghiringhelli博物馆入口",
+          "polygon": [
+            [
+              -6.3,
+              4.300000000000001
+            ],
+            [
+              -3.3,
+              4.300000000000001
+            ],
+            [
+              -3.3,
+              5.5
+            ],
+            [
+              -6.3,
+              5.5
+            ],
+            [
+              -6.3,
+              4.300000000000001
+            ]
+          ]
+        },
+        {
+          "id": "evening-entry",
+          "kind": "circulation",
+          "label": "斯卡拉广场晚间观众入口",
+          "polygon": [
+            [
+              2,
+              4.300000000000001
+            ],
+            [
+              6.4,
+              4.300000000000001
+            ],
+            [
+              6.4,
+              5.5
+            ],
+            [
+              2,
+              5.5
+            ],
+            [
+              2,
+              4.300000000000001
+            ]
+          ]
+        },
+        {
+          "id": "foyer",
+          "kind": "hall",
+          "label": "观众门厅与楼层交通",
+          "polygon": [
+            [
+              -0.7000000000000002,
+              1.6999999999999997
+            ],
+            [
+              5.5,
+              1.6999999999999997
+            ],
+            [
+              5.5,
+              3.9
+            ],
+            [
+              -0.7000000000000002,
+              3.9
+            ],
+            [
+              -0.7000000000000002,
+              1.6999999999999997
+            ]
+          ]
+        },
+        {
+          "id": "stalls",
+          "kind": "hall",
+          "label": "马蹄形池座与乐团位置",
+          "polygon": [
+            [
+              -4.2,
+              -2.45
+            ],
+            [
+              4.2,
+              -2.45
+            ],
+            [
+              4.2,
+              2.05
+            ],
+            [
+              -4.2,
+              2.05
+            ],
+            [
+              -4.2,
+              -2.45
+            ]
+          ]
+        },
+        {
+          "id": "stage",
+          "kind": "hall",
+          "label": "镜框舞台",
+          "polygon": [
+            [
+              -3.5,
+              -5.55
+            ],
+            [
+              3.5,
+              -5.55
+            ],
+            [
+              3.5,
+              -3.05
+            ],
+            [
+              -3.5,
+              -3.05
+            ],
+            [
+              -3.5,
+              -5.55
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "museum",
+      "label": "博物馆层：主题展室与档案材料",
+      "elevation": 2.8,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -7,
+          -6
+        ],
+        [
+          7,
+          -6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          -7,
+          6
+        ],
+        [
+          -7,
+          -6
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "rooms-1-4",
+          "kind": "gallery",
+          "label": "第一、第三和第四主题展室",
+          "polygon": [
+            [
+              -6.1,
+              -0.20000000000000018
+            ],
+            [
+              1.1,
+              -0.20000000000000018
+            ],
+            [
+              1.1,
+              4
+            ],
+            [
+              -6.1,
+              4
+            ],
+            [
+              -6.1,
+              -0.20000000000000018
+            ]
+          ]
+        },
+        {
+          "id": "room-9",
+          "kind": "gallery",
+          "label": "第九室档案及图书馆材料",
+          "polygon": [
+            [
+              1.8,
+              -0.20000000000000018
+            ],
+            [
+              5.4,
+              -0.20000000000000018
+            ],
+            [
+              5.4,
+              4
+            ],
+            [
+              1.8,
+              4
+            ],
+            [
+              1.8,
+              -0.20000000000000018
+            ]
+          ]
+        },
+        {
+          "id": "museum-corridor",
+          "kind": "circulation",
+          "label": "博物馆走廊",
+          "polygon": [
+            [
+              -5.25,
+              -3
+            ],
+            [
+              5.25,
+              -3
+            ],
+            [
+              5.25,
+              -1.2000000000000002
+            ],
+            [
+              -5.25,
+              -1.2000000000000002
+            ],
+            [
+              -5.25,
+              -3
+            ]
+          ]
+        },
+        {
+          "id": "box-access",
+          "kind": "circulation",
+          "label": "历史包厢通道",
+          "polygon": [
+            [
+              3.6999999999999997,
+              -4.9
+            ],
+            [
+              5.9,
+              -4.9
+            ],
+            [
+              5.9,
+              -3.1
+            ],
+            [
+              3.6999999999999997,
+              -3.1
+            ],
+            [
+              3.6999999999999997,
+              -4.9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "box-tier",
+      "label": "包厢层：历史包厢与观众厅视角",
+      "elevation": 5.6,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -7,
+          -6
+        ],
+        [
+          7,
+          -6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          -7,
+          6
+        ],
+        [
+          -7,
+          -6
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "historic-box",
+          "kind": "hall",
+          "label": "博物馆历史包厢视角",
+          "polygon": [
+            [
+              3.4999999999999996,
+              -2.2
+            ],
+            [
+              5.699999999999999,
+              -2.2
+            ],
+            [
+              5.699999999999999,
+              1.2
+            ],
+            [
+              3.4999999999999996,
+              1.2
+            ],
+            [
+              3.4999999999999996,
+              -2.2
+            ]
+          ]
+        },
+        {
+          "id": "box-ring",
+          "kind": "hall",
+          "label": "马蹄形包厢环带",
+          "polygon": [
+            [
+              -4.6,
+              -3.4
+            ],
+            [
+              4.6,
+              -3.4
+            ],
+            [
+              4.6,
+              3.4
+            ],
+            [
+              -4.6,
+              3.4
+            ],
+            [
+              -4.6,
+              -3.4
+            ]
+          ]
+        },
+        {
+          "id": "box-stair",
+          "kind": "circulation",
+          "label": "包厢层楼梯厅",
+          "polygon": [
+            [
+              3.6999999999999997,
+              3.2
+            ],
+            [
+              5.9,
+              3.2
+            ],
+            [
+              5.9,
+              5.2
+            ],
+            [
+              3.6999999999999997,
+              5.2
+            ],
+            [
+              3.6999999999999997,
+              3.2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first-gallery",
+      "label": "第一楼座层",
+      "elevation": 8.4,
+      "stackOrder": 3,
+      "outline": [
+        [
+          -7,
+          -6
+        ],
+        [
+          7,
+          -6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          -7,
+          6
+        ],
+        [
+          -7,
+          -6
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "gallery-one",
+          "kind": "hall",
+          "label": "第一楼座与上层视线区",
+          "polygon": [
+            [
+              -4.7,
+              -3.5
+            ],
+            [
+              4.7,
+              -3.5
+            ],
+            [
+              4.7,
+              3.5
+            ],
+            [
+              -4.7,
+              3.5
+            ],
+            [
+              -4.7,
+              -3.5
+            ]
+          ]
+        },
+        {
+          "id": "gallery-one-stair",
+          "kind": "circulation",
+          "label": "第一楼座楼梯厅",
+          "polygon": [
+            [
+              3.6999999999999997,
+              3.2
+            ],
+            [
+              5.9,
+              3.2
+            ],
+            [
+              5.9,
+              5.2
+            ],
+            [
+              3.6999999999999997,
+              5.2
+            ],
+            [
+              3.6999999999999997,
+              3.2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second-gallery",
+      "label": "第二楼座及顶层票区",
+      "elevation": 11.2,
+      "stackOrder": 4,
+      "outline": [
+        [
+          -7,
+          -6
+        ],
+        [
+          7,
+          -6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          -7,
+          6
+        ],
+        [
+          -7,
+          -6
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "ticketed-zone",
+          "kind": "hall",
+          "label": "票面楼层座席或站位区",
+          "polygon": [
+            [
+              -4.7,
+              -3.5
+            ],
+            [
+              4.7,
+              -3.5
+            ],
+            [
+              4.7,
+              3.5
+            ],
+            [
+              -4.7,
+              3.5
+            ],
+            [
+              -4.7,
+              -3.5
+            ]
+          ]
+        },
+        {
+          "id": "gallery-two-stair",
+          "kind": "circulation",
+          "label": "第二楼座楼梯厅",
+          "polygon": [
+            [
+              3.6999999999999997,
+              3.2
+            ],
+            [
+              5.9,
+              3.2
+            ],
+            [
+              5.9,
+              5.2
+            ],
+            [
+              3.6999999999999997,
+              5.2
+            ],
+            [
+              3.6999999999999997,
+              3.2
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        -4.8,
+        5.5
+      ],
+      "connects": [
+        "museum-entry"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        4.2,
+        5.5
+      ],
+      "connects": [
+        "evening-entry"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "archway",
+      "position": [
+        2.4,
+        1.7
+      ],
+      "connects": [
+        "foyer",
+        "stalls"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "archway",
+      "position": [
+        0,
+        -2.4
+      ],
+      "connects": [
+        "stalls",
+        "stage"
+      ]
+    },
+    {
+      "floorId": "museum",
+      "kind": "door",
+      "position": [
+        1.1,
+        1.9
+      ],
+      "connects": [
+        "rooms-1-4",
+        "room-9"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "museum-entry",
+      "position": [
+        -4.8,
+        4.9
+      ]
+    },
+    {
+      "floorId": "museum",
+      "spaceId": "rooms-1-4",
+      "position": [
+        -2.5,
+        1.9
+      ]
+    },
+    {
+      "floorId": "museum",
+      "spaceId": "room-9",
+      "position": [
+        3.6,
+        1.9
+      ]
+    },
+    {
+      "floorId": "box-tier",
+      "spaceId": "historic-box",
+      "position": [
+        4.6,
+        -0.5
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "evening-entry",
+      "position": [
+        4.2,
+        4.9
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "foyer",
+      "position": [
+        2.4,
+        2.8
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "stalls",
+      "position": [
+        0,
+        -0.2
+      ]
+    },
+    {
+      "floorId": "second-gallery",
+      "spaceId": "ticketed-zone",
+      "position": [
+        0,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels"
+      ],
+      "title": "Teatro alla Scala official seating plans",
+      "url": "https://www.teatroallascala.org/it/stagione/biglietteria/biglietti/prezzi-e-piante-posti.html",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Museo Teatrale alla Scala official museum map",
+      "url": "https://www.museoscala.org/static/upload/map/mappa-del-museo-teatrale-1.pdf",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "route"
+      ],
+      "title": "Teatro alla Scala official audience access guide",
+      "url": "https://www.teatroallascala.org/en/visit/information/during-the-performance.html",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "museum-stair",
+      "kind": "stairs",
+      "label": "博物馆入口楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -4.8,
+            3.9
+          ]
+        },
+        {
+          "floorId": "museum",
+          "position": [
+            -4.8,
+            3.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "historic-box-passage",
+      "kind": "stairs",
+      "label": "博物馆至历史包厢通道",
+      "landings": [
+        {
+          "floorId": "museum",
+          "position": [
+            4.8,
+            -4
+          ]
+        },
+        {
+          "floorId": "box-tier",
+          "position": [
+            4.6,
+            -2.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audience-stairs",
+      "kind": "stairs",
+      "label": "观众公共楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            4.8,
+            4.2
+          ]
+        },
+        {
+          "floorId": "box-tier",
+          "position": [
+            4.8,
+            4.2
+          ]
+        },
+        {
+          "floorId": "first-gallery",
+          "position": [
+            4.8,
+            4.2
+          ]
+        },
+        {
+          "floorId": "second-gallery",
+          "position": [
+            4.8,
+            4.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gallery-lift",
+      "kind": "lift",
+      "label": "楼座电梯（不通包厢）",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -4.8,
+            4.2
+          ]
+        },
+        {
+          "floorId": "first-gallery",
+          "position": [
+            -4.8,
+            4.2
+          ]
+        },
+        {
+          "floorId": "second-gallery",
+          "position": [
+            -4.8,
+            4.2
+          ]
+        }
+      ]
+    }
+  ]
+}

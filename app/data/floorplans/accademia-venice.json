@@ -1,0 +1,514 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "底层：入口、后段展室与出口",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -7.5,
+          -5
+        ],
+        [
+          7.5,
+          -5
+        ],
+        [
+          7.5,
+          5
+        ],
+        [
+          -7.5,
+          5
+        ],
+        [
+          -7.5,
+          -5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "campo-entry",
+          "kind": "circulation",
+          "label": "Campo della Carità入口与票务",
+          "polygon": [
+            [
+              -7,
+              2.1
+            ],
+            [
+              -4,
+              2.1
+            ],
+            [
+              -4,
+              4.300000000000001
+            ],
+            [
+              -7,
+              4.300000000000001
+            ],
+            [
+              -7,
+              2.1
+            ]
+          ]
+        },
+        {
+          "id": "ground-galleries",
+          "kind": "gallery",
+          "label": "底层展室",
+          "polygon": [
+            [
+              -3.8000000000000003,
+              -3.4
+            ],
+            [
+              4.6000000000000005,
+              -3.4
+            ],
+            [
+              4.6000000000000005,
+              3.4
+            ],
+            [
+              -3.8000000000000003,
+              3.4
+            ],
+            [
+              -3.8000000000000003,
+              -3.4
+            ]
+          ]
+        },
+        {
+          "id": "ground-exit",
+          "kind": "circulation",
+          "label": "底层出口",
+          "polygon": [
+            [
+              4.35,
+              -4.1000000000000005
+            ],
+            [
+              6.85,
+              -4.1000000000000005
+            ],
+            [
+              6.85,
+              -2.3000000000000003
+            ],
+            [
+              4.35,
+              -2.3000000000000003
+            ],
+            [
+              4.35,
+              -4.1000000000000005
+            ]
+          ]
+        },
+        {
+          "id": "main-stair-foot",
+          "kind": "circulation",
+          "label": "主楼梯与无障碍电梯入口",
+          "polygon": [
+            [
+              -6.75,
+              -3.95
+            ],
+            [
+              -4.25,
+              -3.95
+            ],
+            [
+              -4.25,
+              -1.4500000000000002
+            ],
+            [
+              -6.75,
+              -1.4500000000000002
+            ],
+            [
+              -6.75,
+              -3.95
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first",
+      "label": "首层：第二十四、第八、第十室及后续画廊",
+      "elevation": 3.4,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -8,
+          -5.5
+        ],
+        [
+          8,
+          -5.5
+        ],
+        [
+          8,
+          5.5
+        ],
+        [
+          -8,
+          5.5
+        ],
+        [
+          -8,
+          -5.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "room-xxiv",
+          "kind": "gallery",
+          "label": "第二十四室：提香",
+          "polygon": [
+            [
+              -7.1,
+              0.8999999999999999
+            ],
+            [
+              -4.1,
+              0.8999999999999999
+            ],
+            [
+              -4.1,
+              4.699999999999999
+            ],
+            [
+              -7.1,
+              4.699999999999999
+            ],
+            [
+              -7.1,
+              0.8999999999999999
+            ]
+          ]
+        },
+        {
+          "id": "room-viii",
+          "kind": "gallery",
+          "label": "第八室：乔尔乔内",
+          "polygon": [
+            [
+              -3.6,
+              0.8999999999999999
+            ],
+            [
+              0,
+              0.8999999999999999
+            ],
+            [
+              0,
+              4.699999999999999
+            ],
+            [
+              -3.6,
+              4.699999999999999
+            ],
+            [
+              -3.6,
+              0.8999999999999999
+            ]
+          ]
+        },
+        {
+          "id": "room-x",
+          "kind": "gallery",
+          "label": "第十室：委罗内塞",
+          "polygon": [
+            [
+              0.5,
+              0.8999999999999999
+            ],
+            [
+              4.3,
+              0.8999999999999999
+            ],
+            [
+              4.3,
+              4.699999999999999
+            ],
+            [
+              0.5,
+              4.699999999999999
+            ],
+            [
+              0.5,
+              0.8999999999999999
+            ]
+          ]
+        },
+        {
+          "id": "later-galleries",
+          "kind": "gallery",
+          "label": "后续威尼斯绘画展室",
+          "polygon": [
+            [
+              1.1,
+              -3.9000000000000004
+            ],
+            [
+              7.300000000000001,
+              -3.9000000000000004
+            ],
+            [
+              7.300000000000001,
+              0.30000000000000004
+            ],
+            [
+              1.1,
+              0.30000000000000004
+            ],
+            [
+              1.1,
+              -3.9000000000000004
+            ]
+          ]
+        },
+        {
+          "id": "first-corridor",
+          "kind": "circulation",
+          "label": "首层连续画廊通道",
+          "polygon": [
+            [
+              -3.9,
+              -3.9
+            ],
+            [
+              1.1,
+              -3.9
+            ],
+            [
+              1.1,
+              -1.6999999999999997
+            ],
+            [
+              -3.9,
+              -1.6999999999999997
+            ],
+            [
+              -3.9,
+              -3.9
+            ]
+          ]
+        },
+        {
+          "id": "main-stair-head",
+          "kind": "circulation",
+          "label": "主楼梯与电梯上层",
+          "polygon": [
+            [
+              -7.5,
+              -4.9
+            ],
+            [
+              -5.300000000000001,
+              -4.9
+            ],
+            [
+              -5.300000000000001,
+              -2.6999999999999997
+            ],
+            [
+              -7.5,
+              -2.6999999999999997
+            ],
+            [
+              -7.5,
+              -4.9
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        -5.5,
+        4.3
+      ],
+      "connects": [
+        "campo-entry"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        -3.8,
+        2.8
+      ],
+      "connects": [
+        "room-xxiv",
+        "room-viii"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        0.1,
+        2.8
+      ],
+      "connects": [
+        "room-viii",
+        "room-x"
+      ]
+    },
+    {
+      "floorId": "first",
+      "kind": "archway",
+      "position": [
+        3.4,
+        0.8
+      ],
+      "connects": [
+        "room-x",
+        "later-galleries"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        4.4,
+        -3.2
+      ],
+      "connects": [
+        "ground-galleries",
+        "ground-exit"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "campo-entry",
+      "position": [
+        -5.5,
+        3.2
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "room-xxiv",
+      "position": [
+        -5.6,
+        2.8
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "room-viii",
+      "position": [
+        -1.8,
+        2.8
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "room-x",
+      "position": [
+        2.4,
+        2.8
+      ]
+    },
+    {
+      "floorId": "first",
+      "spaceId": "later-galleries",
+      "position": [
+        4.2,
+        -1.8
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "ground-galleries",
+      "position": [
+        0.4,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Gallerie dell’Accademia official museum map",
+      "url": "https://www.gallerieaccademia.it/themes/custom/accademia/images/Map_gallerie.pdf",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "route"
+      ],
+      "title": "Gallerie dell’Accademia official visitor routes",
+      "url": "https://www.gallerieaccademia.it/vivi-museo/percorsi-di-visita/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "main-stair",
+      "kind": "stairs",
+      "label": "主楼梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -5.5,
+            -2.7
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            -6.4,
+            -3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "无障碍访客电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -4.6,
+            -2.7
+          ]
+        },
+        {
+          "floorId": "first",
+          "position": [
+            -5.4,
+            -3.8
+          ]
+        }
+      ]
+    }
+  ]
+}

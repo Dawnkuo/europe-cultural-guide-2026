@@ -9,9 +9,12 @@ describe('OfflineStatus', () => {
   });
 
   it('announces when the guide is offline', () => {
+    let online = true;
+    vi.spyOn(navigator, 'onLine', 'get').mockImplementation(() => online);
     render(<OfflineStatus />);
 
-    act(() => window.dispatchEvent(new Event('offline')));
+    online = false;
+    void act(() => window.dispatchEvent(new Event('offline')));
     expect(screen.getByText('离线可读')).toBeInTheDocument();
   });
 

@@ -1,0 +1,551 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "basement",
+      "label": "地下层：博物馆与展陈",
+      "elevation": -3,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -5.5,
+          -3.5
+        ],
+        [
+          5.5,
+          -3.5
+        ],
+        [
+          5.5,
+          3.5
+        ],
+        [
+          -5.5,
+          3.5
+        ],
+        [
+          -5.5,
+          -3.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "museum",
+          "kind": "gallery",
+          "label": "博物馆与模型展陈",
+          "polygon": [
+            [
+              -4.95,
+              -2.75
+            ],
+            [
+              0.5499999999999998,
+              -2.75
+            ],
+            [
+              0.5499999999999998,
+              2.75
+            ],
+            [
+              -4.95,
+              2.75
+            ],
+            [
+              -4.95,
+              -2.75
+            ]
+          ]
+        },
+        {
+          "id": "school",
+          "kind": "hall",
+          "label": "高迪学校建筑",
+          "polygon": [
+            [
+              1.75,
+              -2.25
+            ],
+            [
+              5.25,
+              -2.25
+            ],
+            [
+              5.25,
+              2.25
+            ],
+            [
+              1.75,
+              2.25
+            ],
+            [
+              1.75,
+              -2.25
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basilica",
+      "label": "圣殿层：拉丁十字平面",
+      "elevation": 0,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -3,
+          -8
+        ],
+        [
+          3,
+          -8
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          7,
+          -3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          -3,
+          8
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -7,
+          3
+        ],
+        [
+          -7,
+          -3
+        ],
+        [
+          -3,
+          -3
+        ],
+        [
+          -3,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "nativity-entry",
+          "kind": "circulation",
+          "label": "诞生立面与Marina街入口",
+          "polygon": [
+            [
+              -2.6,
+              5.95
+            ],
+            [
+              2.6,
+              5.95
+            ],
+            [
+              2.6,
+              7.6499999999999995
+            ],
+            [
+              -2.6,
+              7.6499999999999995
+            ],
+            [
+              -2.6,
+              5.95
+            ]
+          ]
+        },
+        {
+          "id": "nave",
+          "kind": "hall",
+          "label": "五廊式中殿与树状柱林",
+          "polygon": [
+            [
+              -2.6,
+              -2.2
+            ],
+            [
+              2.6,
+              -2.2
+            ],
+            [
+              2.6,
+              5.6
+            ],
+            [
+              -2.6,
+              5.6
+            ],
+            [
+              -2.6,
+              -2.2
+            ]
+          ]
+        },
+        {
+          "id": "transept",
+          "kind": "hall",
+          "label": "交叉部与耳堂",
+          "polygon": [
+            [
+              -6.25,
+              -3
+            ],
+            [
+              6.25,
+              -3
+            ],
+            [
+              6.25,
+              1
+            ],
+            [
+              -6.25,
+              1
+            ],
+            [
+              -6.25,
+              -3
+            ]
+          ]
+        },
+        {
+          "id": "apse",
+          "kind": "chapel",
+          "label": "后殿与七座礼拜堂",
+          "polygon": [
+            [
+              -2.6,
+              -7.5
+            ],
+            [
+              2.6,
+              -7.5
+            ],
+            [
+              2.6,
+              -4.5
+            ],
+            [
+              -2.6,
+              -4.5
+            ],
+            [
+              -2.6,
+              -7.5
+            ]
+          ]
+        },
+        {
+          "id": "passion-facade",
+          "kind": "outdoor",
+          "label": "受难立面雕塑群",
+          "polygon": [
+            [
+              -6.85,
+              -2.8
+            ],
+            [
+              -5.15,
+              -2.8
+            ],
+            [
+              -5.15,
+              1.2
+            ],
+            [
+              -6.85,
+              1.2
+            ],
+            [
+              -6.85,
+              -2.8
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tower",
+      "label": "受难立面塔：电梯上行与步行下塔",
+      "elevation": 4,
+      "stackOrder": 2,
+      "outline": [
+        [
+          -7.4,
+          -3.4
+        ],
+        [
+          -4.199999999999999,
+          -3.4
+        ],
+        [
+          -4.199999999999999,
+          2.1999999999999997
+        ],
+        [
+          -7.4,
+          2.1999999999999997
+        ],
+        [
+          -7.4,
+          -3.4
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "tower-lift",
+          "kind": "circulation",
+          "label": "塔楼电梯",
+          "polygon": [
+            [
+              -6.8,
+              -2.25
+            ],
+            [
+              -5.8,
+              -2.25
+            ],
+            [
+              -5.8,
+              -0.9500000000000001
+            ],
+            [
+              -6.8,
+              -0.9500000000000001
+            ],
+            [
+              -6.8,
+              -2.25
+            ]
+          ]
+        },
+        {
+          "id": "tower-view",
+          "kind": "outdoor",
+          "label": "塔楼观景段",
+          "polygon": [
+            [
+              -6.25,
+              -1
+            ],
+            [
+              -4.75,
+              -1
+            ],
+            [
+              -4.75,
+              0.6000000000000001
+            ],
+            [
+              -6.25,
+              0.6000000000000001
+            ],
+            [
+              -6.25,
+              -1
+            ]
+          ]
+        },
+        {
+          "id": "tower-stair",
+          "kind": "circulation",
+          "label": "螺旋下塔楼梯",
+          "polygon": [
+            [
+              -6.6499999999999995,
+              0.5
+            ],
+            [
+              -5.55,
+              0.5
+            ],
+            [
+              -5.55,
+              1.9
+            ],
+            [
+              -6.6499999999999995,
+              1.9
+            ],
+            [
+              -6.6499999999999995,
+              0.5
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "basilica",
+      "kind": "gate",
+      "position": [
+        0,
+        7.8
+      ],
+      "connects": [
+        "nativity-entry"
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "kind": "archway",
+      "position": [
+        0,
+        3.4
+      ],
+      "connects": [
+        "nativity-entry",
+        "nave"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "basilica",
+      "spaceId": "nativity-entry",
+      "position": [
+        0,
+        6.8
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "spaceId": "nave",
+      "position": [
+        0,
+        1.7
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "spaceId": "transept",
+      "position": [
+        0,
+        -1
+      ]
+    },
+    {
+      "floorId": "tower",
+      "spaceId": "tower-view",
+      "position": [
+        -5.5,
+        -0.2
+      ]
+    },
+    {
+      "floorId": "basilica",
+      "spaceId": "passion-facade",
+      "position": [
+        -6,
+        -0.8
+      ]
+    },
+    {
+      "floorId": "basement",
+      "spaceId": "museum",
+      "position": [
+        -2.2,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Architecture of the Sagrada Família, official booklet",
+      "url": "https://sagradafamilia.org/documents/20142/1693659/SF_Booklet_04_20260227_digital_AF.pdf/6887364b-2f83-e9ae-006f-b3d08fba4428",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "museum-stair",
+      "kind": "stairs",
+      "label": "博物馆楼梯",
+      "landings": [
+        {
+          "floorId": "basement",
+          "position": [
+            2.2,
+            2.1
+          ]
+        },
+        {
+          "floorId": "basilica",
+          "position": [
+            2.2,
+            2.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passion-lift",
+      "kind": "lift",
+      "label": "受难塔电梯",
+      "landings": [
+        {
+          "floorId": "basilica",
+          "position": [
+            -6.3,
+            -1.6
+          ]
+        },
+        {
+          "floorId": "tower",
+          "position": [
+            -6.3,
+            -1.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passion-stair",
+      "kind": "stairs",
+      "label": "受难塔下行楼梯",
+      "landings": [
+        {
+          "floorId": "tower",
+          "position": [
+            -6.1,
+            1.2
+          ]
+        },
+        {
+          "floorId": "basilica",
+          "position": [
+            -6.1,
+            1.2
+          ]
+        }
+      ]
+    }
+  ]
+}

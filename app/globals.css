@@ -1429,6 +1429,52 @@ img {
 .guide-spatial .guide-section__heading > span {
   color: #aeb5b1;
 }
+.guide-spatial__view-tabs {
+  border: 1px solid #4a544f;
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(86px, 1fr));
+  margin-top: 36px;
+}
+.guide-spatial__view-tabs button {
+  background: transparent;
+  border: 0;
+  color: #c4cbc7;
+  cursor: pointer;
+  font-size: 12px;
+  min-height: 44px;
+  padding: 0 24px;
+}
+.guide-spatial__view-tabs button + button {
+  border-left: 1px solid #4a544f;
+}
+.guide-spatial__view-tabs button[aria-selected='true'] {
+  background: var(--acid);
+  color: #111512;
+}
+.guide-spatial__view-tabs button:focus-visible,
+.guide-spatial-3d__toolbar button:focus-visible,
+.guide-spatial-3d__nodes button:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: -3px;
+}
+.guide-spatial__data-status {
+  border-left: 3px solid var(--acid);
+  color: #d7ddd9;
+  font-size: 12px;
+  margin-top: 36px;
+  padding: 10px 14px;
+}
+.guide-spatial__loading {
+  align-items: center;
+  background: #0b0e0d;
+  border: 1px solid #323a36;
+  color: #b8c0bc;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  margin-top: 65px;
+  min-height: 540px;
+}
 .guide-spatial-3d {
   border: 1px solid #323a36;
   display: grid;
@@ -1448,7 +1494,7 @@ img {
   height: 100%;
   inset: 0;
   position: absolute;
-  touch-action: none;
+  touch-action: pan-y pinch-zoom;
   width: 100%;
 }
 .guide-spatial-3d__toolbar {
@@ -1466,9 +1512,9 @@ img {
   color: var(--white);
   cursor: pointer;
   display: flex;
-  height: 42px;
+  height: 44px;
   justify-content: center;
-  width: 42px;
+  width: 44px;
 }
 .guide-spatial-3d__toolbar button:hover {
   border-color: var(--acid);
@@ -1567,6 +1613,129 @@ img {
   font-size: 19px;
   font-weight: 400;
   line-height: 1.25;
+}
+.guide-spatial-3d__nodes small {
+  color: #929c97;
+  font-size: 9px;
+  grid-column: 2;
+  line-height: 1.45;
+  margin-top: -6px;
+}
+.guide-floorplan__fallback {
+  display: block;
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  transition: opacity 180ms ease;
+  width: 100%;
+}
+.guide-floorplan__canvas {
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+.guide-floorplan .guide-spatial-3d__stage[data-webgl='ready'] .guide-floorplan__canvas {
+  opacity: 1;
+}
+.guide-floorplan .guide-spatial-3d__stage[data-webgl='ready'] .guide-floorplan__fallback {
+  opacity: 0;
+  pointer-events: none;
+}
+.guide-floorplan__floor {
+  opacity: 0.2;
+}
+.guide-floorplan g[data-active='true'] .guide-floorplan__floor {
+  opacity: 0.62;
+}
+.guide-floorplan__space {
+  fill: #111714;
+  fill-opacity: 0.45;
+}
+.guide-floorplan__wall {
+  stroke: #d9ddd8;
+  stroke-opacity: 0.62;
+  stroke-width: 1.25;
+}
+.guide-floorplan g[data-active='true'] .guide-floorplan__wall {
+  stroke: #fff7e5;
+  stroke-opacity: 0.95;
+  stroke-width: 1.8;
+}
+.guide-floorplan__vertical-link polyline {
+  fill: none;
+  opacity: 0.7;
+  stroke: #8fb6aa;
+  stroke-dasharray: 3 3;
+  stroke-width: 2;
+}
+.guide-floorplan__vertical-link circle {
+  fill: #8fb6aa;
+  stroke: #111714;
+  stroke-width: 1;
+}
+.guide-floorplan__floor-label {
+  fill: #cdd4d0;
+  font-size: 12px;
+}
+.guide-floorplan__space-label {
+  fill: #fffdf7;
+  font-size: 8px;
+  paint-order: stroke;
+  stroke: #111714;
+  stroke-width: 3px;
+  text-anchor: middle;
+}
+.guide-floorplan__route {
+  fill: none;
+  stroke: #6c746f;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+.guide-floorplan__route[data-state='complete'] {
+  stroke: #78c7a4;
+}
+.guide-floorplan__route[data-state='active'] {
+  stroke: #f0d085;
+  stroke-width: 4;
+}
+.guide-floorplan__route[data-state='upcoming'] {
+  opacity: 0.35;
+  stroke-dasharray: 5 5;
+}
+.guide-floorplan__marker circle {
+  fill: #242c28;
+  stroke: #f0d085;
+  stroke-width: 2;
+}
+.guide-floorplan__marker[data-active='true'] circle {
+  fill: #f0d085;
+}
+.guide-floorplan__marker text {
+  fill: #fff;
+  font-size: 8px;
+  text-anchor: middle;
+}
+.guide-floorplan__marker[data-active='true'] text {
+  fill: #111512;
+}
+.guide-floorplan__state {
+  background: rgb(11 14 13 / 82%);
+  bottom: 16px;
+  color: #d7ddd9;
+  font-size: 9px;
+  padding: 8px 10px;
+  position: absolute;
+  right: 18px;
+  z-index: 3;
+}
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 .spatial-diagram {
   align-items: stretch;
@@ -1772,60 +1941,6 @@ img {
   font-size: 13px;
   line-height: 1.7;
 }
-/* Locally embedded Vatican and Saint Peter guide */
-.embedded-guide-page {
-  background: var(--ink);
-  color: var(--white);
-}
-.embedded-guide-intro {
-  align-items: end;
-  display: grid;
-  gap: 12px 40px;
-  grid-template-columns: minmax(0, 1fr) auto;
-  padding: 48px clamp(20px, 4vw, 64px) 34px;
-}
-.embedded-guide-intro > p {
-  color: #dcbb55;
-  font-size: 9px;
-  font-weight: 700;
-  grid-column: 1 / -1;
-  margin: 0;
-  text-transform: uppercase;
-}
-.embedded-guide-intro h1 {
-  font-family: var(--font-display);
-  font-size: 58px;
-  font-weight: 400;
-  line-height: 1;
-  margin: 0;
-}
-.embedded-guide-intro > span {
-  color: #aeb5b1;
-  font-size: 12px;
-  grid-column: 1;
-  line-height: 1.7;
-  max-width: 760px;
-}
-.embedded-guide-intro > a {
-  align-items: center;
-  border: 1px solid #dcbb55;
-  color: #dcbb55;
-  display: flex;
-  font-size: 11px;
-  gap: 8px;
-  grid-column: 2;
-  grid-row: 2 / span 2;
-  padding: 12px 14px;
-}
-.embedded-guide-frame {
-  background: #08090d;
-  border: 0;
-  display: block;
-  height: calc(100svh - 210px);
-  min-height: 720px;
-  width: 100%;
-}
-
 /* Booking audit */
 .audit-counts {
   display: flex;
@@ -2435,6 +2550,10 @@ img {
   .guide-spatial-3d {
     margin-top: 36px;
     min-height: 0;
+  }
+  .guide-spatial__loading {
+    margin-top: 36px;
+    min-height: 390px;
   }
   .guide-spatial-3d__stage {
     min-height: 390px;

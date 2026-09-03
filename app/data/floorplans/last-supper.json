@@ -1,0 +1,342 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层：核验、恒温闸室与旧食堂",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -9,
+          -3.5
+        ],
+        [
+          9,
+          -3.5
+        ],
+        [
+          9,
+          3.5
+        ],
+        [
+          -9,
+          3.5
+        ],
+        [
+          -9,
+          -3.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "ticket-check",
+          "kind": "service",
+          "label": "票务与身份核验处",
+          "polygon": [
+            [
+              -8.6,
+              -2.4
+            ],
+            [
+              -6.6,
+              -2.4
+            ],
+            [
+              -6.6,
+              2.4
+            ],
+            [
+              -8.6,
+              2.4
+            ],
+            [
+              -8.6,
+              -2.4
+            ]
+          ]
+        },
+        {
+          "id": "lockers",
+          "kind": "service",
+          "label": "强制寄存柜",
+          "polygon": [
+            [
+              -6.3,
+              -2.4
+            ],
+            [
+              -4.7,
+              -2.4
+            ],
+            [
+              -4.7,
+              2.4
+            ],
+            [
+              -6.3,
+              2.4
+            ],
+            [
+              -6.3,
+              -2.4
+            ]
+          ]
+        },
+        {
+          "id": "airlock-one",
+          "kind": "circulation",
+          "label": "第一空气调节闸室",
+          "polygon": [
+            [
+              -4.4,
+              -1.5
+            ],
+            [
+              -3,
+              -1.5
+            ],
+            [
+              -3,
+              1.5
+            ],
+            [
+              -4.4,
+              1.5
+            ],
+            [
+              -4.4,
+              -1.5
+            ]
+          ]
+        },
+        {
+          "id": "airlock-two",
+          "kind": "circulation",
+          "label": "第二空气调节闸室",
+          "polygon": [
+            [
+              -2.8,
+              -1.5
+            ],
+            [
+              -1.4000000000000001,
+              -1.5
+            ],
+            [
+              -1.4000000000000001,
+              1.5
+            ],
+            [
+              -2.8,
+              1.5
+            ],
+            [
+              -2.8,
+              -1.5
+            ]
+          ]
+        },
+        {
+          "id": "refectory",
+          "kind": "hall",
+          "label": "旧修道院食堂",
+          "polygon": [
+            [
+              -1.1,
+              -2.7
+            ],
+            [
+              5.9,
+              -2.7
+            ],
+            [
+              5.9,
+              2.7
+            ],
+            [
+              -1.1,
+              2.7
+            ],
+            [
+              -1.1,
+              -2.7
+            ]
+          ]
+        },
+        {
+          "id": "exit-court",
+          "kind": "courtyard",
+          "label": "出口及庭院过渡区",
+          "polygon": [
+            [
+              6.1,
+              -2.4
+            ],
+            [
+              8.5,
+              -2.4
+            ],
+            [
+              8.5,
+              2.4
+            ],
+            [
+              6.1,
+              2.4
+            ],
+            [
+              6.1,
+              -2.4
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        -6.5,
+        0
+      ],
+      "connects": [
+        "ticket-check",
+        "lockers"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        -4.6,
+        0
+      ],
+      "connects": [
+        "lockers",
+        "airlock-one"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        -2.9,
+        0
+      ],
+      "connects": [
+        "airlock-one",
+        "airlock-two"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        -1.3,
+        0
+      ],
+      "connects": [
+        "airlock-two",
+        "refectory"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        6.2,
+        0
+      ],
+      "connects": [
+        "refectory",
+        "exit-court"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "ticket-check",
+      "position": [
+        -7.6,
+        0
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "lockers",
+      "position": [
+        -5.5,
+        0
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "airlock-two",
+      "position": [
+        -2.1,
+        0
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "refectory",
+      "position": [
+        2.4,
+        -1.5
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "refectory",
+      "position": [
+        2.4,
+        1.5
+      ]
+    },
+    {
+      "floorId": "ground",
+      "spaceId": "exit-court",
+      "position": [
+        7.3,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "route"
+      ],
+      "title": "Museo del Cenacolo Vinciano official museum route plan",
+      "url": "https://cenacolovinciano.org/wp-content/uploads/2019/12/Map-Cenacolo-Vinciano.pdf",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "route"
+      ],
+      "title": "Museo del Cenacolo Vinciano official visitor information",
+      "url": "https://cenacolovinciano.org/en/info/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces"
+      ],
+      "title": "Museo del Cenacolo Vinciano official Last Supper guide",
+      "url": "https://cenacolovinciano.org/en/museum/the-works/the-last-supper-leonardo-da-vinci-1452-1519/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": []
+}

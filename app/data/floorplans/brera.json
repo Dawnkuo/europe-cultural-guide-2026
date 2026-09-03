@@ -1,0 +1,504 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层：拿破仑庭院与上楼入口",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -6,
+          -4.5
+        ],
+        [
+          6,
+          -4.5
+        ],
+        [
+          6,
+          4.5
+        ],
+        [
+          -6,
+          4.5
+        ],
+        [
+          -6,
+          -4.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "courtyard",
+          "kind": "courtyard",
+          "label": "布雷拉宫拿破仑庭院",
+          "polygon": [
+            [
+              -3.7,
+              -2.9
+            ],
+            [
+              3.7,
+              -2.9
+            ],
+            [
+              3.7,
+              2.9
+            ],
+            [
+              -3.7,
+              2.9
+            ],
+            [
+              -3.7,
+              -2.9
+            ]
+          ]
+        },
+        {
+          "id": "main-stair-foot",
+          "kind": "circulation",
+          "label": "首层检票方向与大阶梯入口",
+          "polygon": [
+            [
+              3.8000000000000003,
+              -3.7
+            ],
+            [
+              5.6000000000000005,
+              -3.7
+            ],
+            [
+              5.6000000000000005,
+              -1.5
+            ],
+            [
+              3.8000000000000003,
+              -1.5
+            ],
+            [
+              3.8000000000000003,
+              -3.7
+            ]
+          ]
+        },
+        {
+          "id": "lift-foot",
+          "kind": "circulation",
+          "label": "访客电梯入口",
+          "polygon": [
+            [
+              -5.6000000000000005,
+              -3.7
+            ],
+            [
+              -3.8000000000000003,
+              -3.7
+            ],
+            [
+              -3.8000000000000003,
+              -1.5
+            ],
+            [
+              -5.6000000000000005,
+              -1.5
+            ],
+            [
+              -5.6000000000000005,
+              -3.7
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "piano-nobile",
+      "label": "首层：连续画廊与第VI、XXIV、XXVIII室",
+      "elevation": 3.2,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -7,
+          -5.5
+        ],
+        [
+          7,
+          -5.5
+        ],
+        [
+          7,
+          5.5
+        ],
+        [
+          -7,
+          5.5
+        ],
+        [
+          -7,
+          -5.5
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "ticket-start",
+          "kind": "circulation",
+          "label": "首层检票与开端展室",
+          "polygon": [
+            [
+              -6.6,
+              2.8
+            ],
+            [
+              -4.4,
+              2.8
+            ],
+            [
+              -4.4,
+              5
+            ],
+            [
+              -6.6,
+              5
+            ],
+            [
+              -6.6,
+              2.8
+            ]
+          ]
+        },
+        {
+          "id": "room-vi",
+          "kind": "gallery",
+          "label": "第VI室：曼特尼亚",
+          "polygon": [
+            [
+              -4.05,
+              2.8
+            ],
+            [
+              -1.5499999999999998,
+              2.8
+            ],
+            [
+              -1.5499999999999998,
+              5
+            ],
+            [
+              -4.05,
+              5
+            ],
+            [
+              -4.05,
+              2.8
+            ]
+          ]
+        },
+        {
+          "id": "lombard-venetian",
+          "kind": "gallery",
+          "label": "中段伦巴第及威尼斯绘画展室",
+          "polygon": [
+            [
+              -1.3,
+              -0.5999999999999996
+            ],
+            [
+              3.7,
+              -0.5999999999999996
+            ],
+            [
+              3.7,
+              5
+            ],
+            [
+              -1.3,
+              5
+            ],
+            [
+              -1.3,
+              -0.5999999999999996
+            ]
+          ]
+        },
+        {
+          "id": "room-xxiv",
+          "kind": "gallery",
+          "label": "第XXIV室：拉斐尔",
+          "polygon": [
+            [
+              3.5999999999999996,
+              0.050000000000000044
+            ],
+            [
+              6,
+              0.050000000000000044
+            ],
+            [
+              6,
+              2.55
+            ],
+            [
+              3.5999999999999996,
+              2.55
+            ],
+            [
+              3.5999999999999996,
+              0.050000000000000044
+            ]
+          ]
+        },
+        {
+          "id": "room-xxviii",
+          "kind": "gallery",
+          "label": "第XXVIII室：卡拉瓦乔",
+          "polygon": [
+            [
+              3.5999999999999996,
+              -3.35
+            ],
+            [
+              6,
+              -3.35
+            ],
+            [
+              6,
+              -0.8500000000000001
+            ],
+            [
+              3.5999999999999996,
+              -0.8500000000000001
+            ],
+            [
+              3.5999999999999996,
+              -3.35
+            ]
+          ]
+        },
+        {
+          "id": "return-gallery",
+          "kind": "circulation",
+          "label": "回程画廊与出口方向",
+          "polygon": [
+            [
+              -5.9,
+              -4.85
+            ],
+            [
+              2.9000000000000004,
+              -4.85
+            ],
+            [
+              2.9000000000000004,
+              -2.75
+            ],
+            [
+              -5.9,
+              -2.75
+            ],
+            [
+              -5.9,
+              -4.85
+            ]
+          ]
+        },
+        {
+          "id": "main-stair-head",
+          "kind": "circulation",
+          "label": "拿破仑庭院大阶梯上层",
+          "polygon": [
+            [
+              -6.6,
+              -4.85
+            ],
+            [
+              -4.4,
+              -4.85
+            ],
+            [
+              -4.4,
+              -2.75
+            ],
+            [
+              -6.6,
+              -2.75
+            ],
+            [
+              -6.6,
+              -4.85
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        0,
+        3
+      ],
+      "connects": [
+        "courtyard"
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "kind": "archway",
+      "position": [
+        -4.2,
+        3.9
+      ],
+      "connects": [
+        "ticket-start",
+        "room-vi"
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "kind": "archway",
+      "position": [
+        -1.5,
+        3.3
+      ],
+      "connects": [
+        "room-vi",
+        "lombard-venetian"
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "kind": "door",
+      "position": [
+        3.7,
+        1.3
+      ],
+      "connects": [
+        "lombard-venetian",
+        "room-xxiv"
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "kind": "door",
+      "position": [
+        4.8,
+        -0.4
+      ],
+      "connects": [
+        "room-xxiv",
+        "room-xxviii"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "courtyard",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "spaceId": "ticket-start",
+      "position": [
+        -5.5,
+        3.9
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "spaceId": "room-vi",
+      "position": [
+        -2.8,
+        3.9
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "spaceId": "lombard-venetian",
+      "position": [
+        1.2,
+        2.2
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "spaceId": "room-xxiv",
+      "position": [
+        4.8,
+        1.3
+      ]
+    },
+    {
+      "floorId": "piano-nobile",
+      "spaceId": "room-xxviii",
+      "position": [
+        4.8,
+        -2.1
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Pinacoteca di Brera official interactive visitor map",
+      "url": "https://pinacotecabrera.org/wp-content/uploads/2024/11/Pinacoteca-Brera-Mappa-interattiva-2023.pdf",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "napoleon-stair",
+      "kind": "stairs",
+      "label": "拿破仑庭院大阶梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            4.7,
+            -2.6
+          ]
+        },
+        {
+          "floorId": "piano-nobile",
+          "position": [
+            -5.5,
+            -3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "访客电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            -4.7,
+            -2.6
+          ]
+        },
+        {
+          "floorId": "piano-nobile",
+          "position": [
+            -5.5,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "cathedral",
+      "label": "主教座堂礼拜层",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -4,
+          -8
+        ],
+        [
+          4,
+          -8
+        ],
+        [
+          4,
+          -3
+        ],
+        [
+          7,
+          -3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          -4,
+          8
+        ],
+        [
+          -4,
+          3
+        ],
+        [
+          -7,
+          3
+        ],
+        [
+          -7,
+          -3
+        ],
+        [
+          -4,
+          -3
+        ],
+        [
+          -4,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "west-facade",
+          "kind": "outdoor",
+          "label": "西立面多层柱廊",
+          "polygon": [
+            [
+              -3.4,
+              6.25
+            ],
+            [
+              3.4,
+              6.25
+            ],
+            [
+              3.4,
+              7.75
+            ],
+            [
+              -3.4,
+              7.75
+            ],
+            [
+              -3.4,
+              6.25
+            ]
+          ]
+        },
+        {
+          "id": "nave",
+          "kind": "hall",
+          "label": "五廊式中央中殿",
+          "polygon": [
+            [
+              -3.3,
+              -2.2
+            ],
+            [
+              3.3,
+              -2.2
+            ],
+            [
+              3.3,
+              5.8
+            ],
+            [
+              -3.3,
+              5.8
+            ],
+            [
+              -3.3,
+              -2.2
+            ]
+          ]
+        },
+        {
+          "id": "pulpit",
+          "kind": "hall",
+          "label": "乔瓦尼·皮萨诺讲坛",
+          "polygon": [
+            [
+              -3.6,
+              -2.9000000000000004
+            ],
+            [
+              -1.4,
+              -2.9000000000000004
+            ],
+            [
+              -1.4,
+              -0.7
+            ],
+            [
+              -3.6,
+              -0.7
+            ],
+            [
+              -3.6,
+              -2.9000000000000004
+            ]
+          ]
+        },
+        {
+          "id": "apse",
+          "kind": "chapel",
+          "label": "后殿马赛克",
+          "polygon": [
+            [
+              -3.25,
+              -7.5
+            ],
+            [
+              3.25,
+              -7.5
+            ],
+            [
+              3.25,
+              -5.5
+            ],
+            [
+              -3.25,
+              -5.5
+            ],
+            [
+              -3.25,
+              -7.5
+            ]
+          ]
+        },
+        {
+          "id": "san-ranieri-door",
+          "kind": "circulation",
+          "label": "圣拉涅利门",
+          "polygon": [
+            [
+              5.050000000000001,
+              -2.25
+            ],
+            [
+              6.75,
+              -2.25
+            ],
+            [
+              6.75,
+              2.25
+            ],
+            [
+              5.050000000000001,
+              2.25
+            ],
+            [
+              5.050000000000001,
+              -2.25
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "cathedral",
+      "kind": "gate",
+      "position": [
+        0,
+        7.8
+      ],
+      "connects": [
+        "west-facade",
+        "nave"
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "kind": "gate",
+      "position": [
+        6.8,
+        0
+      ],
+      "connects": [
+        "san-ranieri-door"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "cathedral",
+      "spaceId": "west-facade",
+      "position": [
+        0,
+        7
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "nave",
+      "position": [
+        0,
+        1.8
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "pulpit",
+      "position": [
+        -2.5,
+        -1.8
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "apse",
+      "position": [
+        0,
+        -6.5
+      ]
+    },
+    {
+      "floorId": "cathedral",
+      "spaceId": "san-ranieri-door",
+      "position": [
+        5.9,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint"
+      ],
+      "title": "Opera della Primaziale Pisana: Square of Miracles map",
+      "url": "https://www.opapisa.it/en/mappa/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "route"
+      ],
+      "title": "Opera della Primaziale Pisana: Cathedral guide",
+      "url": "https://www.opapisa.it/en/square-of-miracles/cathedral/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": []
+}

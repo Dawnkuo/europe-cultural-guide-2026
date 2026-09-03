@@ -1,0 +1,376 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "base",
+      "label": "塔基：桑索维诺小凉廊与电梯入口",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          -3,
+          -3
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -3,
+          -3
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "loggetta",
+          "kind": "hall",
+          "label": "桑索维诺小凉廊与塔基",
+          "polygon": [
+            [
+              -2.4,
+              0.7000000000000001
+            ],
+            [
+              2.4,
+              0.7000000000000001
+            ],
+            [
+              2.4,
+              2.5
+            ],
+            [
+              -2.4,
+              2.5
+            ],
+            [
+              -2.4,
+              0.7000000000000001
+            ]
+          ]
+        },
+        {
+          "id": "ticket-lift",
+          "kind": "circulation",
+          "label": "票务入口及电梯",
+          "polygon": [
+            [
+              -1.8,
+              -2.4
+            ],
+            [
+              1.8,
+              -2.4
+            ],
+            [
+              1.8,
+              0
+            ],
+            [
+              -1.8,
+              0
+            ],
+            [
+              -1.8,
+              -2.4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belfry",
+      "label": "约60米：钟室观景层",
+      "elevation": 4.2,
+      "stackOrder": 1,
+      "outline": [
+        [
+          -3,
+          -3
+        ],
+        [
+          3,
+          -3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          -3,
+          3
+        ],
+        [
+          -3,
+          -3
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "lift-landing",
+          "kind": "circulation",
+          "label": "钟室电梯平台",
+          "polygon": [
+            [
+              -1.1,
+              -1.1
+            ],
+            [
+              1.1,
+              -1.1
+            ],
+            [
+              1.1,
+              1.1
+            ],
+            [
+              -1.1,
+              1.1
+            ],
+            [
+              -1.1,
+              -1.1
+            ]
+          ]
+        },
+        {
+          "id": "south-view",
+          "kind": "outdoor",
+          "label": "南向潟湖视角",
+          "polygon": [
+            [
+              -2.4,
+              -2.6
+            ],
+            [
+              2.4,
+              -2.6
+            ],
+            [
+              2.4,
+              -1.4
+            ],
+            [
+              -2.4,
+              -1.4
+            ],
+            [
+              -2.4,
+              -2.6
+            ]
+          ]
+        },
+        {
+          "id": "west-view",
+          "kind": "outdoor",
+          "label": "西向主广场视角",
+          "polygon": [
+            [
+              -2.6,
+              -2.4
+            ],
+            [
+              -1.4,
+              -2.4
+            ],
+            [
+              -1.4,
+              2.4
+            ],
+            [
+              -2.6,
+              2.4
+            ],
+            [
+              -2.6,
+              -2.4
+            ]
+          ]
+        },
+        {
+          "id": "north-view",
+          "kind": "outdoor",
+          "label": "北向城市屋顶视角",
+          "polygon": [
+            [
+              -2.4,
+              1.4
+            ],
+            [
+              2.4,
+              1.4
+            ],
+            [
+              2.4,
+              2.6
+            ],
+            [
+              -2.4,
+              2.6
+            ],
+            [
+              -2.4,
+              1.4
+            ]
+          ]
+        },
+        {
+          "id": "angel-view",
+          "kind": "outdoor",
+          "label": "塔顶加百列天使观察点",
+          "polygon": [
+            [
+              1.4,
+              -2.4
+            ],
+            [
+              2.6,
+              -2.4
+            ],
+            [
+              2.6,
+              2.4
+            ],
+            [
+              1.4,
+              2.4
+            ],
+            [
+              1.4,
+              -2.4
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "base",
+      "kind": "gate",
+      "position": [
+        0,
+        2.5
+      ],
+      "connects": [
+        "loggetta"
+      ]
+    },
+    {
+      "floorId": "base",
+      "kind": "door",
+      "position": [
+        0,
+        0.6
+      ],
+      "connects": [
+        "loggetta",
+        "ticket-lift"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "base",
+      "spaceId": "loggetta",
+      "position": [
+        0,
+        1.6
+      ]
+    },
+    {
+      "floorId": "base",
+      "spaceId": "ticket-lift",
+      "position": [
+        0,
+        -1.2
+      ]
+    },
+    {
+      "floorId": "belfry",
+      "spaceId": "south-view",
+      "position": [
+        0,
+        -2
+      ]
+    },
+    {
+      "floorId": "belfry",
+      "spaceId": "west-view",
+      "position": [
+        -2,
+        0
+      ]
+    },
+    {
+      "floorId": "belfry",
+      "spaceId": "north-view",
+      "position": [
+        0,
+        2
+      ]
+    },
+    {
+      "floorId": "belfry",
+      "spaceId": "angel-view",
+      "position": [
+        2,
+        0
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Basilica di San Marco official bell tower ticket guide",
+      "url": "https://tickets.basilicasanmarco.it/en/product/tickets/bell-tower/2524/9691",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels"
+      ],
+      "title": "Basilica di San Marco official bell tower history",
+      "url": "https://www.basilicasanmarco.it/en/bell-tower/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "visitor-lift",
+      "kind": "lift",
+      "label": "塔基至钟室访客电梯",
+      "landings": [
+        {
+          "floorId": "base",
+          "position": [
+            0,
+            -1.2
+          ]
+        },
+        {
+          "floorId": "belfry",
+          "position": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

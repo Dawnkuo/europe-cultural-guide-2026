@@ -12,7 +12,7 @@ describe('journey overview', () => {
       screen.getByRole('heading', { level: 1, name: '欧洲纪行 2026' }),
     ).toBeVisible();
     expect(screen.getByText('2026.09.24 — 10.06')).toBeVisible();
-    expect(screen.getByRole('img', { name: '欧洲旅程总览地图' })).toBeVisible();
+    expect(screen.getByLabelText('欧洲旅程总览地图')).toBeVisible();
   });
 
   it('shows the known critical notices', () => {

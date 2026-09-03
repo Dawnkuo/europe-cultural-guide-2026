@@ -1,0 +1,543 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "ground",
+      "label": "Ottoplatz 大堂",
+      "elevation": 0,
+      "stackOrder": 0,
+      "outline": [
+        [
+          0,
+          -10
+        ],
+        [
+          7,
+          -7
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          -5,
+          9
+        ],
+        [
+          -10,
+          5
+        ],
+        [
+          -11,
+          -1
+        ],
+        [
+          -7,
+          -7
+        ],
+        [
+          0,
+          -10
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "entrance-lobby",
+          "kind": "hall",
+          "label": "Ottoplatz 1 入口与售票大堂",
+          "polygon": [
+            [
+              -5.5,
+              -7.5
+            ],
+            [
+              5.5,
+              -7.5
+            ],
+            [
+              5.5,
+              -1.5
+            ],
+            [
+              -5.5,
+              -1.5
+            ],
+            [
+              -5.5,
+              -7.5
+            ]
+          ]
+        },
+        {
+          "id": "ground-lift-bank",
+          "kind": "circulation",
+          "label": "访客电梯组",
+          "polygon": [
+            [
+              -3.5,
+              0
+            ],
+            [
+              3.5,
+              0
+            ],
+            [
+              3.5,
+              5
+            ],
+            [
+              -3.5,
+              5
+            ],
+            [
+              -3.5,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-28",
+      "label": "28 层电梯到达层",
+      "elevation": 4,
+      "stackOrder": 1,
+      "outline": [
+        [
+          0,
+          -10
+        ],
+        [
+          7,
+          -7
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          -5,
+          9
+        ],
+        [
+          -10,
+          5
+        ],
+        [
+          -11,
+          -1
+        ],
+        [
+          -7,
+          -7
+        ],
+        [
+          0,
+          -10
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "lift-arrival",
+          "kind": "circulation",
+          "label": "28 层电梯到达处",
+          "polygon": [
+            [
+              -3.5,
+              -1.5
+            ],
+            [
+              3.5,
+              -1.5
+            ],
+            [
+              3.5,
+              3.5
+            ],
+            [
+              -3.5,
+              3.5
+            ],
+            [
+              -3.5,
+              -1.5
+            ]
+          ]
+        },
+        {
+          "id": "final-stair",
+          "kind": "circulation",
+          "label": "通往 29 层的末段楼梯",
+          "polygon": [
+            [
+              -3,
+              -6.5
+            ],
+            [
+              3,
+              -6.5
+            ],
+            [
+              3,
+              -2.5
+            ],
+            [
+              -3,
+              -2.5
+            ],
+            [
+              -3,
+              -6.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-29",
+      "label": "29 层屋顶观景台",
+      "elevation": 7,
+      "stackOrder": 2,
+      "outline": [
+        [
+          0,
+          -10
+        ],
+        [
+          7,
+          -7
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          -5,
+          9
+        ],
+        [
+          -10,
+          5
+        ],
+        [
+          -11,
+          -1
+        ],
+        [
+          -7,
+          -7
+        ],
+        [
+          0,
+          -10
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "platform-arrival",
+          "kind": "circulation",
+          "label": "观景台楼梯到达处",
+          "polygon": [
+            [
+              -3,
+              -6.5
+            ],
+            [
+              3,
+              -6.5
+            ],
+            [
+              3,
+              -2.5
+            ],
+            [
+              -3,
+              -2.5
+            ],
+            [
+              -3,
+              -6.5
+            ]
+          ]
+        },
+        {
+          "id": "west-view",
+          "kind": "outdoor",
+          "label": "西向：大教堂、桥与老城",
+          "polygon": [
+            [
+              -8.5,
+              -4
+            ],
+            [
+              -1.5,
+              -4
+            ],
+            [
+              -1.5,
+              6
+            ],
+            [
+              -8.5,
+              6
+            ],
+            [
+              -8.5,
+              -4
+            ]
+          ]
+        },
+        {
+          "id": "south-view",
+          "kind": "outdoor",
+          "label": "南向：莱茵河与 Rheinauhafen",
+          "polygon": [
+            [
+              -2.5,
+              -7.5
+            ],
+            [
+              2.5,
+              -7.5
+            ],
+            [
+              2.5,
+              -3.5
+            ],
+            [
+              -2.5,
+              -3.5
+            ],
+            [
+              -2.5,
+              -7.5
+            ]
+          ]
+        },
+        {
+          "id": "north-east-view",
+          "kind": "outdoor",
+          "label": "北向与东向城市远景",
+          "polygon": [
+            [
+              5,
+              -1.5
+            ],
+            [
+              8,
+              -1.5
+            ],
+            [
+              8,
+              5.5
+            ],
+            [
+              5,
+              5.5
+            ],
+            [
+              5,
+              -1.5
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "ground",
+      "kind": "gate",
+      "position": [
+        0,
+        -8.8
+      ],
+      "connects": [
+        "entrance-lobby"
+      ]
+    },
+    {
+      "floorId": "ground",
+      "kind": "door",
+      "position": [
+        0,
+        -1.2
+      ],
+      "connects": [
+        "entrance-lobby",
+        "ground-lift-bank"
+      ]
+    },
+    {
+      "floorId": "level-28",
+      "kind": "door",
+      "position": [
+        0,
+        -1.2
+      ],
+      "connects": [
+        "lift-arrival",
+        "final-stair"
+      ]
+    },
+    {
+      "floorId": "level-29",
+      "kind": "gate",
+      "position": [
+        0,
+        -2.8
+      ],
+      "connects": [
+        "platform-arrival",
+        "south-view"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "ground",
+      "spaceId": "entrance-lobby",
+      "position": [
+        0,
+        -4.5
+      ]
+    },
+    {
+      "floorId": "level-28",
+      "spaceId": "lift-arrival",
+      "position": [
+        0,
+        1
+      ]
+    },
+    {
+      "floorId": "level-29",
+      "spaceId": "west-view",
+      "position": [
+        -5,
+        1
+      ]
+    },
+    {
+      "floorId": "level-29",
+      "spaceId": "south-view",
+      "position": [
+        0,
+        -5.5
+      ]
+    },
+    {
+      "floorId": "level-29",
+      "spaceId": "north-east-view",
+      "position": [
+        6.5,
+        2
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "KoelnTriangle Panorama visitor guide",
+      "url": "https://koelntrianglepanorama.de/en/homepage",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "authoritative",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Cologne Tourism KoelnTriangle route description",
+      "url": "https://willkommen.koelntourismus.de/en/poi/koelntriangle",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "panorama-lift",
+      "kind": "lift",
+      "label": "大堂至 28 层高速电梯",
+      "landings": [
+        {
+          "floorId": "ground",
+          "position": [
+            0,
+            2.5
+          ]
+        },
+        {
+          "floorId": "level-28",
+          "position": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roof-stair",
+      "kind": "stairs",
+      "label": "28 层至 29 层末段楼梯",
+      "landings": [
+        {
+          "floorId": "level-28",
+          "position": [
+            0,
+            -4.5
+          ]
+        },
+        {
+          "floorId": "level-29",
+          "position": [
+            0,
+            -4.5
+          ]
+        }
+      ]
+    }
+  ]
+}

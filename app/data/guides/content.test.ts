@@ -3,9 +3,8 @@ import { guideCatalog } from '../guides';
 import { guideContentBySlug } from './content';
 
 describe('guide content packs', () => {
-  it('provides curated field-guide content for every non-embedded attraction', () => {
+  it('provides curated field-guide content for every attraction', () => {
     const missing = guideCatalog
-      .filter((guide) => !guide.embeddedGuide)
       .filter((guide) => !guideContentBySlug[guide.slug])
       .map((guide) => guide.slug);
 
@@ -14,7 +13,6 @@ describe('guide content packs', () => {
 
   it('meets the full chapter content contract', () => {
     for (const guide of guideCatalog) {
-      if (guide.embeddedGuide) continue;
       const content = guideContentBySlug[guide.slug];
 
       expect(content.overview.length, guide.slug).toBeGreaterThan(80);

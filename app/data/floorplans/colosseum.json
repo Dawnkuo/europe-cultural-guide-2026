@@ -1,0 +1,619 @@
+{
+  "mode": "stacked-floorplan",
+  "floors": [
+    {
+      "id": "underground",
+      "label": "地下层：后台走廊与升降系统",
+      "elevation": -3,
+      "stackOrder": 0,
+      "outline": [
+        [
+          0,
+          -8
+        ],
+        [
+          6,
+          -6.7
+        ],
+        [
+          10,
+          -4
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          6,
+          6.7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          -6,
+          6.7
+        ],
+        [
+          -10,
+          4
+        ],
+        [
+          -12,
+          0
+        ],
+        [
+          -10,
+          -4
+        ],
+        [
+          -6,
+          -6.7
+        ],
+        [
+          0,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "underground-corridor",
+          "kind": "circulation",
+          "label": "地下层中央与侧向走廊",
+          "polygon": [
+            [
+              -7,
+              -1.5
+            ],
+            [
+              7,
+              -1.5
+            ],
+            [
+              7,
+              1.5
+            ],
+            [
+              -7,
+              1.5
+            ],
+            [
+              -7,
+              -1.5
+            ]
+          ]
+        },
+        {
+          "id": "lift-shafts",
+          "kind": "gallery",
+          "label": "升降井与活门遗迹",
+          "polygon": [
+            [
+              2.3,
+              1.4000000000000001
+            ],
+            [
+              7.3,
+              1.4000000000000001
+            ],
+            [
+              7.3,
+              3.8
+            ],
+            [
+              2.3,
+              3.8
+            ],
+            [
+              2.3,
+              1.4000000000000001
+            ]
+          ]
+        },
+        {
+          "id": "underground-stair",
+          "kind": "circulation",
+          "label": "地下层访客楼梯",
+          "polygon": [
+            [
+              -9,
+              -3.9
+            ],
+            [
+              -6.6,
+              -3.9
+            ],
+            [
+              -6.6,
+              -1.6999999999999997
+            ],
+            [
+              -9,
+              -1.6999999999999997
+            ],
+            [
+              -9,
+              -3.9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arena",
+      "label": "竞技场与入口层",
+      "elevation": 0,
+      "stackOrder": 1,
+      "outline": [
+        [
+          0,
+          -8
+        ],
+        [
+          6,
+          -6.7
+        ],
+        [
+          10,
+          -4
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          6,
+          6.7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          -6,
+          6.7
+        ],
+        [
+          -10,
+          4
+        ],
+        [
+          -12,
+          0
+        ],
+        [
+          -10,
+          -4
+        ],
+        [
+          -6,
+          -6.7
+        ],
+        [
+          0,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "external-arches",
+          "label": "外立面与编号拱门",
+          "kind": "outdoor",
+          "polygon": [
+            [
+              -4.8,
+              -5.9
+            ],
+            [
+              0,
+              -7.4
+            ],
+            [
+              4.8,
+              -5.9
+            ],
+            [
+              3.7,
+              -5.1
+            ],
+            [
+              0,
+              -6.2
+            ],
+            [
+              -3.7,
+              -5.1
+            ],
+            [
+              -4.8,
+              -5.9
+            ]
+          ]
+        },
+        {
+          "id": "security-entry",
+          "kind": "service",
+          "label": "实名票安检入口",
+          "polygon": [
+            [
+              -8.4,
+              -4.1
+            ],
+            [
+              -6.6,
+              -4.1
+            ],
+            [
+              -6.6,
+              -2.9
+            ],
+            [
+              -8.4,
+              -2.9
+            ],
+            [
+              -8.4,
+              -4.1
+            ]
+          ]
+        },
+        {
+          "id": "arena-floor",
+          "kind": "hall",
+          "label": "竞技场面",
+          "polygon": [
+            [
+              -6.75,
+              -2.65
+            ],
+            [
+              6.75,
+              -2.65
+            ],
+            [
+              6.75,
+              2.65
+            ],
+            [
+              -6.75,
+              2.65
+            ],
+            [
+              -6.75,
+              -2.65
+            ]
+          ]
+        },
+        {
+          "id": "arena-stair",
+          "kind": "circulation",
+          "label": "竞技场与地下层楼梯",
+          "polygon": [
+            [
+              -9,
+              -3.9
+            ],
+            [
+              -6.6,
+              -3.9
+            ],
+            [
+              -6.6,
+              -1.6999999999999997
+            ],
+            [
+              -9,
+              -1.6999999999999997
+            ],
+            [
+              -9,
+              -3.9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cavea",
+      "label": "观众席视角层",
+      "elevation": 3.2,
+      "stackOrder": 2,
+      "outline": [
+        [
+          0,
+          -8
+        ],
+        [
+          6,
+          -6.7
+        ],
+        [
+          10,
+          -4
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          6,
+          6.7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          -6,
+          6.7
+        ],
+        [
+          -10,
+          4
+        ],
+        [
+          -12,
+          0
+        ],
+        [
+          -10,
+          -4
+        ],
+        [
+          -6,
+          -6.7
+        ],
+        [
+          0,
+          -8
+        ]
+      ],
+      "spaces": [
+        {
+          "id": "spectator-view",
+          "label": "观众席与环廊视角",
+          "kind": "outdoor",
+          "polygon": [
+            [
+              0,
+              -7
+            ],
+            [
+              5.5,
+              -5.8
+            ],
+            [
+              9,
+              -3.4
+            ],
+            [
+              10.5,
+              0
+            ],
+            [
+              9,
+              3.4
+            ],
+            [
+              5.5,
+              5.8
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              -5.5,
+              5.8
+            ],
+            [
+              -9,
+              3.4
+            ],
+            [
+              -10.5,
+              0
+            ],
+            [
+              -9,
+              -3.4
+            ],
+            [
+              -5.5,
+              -5.8
+            ],
+            [
+              0,
+              -7
+            ]
+          ]
+        },
+        {
+          "id": "cavea-stair",
+          "kind": "circulation",
+          "label": "观众席上行楼梯",
+          "polygon": [
+            [
+              6.5,
+              -4.300000000000001
+            ],
+            [
+              8.9,
+              -4.300000000000001
+            ],
+            [
+              8.9,
+              -2.1
+            ],
+            [
+              6.5,
+              -2.1
+            ],
+            [
+              6.5,
+              -4.300000000000001
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "openings": [
+    {
+      "floorId": "arena",
+      "kind": "gate",
+      "position": [
+        -6.4,
+        -4.2
+      ],
+      "connects": [
+        "external-arches",
+        "security-entry"
+      ]
+    },
+    {
+      "floorId": "arena",
+      "kind": "gate",
+      "position": [
+        -5.8,
+        -2.5
+      ],
+      "connects": [
+        "security-entry",
+        "arena-floor"
+      ]
+    }
+  ],
+  "routeStops": [
+    {
+      "floorId": "arena",
+      "spaceId": "external-arches",
+      "position": [
+        0,
+        -6.6
+      ]
+    },
+    {
+      "floorId": "arena",
+      "spaceId": "security-entry",
+      "position": [
+        -7.5,
+        -3.5
+      ]
+    },
+    {
+      "floorId": "underground",
+      "spaceId": "underground-corridor",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "underground",
+      "spaceId": "lift-shafts",
+      "position": [
+        4.8,
+        2.6
+      ]
+    },
+    {
+      "floorId": "arena",
+      "spaceId": "arena-floor",
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "floorId": "cavea",
+      "spaceId": "spectator-view",
+      "position": [
+        0,
+        5.5
+      ]
+    }
+  ],
+  "sourceManifest": [
+    {
+      "authority": "official",
+      "scope": [
+        "footprint",
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Parco archeologico del Colosseo: MyColosseum interactive guide",
+      "url": "https://colosseo.it/en/my-colosseum-app/",
+      "verifiedAt": "2026-09-03"
+    },
+    {
+      "authority": "official",
+      "scope": [
+        "spaces",
+        "levels",
+        "route"
+      ],
+      "title": "Parco archeologico del Colosseo: Full Experience Underground and Arena",
+      "url": "https://colosseo.it/en/tickets/full-experience-underground-arena/",
+      "verifiedAt": "2026-09-03"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "underground-route",
+      "kind": "stairs",
+      "label": "导览员带领的地下层楼梯",
+      "landings": [
+        {
+          "floorId": "arena",
+          "position": [
+            -7.8,
+            -2.8
+          ]
+        },
+        {
+          "floorId": "underground",
+          "position": [
+            -7.8,
+            -2.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cavea-route",
+      "kind": "stairs",
+      "label": "竞技场至观众席楼梯",
+      "landings": [
+        {
+          "floorId": "arena",
+          "position": [
+            7.7,
+            -3.2
+          ]
+        },
+        {
+          "floorId": "cavea",
+          "position": [
+            7.7,
+            -3.2
+          ]
+        }
+      ]
+    }
+  ]
+}
