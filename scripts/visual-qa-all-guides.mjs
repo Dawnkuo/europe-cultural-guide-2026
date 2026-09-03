@@ -59,10 +59,19 @@ async function inspectGuide(context, route) {
 try {
   const indexPage = await browser.newPage();
   await indexPage.goto(`${baseUrl}/guides/`, { waitUntil: 'networkidle' });
-  const routes = await indexPage
-    .locator('a[href*="/guides/"]')
-    .evaluateAll((anchors) =>
-      [...new Set(anchors.map((anchor) => new URL(anchor.href).pathname))]
+  const basePath = new URL(baseUrl).pathname.replace(/\/$/, '');
+  const routes = await indexPage.locator('a[href*="/guides/"]').evaluateAll(
+    (anchors, deployedBasePath) =>
+      [
+        ...new Set(
+          anchors.map((anchor) => {
+            const path = new URL(anchor.href).pathname;
+            return deployedBasePath && path.startsWith(deployedBasePath)
+              ? path.slice(deployedBasePath.length)
+              : path;
+          }),
+        ),
+      ]
         .filter((path) => /^\/guides\/[^/]+\/$/.test(path))
         .filter(
           (path) =>
@@ -70,7 +79,8 @@ try {
             path !== '/guides/st-peters-basilica/',
         )
         .sort(),
-    );
+    basePath,
+  );
   await indexPage.close();
   if (routes.length !== 72) {
     throw new Error(`Expected 72 local guide routes, found ${routes.length}`);
