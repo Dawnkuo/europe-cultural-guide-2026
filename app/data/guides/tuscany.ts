@@ -2,6 +2,7 @@ import { defineGuideContent } from './types';
 
 export const tuscanyGuideContent = defineGuideContent({
   'ponte-vecchio': {
+    overviewTitle: '桥拱、金铺与屋顶上的走廊',
     originalTitle: 'Ponte Vecchio',
     overview:
       '老桥并不只是跨越阿诺河的通道，而是一段仍在运作的城市街道：十四世纪桥拱承托着两侧商铺，十六世纪金匠取代原有肉铺与鱼铺，瓦萨里走廊又从屋顶上方穿过。两次夜访可合并为一次完整观察，从河岸辨认桥体轮廓，再在桥面理解商业、权力通道与城市视线如何叠在同一狭长空间中。',
@@ -83,6 +84,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'florence-duomo': {
+    overviewTitle: '多色石材与布鲁内莱斯基穹顶',
     originalTitle:
       'Cattedrale di Santa Maria del Fiore e Cupola del Brunelleschi',
     overview:
@@ -189,6 +191,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'piazzale-michelangelo': {
+    overviewTitle: '阿诺河南岸的佛罗伦萨全景',
     originalTitle: 'Piazzale Michelangelo',
     overview:
       '米开朗琪罗广场是十九世纪佛罗伦萨成为意大利首都时期城市改造的一部分，并非文艺复兴遗址。它最有价值的体验是把大教堂穹顶、旧宫塔、圣十字教堂、阿诺河和老桥放进同一幅城市剖面，同时通过中央青铜《大卫》及四尊昼夜晨昏复制像，理解广场原本被设想为米开朗琪罗纪念地的用意。',
@@ -274,6 +277,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'accademia-florence': {
+    overviewTitle: '从未完成的囚徒到《大卫》',
     originalTitle: "Galleria dell'Accademia di Firenze",
     overview:
       '佛罗伦萨学院美术馆不应只被压缩成《大卫》的单件打卡。馆内拥有数量最集中的米开朗琪罗雕塑，囚徒长廊保留未完成石块与凿痕，圆厅则提供绕看《大卫》重心和蓄势动作的空间；此外还有十三至十五世纪金地绘画、巴托里尼石膏模型和梅第奇、洛林大公历史乐器，可展示雕塑从构思到完成以及佛罗伦萨艺术教育的脉络。',
@@ -390,6 +394,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'mercato-centrale': {
+    overviewTitle: '铁与玻璃撑起的中央市场',
     originalTitle: 'Mercato Centrale di Firenze',
     overview:
       '中央市场在本行程中按街区与建筑观察点处理，而不是餐饮推荐。它是佛罗伦萨成为意大利首都时期兴建的十九世纪市场大厅，铁、铸铁和玻璃构架把密集零售摊位纳入明亮的大跨度空间；地面层延续传统生鲜市场，上层则在2014年重新启用为全天公共商业空间。短暂停留可比较同一建筑中传统市场网格与当代适应性再利用的差别。',
@@ -484,6 +489,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'medici-chapels': {
+    overviewTitle: '梅第奇陵寝里的时间与雕塑',
     originalTitle: 'Museo delle Cappelle Medicee',
     overview:
       '梅第奇礼拜堂把王朝纪念的三种尺度压缩在圣洛伦佐建筑群后部：地下墓穴保存家族实际安葬与部分珍宝，王公礼拜堂用彩色大理石和硬石镶嵌营造大公陵寝的宏伟外观，米开朗琪罗的新圣器室则以灰色石材、白墙、建筑比例和《昼》《夜》《晨》《昏》把时间、死亡与理想化肖像组织为一个整体。参观时应区分真实墓葬、纪念石棺与雕塑寓意。',
@@ -584,6 +590,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   signoria: {
+    overviewTitle: '旧宫前的政治广场与露天雕塑',
     originalTitle: 'Piazza della Signoria e Loggia dei Lanzi',
     overview:
       '领主广场与佣兵凉廊应作为一座仍在使用的市政广场和露天雕塑馆连续阅读。旧宫确立政治轴线，海神喷泉、科西莫一世骑马像与萨沃纳罗拉地面标记把不同历史时期叠在广场上；凉廊则从公共仪式空间转为雕塑陈列地。现场尤其要区分原作、复制品和原址记忆，不把广场上的《大卫》复制像误写成学院美术馆原作。',
@@ -687,6 +694,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'giunti-odeon': {
+    overviewTitle: '历史影院里的书架与银幕',
     originalTitle: 'Giunti Odeon',
     overview:
       'Giunti Odeon把1922年开幕的历史影院剧场改造为白天书店、夜间电影院和活动空间，却仍让舞台、银幕、观众厅尺度与装饰艺术细节保持可读。短暂停留的重点不是购物，而是观察书架如何进入原有观演空间而没有完全切断舞台轴线，以及同一大厅如何在阅读、讲座和放映之间转换，展示一座二十世纪娱乐场所的当代延续。',
@@ -780,6 +788,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   uffizi: {
+    overviewTitle: '梅第奇长廊里的文艺复兴绘画',
     originalTitle: 'Galleria degli Uffizi',
     overview:
       '乌菲兹是一座以建筑长廊本身组织观看的两层美术馆：瓦萨里设计的U形办公建筑后来容纳梅第奇收藏，古代雕像沿连续走廊建立节奏，展室则从中世纪金地绘画推进到文艺复兴及更晚作品。本次参观还承担瓦萨里走廊的前置功能，因此应以波提切利、达·芬奇和米开朗琪罗三个核心节点组织时间，并在14:25前抵达一层D19集合点。',
@@ -903,6 +912,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'vasari-corridor': {
+    overviewTitle: '跨越阿诺河的高架宫廷通道',
     originalTitle: 'Corridoio Vasariano',
     overview:
       '瓦萨里走廊是一条受控、单向、连续的高架城市通道，而不是普通美术馆展厅。它从乌菲兹一层D19进入，穿越乌菲兹建筑、老桥上层、私人建筑和圣费利奇塔教堂附近，最终在波波里花园布翁塔伦蒂洞窟旁离开，并由工作人员带至皮蒂宫阿曼纳蒂庭院。修复后的内部保持简素，真正的重点是梅第奇权力轴线、城市适应性和窗外不断变化的佛罗伦萨视角。',
@@ -1008,6 +1018,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   pitti: {
+    overviewTitle: '王朝宫室与满墙悬挂的绘画',
     originalTitle: 'Palazzo Pitti',
     overview:
       '皮蒂宫不是一条能在短时间内完整覆盖的单线展馆，而是一座围绕阿曼纳蒂庭院展开、跨越三层并容纳多个博物馆的王宫。它先后服务梅第奇、哈布斯堡-洛林和萨伏依三代王朝；主层帕拉蒂纳画廊保留满墙悬挂、华丽画框、家具和巴洛克顶画，二层则转入十九、二十世纪艺术和服饰。瓦萨里走廊抵达后，应在有限时间内聚焦主层并只选择一个次收藏。',
@@ -1123,6 +1134,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'leaning-tower': {
+    overviewTitle: '倾斜钟楼的柱廊与七口钟',
     originalTitle: 'Torre di Pisa',
     overview:
       '比萨斜塔首先是主教座堂建筑群的独立钟楼，而不是防御塔。它的圆筒体由重复柱廊逐层上升，倾斜让垂直攀登中的身体感受、地平线和建筑修正比地面拍照更重要；入口附近的船只与灯塔浮雕还把钟楼放回比萨海上共和国语境。登顶受严格时段、安检和寄存管理，现场应把有限三十分钟用于结构、柱头、七口钟和广场全景。',
@@ -1230,6 +1242,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'pisa-cathedral': {
+    overviewTitle: '海上共和国的大理石主教座堂',
     originalTitle: 'Cattedrale di Santa Maria Assunta',
     overview:
       '比萨主教座堂是奇迹广场建筑语言的核心：布斯凯托以五廊式主体、带侧廊的横翼和交叉部穹顶建立规模，雷纳尔多继续扩建并完成层叠柱廊立面。外墙黑白条带、再利用罗马石材和东方装饰回应比萨的地中海网络；内部最具体的三个节点是乔瓦尼·皮萨诺讲坛、契马布埃参与的后殿马赛克和1595年火灾后重建的华丽空间。当前一般游客10:00开放，与原行程时间存在明确冲突。',
@@ -1341,6 +1354,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'pisa-baptistery': {
+    overviewTitle: '圆形洗礼堂里的雕塑与回声',
     originalTitle: 'Battistero di San Giovanni',
     overview:
       '比萨洗礼堂是一个以中央洗礼仪式、雕塑革新和建筑声学共同定义的圆形空间。迪奥蒂萨尔维奠定下部结构，尼古拉与乔瓦尼·皮萨诺改变外部和雕塑，双层穹顶则让短促单音在巨大圆筒中叠成持续和声。二十五分钟参观应围绕八角洗礼池、尼古拉·皮萨诺讲坛和定时声学演示展开；若女性廊开放，再从上层俯看地面几何。',
@@ -1437,6 +1451,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   camposanto: {
+    overviewTitle: '回廊中的壁画、石棺与城市记忆',
     originalTitle: 'Camposanto Monumentale',
     overview:
       '比萨纪念墓园是一座围绕中央庭院展开的矩形回廊建筑，既是中世纪安葬空间，也是壁画长廊、古代石棺收藏和十九世纪早期公共博物馆。十四世纪《死亡的胜利》《最后的审判》等壁画把生死训诫铺满长墙，罗马石棺、铭文和地方名人纪念碑又把古典遗产与比萨城市记忆重新编排。四十分钟应先理解回廊与庭院，再集中观看主要壁画和石棺。',
@@ -1534,6 +1549,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   sinopie: {
+    overviewTitle: '藏在壁画之下的红色草图',
     originalTitle: 'Museo delle Sinopie',
     overview:
       '壁画草图博物馆展示的是纪念墓园壁画完成后本应永远被覆盖的红色准备稿。二战轰炸引发墓园火灾，修复人员揭取幸存壁画时才发现底层sinopia，随后又把这些草图从墙上揭下保存。它们保留中世纪大师在第一层灰泥上安排人物、修改姿势和用明暗建立体积的直接手迹。二十分钟参观应聚焦布法尔马科、塔代奥·加迪与旧约组画，并与刚看过的墓园成品对应。',
@@ -1630,6 +1646,7 @@ export const tuscanyGuideContent = defineGuideContent({
     ],
   },
   'opera-pisa': {
+    overviewTitle: '从奇迹广场移入馆内的原作',
     originalTitle: "Museo dell'Opera del Duomo di Pisa",
     overview:
       '比萨大教堂博物馆保存从奇迹广场各建筑移下的原作，使游客能把室外复制品、建筑构件和博物馆中的雕塑重新对应。2019年新陈列在地面层按作品原属大教堂、洗礼堂和斜塔组织比萨中世纪雕塑，上层转向木制唱诗席、礼仪器物、织物与小型珍宝，回廊则展示乔瓦尼·皮萨诺为洗礼堂制作的巨像。三十分钟应聚焦乔瓦尼雕塑、亨利七世墓葬物和回廊视角。',

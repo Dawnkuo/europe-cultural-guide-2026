@@ -2,6 +2,7 @@ import { defineGuideContent } from './types';
 
 export const cologneParisGuideContent = defineGuideContent({
   'museum-ludwig': {
+    overviewTitle: '表现主义、波普与现代艺术收藏',
     overview:
       '路德维希博物馆位于科隆大教堂、中央车站与莱茵河之间，是理解德国战后收藏史和二十世纪视觉文化的核心场馆。1976年，彼得与伊蕾娜·路德维希向科隆市捐赠重要的美国波普艺术收藏，推动博物馆独立建制；今天的馆藏同时覆盖德国表现主义、俄罗斯先锋派、摄影、当代艺术以及规模居世界第三的毕加索收藏。参观重点不是追求作品数量，而是比较大众传媒图像、现代主义形式实验和战后城市公共收藏之间的联系。',
     orientation: [
@@ -102,6 +103,7 @@ export const cologneParisGuideContent = defineGuideContent({
     ],
   },
   hohenzollern: {
+    overviewTitle: '铁路钢拱与莱茵河两岸',
     overview:
       '霍亨索伦桥不仅是跨越莱茵河的交通设施，也是科隆最清晰的城市剖面之一：六条铁路轨道持续连接中央车站与欧洲铁路网，两侧步行和自行车通道则把大教堂、博物馆区与Deutz右岸连为一体。桥梁建于1907至1911年，1945年并非被空袭炸毁，而是由德军为阻止盟军渡河自行爆破，随后分期重建和扩宽。今天应同时观察钢桁架的工程节奏、密集爱情锁形成的民间纪念层，以及中跨处大教堂与河流的轴线。',
     orientation: [
@@ -193,6 +195,7 @@ export const cologneParisGuideContent = defineGuideContent({
     ],
   },
   'koln-triangle': {
+    overviewTitle: '从右岸俯看大教堂与铁路桥',
     overview:
       '科隆三角大厦观景台位于莱茵河右岸Deutz区，与大教堂隔河相望，是把刚走过的霍亨索伦桥、老城和河港重新组合成整体城市图景的垂直观察点。建筑高103.20米，共29层，透明玻璃与铝制立面包围一个勒洛三角形平面；屋顶约400平方米的平台提供环绕视野。参观价值不在于单纯“登高”，而在于从同一高度比较哥特式双塔、铁路桥、罗曼式教堂、现代博物馆和莱茵河弯曲方向。',
     orientation: [
@@ -286,6 +289,7 @@ export const cologneParisGuideContent = defineGuideContent({
     ],
   },
   'cologne-cathedral': {
+    overviewTitle: '三王圣龛、彩窗与双塔',
     overview:
       '科隆大教堂在本内容包中合并“教堂内部”与“南塔及珍宝馆”为一个完整建筑群，但保留两张票各自不同的有效窗口。这里既是持续举行礼拜的天主教主教座堂，也是由中殿、唱诗席、礼拜堂、地下珍宝馆和约100米高南塔构成的垂直文化空间。参观应把三王圣龛、约976年的Gero十字架、中世纪与当代彩窗、地下金工珍藏及533级台阶后的城市视野联系起来，理解朝圣、艺术、工程和城市身份如何叠合。',
     orientation: [
@@ -403,6 +407,7 @@ export const cologneParisGuideContent = defineGuideContent({
     ],
   },
   'cologne-old-town': {
+    overviewTitle: '市场、市政厅与莱茵河老街',
     overview:
       '科隆老城不是一座封闭古迹，而是由历史市场、仍在使用的市政设施、罗曼式教堂、河岸街巷和战后重建层共同构成的城市地区。核心观察点集中在Alter Markt、历史市政厅、Groß St. Martin与Fischmarkt之间：这里既保留罗马港区和中世纪修院的地下痕迹，也展示市民自治、战争破坏与现代恢复如何改变城市外观。行程不应把它简化成“彩色房屋拍照点”，而要从广场功能、宗教建筑和莱茵河贸易关系理解街区。',
     orientation: [
@@ -502,6 +507,7 @@ export const cologneParisGuideContent = defineGuideContent({
     ],
   },
   rheinauhafen: {
+    overviewTitle: '旧港仓库与悬挑起重机楼',
     overview:
       'Rheinauhafen是科隆老城以南沿莱茵河展开的旧港更新区。这里曾位于名为Werthchen的天然河岛，十九世纪末被改造成正式港区；1998年后的城市更新没有完全抹去港口，而是让仓库、港务局、动力房、历史起重机与新的住宅办公建筑共存。三座倒L形Kranhäuser重塑了科隆天际线，1909年的Siebengebirge仓库和1889年的砖砌港务建筑则保存货运时代的结构。观察重点是历史材料如何被改造，而不是把开放滨水区误认为所有建筑均可入内。',
     orientation: [
@@ -613,6 +619,7 @@ export const cologneParisGuideContent = defineGuideContent({
     ],
   },
   'chocolate-museum': {
+    overviewTitle: '从可可植物到巧克力工厂',
     overview:
       '科隆巧克力博物馆位于Rheinauhafen北端，以约四千平方米、四个楼层和九个展区把可可植物、全球贸易、五千年文化史与现代生产连接起来。参观从加纳独木舟和“可可世界之旅”进入种植、运输、消费与可持续议题，再经过热带温室、前哥伦布时期和欧洲宫廷文化，最终抵达玻璃巧克力工厂与喷泉。它不只是食品体验馆：新常设展也讨论殖民历史、供应链与小农生产，因此观察重点应兼顾气味、机械过程和经济文化背景。',
     orientation: [
@@ -725,6 +732,7 @@ export const cologneParisGuideContent = defineGuideContent({
     ],
   },
   'notre-dame-towers': {
+    overviewTitle: '修复后的钟楼木构与巴黎全景',
     overview:
       '巴黎圣母院双塔在2019年火灾后完成修复，并于2025年9月20日以全新单向路线重新开放。参观不再只是登上旧有平台，而是从南塔进入，在建筑模型、原奇美拉、四叶厅和新建双向橡木楼梯之间逐步上升，穿过修复后的钟楼木构抵达69米高眺望台，再经过大钟、蓄水池庭院和北塔钟架下降。全程424级台阶把哥特塔楼、十九世纪Viollet-le-Duc修复、火灾后的新木构与巴黎全景集中在一次高强度垂直体验中。',
     orientation: [
@@ -839,6 +847,7 @@ export const cologneParisGuideContent = defineGuideContent({
     ],
   },
   seine: {
+    overviewTitle: '西岱岛两岸的桥梁与石砌码头',
     overview:
       '“塞纳河周边”在原行程中没有给出精确范围，因此本记录保持时间和边界不确定，只将现场内容保守限定在巴黎圣母院及西岱岛附近的中央河岸，不扩写成从Pont de Sully到Pont d’Iéna的完整世界遗产路线。这个局部仍能呈现塞纳河塑造巴黎的关键方式：岛屿把水流分成两支，高低两级石砌码头连接桥梁、书摊与城市立面，圣母院的扶壁和尖塔则从河面方向显现整体结构。2026年东端施工会改变可通行边界，导览必须服从现场绕行。',
     orientation: [

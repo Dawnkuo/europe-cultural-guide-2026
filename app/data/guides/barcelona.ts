@@ -2,6 +2,7 @@ import { defineGuideContent } from './types';
 
 export const barcelonaGuideContent = defineGuideContent({
   'sagrada-familia': {
+    overviewTitle: '树状立柱、彩光与三座立面',
     originalTitle: 'Basílica de la Sagrada Família',
     overview:
       '圣家堂是一座仍在建造中的宗座圣殿，也是一套由结构、光线、雕塑和礼仪共同完成的空间叙事。高迪把承重柱发展成向上分叉的树状体系，让中殿像一片被彩色阳光穿透的森林；三座立面则分别围绕诞生、受难与荣耀展开。此次参观把圣殿本体与受难立面塔合并理解：先在地面建立建筑全貌，再从塔楼观察石构细节与巴塞罗那城市网格。',
@@ -116,6 +117,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'gaudi-house': {
+    overviewTitle: '高迪居所里的日常与家具设计',
     originalTitle: 'Casa Museu Gaudí',
     overview:
       '高迪故居博物馆位于桂尔公园内部，它的价值不在于展示一座由高迪亲自设计的住宅，而在于呈现建筑师长期居住的日常环境、宗教生活与设计实践。房屋原本是花园城市项目的示范住宅，由 Francesc Berenguer 设计；高迪从 1906 年住到 1925 年。家具、铁艺、模型和私人用品把公园中的宏大实验缩回到人的尺度。',
@@ -219,6 +221,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'park-guell': {
+    overviewTitle: '坡地上的花园城市实验',
     originalTitle: 'Park Güell',
     overview:
       '桂尔公园最初并不是为观光而造，而是 1900 年启动的花园城市式住宅开发。项目未能按地产计划完成，却留下了一套把地形、交通、雨水管理和公共空间编织在一起的系统。参观时不应只把注意力放在碎瓷蜥蜴上：自然广场、百柱厅、门房和高架步道共同说明高迪如何用结构解决坡地、集会、市场和排水问题。',
@@ -329,6 +332,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'turo-rovira': {
+    overviewTitle: '炮台与聚落遗迹上的城市全景',
     originalTitle: 'Turó de la Rovira',
     overview:
       'Turó de la Rovira 不是单纯的日落观景台，而是一处把战争、住房危机与城市扩张叠放在同一山顶的露天遗址。西班牙内战时期的防空炮台利用这里的广阔视野保护城市；战后，军事构筑物又被 Canons 棚户聚落重新占用，居民一直生活到 1990 年前后。今天保留的炮座、指挥设施和住宅痕迹，使 360 度城市全景带有明确的社会历史背景。',
@@ -425,6 +429,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'la-pedrera': {
+    overviewTitle: '庭院、悬链拱与屋顶雕塑',
     originalTitle: 'Casa Milà - La Pedrera',
     overview:
       '米拉之家把一座大型城市住宅处理成可变的结构系统：两组住宅体围绕采光庭院展开，柱网让内部隔墙不必承担传统承重任务，起伏石立面则像独立幕布包裹街角。清晨参观的重点并非抢拍空旷屋顶，而是沿庭院、公寓、阁楼与屋顶逐步理解服务空间如何被塑造成建筑体验，尤其是阁楼的 270 道砖砌悬链拱和屋顶上兼具功能与雕塑性的构件。',
@@ -530,6 +535,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'casa-batllo': {
+    overviewTitle: '采光井、海洋意象与龙脊屋顶',
     originalTitle: 'Casa Batlló',
     overview:
       '巴特罗之家是高迪在 1904 至 1906 年对一座 1877 年既有住宅所做的整体改造。外立面的骨状柱、面具般阳台和龙脊屋顶固然醒目，但更值得追踪的是建筑如何把狭长城市地块中的采光、通风、服务交通和家庭仪式重新组织起来。由主层、后院、采光井、阁楼到屋顶的上升过程，会把海洋般的表面想象逐步转化为可验证的建筑功能。',
@@ -643,6 +649,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'palau-musica': {
+    overviewTitle: '彩色玻璃与马赛克中的音乐厅',
     originalTitle: 'Palau de la Música Catalana',
     overview:
       '加泰罗尼亚音乐宫是 Domènech i Montaner 为 Orfeó Català 合唱协会建造的现代主义音乐厅，于 1905 至 1908 年完成，并在 1997 年列入世界遗产。它不是静态博物馆，而是一座持续排练和演出的工作场所。砖、陶瓷、马赛克、雕塑、铁件和彩色玻璃在这里并不只是表面装饰，而是共同引导人流、自然光与舞台注意力。',
@@ -748,6 +755,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'barcelona-cathedral': {
+    overviewTitle: '哥特中殿、地下墓室与回廊',
     originalTitle: 'Catedral de Barcelona',
     overview:
       '巴塞罗那主教座堂位于古罗马 Barcino 的核心地带，现存建筑把早期基督教、罗曼式和哥特时期叠合在一起。哥特主体自 1298 年开工，到 15 世纪中叶基本完成，而今天最醒目的西立面和中央穹顶主要完成于 19 世纪末至 1913 年。中殿、唱诗席、圣欧拉利娅地下墓室、回廊和屋顶分别展示礼仪、城市权力、圣徒崇敬与历史复兴的不同层次。',
@@ -863,6 +871,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'picasso-barcelona': {
+    overviewTitle: '从少年习作到《宫娥》系列',
     originalTitle: 'Museu Picasso Barcelona',
     overview:
       '巴塞罗那毕加索博物馆的优势不是用少量名作概括艺术家一生，而是保存了极密集的早期训练、蓝色时期、1917 年巴塞罗那作品以及完整的《宫娥》研究系列。馆舍本身由五座 13 至 15 世纪的中世纪宫殿组成，庭院和外楼梯先建立城市贵族建筑的尺度。沿官方当日地图推进时，可以看到一位学院训练扎实的少年如何不断拆解人物、空间与绘画传统。',
@@ -985,6 +994,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'santa-maria-mar': {
+    overviewTitle: '港口行会建造的哥特大厅',
     originalTitle: 'Basílica de Santa Maria del Mar',
     overview:
       '圣玛利亚海洋教堂与中世纪里贝拉的港口、商人和行会社会紧密相连。建筑于 1329 年奠基，用约 54 年完成，因而形成罕见统一的加泰罗尼亚哥特空间：三条中殿高度接近，细长八角柱以宽阔间距支撑拱顶，视线几乎不被切碎。1936 年火灾破坏了大量内部陈设，今天看到的克制感既来自原有结构，也来自历史损失。',
@@ -1094,6 +1104,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'el-born': {
+    overviewTitle: '旧市场下的街道与城市记忆',
     originalTitle: 'El Born / La Ribera',
     overview:
       '博恩区是里贝拉历史街区中一条由圣玛利亚海洋教堂、Passeig del Born 与旧市场建筑串起的城市剖面。中世纪的比武、游行和商业活动曾占据这条轴线，1714 年战争记忆则留在 Fossar de les Moreres 与旧城区遗址中。El Born Centre de Cultura i Memòria 的铁构市场外壳覆盖着约 1700 年的街道、住宅和商铺遗存，使今日餐饮街区下方仍能读出被拆除城市的尺度。',
@@ -1194,6 +1205,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   barceloneta: {
+    overviewTitle: '渔业街区与地中海岸线',
     originalTitle: 'Platja de la Barceloneta',
     overview:
       '巴塞罗内塔海滩是城市旧渔业街区与地中海直接接触的开放边界。这里的文化价值不仅是沙滩本身，还在于密集住宅网格、海滨步道、季节性海滩服务和公共艺术如何共享一条狭长岸线。Rebecca Horn 于 1992 年创作的《受伤的星》以四个错位方盒纪念已经消失的海滩餐棚，也被解读为对街区狭小住宅的回应，是傍晚短访最明确的观察锚点。',
@@ -1291,6 +1303,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'gothic-quarter': {
+    overviewTitle: '罗马城墙与中世纪街巷的叠影',
     originalTitle: 'Barri Gòtic',
     overview:
       '哥特区并不是一片年代单一的“中世纪布景”，而是罗马 Barcino 的道路和城墙、主教座堂与王宫建筑、近现代政府机构及居民街巷的重叠。古代 Cardo 与 Decumanus 在今天 Plaça Sant Jaume 一带交会，市政府和加泰罗尼亚政府仍占据政治中心；Plaça del Rei 则把王宫建筑群与地下罗马遗址叠在一起。夜访适合阅读公共空间层次，不应假定室内遗址或教堂开放。',
@@ -1394,6 +1407,7 @@ export const barcelonaGuideContent = defineGuideContent({
     ],
   },
   'la-rambla': {
+    overviewTitle: '从加泰罗尼亚广场走向海港',
     originalTitle: 'La Rambla',
     overview:
       '兰布拉大道是一条约 1.2 公里的线性城市舞台，从 Plaça Catalunya 延伸到 Portal de la Pau 与海港。它在 1766 年沿中世纪城墙外缘铺设，后来串联 Canaletes 喷泉、Virreina 宫、博盖利亚市场、Miró 路面作品、Liceu 歌剧院和哥伦布纪念碑。2026 年大道正处于持续至 2027 年的改造施工中，因此此次夜行应把围挡、临时绕行和仍在运作的步行轴一起视作当代城市层。',

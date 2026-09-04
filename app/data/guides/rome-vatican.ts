@@ -2,13 +2,14 @@ import { defineGuideContent } from './types';
 
 export const romeVaticanGuideContent = defineGuideContent({
   'vatican-museums': {
+    overviewTitle: '教宗宫殿里的庭院、长廊与壁画',
     originalTitle: 'Musei Vaticani',
     hero: {
       src: '/vatican-guide/assets/images/9e2540b0f966111eca.webp',
       alt: '梵蒂冈城、圣彼得大教堂与博物馆建筑群鸟瞰',
     },
     overview:
-      '梵蒂冈博物馆不是一座单体建筑，而是沿历代教宗宫殿、庭院和长廊不断扩展的复合体。现场最重要的空间判断是：入口在Viale Vaticano，古典馆围绕观景楼庭院展开，三大长廊位于二层，拉斐尔画室之后下行进入波吉亚寓所和西斯廷礼拜堂。分层地图按官方游客图重绘，保留庭院挑空与跨层楼梯关系。',
+      '梵蒂冈博物馆不是一座单体建筑，而是沿历代教宗宫殿、庭院和长廊不断扩展的复合体。入口在Viale Vaticano，古典馆围绕观景楼庭院展开，三大长廊位于二层，拉斐尔画室之后下行进入波吉亚寓所和西斯廷礼拜堂。古代雕塑、长廊装饰与文艺复兴壁画共同呈现教宗收藏的不同面貌。',
     orientation: [
       {
         title: '先分清三个标高',
@@ -176,13 +177,14 @@ export const romeVaticanGuideContent = defineGuideContent({
     ],
   },
   'st-peters-basilica': {
+    overviewTitle: '从圣殿中轴到穹顶内环',
     originalTitle: 'Basilica Papale di San Pietro in Vaticano',
     hero: {
       src: '/vatican-guide/assets/images/7c8ef6daf2c79cae8b.webp',
       alt: '圣彼得大教堂穹顶内部',
     },
     overview:
-      '圣彼得大教堂的现场体验实际跨越多个标高：地面的门廊、中殿、耳堂和后殿，地下的梵蒂冈墓穴，以及经电梯、屋顶平台、穹顶内环和窄梯到达的顶部观景台。分层地图依据圣彼得大教堂官方数字体验的正交平面重绘，默认拆开所有楼层，因此不会再被实心建筑外壳遮住。',
+      '圣彼得大教堂的参观跨越多个标高：地面的门廊、中殿、耳堂和后殿，地下的梵蒂冈墓穴，以及经电梯、屋顶平台、穹顶内环和窄梯到达的顶部观景台。在中殿感受巨大的建筑尺度，登顶途中近看穹顶内壁，最后从高处回望广场与罗马，能够从不同角度理解同一座圣殿。',
     orientation: [
       {
         title: '圣殿与穹顶是两段动线',
@@ -330,6 +332,7 @@ export const romeVaticanGuideContent = defineGuideContent({
     ],
   },
   pantheon: {
+    overviewTitle: '圆厅、穹顶与天窗下的光',
     originalTitle: 'Pantheon',
     overview:
       '万神殿把古罗马神庙、帝国工程与仍在使用的天主教堂叠在同一座建筑里。阿格里帕约于公元前27至25年建立初代神庙，今天所见主体由哈德良时期约118至125年重建，609年又被祝圣为教堂。参观重点不是快速拍摄天窗，而是理解门廊、圆厅、穹顶和墓龛如何构成一条从城市进入宇宙秩序的轴线。',
@@ -432,6 +435,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   borghese: {
+    overviewTitle: '别墅展厅里的雕塑与绘画',
     originalTitle: 'Galleria Borghese',
     overview:
       '博尔盖塞美术馆不是按现代白盒展厅排列的百科全书，而是西皮奥内·博尔盖塞为收藏、权力展示和别墅生活共同营造的整体空间。底层雕塑与古物常借墙面、天花和彩色石材形成戏剧关系，上层则集中绘画。本次11:00至13:00的两小时窗口含11:10意大利语讲解，重点应放在作品与原房间的对应，而不是追求逐件看完。',
@@ -538,6 +542,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   colosseum: {
+    overviewTitle: '地下机关、竞技场与分层看台',
     originalTitle: 'Colosseo',
     overview:
       '斗兽场是弗拉维王朝把公共娱乐、帝国秩序和大规模人流工程结合起来的圆形竞技建筑。本次 Full Experience 明确包含地下层与竞技场面，因此导览应从观众看不见的后勤系统切入，再回到表演空间和分等级看台。票面14:15开始、要求提前30分钟抵达；这项要求会压缩午间转场余量，却不能擅自移动既定预约。',
@@ -642,6 +647,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   'roman-forum': {
+    overviewTitle: '圣道两侧的罗马政治与宗教',
     originalTitle: 'Foro Romano',
     overview:
       '古罗马广场把沼泽低地转化为共和国和帝国的政治、宗教、司法与纪念中心，遗迹并非同一年代的完整城市模型。参观时应沿圣道读取建筑层次：从帝国凯旋纪念，经维斯塔宗教区，到元老院和西端拱门。本项与帕拉蒂尼在15:45至18:15共享同一段时间，内容必须主动取舍，不能假装两处都能从容看全。',
@@ -744,6 +750,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   palatine: {
+    overviewTitle: '从建城山丘到皇帝宫殿',
     originalTitle: 'Palatino',
     overview:
       '帕拉蒂尼山把罗马建城记忆、共和国晚期贵族住宅与帝国宫殿压缩在同一片坡地上，也是英语 palace 等词的历史来源。这里不适合逐间追求室内开放，而应从山丘地形、住宅壁画、弗拉维宫殿和长形体育场理解权力如何占据城市高点。本项与古罗马广场共享15:45至18:15，且部分室内分点可能早于园区关闭。',
@@ -850,6 +857,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   'piazza-venezia': {
+    overviewTitle: '古城街道与国家纪念碑的交会',
     originalTitle: 'Piazza Venezia',
     overview:
       '威尼斯广场是古罗马遗址、卡比托利欧山、科尔索大道与现代国家纪念建筑相撞的城市节点，而不是一个安静、边界清楚的传统广场。今天的尺度主要来自19至20世纪围绕维托里亚诺进行的拆建。本次只有18:30至18:50二十分钟，应以纪念碑轴线、骑马像和两座宫殿立面建立方向，不加入任何室内项目。',
@@ -952,6 +960,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   trevi: {
+    overviewTitle: '水道尽头的巴洛克喷泉剧场',
     originalTitle: 'Fontana di Trevi',
     overview:
       '特雷维喷泉是古代处女水道的城市终点，也是尼古拉·萨尔维把宫殿立面、岩石、神话雕塑和真实水流结合成的18世纪公共剧场。观看重点应从整面凯旋门式构图进入，再辨认海神、两匹性格相反的马、输水道浮雕和寓意像。行程仍为19:10至19:40，但“无需门票”只适用于外围，2026年内圈票制必须明确提示。',
@@ -1054,6 +1063,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   'spanish-steps': {
+    overviewTitle: '喷泉、台阶与山顶教堂',
     originalTitle: 'Scalinata di Trinita dei Monti',
     overview:
       '西班牙台阶不是一段笔直楼梯，而是弗朗切斯科·德·桑克蒂斯以分叉、汇合和平台反复调节坡度的18世纪城市舞台。它把下方西班牙广场与上方品奇奥、法国宗教机构和天主圣三堂连接起来。20:00至20:30的夜间停留应从破船喷泉开始，边上行边回望城市轴线，同时把台阶视为持续使用的公共通道。',
@@ -1157,6 +1167,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   'piazza-navona': {
+    overviewTitle: '古代竞技场上的巴洛克广场',
     originalTitle: 'Piazza Navona',
     overview:
       '纳沃纳广场的长椭圆并非巴洛克设计师凭空创造，而是沿用公元86年前后多米提安竞技场的跑道轮廓，古代看台遗迹仍埋在今天地面下约五至六米。17世纪教宗城市工程又在长轴上配置三座喷泉和圣依搦斯堂。21:00至21:45应以夜间外观为边界，从北向南读取竞技场形状、四河喷泉和教堂立面。',
@@ -1261,6 +1272,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   'st-peters-square': {
+    overviewTitle: '贝尼尼柱廊与方尖碑的轴线',
     originalTitle: 'Piazza San Pietro',
     overview:
       '圣彼得广场是贝尼尼为亚历山大七世设计的宗教集会空间：横向椭圆柱廊像双臂包围人群，靠近大教堂的一段梯形前庭又校正立面透视。中央方尖碑早于广场与现圣殿，双喷泉则平衡两侧空间。本次13:30至14:20无需门票，但终点必须自然衔接右侧安检区，为14:30本地嵌入的大教堂导览服务。',
@@ -1364,6 +1376,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   'vatican-post': {
+    overviewTitle: '一张邮票里的梵蒂冈',
     originalTitle: 'Poste Vaticane',
     overview:
       '梵蒂冈邮局把国家尺度压缩到一张邮票、一枚地名邮戳和一封真正进入国际邮路的明信片。本次17:00至17:30最适合使用圣彼得广场左半圆柱廊附近的新邮政办事点：先确认网点，再购买正确邮资、填写地址并盖戳寄出。它是服务设施而非传统博物馆，因此亮点应集中在2024年模块化建筑、当期邮票和邮戳流程。',
@@ -1464,6 +1477,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   'vatican-surroundings': {
+    overviewTitle: 'Borgo 街巷里的朝圣与城防',
     originalTitle: 'Rione Borgo',
     overview:
       '行程中模糊的“梵蒂冈周边”在文化导览里应落到罗马 Borgo 历史区：它夹在圣彼得广场与台伯河之间，既是朝圣者进入梵蒂冈的前厅，也是教宗城防、20世纪拆建和日常街巷重叠的地方。19:00至21:30与台伯河沿线共享时段，因此这里只安排 Borgo Pio、Passetto、协和大道和圣天使堡外观，不承诺夜间室内。',
@@ -1567,6 +1581,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   tiber: {
+    overviewTitle: '沿古桥与河岸阅读罗马',
     originalTitle: 'Tevere',
     overview:
       '台伯河沿线应被理解为罗马城市历史的线性剖面，而不只是夜景散步：古代桥梁连接居民区，圣天使桥把皇帝陵墓转化为仪式入口，教宗时期的西斯托桥重新缝合两岸，台伯岛则保存天然地形与医疗传统。本项与Borgo共同使用19:00至21:30，实际距离须按体力截短，不能默认一路走到所有南段节点。',
@@ -1671,6 +1686,7 @@ export const romeVaticanGuideContent = defineGuideContent({
   },
 
   trastevere: {
+    overviewTitle: '台伯河彼岸的广场与窄巷',
     originalTitle: 'Rione XIII Trastevere',
     overview:
       '特拉斯提弗列意为“台伯河彼岸”，本项保留为街区备选而不是餐饮指南。它以中世纪以来的窄巷、社区广场、古老教堂和跨河桥梁形成与纪念性罗马不同的步行尺度。若台伯河路线后仍有体力，可从西斯托桥经Piazza Trilussa和Lungaretta抵达Santa Maria in Trastevere；若时间不足，保持备选状态，不挤压原定行程。',

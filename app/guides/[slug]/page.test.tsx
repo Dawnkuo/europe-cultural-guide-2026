@@ -1,5 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
+import { guideBySlug } from '../../data/guides';
 import GuidePage, { generateStaticParams } from './page';
 
 describe('GuidePage', () => {
@@ -50,5 +51,28 @@ describe('GuidePage', () => {
     expect(
       screen.queryByRole('link', { name: '打开完整离线导览' }),
     ).not.toBeInTheDocument();
+  });
+
+  it.each([
+    'cologne-cathedral',
+    'uffizi',
+    'casa-batllo',
+    'vatican-museums',
+    'st-peters-basilica',
+    'grand-canal',
+    'la-scala',
+  ])('renders the authored %s overview instead of the shared slogan', async (slug) => {
+    const guide = guideBySlug(slug)!;
+    render(await GuidePage({ params: Promise.resolve({ slug }) }));
+    const overview = screen.getByRole('region', { name: guide.overviewTitle });
+    expect(within(overview).getByRole('heading', { level: 2 })).toHaveTextContent(
+      guide.overviewTitle,
+    );
+    expect(within(overview).getByText(guide.overview)).toBeInTheDocument();
+    for (const fact of guide.orientation) {
+      expect(within(overview).getByText(fact.body)).toBeInTheDocument();
+    }
+    expect(screen.queryByText('先建立判断框架')).not.toBeInTheDocument();
+    expect(screen.queryByText(/Before entering/i)).not.toBeInTheDocument();
   });
 });

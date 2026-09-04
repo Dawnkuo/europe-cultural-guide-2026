@@ -112,6 +112,7 @@ function buildFallbackGuide(
       src: profile?.image ?? '/images/st-peters-hero.jpg',
       alt: profile?.imageAlt ?? `${title}所在城市`,
     },
+    overviewTitle: `${title}概览`,
     overview:
       `${title}是本次${first.item.city}行程中的文化观察点。` +
       (note || '详细文化背景与现场信息正在依据官方资料整理。'),

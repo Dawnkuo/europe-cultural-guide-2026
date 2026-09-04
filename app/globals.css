@@ -1920,28 +1920,30 @@ img {
 }
 .guide-overview {
   background: #e8ece6;
-  padding: clamp(76px, 9vw, 135px) clamp(20px, 7vw, 110px);
+  padding: 56px clamp(20px, 7vw, 110px);
   scroll-margin-top: 112px;
 }
 .guide-overview > h2 {
   font-family: var(--font-display);
-  font-size: 70px;
+  font-size: 36px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.35;
   margin: 0;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
 }
 .guide-overview > p:not(.eyebrow) {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.55;
-  margin: 36px 0 0;
+  margin: 24px 0 0;
   max-width: 980px;
 }
 .guide-overview > div {
   border-top: 1px solid #b9c0ba;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 70px;
+  margin-top: 36px;
 }
 .guide-overview article {
   border-right: 1px solid #b9c0ba;
@@ -3231,12 +3233,18 @@ img {
     padding-left: 18px;
     padding-right: 18px;
   }
-  .guide-overview > h2,
+  .guide-overview {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .guide-overview > h2 {
+    font-size: 28px;
+  }
   .guide-section__heading h2 {
     font-size: 48px;
   }
   .guide-overview > p:not(.eyebrow) {
-    font-size: 22px;
+    font-size: 18px;
   }
   .guide-section__heading {
     display: block;

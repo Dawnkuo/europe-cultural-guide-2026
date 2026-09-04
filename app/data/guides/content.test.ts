@@ -29,7 +29,21 @@ describe('guide content packs', () => {
 
   it('does not publish placeholder copy as curated content', () => {
     expect(JSON.stringify(guideContentBySlug)).not.toMatch(
-      /TODO|TBD|稍后补充|示例文字|文化资料将在|详细文化背景.*正在/,
+      /TODO|TBD|稍后补充|示例文字|文化资料将在|详细文化背景.*正在|先建立判断框架/,
+    );
+  });
+
+  it('provides a distinct authored overview heading for every attraction', () => {
+    const titles = guideCatalog.map((guide) => {
+      const content = guideContentBySlug[guide.slug];
+      expect(content.overviewTitle.trim(), guide.slug).not.toBe('');
+      expect(content.overviewTitle, guide.slug).not.toBe(`${guide.title}概览`);
+      expect(guide.overviewTitle, guide.slug).toBe(content.overviewTitle);
+      return content.overviewTitle;
+    });
+    expect(new Set(titles).size).toBe(guideCatalog.length);
+    expect(new Set(guideCatalog.map((guide) => guide.overview)).size).toBe(
+      guideCatalog.length,
     );
   });
 });

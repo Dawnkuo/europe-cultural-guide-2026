@@ -71,6 +71,7 @@ export type GuideRecord = {
     src: string;
     alt: string;
   };
+  overviewTitle: string;
   overview: string;
   orientation: Array<{ title: string; body: string }>;
   spatial: {

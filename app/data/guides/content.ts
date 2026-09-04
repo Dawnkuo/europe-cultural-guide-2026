@@ -14,6 +14,7 @@ export const guideContentBySlug: GuideContentPack = {
   'la-scala': {
     ...milanVeniceGuideContent['la-scala-museum'],
     originalTitle: 'Teatro alla Scala e Museo Teatrale alla Scala',
+    overviewTitle: '从剧院收藏到斯卡拉舞台',
     overview: `${milanVeniceGuideContent['la-scala-evening'].overview} ${milanVeniceGuideContent['la-scala-museum'].overview}`,
     orientation: [
       ...milanVeniceGuideContent['la-scala-museum'].orientation,

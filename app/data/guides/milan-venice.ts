@@ -2,6 +2,7 @@ import { defineGuideContent } from './types';
 
 export const milanVeniceGuideContent = defineGuideContent({
   'galleria-vittorio': {
+    overviewTitle: '玻璃穹顶下的米兰拱廊',
     originalTitle: 'Galleria Vittorio Emanuele II',
     overview:
       '由朱塞佩·门戈尼设计的十九世纪拱廊，以十字形玻璃铁顶连接主教座堂广场与斯卡拉广场。这里既是城市交通轴，也是统一店招、地面马赛克与工业时代结构共同构成的公共建筑，宜在移动中辨认其中轴、八角厅和四翼之间的对称关系。',
@@ -96,6 +97,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'milan-duomo': {
+    overviewTitle: '从彩窗长堂到大理石尖塔',
     originalTitle: 'Duomo di Milano',
     overview:
       '这座始建于1386年的主教座堂以坎多利亚大理石、密集尖塔和跨越数世纪的雕塑工程塑造米兰天际线。露台并非单一观景台，而是由低层步道、飞扶壁与中央高台组成的垂直建筑体验；室内则集中观察宏大尺度、彩窗光线与后唱诗席的雕塑。',
@@ -217,6 +219,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'la-scala-evening': {
+    overviewTitle: '马蹄形剧场里的交响之夜',
     originalTitle:
       'Daniele Rustioni — Stagione Sinfonica del Teatro alla Scala',
     overview:
@@ -333,6 +336,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'last-supper': {
+    overviewTitle: '食堂墙上的透视与人物戏剧',
     originalTitle: 'Il Cenacolo di Leonardo da Vinci',
     overview:
       '达·芬奇于1495至1498年在修道院食堂北墙完成此作，采用干壁实验技法而非传统湿壁画。有限的十五分钟应集中观察透视消失点、十二门徒的分组动作，以及画面与真实食堂空间的延续；南墙蒙托法诺的《受难》则提供材料和构图上的重要对照。',
@@ -448,6 +452,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'santa-maria-grazie': {
+    overviewTitle: '哥特长堂与文艺复兴圆顶',
     originalTitle: 'Basilica di Santa Maria delle Grazie',
     overview:
       '教堂由吉尼福尔特·索拉里在十五世纪后期建造，后由布拉曼特改造东部礼仪空间，形成伦巴第哥特式长堂与文艺复兴圆顶、后殿相遇的复合建筑。它与《最后的晚餐》同属一组遗产，但教堂参观与食堂博物馆是两个独立入口和两套管理流程。',
@@ -556,6 +561,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   sforza: {
+    overviewTitle: '斯福尔扎要塞与米开朗琪罗晚作',
     originalTitle: 'Castello Sforzesco',
     overview:
       '城堡从斯福尔扎王朝要塞演变为多馆合一的城市博物馆群，开放庭院、塔楼、宫廷空间与雕塑、装饰艺术收藏彼此交织。复杂动线应以官方地图为准，重点留给米开朗基罗未完成的《隆达尼尼哀悼基督》及其可从多个角度观看的展厅。',
@@ -678,6 +684,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   brera: {
+    overviewTitle: '透视、人体与光线的意大利绘画',
     originalTitle: 'Pinacoteca di Brera',
     overview:
       '布雷拉以意大利绘画的地域和年代序列组织收藏，全部主要展厅位于建筑首层。有限时间可围绕透视、人体缩短法和光线叙事建立三点式路线：曼特尼亚的极端视角、拉斐尔的文艺复兴秩序、卡拉瓦乔晚期的暗色戏剧性。',
@@ -800,6 +807,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'la-scala-museum': {
+    overviewTitle: '乐器、肖像与斯卡拉舞台传统',
     originalTitle: 'Museo Teatrale alla Scala',
     overview:
       '博物馆通过乐器、歌唱家肖像、威尔第资料与历史海报呈现斯卡拉舞台传统，并可能从历史包厢观看观众厅。它与晚间演出是独立参观项目，包厢视线会因排练或技术工作关闭，因此路线应以馆藏为主体，把观众厅视为条件性加项。',
@@ -921,6 +929,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'doges-palace': {
+    overviewTitle: '议政大厅、巨画与监狱通道',
     originalTitle: 'Palazzo Ducale',
     overview:
       '总督宫把威尼斯政治仪式、司法机构、军械库与监狱串入一条并非线性的官方路线。参观由庭院和巨人阶梯进入上层议政厅，再穿越叹息桥抵达新监狱；重点应放在国家权力如何借建筑尺度、廷托列托巨画与隐蔽通道塑造观看和行动秩序。',
@@ -1047,6 +1056,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'bridge-of-sighs': {
+    overviewTitle: '连接宫殿与监狱的封闭石桥',
     originalTitle: 'Ponte dei Sospiri',
     overview:
       '此项与总督宫内部过桥体验并不相同，重点是从里奥宫河两端理解桥梁如何把哥特式宫殿和严肃的新监狱跨河连接。桥体几乎完全封闭，外部仅有两扇石格小窗；浪漫名称晚于它原本的司法交通功能，不宜只作传说式观看。',
@@ -1148,6 +1158,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'st-mark-campanile': {
+    overviewTitle: '钟室上的广场与潟湖全景',
     originalTitle: 'Campanile di San Marco',
     overview:
       '钟楼高98.6米，游客由电梯抵达约60米高的钟室层，在同一环形平台辨认圣马可广场、总督宫、潟湖与城市屋顶。现存塔身是1902年倒塌后按“原处原样”原则重建的1912年版本，基座桑索维诺小凉廊则应在登塔前细看。',
@@ -1268,6 +1279,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'st-mark-square': {
+    overviewTitle: '从大教堂到潟湖的城市广场',
     originalTitle: 'Piazza San Marco',
     overview:
       '广场并非孤立空地，而是由圣马可大教堂、钟楼、老新行政官邸、拿破仑翼和通往潟湖的小广场共同构成的城市仪式区。步行时应追踪主广场横轴、钟塔纵向标记，以及小广场如何把政治建筑、两根石柱与水上入口连成一体。',
@@ -1389,6 +1401,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   correr: {
+    overviewTitle: '宫廷房间里的威尼斯城市史',
     originalTitle: 'Museo Correr',
     overview:
       '科雷尔博物馆从拿破仑翼的新古典宫室进入，继而转入新行政官邸中的威尼斯城市史与画廊。它不是单纯绘画馆：宫廷空间、德巴尔巴里木刻城市图和安托内罗祭坛画共同说明威尼斯如何展示自身。当前卡诺瓦收藏第三室关闭，应避开旧攻略的固定路线。',
@@ -1511,6 +1524,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'st-mark-basilica': {
+    overviewTitle: '金色马赛克、祭坛与青铜驷马',
     originalTitle:
       "Basilica di San Marco — Pala d'Oro, Museo e Loggia dei Cavalli",
     overview:
@@ -1637,6 +1651,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   rialto: {
+    overviewTitle: '横跨大运河的石拱商街',
     originalTitle: 'Ponte di Rialto',
     overview:
       '现存石桥由安东尼奥·达·庞特在十六世纪末建成，以单一大拱跨越大运河，两排店铺夹出中央阶梯街，两侧外阶则提供不同方向的运河视野。观看重点是桥作为商业街、工程结构和城市观景点三种角色如何在同一狭窄构筑物上叠合。',
@@ -1739,6 +1754,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'grand-canal': {
+    overviewTitle: '里亚托两岸的运河商业史',
     originalTitle: 'Canal Grande',
     overview:
       '大运河约3.8公里，以反S形贯穿威尼斯主岛。此行程仅给45分钟且紧邻里亚托，最可靠的体验是步行比较桥上高视点与市场两岸的水面视点，不应虚构完整船线。里亚托一带的德国商馆、卡梅伦吉宫和旧市场建筑足以浓缩运河的商业史。',
@@ -1853,6 +1869,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   fenice: {
+    overviewTitle: '两次火灾后的凤凰剧院',
     originalTitle: 'Teatro La Fenice',
     overview:
       '凤凰歌剧院1792年开幕，经历1836与1996年两次大火后重建，今日内部以恢复历史观感为原则呈现。参观重点在塞尔瓦的入口体系、马蹄形观众厅、皇家包厢与阿波罗厅，而非把现存装饰误认成未经中断保存的十八世纪原物。',
@@ -1968,6 +1985,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   'accademia-venice': {
+    overviewTitle: '从金地圣像到威尼斯色彩',
     originalTitle: "Gallerie dell'Accademia di Venezia",
     overview:
       '学院美术馆系统收藏十四至十八世纪威尼斯绘画，官方空间横跨首层与底层共37室。短时备选路线可围绕乔尔乔内的谜样景观、委罗内塞面对宗教审查后的宴席画，以及提香为原建筑空间创作的大幅圣母题材展开，并始终服从当天房间调整。',
@@ -2090,6 +2108,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     ],
   },
   gondola: {
+    overviewTitle: '水面低视角里的威尼斯',
     originalTitle: 'Servizio pubblico di gondola',
     overview:
       '贡多拉体验的价值在接近水面的低视角、单桨操船及小运河转向，而非一条固定景点线路。官方价格只规定基础时长，实际路线会受登船站、潮汐、交通与天气影响；因此应在上船前明确是否经过大运河、计划桥段以及返回原站或异地结束。',

@@ -47,9 +47,13 @@ export default async function GuidePage({ params }: GuidePageProps) {
         <a href="#guide-sequence">顺序</a>
         <a href="#guide-practical">攻略</a>
       </nav>
-      <section className="guide-overview" id="guide-overview">
-        <p className="eyebrow">Before entering</p>
-        <h2>先建立判断框架</h2>
+      <section
+        className="guide-overview"
+        id="guide-overview"
+        aria-labelledby="guide-overview-title"
+      >
+        <p className="eyebrow">{guide.title} · 概览</p>
+        <h2 id="guide-overview-title">{guide.overviewTitle}</h2>
         <p>{guide.overview}</p>
         <div>
           {guide.orientation.map((fact, index) => (

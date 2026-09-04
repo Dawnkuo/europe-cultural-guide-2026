@@ -2,6 +2,7 @@ import type { GuideRecord } from '../types';
 
 export type CuratedGuideContent = Pick<
   GuideRecord,
+  | 'overviewTitle'
   | 'overview'
   | 'orientation'
   | 'spatial'
