@@ -1144,6 +1144,278 @@ img {
   margin: 0;
 }
 
+/* Itinerary: deep navy, black and gold editorial theme */
+.itinerary-page {
+  --itinerary-black: #05090d;
+  --itinerary-navy: #081522;
+  --itinerary-panel: #0c1b29;
+  --itinerary-panel-raised: #102231;
+  --itinerary-gold: #c9a85a;
+  --itinerary-gold-bright: #e0c279;
+  --itinerary-ivory: #f3eee2;
+  --itinerary-muted: #9ca8ae;
+  --itinerary-line: rgb(201 168 90 / 28%);
+  --acid: var(--itinerary-gold-bright);
+  --red: var(--itinerary-gold);
+  --ink: var(--itinerary-navy);
+  --paper: var(--itinerary-navy);
+  --white: var(--itinerary-ivory);
+  --muted: var(--itinerary-muted);
+  --line: var(--itinerary-line);
+  background: var(--itinerary-navy);
+  color: var(--itinerary-ivory);
+  min-height: 100vh;
+}
+.itinerary-page .subnav,
+.itinerary-page .filter-bar {
+  background: var(--itinerary-black);
+  border-bottom-color: var(--itinerary-line);
+}
+.itinerary-page .subnav nav a[aria-current='page'] {
+  border-bottom-color: var(--itinerary-gold-bright);
+}
+.itinerary-page .offline-mark,
+.itinerary-page .page-intro--timeline .eyebrow {
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .page-intro--timeline {
+  background: var(--itinerary-navy);
+  border-bottom-color: var(--itinerary-line);
+  color: var(--itinerary-ivory);
+}
+.itinerary-page .page-intro--timeline > p:last-of-type,
+.itinerary-page .page-intro--timeline .ticket-correction p {
+  color: var(--itinerary-muted);
+}
+.itinerary-page .page-intro--timeline .ticket-correction {
+  border-left-color: var(--itinerary-gold);
+}
+.itinerary-page .page-intro--timeline .ticket-correction span,
+.itinerary-page .day-section__header strong {
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .filter-bar button {
+  border-color: #43505c;
+  color: #a6b0b5;
+}
+.itinerary-page .filter-bar button:hover,
+.itinerary-page .filter-bar button:focus-visible {
+  border-color: var(--itinerary-gold-bright);
+  color: var(--itinerary-ivory);
+}
+.itinerary-page .filter-bar button[data-active='true'] {
+  background: var(--itinerary-gold);
+  border-color: var(--itinerary-gold);
+  color: var(--itinerary-black);
+}
+.itinerary-page .itinerary-content {
+  background: var(--itinerary-navy);
+}
+.itinerary-page .day-section {
+  border-bottom-color: var(--itinerary-gold);
+}
+.itinerary-page .day-section__header p {
+  color: var(--itinerary-muted);
+}
+.itinerary-page .day-section__header > div:nth-child(2) {
+  border-left-color: var(--itinerary-line);
+}
+.itinerary-page .pending-detail {
+  background: transparent;
+  border: 1px solid var(--itinerary-gold);
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .day-route-map {
+  background: var(--itinerary-black);
+  border-top-color: var(--itinerary-line);
+  color: var(--itinerary-ivory);
+}
+.itinerary-page .day-route-map__heading,
+.itinerary-page .day-route-map__city {
+  border-bottom-color: var(--itinerary-line);
+}
+.itinerary-page .day-route-map__heading > div > svg,
+.itinerary-page .day-route-map__city-header p,
+.itinerary-page .day-route-map__legend small {
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .day-route-map__heading p,
+.itinerary-page .day-route-map__city-header > span,
+.itinerary-page .day-route-map__legend time,
+.itinerary-page .day-route-map__unlocated a {
+  color: var(--itinerary-muted);
+}
+.itinerary-page .day-route-map__stage {
+  background: #07111a;
+  border-color: var(--itinerary-line);
+}
+.itinerary-page .day-route-map__paper {
+  fill: #07111a;
+}
+.itinerary-page .day-route-map__water {
+  stroke: #31596d;
+}
+.itinerary-page .day-route-map__rail {
+  stroke: #53606b;
+}
+.itinerary-page .day-route-map__road {
+  stroke: #1b2b38;
+}
+.itinerary-page .day-route-map__major-road {
+  stroke: #344b5d;
+}
+.itinerary-page .day-route-map__pedestrian {
+  stroke: #14232f;
+}
+.itinerary-page .day-route-map__route-casing {
+  stroke: #07111a;
+}
+.itinerary-page .day-route-map__route {
+  stroke: var(--itinerary-gold-bright);
+}
+.itinerary-page .day-route-map__marker-leader {
+  stroke: var(--itinerary-ivory);
+}
+.itinerary-page .day-route-map__north path,
+.itinerary-page .day-route-map__north text {
+  fill: var(--itinerary-ivory);
+}
+.itinerary-page .day-route-map__marker {
+  fill: var(--itinerary-gold);
+  stroke: #07111a;
+}
+.itinerary-page .day-route-map__marker-link:hover .day-route-map__marker,
+.itinerary-page
+  .day-route-map__marker-link:focus-visible
+  .day-route-map__marker {
+  stroke: var(--itinerary-ivory);
+}
+.itinerary-page .day-route-map__marker--alternative {
+  fill: #07111a;
+  stroke: var(--itinerary-gold-bright);
+}
+.itinerary-page .day-route-map__marker-link text {
+  fill: var(--itinerary-black);
+}
+.itinerary-page
+  .day-route-map__marker-link:has(.day-route-map__marker--alternative)
+  text {
+  fill: var(--itinerary-gold-bright);
+}
+.itinerary-page .day-route-map__load-state,
+.itinerary-page .day-route-map__attribution {
+  background: rgb(5 9 13 / 88%);
+  color: var(--itinerary-muted);
+}
+.itinerary-page .day-route-map__legend {
+  background: #0a1621;
+  border-color: var(--itinerary-line);
+}
+.itinerary-page .day-route-map__legend li,
+.itinerary-page .day-route-map__legend li + li {
+  border-color: rgb(201 168 90 / 18%);
+}
+.itinerary-page .day-route-map__legend a:hover,
+.itinerary-page .day-route-map__legend a:focus-visible {
+  background: rgb(201 168 90 / 10%);
+}
+.itinerary-page .day-route-map__legend a > span {
+  background: var(--itinerary-gold);
+  color: var(--itinerary-black);
+}
+.itinerary-page .day-route-map__legend-alternative a > span {
+  background: transparent;
+  border-color: var(--itinerary-gold-bright);
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .day-route-map__unlocated {
+  background: var(--itinerary-panel);
+}
+.itinerary-page .timeline-list {
+  border-top-color: var(--itinerary-line);
+}
+.itinerary-page .timeline-item {
+  background: var(--itinerary-panel);
+  border-bottom-color: var(--itinerary-line);
+}
+.itinerary-page .timeline-item:target,
+.itinerary-page .alternatives__list article:target {
+  background: rgb(201 168 90 / 16%);
+}
+.itinerary-page .timeline-item__rail {
+  border-right-color: var(--itinerary-line);
+  color: #798993;
+}
+.itinerary-page .timeline-item__rail::after {
+  background: #64727b;
+  border-color: var(--itinerary-panel);
+}
+.itinerary-page .timeline-item[data-status='已订'] .timeline-item__rail::after {
+  background: var(--itinerary-gold-bright);
+}
+.itinerary-page
+  .timeline-item[data-status='待确认']
+  .timeline-item__rail::after {
+  background: #d6a84a;
+}
+.itinerary-page .timeline-item__titleline > p,
+.itinerary-page .highlight-sequence > p {
+  color: var(--itinerary-gold);
+}
+.itinerary-page .timeline-guide-link:hover,
+.itinerary-page .timeline-guide-link:focus-visible {
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .timeline-item__note,
+.itinerary-page .alternatives__heading span,
+.itinerary-page .alternatives__list p {
+  color: var(--itinerary-muted);
+}
+.itinerary-page .arrival-note {
+  color: #9fb9bd;
+}
+.itinerary-page .conflict-note {
+  background: rgb(201 168 90 / 10%);
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .status-label {
+  border-color: #52616d;
+  color: #a7b1b6;
+}
+.itinerary-page .status-label[data-status='已订'] {
+  border-color: var(--itinerary-gold);
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .status-label[data-status='无需门票'] {
+  border-color: #6f928c;
+  color: #9fc4bd;
+}
+.itinerary-page .status-label[data-status='待确认'] {
+  border-color: #b98b38;
+  color: #e0b963;
+}
+.itinerary-page .status-label[data-status='备选'] {
+  border-color: #708aa0;
+  color: #9eb5c8;
+}
+.itinerary-page .highlight-sequence {
+  border-top-color: var(--itinerary-line);
+}
+.itinerary-page .highlight-sequence li {
+  background: var(--itinerary-panel-raised);
+  border-color: var(--itinerary-line);
+}
+.itinerary-page .alternatives {
+  background: var(--itinerary-panel-raised);
+}
+.itinerary-page .alternatives__heading p {
+  color: var(--itinerary-gold-bright);
+}
+.itinerary-page .alternatives__list,
+.itinerary-page .alternatives__list article {
+  border-color: var(--itinerary-line);
+}
+
 /* City chapters */
 .city-chapters {
   background: var(--ink);

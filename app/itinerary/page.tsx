@@ -23,7 +23,7 @@ export default function ItineraryPage() {
         );
 
   return (
-    <main className="subpage">
+    <main className="subpage itinerary-page">
       <SiteNav active="itinerary" />
       <header className="page-intro page-intro--timeline">
         <p className="eyebrow">13 days / source order</p>
