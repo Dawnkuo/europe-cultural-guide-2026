@@ -3,6 +3,24 @@ import { runInNewContext } from 'node:vm';
 import { describe, expect, it, vi } from 'vitest';
 
 describe('service worker', () => {
+  it('precaches every city map for offline itinerary use', () => {
+    const source = readFileSync('public/sw.js', 'utf8');
+
+    expect(source).toContain('europe-cultural-guide-v7');
+    for (const city of [
+      'milan',
+      'venice',
+      'florence',
+      'pisa',
+      'rome-vatican',
+      'barcelona',
+      'cologne',
+      'paris',
+    ]) {
+      expect(source).toContain(`/map-data/${city}.json`);
+    }
+  });
+
   it('prefers a fresh network response and keeps cache as the offline fallback', async () => {
     const handlers = new Map<string, (event: unknown) => void>();
     const cache = { addAll: vi.fn(), put: vi.fn() };

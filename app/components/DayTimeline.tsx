@@ -2,6 +2,7 @@ import { AlertTriangle, ArrowDownRight, ListChecks } from 'lucide-react';
 import { guideForTripItem } from '../data/guides';
 import type { TripDay, TripItem } from '../data/types';
 import { withBasePath } from '../lib/paths';
+import { DayRouteMap } from './DayRouteMap';
 import { StatusLabel } from './StatusLabel';
 
 function GuideTitle({ item }: { item: TripItem }) {
@@ -19,9 +20,22 @@ function GuideTitle({ item }: { item: TripItem }) {
   );
 }
 
-function TimelineItem({ item, index }: { item: TripItem; index: number }) {
+function TimelineItem({
+  dayDate,
+  item,
+  index,
+}: {
+  dayDate: string;
+  item: TripItem;
+  index: number;
+}) {
   return (
-    <article className="timeline-item" data-status={item.status}>
+    <article
+      className="timeline-item"
+      data-status={item.status}
+      id={`${dayDate}-${item.id}`}
+      tabIndex={-1}
+    >
       <div className="timeline-item__rail" aria-hidden="true">
         <span>{String(index + 1).padStart(2, '0')}</span>
       </div>
@@ -84,9 +98,15 @@ export function DayTimeline({ day }: { day: TripDay }) {
           <span className="pending-detail">详细安排待补</span>
         )}
       </header>
+      <DayRouteMap day={day} />
       <div className="timeline-list">
         {scheduled.map((item, index) => (
-          <TimelineItem item={item} index={index} key={item.id} />
+          <TimelineItem
+            dayDate={day.date}
+            item={item}
+            index={index}
+            key={item.id}
+          />
         ))}
       </div>
       {alternatives.length > 0 && (
@@ -97,7 +117,11 @@ export function DayTimeline({ day }: { day: TripDay }) {
           </div>
           <div className="alternatives__list">
             {alternatives.map((item) => (
-              <article key={item.id}>
+              <article
+                id={`${day.date}-${item.id}`}
+                key={item.id}
+                tabIndex={-1}
+              >
                 <StatusLabel status={item.status} />
                 <h3>
                   <GuideTitle item={item} />

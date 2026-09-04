@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "build:github": "node scripts/clean-build.mjs && GITHUB_PAGES=true vinext build && node scripts/prepare-github-pages.mjs",
+    "citymaps:generate": "node scripts/generate-city-map-linework.mjs",
     "floorplans:generate": "node scripts/generate-floorplan-data.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "test": "vitest",

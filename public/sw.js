@@ -1,4 +1,4 @@
-const CACHE = 'europe-cultural-guide-v6';
+const CACHE = 'europe-cultural-guide-v7';
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '');
 const scoped = (path) => `${BASE_PATH}${path}`;
 const CORE = [
@@ -16,6 +16,15 @@ const CORE = [
   '/images/pisa.jpg',
   '/images/barcelona.jpg',
   '/images/cologne.jpg',
+  '/map-data/manifest.json',
+  '/map-data/milan.json',
+  '/map-data/venice.json',
+  '/map-data/florence.json',
+  '/map-data/pisa.json',
+  '/map-data/rome-vatican.json',
+  '/map-data/barcelona.json',
+  '/map-data/cologne.json',
+  '/map-data/paris.json',
 ].map(scoped);
 
 async function installOfflineRoutes() {
