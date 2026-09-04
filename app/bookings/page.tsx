@@ -56,30 +56,40 @@ export default function BookingsPage() {
                 项
               </span>
             </header>
-            <div
-              className="booking-table"
-              role="table"
-              aria-label={`${category}状态`}
-            >
-              {bookingRecords
-                .filter((record) => record.category === category)
-                .map((record) => (
-                  <article className="booking-row" key={record.id} role="row">
-                    <div>
-                      <p>{record.date}</p>
-                      <h3>{record.title}</h3>
-                    </div>
-                    <StatusLabel status={record.status} />
-                    <p>{record.validity ?? '无固定入场时间'}</p>
-                    <p className="booking-row__note">
-                      {record.status === '待确认' && (
-                        <AlertTriangle aria-hidden="true" size={15} />
-                      )}
-                      {record.note ?? '票据与行程匹配'}
-                    </p>
-                  </article>
-                ))}
-            </div>
+            <table className="booking-table" aria-label={`${category}状态`}>
+              <thead className="sr-only">
+                <tr>
+                  <th scope="col">日期与项目</th>
+                  <th scope="col">状态</th>
+                  <th scope="col">使用时段</th>
+                  <th scope="col">备注</th>
+                </tr>
+              </thead>
+              <tbody>
+                {bookingRecords
+                  .filter((record) => record.category === category)
+                  .map((record) => (
+                    <tr className="booking-row" key={record.id}>
+                      <th scope="row">
+                        <p>{record.date}</p>
+                        <h3>{record.title}</h3>
+                      </th>
+                      <td>
+                        <StatusLabel status={record.status} />
+                      </td>
+                      <td className="booking-row__validity">
+                        {record.validity ?? '无固定入场时间'}
+                      </td>
+                      <td className="booking-row__note">
+                        {record.status === '待确认' && (
+                          <AlertTriangle aria-hidden="true" size={15} />
+                        )}
+                        {record.note ?? '票据与行程匹配'}
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
           </section>
         ))}
       </div>

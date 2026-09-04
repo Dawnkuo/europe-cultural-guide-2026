@@ -1,4 +1,5 @@
 import { act, render, screen, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { hydrateRoot } from 'react-dom/client';
 import { renderToString } from 'react-dom/server';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
@@ -41,6 +42,35 @@ describe('ItineraryPage', () => {
     expect(dayHeadings[0]).toHaveTextContent('9月24日');
     expect(dayHeadings.at(-1)).toHaveTextContent('10月6日');
     expect(screen.getByText('圣殿14:30；穹顶15:30')).toBeInTheDocument();
+  });
+
+  it('allows manual city filtering after following a city-specific link', async () => {
+    window.history.replaceState({}, '', '/itinerary?city=巴塞罗那');
+    const user = userEvent.setup();
+    render(<ItineraryPage />);
+    expect(screen.getByRole('button', { name: '巴塞罗那' })).toHaveAttribute(
+      'data-active',
+      'true',
+    );
+    expect(
+      screen.queryByRole('heading', { name: '9月24日' }),
+    ).not.toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: '全部' }));
+    expect(
+      screen.getByRole('heading', { name: '9月24日' }),
+    ).toBeInTheDocument();
+  });
+
+  it('falls back to the full itinerary for an unknown city', () => {
+    window.history.replaceState({}, '', '/itinerary?city=unknown');
+    render(<ItineraryPage />);
+    expect(screen.getByRole('button', { name: '全部' })).toHaveAttribute(
+      'data-active',
+      'true',
+    );
+    expect(
+      screen.getByRole('heading', { name: '9月24日' }),
+    ).toBeInTheDocument();
   });
 
   it('keeps alternatives separate and marks incomplete detail', () => {

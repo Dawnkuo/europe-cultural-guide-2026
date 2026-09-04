@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { mergeProps } from '@base-ui/react/merge-props';
 import { useRender } from '@base-ui/react/use-render';
@@ -6,17 +8,21 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
 
-function ItemGroup({ className, ...props }: React.ComponentProps<'div'>) {
+const ItemGroupContext = React.createContext(false);
+
+function ItemGroup({ className, ...props }: React.ComponentProps<'ul'>) {
   return (
-    <div
-      role="list"
-      data-slot="item-group"
-      className={cn(
-        'gap-4 has-data-[size=sm]:gap-2.5 has-data-[size=xs]:gap-2 group/item-group flex w-full flex-col',
-        className,
-      )}
-      {...props}
-    />
+    <ItemGroupContext.Provider value={true}>
+      <ul
+        data-slot="item-group"
+        className={cn(
+          'm-0 list-none p-0',
+          'gap-4 has-data-[size=sm]:gap-2.5 has-data-[size=xs]:gap-2 group/item-group flex w-full flex-col',
+          className,
+        )}
+        {...props}
+      />
+    </ItemGroupContext.Provider>
   );
 }
 
@@ -24,7 +30,8 @@ function ItemSeparator({
   className,
   ...props
 }: React.ComponentProps<typeof Separator>) {
-  return (
+  const inGroup = React.useContext(ItemGroupContext);
+  const separator = (
     <Separator
       data-slot="item-separator"
       orientation="horizontal"
@@ -32,6 +39,7 @@ function ItemSeparator({
       {...props}
     />
   );
+  return inGroup ? <li role="presentation">{separator}</li> : separator;
 }
 
 const itemVariants = cva(
@@ -63,7 +71,8 @@ function Item({
   render,
   ...props
 }: useRender.ComponentProps<'div'> & VariantProps<typeof itemVariants>) {
-  return useRender({
+  const inGroup = React.useContext(ItemGroupContext);
+  const item = useRender({
     defaultTagName: 'div',
     props: mergeProps<'div'>(
       {
@@ -78,6 +87,7 @@ function Item({
       size,
     },
   });
+  return inGroup ? <li>{item}</li> : item;
 }
 
 const itemMediaVariants = cva(

@@ -1,19 +1,36 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import { DayTimeline } from '../components/DayTimeline';
 import { SiteNav } from '../components/SiteNav';
 import { tripDays, tripCities } from '../data/trip';
 
 export const dynamic = 'force-static';
 
-export default function ItineraryPage() {
-  const [cityFilter, setCityFilter] = useState('全部');
+function subscribeToLocation(onChange: () => void) {
+  window.addEventListener('popstate', onChange);
+  return () => window.removeEventListener('popstate', onChange);
+}
 
-  useEffect(() => {
-    const city = new URLSearchParams(window.location.search).get('city');
-    if (city) setCityFilter(city);
-  }, []);
+function getCityFromLocation() {
+  const city = new URLSearchParams(window.location.search).get('city');
+  return city && tripCities.some((candidate) => candidate === city)
+    ? city
+    : '全部';
+}
+
+function getServerCity() {
+  return '全部';
+}
+
+export default function ItineraryPage() {
+  const initialCity = useSyncExternalStore(
+    subscribeToLocation,
+    getCityFromLocation,
+    getServerCity,
+  );
+  const [selectedCity, setCityFilter] = useState<string | null>(null);
+  const cityFilter = selectedCity ?? initialCity;
 
   const filteredDays =
     cityFilter === '全部'
