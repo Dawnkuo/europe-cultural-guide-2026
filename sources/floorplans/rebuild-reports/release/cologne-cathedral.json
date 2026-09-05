@@ -1,7 +1,7 @@
 {
   "slug": "cologne-cathedral",
   "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the main church plan and the actual2009 underground south-tower access drawing. Keeps nave piers, aisles, transepts, radiating apse and foundation-access passage. Vault diagonals remain flat details, not partitions. Rejected medieval tower elevation is not repurposed as present-day tower levels.",
     "floorCoverageReview": "Church main level and2009 tower-access courtyard only. Treasury, spiral staircase levels, bells and observation deck remain missing plans.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:38:07.501Z",
+    "timestamp": "2026-09-05T09:54:21.060Z",
     "slug": "cologne-cathedral",
     "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
     "sourceDigest": "3c3aa37060e3003a57dc5ac776a5e869a59d3de29cca86715bb2a4ec9c8d742d",
@@ -31,6 +31,7 @@
           {
             "id": "south-tower-access-2009",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "nave",
             "exactLabels": 7,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -61,6 +63,7 @@
         "paintedLabels": 12,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -72,6 +75,7 @@
           {
             "id": "south-tower-access-2009",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -82,6 +86,7 @@
           {
             "id": "nave",
             "exactLabels": 7,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -102,6 +107,7 @@
         "paintedLabels": 12,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -113,6 +119,7 @@
           {
             "id": "south-tower-access-2009",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -123,6 +130,7 @@
           {
             "id": "nave",
             "exactLabels": 7,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -143,6 +151,7 @@
         "paintedLabels": 12,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -168,7 +177,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.3,
+    "renderP95Ms": 2.9,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -185,7 +194,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 114.56923086654949,
+      "mapSpread": 114.18498208639048,
       "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-1440.png",
       "passed": true
     },
@@ -196,7 +205,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 130.3367908154214,
+      "mapSpread": 130.63333931119303,
       "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-1094.png",
       "passed": true
     },
@@ -207,17 +216,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 120.98919982195774,
+      "mapSpread": 122.00542814506423,
       "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/cologne-cathedral/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "routeNumbering": true,
     "passed": true
   }
 }

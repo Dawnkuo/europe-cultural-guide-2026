@@ -1,7 +1,7 @@
 {
   "slug": "barcelona-cathedral",
   "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the official raster's nave, apse, radiating chapels and cloister. Preserves all fifty-nine printed numbers and five descriptive areas; 12 and 27 are absent in the source and are not invented. Fifty-seven selection regions follow the visible wall boundaries. Shared nave/ambulatory and shared 71/72 chapel remain shared; outdoor26 has no invented indoor face.",
     "floorCoverageReview": "Main church and cloister only. The crypt and roof are not supplied; red annotation occlusions remain unresolved.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:36:37.426Z",
+    "timestamp": "2026-09-05T09:52:30.990Z",
     "slug": "barcelona-cathedral",
     "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
     "sourceDigest": "5bb9a64dbe11ef80b9c4bab154c72ffecb6334f6c45a10e8c7d27e9bde30bbff",
@@ -30,6 +30,7 @@
           {
             "id": "main-level",
             "exactLabels": 64,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -54,6 +55,7 @@
           "main-level-number-39-selection"
         ],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -65,6 +67,7 @@
           {
             "id": "main-level",
             "exactLabels": 64,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -89,6 +92,7 @@
           "main-level-number-39-selection"
         ],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -100,6 +104,7 @@
           {
             "id": "main-level",
             "exactLabels": 64,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -124,6 +129,7 @@
           "main-level-number-39-selection"
         ],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -147,8 +153,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 4,
+    "frameP95Ms": 16.800000000000182,
+    "renderP95Ms": 6,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -165,7 +171,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 152.748556021171,
+      "mapSpread": 151.081999881488,
       "screenshot": "work/map-review/guide-pages-final/_guides_barcelona-cathedral_-1440.png",
       "passed": true
     },
@@ -176,7 +182,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 167.9995351554785,
+      "mapSpread": 167.88779614563845,
       "screenshot": "work/map-review/guide-pages-final/_guides_barcelona-cathedral_-1094.png",
       "passed": true
     },
@@ -187,17 +193,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 142.82659449168733,
+      "mapSpread": 148.92878784452327,
       "screenshot": "work/map-review/guide-pages-final/_guides_barcelona-cathedral_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/barcelona-cathedral/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+    "routeNumbering": true,
     "passed": true
   }
 }

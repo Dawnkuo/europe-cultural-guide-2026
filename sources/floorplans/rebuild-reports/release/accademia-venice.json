@@ -1,7 +1,7 @@
 {
   "slug": "accademia-venice",
   "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared both museum leaflet floors with their 2D renderings. Ground-floor Arabic and first-floor Roman identifiers retain their identities, including XXIV and the irregular VI area. Forty-two source-connected gallery selection regions preserve real partitions, shared openings, courtyards and service spaces.",
     "floorCoverageReview": "Both published visitor levels. VIa/VIb lack separately recoverable locations and are explicitly unresolved, not silently substituted with new rooms.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:36:24.462Z",
+    "timestamp": "2026-09-05T09:52:17.025Z",
     "slug": "accademia-venice",
     "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
     "sourceDigest": "6809eac6370f94b3a12017d6e243e3789135a4f9c97d1dc810f7c3d462a11264",
@@ -31,6 +31,7 @@
           {
             "id": "ground",
             "exactLabels": 19,
+            "guideNumbers": 15,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "first",
             "exactLabels": 29,
+            "guideNumbers": 8,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -87,6 +89,7 @@
           "ground-rooms-13"
         ],
         "stopTargets": 24,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -98,6 +101,7 @@
           {
             "id": "ground",
             "exactLabels": 19,
+            "guideNumbers": 15,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -108,6 +112,7 @@
           {
             "id": "first",
             "exactLabels": 29,
+            "guideNumbers": 8,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -154,6 +159,7 @@
           "ground-rooms-13"
         ],
         "stopTargets": 24,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -165,6 +171,7 @@
           {
             "id": "ground",
             "exactLabels": 19,
+            "guideNumbers": 15,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -175,6 +182,7 @@
           {
             "id": "first",
             "exactLabels": 29,
+            "guideNumbers": 8,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -221,6 +229,7 @@
           "ground-rooms-13"
         ],
         "stopTargets": 24,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -245,8 +254,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.800000000000182,
-    "renderP95Ms": 3.7,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 4.9,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -263,7 +272,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 90.39762535653806,
+      "mapSpread": 94.53804146183117,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-1440.png",
       "passed": true
     },
@@ -274,7 +283,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 99.84430405401562,
+      "mapSpread": 104.66149933469843,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-1094.png",
       "passed": true
     },
@@ -285,17 +294,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 102.04355783501143,
+      "mapSpread": 114.93482029079972,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/accademia-venice/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+    "routeNumbering": true,
     "passed": true
   }
 }

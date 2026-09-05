@@ -1,5 +1,5 @@
 import { Accessibility, ArrowUpDown, Baby, BookOpen, Coffee, Footprints, Headphones, HeartPulse, Info, LogIn, LogOut, Luggage, Mail, MapPin, ShieldCheck, ShoppingBag, Ticket, Toilet, Users, Utensils } from 'lucide-react';
-import { serviceMarkerKind, type PlanPlace } from '../lib/architectural-plan';
+import { guideNumberWidth, serviceMarkerKind, type PlanPlace } from '../lib/architectural-plan';
 
 const icons = {
   accessible: Accessibility, toilet: Toilet, lift: ArrowUpDown, stairs: Footprints,
@@ -9,9 +9,14 @@ const icons = {
   group: Users, permission: ShieldCheck, info: Info, place: MapPin,
 };
 
-export function PlanPlaceMarker({ place }: { place: PlanPlace }) {
+export function PlanPlaceMarker({ place, zoom = 1, descriptionId }: { place: PlanPlace; zoom?: number; descriptionId?: string }) {
   const kind = serviceMarkerKind(place);
-  if (!kind) return place.label;
-  const Icon = icons[kind];
-  return <><Icon size="1.15em" aria-hidden="true" /><span className="sr-only">{place.label}</span></>;
+  const Icon = kind ? icons[kind] : null;
+  return <>
+    {place.guideNumbers?.length ? <span className="architectural-map__route-number" data-guide-numbers={place.guideNumbers.join(',')} aria-hidden="true"
+      style={{ width: guideNumberWidth(place.guideNumbers) * zoom, height: 20 * zoom, fontSize: 11 * zoom, marginRight: 4 * zoom }}>{place.guideNumbers.join('·')}</span> : null}
+    {Icon && <Icon size="1.15em" aria-hidden="true" />}
+    <span data-place-label className={Icon ? 'sr-only' : undefined}>{place.label}</span>
+    {descriptionId && <span id={descriptionId} className="sr-only">导览步骤 {place.guideNumbers?.join('、')}</span>}
+  </>;
 }

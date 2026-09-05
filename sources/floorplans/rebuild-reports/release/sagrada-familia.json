@@ -1,7 +1,7 @@
 {
   "slug": "sagrada-familia",
   "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the main published plan and underground church drawing. Retains main column grid,actual nave/apse geometry,planned areas and all repeated source identifiers. Crypt chapels and circular supports remain distinct; source planning elements are not claimed to be finished current fabric.",
     "floorCoverageReview": "Main planning level and crypt only. Passion-tower visitor floors remain missing.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:46:05.674Z",
+    "timestamp": "2026-09-05T10:03:14.233Z",
     "slug": "sagrada-familia",
     "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
     "sourceDigest": "56d0ee92ae7c1ca2bb3760dbc4f6c8e3810b83a56a408ee81acae8c2f7686da7",
@@ -31,6 +31,7 @@
           {
             "id": "main",
             "exactLabels": 26,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "crypt",
             "exactLabels": 13,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -61,6 +63,7 @@
         "paintedLabels": 39,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -72,6 +75,7 @@
           {
             "id": "main",
             "exactLabels": 26,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -82,6 +86,7 @@
           {
             "id": "crypt",
             "exactLabels": 13,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -102,6 +107,7 @@
         "paintedLabels": 39,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -113,6 +119,7 @@
           {
             "id": "main",
             "exactLabels": 26,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -123,6 +130,7 @@
           {
             "id": "crypt",
             "exactLabels": 13,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -143,6 +151,7 @@
         "paintedLabels": 39,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -168,7 +177,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.8,
+    "renderP95Ms": 3.4,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -185,7 +194,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 115.54192712727821,
+      "mapSpread": 115.89689381249497,
       "screenshot": "work/map-review/guide-pages-final/_guides_sagrada-familia_-1440.png",
       "passed": true
     },
@@ -196,7 +205,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 129.45670880265854,
+      "mapSpread": 130.16887499009,
       "screenshot": "work/map-review/guide-pages-final/_guides_sagrada-familia_-1094.png",
       "passed": true
     },
@@ -207,17 +216,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 128.59924341476494,
+      "mapSpread": 133.71771453456452,
       "screenshot": "work/map-review/guide-pages-final/_guides_sagrada-familia_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/sagrada-familia/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+    "routeNumbering": true,
     "passed": true
   }
 }

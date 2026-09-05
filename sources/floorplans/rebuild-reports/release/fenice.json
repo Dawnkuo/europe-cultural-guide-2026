@@ -1,7 +1,7 @@
 {
   "slug": "fenice",
   "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the complete foyer and Apollinee plans and the separate auditorium crop. Retains horseshoe seating, the five named Apollinee rooms, real service/entry outlines and eight source regions. Gradient stage shading is not misreported as a complete closed stage face.",
     "floorCoverageReview": "Three independent source diagrams; first-tier boxes do not locate the royal box on the floor above.",
@@ -18,7 +18,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:39:48.537Z",
+    "timestamp": "2026-09-05T09:56:22.308Z",
     "slug": "fenice",
     "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
     "sourceDigest": "d170c145ce13217b6082489e0f48217a3de3d8b72077f0723ca02c9bbfb7b0ff",
@@ -32,6 +32,7 @@
           {
             "id": "foyer",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -42,6 +43,7 @@
           {
             "id": "auditorium",
             "exactLabels": 3,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -52,6 +54,7 @@
           {
             "id": "apollinee",
             "exactLabels": 5,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -88,6 +91,7 @@
           "apollinee-dante"
         ],
         "stopTargets": 9,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -99,6 +103,7 @@
           {
             "id": "foyer",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -109,6 +114,7 @@
           {
             "id": "auditorium",
             "exactLabels": 3,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -119,6 +125,7 @@
           {
             "id": "apollinee",
             "exactLabels": 5,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -155,6 +162,7 @@
           "apollinee-dante"
         ],
         "stopTargets": 9,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -166,6 +174,7 @@
           {
             "id": "foyer",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -176,6 +185,7 @@
           {
             "id": "auditorium",
             "exactLabels": 3,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -186,6 +196,7 @@
           {
             "id": "apollinee",
             "exactLabels": 5,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -222,6 +233,7 @@
           "apollinee-dante"
         ],
         "stopTargets": 9,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -247,8 +259,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 2.4,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 3,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -265,7 +277,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 91.84116405383807,
+      "mapSpread": 95.68952137413457,
       "screenshot": "work/map-review/guide-pages-final/_guides_fenice_-1440.png",
       "passed": true
     },
@@ -276,7 +288,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 105.46169503287854,
+      "mapSpread": 105.76663820532546,
       "screenshot": "work/map-review/guide-pages-final/_guides_fenice_-1094.png",
       "passed": true
     },
@@ -287,17 +299,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 114.85069131530403,
+      "mapSpread": 115.81501337476107,
       "screenshot": "work/map-review/guide-pages-final/_guides_fenice_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/fenice/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+    "routeNumbering": true,
     "passed": true
   }
 }

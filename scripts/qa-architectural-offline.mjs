@@ -66,10 +66,17 @@ try {
         for (const floor of model.floors) {
           await map.getByRole('button', { name: floor.label, exact: true }).click();
           const expected = model.places.filter((p) => p.floorId === floor.id).map((p) => `${p.id}:${p.label}`).sort();
-          const actual = await map.locator('.architectural-map__2d-labels [data-place-id]').evaluateAll((nodes) => nodes.map((node) => `${node.dataset.placeId}:${node.querySelector('button').textContent}`).sort());
+          const actual = await map.locator('.architectural-map__2d-labels [data-place-id]').evaluateAll((nodes) => nodes.map((node) => `${node.dataset.placeId}:${node.querySelector('[data-place-label]').textContent}`).sort());
           if (JSON.stringify(actual) !== JSON.stringify(expected)) throw new Error(`Offline room inventory mismatch ${floor.id}`);
+          const expectedNumbers = model.places.filter((p) => p.floorId === floor.id).flatMap((place) => {
+            const numbers = [...new Set(model.stopBindings.filter((binding) => binding.placeId === place.id).map((binding) => binding.stopIndex + 1))].sort((a,b) => a-b);
+            return numbers.length ? [`${place.id}:${numbers.join(',')}`] : [];
+          }).sort();
+          const actualNumbers = await map.locator('.architectural-map__2d-labels [data-guide-numbers]').evaluateAll((nodes) => nodes.map((node) => `${node.closest('[data-place-id]').dataset.placeId}:${node.dataset.guideNumbers}`).sort());
+          if (JSON.stringify(actualNumbers) !== JSON.stringify(expectedNumbers)) throw new Error(`Offline guide numbers mismatch ${floor.id}`);
         }
         record.modelDigest = createHash('sha256').update(JSON.stringify(model)).digest('hex');
+        record.routeNumbering = true;
       }
       const imageFailures = await page.locator('img').evaluateAll(async (images) => {
         const failed = [];

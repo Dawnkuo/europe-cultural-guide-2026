@@ -1,7 +1,7 @@
 {
   "slug": "palau-musica",
   "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all four historical plan drawings. Retains actual auditorium curves, foyer/service boundaries, stage geometry and upper seating with twenty-one source faces and twenty-three places. The detached upper11 detail is not moved into an invented main-building position.",
     "floorCoverageReview": "Four historical building plans, excluding later additions and current visitor-route changes.",
@@ -19,7 +19,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:44:35.255Z",
+    "timestamp": "2026-09-05T10:01:37.981Z",
     "slug": "palau-musica",
     "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
     "sourceDigest": "7b6ea6df723783a7b4e66fc6b3975f3e1154d066f09f4ceb02eafbb4e65431e3",
@@ -33,6 +33,7 @@
           {
             "id": "plan-I",
             "exactLabels": 6,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -43,6 +44,7 @@
           {
             "id": "plan-II",
             "exactLabels": 8,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -53,6 +55,7 @@
           {
             "id": "plan-III",
             "exactLabels": 4,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -63,6 +66,7 @@
           {
             "id": "plan-IV",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -93,6 +97,7 @@
           "plan-IV-source-face-5"
         ],
         "stopTargets": 3,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -104,6 +109,7 @@
           {
             "id": "plan-I",
             "exactLabels": 6,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -114,6 +120,7 @@
           {
             "id": "plan-II",
             "exactLabels": 8,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -124,6 +131,7 @@
           {
             "id": "plan-III",
             "exactLabels": 4,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -134,6 +142,7 @@
           {
             "id": "plan-IV",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -164,6 +173,7 @@
           "plan-IV-source-face-5"
         ],
         "stopTargets": 3,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -175,6 +185,7 @@
           {
             "id": "plan-I",
             "exactLabels": 6,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -185,6 +196,7 @@
           {
             "id": "plan-II",
             "exactLabels": 8,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -195,6 +207,7 @@
           {
             "id": "plan-III",
             "exactLabels": 4,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -205,6 +218,7 @@
           {
             "id": "plan-IV",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -235,6 +249,7 @@
           "plan-IV-source-face-5"
         ],
         "stopTargets": 3,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -262,7 +277,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.799999999999727,
-    "renderP95Ms": 3.4,
+    "renderP95Ms": 3.8,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -279,7 +294,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 103.49115559731776,
+      "mapSpread": 102.94617693393351,
       "screenshot": "work/map-review/guide-pages-final/_guides_palau-musica_-1440.png",
       "passed": true
     },
@@ -307,11 +322,12 @@
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/palau-musica/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+    "routeNumbering": true,
     "passed": true
   }
 }

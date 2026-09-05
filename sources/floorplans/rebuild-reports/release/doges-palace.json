@@ -1,7 +1,7 @@
 {
   "slug": "doges-palace",
   "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all five source diagrams. Retains actual courtyard, loggia, apartments, council chambers, prison/Bridge of Sighs alignment and roof-frame layer with seventy place identifiers. Nine supported faces give room focus without filling the courtyard or cloning one outer shell across levels.",
     "floorCoverageReview": "All five published diagrams, including restricted attic and prison areas. Spatial inclusion is not admission entitlement.",
@@ -20,7 +20,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:39:16.669Z",
+    "timestamp": "2026-09-05T09:55:46.975Z",
     "slug": "doges-palace",
     "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
     "sourceDigest": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
@@ -34,6 +34,7 @@
           {
             "id": "L0",
             "exactLabels": 11,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -44,6 +45,7 @@
           {
             "id": "loggia",
             "exactLabels": 12,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -54,6 +56,7 @@
           {
             "id": "L1",
             "exactLabels": 20,
+            "guideNumbers": 17,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -64,6 +67,7 @@
           {
             "id": "L2",
             "exactLabels": 13,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -74,6 +78,7 @@
           {
             "id": "attic",
             "exactLabels": 14,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -111,6 +116,7 @@
           "loggia-new-prisons"
         ],
         "stopTargets": 24,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -122,6 +128,7 @@
           {
             "id": "L0",
             "exactLabels": 11,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -132,6 +139,7 @@
           {
             "id": "loggia",
             "exactLabels": 12,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -142,6 +150,7 @@
           {
             "id": "L1",
             "exactLabels": 20,
+            "guideNumbers": 17,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -152,6 +161,7 @@
           {
             "id": "L2",
             "exactLabels": 13,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -162,6 +172,7 @@
           {
             "id": "attic",
             "exactLabels": 14,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -199,6 +210,7 @@
           "loggia-new-prisons"
         ],
         "stopTargets": 24,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -210,6 +222,7 @@
           {
             "id": "L0",
             "exactLabels": 11,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -220,6 +233,7 @@
           {
             "id": "loggia",
             "exactLabels": 12,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -230,6 +244,7 @@
           {
             "id": "L1",
             "exactLabels": 20,
+            "guideNumbers": 17,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -240,6 +255,7 @@
           {
             "id": "L2",
             "exactLabels": 13,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -250,6 +266,7 @@
           {
             "id": "attic",
             "exactLabels": 14,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -287,6 +304,7 @@
           "loggia-new-prisons"
         ],
         "stopTargets": 24,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -314,8 +332,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 5.3,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 5.8,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -332,7 +350,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 89.81341119960894,
+      "mapSpread": 90.44330663141204,
       "screenshot": "work/map-review/guide-pages-final/_guides_doges-palace_-1440.png",
       "passed": true
     },
@@ -343,7 +361,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 99.7031172084235,
+      "mapSpread": 100.4252108182443,
       "screenshot": "work/map-review/guide-pages-final/_guides_doges-palace_-1094.png",
       "passed": true
     },
@@ -354,17 +372,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 118.45921384106893,
+      "mapSpread": 118.34777256603623,
       "screenshot": "work/map-review/guide-pages-final/_guides_doges-palace_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/doges-palace/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+    "routeNumbering": true,
     "passed": true
   }
 }

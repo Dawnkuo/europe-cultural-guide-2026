@@ -1,7 +1,7 @@
 {
   "slug": "giunti-odeon",
   "modelDigest": "64a65857c2351159f618b2666cc964d9dfb9b38e67545d3746eb3ee4ae5e59c0",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all three architect-published renovation plans. Keeps the existing theatre envelope, foyer, stage/screen axis, floor openings and balconies. Three source selection faces and nine descriptive points do not invent numbered rooms.",
     "floorCoverageReview": "Ground and two upper project levels, not a real-time event arrangement.",
@@ -18,7 +18,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:40:46.475Z",
+    "timestamp": "2026-09-05T09:57:23.800Z",
     "slug": "giunti-odeon",
     "modelDigest": "64a65857c2351159f618b2666cc964d9dfb9b38e67545d3746eb3ee4ae5e59c0",
     "sourceDigest": "0f8091906ce4cccde5ec905098a20dbca1746770944114b517a5b972337cecbb",
@@ -32,6 +32,7 @@
           {
             "id": "ground",
             "exactLabels": 5,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -42,6 +43,7 @@
           {
             "id": "first",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -52,6 +54,7 @@
           {
             "id": "second",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -77,6 +80,7 @@
           "ground-auditorium-book-floor"
         ],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -88,6 +92,7 @@
           {
             "id": "ground",
             "exactLabels": 5,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -98,6 +103,7 @@
           {
             "id": "first",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -108,6 +114,7 @@
           {
             "id": "second",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -133,6 +140,7 @@
           "ground-auditorium-book-floor"
         ],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -144,6 +152,7 @@
           {
             "id": "ground",
             "exactLabels": 5,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -154,6 +163,7 @@
           {
             "id": "first",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -164,6 +174,7 @@
           {
             "id": "second",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -189,6 +200,7 @@
           "ground-auditorium-book-floor"
         ],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -214,8 +226,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.7,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 3,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -232,7 +244,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 105.52620600232508,
+      "mapSpread": 106.28091200228423,
       "screenshot": "work/map-review/guide-pages-final/_guides_giunti-odeon_-1440.png",
       "passed": true
     },
@@ -243,7 +255,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 122.06132142315406,
+      "mapSpread": 122.98411126505957,
       "screenshot": "work/map-review/guide-pages-final/_guides_giunti-odeon_-1094.png",
       "passed": true
     },
@@ -254,17 +266,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 152.7615095345044,
+      "mapSpread": 155.0028727055755,
       "screenshot": "work/map-review/guide-pages-final/_guides_giunti-odeon_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/giunti-odeon/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "64a65857c2351159f618b2666cc964d9dfb9b38e67545d3746eb3ee4ae5e59c0",
+    "routeNumbering": true,
     "passed": true
   }
 }

@@ -1,7 +1,7 @@
 {
   "slug": "uffizi",
   "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all three official visitor-plan floors. Preserves109 identifiers and eighty-nine source gallery/service faces,actual U-shaped courtyard void,unequal galleries and north connections. A/B/C/D/E numbering stays on its actual floor; ground reception zones do not gain invented partitions.",
     "floorCoverageReview": "Published ground reception plus both collection floors; Vasari corridor is a separate evidence-limited guide.",
@@ -18,7 +18,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:48:01.808Z",
+    "timestamp": "2026-09-05T10:05:21.893Z",
     "slug": "uffizi",
     "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
     "sourceDigest": "160dc6ddcc85d25026f8218cb24e85636b953e8b87261d79c9a9ae88d944c3bb",
@@ -32,6 +32,7 @@
           {
             "id": "L1",
             "exactLabels": 53,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -42,6 +43,7 @@
           {
             "id": "L2",
             "exactLabels": 44,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -52,6 +54,7 @@
           {
             "id": "L0",
             "exactLabels": 12,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -83,6 +86,7 @@
           "L1-rooms-D19"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -94,6 +98,7 @@
           {
             "id": "L1",
             "exactLabels": 53,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -104,6 +109,7 @@
           {
             "id": "L2",
             "exactLabels": 44,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -114,6 +120,7 @@
           {
             "id": "L0",
             "exactLabels": 12,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -145,6 +152,7 @@
           "L1-rooms-D19"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -156,6 +164,7 @@
           {
             "id": "L1",
             "exactLabels": 53,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -166,6 +175,7 @@
           {
             "id": "L2",
             "exactLabels": 44,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -176,6 +186,7 @@
           {
             "id": "L0",
             "exactLabels": 12,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -207,6 +218,7 @@
           "L1-rooms-D19"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -232,8 +244,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 5.8,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 7.3,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -250,7 +262,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 80.19561935276542,
+      "mapSpread": 84.98465478161489,
       "screenshot": "work/map-review/guide-pages-final/_guides_uffizi_-1440.png",
       "passed": true
     },
@@ -261,7 +273,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 94.29887768812564,
+      "mapSpread": 94.65250897670413,
       "screenshot": "work/map-review/guide-pages-final/_guides_uffizi_-1094.png",
       "passed": true
     },
@@ -272,17 +284,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 108.51434311125256,
+      "mapSpread": 107.27779353011577,
       "screenshot": "work/map-review/guide-pages-final/_guides_uffizi_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/uffizi/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
+    "routeNumbering": true,
     "passed": true
   }
 }

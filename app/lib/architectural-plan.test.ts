@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { containsPoint, independentFloorScale, placeRoomLabels, placeSceneLabels, placesForStop, planViewBounds, polygonPath, serviceMarkerKind, spaceAtPoint, spaceForFeature, spaceForPlace, validateArchitecturalPlan, type ArchitecturalPlan } from './architectural-plan';
+import { containsPoint, independentFloorScale, placeRoomLabels, placeSceneLabels, placesForStop, placesWithGuideNumbers, planViewBounds, polygonPath, serviceMarkerKind, spaceAtPoint, spaceForFeature, spaceForPlace, validateArchitecturalPlan, type ArchitecturalPlan } from './architectural-plan';
 
 const plans = readdirSync('app/data/architectural-plans').filter((name) => name.endsWith('.json'))
   .map((name) => JSON.parse(readFileSync(`app/data/architectural-plans/${name}`, 'utf8')) as ArchitecturalPlan);
@@ -9,6 +9,27 @@ const configs = [...JSON.parse(readFileSync('sources/floorplans/extraction.json'
   ...readdirSync('sources/floorplans/venues').filter((name) => name.endsWith('.json')).map((name) => JSON.parse(readFileSync(`sources/floorplans/venues/${name}`, 'utf8')))];
 
 describe('source-derived architectural plans', () => {
+  it('derives guide numbering without changing room labels, anchors or model data', () => {
+    for (const plan of plans) {
+      const before = JSON.stringify(plan);
+      const marked = placesWithGuideNumbers(plan);
+      expect(marked.map(({ guideNumbers: _, ...place }) => place)).toEqual(plan.places);
+      for (const place of marked) expect(place.guideNumbers).toEqual([...new Set(plan.stopBindings.filter((binding) => binding.placeId === place.id).map((binding) => binding.stopIndex + 1))].sort((a,b) => a-b));
+      expect(JSON.stringify(plan)).toBe(before);
+    }
+  });
+  it('reserves collision-free space for route badges without omitting dense room inventories', () => {
+    for (const plan of plans) for (const floor of plan.floors) {
+      const source = placesWithGuideNumbers(plan).filter((p) => p.floorId === floor.id);
+      const points = source.map((place) => ({ ...place, at: [160, 220] as [number, number] }));
+      const labels = placeRoomLabels(points, 1, [350, 460]);
+      expect(labels).toHaveLength(source.length);
+      for (let i = 0; i < labels.length; i++) for (const other of labels.slice(i + 1)) {
+        const label = labels[i];
+        expect(Math.abs(label.displayAt[0] - other.displayAt[0]) >= (label.width + other.width) / 2 || Math.abs(label.displayAt[1] - other.displayAt[1]) >= (label.height + other.height) / 2).toBe(true);
+      }
+    }
+  });
   it('keeps scene labels near their anchors without turning a dense plan into a label grid', () => {
     const source = plans.find((p) => p.slug === 'st-peters-basilica')!.places.filter((p) => p.floorId === 'basilica');
     const points = source.map((p) => ({ ...p, at: [130 + p.at[0] * .15, 150 + p.at[1] * .15] as [number, number] }));

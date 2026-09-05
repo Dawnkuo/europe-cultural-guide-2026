@@ -1,7 +1,7 @@
 {
   "slug": "florence-duomo",
   "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the academic accessibility plan at native crop resolution. Preserves visible church wall fabric and nave piers; annotations obscure several segments and these are not completed from symmetry or photographs.",
     "floorCoverageReview": "Only the identifiable main church floor. Dome shells, ascent stairs and roof levels remain absent source data.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:39:55.558Z",
+    "timestamp": "2026-09-05T09:56:29.359Z",
     "slug": "florence-duomo",
     "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
     "sourceDigest": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
@@ -30,6 +30,7 @@
           {
             "id": "main",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -49,6 +50,7 @@
         "paintedLabels": 3,
         "selectedSpaces": [],
         "stopTargets": 0,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -60,6 +62,7 @@
           {
             "id": "main",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -79,6 +82,7 @@
         "paintedLabels": 3,
         "selectedSpaces": [],
         "stopTargets": 0,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -90,6 +94,7 @@
           {
             "id": "main",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -109,6 +114,7 @@
         "paintedLabels": 3,
         "selectedSpaces": [],
         "stopTargets": 0,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -133,7 +139,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.799999999999727,
-    "renderP95Ms": 1.3,
+    "renderP95Ms": 1.7,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -150,7 +156,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 146.42798413766528,
+      "mapSpread": 147.5847665374647,
       "screenshot": "work/map-review/guide-pages-final/_guides_florence-duomo_-1440.png",
       "passed": true
     },
@@ -178,11 +184,12 @@
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/florence-duomo/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+    "routeNumbering": true,
     "passed": true
   }
 }

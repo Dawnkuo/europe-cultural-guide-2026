@@ -1,7 +1,7 @@
 {
   "slug": "notre-dame-towers",
   "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the1856 lower and upper south-belfry timber plans. Keeps actual beam lattice, framing gaps and printed structural detail; source ink is not replaced by a generic square tower floor.",
     "floorCoverageReview": "Two historical south-belfry framing levels only, not the reopened full visitor circuit, north tower or galleries.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:44:01.945Z",
+    "timestamp": "2026-09-05T10:01:01.857Z",
     "slug": "notre-dame-towers",
     "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
     "sourceDigest": "9f1ae751ae81ac962144d94abdf29f482fa66fa9b371898b5c0e23e24afc42e9",
@@ -31,6 +31,7 @@
           {
             "id": "south-belfry-lower",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "south-belfry-upper",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -61,6 +63,7 @@
         "paintedLabels": 2,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -72,6 +75,7 @@
           {
             "id": "south-belfry-lower",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -82,6 +86,7 @@
           {
             "id": "south-belfry-upper",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -102,6 +107,7 @@
         "paintedLabels": 2,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -113,6 +119,7 @@
           {
             "id": "south-belfry-lower",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -123,6 +130,7 @@
           {
             "id": "south-belfry-upper",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -143,6 +151,7 @@
         "paintedLabels": 2,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -167,8 +176,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 1.5,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 2,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -185,7 +194,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 82.95070147754019,
+      "mapSpread": 83.99770854932949,
       "screenshot": "work/map-review/guide-pages-final/_guides_notre-dame-towers_-1440.png",
       "passed": true
     },
@@ -196,7 +205,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 99.82575253981426,
+      "mapSpread": 100.2433632044931,
       "screenshot": "work/map-review/guide-pages-final/_guides_notre-dame-towers_-1094.png",
       "passed": true
     },
@@ -207,17 +216,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 105.81980475931744,
+      "mapSpread": 107.54957570022283,
       "screenshot": "work/map-review/guide-pages-final/_guides_notre-dame-towers_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/notre-dame-towers/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+    "routeNumbering": true,
     "passed": true
   }
 }

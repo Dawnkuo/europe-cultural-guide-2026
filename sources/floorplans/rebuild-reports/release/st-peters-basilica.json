@@ -1,7 +1,7 @@
 {
   "slug": "st-peters-basilica",
   "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared church and grotto plans with their complete inventories. Retains156 positioned markers,including repeated79 and historical grotto positions; unpositioned82 remains unpositioned. Native masonry-density extraction and twenty-eight source selection regions preserve actual chapels,pier voids,nave and curved grotto spaces. Printed numbers are HTML labels,not extruded glyphs.",
     "floorCoverageReview": "Specialist church and grotto plans with historical names,independent registration and no measured distances. Dome platforms/inner ring/lantern lack verified plans.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:47:44.664Z",
+    "timestamp": "2026-09-05T10:05:02.958Z",
     "slug": "st-peters-basilica",
     "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
     "sourceDigest": "6a1dc0f4506c0dc2364a80812d21e8713f1c57771905299fa2ba9849d811e429",
@@ -31,6 +31,7 @@
           {
             "id": "basilica",
             "exactLabels": 86,
+            "guideNumbers": 9,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "grottoes",
             "exactLabels": 70,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -74,6 +76,7 @@
           "basilica-right-transept"
         ],
         "stopTargets": 11,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -85,6 +88,7 @@
           {
             "id": "basilica",
             "exactLabels": 86,
+            "guideNumbers": 9,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -95,6 +99,7 @@
           {
             "id": "grottoes",
             "exactLabels": 70,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -128,6 +133,7 @@
           "basilica-right-transept"
         ],
         "stopTargets": 11,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -139,6 +145,7 @@
           {
             "id": "basilica",
             "exactLabels": 86,
+            "guideNumbers": 9,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -149,6 +156,7 @@
           {
             "id": "grottoes",
             "exactLabels": 70,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -182,6 +190,7 @@
           "basilica-right-transept"
         ],
         "stopTargets": 11,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -206,8 +215,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.799999999999727,
-    "renderP95Ms": 5.8,
+    "frameP95Ms": 33.30000000000018,
+    "renderP95Ms": 6.9,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -224,7 +233,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 131.3385656249954,
+      "mapSpread": 134.33913707816941,
       "screenshot": "work/map-review/guide-pages-final/_guides_st-peters-basilica_-1440.png",
       "passed": true
     },
@@ -235,7 +244,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 146.54063344796205,
+      "mapSpread": 149.99779204330898,
       "screenshot": "work/map-review/guide-pages-final/_guides_st-peters-basilica_-1094.png",
       "passed": true
     },
@@ -246,17 +255,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 158.34726759050005,
+      "mapSpread": 159.74148209358535,
       "screenshot": "work/map-review/guide-pages-final/_guides_st-peters-basilica_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/st-peters-basilica/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+    "routeNumbering": true,
     "passed": true
   }
 }

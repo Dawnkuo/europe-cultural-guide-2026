@@ -1,7 +1,7 @@
 {
   "slug": "vatican-museums",
   "modelDigest": "4f11d473b5e9b7c8f8efefbe85201800e072af54e53f5ae50822e831d8ed8a75",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all three official visitor-plan crops. Preserves96 positioned identifiers including59 services/repeated leader endpoints and twenty-two source-connected regions. Basement20/21 share one actual source region; upper6/7/8 remain a continuous gallery with no invented partitions. Unsupported enclosed-face claims for first18/upper first5 are rejected while exact endpoints stay. Lower-garden reference is not turned into a second-floor garden slab.",
     "floorCoverageReview": "Three visitor diagrams with independent source registration,not surveyed construction plans. Service and collection numbers retain distinct semantics.",
@@ -18,7 +18,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:48:29.455Z",
+    "timestamp": "2026-09-05T10:05:52.692Z",
     "slug": "vatican-museums",
     "modelDigest": "4f11d473b5e9b7c8f8efefbe85201800e072af54e53f5ae50822e831d8ed8a75",
     "sourceDigest": "a0c97704c9af1b096f9e9fa12061acd6998f112206af01c24b7cfda7dbf6c9ff",
@@ -32,6 +32,7 @@
           {
             "id": "basement",
             "exactLabels": 9,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -42,6 +43,7 @@
           {
             "id": "first",
             "exactLabels": 71,
+            "guideNumbers": 12,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -52,6 +54,7 @@
           {
             "id": "second",
             "exactLabels": 16,
+            "guideNumbers": 6,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -89,6 +92,7 @@
           "first-sistine-chapel"
         ],
         "stopTargets": 18,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -100,6 +104,7 @@
           {
             "id": "basement",
             "exactLabels": 9,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -110,6 +115,7 @@
           {
             "id": "first",
             "exactLabels": 71,
+            "guideNumbers": 12,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -120,6 +126,7 @@
           {
             "id": "second",
             "exactLabels": 16,
+            "guideNumbers": 6,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -157,6 +164,7 @@
           "first-sistine-chapel"
         ],
         "stopTargets": 18,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -168,6 +176,7 @@
           {
             "id": "basement",
             "exactLabels": 9,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -178,6 +187,7 @@
           {
             "id": "first",
             "exactLabels": 71,
+            "guideNumbers": 12,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -188,6 +198,7 @@
           {
             "id": "second",
             "exactLabels": 16,
+            "guideNumbers": 6,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -225,6 +236,7 @@
           "first-sistine-chapel"
         ],
         "stopTargets": 18,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -251,7 +263,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 4.3,
+    "renderP95Ms": 5.1,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -290,17 +302,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 159.43952562560017,
+      "mapSpread": 152.61245745106885,
       "screenshot": "work/map-review/guide-pages-final/_guides_vatican-museums_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/vatican-museums/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "4f11d473b5e9b7c8f8efefbe85201800e072af54e53f5ae50822e831d8ed8a75",
+    "routeNumbering": true,
     "passed": true
   }
 }

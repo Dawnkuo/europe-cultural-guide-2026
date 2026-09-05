@@ -1,7 +1,7 @@
 {
   "slug": "colosseum",
   "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared both themes of the archaeological DAI plate: hypogeum and podium preserve their distinct source ink, elliptical corridors, radial structures and archaeological detail. The source's reconstruction proposal status is explicit; the model does not claim all inferred ancient fabric survives today.",
     "floorCoverageReview": "Two archaeological plan themes, not two copies of a colored visitor route or a complete modern visitor building.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:38:37.628Z",
+    "timestamp": "2026-09-05T09:55:01.761Z",
     "slug": "colosseum",
     "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
     "sourceDigest": "194075112aea65e2b0a9f6c8f5f6cbf07a0ce91129307978b063b5601a2806f3",
@@ -31,6 +31,7 @@
           {
             "id": "hypogeum-level-2",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "podium-level-3",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -61,6 +63,7 @@
         "paintedLabels": 10,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -72,6 +75,7 @@
           {
             "id": "hypogeum-level-2",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -82,6 +86,7 @@
           {
             "id": "podium-level-3",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -102,6 +107,7 @@
         "paintedLabels": 10,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -113,6 +119,7 @@
           {
             "id": "hypogeum-level-2",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -123,6 +130,7 @@
           {
             "id": "podium-level-3",
             "exactLabels": 5,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -143,6 +151,7 @@
         "paintedLabels": 10,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -168,7 +177,7 @@
     "frames": 134,
     "frameP50Ms": 16.69999999999891,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2,
+    "renderP95Ms": 2.3,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -185,7 +194,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 109.79623932271424,
+      "mapSpread": 109.03993415756956,
       "screenshot": "work/map-review/guide-pages-final/_guides_colosseum_-1440.png",
       "passed": true
     },
@@ -196,7 +205,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 123.06781472353879,
+      "mapSpread": 123.01312081338646,
       "screenshot": "work/map-review/guide-pages-final/_guides_colosseum_-1094.png",
       "passed": true
     },
@@ -207,17 +216,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 128.05136633655053,
+      "mapSpread": 129.49577026806526,
       "screenshot": "work/map-review/guide-pages-final/_guides_colosseum_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/colosseum/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+    "routeNumbering": true,
     "passed": true
   }
 }

@@ -1,7 +1,7 @@
 {
   "slug": "pantheon",
   "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the complete specialist plan and legend. Thick circular cella masonry, angled chapels, apse,niches,bronze portal and three portico bays follow native outlines. All eighteen identifiers retain their names. Eight connected white-source selection regions preserve chapel angles without replacing the original with an ideal circle.",
     "floorCoverageReview": "Single visitor church floor; the exterior square and maintenance levels are not included.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:44:50.805Z",
+    "timestamp": "2026-09-05T10:01:54.002Z",
     "slug": "pantheon",
     "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
     "sourceDigest": "3efb12cd15f6ad7228ef8e60987e6428a0572247ab44623d79d6c5dafdc79f39",
@@ -30,6 +30,7 @@
           {
             "id": "L0",
             "exactLabels": 18,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -56,6 +57,7 @@
           "L0-sanctuary"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -67,6 +69,7 @@
           {
             "id": "L0",
             "exactLabels": 18,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -93,6 +96,7 @@
           "L0-sanctuary"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -104,6 +108,7 @@
           {
             "id": "L0",
             "exactLabels": 18,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -130,6 +135,7 @@
           "L0-sanctuary"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -153,8 +159,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.9,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 3.5,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -171,7 +177,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 163.86544836472885,
+      "mapSpread": 164.3867985245851,
       "screenshot": "work/map-review/guide-pages-final/_guides_pantheon_-1440.png",
       "passed": true
     },
@@ -182,7 +188,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 173.38846952136484,
+      "mapSpread": 174.16777389410365,
       "screenshot": "work/map-review/guide-pages-final/_guides_pantheon_-1094.png",
       "passed": true
     },
@@ -193,17 +199,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 154.15317461370108,
+      "mapSpread": 156.560124728834,
       "screenshot": "work/map-review/guide-pages-final/_guides_pantheon_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/pantheon/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+    "routeNumbering": true,
     "passed": true
   }
 }

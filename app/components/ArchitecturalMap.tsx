@@ -4,7 +4,8 @@ import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowUpDown, MapPin, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
 import type { GuideRecord } from '../data/types';
 import mapNotes from '../data/architectural-map-notes.json';
-import { placeRoomLabels, placesForStop, planTones, polygonPath, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint, type PlanPlace } from '../lib/architectural-plan';
+import stopNotes from '../data/architectural-stop-notes.json';
+import { placeRoomLabels, placesForStop, placesWithGuideNumbers, planTones, polygonPath, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint, type PlanPlace } from '../lib/architectural-plan';
 import './architectural-map.css';
 import { PlanPlaceMarker } from './PlanPlaceMarker';
 
@@ -17,6 +18,7 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
   const [view, setView] = useState<'2d' | '3d'>('3d');
   const [floorId, setFloorId] = useState(plan.floors[0].id);
   const [selected, setSelected] = useState<string>();
+  const [activeStop, setActiveStop] = useState<number>();
   const [zoom, setZoom] = useState(1);
   const [sceneCommand, setSceneCommand] = useState({ id: 0, action: 'reset' });
   const [webglFailed, setWebglFailed] = useState(false);
@@ -26,7 +28,9 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
   const svg = useRef<SVGSVGElement>(null);
   const drag = useRef<{ id: number; x: number; y: number; left: number; top: number; moved: boolean } | null>(null);
   const floor = plan.floors.find((f) => f.id === floorId)!;
-  const floorPlaces = useMemo(() => plan.places.filter((p) => p.floorId === floorId), [plan, floorId]);
+  const numberedPlaces = useMemo(() => placesWithGuideNumbers(plan), [plan]);
+  const floorPlaces = useMemo(() => numberedPlaces.filter((p) => p.floorId === floorId), [numberedPlaces, floorId]);
+  const locatedStops = guide.spatial.stops.filter((_, index) => placesForStop(plan, index).length > 0).length;
   const pixelsPerUnit = Math.min((availableSize.width - 50) / (floor.bounds[2] - floor.bounds[0]), (availableSize.height - 50) / (floor.bounds[3] - floor.bounds[1]));
   const minX = (floor.bounds[0] + floor.bounds[2]) / 2 - availableSize.width / pixelsPerUnit / 2;
   const minY = (floor.bounds[1] + floor.bounds[3]) / 2 - availableSize.height / pixelsPerUnit / 2;
@@ -54,9 +58,10 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
     return () => observer.disconnect();
   }, []);
 
-  function selectPlace(place: PlanPlace, focus = false) {
+  function selectPlace(place: PlanPlace, focus = false, stopIndex?: number) {
     setSelected(place.id);
     setFloorId(place.floorId);
+    setActiveStop(stopIndex);
     if (focus && view === '2d') requestAnimationFrame(() => {
       const node = viewport.current?.querySelector<HTMLElement>(`[data-place-id="${place.id}"]`);
       const host = viewport.current;
@@ -86,6 +91,11 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
           <button type="button" aria-label="放大地图" title="放大" onClick={() => command('in')}><ZoomIn size={19} /></button>
           <button type="button" aria-label="重置地图视角" title="重置视角" onClick={() => command('reset')}><RotateCcw size={18} /></button>
         </div>
+      </div>
+      <div className="architectural-map__route-key">
+        <span><b className="architectural-map__stop-number" aria-hidden="true">1</b>导览序号</span>
+        <span>展厅 / 空间</span>
+        <strong data-located-stops={locatedStops}>已定位 {locatedStops}/{guide.spatial.stops.length} 个步骤</strong>
       </div>
       {webglFailed && <output className="architectural-map__notice">3D 当前不可用，已切换到可操作的俯视地图。</output>}
       {view === '3d' ? active && <Suspense fallback={<div className="architectural-map__loading">正在加载分层地图</div>}>
@@ -150,8 +160,8 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
             width: place.width * pixelsPerUnit * zoom, height: place.height * pixelsPerUnit * zoom,
           }}>
               <button className="architectural-map__room" type="button" title={place.name} data-place-kind={place.kind} aria-label={`${place.label} ${place.name}`} aria-pressed={selected === place.id}
-                data-room-id={place.kind === 'room' ? place.id : undefined} style={{ fontSize:13*zoom, borderWidth:zoom, borderRadius:2*zoom }}
-                onClick={() => { if (!drag.current?.moved) selectPlace(place); }}><PlanPlaceMarker place={place} /></button>
+                data-room-id={place.kind === 'room' ? place.id : undefined} aria-describedby={place.guideNumbers?.length ? `${plan.slug}-${place.id}-guide-2d` : undefined} style={{ fontSize:13*zoom, borderWidth:zoom, borderRadius:2*zoom }}
+                onClick={() => { if (!drag.current?.moved) selectPlace(place); }}><PlanPlaceMarker place={place} zoom={zoom} descriptionId={place.guideNumbers?.length ? `${plan.slug}-${place.id}-guide-2d` : undefined} /></button>
           </div>)}
         </div>
         </div>
@@ -182,9 +192,15 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
       </details>
       <ol className="architectural-map__stops">{guide.spatial.stops.map((stop, index) => {
         const places = placesForStop(plan, index);
-        return <li key={`${index}-${stop}`} data-stop-index={index}>
-          {places.length === 1 ? <button type="button" className="architectural-map__stop-focus" onClick={() => selectPlace(places[0], true)}><MapPin size={15} aria-hidden="true" />{stop}</button> : <span>{stop}</span>}
-          {places.length > 1 && <div className="architectural-map__stop-targets">{places.map((place) => <button key={place.id} type="button" aria-label={`定位：${place.name}`} onClick={() => selectPlace(place, true)}><MapPin size={15} aria-hidden="true" />{place.name}</button>)}</div>}
+        const selectedStop = activeStop === index || (activeStop === undefined && places.some((place) => place.id === selected));
+        return <li key={`${index}-${stop}`} data-stop-index={index} data-location-state={places.length ? 'located' : 'unlocated'} data-selected={selectedStop}>
+          <span className="architectural-map__stop-number" aria-hidden="true">{index + 1}</span>
+          <div className="architectural-map__stop-body">
+            {places.length === 1 ? <button type="button" className="architectural-map__stop-focus" aria-current={selectedStop ? 'step' : undefined} onClick={() => selectPlace(places[0], true, index)}><MapPin size={15} aria-hidden="true" />{stop}</button> : <span>{stop}</span>}
+            {places.length === 1 && <small className="architectural-map__stop-location">{plan.floors.find((floor) => floor.id === places[0].floorId)!.label} · {places[0].label}</small>}
+            {places.length > 1 && <div className="architectural-map__stop-targets">{places.map((place) => <button key={place.id} type="button" aria-label={`定位：${place.name}`} onClick={() => selectPlace(place, true, index)}><MapPin size={15} aria-hidden="true" /><span>{place.name}<small className="architectural-map__stop-location">{plan.floors.find((floor) => floor.id === place.floorId)!.label} · {place.label}</small></span></button>)}</div>}
+            {!places.length && <p className="architectural-map__stop-unlocated"><strong>未定位</strong>{(stopNotes as Record<string, string[]>)[plan.slug]?.[index] ?? '当前平面资料未能定位此步骤，保留文字导览。'}</p>}
+          </div>
         </li>;
       })}</ol>
     </div>

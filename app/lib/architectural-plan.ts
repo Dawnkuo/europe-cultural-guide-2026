@@ -21,6 +21,8 @@ export type PlanPlace = {
   name: string;
   kind: 'room' | 'service' | 'area' | 'object';
   at: MapPoint;
+  // Derived display metadata, separate from the source's room number.
+  guideNumbers?: number[];
 };
 export type PlanSpace = { id: string; floorId: string; label: string; placeId: string; polygons: MapPolygon[]; featureIds?: string[]; scope?: 'room' | 'collection' | 'floor' };
 export type PlanOpening = { id: string; floorId: string; spaceId: string; segment: [MapPoint, MapPoint] };
@@ -77,6 +79,26 @@ export function placesForStop(plan: ArchitecturalPlan, stopIndex: number): PlanP
   return plan.stopBindings.filter((binding) => binding.stopIndex === stopIndex)
     .map((binding) => plan.places.find((place) => place.id === binding.placeId))
     .filter((place): place is PlanPlace => Boolean(place));
+}
+
+export function placesWithGuideNumbers(plan: ArchitecturalPlan): PlanPlace[] {
+  const numbers = new Map<string, Set<number>>();
+  for (const binding of plan.stopBindings) {
+    const values = numbers.get(binding.placeId) ?? new Set<number>();
+    values.add(binding.stopIndex + 1);
+    numbers.set(binding.placeId, values);
+  }
+  return plan.places.map((place) => ({ ...place, guideNumbers: [...(numbers.get(place.id) ?? [])].sort((a, b) => a - b) }));
+}
+
+export function guideNumberWidth(numbers: number[] = []) {
+  return numbers.length ? Math.max(20, numbers.join('·').length * 8 + 8) : 0;
+}
+
+function placeLabelWidth(place: PlanPlace) {
+  const room = Math.max(26, (serviceMarkerKind(place) ? 14 : roomLabelWidth(place.label)) + 12);
+  const badge = guideNumberWidth(place.guideNumbers);
+  return room + (badge ? badge + 4 : 0);
 }
 
 export function independentFloorScale(floor: ArchitecturalFloor, span = 16) {
@@ -138,7 +160,7 @@ function roomLabelWidth(label: string) {
 function packLabelRows(places: PlanPlace[], pixelsPerUnit: number, extent: [number, number]): PlacedLabel[] {
   const gap = 2 / pixelsPerUnit, margin = 3;
   const labels = places.map((place) => ({ ...place, displayAt: [...place.at] as MapPoint,
-    width: (serviceMarkerKind(place) ? 26 : Math.max(26, roomLabelWidth(place.label) + 12)) / pixelsPerUnit, height: 23 / pixelsPerUnit }));
+    width: placeLabelWidth(place) / pixelsPerUnit, height: 23 / pixelsPerUnit }));
   const rows: Array<{ labels: PlacedLabel[]; width: number }> = [];
   for (const label of labels.sort((a, b) => b.width - a.width || a.id.localeCompare(b.id))) {
     const row = rows.filter((r) => r.width + gap + label.width <= extent[0] - margin * 2)
@@ -169,8 +191,7 @@ function packLabelRows(places: PlanPlace[], pixelsPerUnit: number, extent: [numb
 export function placeRoomLabels(places: PlanPlace[], pixelsPerUnit: number, extent?: [number, number]): PlacedLabel[] {
   const placed: PlacedLabel[] = [];
   for (const place of [...places].sort((a, b) => a.at[1] - b.at[1] || a.at[0] - b.at[0] || a.id.localeCompare(b.id))) {
-    const textWidth = serviceMarkerKind(place) ? 14 : roomLabelWidth(place.label);
-    const width = Math.max(26, textWidth + 12) / pixelsPerUnit;
+    const width = placeLabelWidth(place) / pixelsPerUnit;
     const height = 23 / pixelsPerUnit;
     const within = (at: MapPoint) => !extent || (at[0] >= width / 2 + 3 && at[1] >= height / 2 + 3 && at[0] + width / 2 + 3 <= extent[0] && at[1] + height / 2 + 3 <= extent[1]);
     const collides = (at: MapPoint) => placed.some((other) =>
@@ -209,9 +230,9 @@ export function planViewBounds(floor: ArchitecturalFloor, labels: PlacedLabel[])
 // inventory remains in the 2D plan and the accessible location selector.
 export function placeSceneLabels(places: PlanPlace[], extent: [number, number], selectedId?: string): PlacedLabel[] {
   const placed: PlacedLabel[] = [];
-  const ordered = [...places].sort((a, b) => Number(b.id === selectedId) - Number(a.id === selectedId) || a.at[1] - b.at[1] || a.at[0] - b.at[0] || a.id.localeCompare(b.id));
+  const ordered = [...places].sort((a, b) => Number(b.id === selectedId) - Number(a.id === selectedId) || Number(Boolean(b.guideNumbers?.length)) - Number(Boolean(a.guideNumbers?.length)) || a.at[1] - b.at[1] || a.at[0] - b.at[0] || a.id.localeCompare(b.id));
   for (const place of ordered) {
-    const width = Math.max(26, (serviceMarkerKind(place) ? 14 : roomLabelWidth(place.label)) + 12);
+    const width = placeLabelWidth(place);
     const height = 24;
     const candidates: MapPoint[] = [[...place.at]];
     for (const distance of [16, 28]) for (let i = 0; i < 8; i++) candidates.push([place.at[0] + Math.cos(i * Math.PI / 4) * distance, place.at[1] + Math.sin(i * Math.PI / 4) * distance]);

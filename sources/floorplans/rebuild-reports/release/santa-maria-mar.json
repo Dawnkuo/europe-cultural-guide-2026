@@ -1,7 +1,7 @@
 {
   "slug": "santa-maria-mar",
   "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the academic orthographic composite plan: west entry,nave piers,side chapels and ambulatory/apse are retained. All four descriptive zones correspond to visible building areas; vault/detail lines do not become extra partitions.",
     "floorCoverageReview": "Main church only; crypt,museum,towers and multi-level roof have no reviewed plans. No room numbering exists in this source.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:46:51.180Z",
+    "timestamp": "2026-09-05T10:04:05.183Z",
     "slug": "santa-maria-mar",
     "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
     "sourceDigest": "d4056b802a37ee8e096393b931738c856a85425faf7a54e3b98ff2a20188c131",
@@ -30,6 +30,7 @@
           {
             "id": "main-level",
             "exactLabels": 4,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -49,6 +50,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -60,6 +62,7 @@
           {
             "id": "main-level",
             "exactLabels": 4,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -79,6 +82,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -90,6 +94,7 @@
           {
             "id": "main-level",
             "exactLabels": 4,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -109,6 +114,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -132,8 +138,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 1.7,
+    "frameP95Ms": 16.800000000000182,
+    "renderP95Ms": 2.1,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -150,7 +156,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 128.1065070371421,
+      "mapSpread": 124.55360410515479,
       "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-1440.png",
       "passed": true
     },
@@ -161,7 +167,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 119.34475475411237,
+      "mapSpread": 120.85247531164416,
       "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-1094.png",
       "passed": true
     },
@@ -172,17 +178,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 99.71727148610702,
+      "mapSpread": 106.96624027745423,
       "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/santa-maria-mar/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+    "routeNumbering": true,
     "passed": true
   }
 }

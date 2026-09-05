@@ -1,7 +1,7 @@
 {
   "slug": "accademia-florence",
   "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared both official floor crops: irregular main galleries, the Tribune, side collection rooms, upper galleries and the underlying lower-level reference remain distinct. Keeps 6a/6b/6c separately and all twenty place identifiers. Five source-connected selection areas do not introduce new partitions.",
     "floorCoverageReview": "Both published visitor levels; lower-level reference lines on the upper diagram stay flat.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:36:00.079Z",
+    "timestamp": "2026-09-05T09:51:50.940Z",
     "slug": "accademia-florence",
     "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
     "sourceDigest": "f01a1af6dfc684436e47e4aa48479a0c7d52573d66169ba11fed42e41dced2d9",
@@ -31,6 +31,7 @@
           {
             "id": "L0",
             "exactLabels": 14,
+            "guideNumbers": 8,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "L1",
             "exactLabels": 6,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -68,6 +70,7 @@
           "L0-instruments"
         ],
         "stopTargets": 8,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -79,6 +82,7 @@
           {
             "id": "L0",
             "exactLabels": 14,
+            "guideNumbers": 8,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -89,6 +93,7 @@
           {
             "id": "L1",
             "exactLabels": 6,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -116,6 +121,7 @@
           "L0-instruments"
         ],
         "stopTargets": 8,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -127,6 +133,7 @@
           {
             "id": "L0",
             "exactLabels": 14,
+            "guideNumbers": 8,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -137,6 +144,7 @@
           {
             "id": "L1",
             "exactLabels": 6,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -164,6 +172,7 @@
           "L0-instruments"
         ],
         "stopTargets": 8,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -189,7 +198,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 2.8,
+    "renderP95Ms": 3.9,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -206,7 +215,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 109.59279674825112,
+      "mapSpread": 110.97514324701488,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-florence_-1440.png",
       "passed": true
     },
@@ -217,7 +226,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 121.94748036954135,
+      "mapSpread": 123.55293676153666,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-florence_-1094.png",
       "passed": true
     },
@@ -228,17 +237,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 122.35604383175269,
+      "mapSpread": 127.75989692281406,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-florence_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/accademia-florence/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
+    "routeNumbering": true,
     "passed": true
   }
 }

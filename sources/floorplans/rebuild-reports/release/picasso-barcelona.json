@@ -1,7 +1,7 @@
 {
   "slug": "picasso-barcelona",
   "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared both official palace/gallery plans. Retains all forty-seven places, rooms1-16,B1,B2 and named services. Twenty-four source regions preserve real palace courtyards, partitions and shared gallery groups instead of assigning one polygon per artwork.",
     "floorCoverageReview": "Published ground service/courtyard and first collection/exhibition levels.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:45:14.027Z",
+    "timestamp": "2026-09-05T10:02:18.230Z",
     "slug": "picasso-barcelona",
     "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
     "sourceDigest": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
@@ -31,6 +31,7 @@
           {
             "id": "L0",
             "exactLabels": 20,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "L1",
             "exactLabels": 27,
+            "guideNumbers": 17,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -83,6 +85,7 @@
           "L1-rooms-B2"
         ],
         "stopTargets": 23,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -94,6 +97,7 @@
           {
             "id": "L0",
             "exactLabels": 20,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -104,6 +108,7 @@
           {
             "id": "L1",
             "exactLabels": 27,
+            "guideNumbers": 17,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -146,6 +151,7 @@
           "L1-rooms-B2"
         ],
         "stopTargets": 23,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -157,6 +163,7 @@
           {
             "id": "L0",
             "exactLabels": 20,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -167,6 +174,7 @@
           {
             "id": "L1",
             "exactLabels": 27,
+            "guideNumbers": 17,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -209,6 +217,7 @@
           "L1-rooms-B2"
         ],
         "stopTargets": 23,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -233,8 +242,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 4.8,
+    "frameP95Ms": 16.800000000000182,
+    "renderP95Ms": 6.1,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -251,7 +260,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 110.1821244431363,
+      "mapSpread": 110.31005895753628,
       "screenshot": "work/map-review/guide-pages-final/_guides_picasso-barcelona_-1440.png",
       "passed": true
     },
@@ -262,7 +271,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 122.15131484639767,
+      "mapSpread": 122.31220198382262,
       "screenshot": "work/map-review/guide-pages-final/_guides_picasso-barcelona_-1094.png",
       "passed": true
     },
@@ -273,17 +282,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 133.62640088752443,
+      "mapSpread": 124.87507813683175,
       "screenshot": "work/map-review/guide-pages-final/_guides_picasso-barcelona_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/picasso-barcelona/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+    "routeNumbering": true,
     "passed": true
   }
 }

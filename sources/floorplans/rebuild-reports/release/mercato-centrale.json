@@ -1,7 +1,7 @@
 {
   "slug": "mercato-centrale",
   "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the municipal1869 ground plan and renovated upper-floor project. Historic stall grid remains flat detail, red ironwork and resolved coarse perimeter structure remain masonry. The upper open hall follows its actual project outline; neither level is replaced by a generic market grid.",
     "floorCoverageReview": "Historic ground and renovation upper plan with independent scales; not current stall numbers or tenants.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:43:24.387Z",
+    "timestamp": "2026-09-05T10:00:21.304Z",
     "slug": "mercato-centrale",
     "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
     "sourceDigest": "b71738cd8a1b56ca0c0799dc0df8f53d120e314fedeaad87d74cd7e77f7fb00b",
@@ -31,6 +31,7 @@
           {
             "id": "ground-historic",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "upper",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -68,6 +70,7 @@
           "ground-historic-historic-market-floor"
         ],
         "stopTargets": 3,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -79,6 +82,7 @@
           {
             "id": "ground-historic",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -89,6 +93,7 @@
           {
             "id": "upper",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -116,6 +121,7 @@
           "ground-historic-historic-market-floor"
         ],
         "stopTargets": 3,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -127,6 +133,7 @@
           {
             "id": "ground-historic",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -137,6 +144,7 @@
           {
             "id": "upper",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -164,6 +172,7 @@
           "ground-historic-historic-market-floor"
         ],
         "stopTargets": 3,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -188,8 +197,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 1.7,
+    "frameP95Ms": 16.799999999999272,
+    "renderP95Ms": 2.4,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -206,7 +215,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 121.18369312334974,
+      "mapSpread": 121.97291183006976,
       "screenshot": "work/map-review/guide-pages-final/_guides_mercato-centrale_-1440.png",
       "passed": true
     },
@@ -217,7 +226,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 138.26921881463565,
+      "mapSpread": 138.40400292289274,
       "screenshot": "work/map-review/guide-pages-final/_guides_mercato-centrale_-1094.png",
       "passed": true
     },
@@ -228,17 +237,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 138.87518027734913,
+      "mapSpread": 139.4229986044702,
       "screenshot": "work/map-review/guide-pages-final/_guides_mercato-centrale_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/mercato-centrale/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+    "routeNumbering": true,
     "passed": true
   }
 }

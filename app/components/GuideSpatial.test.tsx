@@ -24,6 +24,39 @@ vi.mock('./ArchitecturalScene', () => ({ default: ({ onFailure }: { onFailure: (
 }));
 
 describe('GuideSpatial', () => {
+  it('shows Uffizi guide step 2 separately from the source room A9 and focuses the same room', async () => {
+    const user = userEvent.setup();
+    const guide = guideCatalog.find((item) => item.slug === 'uffizi')!;
+    render(<GuideSpatial guide={guide} />);
+    await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    await user.click(screen.getByRole('button', { name: guide.spatial.stops[1] }));
+    const room = screen.getByRole('button', { name: 'A9 A9' });
+    expect(room.querySelector('[data-place-label]')).toHaveTextContent(/^A9$/);
+    expect(room.querySelector('[data-guide-numbers]')).toHaveTextContent(/^2$/);
+    expect(room).toHaveAccessibleDescription('导览步骤 2');
+    expect(screen.getByRole('button', { name: guide.spatial.stops[1] })).toHaveAttribute('aria-current', 'step');
+    await user.click(screen.getByRole('button', { name: '3D' }));
+    await user.click(screen.getByRole('button', { name: '2D 俯视' }));
+    expect(screen.getByRole('button', { name: 'A9 A9' })).toHaveAttribute('aria-pressed', 'true');
+  });
+  it('makes all five unlocated Florence dome steps explicit without inventing ground-floor pins', async () => {
+    const user = userEvent.setup();
+    const guide = guideCatalog.find((item) => item.slug === 'florence-duomo')!;
+    render(<GuideSpatial guide={guide} />);
+    await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    expect(screen.getByText('已定位 0/5 个步骤')).toBeInTheDocument();
+    const stops = [...document.querySelectorAll('.architectural-map__stops li')];
+    expect(stops).toHaveLength(5);
+    for (const [index, stop] of stops.entries()) {
+      expect(stop).toHaveAttribute('data-location-state', 'unlocated');
+      expect(stop.querySelector('.architectural-map__stop-number')).toHaveTextContent(String(index + 1));
+      expect(stop).toHaveTextContent('未定位');
+      expect(stop.querySelector('button')).toBeNull();
+    }
+    expect(stops[3]).toHaveTextContent('穹顶内缘步道，位于上层');
+    expect(stops[4]).toHaveTextContent('顶部露台，位于上层');
+    expect(document.querySelectorAll('.architectural-map__2d-labels [data-guide-numbers]')).toHaveLength(0);
+  });
   it('keeps technical extraction records out of visitor notes without hiding missing areas', async () => {
     const user = userEvent.setup();
     render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'vatican-museums')!} />);
@@ -47,7 +80,7 @@ describe('GuideSpatial', () => {
       expect(button).toHaveAccessibleName(`${place.label} ${place.name}`);
       expect(button).toHaveAttribute('title', place.name);
       if (place.kind === 'room') {
-        expect(button.querySelector('.sr-only')).toBeNull();
+        expect(button.querySelector('[data-place-label]')).not.toHaveClass('sr-only');
         expect(button).toHaveTextContent(place.label);
       }
     }

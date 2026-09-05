@@ -1,7 +1,7 @@
 {
   "slug": "sforza",
   "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the Polimi2024 Piazza d'Armi-level raster in unrotated native720x480 page coordinates. Corrected all four anchors against its printed courtyard names and actual right-hand Filarete gate gap. Retains thick black core/rooms/towers and flat small linework; the red study circle and pale demolished Ghirlanda are excluded. Official2025 upper axonometric blocks were rejected rather than cloned as floor plates.",
     "floorCoverageReview": "Principal courtyard-level historical fabric only. Upper museum galleries remain unavailable orthographic geometry.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:47:00.477Z",
+    "timestamp": "2026-09-05T10:04:14.692Z",
     "slug": "sforza",
     "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
     "sourceDigest": "e6cbe669780d75ba15c3a950f9a35345c0234490f08076cff4d7285a09247808",
@@ -30,6 +30,7 @@
           {
             "id": "ground",
             "exactLabels": 4,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -49,6 +50,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -60,6 +62,7 @@
           {
             "id": "ground",
             "exactLabels": 4,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -79,6 +82,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -90,6 +94,7 @@
           {
             "id": "ground",
             "exactLabels": 4,
+            "guideNumbers": 4,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -109,6 +114,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -133,7 +139,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.799999999999727,
-    "renderP95Ms": 1.6,
+    "renderP95Ms": 2.1,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -150,7 +156,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 109.58763679239115,
+      "mapSpread": 110.20668810226238,
       "screenshot": "work/map-review/guide-pages-final/_guides_sforza_-1440.png",
       "passed": true
     },
@@ -161,7 +167,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 125.73962134916614,
+      "mapSpread": 126.90341023190021,
       "screenshot": "work/map-review/guide-pages-final/_guides_sforza_-1094.png",
       "passed": true
     },
@@ -172,17 +178,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 100.03152131743326,
+      "mapSpread": 105.88071807706118,
       "screenshot": "work/map-review/guide-pages-final/_guides_sforza_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/sforza/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+    "routeNumbering": true,
     "passed": true
   }
 }

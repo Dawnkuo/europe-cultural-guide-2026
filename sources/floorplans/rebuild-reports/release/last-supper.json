@@ -1,7 +1,7 @@
 {
   "slug": "last-supper",
   "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the complete official single-level plan. Nineteen source checkpoints protect twelve wall segments, three artwork/locker details and four entry gaps. All twelve printed/descriptive places and four source regions remain distinct.",
     "floorCoverageReview": "Complete published museum visitor plan, not the separate Santa Maria delle Grazie church.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:42:06.299Z",
+    "timestamp": "2026-09-05T09:58:53.435Z",
     "slug": "last-supper",
     "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
     "sourceDigest": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
@@ -30,6 +30,7 @@
           {
             "id": "L0",
             "exactLabels": 12,
+            "guideNumbers": 6,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -54,6 +55,7 @@
           "L0-refectory"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -65,6 +67,7 @@
           {
             "id": "L0",
             "exactLabels": 12,
+            "guideNumbers": 6,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -89,6 +92,7 @@
           "L0-refectory"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -100,6 +104,7 @@
           {
             "id": "L0",
             "exactLabels": 12,
+            "guideNumbers": 6,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -124,6 +129,7 @@
           "L0-refectory"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -147,8 +153,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.5,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 3.7,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -165,7 +171,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 127.53910830087368,
+      "mapSpread": 127.75936430659637,
       "screenshot": "work/map-review/guide-pages-final/_guides_last-supper_-1440.png",
       "passed": true
     },
@@ -176,7 +182,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 142.7787121349616,
+      "mapSpread": 143.59086404385116,
       "screenshot": "work/map-review/guide-pages-final/_guides_last-supper_-1094.png",
       "passed": true
     },
@@ -187,17 +193,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 118.57081979550051,
+      "mapSpread": 124.5444833372386,
       "screenshot": "work/map-review/guide-pages-final/_guides_last-supper_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/last-supper/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+    "routeNumbering": true,
     "passed": true
   }
 }

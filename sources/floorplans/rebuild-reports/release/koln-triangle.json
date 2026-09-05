@@ -1,7 +1,7 @@
 {
   "slug": "koln-triangle",
   "modelDigest": "2e1babc3e297516d651ce9972fd2cb3ca086860df6987e2c1123c863f62ec6cf",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all three architect-monograph crops. Ground structure includes104 native filled masonry/core/column profiles; office59 and event55 retain their curved walls. Thin treads, furniture and door swings remain flat. Removed the ground slab previously derived from a dashed upper-storey projection. Both upper floor footprints retain the full native curved exterior rather than a sixteen-point approximation.",
     "floorCoverageReview": "Ground, representative office9-27 and event28 only. The public observation platform is NOT this event floor.",
@@ -18,7 +18,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:41:00.219Z",
+    "timestamp": "2026-09-05T09:57:37.722Z",
     "slug": "koln-triangle",
     "modelDigest": "2e1babc3e297516d651ce9972fd2cb3ca086860df6987e2c1123c863f62ec6cf",
     "sourceDigest": "0374f07240ef75e38d40c861410ff9bff6552226bd6f373107104750ff7dba7b",
@@ -32,6 +32,7 @@
           {
             "id": "ground",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -42,6 +43,7 @@
           {
             "id": "office-typical",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -52,6 +54,7 @@
           {
             "id": "event-28",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -73,6 +76,7 @@
         "paintedLabels": 3,
         "selectedSpaces": [],
         "stopTargets": 0,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -84,6 +88,7 @@
           {
             "id": "ground",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -94,6 +99,7 @@
           {
             "id": "office-typical",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -104,6 +110,7 @@
           {
             "id": "event-28",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -125,6 +132,7 @@
         "paintedLabels": 3,
         "selectedSpaces": [],
         "stopTargets": 0,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -136,6 +144,7 @@
           {
             "id": "ground",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -146,6 +155,7 @@
           {
             "id": "office-typical",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -156,6 +166,7 @@
           {
             "id": "event-28",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -177,6 +188,7 @@
         "paintedLabels": 3,
         "selectedSpaces": [],
         "stopTargets": 0,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -202,8 +214,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 1.7,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.1,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -220,7 +232,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 86.13860831963358,
+      "mapSpread": 90.42591810837848,
       "screenshot": "work/map-review/guide-pages-final/_guides_koln-triangle_-1440.png",
       "passed": true
     },
@@ -248,11 +260,12 @@
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/koln-triangle/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "2e1babc3e297516d651ce9972fd2cb3ca086860df6987e2c1123c863f62ec6cf",
+    "routeNumbering": true,
     "passed": true
   }
 }

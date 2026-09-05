@@ -1,7 +1,7 @@
 {
   "slug": "pitti",
   "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared ground,mezzanine,first and second published diagrams. Preserves all available numbered treasure rooms and Palatine/royal suite divisions, with sixty-three places and six supported region selections. Second floor remains a collection-zone outline, not falsely detailed rooms. Closure notices do not delete treasure-room geometry.",
     "floorCoverageReview": "Four source diagrams of unequal detail and independent scale. Second-floor individual-room layout remains missing.",
@@ -19,7 +19,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:45:54.195Z",
+    "timestamp": "2026-09-05T10:03:01.957Z",
     "slug": "pitti",
     "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
     "sourceDigest": "48ffb473f8c1ad772e3873c9011de35e2426901b27c13e58f813c48c991ef244",
@@ -33,6 +33,7 @@
           {
             "id": "L0",
             "exactLabels": 14,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -43,6 +44,7 @@
           {
             "id": "MZ",
             "exactLabels": 14,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -53,6 +55,7 @@
           {
             "id": "L1",
             "exactLabels": 31,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -63,6 +66,7 @@
           {
             "id": "L2",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -94,6 +98,7 @@
           "L2-fashion-source-floor"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -105,6 +110,7 @@
           {
             "id": "L0",
             "exactLabels": 14,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -115,6 +121,7 @@
           {
             "id": "MZ",
             "exactLabels": 14,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -125,6 +132,7 @@
           {
             "id": "L1",
             "exactLabels": 31,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -135,6 +143,7 @@
           {
             "id": "L2",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -166,6 +175,7 @@
           "L2-fashion-source-floor"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -177,6 +187,7 @@
           {
             "id": "L0",
             "exactLabels": 14,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -187,6 +198,7 @@
           {
             "id": "MZ",
             "exactLabels": 14,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -197,6 +209,7 @@
           {
             "id": "L1",
             "exactLabels": 31,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -207,6 +220,7 @@
           {
             "id": "L2",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -238,6 +252,7 @@
           "L2-fashion-source-floor"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -264,8 +279,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.800000000000182,
-    "renderP95Ms": 3.2,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 4,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -282,7 +297,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 92.60120827822486,
+      "mapSpread": 93.09060732201776,
       "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-1440.png",
       "passed": true
     },
@@ -293,7 +308,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 110.52634355775142,
+      "mapSpread": 111.09108344751192,
       "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-1094.png",
       "passed": true
     },
@@ -304,17 +319,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 140.934266158831,
+      "mapSpread": 141.77660485249078,
       "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/pitti/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+    "routeNumbering": true,
     "passed": true
   }
 }

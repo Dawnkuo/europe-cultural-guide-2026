@@ -1,9 +1,31 @@
 import { describe, expect, it } from 'vitest';
 import { BoxGeometry, Mesh, MeshBasicMaterial, OrthographicCamera, Raycaster, Vector3 } from 'three';
-import { isPlanAnchorVisible } from './architectural-visibility';
+import { focusPlanAnchor, isPlanAnchorVisible } from './architectural-visibility';
 import { MeshBVH, acceleratedRaycast, disposeBoundsTree } from 'three-mesh-bvh';
 
 describe('architectural label occlusion', () => {
+  it('focuses a masked lower-floor stop from a clear angle without hiding or moving the floor', () => {
+    const camera = new OrthographicCamera(-10, 10, 10, -10, .1, 100);
+    const geometry = new BoxGeometry(10, .1, 10);
+    const material = new MeshBasicMaterial();
+    const slab = new Mesh(geometry, material);
+    slab.position.y = 4;
+    slab.updateMatrixWorld();
+    const before = slab.matrixWorld.clone();
+    const anchor = new Vector3(0, .14, 0), target = new Vector3();
+    const raycaster = new Raycaster();
+    camera.position.set(0, 20, .1); camera.lookAt(target); camera.updateMatrixWorld();
+    expect(isPlanAnchorVisible(anchor, camera, [slab], raycaster)).toBe(false);
+    expect(focusPlanAnchor(anchor, camera, target, [slab], raycaster)).toBe(true);
+    expect(target.equals(anchor)).toBe(true);
+    expect(isPlanAnchorVisible(anchor, camera, [slab], raycaster)).toBe(true);
+    expect(slab.visible).toBe(true);
+    expect(slab.matrixWorld.equals(before)).toBe(true);
+    const position = camera.position.clone();
+    focusPlanAnchor(anchor, camera, target, [slab], raycaster);
+    expect(camera.position.distanceTo(position)).toBeLessThan(1e-8);
+    geometry.dispose(); material.dispose();
+  });
   it('hides lower-floor labels behind a floor slab, but restores them from an unobstructed angle', () => {
     const camera = new OrthographicCamera(-8, 8, 8, -8, .1, 100);
     const geometry = new BoxGeometry(4, .1, 4);

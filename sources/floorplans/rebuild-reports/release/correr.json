@@ -1,7 +1,7 @@
 {
   "slug": "correr",
   "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the two official collection diagrams, including royal suites and adjacent archaeological/library wings. Keeps sixteen source places and nine connected selection regions; room outlines are not replaced by equal-width thematic blocks.",
     "floorCoverageReview": "Published first-floor collections and upper picture gallery; surrounding institutions are context, not a claim of ticket access.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:38:50.750Z",
+    "timestamp": "2026-09-05T09:55:16.197Z",
     "slug": "correr",
     "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
     "sourceDigest": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
@@ -31,6 +31,7 @@
           {
             "id": "L1",
             "exactLabels": 14,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "L2",
             "exactLabels": 2,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -70,6 +72,7 @@
           "L2-pictures"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -81,6 +84,7 @@
           {
             "id": "L1",
             "exactLabels": 14,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -91,6 +95,7 @@
           {
             "id": "L2",
             "exactLabels": 2,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -120,6 +125,7 @@
           "L2-pictures"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -131,6 +137,7 @@
           {
             "id": "L1",
             "exactLabels": 14,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -141,6 +148,7 @@
           {
             "id": "L2",
             "exactLabels": 2,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -170,6 +178,7 @@
           "L2-pictures"
         ],
         "stopTargets": 5,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -194,8 +203,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.800000000000182,
-    "renderP95Ms": 4.6,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 4.8,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -212,7 +221,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 127.08855088644962,
+      "mapSpread": 125.64109055825439,
       "screenshot": "work/map-review/guide-pages-final/_guides_correr_-1440.png",
       "passed": true
     },
@@ -223,7 +232,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 142.74825940112615,
+      "mapSpread": 142.5610072046055,
       "screenshot": "work/map-review/guide-pages-final/_guides_correr_-1094.png",
       "passed": true
     },
@@ -234,17 +243,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 128.66233877998246,
+      "mapSpread": 133.22016557104817,
       "screenshot": "work/map-review/guide-pages-final/_guides_correr_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/correr/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
+    "routeNumbering": true,
     "passed": true
   }
 }

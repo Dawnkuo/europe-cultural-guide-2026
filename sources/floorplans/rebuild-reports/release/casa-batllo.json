@@ -1,7 +1,7 @@
 {
   "slug": "casa-batllo",
   "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all three rectified historical source plans. Retains the irregular frontage, rear terrace, central light well, curved rooms, stair treads and furniture as distinct structure/detail classes. Source-pixel checkpoints exclude73 isolated thin-line intersections from masonry without removing perimeter or stair enclosure walls. Two closed source regions support selection; open entrance and terrace grids are not artificially sealed.",
     "floorCoverageReview": "Historical ground, principal and second floors only. The attic section cannot become a floor plan. Current third-floor twelve-room program, roof, Cube and Dome remain an explicit unlocated inventory.",
@@ -18,7 +18,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:37:49.084Z",
+    "timestamp": "2026-09-05T09:53:58.560Z",
     "slug": "casa-batllo",
     "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
     "sourceDigest": "bd3d92782bd35d3ab93aa3c55f291cae05163b7742a2ff2269cd16c74343d3ba",
@@ -32,6 +32,7 @@
           {
             "id": "historic-ground-floor",
             "exactLabels": 4,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -42,6 +43,7 @@
           {
             "id": "historic-first-floor",
             "exactLabels": 5,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -52,6 +54,7 @@
           {
             "id": "historic-second-floor",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -73,6 +76,7 @@
         "paintedLabels": 11,
         "selectedSpaces": [],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -84,6 +88,7 @@
           {
             "id": "historic-ground-floor",
             "exactLabels": 4,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -94,6 +99,7 @@
           {
             "id": "historic-first-floor",
             "exactLabels": 5,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -104,6 +110,7 @@
           {
             "id": "historic-second-floor",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -125,6 +132,7 @@
         "paintedLabels": 11,
         "selectedSpaces": [],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -136,6 +144,7 @@
           {
             "id": "historic-ground-floor",
             "exactLabels": 4,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -146,6 +155,7 @@
           {
             "id": "historic-first-floor",
             "exactLabels": 5,
+            "guideNumbers": 5,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -156,6 +166,7 @@
           {
             "id": "historic-second-floor",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -177,6 +188,7 @@
         "paintedLabels": 11,
         "selectedSpaces": [],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -202,8 +214,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.69999999999891,
-    "frameP95Ms": 16.799999999999272,
-    "renderP95Ms": 2,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.5,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -220,7 +232,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 88.9292539726535,
+      "mapSpread": 91.35359868000396,
       "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-1440.png",
       "passed": true
     },
@@ -231,7 +243,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 104.30047698550342,
+      "mapSpread": 104.7676608495403,
       "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-1094.png",
       "passed": true
     },
@@ -242,17 +254,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 124.59189407985544,
+      "mapSpread": 125.5197992397376,
       "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/casa-batllo/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
+    "routeNumbering": true,
     "passed": true
   }
 }

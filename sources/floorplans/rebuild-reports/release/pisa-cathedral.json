@@ -1,7 +1,7 @@
 {
   "slug": "pisa-cathedral",
   "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the authoritative1817 ground drawing: long nave column rows, transept arms, central crossing, lateral aisles and apse preserve native proportions and all visible structural detail.",
     "floorCoverageReview": "Historic ground only, not current furnishings, crypt,upper galleries,roof or service areas.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:45:33.916Z",
+    "timestamp": "2026-09-05T10:02:39.610Z",
     "slug": "pisa-cathedral",
     "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
     "sourceDigest": "0fc8030cb05253e78ff45c09f67ef7c183c6330fb7d53aa2361107c9c1c301f4",
@@ -30,6 +30,7 @@
           {
             "id": "ground",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -49,6 +50,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -60,6 +62,7 @@
           {
             "id": "ground",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -79,6 +82,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -90,6 +94,7 @@
           {
             "id": "ground",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -109,6 +114,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -133,7 +139,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 1.5,
+    "renderP95Ms": 1.9,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -150,7 +156,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 122.81208494375474,
+      "mapSpread": 116.42771936641364,
       "screenshot": "work/map-review/guide-pages-final/_guides_pisa-cathedral_-1440.png",
       "passed": true
     },
@@ -161,7 +167,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 128.81202514845674,
+      "mapSpread": 129.2532739714131,
       "screenshot": "work/map-review/guide-pages-final/_guides_pisa-cathedral_-1094.png",
       "passed": true
     },
@@ -172,17 +178,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 119.30850787283012,
+      "mapSpread": 120.68734167470268,
       "screenshot": "work/map-review/guide-pages-final/_guides_pisa-cathedral_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/pisa-cathedral/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+    "routeNumbering": true,
     "passed": true
   }
 }

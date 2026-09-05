@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import type * as THREE from 'three';
 import type { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { independentFloorScale, placeSceneLabels, planTones, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint } from '../lib/architectural-plan';
-import { isPlanAnchorVisible } from '../lib/architectural-visibility';
+import { independentFloorScale, placesWithGuideNumbers, placeSceneLabels, planTones, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint } from '../lib/architectural-plan';
+import { focusPlanAnchor, isPlanAnchorVisible } from '../lib/architectural-visibility';
 import { PlanPlaceMarker } from './PlanPlaceMarker';
 
 type Props = {
@@ -17,6 +17,7 @@ type Props = {
 };
 
 export default function ArchitecturalScene(props: Props) {
+  const numberedPlaces = useMemo(() => placesWithGuideNumbers(props.plan), [props.plan]);
   const host = useRef<HTMLDivElement>(null);
   const latest = useRef(props);
   const redraw = useRef<() => void>(() => {});
@@ -203,10 +204,7 @@ export default function ArchitecturalScene(props: Props) {
         if (selected && selected !== selectedId) {
           const place = plan.places.find((p) => p.id === selected);
           if (place) {
-            const target = projectPoint(place.floorId,place.at,.1);
-            const delta = target.clone().sub(controls.target);
-            camera.position.add(delta);
-            controls.target.copy(target);
+            focusPlanAnchor(projectPoint(place.floorId, place.at, .14), camera, controls.target, occluders, labelRaycaster);
           }
           selectedId = selected;
         }
@@ -214,7 +212,7 @@ export default function ArchitecturalScene(props: Props) {
         camera.updateMatrixWorld();
         renderer.render(scene,camera);
         const width = container.clientWidth, height = container.clientHeight;
-        const points = plan.places.filter((place) => place.floorId === floorId).flatMap((place) => {
+        const points = numberedPlaces.filter((place) => place.floorId === floorId).flatMap((place) => {
           const anchor = projectPoint(place.floorId,place.at,.14);
           const visible = isPlanAnchorVisible(anchor,camera,occluders,labelRaycaster);
           const button = labelNodes.current.get(place.id);
@@ -257,7 +255,7 @@ export default function ArchitecturalScene(props: Props) {
       };
       connect();
       disposers.push(() => controls.dispose());
-      const fit = () => {
+      const fit = (focusSelection = false) => {
         controls.target.copy(center);
         camera.position.copy(center).add(new Three.Vector3(18,28,27));
         camera.lookAt(center);
@@ -276,7 +274,7 @@ export default function ArchitecturalScene(props: Props) {
         const half = Math.max(halfHeight,halfWidth/aspect)*1.15;
         camera.left = -half*aspect; camera.right = half*aspect; camera.top = half; camera.bottom = -half;
         camera.zoom = 1; camera.updateProjectionMatrix();
-        selectedId = latest.current.selected;
+        selectedId = focusSelection ? undefined : latest.current.selected;
         draw();
       };
       const recover = () => {
@@ -296,7 +294,7 @@ export default function ArchitecturalScene(props: Props) {
       const resize = () => {
         if (cancelled || !container.isConnected) return;
         if (!container.clientWidth || !container.clientHeight) return;
-        renderer.setSize(container.clientWidth,container.clientHeight,false); fit();
+        renderer.setSize(container.clientWidth,container.clientHeight,false); fit(true);
         if (process.env.NODE_ENV === 'development') {
           // Read the same scene/camera on the GPU, without preserving the main
           // drawing buffer or adding a continuous animation loop in production.
@@ -385,16 +383,16 @@ export default function ArchitecturalScene(props: Props) {
       resize();
     }).catch(() => { cleanup(); if (!cancelled) latest.current.onFailure(); });
     return () => { cancelled = true; cleanup(); };
-  }, [props.plan]);
+  }, [props.plan, numberedPlaces]);
 
-  const places = props.plan.places.filter((place) => place.floorId === props.floorId);
+  const places = numberedPlaces.filter((place) => place.floorId === props.floorId);
   return <div ref={host} className="architectural-map__scene" data-active-floor={props.floorId}>
     <div className="architectural-map__scene-labels">
       <svg width="100%" height="100%" aria-hidden="true" style={{ position:'absolute',inset:0 }}>
         {places.map((place) => <line key={place.id} ref={(node) => { if (node) leaderNodes.current.set(place.id,node); else leaderNodes.current.delete(place.id); }} stroke="#d5ba76" strokeWidth="1" opacity=".6" />)}
       </svg>
       {places.map((place) => <button key={place.id} type="button" ref={(node) => { if (node) labelNodes.current.set(place.id,node); else labelNodes.current.delete(place.id); }}
-        data-place-id={place.id} title={place.name} data-place-kind={place.kind} aria-label={`${place.label} ${place.name}`} aria-pressed={props.selected === place.id} onClick={(event) => { if (!labelDrag.current || event.detail === 0) props.onSelect(place.id); }}><PlanPlaceMarker place={place} /></button>)}
+        data-place-id={place.id} title={place.name} data-place-kind={place.kind} aria-label={`${place.label} ${place.name}`} aria-describedby={place.guideNumbers?.length ? `${props.plan.slug}-${place.id}-guide-3d` : undefined} aria-pressed={props.selected === place.id} onClick={(event) => { if (!labelDrag.current || event.detail === 0) props.onSelect(place.id); }}><PlanPlaceMarker place={place} descriptionId={place.guideNumbers?.length ? `${props.plan.slug}-${place.id}-guide-3d` : undefined} /></button>)}
     </div>
   </div>;
 }

@@ -1,7 +1,7 @@
 {
   "slug": "la-pedrera",
   "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all four former Fundacio Caixa Catalunya visitor-leaflet plans. Maintains genuine curved room fabric, irregular courtyards, attic route and roof voids. Source floor colors determine surfaces; entry letters/arrows and service glyphs are excluded from masonry. Thirty-four source points include the actual printed service positions.",
     "floorCoverageReview": "Historic ground, apartment, attic and roof diagrams only. Current private areas, basement and temporary exhibition floor are not inferred; independent diagrams do not claim surveyed vertical alignment.",
@@ -19,7 +19,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:41:25.752Z",
+    "timestamp": "2026-09-05T09:58:08.107Z",
     "slug": "la-pedrera",
     "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
     "sourceDigest": "a50e5212e85eff30cb7574939d90f3b3f81c075de5292e377c24b9b74deb37f0",
@@ -33,6 +33,7 @@
           {
             "id": "historic-visitor-ground",
             "exactLabels": 15,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -43,6 +44,7 @@
           {
             "id": "historic-visitor-apartment",
             "exactLabels": 9,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -53,6 +55,7 @@
           {
             "id": "historic-visitor-attic",
             "exactLabels": 6,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -63,6 +66,7 @@
           {
             "id": "historic-visitor-roof",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -95,6 +99,7 @@
           "historic-visitor-roof-brochure-visitor-area"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -106,6 +111,7 @@
           {
             "id": "historic-visitor-ground",
             "exactLabels": 15,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -116,6 +122,7 @@
           {
             "id": "historic-visitor-apartment",
             "exactLabels": 9,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -126,6 +133,7 @@
           {
             "id": "historic-visitor-attic",
             "exactLabels": 6,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -136,6 +144,7 @@
           {
             "id": "historic-visitor-roof",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -168,6 +177,7 @@
           "historic-visitor-roof-brochure-visitor-area"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -179,6 +189,7 @@
           {
             "id": "historic-visitor-ground",
             "exactLabels": 15,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -189,6 +200,7 @@
           {
             "id": "historic-visitor-apartment",
             "exactLabels": 9,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -199,6 +211,7 @@
           {
             "id": "historic-visitor-attic",
             "exactLabels": 6,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -209,6 +222,7 @@
           {
             "id": "historic-visitor-roof",
             "exactLabels": 4,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -241,6 +255,7 @@
           "historic-visitor-roof-brochure-visitor-area"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -267,8 +282,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 4.5,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 5.4,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -285,7 +300,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 73.51875262206414,
+      "mapSpread": 70.20130295574863,
       "screenshot": "work/map-review/guide-pages-final/_guides_la-pedrera_-1440.png",
       "passed": true
     },
@@ -296,7 +311,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 86.2824515141115,
+      "mapSpread": 86.71438720384292,
       "screenshot": "work/map-review/guide-pages-final/_guides_la-pedrera_-1094.png",
       "passed": true
     },
@@ -307,17 +322,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 104.03582538268809,
+      "mapSpread": 107.20080811409149,
       "screenshot": "work/map-review/guide-pages-final/_guides_la-pedrera_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/la-pedrera/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+    "routeNumbering": true,
     "passed": true
   }
 }

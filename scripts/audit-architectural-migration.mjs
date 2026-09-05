@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-export const requiredMapChecks = ['sourceGeometry', 'floorCoverage', 'roomIdentifiers', 'stopBindings', 'verticalConnections', 'desktop', 'portrait', 'keyboard', 'interruptedDrag', 'offline', 'performance'];
+export const requiredMapChecks = ['sourceGeometry', 'floorCoverage', 'roomIdentifiers', 'stopBindings', 'routeNumbering', 'verticalConnections', 'desktop', 'portrait', 'keyboard', 'interruptedDrag', 'offline', 'performance'];
 
 export function modelDigest(model) {
   return createHash('sha256').update(JSON.stringify(model)).digest('hex');
@@ -14,7 +14,7 @@ export const mapRuntimeFiles = [
   'app/components/PlanPlaceMarker.tsx', 'app/components/architectural-map.css',
   'app/components/GuideSpatial.tsx', 'app/lib/architectural-plan.ts',
   'app/lib/architectural-plan-loader.ts', 'app/lib/architectural-visibility.ts',
-  'app/data/architectural-map-notes.json', 'public/sw.js', 'package-lock.json',
+  'app/data/architectural-map-notes.json', 'app/data/architectural-stop-notes.json', 'public/sw.js', 'package-lock.json',
 ];
 
 export function runtimeDigest(root = process.cwd()) {

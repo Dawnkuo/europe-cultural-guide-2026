@@ -1,7 +1,7 @@
 {
   "slug": "pisa-baptistery",
   "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared HBIM ground plan and the same authors' first-gallery VR plan. Retains the actual twelve-sided ground outline,font,pulpit and upper masonry/real twelve supports. Upper radial arch lines remain flat, not wedge-room walls. A-A section annotation is removed without reconstructing occluded lines.",
     "floorCoverageReview": "Ground and women's gallery only; dome maintenance plan is a different level and excluded. No invented annular slab closes an open source region.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:45:26.439Z",
+    "timestamp": "2026-09-05T10:02:31.889Z",
     "slug": "pisa-baptistery",
     "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
     "sourceDigest": "9d5592dc069af93f472abaa5dcc10ef5bd58bbd86aca7a8ca1d64e8e8df26182",
@@ -31,6 +31,7 @@
           {
             "id": "ground",
             "exactLabels": 3,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "upper",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -61,6 +63,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -72,6 +75,7 @@
           {
             "id": "ground",
             "exactLabels": 3,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -82,6 +86,7 @@
           {
             "id": "upper",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -102,6 +107,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -113,6 +119,7 @@
           {
             "id": "ground",
             "exactLabels": 3,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -123,6 +130,7 @@
           {
             "id": "upper",
             "exactLabels": 1,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -143,6 +151,7 @@
         "paintedLabels": 4,
         "selectedSpaces": [],
         "stopTargets": 4,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -167,8 +176,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 1.7,
+    "frameP95Ms": 16.799999999999272,
+    "renderP95Ms": 2.4,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -185,7 +194,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 152.34266296279293,
+      "mapSpread": 152.59577926856642,
       "screenshot": "work/map-review/guide-pages-final/_guides_pisa-baptistery_-1440.png",
       "passed": true
     },
@@ -196,7 +205,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 169.0729364069282,
+      "mapSpread": 169.18442433469852,
       "screenshot": "work/map-review/guide-pages-final/_guides_pisa-baptistery_-1094.png",
       "passed": true
     },
@@ -207,17 +216,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 182.33182591978306,
+      "mapSpread": 182.7164657135155,
       "screenshot": "work/map-review/guide-pages-final/_guides_pisa-baptistery_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/pisa-baptistery/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+    "routeNumbering": true,
     "passed": true
   }
 }

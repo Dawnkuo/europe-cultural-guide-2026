@@ -1,7 +1,7 @@
 {
   "slug": "st-mark-campanile",
   "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared all four levels on the municipality's1912 reconstruction engineering plate. Retains actual tower core,base Loggetta,ramp geometry,bell chamber and upper-service structure. No solid external shell conceals the source interiors.",
     "floorCoverageReview": "Four1912 reconstruction levels, not a surveyed current visitor plan or ticket-access statement.",
@@ -19,7 +19,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:47:24.139Z",
+    "timestamp": "2026-09-05T10:04:39.829Z",
     "slug": "st-mark-campanile",
     "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
     "sourceDigest": "53e7180a82f4cb819bb1c489558699cbcec981c0eaa18f660675767996b03997",
@@ -33,6 +33,7 @@
           {
             "id": "ground",
             "exactLabels": 3,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -43,6 +44,7 @@
           {
             "id": "ramp",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -53,6 +55,7 @@
           {
             "id": "bell-cell",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -63,6 +66,7 @@
           {
             "id": "upper-service",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -85,6 +89,7 @@
         "paintedLabels": 8,
         "selectedSpaces": [],
         "stopTargets": 1,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -96,6 +101,7 @@
           {
             "id": "ground",
             "exactLabels": 3,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -106,6 +112,7 @@
           {
             "id": "ramp",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -116,6 +123,7 @@
           {
             "id": "bell-cell",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -126,6 +134,7 @@
           {
             "id": "upper-service",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -148,6 +157,7 @@
         "paintedLabels": 8,
         "selectedSpaces": [],
         "stopTargets": 1,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -159,6 +169,7 @@
           {
             "id": "ground",
             "exactLabels": 3,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -169,6 +180,7 @@
           {
             "id": "ramp",
             "exactLabels": 1,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -179,6 +191,7 @@
           {
             "id": "bell-cell",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -189,6 +202,7 @@
           {
             "id": "upper-service",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -211,6 +225,7 @@
         "paintedLabels": 8,
         "selectedSpaces": [],
         "stopTargets": 1,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -237,8 +252,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.799999999999727,
-    "renderP95Ms": 2.4,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 3,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -255,7 +270,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 140.39887354997097,
+      "mapSpread": 140.3950422828306,
       "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-campanile_-1440.png",
       "passed": true
     },
@@ -283,11 +298,12 @@
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/st-mark-campanile/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+    "routeNumbering": true,
     "passed": true
   }
 }

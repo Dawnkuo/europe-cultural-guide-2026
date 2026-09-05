@@ -1,7 +1,7 @@
 {
   "slug": "leaning-tower",
   "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared current base drawing and all four1910 measured-plan groups. Retains native variable column shapes, thick annular masonry, actual voids and tread/hatch details; four annotation-obscured or ambiguous column sites remain missing instead of filled with ideal circles. No universal cylinder or solid center is substituted.",
     "floorCoverageReview": "Five source-plan groups, not eight separately measured physical floors. Two depictions of the first gallery are not treated as successive levels.",
@@ -20,7 +20,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:42:49.838Z",
+    "timestamp": "2026-09-05T09:59:43.093Z",
     "slug": "leaning-tower",
     "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
     "sourceDigest": "c393192a76ad386ad08ea06fceb4b0638800ffc19449783b9358fca662436184",
@@ -34,6 +34,7 @@
           {
             "id": "base",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -44,6 +45,7 @@
           {
             "id": "entry-first",
             "exactLabels": 2,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -54,6 +56,7 @@
           {
             "id": "galleries-1-3",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -64,6 +67,7 @@
           {
             "id": "galleries-4-7",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -74,6 +78,7 @@
           {
             "id": "upper",
             "exactLabels": 3,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -97,6 +102,7 @@
         "paintedLabels": 13,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -108,6 +114,7 @@
           {
             "id": "base",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -118,6 +125,7 @@
           {
             "id": "entry-first",
             "exactLabels": 2,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -128,6 +136,7 @@
           {
             "id": "galleries-1-3",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -138,6 +147,7 @@
           {
             "id": "galleries-4-7",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -148,6 +158,7 @@
           {
             "id": "upper",
             "exactLabels": 3,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -171,6 +182,7 @@
         "paintedLabels": 13,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -182,6 +194,7 @@
           {
             "id": "base",
             "exactLabels": 2,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -192,6 +205,7 @@
           {
             "id": "entry-first",
             "exactLabels": 2,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -202,6 +216,7 @@
           {
             "id": "galleries-1-3",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -212,6 +227,7 @@
           {
             "id": "galleries-4-7",
             "exactLabels": 3,
+            "guideNumbers": 0,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -222,6 +238,7 @@
           {
             "id": "upper",
             "exactLabels": 3,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -245,6 +262,7 @@
         "paintedLabels": 13,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -271,9 +289,9 @@
     "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
-    "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.2,
+    "frameP50Ms": 16.69999999999891,
+    "frameP95Ms": 16.799999999999272,
+    "renderP95Ms": 2.8,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -290,7 +308,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 84.40357118441518,
+      "mapSpread": 85.6021259382553,
       "screenshot": "work/map-review/guide-pages-final/_guides_leaning-tower_-1440.png",
       "passed": true
     },
@@ -318,11 +336,12 @@
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/leaning-tower/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+    "routeNumbering": true,
     "passed": true
   }
 }

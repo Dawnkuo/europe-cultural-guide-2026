@@ -1,7 +1,7 @@
 {
   "slug": "borghese",
   "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the three compact official visitor diagrams. Retains basement services, sculpture-level rooms and upper painting rooms with twenty-seven place identifiers. Structural bands exclude printed letters, service icons and arrows; stair/tread and terrace details remain flat. Twenty-six selection regions do not promote terrace shading into masonry.",
     "floorCoverageReview": "Basement, principal and upper collection levels are independent source diagrams, not a surveyed vertical registration.",
@@ -18,7 +18,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:36:53.897Z",
+    "timestamp": "2026-09-05T09:52:49.406Z",
     "slug": "borghese",
     "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
     "sourceDigest": "2e9b1a3d5fd11a45ca900747f6667596d024bc05b5a937237a63c19775e2c198",
@@ -32,6 +32,7 @@
           {
             "id": "B1",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -42,6 +43,7 @@
           {
             "id": "P0",
             "exactLabels": 11,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -52,6 +54,7 @@
           {
             "id": "P1",
             "exactLabels": 14,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -85,6 +88,7 @@
           "P1-room-9"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -96,6 +100,7 @@
           {
             "id": "B1",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -106,6 +111,7 @@
           {
             "id": "P0",
             "exactLabels": 11,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -116,6 +122,7 @@
           {
             "id": "P1",
             "exactLabels": 14,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -149,6 +156,7 @@
           "P1-room-9"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -160,6 +168,7 @@
           {
             "id": "B1",
             "exactLabels": 2,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -170,6 +179,7 @@
           {
             "id": "P0",
             "exactLabels": 11,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -180,6 +190,7 @@
           {
             "id": "P1",
             "exactLabels": 14,
+            "guideNumbers": 1,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -213,6 +224,7 @@
           "P1-room-9"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -239,7 +251,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 3.6,
+    "renderP95Ms": 4.2,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -256,7 +268,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 100.18018176933305,
+      "mapSpread": 100.46281922748805,
       "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-1440.png",
       "passed": true
     },
@@ -267,7 +279,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 116.89862043276884,
+      "mapSpread": 117.44960426881502,
       "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-1094.png",
       "passed": true
     },
@@ -278,17 +290,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 138.84477969637922,
+      "mapSpread": 139.9627921682026,
       "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/borghese/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+    "routeNumbering": true,
     "passed": true
   }
 }

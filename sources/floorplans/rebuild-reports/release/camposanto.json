@@ -1,7 +1,7 @@
 {
   "slug": "camposanto",
   "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the university survey crop: the long enclosed courtyard, four cloister walks, east annexes, repeated bays and wall details retain the measured source proportions. No replacement ideal rectangle or inferred floor slab.",
     "floorCoverageReview": "Surveyed ground level only; roof and service levels are not supplied.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:37:22.898Z",
+    "timestamp": "2026-09-05T09:53:24.649Z",
     "slug": "camposanto",
     "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
     "sourceDigest": "a6ee767951badd43aa8d19ed6b87b2615f729bb0c9af9aa5efc35ad7c4525e73",
@@ -30,6 +30,7 @@
           {
             "id": "ground",
             "exactLabels": 8,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -49,6 +50,7 @@
         "paintedLabels": 8,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -60,6 +62,7 @@
           {
             "id": "ground",
             "exactLabels": 8,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -79,6 +82,7 @@
         "paintedLabels": 8,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -90,6 +94,7 @@
           {
             "id": "ground",
             "exactLabels": 8,
+            "guideNumbers": 2,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -109,6 +114,7 @@
         "paintedLabels": 8,
         "selectedSpaces": [],
         "stopTargets": 2,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -132,8 +138,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 1.8,
+    "frameP95Ms": 16.799999999999272,
+    "renderP95Ms": 2.2,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -150,7 +156,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 169.24847438501246,
+      "mapSpread": 171.19845827418945,
       "screenshot": "work/map-review/guide-pages-final/_guides_camposanto_-1440.png",
       "passed": true
     },
@@ -161,7 +167,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 172.2034585838906,
+      "mapSpread": 172.4791954093251,
       "screenshot": "work/map-review/guide-pages-final/_guides_camposanto_-1094.png",
       "passed": true
     },
@@ -172,17 +178,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 138.8646054980704,
+      "mapSpread": 138.4774950743594,
       "screenshot": "work/map-review/guide-pages-final/_guides_camposanto_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/camposanto/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+    "routeNumbering": true,
     "passed": true
   }
 }

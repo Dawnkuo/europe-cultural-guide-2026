@@ -1,7 +1,7 @@
 {
   "slug": "la-scala",
   "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared museum and restored-theatre plans. Retains all eight numbered museum rooms, irregular connecting spaces, foyer, auditorium and stage, with eight museum selection faces. Seat numbers are not reused as room identifiers.",
     "floorCoverageReview": "Museum rooms1-8 and one documented theatre main level. Room9,library,upper boxes and backstage access are not asserted.",
@@ -17,7 +17,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:41:56.565Z",
+    "timestamp": "2026-09-05T09:58:43.587Z",
     "slug": "la-scala",
     "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
     "sourceDigest": "74a1f5fb0a3828df9f03c38efbf8100e5963fdf77475759dd3c95db9db9a3c33",
@@ -31,6 +31,7 @@
           {
             "id": "museum",
             "exactLabels": 8,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -41,6 +42,7 @@
           {
             "id": "theatre",
             "exactLabels": 4,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -67,6 +69,7 @@
           "museum-sala-4"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -78,6 +81,7 @@
           {
             "id": "museum",
             "exactLabels": 8,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -88,6 +92,7 @@
           {
             "id": "theatre",
             "exactLabels": 4,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -114,6 +119,7 @@
           "museum-sala-4"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -125,6 +131,7 @@
           {
             "id": "museum",
             "exactLabels": 8,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -135,6 +142,7 @@
           {
             "id": "theatre",
             "exactLabels": 4,
+            "guideNumbers": 3,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -161,6 +169,7 @@
           "museum-sala-4"
         ],
         "stopTargets": 6,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -186,7 +195,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.5,
+    "renderP95Ms": 2.8,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -203,7 +212,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 117.37069567737299,
+      "mapSpread": 120.53318558945003,
       "screenshot": "work/map-review/guide-pages-final/_guides_la-scala_-1440.png",
       "passed": true
     },
@@ -214,7 +223,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 132.3591982331713,
+      "mapSpread": 133.37278236733547,
       "screenshot": "work/map-review/guide-pages-final/_guides_la-scala_-1094.png",
       "passed": true
     },
@@ -225,17 +234,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 136.3794622678691,
+      "mapSpread": 139.35670470380265,
       "screenshot": "work/map-review/guide-pages-final/_guides_la-scala_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/la-scala/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+    "routeNumbering": true,
     "passed": true
   }
 }

@@ -30,16 +30,20 @@ async function checkLabelPixels(map, floorId) {
   const buffer = await viewport.screenshot({ style: '.subnav,.guide-local-nav{visibility:hidden!important}' });
   const labels = await viewport.evaluate((host) => {
     const bounds = host.getBoundingClientRect();
-    return [...host.querySelectorAll('[data-place-id] button')].map((node) => {
+    return [...host.querySelectorAll('[data-place-id] button')].map((button) => {
+      const sourceText = button.querySelector('[data-place-label]');
+      const node = sourceText.classList.contains('sr-only') ? button : sourceText;
       const rect = node.getBoundingClientRect();
-      return { label: node.textContent, x: rect.x - bounds.x, y: rect.y - bounds.y, width: rect.width, height: rect.height };
+      // Narrow glyphs can paint one pixel outside a fractional text box.
+      // The text margin remains well inside the button, excluding its border.
+      return { label: node.textContent, x: rect.x - bounds.x, y: rect.y - bounds.y, width: rect.width, height: rect.height, inset: node === button ? 3 : -1 };
     });
   });
   const { data, info } = await sharp(buffer).removeAlpha().raw().toBuffer({ resolveWithObject: true });
   for (const label of labels) {
     let ink = 0;
-    for (let y = Math.ceil(label.y + 3); y < Math.floor(label.y + label.height - 3); y++) {
-      for (let x = Math.ceil(label.x + 3); x < Math.floor(label.x + label.width - 3); x++) {
+    for (let y = Math.ceil(label.y + label.inset); y < Math.floor(label.y + label.height - label.inset); y++) {
+      for (let x = Math.ceil(label.x + label.inset); x < Math.floor(label.x + label.width - label.inset); x++) {
         if (x < 0 || y < 0 || x >= info.width || y >= info.height) continue;
         const offset = (y * info.width + x) * info.channels;
         if (data[offset] > 170 && data[offset + 1] > 140 && data[offset + 2] > 100) ink++;
@@ -106,7 +110,15 @@ try {
           await map.getByRole('button', { name: floor.label, exact: true }).click();
           await map.getByRole('button', { name: '重置地图视角', exact: true }).click();
           const expected = model.places.filter((p) => p.floorId === floor.id).map((p) => ({ id: p.id, label: p.label })).sort((a, b) => a.id.localeCompare(b.id));
-          const readLabels = () => map.locator('.architectural-map__2d-labels [data-place-id]').evaluateAll((nodes) => nodes.map((node) => ({ id: node.dataset.placeId, label: node.querySelector('button')?.textContent })).sort((a, b) => a.id.localeCompare(b.id)));
+          const expectedBadges = expected.flatMap(({ id }) => {
+            const numbers = [...new Set(model.stopBindings.filter((binding) => binding.placeId === id).map((binding) => binding.stopIndex + 1))].sort((a,b) => a-b);
+            return numbers.length ? [{ id, numbers: numbers.join(','), text: numbers.join('·') }] : [];
+          });
+          const checkBadges = async () => {
+            const badges = await map.locator('.architectural-map__2d-labels [data-guide-numbers]').evaluateAll((nodes) => nodes.map((node) => ({ id: node.closest('[data-place-id]').dataset.placeId, numbers: node.dataset.guideNumbers, text: node.textContent })).sort((a,b) => a.id.localeCompare(b.id)));
+            check(JSON.stringify(badges) === JSON.stringify(expectedBadges), `Guide numbers differ from stop bindings: ${floor.id}`);
+          };
+          const readLabels = () => map.locator('.architectural-map__2d-labels [data-place-id]').evaluateAll((nodes) => nodes.map((node) => ({ id: node.dataset.placeId, label: node.querySelector('[data-place-label]')?.textContent })).sort((a, b) => a.id.localeCompare(b.id)));
           const labelPaint = await map.locator('.architectural-map__2d-labels button').evaluateAll((nodes) => nodes.map((node) => {
             const rect = node.getBoundingClientRect(), style = getComputedStyle(node);
             return { label: node.textContent, width: rect.width, height: rect.height, fontSize: Number.parseFloat(style.fontSize), visible: style.visibility === 'visible' && style.display !== 'none' && Number(style.opacity) > 0 };
@@ -114,6 +126,7 @@ try {
           check(labelPaint.every((label) => label.visible && label.width >= 24 && label.height >= 21 && label.fontSize >= 12), `Unpaintable room label: ${floor.id}`);
           check(await map.locator('foreignObject').count() === 0, '2D labels must not depend on embedded HTML inside scaled SVG');
           check(JSON.stringify(await readLabels()) === JSON.stringify(expected), `Missing/changed room labels at minimum zoom: ${floor.id}`);
+          await checkBadges();
           const path = join(output, `${prefix}-${floor.id}-2d.png`);
           result.screenshots.push(path);
           await screenshotMap(page, path);
@@ -124,6 +137,7 @@ try {
             return host && host.querySelector('svg').getBoundingClientRect().width >= host.clientWidth * 4 - 4;
           });
           check(JSON.stringify(await readLabels()) === JSON.stringify(expected), `Missing/changed room labels at maximum zoom: ${floor.id}`);
+          await checkBadges();
           result.paintedLabels = (result.paintedLabels ?? 0) + paintedLabels;
           const scroll = map.locator('.architectural-map__viewport');
           await scroll.evaluate((node) => { node.scrollTo(node.scrollWidth, node.scrollHeight); });
@@ -140,7 +154,17 @@ try {
             await map.getByRole('button', { name: '2D 俯视', exact: true }).click();
             check(await map.getByRole('combobox', { name: '定位地点', exact: true }).inputValue() === id, 'Switching view lost selection');
           }
-          result.floors.push({ id: floor.id, exactLabels: expected.length, minMaxZoom: true, viewRoundTrip: true, scrollEdges: reached });
+          const firstBinding = model.stopBindings.find((binding) => model.places.find((p) => p.id === binding.placeId)?.floorId === floor.id);
+          if (firstBinding) {
+            await map.getByRole('combobox', { name: '定位地点', exact: true }).selectOption(firstBinding.placeId);
+            await map.getByRole('button', { name: '3D', exact: true }).click();
+            await canvas.waitFor();
+            const badge = map.locator(`.architectural-map__scene-labels [data-place-id="${firstBinding.placeId}"] [data-guide-numbers]`);
+            await badge.waitFor({ state: 'visible', timeout: 15000 });
+            check((await badge.getAttribute('data-guide-numbers')).split(',').includes(String(firstBinding.stopIndex + 1)), `Focused 3D guide number missing: ${floor.id}`);
+            await map.getByRole('button', { name: '2D 俯视', exact: true }).click();
+          }
+          result.floors.push({ id: floor.id, exactLabels: expected.length, guideNumbers: expectedBadges.length, minMaxZoom: true, viewRoundTrip: true, scrollEdges: reached });
         }
         result.selectedSpaces = [];
         const capturedSelectionFloors = new Set();
@@ -151,6 +175,9 @@ try {
           for (let i = 0; i < bindings.length; i++) {
             await buttons.nth(i).click();
             check(await map.getByRole('combobox', { name: '定位地点', exact: true }).inputValue() === bindings[i].placeId, `Stop focus failed: ${stopIndex}/${bindings[i].placeId}`);
+            check(await row.getAttribute('data-selected') === 'true', `Selected guide row did not highlight: ${stopIndex}`);
+            const badge = map.locator(`.architectural-map__2d-labels [data-place-id="${bindings[i].placeId}"] [data-guide-numbers]`);
+            check((await badge.getAttribute('data-guide-numbers')).split(',').includes(String(stopIndex + 1)), `Focused 2D number missing: ${stopIndex}`);
             const selectedSpace = spaceForPlace(model, bindings[i].placeId);
             if (selectedSpace) {
               const overlay = map.locator(`svg [data-selected-space-id="${selectedSpace.id}"]`);
@@ -183,6 +210,9 @@ try {
           }
         }
         result.stopTargets = model.stopBindings.length;
+        const unlocated = await map.locator('.architectural-map__stops [data-location-state="unlocated"]').evaluateAll((rows) => rows.map((row) => ({ index: Number(row.dataset.stopIndex), reason: row.querySelector('.architectural-map__stop-unlocated')?.textContent, buttons: row.querySelectorAll('button').length })));
+        check(unlocated.every((row) => row.reason?.includes('未定位') && row.buttons === 0 && !model.stopBindings.some((binding) => binding.stopIndex === row.index)), 'An unlocated step has a false map action or lacks its explanation');
+        result.routeNumbering = true;
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
         check(overflow <= 1, `Page horizontal overflow: ${overflow}`);
         check(!errors.length, errors.join('; '));

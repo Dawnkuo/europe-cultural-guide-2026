@@ -1,7 +1,7 @@
 {
   "slug": "brera",
   "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
-  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
   "sourceReview": {
     "geometryReview": "Compared the official gallery leaflet with the complete overhead render: irregular north galleries, open courtyard, perimeter columns, stair treads and lower room sequence are retained. All thirty-five printed gallery identifiers include1A; unprinted16/17/25/26 are not fabricated. Thirty-four selection faces preserve the shared1/6 room.",
     "floorCoverageReview": "The published principal Pinacoteca level, not the palace ground floor or other La Grande Brera institutions.",
@@ -16,7 +16,7 @@
   },
   "browser": {
     "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T08:37:08.440Z",
+    "timestamp": "2026-09-05T09:53:05.184Z",
     "slug": "brera",
     "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
     "sourceDigest": "f60d3d81dba635652fac312a8ec833a810b15bacf0452425cb2d2a598922a298",
@@ -30,6 +30,7 @@
           {
             "id": "gallery",
             "exactLabels": 40,
+            "guideNumbers": 10,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -61,6 +62,7 @@
           "gallery-room-28"
         ],
         "stopTargets": 10,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -72,6 +74,7 @@
           {
             "id": "gallery",
             "exactLabels": 40,
+            "guideNumbers": 10,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -103,6 +106,7 @@
           "gallery-room-28"
         ],
         "stopTargets": 10,
+        "routeNumbering": true,
         "passed": true
       },
       {
@@ -114,6 +118,7 @@
           {
             "id": "gallery",
             "exactLabels": 40,
+            "guideNumbers": 10,
             "minMaxZoom": true,
             "viewRoundTrip": true,
             "scrollEdges": {
@@ -145,6 +150,7 @@
           "gallery-room-28"
         ],
         "stopTargets": 10,
+        "routeNumbering": true,
         "passed": true
       }
     ]
@@ -169,7 +175,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 6.2,
+    "renderP95Ms": 7.1,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -186,7 +192,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 109.48236769803053,
+      "mapSpread": 111.73414084877642,
       "screenshot": "work/map-review/guide-pages-final/_guides_brera_-1440.png",
       "passed": true
     },
@@ -197,7 +203,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 123.9875514612387,
+      "mapSpread": 126.4726594026809,
       "screenshot": "work/map-review/guide-pages-final/_guides_brera_-1094.png",
       "passed": true
     },
@@ -208,17 +214,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 132.05952377287701,
+      "mapSpread": 141.20113016154576,
       "screenshot": "work/map-review/guide-pages-final/_guides_brera_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "b3029fc4fe115b7524e5",
+    "revision": "456d77b72f06f2ff8c9e",
     "route": "/guides/brera/",
     "hasMap": true,
     "errors": [],
     "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+    "routeNumbering": true,
     "passed": true
   }
 }

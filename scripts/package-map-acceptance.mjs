@@ -39,13 +39,16 @@ for (const file of (await readdir('app/data/architectural-plans')).filter((f) =>
   const offlineRoute = offline.routes.find((r) => r.route === `/guides/${slug}/`);
   const pages = layouts.pages.filter((p) => p.route === `/guides/${slug}/`);
   assert(pages.every((p) => p.mapSpread > 3), `${slug}: full-page screenshots did not wait for the real map`);
+  assert(offlineRoute.routeNumbering, `${slug}: offline guide-number checks missing`);
   for (const [name, report] of Object.entries({ browser, touch, performance, offline: offlineRoute })) assert.equal(report?.modelDigest, digest, `${slug}: stale ${name} evidence`);
   assert.deepEqual(browser.viewports.map((v) => [v.viewport.width, v.viewport.height]), [[1440,1000],[1094,768],[390,844]]);
   for (const viewport of browser.viewports) {
     assert(viewport.passed && viewport.keyboard && viewport.interruptedMouseDrag && !viewport.errors.length, `${slug}: failed browser interaction`);
+    assert(viewport.routeNumbering, `${slug}: guide number and unlocated-step checks missing`);
     assert.deepEqual(viewport.floors.map((f) => f.id), model.floors.map((f) => f.id));
     for (const floor of viewport.floors) {
       assert.equal(floor.exactLabels, model.places.filter((p) => p.floorId === floor.id).length);
+      assert.equal(floor.guideNumbers, new Set(model.stopBindings.filter((binding) => model.places.find((place) => place.id === binding.placeId)?.floorId === floor.id).map((binding) => binding.placeId)).size);
       assert(floor.minMaxZoom && floor.viewRoundTrip && floor.scrollEdges.x && floor.scrollEdges.y);
     }
     assert.equal(viewport.stopTargets, model.stopBindings.length);
