@@ -5,8 +5,8 @@ export const romeVaticanGuideContent = defineGuideContent({
     overviewTitle: '教宗宫殿里的庭院、长廊与壁画',
     originalTitle: 'Musei Vaticani',
     hero: {
-      src: '/vatican-guide/assets/images/9e2540b0f966111eca.webp',
-      alt: '梵蒂冈城、圣彼得大教堂与博物馆建筑群鸟瞰',
+      src: '/images/reviewed/9e2540b0f966111eca-8a4053cf9f.webp',
+      alt: '梵蒂冈博物馆雕塑长廊',
     },
     overview:
       '梵蒂冈博物馆不是一座单体建筑，而是沿历代教宗宫殿、庭院和长廊不断扩展的复合体。入口在Viale Vaticano，古典馆围绕观景楼庭院展开，三大长廊位于二层，拉斐尔画室之后下行进入波吉亚寓所和西斯廷礼拜堂。古代雕塑、长廊装饰与文艺复兴壁画共同呈现教宗收藏的不同面貌。',
@@ -77,7 +77,7 @@ export const romeVaticanGuideContent = defineGuideContent({
         creator: '署名雅典的阿波罗尼奥斯',
         period: '公元前1世纪',
         location: '缪斯厅',
-        image: '/vatican-guide/assets/images/2a88c00fb056997178.webp',
+        image: '/images/reviewed/2a88c00fb056997178-d90bdbfff1.webp',
         imageAlt: '观景楼躯干像',
         summary: '残缺的男性躯干以极强的旋转张力影响了米开朗基罗的人体塑造。',
         lookFor:
@@ -89,7 +89,7 @@ export const romeVaticanGuideContent = defineGuideContent({
         creator: '伊格纳齐奥·丹蒂与画师团队',
         period: '1580-1583',
         location: '地图廊',
-        image: '/vatican-guide/assets/images/942ae98cc350e8c5ec.webp',
+        image: '/images/reviewed/942ae98cc350e8c5ec-1dba2e3a40.webp',
         imageAlt: '梵蒂冈博物馆地图廊',
         summary:
           '长约120米的走廊以40幅地域地图把16世纪意大利半岛转化成一条可行走的地理图册。',
@@ -102,7 +102,7 @@ export const romeVaticanGuideContent = defineGuideContent({
         creator: '拉斐尔',
         period: '1509-1511',
         location: '拉斐尔画室签字厅',
-        image: '/vatican-guide/assets/images/414f85f266b23488b8.webp',
+        image: '/images/reviewed/414f85f266b23488b8-a01e981700.webp',
         imageAlt: '拉斐尔《雅典学院》',
         summary:
           '古代哲学家被安置在理想化古典建筑中，中央柏拉图与亚里士多德构成思想和透视的双重轴心。',
@@ -126,7 +126,7 @@ export const romeVaticanGuideContent = defineGuideContent({
         creator: '米开朗基罗',
         period: '1536-1541',
         location: '西斯廷礼拜堂祭坛墙',
-        image: '/vatican-guide/assets/images/60870758ced9f2717c.webp',
+        image: '/images/reviewed/60870758ced9f2717c-1d475418d4.webp',
         imageAlt: '米开朗基罗《最后的审判》',
         summary:
           '数百个人体围绕中央基督形成旋转洪流，与较早完成的天顶画呈现截然不同的情绪。',
@@ -235,7 +235,7 @@ export const romeVaticanGuideContent = defineGuideContent({
         creator: '吉安·洛伦佐·贝尼尼',
         period: '1624-1633',
         location: '主祭坛与穹顶交叉部',
-        image: '/vatican-guide/assets/images/8468f3720f411fd64b.webp',
+        image: '/images/reviewed/8468f3720f411fd64b-035b5fd7b5.webp',
         imageAlt: '贝尼尼青铜华盖',
         summary: '四根扭柱把巨大的穹顶尺度重新收拢到主祭坛和圣彼得墓上方。',
         lookFor: '比较柱身的螺旋运动与上方流苏、蜜蜂和枝叶细节。',
@@ -246,7 +246,7 @@ export const romeVaticanGuideContent = defineGuideContent({
         creator: '吉安·洛伦佐·贝尼尼',
         period: '1657-1666',
         location: '后殿',
-        image: '/vatican-guide/assets/images/87b056610ddec2ee19.webp',
+        image: '/images/reviewed/vatican-chair-cbf818b711.jpg',
         imageAlt: '圣彼得宝座祭坛与金色光窗',
         summary:
           '青铜教父、云团和金色圣灵窗共同把后殿变成一场戏剧化的光学终点。',
@@ -257,7 +257,7 @@ export const romeVaticanGuideContent = defineGuideContent({
         creator: '16-17世纪形成的地下礼拜与墓葬空间',
         period: '多时期',
         location: '主祭坛下方',
-        image: '/vatican-guide/assets/images/a11b9555b83ba6826b.webp',
+        image: '/images/reviewed/vatican-necropolis-941805a495.jpg',
         imageAlt: '梵蒂冈地下墓穴空间',
         summary:
           '地下层围绕被传统认定为圣彼得墓的位置组织，并容纳多位教宗墓葬。',
@@ -281,7 +281,7 @@ export const romeVaticanGuideContent = defineGuideContent({
         creator: '圣彼得大教堂穹顶建造团队',
         period: '16世纪末',
         location: '穹顶顶部',
-        image: '/vatican-guide/assets/images/2dc38eee47aef515d3.webp',
+        image: '/images/reviewed/vatican-lantern-c32836fb75.jpg',
         imageAlt: '圣彼得大教堂穹顶顶部视野',
         summary:
           '顶部观景台提供圣彼得广场轴线、梵蒂冈城与罗马城市肌理的完整视角。',
@@ -442,7 +442,7 @@ export const romeVaticanGuideContent = defineGuideContent({
     orientation: [
       {
         title: '先分楼层',
-        body: '底层重点是贝尼尼雕塑和古物，上层以拉斐尔、提香、卡拉瓦乔等绘画为主；两小时内应先守住底层核心。',
+        body: '底层集中贝尼尼雕塑、古物与8室的卡拉瓦乔绘画，上层继续观看拉斐尔、提香等绘画。不要因为作品是油画就自动到上层寻找。',
       },
       {
         title: '按房号定位',

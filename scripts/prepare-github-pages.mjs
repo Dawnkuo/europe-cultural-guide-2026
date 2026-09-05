@@ -1,4 +1,4 @@
-import { copyFile, cp, mkdir, readdir } from 'node:fs/promises';
+import { copyFile, cp, mkdir, readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { generateGuidePrecache } from './generate-guide-precache.mjs';
 
@@ -25,13 +25,15 @@ for (const page of guidePages) {
   await copyFile(join(guideOutput, page), join(directory, 'index.html'));
 }
 
+await cp(join(output, repository, '_next'), join(output, '_next'), {
+  recursive: true,
+});
+
 const guideRoutes = await generateGuidePrecache({
   output,
   slugs: guidePages.map((page) => page.slice(0, -'.html'.length)).sort(),
-});
-
-await cp(join(output, repository, '_next'), join(output, '_next'), {
-  recursive: true,
+  nestedExportDirectory: repository,
+  serviceWorkerTemplate: await readFile(join(process.cwd(),'public/sw.js'),'utf8'),
 });
 
 console.log(

@@ -26,6 +26,8 @@ export type TripItem = {
 export type GuideSpatialType = 'floorplan' | 'site' | 'viewpoints' | 'district';
 
 export type GuideHighlight = {
+  id?: string;
+  category?: string;
   title: string;
   originalTitle?: string;
   creator?: string;
@@ -33,6 +35,9 @@ export type GuideHighlight = {
   location?: string;
   summary: string;
   lookFor: string;
+  whyItMatters?: string;
+  displayNote?: string;
+  sourceIds?: string[];
   image?: string;
   imageAlt?: string;
 };
@@ -81,7 +86,7 @@ export type GuideRecord = {
     stops: string[];
   };
   highlights: GuideHighlight[];
-  sequence: Array<{ title: string; body: string }>;
+  sequence: Array<{ title: string; body: string; highlightIds?: string[] }>;
   practical: string[];
   sources: GuideSource[];
 };

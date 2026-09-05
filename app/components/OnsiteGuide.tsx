@@ -1,7 +1,8 @@
 'use client';
 
 import { ArrowLeft, ArrowRight, MapPin, X } from 'lucide-react';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import type { GuideRecord } from '../data/types';
 
 function localProgressStore() {
@@ -25,9 +26,8 @@ export function OnsiteGuide({ guide }: { guide: GuideRecord }) {
       : 0;
   });
   const current = guide.sequence[step];
-  const highlight = useMemo(
-    () => guide.highlights[step % guide.highlights.length],
-    [guide.highlights, step],
+  const highlights = guide.highlights.filter(
+    (highlight) => highlight.id && current.highlightIds?.includes(highlight.id),
   );
 
   useEffect(() => {
@@ -52,90 +52,94 @@ export function OnsiteGuide({ guide }: { guide: GuideRecord }) {
     <>
       <button
         className="onsite-launch"
+        aria-label="开始现场导览"
+        title="开始现场导览"
         onClick={() => setOpen(true)}
         type="button"
       >
         <MapPin aria-hidden="true" size={18} />
-        开始现场导览
+        <span>开始现场导览</span>
       </button>
 
-      {open && (
-        <dialog
-          aria-label={`${guide.title}现场导览`}
-          className="onsite-guide"
-          open
-        >
-          <header className="onsite-guide__header">
-            <div>
-              <p>{guide.city} · 现场模式</p>
-              <h2>{guide.title}</h2>
+      {open &&
+        createPortal(
+          <dialog
+            aria-label={`${guide.title}现场导览`}
+            className="onsite-guide"
+            open
+          >
+            <header className="onsite-guide__header">
+              <div>
+                <p>{guide.city} · 现场模式</p>
+                <h2>{guide.title}</h2>
+              </div>
+              <button
+                aria-label="关闭现场导览"
+                onClick={() => setOpen(false)}
+                type="button"
+              >
+                <X aria-hidden="true" />
+              </button>
+            </header>
+
+            <div className="onsite-guide__progress">
+              <span>
+                {step + 1} / {guide.sequence.length}
+              </span>
+              <div aria-hidden="true">
+                <i
+                  style={{
+                    width: `${((step + 1) / guide.sequence.length) * 100}%`,
+                  }}
+                />
+              </div>
             </div>
-            <button
-              aria-label="关闭现场导览"
-              onClick={() => setOpen(false)}
-              type="button"
-            >
-              <X aria-hidden="true" />
-            </button>
-          </header>
 
-          <div className="onsite-guide__progress">
-            <span>
-              {step + 1} / {guide.sequence.length}
-            </span>
-            <div aria-hidden="true">
-              <i
-                style={{
-                  width: `${((step + 1) / guide.sequence.length) * 100}%`,
-                }}
-              />
-            </div>
-          </div>
+            <main className="onsite-guide__stage">
+              <p className="eyebrow">Current stop</p>
+              <h3>{current.title}</h3>
+              <p>{current.body}</p>
+              {highlights.map((highlight) => (
+                <aside key={highlight.id}>
+                  <span>此处重点</span>
+                  <h4>{highlight.title}</h4>
+                  <p>{highlight.lookFor}</p>
+                </aside>
+              ))}
+            </main>
 
-          <main className="onsite-guide__stage">
-            <p className="eyebrow">Current stop</p>
-            <h3>{current.title}</h3>
-            <p>{current.body}</p>
-            {highlight && (
-              <aside>
-                <span>此处重点</span>
-                <h4>{highlight.title}</h4>
-                <p>{highlight.lookFor}</p>
-              </aside>
-            )}
-          </main>
-
-          <footer className="onsite-guide__controls">
-            <button
-              aria-label="上一站"
-              disabled={step === 0}
-              onClick={() => setStep((value) => Math.max(0, value - 1))}
-              type="button"
-            >
-              <ArrowLeft aria-hidden="true" />
-            </button>
-            <button
-              className="onsite-guide__return"
-              onClick={() => setOpen(false)}
-              type="button"
-            >
-              返回完整章节
-            </button>
-            <button
-              aria-label="下一站"
-              disabled={step === guide.sequence.length - 1}
-              onClick={() =>
-                setStep((value) =>
-                  Math.min(guide.sequence.length - 1, value + 1),
-                )
-              }
-              type="button"
-            >
-              <ArrowRight aria-hidden="true" />
-            </button>
-          </footer>
-        </dialog>
-      )}
+            <footer className="onsite-guide__controls">
+              <button
+                aria-label="上一站"
+                disabled={step === 0}
+                onClick={() => setStep((value) => Math.max(0, value - 1))}
+                type="button"
+              >
+                <ArrowLeft aria-hidden="true" />
+              </button>
+              <button
+                className="onsite-guide__return"
+                onClick={() => setOpen(false)}
+                type="button"
+              >
+                返回完整章节
+              </button>
+              <button
+                aria-label="下一站"
+                disabled={step === guide.sequence.length - 1}
+                onClick={() =>
+                  setStep((value) =>
+                    Math.min(guide.sequence.length - 1, value + 1),
+                  )
+                }
+                type="button"
+              >
+                <ArrowRight aria-hidden="true" />
+              </button>
+            </footer>
+          </dialog>,
+          document.body,
+        )}
     </>
   );
 }

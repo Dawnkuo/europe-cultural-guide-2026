@@ -1,44 +1,46 @@
-import { render, screen } from '@testing-library/react';
+import { readFileSync } from 'node:fs';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { describe, expect, it } from 'vitest';
-import { guideCatalog } from '../data/guides';
 import { GuideHighlights } from './GuideHighlights';
+import { guideCatalog } from '../data/guides';
 
-describe('GuideHighlights', () => {
-  it('shows real local images without copyright or source links', () => {
-    const guide = guideCatalog.find(
-      (item) => item.slug === 'picasso-barcelona',
-    )!;
-
-    render(<GuideHighlights guide={guide} />);
-
-    expect(screen.getByAltText(/初领圣体/)).toHaveAttribute(
-      'src',
-      expect.stringContaining('/images/guides/picasso-barcelona-01.jpg'),
-    );
-    expect(screen.getByAltText(/科学与慈善/)).toHaveAttribute(
-      'src',
-      expect.stringContaining('/images/guides/picasso-barcelona-02.jpg'),
-    );
-    expect(screen.getByAltText(/宫娥/)).toHaveAttribute(
-      'src',
-      expect.stringContaining('/images/guides/picasso-barcelona-03.jpg'),
-    );
-    expect(screen.queryByRole('link')).not.toBeInTheDocument();
-    expect(screen.queryByText(/Wikimedia Commons/)).not.toBeInTheDocument();
+describe('uncropped guide illustrations', () => {
+  it('renders local images with intrinsic dimensions, alt text and deferred decoding', () => {
+    for (const guide of guideCatalog) {
+      const dom = new DOMParser().parseFromString(
+        renderToStaticMarkup(<GuideHighlights guide={guide} />),
+        'text/html',
+      );
+      const images = [...dom.querySelectorAll('img')];
+      const initiallyVisible =
+        guide.highlights.length > 6
+          ? guide.highlights.slice(0, 8)
+          : guide.highlights;
+      expect(images).toHaveLength(
+        initiallyVisible.filter((item) => item.image).length,
+      );
+      for (const img of images) {
+        expect(img.getAttribute('alt')).toBeTruthy();
+        expect(Number(img.getAttribute('width'))).toBeGreaterThan(0);
+        expect(Number(img.getAttribute('height'))).toBeGreaterThan(0);
+        expect(img.getAttribute('loading')).toBe('lazy');
+        expect(img.getAttribute('decoding')).toBe('async');
+        expect(img.getAttribute('src')).toMatch(/^\//);
+      }
+    }
   });
 
-  it('uses the named Museum Ludwig works instead of gallery substitutes', () => {
-    const guide = guideCatalog.find((item) => item.slug === 'museum-ludwig')!;
-
-    render(<GuideHighlights guide={guide} />);
-
-    expect(screen.getByAltText(/M-Maybe/)).toHaveAttribute(
-      'src',
-      expect.stringContaining('/images/guides/museum-ludwig-01.jpg'),
-    );
-    expect(screen.getByAltText(/双手交叠的丑角/)).toHaveAttribute(
-      'src',
-      expect.stringContaining('/images/guides/museum-ludwig-02.jpg'),
-    );
+  it('does not stretch or crop artwork to fill the text column', () => {
+    const css = readFileSync('app/globals.css', 'utf8');
+    const block = css.match(/\.guide-highlight__media img\s*\{([^}]+)\}/)![1];
+    expect(block).toContain('height: auto');
+    expect(block).toContain('width: auto');
+    expect(block).toContain('max-width: 100%');
+    expect(block).toContain('object-fit: contain');
+    expect(block).not.toContain('cover');
+    const article = css.match(
+      /\.guide-highlight-list article\s*\{([^}]+)\}/,
+    )![1];
+    expect(article).toContain('align-items: start');
   });
 });

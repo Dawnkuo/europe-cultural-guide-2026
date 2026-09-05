@@ -14,7 +14,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "埃马努埃莱二世长廊：城市与王室纹章马赛克"
     },
     {
-      "image": "/images/guides/galleria-vittorio-03.jpg",
+      "image": "/images/reviewed/galleria-vittorio-03-470b319300.jpg",
       "imageAlt": "埃马努埃莱二世长廊：统一的黑金商业立面"
     }
   ],
@@ -48,7 +48,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "last-supper": [
     {
-      "image": "/images/guides/last-supper-01.jpg",
+      "image": "/images/reviewed/last-supper-01-dad08113d9.jpg",
       "imageAlt": "《最后的晚餐》：《最后的晚餐》整体透视"
     },
     {
@@ -62,7 +62,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "santa-maria-grazie": [
     {
-      "image": "/images/guides/santa-maria-grazie-01.jpg",
+      "image": "/images/reviewed/santa-maria-grazie-01-2730dde29d.jpg",
       "imageAlt": "圣玛利亚感恩教堂：索拉里三廊长堂"
     },
     {
@@ -108,12 +108,12 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "斯卡拉歌剧院博物馆：瓜拉奇诺工坊斯皮内琴"
     },
     {
-      "image": "/images/guides/la-scala-museum-02.jpg",
+      "image": "/images/reviewed/la-scala-museum-02-aeff4657da.jpg",
       "imageAlt": "斯卡拉歌剧院博物馆：塔基纳尔迪胸像与美声肖像"
     },
     {
-      "image": "/images/guides/la-scala-museum-03.jpg",
-      "imageAlt": "斯卡拉歌剧院博物馆：《纳布科》首演海报"
+      "image": "/images/reviewed/la-scala-museum-03-85749d8c89.jpg",
+      "imageAlt": "斯卡拉博物馆藏《纳布科》秋季复演海报，非首演单"
     }
   ],
   "ponte-vecchio": [
@@ -126,13 +126,13 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "老桥：中央开口与城市视线"
     },
     {
-      "image": "/images/guides/ponte-vecchio-03.jpg",
+      "image": "/images/reviewed/ponte-vecchio-03-e02c47cf0a.jpg",
       "imageAlt": "老桥：瓦萨里走廊窗带"
     }
   ],
   "doges-palace": [
     {
-      "image": "/images/guides/doges-palace-01.jpg",
+      "image": "/images/reviewed/doges-palace-01-6470cb955f.jpg",
       "imageAlt": "总督宫：巨人阶梯与战神、海神"
     },
     {
@@ -160,7 +160,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "st-mark-campanile": [
     {
-      "image": "/images/guides/st-mark-campanile-01.jpg",
+      "image": "/images/reviewed/st-mark-campanile-01-9ebd253550.jpg",
       "imageAlt": "圣马可钟楼：桑索维诺小凉廊"
     },
     {
@@ -168,13 +168,13 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "圣马可钟楼：五口历史功能不同的钟"
     },
     {
-      "image": "/images/guides/st-mark-campanile-03.jpg",
+      "image": "/images/reviewed/st-mark-campanile-03-d1099c6e3a.jpg",
       "imageAlt": "圣马可钟楼：1912年重建塔身与金色天使"
     }
   ],
   "st-mark-square": [
     {
-      "image": "/images/guides/st-mark-square-01.jpg",
+      "image": "/images/reviewed/st-mark-square-01-5753b5da6f.jpg",
       "imageAlt": "圣马可广场：圣马可钟塔与天文钟"
     },
     {
@@ -182,7 +182,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "圣马可广场：拿破仑翼"
     },
     {
-      "image": "/images/guides/st-mark-square-03.jpg",
+      "image": "/images/reviewed/st-mark-square-03-d27d9bfecf.jpg",
       "imageAlt": "圣马可广场：圣马可与圣特奥多罗石柱"
     }
   ],
@@ -202,7 +202,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "st-mark-basilica": [
     {
-      "image": "/images/guides/st-mark-basilica-01.jpg",
+      "image": "/images/reviewed/st-mark-basilica-01-399a517668.jpg",
       "imageAlt": "圣马可大教堂全套：《创世纪》穹顶马赛克"
     },
     {
@@ -210,7 +210,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "圣马可大教堂全套：黄金祭坛"
     },
     {
-      "image": "/images/guides/st-mark-basilica-03.jpg",
+      "image": "/images/reviewed/st-mark-basilica-03-a1739a81dd.jpg",
       "imageAlt": "圣马可大教堂全套：原镀金青铜驷马"
     }
   ],
@@ -220,25 +220,25 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "里亚托桥：单一伊斯特拉石大拱"
     },
     {
-      "image": "/images/guides/rialto-02.jpg",
+      "image": "/images/reviewed/rialto-02-83ed44eed6.jpg",
       "imageAlt": "里亚托桥：两排店铺与三条步行线"
     },
     {
-      "image": "/images/guides/rialto-03.jpg",
+      "image": "/images/reviewed/rialto-03-842630e8d7.jpg",
       "imageAlt": "里亚托桥：北向里亚托商业景观"
     }
   ],
   "grand-canal": [
     {
-      "image": "/images/guides/grand-canal-01.jpg",
+      "image": "/images/reviewed/grand-canal-01-b1825b0cba.jpg",
       "imageAlt": "大运河：德国商馆"
     },
     {
-      "image": "/images/guides/grand-canal-02.jpg",
+      "image": "/images/reviewed/grand-canal-02-e7d7684f49.jpg",
       "imageAlt": "大运河：卡梅伦吉宫"
     },
     {
-      "image": "/images/guides/grand-canal-03.jpg",
+      "image": "/images/reviewed/grand-canal-03-842630e8d7.jpg",
       "imageAlt": "大运河：旧市场建筑"
     }
   ],
@@ -286,12 +286,12 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "florence-duomo": [
     {
-      "image": "/images/guides/florence-duomo-01.jpg",
+      "image": "/images/reviewed/florence-duomo-01-6c7e783a64.jpg",
       "imageAlt": "圣母百花大教堂：德·法布里斯立面"
     },
     {
-      "image": "/images/guides/florence-duomo-02.jpg",
-      "imageAlt": "圣母百花大教堂：穹顶肋线与双壳"
+      "image": "/images/reviewed/florence-duomo-02-44b6cf27f5.png",
+      "imageAlt": "圣母百花大教堂穹顶双壳与夹层楼梯的历史结构示意图（1905年出版），非现状测绘"
     },
     {
       "image": "/images/guides/florence-duomo-03.jpg",
@@ -308,13 +308,13 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "比萨斜塔：重复柱廊与建筑修正"
     },
     {
-      "image": "/images/guides/leaning-tower-03.jpg",
+      "image": "/images/reviewed/leaning-tower-03-d2e8d3bfae.jpg",
       "imageAlt": "比萨斜塔：钟层与地平线"
     }
   ],
   "pisa-cathedral": [
     {
-      "image": "/images/guides/pisa-cathedral-01.jpg",
+      "image": "/images/reviewed/pisa-cathedral-01-d1f9512a03.jpg",
       "imageAlt": "比萨主教座堂：地中海式外观"
     },
     {
@@ -322,7 +322,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "比萨主教座堂：乔瓦尼·皮萨诺讲坛"
     },
     {
-      "image": "/images/guides/pisa-cathedral-03.jpg",
+      "image": "/images/reviewed/pisa-cathedral-03-a995857b54.jpg",
       "imageAlt": "比萨主教座堂：后殿马赛克"
     }
   ],
@@ -346,7 +346,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "纪念墓园：《死亡的胜利》"
     },
     {
-      "image": "/images/guides/camposanto-02.png",
+      "image": "/images/reviewed/camposanto-02-091d031a00.jpg",
       "imageAlt": "纪念墓园：《最后的审判》"
     },
     {
@@ -388,11 +388,11 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "米开朗琪罗广场：佛罗伦萨城市剖面"
     },
     {
-      "image": "/images/guides/piazzale-michelangelo-02.jpg",
+      "image": "/images/reviewed/piazzale-michelangelo-02-4e1c3a5f53.jpg",
       "imageAlt": "米开朗琪罗广场：米开朗琪罗纪念碑"
     },
     {
-      "image": "/images/guides/piazzale-michelangelo-03.jpg",
+      "image": "/images/reviewed/piazzale-michelangelo-03-cfee6dd2d3.jpg",
       "imageAlt": "米开朗琪罗广场：未实现的纪念馆构想"
     }
   ],
@@ -402,7 +402,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "学院美术馆：《大卫》"
     },
     {
-      "image": "/images/guides/accademia-florence-02.jpg",
+      "image": "/images/reviewed/accademia-florence-02-b8b05e894f.jpg",
       "imageAlt": "学院美术馆：四尊《囚徒》"
     },
     {
@@ -426,11 +426,11 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "medici-chapels": [
     {
-      "image": "/images/guides/medici-chapels-01.jpg",
+      "image": "/images/reviewed/medici-chapels-01-cb34231b3e.webp",
       "imageAlt": "梅第奇礼拜堂：王公礼拜堂硬石镶嵌"
     },
     {
-      "image": "/images/guides/medici-chapels-02.jpg",
+      "image": "/images/reviewed/medici-chapels-02-4b4a07dd70.webp",
       "imageAlt": "梅第奇礼拜堂：《昼》《夜》《晨》《昏》"
     },
     {
@@ -440,7 +440,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "signoria": [
     {
-      "image": "/images/guides/signoria-01.jpg",
+      "image": "/images/reviewed/signoria-01-f535ddecc3.jpg",
       "imageAlt": "领主广场与佣兵凉廊：旧宫前的复制品体系"
     },
     {
@@ -458,11 +458,11 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "Giunti Odeon书店：二十世纪二十年代装饰"
     },
     {
-      "image": "/images/guides/giunti-odeon-02.jpg",
+      "image": "/images/reviewed/giunti-odeon-02-8fe6739396.jpg",
       "imageAlt": "Giunti Odeon书店：书架中的舞台轴线"
     },
     {
-      "image": "/images/guides/giunti-odeon-03.jpg",
+      "image": "/images/reviewed/giunti-odeon-03-8fe6739396.jpg",
       "imageAlt": "Giunti Odeon书店：昼夜转换机制"
     }
   ],
@@ -482,11 +482,11 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "vasari-corridor": [
     {
-      "image": "/images/guides/vasari-corridor-01.jpg",
+      "image": "/images/reviewed/vasari-corridor-01-60825ce06e.jpg",
       "imageAlt": "瓦萨里走廊：简素的“空中通道”"
     },
     {
-      "image": "/images/guides/vasari-corridor-02.jpg",
+      "image": "/images/reviewed/vasari-corridor-02-e02c47cf0a.jpg",
       "imageAlt": "瓦萨里走廊：老桥上方的双重城市"
     },
     {
@@ -496,7 +496,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "pitti": [
     {
-      "image": "/images/guides/pitti-01.jpg",
+      "image": "/images/reviewed/pitti-01-622254df65.jpg",
       "imageAlt": "皮蒂宫：行星厅与宫廷悬挂"
     },
     {
@@ -552,7 +552,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "roman-forum": [
     {
-      "image": "/images/guides/roman-forum-01.jpg",
+      "image": "/images/reviewed/roman-forum-01-d2d2d396a5.jpg",
       "imageAlt": "古罗马广场：元老院"
     },
     {
@@ -598,7 +598,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "特雷维喷泉：喷泉建筑与岩景"
     },
     {
-      "image": "/images/guides/trevi-02.jpg",
+      "image": "/images/reviewed/trevi-02-370d660e64.jpg",
       "imageAlt": "特雷维喷泉：俄刻阿诺斯与双马"
     },
     {
@@ -612,11 +612,11 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "西班牙台阶：西班牙台阶"
     },
     {
-      "image": "/images/guides/spanish-steps-02.jpg",
+      "image": "/images/reviewed/spanish-steps-02-52cf601cf2.jpg",
       "imageAlt": "西班牙台阶：破船喷泉"
     },
     {
-      "image": "/images/guides/spanish-steps-03.jpg",
+      "image": "/images/reviewed/spanish-steps-03-2739b77bd4.jpg",
       "imageAlt": "西班牙台阶：天主圣三堂立面"
     }
   ],
@@ -630,7 +630,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "纳沃纳广场：四河喷泉"
     },
     {
-      "image": "/images/guides/piazza-navona-03.jpg",
+      "image": "/images/reviewed/piazza-navona-03-7b90169c86.jpg",
       "imageAlt": "纳沃纳广场：圣依搦斯堂立面"
     }
   ],
@@ -650,21 +650,21 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "vatican-post": [
     {
-      "image": "/images/guides/vatican-post-01.jpg",
+      "image": "/images/reviewed/vatican-post-01-a52311ef14.jpg",
       "imageAlt": "梵蒂冈邮局：模块化木构邮局"
     },
     {
-      "image": "/images/guides/vatican-post-02.jpg",
-      "imageAlt": "梵蒂冈邮票历史样本；2026年当期邮票以现场发行为准"
+      "image": "/images/reviewed/vatican-post-02-a9785e31ee.jpg",
+      "imageAlt": "梵蒂冈2026年教宗良十四世当选一周年邮票；现场库存以当日为准"
     },
     {
-      "image": "/images/guides/vatican-post-03.jpg",
-      "imageAlt": "梵蒂冈中央邮局；实际 Citta del Vaticano 邮戳以当天窗口为准"
+      "image": "/images/reviewed/vatican-post-03-221f593c46.jpg",
+      "imageAlt": "梵蒂冈2025年秘密会议纪念邮戳示例；不是2026年到访当天的邮戳"
     }
   ],
   "vatican-surroundings": [
     {
-      "image": "/images/guides/vatican-surroundings-01.jpg",
+      "image": "/images/reviewed/vatican-surroundings-01-9832045818.jpg",
       "imageAlt": "梵蒂冈周边：Passetto di Borgo"
     },
     {
@@ -692,7 +692,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "trastevere": [
     {
-      "image": "/images/guides/trastevere-01.jpg",
+      "image": "/images/reviewed/trastevere-01-cb1a9a3ae2.jpg",
       "imageAlt": "特拉斯提弗列区：西斯托桥"
     },
     {
@@ -714,7 +714,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "圣家堂：Subirachs 的受难立面"
     },
     {
-      "image": "/images/guides/sagrada-familia-03.jpg",
+      "image": "/images/reviewed/sagrada-familia-03-ef58b2326d.jpg",
       "imageAlt": "圣家堂：受难塔的石构取景框"
     }
   ],
@@ -734,7 +734,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "park-guell": [
     {
-      "image": "/images/guides/park-guell-01.jpg",
+      "image": "/images/reviewed/park-guell-01-9ca1403809.jpg",
       "imageAlt": "桂尔公园：自然广场蛇形长椅"
     },
     {
@@ -752,7 +752,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "焦糖山（Turó de la Rovira）：防空炮座"
     },
     {
-      "image": "/images/guides/turo-rovira-02.jpg",
+      "image": "/images/reviewed/turo-rovira-02-4974949f30.jpg",
       "imageAlt": "焦糖山（Turó de la Rovira）：Canons 棚户住宅痕迹"
     },
     {
@@ -766,7 +766,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "米拉之家 Sunrise 清晨参观：自承重石立面与柱网"
     },
     {
-      "image": "/images/guides/la-pedrera-02.jpg",
+      "image": "/images/reviewed/la-pedrera-02-e278106ea5.jpg",
       "imageAlt": "米拉之家 Sunrise 清晨参观：二百七十道悬链拱"
     },
     {
@@ -780,11 +780,11 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "巴特罗之家（铂金票）：骨状立面与龙脊屋顶"
     },
     {
-      "image": "/images/guides/casa-batllo-02.jpg",
+      "image": "/images/reviewed/casa-batllo-02-518bb2cba5.jpg",
       "imageAlt": "巴特罗之家（铂金票）：中央采光井"
     },
     {
-      "image": "/images/guides/casa-batllo-03.jpg",
+      "image": "/images/reviewed/casa-batllo-03-0e4f61f70a.jpg",
       "imageAlt": "巴特罗之家（铂金票）：六十道阁楼拱与烟囱群"
     }
   ],
@@ -798,7 +798,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "加泰罗尼亚音乐宫：舞台雕塑与缪斯"
     },
     {
-      "image": "/images/guides/palau-musica-03.jpg",
+      "image": "/images/reviewed/palau-musica-03-4a73423245.jpg",
       "imageAlt": "加泰罗尼亚音乐宫：Lluís Millet 厅"
     }
   ],
@@ -840,7 +840,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "圣玛利亚海洋教堂：玫瑰窗与幸存古窗"
     },
     {
-      "image": "/images/guides/santa-maria-mar-03.jpg",
+      "image": "/images/reviewed/santa-maria-mar-03-99c5d07903.jpg",
       "imageAlt": "圣玛利亚海洋教堂：Bastaixos 与 Montjuïc 石材"
     }
   ],
@@ -854,7 +854,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "博恩区：Passeig del Born"
     },
     {
-      "image": "/images/guides/el-born-03.jpg",
+      "image": "/images/reviewed/el-born-03-8ff51bce64.jpg",
       "imageAlt": "博恩区：旧市场下的 1700 年遗址"
     }
   ],
@@ -888,7 +888,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "la-rambla": [
     {
-      "image": "/images/guides/la-rambla-01.jpg",
+      "image": "/images/reviewed/la-rambla-01-e9b34ea151.jpg",
       "imageAlt": "兰布拉大道：Canaletes 喷泉"
     },
     {
@@ -906,7 +906,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "路德维希博物馆：罗伊·利希滕斯坦《M-Maybe》"
     },
     {
-      "image": "/images/guides/museum-ludwig-02.jpg",
+      "image": "/images/reviewed/museum-ludwig-02-415c3426d1.jpg",
       "imageAlt": "路德维希博物馆：毕加索《双手交叠的丑角》"
     },
     {
@@ -916,11 +916,11 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "hohenzollern": [
     {
-      "image": "/images/guides/hohenzollern-01.jpg",
+      "image": "/images/reviewed/hohenzollern-01-a02a475ddd.jpg",
       "imageAlt": "霍亨索伦桥：桁架拱与铁路节奏"
     },
     {
-      "image": "/images/guides/hohenzollern-02.jpg",
+      "image": "/images/reviewed/hohenzollern-02-4ebaf88e4b.jpg",
       "imageAlt": "霍亨索伦桥：爱情锁的民间档案"
     },
     {
@@ -930,7 +930,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "koln-triangle": [
     {
-      "image": "/images/guides/koln-triangle-01.jpg",
+      "image": "/images/reviewed/koln-triangle-01-9a77a98266.jpg",
       "imageAlt": "科隆三角大厦观景台：与大教堂近乎齐平的视角"
     },
     {
@@ -944,7 +944,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "cologne-cathedral": [
     {
-      "image": "/images/guides/cologne-cathedral-01.jpg",
+      "image": "/images/reviewed/cologne-cathedral-01-27087ab4ed.jpg",
       "imageAlt": "科隆大教堂：三王圣龛"
     },
     {
@@ -958,7 +958,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
   ],
   "cologne-old-town": [
     {
-      "image": "/images/guides/cologne-old-town-01.jpg",
+      "image": "/images/reviewed/cologne-old-town-01-08e1a5c324.jpg",
       "imageAlt": "科隆老城：Groß St. Martin的罗曼式体量"
     },
     {
@@ -976,7 +976,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "莱茵港：三座Kranhäuser"
     },
     {
-      "image": "/images/guides/rheinauhafen-02.jpg",
+      "image": "/images/reviewed/rheinauhafen-02-d4c3d88b2f.jpg",
       "imageAlt": "莱茵港：Siebengebirge仓库"
     },
     {
@@ -1004,7 +1004,7 @@ export const guideMediaBySlug: Record<string, GuideHighlightMedia[]> = {
       "imageAlt": "巴黎圣母院塔楼：奇美拉“斯特里格”"
     },
     {
-      "image": "/images/guides/notre-dame-towers-02.jpg",
+      "image": "/images/reviewed/notre-dame-towers-02-208bc49d69.jpg",
       "imageAlt": "巴黎圣母院塔楼：南塔橡木双螺旋楼梯"
     },
     {

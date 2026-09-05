@@ -1,6 +1,7 @@
 import { cityProfiles } from './cities';
 import { guideMediaBySlug } from './guide-media.generated';
 import { guideContentBySlug } from './guides/content';
+import { expandGuideHighlights } from './guides/expanded';
 import { tripDays } from './trip';
 import type { GuideRecord, TripItem } from './types';
 
@@ -215,8 +216,8 @@ export const guideCatalog: GuideRecord[] = [
       guideMediaBySlug[guide.slug] ??
       (guide.slug === 'la-scala'
         ? [
-            ...(guideMediaBySlug['la-scala-evening'] ?? []),
             ...(guideMediaBySlug['la-scala-museum'] ?? []),
+            ...(guideMediaBySlug['la-scala-evening'] ?? []),
           ]
         : undefined);
     if (!media) return enrichedGuide;
@@ -233,6 +234,7 @@ export const guideCatalog: GuideRecord[] = [
       })),
     };
   })
+  .map(expandGuideHighlights)
   .sort((left, right) => {
     const leftDate = left.scheduledVisits[0]?.date ?? '';
     const rightDate = right.scheduledVisits[0]?.date ?? '';

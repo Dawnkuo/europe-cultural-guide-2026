@@ -1,0 +1,1151 @@
+{
+  "schemaVersion": "1.0",
+  "status": "partial-ready-for-integration",
+  "scope": "Asset-only cultural-guide expansion; identification metadata, not site content.",
+  "generatedDate": "2026-09-05",
+  "root": "/tmp/europe-expansion-rome-extra",
+  "counts": {
+    "assets": 20,
+    "missing": 7,
+    "excludedExisting": 2
+  },
+  "integration": {
+    "assetArray": "assets",
+    "pathField": "file",
+    "pathsAreAbsolute": true,
+    "onlyIntegrateListedAssets": true,
+    "publicationRightsCleared": false,
+    "notes": [
+      "All listed assets exist locally and were individually visually inspected at a displayed long edge of at least 800 pixels.",
+      "Images remain byte-identical to their downloaded source files. No generated substitutions, upscaling, cropping, or retouching.",
+      "Rights metadata is not a grant of permission. Acquired for identification; public reuse must be cleared separately.",
+      "Sinopia fragment identification has an explicit medium-confidence evidence limitation. Other framing limitations are recorded per asset.",
+      "Chapel model was not acquired; the requested model/dome subject is represented by the actual Princes Chapel dome fresco.",
+      "No claim is made that collection artworks are currently on display in a specific room."
+    ]
+  },
+  "constraints": {
+    "siteCheckoutEdited": false,
+    "sitesSkillsUsed": false,
+    "sitesToolsUsed": false,
+    "spawnUsed": false
+  },
+  "acquisitionPolicy": {
+    "commonsMinimumRequestIntervalSeconds": 3.1,
+    "commonsStatus": "stopped-after-http-429",
+    "stoppedUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Basilica_of_Maxentius_Rome.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "notes": "No Wikimedia image obtained. All accepted images were acquired from independent institutional, scholarly, or photographer hosts. No further Wikimedia network requests after 429."
+  },
+  "assets": [
+    {
+      "key": "forum-temple-saturn",
+      "status": "verified-acquired",
+      "venue": "Roman Forum, Rome",
+      "title": "Temple of Saturn, surviving portico",
+      "artist": "Ancient Roman builders; individual architect unknown",
+      "date": "Ancient Roman, multi-period surviving fabric",
+      "documentedLocation": "Western end of the Roman Forum, below the Capitoline; photographed from the Capitoline slopes.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/itineraries/nel-mezzo-del-cammin/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Named photograph of the Temple of Saturn from the Capitoline slopes and its Forum setting."
+        }
+      ],
+      "imageSource": "https://colosseo.it/en/itineraries/nel-mezzo-del-cammin/",
+      "downloadUrl": "https://colosseo.it/sito/wp-content/uploads/2020/03/Hor_Saturno-1022x1024.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/forum-temple-saturn.jpg",
+      "relativeFile": "images/forum-temple-saturn.jpg",
+      "width": 1022,
+      "height": 564,
+      "sha256": "204e609a94e3927321cfed6ce54baa0fa01ef10a3ff865e7d91bf41a2aa61a2b",
+      "description": "The eight-column portico and surviving entablature stand on the high podium at the center-left. The Arch of Septimius Severus is to the left and the Forum extends behind. This is the Temple of Saturn, not the three-column remains of Castor and Pollux visible farther away. The image records surviving ruins, not a reconstruction.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image supplied by Parco archeologico del Colosseo",
+        "source": "https://colosseo.it/en/itineraries/nel-mezzo-del-cammin/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "The eight-column portico and surviving entablature stand on the high podium at the center-left. The Arch of Septimius Severus is to the left and the Forum extends behind. This is the Temple of Saturn, not the three-column remains of Castor and Pollux visible farther away. The image records surviving ruins, not a reconstruction.",
+        "limitations": [
+          "No precise dating is assigned to individual visible building phases."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1022,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/forum-temple-saturn.download.json"
+    },
+    {
+      "key": "forum-arch-titus",
+      "status": "verified-acquired",
+      "venue": "Roman Forum, Rome",
+      "title": "Arch of Titus, west elevation",
+      "artist": "Ancient Roman imperial workshop; commissioned under Domitian",
+      "date": "After 81 CE; nineteenth-century restoration visible",
+      "documentedLocation": "Eastern end of the Roman Forum, on the Via Sacra near the Palatine approach.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/marvels/arch-of-titus/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Object identity, ancient dedication and official photograph."
+        }
+      ],
+      "imageSource": "https://colosseo.it/en/marvels/arch-of-titus/",
+      "downloadUrl": "https://colosseo.it/sito/wp-content/uploads/2018/11/foro_romano_arco_tito.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/forum-arch-titus.jpg",
+      "relativeFile": "images/forum-arch-titus.jpg",
+      "width": 762,
+      "height": 1200,
+      "sha256": "e3e4c8ba01012f3e807e4fb80843a9285d2277df00152009c4d2264f28e5b457",
+      "description": "Single-bay triumphal arch seen from its west side. The attic carries the nineteenth-century papal restoration inscription, not the ancient dedication on the east face. The coffered vault, spandrel figures, engaged columns, and restored stonework are visible. Do not describe this photograph as a close-up of the menorah relief.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image supplied by Parco archeologico del Colosseo",
+        "source": "https://colosseo.it/en/marvels/arch-of-titus/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Single-bay triumphal arch seen from its west side. The attic carries the nineteenth-century papal restoration inscription, not the ancient dedication on the east face. The coffered vault, spandrel figures, engaged columns, and restored stonework are visible. Do not describe this photograph as a close-up of the menorah relief.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1200,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/forum-arch-titus.download.json"
+    },
+    {
+      "key": "forum-basilica-maxentius",
+      "status": "verified-acquired",
+      "venue": "Roman Forum, Rome",
+      "title": "Basilica of Maxentius, surviving vaulted aisle",
+      "artist": "Imperial Roman builders under Maxentius and Constantine",
+      "date": "Early fourth century CE",
+      "documentedLocation": "Northeastern side of the Roman Forum, beside the upper Via Sacra; elevated view from the Palatine side.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/2024/01/restoration-basilica-maxentius/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Named monument, restoration context and official photograph."
+        }
+      ],
+      "imageSource": "https://colosseo.it/en/2024/01/restoration-basilica-maxentius/",
+      "downloadUrl": "https://colosseo.it/sito/wp-content/uploads/2024/01/basilica-massenzio.png",
+      "file": "/tmp/europe-expansion-rome-extra/images/forum-basilica-maxentius.png",
+      "relativeFile": "images/forum-basilica-maxentius.png",
+      "width": 1500,
+      "height": 709,
+      "sha256": "55bb946bcbcfc173977283a0867c7d61a8835226f2977d3a16f2fc42806fcb34",
+      "description": "Three monumental coffered barrel-vaulted bays identify the surviving northern aisle of the Basilica of Maxentius. The round Temple of Romulus is in the foreground to the left and Santa Francesca Romana is to the right. This is a real sunset overview of the ruins, not a reconstructed basilica interior.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image supplied by Parco archeologico del Colosseo",
+        "source": "https://colosseo.it/en/2024/01/restoration-basilica-maxentius/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Three monumental coffered barrel-vaulted bays identify the surviving northern aisle of the Basilica of Maxentius. The round Temple of Romulus is in the foreground to the left and Santa Francesca Romana is to the right. This is a real sunset overview of the ruins, not a reconstructed basilica interior.",
+        "limitations": [
+          "Wide context view; unsuitable as a close architectural-detail image."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1500,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/forum-basilica-maxentius.download.json"
+    },
+    {
+      "key": "forum-antoninus-faustina",
+      "status": "verified-acquired",
+      "venue": "Roman Forum, Rome",
+      "title": "Temple of Antoninus and Faustina",
+      "artist": "Ancient Roman builders under Antoninus Pius",
+      "date": "141 CE; rededicated to Antoninus and Faustina in 161 CE",
+      "documentedLocation": "North side of the Via Sacra in the Roman Forum; temple later incorporated into San Lorenzo in Miranda.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/marvels/temple-of-antoninus-and-faustina/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Temple identity, chronology, location and photograph."
+        }
+      ],
+      "imageSource": "https://colosseo.it/en/marvels/temple-of-antoninus-and-faustina/",
+      "downloadUrl": "https://colosseo.it/sito/wp-content/uploads/2018/11/foro_romano_antonino_faustina.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/forum-antoninus-faustina.jpg",
+      "relativeFile": "images/forum-antoninus-faustina.jpg",
+      "width": 1195,
+      "height": 1201,
+      "sha256": "554a94af29581f053dcbdc946e32e10e3f2e852a54af6d0d43b1c0d1637885dd",
+      "description": "Frontal view of the tall unfluted portico columns and the two-line dedication on the entablature. The facade of San Lorenzo in Miranda rises behind the ancient portico. The surviving Roman temple and its later church insertion are both visible; the church facade is not part of the second-century temple.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image supplied by Parco archeologico del Colosseo",
+        "source": "https://colosseo.it/en/marvels/temple-of-antoninus-and-faustina/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Frontal view of the tall unfluted portico columns and the two-line dedication on the entablature. The facade of San Lorenzo in Miranda rises behind the ancient portico. The surviving Roman temple and its later church insertion are both visible; the church facade is not part of the second-century temple.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1201,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/forum-antoninus-faustina.download.json"
+    },
+    {
+      "key": "forum-castor-pollux",
+      "status": "verified-acquired",
+      "venue": "Roman Forum, Rome",
+      "title": "Temple of Castor and Pollux, three surviving columns",
+      "artist": "Ancient Roman builders; Tiberian rebuilding",
+      "date": "Surviving colonnade from the rebuilding dedicated in 6 CE",
+      "documentedLocation": "Southeastern side of the Forum square, near the Fountain of Juturna.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/education/percorsi-la-fonte-di-giuturna-e-il-tempio-dei-dioscuri/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Named temple and source photograph."
+        },
+        {
+          "url": "https://colosseo.it/sito/wp-content/uploads/2024/03/QuaderniDidattica_Tempio-dei-Castori.pdf",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Educational account of temple location and building phases."
+        }
+      ],
+      "imageSource": "https://colosseo.it/education/percorsi-la-fonte-di-giuturna-e-il-tempio-dei-dioscuri/",
+      "downloadUrl": "https://colosseo.it/sito/wp-content/uploads/2024/03/dioscuri_web-1-1024x608.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/forum-castor-pollux.jpg",
+      "relativeFile": "images/forum-castor-pollux.jpg",
+      "width": 1024,
+      "height": 608,
+      "sha256": "c9ad628bb07e12e20974fff815ad9665743828b2bfaa20274a4c454f34ba99a3",
+      "description": "The three adjacent standing Corinthian columns and the connected entablature of the Temple of Castor and Pollux are silhouetted against a pink evening sky. The official educational page identifies this exact monument. This is not the Temple of Saturn, whose portico has eight surviving columns.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image supplied by Parco archeologico del Colosseo",
+        "source": "https://colosseo.it/education/percorsi-la-fonte-di-giuturna-e-il-tempio-dei-dioscuri/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "The three adjacent standing Corinthian columns and the connected entablature of the Temple of Castor and Pollux are silhouetted against a pink evening sky. The official educational page identifies this exact monument. This is not the Temple of Saturn, whose portico has eight surviving columns.",
+        "limitations": [
+          "Strong silhouette: monument identity is clear, but carved capitals and masonry details are not legible."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1024,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/forum-castor-pollux.download.json"
+    },
+    {
+      "key": "forum-via-sacra-paving",
+      "status": "verified-acquired",
+      "venue": "Roman Forum, Rome",
+      "title": "Via Sacra, surviving stone paving",
+      "artist": "Ancient Roman road builders",
+      "date": "Roman-period paving; photograph dated 2 November 1994",
+      "documentedLocation": "Via Sacra inside the Roman Forum, looking east toward the Arch of Titus.",
+      "factSource": [
+        {
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0054%3Aid%3Dsacra-via",
+          "publisher": "Perseus Digital Library, Tufts University; Platner and Ashby",
+          "supports": "Authoritative topographical entry for the Sacra Via."
+        },
+        {
+          "url": "https://ozoutback.com.au/Italy/imperial/slides/1994110206.html",
+          "publisher": "Ludo Kuipers, original photographer",
+          "supports": "Exact photograph identity and capture date."
+        }
+      ],
+      "imageSource": "https://ozoutback.com.au/Italy/imperial/slides/1994110206.html",
+      "downloadUrl": "https://ozoutback.com.au/Italy/imperial/slides/1994110206.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/forum-via-sacra-paving.jpg",
+      "relativeFile": "images/forum-via-sacra-paving.jpg",
+      "width": 1040,
+      "height": 693,
+      "sha256": "1caffe24875594db191b90ae4ac776e76de6490513216d258cb38f628440ed38",
+      "description": "Large irregular polygonal paving stones fill the foreground, with the roadway leading toward the distant Arch of Titus. Adjacent temple remains provide spatial context. The source photographer explicitly identifies the Via Sacra and dates the photograph. No exact laying date or wholly untouched ancient condition is claimed for the individual paving stones.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Photograph: Ludo Kuipers / OzOutback, 2 November 1994",
+        "source": "https://ozoutback.com.au/Italy/imperial/slides/1994110206.html",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Large irregular polygonal paving stones fill the foreground, with the roadway leading toward the distant Arch of Titus. Adjacent temple remains provide spatial context. The source photographer explicitly identifies the Via Sacra and dates the photograph. No exact laying date or wholly untouched ancient condition is claimed for the individual paving stones.",
+        "limitations": [
+          "Historical photograph; current visitor furniture and site arrangements may differ."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1040,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/forum-via-sacra-paving.download.json"
+    },
+    {
+      "key": "palatine-domus-flavia-aula-regia",
+      "status": "verified-acquired",
+      "venue": "Palatine Hill, Rome",
+      "title": "Domus Flavia, Aula Regia remains in context",
+      "artist": "Imperial Roman builders under Domitian",
+      "date": "Late first century CE, Domitianic palace",
+      "documentedLocation": "Domus Flavia on the Palatine; Aula Regia in the background of the palace peristyle view.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Exact photo caption and identification of Domus Flavia and Aula Regia."
+        }
+      ],
+      "imageSource": "https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/",
+      "downloadUrl": "https://colosseo.it/sito/wp-content/uploads/2020/10/Domus-Flavia-Veduta-generale-con-Aula-Regia-sullo-sfondo.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/palatine-domus-flavia-aula-regia.jpg",
+      "relativeFile": "images/palatine-domus-flavia-aula-regia.jpg",
+      "width": 3872,
+      "height": 2592,
+      "sha256": "9392a379bac1e6a121879f5a65fb6ba0e276be60281fb1b4b9a1cc9cbde40bfb",
+      "description": "The Aula Regia is the large grassy rectangular audience-hall ruin in the background, bounded by surviving tall brick piers. The octagonal labyrinth-like fountain in the foreground belongs to the palace peristyle, not to the Aula Regia. The institution captions the photograph as a general view of Domus Flavia with Aula Regia in the background.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image supplied by Parco archeologico del Colosseo",
+        "source": "https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "The Aula Regia is the large grassy rectangular audience-hall ruin in the background, bounded by surviving tall brick piers. The octagonal labyrinth-like fountain in the foreground belongs to the palace peristyle, not to the Aula Regia. The institution captions the photograph as a general view of Domus Flavia with Aula Regia in the background.",
+        "limitations": [
+          "Contextual view, not a close-up of the audience hall. Keep the foreground peristyle fountain separate from the Aula Regia in captions."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 3872,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/palatine-domus-flavia-aula-regia.download.json"
+    },
+    {
+      "key": "palatine-domus-augustana-peristyle",
+      "status": "verified-acquired",
+      "venue": "Palatine Hill, Rome",
+      "title": "Domus Augustana, lower peristyle courtyard remains",
+      "artist": "Imperial Roman builders under Domitian",
+      "date": "Late first century CE, Domitianic palace",
+      "documentedLocation": "Lower level of Domus Augustana, Palatine Hill.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Exact photograph caption identifying Domus Augustana, lower floor."
+        }
+      ],
+      "imageSource": "https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/",
+      "downloadUrl": "https://colosseo.it/sito/wp-content/uploads/2020/10/Domus-Augustana-Piano-inferiore.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/palatine-domus-augustana-peristyle.jpg",
+      "relativeFile": "images/palatine-domus-augustana-peristyle.jpg",
+      "width": 2832,
+      "height": 4256,
+      "sha256": "9db1c920e2d4fde3cb54216225971ae2c4c441bb8c19e3ee7efb4945aba633a4",
+      "description": "Elevated view into the sunken lower courtyard of Domus Augustana. Brick arcades and wall remains enclose the central fountain basin with four opposed pelta-shaped forms. Purple planting within the basin is modern landscaping, not surviving Roman decoration. The official caption identifies the lower level of Domus Augustana.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image supplied by Parco archeologico del Colosseo",
+        "source": "https://colosseo.it/en/itineraries/palatium-living-on-the-palatine-from-the-foundation-of-rome-to-the-modern-age/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Elevated view into the sunken lower courtyard of Domus Augustana. Brick arcades and wall remains enclose the central fountain basin with four opposed pelta-shaped forms. Purple planting within the basin is modern landscaping, not surviving Roman decoration. The official caption identifies the lower level of Domus Augustana.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 4256,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/palatine-domus-augustana-peristyle.download.json"
+    },
+    {
+      "key": "palatine-farnese-gardens",
+      "status": "verified-acquired",
+      "venue": "Palatine Hill, Rome",
+      "title": "Farnese Gardens, aviaries and fountain terrace",
+      "artist": "Farnese patronage; successive Renaissance and Baroque designers",
+      "date": "Sixteenth to seventeenth centuries; restored appearance",
+      "documentedLocation": "Horti Farnesiani on the northwestern Palatine; monumental aviary and fountain terrace.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/marvels/horti-farnesiani/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Garden identity, Farnese history and source image."
+        }
+      ],
+      "imageSource": "https://colosseo.it/en/marvels/horti-farnesiani/",
+      "downloadUrl": "https://colosseo.it/sito/wp-content/uploads/2018/11/giardino-segreto-palatino.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/palatine-farnese-gardens.jpg",
+      "relativeFile": "images/palatine-farnese-gardens.jpg",
+      "width": 1468,
+      "height": 772,
+      "sha256": "ae2ec760c9b3af233cad362374859fae90c02f6751b0523f6b94de3cd39027e8",
+      "description": "Two matching aviary pavilions flank a central balustrade above a grotto-like fountain, with symmetrical stairways descending at either side. This is built garden architecture within the Farnese Gardens, not an ancient Roman palace facade. The photograph records the restored garden structures rather than an unmodified sixteenth-century planting scheme.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image supplied by Parco archeologico del Colosseo",
+        "source": "https://colosseo.it/en/marvels/horti-farnesiani/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Two matching aviary pavilions flank a central balustrade above a grotto-like fountain, with symmetrical stairways descending at either side. This is built garden architecture within the Farnese Gardens, not an ancient Roman palace facade. The photograph records the restored garden structures rather than an unmodified sixteenth-century planting scheme.",
+        "limitations": [
+          "Architectural view of the gardens; not an overview of planted beds."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1468,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/palatine-farnese-gardens.download.json"
+    },
+    {
+      "key": "colosseum-numbered-entrance-lii",
+      "status": "verified-acquired",
+      "venue": "Colosseum, Rome",
+      "title": "Exterior entrance arch LII (52)",
+      "artist": "Flavian imperial Roman builders",
+      "date": "First century CE",
+      "documentedLocation": "Exterior ground-level arcade of the Colosseum; entrance marked LII.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/area/the-colosseum/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Institutional identification and history of the Colosseum."
+        },
+        {
+          "url": "https://colosseo.it/en/event/stories-from-the-colosseum-epigraphy-lessons-regarding-the-cavea-loca-and-the-spectators-that-filled-them/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Entrance-arch allocation and spectators assigned to loca."
+        },
+        {
+          "url": "https://imperiumromanum.pl/en/roman-art-and-culture/roman-numerals/",
+          "publisher": "Imperium Romanum",
+          "supports": "Exact image caption identifying entrance LII."
+        }
+      ],
+      "imageSource": "https://imperiumromanum.pl/en/roman-art-and-culture/roman-numerals/",
+      "downloadUrl": "https://imperiumromanum.pl/wp-content/uploads/2017/08/Colosseum-Entrance_LII-e1663612448564.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/colosseum-numbered-entrance-lii.jpg",
+      "relativeFile": "images/colosseum-numbered-entrance-lii.jpg",
+      "width": 1200,
+      "height": 900,
+      "sha256": "216bbfa3454e7c3280617a96dc72255c5d8d0ad8b2279e2883e1d001d9fe800b",
+      "description": "The carved Roman numeral LII is plainly visible above the crown of the travertine entrance arch. The image isolates the arch voussoirs, adjacent engaged column, pockmarked stone surface, and numbering. It is an ancient exterior entrance marker, not a numbered modern pavement block or a seating inscription.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Photograph attributed to WarpFlyght; acquired from Imperium Romanum, not Wikimedia.",
+        "source": "https://imperiumromanum.pl/en/roman-art-and-culture/roman-numerals/",
+        "notes": "The independently hosted image is attributed to WarpFlyght in image-history metadata. An exact license version and attribution chain were not fully verified after Wikimedia access stopped. Do not infer a reusable license."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "The carved Roman numeral LII is plainly visible above the crown of the travertine entrance arch. The image isolates the arch voussoirs, adjacent engaged column, pockmarked stone surface, and numbering. It is an ancient exterior entrance marker, not a numbered modern pavement block or a seating inscription.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1200,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/colosseum-numbered-entrance-lii.download.json"
+    },
+    {
+      "key": "medici-lorenzo-dawn-dusk",
+      "status": "verified-acquired",
+      "venue": "Medici Chapels, Florence",
+      "title": "Tomb of Lorenzo, Duke of Urbino: seated Lorenzo with Dusk and Dawn",
+      "artist": "Michelangelo Buonarroti",
+      "date": "1524-1531",
+      "documentedLocation": "Sagrestia Nuova (New Sacristy), Basilica of San Lorenzo / Museo delle Cappelle Medicee, Florence.",
+      "factSource": [
+        {
+          "url": "https://opera.bargellomusei.it/it/ricerca-opere?isPostBack=1&ubicazione=medicee",
+          "publisher": "Musei del Bargello, official collection catalogue",
+          "supports": "Monumento funebre Lorenzo de' Medici duca di Urbino, Michelangelo and workshop attribution."
+        },
+        {
+          "url": "https://www.wga.hu/html_m/m/michelan/1sculptu/medici/2lorenz.html",
+          "publisher": "Web Gallery of Art",
+          "supports": "Exact titled photograph, date and New Sacristy location."
+        }
+      ],
+      "imageSource": "https://www.wga.hu/html_m/m/michelan/1sculptu/medici/2lorenz.html",
+      "downloadUrl": "https://www.wga.hu/art/m/michelan/1sculptu/medici/2lorenz.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/medici-lorenzo-dawn-dusk.jpg",
+      "relativeFile": "images/medici-lorenzo-dawn-dusk.jpg",
+      "width": 1033,
+      "height": 1300,
+      "sha256": "717131d8245acecc174aa4198536a5ec77eb4f3278051fda79931c344ab7a4be",
+      "description": "Dedicated frontal view of Lorenzo, Duke of Urbino, seated in armor with helmet and hand raised thoughtfully to his chin. Below him Dusk, male, reclines on the viewer's left; Dawn, female, reclines on the right. This is not Giuliano with Night and Day, not Lorenzo the Magnificent, and not the Medici Madonna group. The photograph includes the original marble tomb architecture.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Web Gallery of Art; underlying photographer not credited on the object page.",
+        "source": "https://www.wga.hu/html_m/m/michelan/1sculptu/medici/2lorenz.html",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Dedicated frontal view of Lorenzo, Duke of Urbino, seated in armor with helmet and hand raised thoughtfully to his chin. Below him Dusk, male, reclines on the viewer's left; Dawn, female, reclines on the right. This is not Giuliano with Night and Day, not Lorenzo the Magnificent, and not the Medici Madonna group. The photograph includes the original marble tomb architecture.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1300,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/medici-lorenzo-dawn-dusk.download.json",
+      "medium": "Marble"
+    },
+    {
+      "key": "medici-princes-chapel-dome",
+      "status": "verified-acquired",
+      "venue": "Medici Chapels, Florence",
+      "title": "Chapel of the Princes, dome fresco cycle",
+      "artist": "Pietro Benvenuti",
+      "date": "1828-1837",
+      "documentedLocation": "Interior dome of the Cappella dei Principi, Museo delle Cappelle Medicee, Florence.",
+      "factSource": [
+        {
+          "url": "https://bargellomusei.it/musei/cappelle-medicee/",
+          "publisher": "Musei del Bargello",
+          "supports": "Chapel identity, Benvenuti authorship, 1828-1837 chronology and official photograph."
+        }
+      ],
+      "imageSource": "https://bargellomusei.it/musei/cappelle-medicee/",
+      "downloadUrl": "https://bargellomusei.it/wp-content/uploads/2023/11/ERCO-Cappella_Principi-17-scaled.webp",
+      "file": "/tmp/europe-expansion-rome-extra/images/medici-princes-chapel-dome.webp",
+      "relativeFile": "images/medici-princes-chapel-dome.webp",
+      "width": 2560,
+      "height": 1707,
+      "sha256": "46d64c810aa7192260d622d94a6097ce31eb773c1895be10cac6335d214deb90",
+      "description": "Upward photograph of the octagonal dome with eight painted sectors, gilded framing, and the surrounding windows. The biblical fresco cycle is by Pietro Benvenuti in the nineteenth century, not by Michelangelo. This asset supplies the requested Princes Chapel dome subject; it is neither a chapel model nor the Medici Madonna group.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Musei del Bargello website; source filename ERCO-Cappella_Principi-17. Individual photographer/license not stated in the captured page.",
+        "source": "https://bargellomusei.it/musei/cappelle-medicee/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Upward photograph of the octagonal dome with eight painted sectors, gilded framing, and the surrounding windows. The biblical fresco cycle is by Pietro Benvenuti in the nineteenth century, not by Michelangelo. This asset supplies the requested Princes Chapel dome subject; it is neither a chapel model nor the Medici Madonna group.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 2560,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/medici-princes-chapel-dome.download.json",
+      "medium": "Fresco"
+    },
+    {
+      "key": "ludwig-dix-hans-koch",
+      "status": "verified-acquired",
+      "venue": "Museum Ludwig, Cologne",
+      "title": "Portrait of Dr Hans Koch (Bildnis Doktor Hans Koch)",
+      "artist": "Otto Dix",
+      "date": "1921",
+      "documentedLocation": "Museum Ludwig collection, Cologne; no current gallery room asserted.",
+      "factSource": [
+        {
+          "url": "https://www.museum-ludwig.de/de/museum/sammlung/die-sammlung-des-museum-ludwig",
+          "publisher": "Museum Ludwig",
+          "supports": "Collection identity and 1921 date."
+        },
+        {
+          "url": "https://geheimnis-der-bilder.zdf.de/museum-ludwig/otto-dix-bildnis-doktor-hans-koch.html",
+          "publisher": "ZDF, Museum Ludwig artwork presentation",
+          "supports": "Exact reproduction, object heading, dimensions and image-rights credit."
+        }
+      ],
+      "imageSource": "https://geheimnis-der-bilder.zdf.de/museum-ludwig/otto-dix-bildnis-doktor-hans-koch.html",
+      "downloadUrl": "https://geheimnis-der-bilder.zdf.de/images/07_Museum-Ludwig/Bildnis-Doktor-Hans-Koch/KOELN_OttoDix_BildnisDoktorHansKoch_minimum.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/ludwig-dix-hans-koch.jpg",
+      "relativeFile": "images/ludwig-dix-hans-koch.jpg",
+      "width": 2696,
+      "height": 3000,
+      "sha256": "484d6ae49f3f317e675acffe0ab682a47e80ba49d58ab5473d46c01b09f65377",
+      "description": "Dr Koch appears in a white coat and pince-nez, holding a syringe and catheter, with an examination chair and clinical equipment around him. The complete painted field matches the museum-owned portrait. Use 1921, the museum and object-heading date; a prose sentence on the ZDF page inconsistently says 1922 and is not followed.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Work: VG Bild-Kunst, Bonn 2020 (source credit). Photograph: Rheinisches Bildarchiv Koln.",
+        "source": "https://geheimnis-der-bilder.zdf.de/museum-ludwig/otto-dix-bildnis-doktor-hans-koch.html",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Dr Koch appears in a white coat and pince-nez, holding a syringe and catheter, with an examination chair and clinical equipment around him. The complete painted field matches the museum-owned portrait. Use 1921, the museum and object-heading date; a prose sentence on the ZDF page inconsistently says 1922 and is not followed.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 3000,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/ludwig-dix-hans-koch.download.json",
+      "medium": "Oil on canvas, with applied metallic foil detail",
+      "objectDimensions": "100.5 x 90 cm"
+    },
+    {
+      "key": "ludwig-kirchner-half-nude-hat",
+      "status": "verified-acquired",
+      "venue": "Museum Ludwig, Cologne",
+      "title": "Half-Nude with Hat (Weiblicher Halbakt mit Hut)",
+      "artist": "Ernst Ludwig Kirchner",
+      "date": "1911",
+      "documentedLocation": "Museum Ludwig collection, Cologne; no current gallery room asserted.",
+      "factSource": [
+        {
+          "url": "https://www.museum-ludwig.de/de/museum/sammlung/die-sammlung-des-museum-ludwig",
+          "publisher": "Museum Ludwig",
+          "supports": "Collection work identity."
+        },
+        {
+          "url": "https://kunstfreunde.koeln/events/das-ludwig-und-seine-frauen/",
+          "publisher": "Freunde des Wallraf-Richartz-Museum und des Museum Ludwig",
+          "supports": "Exact artwork photograph, title, date and dimensions."
+        }
+      ],
+      "imageSource": "https://kunstfreunde.koeln/events/das-ludwig-und-seine-frauen/",
+      "downloadUrl": "https://kunstfreunde.koeln/wp-content/uploads/2016/02/Kirchner_-_Weiblicher_Akt_mit_Hut.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/ludwig-kirchner-half-nude-hat.jpg",
+      "relativeFile": "images/ludwig-kirchner-half-nude-hat.jpg",
+      "width": 1275,
+      "height": 1536,
+      "sha256": "3ee17c2cd9f6f1c315495f00a97cf28e587bac6985944e0314f4445fbca4d7e9",
+      "description": "A seated half-nude woman wears a broad dark hat against a blue background, with a red-patterned light cloth around her lower torso. The image shows the entire painted composition without an exhibition room or substitute work. The Friends of the museum identify it by artist, title, 1911 date and Museum Ludwig ownership.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Kunstfreunde Koln; no separate photographic credit or reusable license verified.",
+        "source": "https://kunstfreunde.koeln/events/das-ludwig-und-seine-frauen/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "A seated half-nude woman wears a broad dark hat against a blue background, with a red-patterned light cloth around her lower torso. The image shows the entire painted composition without an exhibition room or substitute work. The Friends of the museum identify it by artist, title, 1911 date and Museum Ludwig ownership.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1536,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/ludwig-kirchner-half-nude-hat.download.json",
+      "medium": "Oil on canvas",
+      "objectDimensions": "76 x 70 cm"
+    },
+    {
+      "key": "ludwig-ernst-virgin-chastising",
+      "status": "verified-acquired",
+      "venue": "Museum Ludwig, Cologne",
+      "title": "The Virgin Chastising the Infant Jesus before Three Witnesses: Andre Breton, Paul Eluard and the Painter",
+      "artist": "Max Ernst",
+      "date": "1926",
+      "documentedLocation": "Museum Ludwig collection, Cologne; no current gallery room asserted.",
+      "factSource": [
+        {
+          "url": "https://www.museum-ludwig.de/de/museum/sammlung/die-sammlung-des-museum-ludwig",
+          "publisher": "Museum Ludwig",
+          "supports": "Collection identity."
+        },
+        {
+          "url": "https://geheimnis-der-bilder.zdf.de/museum-ludwig/max-ernst-die-jungfrau-z%C3%BCchtigt-das-jesuskind-vor-drei-zeugen.html",
+          "publisher": "ZDF, Museum Ludwig artwork presentation",
+          "supports": "Exact reproduction, 1926 date, medium, dimensions and rights."
+        }
+      ],
+      "imageSource": "https://geheimnis-der-bilder.zdf.de/museum-ludwig/max-ernst-die-jungfrau-züchtigt-das-jesuskind-vor-drei-zeugen.html",
+      "downloadUrl": "https://geheimnis-der-bilder.zdf.de/images/07_Museum-Ludwig/Die-Jungfrau-zuechtigt-das-Jesuskind/KOELN_MaxErnst_Die-JungfrauzuechtigtdasJesuskind-2_minimum.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/ludwig-ernst-virgin-chastising.jpg",
+      "relativeFile": "images/ludwig-ernst-virgin-chastising.jpg",
+      "width": 2001,
+      "height": 3000,
+      "sha256": "0747b72fb041c18577a4b642ee9b1c4d51e4abe027af4d2c6da36f188b3b27e6",
+      "description": "Mary in a red dress and blue drapery raises her hand over the child across her lap. Three witnesses appear at a window on the upper left, while the child's fallen halo surrounds the artist's signature near the lower right. The image matches the complete 1926 Museum Ludwig composition, not a preparatory study or another Madonna.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Work: VG Bild-Kunst, Bonn 2020 (source credit). Photograph: Rheinisches Bildarchiv Koln.",
+        "source": "https://geheimnis-der-bilder.zdf.de/museum-ludwig/max-ernst-die-jungfrau-züchtigt-das-jesuskind-vor-drei-zeugen.html",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Mary in a red dress and blue drapery raises her hand over the child across her lap. Three witnesses appear at a window on the upper left, while the child's fallen halo surrounds the artist's signature near the lower right. The image matches the complete 1926 Museum Ludwig composition, not a preparatory study or another Madonna.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 3000,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/ludwig-ernst-virgin-chastising.download.json",
+      "medium": "Oil on canvas",
+      "objectDimensions": "196 x 130 cm"
+    },
+    {
+      "key": "ludwig-warhol-two-elvis",
+      "status": "verified-acquired",
+      "venue": "Museum Ludwig, Cologne",
+      "title": "Two Elvis (Doppel-Elvis / Double Elvis), Cologne version",
+      "artist": "Andy Warhol",
+      "date": "1963",
+      "documentedLocation": "Museum Ludwig collection, Cologne; reproduced in the museum's Not Yet Titled archive.",
+      "factSource": [
+        {
+          "url": "https://www.museum-ludwig.de/index.php?id=195",
+          "publisher": "Museum Ludwig",
+          "supports": "Museum-owned Two Elvis, date, dimensions, exact reproduction and rights credit."
+        }
+      ],
+      "imageSource": "https://www.museum-ludwig.de/index.php?id=195",
+      "downloadUrl": "https://www.museum-ludwig.de/fileadmin/_processed_/4/2/csm_Warhol_Double-Elvis_01_0c29292498.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/ludwig-warhol-two-elvis.jpg",
+      "relativeFile": "images/ludwig-warhol-two-elvis.jpg",
+      "width": 660,
+      "height": 920,
+      "sha256": "90f56c61a35b627b20918bf709222673858175622f4dd12ae2bceba278a925cf",
+      "description": "Two strongly printed, close-overlapping full-length images of Elvis Presley with a pistol appear on a silver ground. The museum's own image and caption establish the Cologne version, with dimensions 206 x 148 cm. It is not the MoMA Double Elvis composition with a more separated, fading duplicate. Preserve the institutional title Two Elvis alongside the requested English alias.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Work: The Andy Warhol Foundation for the Visual Arts. Photograph: Rheinisches Bildarchiv Koln.",
+        "source": "https://www.museum-ludwig.de/index.php?id=195",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Two strongly printed, close-overlapping full-length images of Elvis Presley with a pistol appear on a silver ground. The museum's own image and caption establish the Cologne version, with dimensions 206 x 148 cm. It is not the MoMA Double Elvis composition with a more separated, fading duplicate. Preserve the institutional title Two Elvis alongside the requested English alias.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 920,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/ludwig-warhol-two-elvis.download.json",
+      "medium": "Screenprint ink on canvas",
+      "objectDimensions": "206 x 148 cm"
+    },
+    {
+      "key": "pisa-griffin-original",
+      "status": "verified-acquired",
+      "venue": "Museo dell'Opera del Duomo, Pisa",
+      "title": "Pisa Griffin, Islamic bronze original",
+      "artist": "Unknown Islamic metalworkers; geographical attribution debated",
+      "date": "Eleventh to early twelfth century, approximately",
+      "documentedLocation": "Museo dell'Opera del Duomo, Pisa; museum interior, overseas/Mediterranean objects section.",
+      "factSource": [
+        {
+          "url": "https://www.opapisa.it/visita/museo-dellopera/",
+          "publisher": "Opera della Primaziale Pisana",
+          "supports": "Official museum gallery photograph and overseas-objects section."
+        },
+        {
+          "url": "https://smarthistory.org/pisa-griffin/",
+          "publisher": "Smarthistory, scholarly art-history publication",
+          "supports": "Islamic object identity, museum original and debated origin."
+        }
+      ],
+      "imageSource": "https://www.opapisa.it/visita/museo-dellopera/",
+      "downloadUrl": "https://www.opapisa.it/wp-content/gallery/museoopera/MOD2020_SITO_6.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/pisa-griffin-original.jpg",
+      "relativeFile": "images/pisa-griffin-original.jpg",
+      "width": 800,
+      "height": 607,
+      "sha256": "32b8c3639b9fc6dc4a73265344da5beab1f79c84a3c10869f2cf9b0c4e564166",
+      "description": "The bronze Griffin is displayed indoors on a tall circular pedestal, with its beaked head, raised wings, four legs and hollow body visible. This institutional gallery photograph shows the museum original, not the replica mounted on the cathedral roof. A Madonna sculpture stands to the right as gallery context. The precise workshop and place of manufacture should not be treated as settled.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Opera della Primaziale Pisana. Website states all rights reserved.",
+        "source": "https://www.opapisa.it/visita/museo-dellopera/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "The bronze Griffin is displayed indoors on a tall circular pedestal, with its beaked head, raised wings, four legs and hollow body visible. This institutional gallery photograph shows the museum original, not the replica mounted on the cathedral roof. A Madonna sculpture stands to the right as gallery context. The precise workshop and place of manufacture should not be treated as settled.",
+        "limitations": [
+          "800-pixel long edge meets the requirement; object occupies only part of the gallery-context photograph."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 800,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/candidate-pisa-6.download.json",
+      "medium": "Cast bronze"
+    },
+    {
+      "key": "sinopie-gozzoli-tower-babel",
+      "status": "verified-acquired",
+      "venue": "Museo delle Sinopie, Pisa",
+      "title": "Building the Tower of Babel, surviving sinopia fragment",
+      "artist": "Benozzo Gozzoli",
+      "date": "Circa 1469-1470",
+      "documentedLocation": "Museo delle Sinopie, Pisa; transferred preparatory plaster drawing from the Camposanto cycle.",
+      "factSource": [
+        {
+          "url": "https://www.opapisa.it/visita/museo-delle-sinopie/",
+          "publisher": "Opera della Primaziale Pisana",
+          "supports": "Institutional explanation of original preparatory drawings transferred from the Camposanto, including works by Gozzoli."
+        },
+        {
+          "url": "https://www.opapisa.it/multimedia/curiosita/",
+          "publisher": "Opera della Primaziale Pisana",
+          "supports": "Gozzoli Tower of Babel subject and 1470 fresco context; this is contextual evidence, not an exact sinopia inventory record."
+        },
+        {
+          "url": "https://iviaggidiraffaella.blogspot.com/2025/10/pisa-il-camposanto-monumentale-gli_11.html",
+          "publisher": "I Viaggi di Raffaella, original visitor photograph and caption",
+          "supports": "Exact photographed sinopia title, 1469/1470 dating and Museo delle Sinopie location."
+        }
+      ],
+      "imageSource": "https://iviaggidiraffaella.blogspot.com/2025/10/pisa-il-camposanto-monumentale-gli_11.html",
+      "downloadUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNyCo5XsaaYepjcW3Noq-dZhtf-XK99Wzn-vkDqM80rnA9DE4vb-qzg370pzGsiL8wjLT7LNd0rHfgLpITXh8mKAUzW820PBud3hTeE7lSL_t9G4qocv6chc6TTkyUkidtlWwq_NIPu3-VV5ShdimmPuAfkXejKS2lxekdNnfzaloygSZ5MYJAUD39O5Mw/s1024/20250504_155746%20(Copia).jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/sinopie-gozzoli-tower-babel.jpg",
+      "relativeFile": "images/sinopie-gozzoli-tower-babel.jpg",
+      "width": 1024,
+      "height": 768,
+      "sha256": "04bfa9697c40268c77b32c1df248b468d6d12bdabd04ec954e155bc68b93323b",
+      "description": "A rectangular, pale plaster fragment bears faint reddish-brown preparatory figure outlines, including a central standing man and a bent figure at right. There is no filled-in coloured fresco surface and no printed engraving texture. The source photograph is explicitly captioned as the Tower of Babel sinopia in this museum. Only a surviving figure-group fragment is pictured, not a full tower scene.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "I Viaggi di Raffaella; source image filename records 4 May 2025. No reusable photo license verified.",
+        "source": "https://iviaggidiraffaella.blogspot.com/2025/10/pisa-il-camposanto-monumentale-gli_11.html",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "medium",
+        "versionCheck": "A rectangular, pale plaster fragment bears faint reddish-brown preparatory figure outlines, including a central standing man and a bent figure at right. There is no filled-in coloured fresco surface and no printed engraving texture. The source photograph is explicitly captioned as the Tower of Babel sinopia in this museum. Only a surviving figure-group fragment is pictured, not a full tower scene.",
+        "limitations": [
+          "Exact fragment identification depends on the photographer's explicit caption plus visual comparison. No official fragment-level accession record was located.",
+          "Institutional fact sources establish the collection and corresponding fresco; they do not independently inventory this exact fragment.",
+          "Faint original drawing and subdued lighting limit detail legibility."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1024,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/sinopie-gozzoli-tower-babel.download.json",
+      "medium": "Sinopia: preparatory drawing on plaster"
+    },
+    {
+      "key": "camposanto-noah-drunkenness",
+      "status": "verified-acquired",
+      "venue": "Camposanto Monumentale, Pisa",
+      "title": "Vintage and Drunkenness of Noah (Vendemmia ed Ebbrezza di Noe)",
+      "artist": "Benozzo Gozzoli",
+      "date": "Circa 1468-1469",
+      "documentedLocation": "Camposanto Monumentale, Pisa, Old Testament fresco cycle on the north gallery wall.",
+      "factSource": [
+        {
+          "url": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/14200/Benozzo%20di%20Lese%2C%20Vendemmia%20ed%20Ebbrezza%20di%20No%C3%A8",
+          "publisher": "Fondazione Federico Zeri, University of Bologna",
+          "supports": "Scholarly catalogue identity and dating."
+        },
+        {
+          "url": "https://www.wga.hu/html_m/g/gozzoli/6late/1pisa.html",
+          "publisher": "Web Gallery of Art",
+          "supports": "Exact titled reproduction, artist, medium and Camposanto location."
+        }
+      ],
+      "imageSource": "https://www.wga.hu/html_m/g/gozzoli/6late/1pisa.html",
+      "downloadUrl": "https://www.wga.hu/art/g/gozzoli/6late/1pisa.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/camposanto-noah-drunkenness.jpg",
+      "relativeFile": "images/camposanto-noah-drunkenness.jpg",
+      "width": 1453,
+      "height": 700,
+      "sha256": "82aa526f2ac4e1e8b3105ddc118b0c011ed1104f5ddba17aa4623cb0afaef4f9",
+      "description": "The surviving coloured fresco shows grape harvesting and wine-making at left and center, with the reclining drunken Noah beneath the architectural setting at the lower right. Plaster losses and vertical transfer seams remain visible. This is the fresco, not its sinopia and not a Lasinio engraved copy. The photographed display label also identifies the Vintage and Drunkenness subject.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Web Gallery of Art; underlying photographer not credited on the object page.",
+        "source": "https://www.wga.hu/html_m/g/gozzoli/6late/1pisa.html",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "The surviving coloured fresco shows grape harvesting and wine-making at left and center, with the reclining drunken Noah beneath the architectural setting at the lower right. Plaster losses and vertical transfer seams remain visible. This is the fresco, not its sinopia and not a Lasinio engraved copy. The photographed display label also identifies the Vintage and Drunkenness subject.",
+        "limitations": [
+          "Historical reproduction; the display arrangement and conservation appearance need not represent the current installation.",
+          "WGA gives the wider cycle range 1469-1484; the narrower work date follows the scholarly catalogue."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1453,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/camposanto-noah-drunkenness.download.json",
+      "medium": "Fresco, detached and remounted"
+    },
+    {
+      "key": "camposanto-buffalmacco-thebaid",
+      "status": "verified-acquired",
+      "venue": "Camposanto Monumentale, Pisa",
+      "title": "Thebaid (Tebaide / Lives of the Desert Fathers)",
+      "artist": "Buonamico Buffalmacco",
+      "date": "Circa 1336-1341",
+      "documentedLocation": "Camposanto Monumentale, Pisa, south gallery; restored fresco returned to its wall.",
+      "factSource": [
+        {
+          "url": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/8822/Anonimo%20pisano%20sec.%20XIV%2C%20Tebaide",
+          "publisher": "Fondazione Federico Zeri, University of Bologna",
+          "supports": "Scholarly record for the Camposanto Thebaid; historical attribution metadata is retained in its URL."
+        },
+        {
+          "url": "https://www.opapisa.it/wp-content/uploads/2022/04/bilancio_sociale2021.pdf",
+          "publisher": "Opera della Primaziale Pisana",
+          "supports": "Institutional attribution to Buffalmacco and return of the painted framing around Thebaid and associated murals."
+        },
+        {
+          "url": "https://www.santantonioabate.afom.it/pisa-camposanto-affresco-della-tebaide-di-buffalmacco-1336-41/",
+          "publisher": "Associazione Amici della Fondazione Ordine Mauriziano",
+          "supports": "Named restored fresco image and chronology."
+        }
+      ],
+      "imageSource": "https://www.santantonioabate.afom.it/pisa-camposanto-affresco-della-tebaide-di-buffalmacco-1336-41/",
+      "downloadUrl": "https://www.santantonioabate.afom.it/wp-content/uploads/Teabaide-buffalmacco-pisa-after-restoration-scaled.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/images/camposanto-buffalmacco-thebaid.jpg",
+      "relativeFile": "images/camposanto-buffalmacco-thebaid.jpg",
+      "width": 2560,
+      "height": 999,
+      "sha256": "6f3040997eeb34a088cf377cafce3c21c863cbcc599d4f97c1846ad413972a58",
+      "description": "Long horizontal fresco with numerous hermits distributed among rocky outcrops, small buildings, trees and water. Extensive faded passages and losses belong to the surviving mural. This is Buffalmacco's monumental Camposanto fresco, not the small panel Thebaid associated with Fra Angelico and not a sinopia. The independent source labels this photograph as the restored work.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Image hosted by the Sant'Antonio Abate heritage project / AFOM; underlying photographer and photo license not verified.",
+        "source": "https://www.santantonioabate.afom.it/pisa-camposanto-affresco-della-tebaide-di-buffalmacco-1336-41/",
+        "notes": "No explicit reusable image license verified. Obtain permission before public deployment."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Long horizontal fresco with numerous hermits distributed among rocky outcrops, small buildings, trees and water. Extensive faded passages and losses belong to the surviving mural. This is Buffalmacco's monumental Camposanto fresco, not the small panel Thebaid associated with Fra Angelico and not a sinopia. The independent source labels this photograph as the restored work.",
+        "limitations": []
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual image opened and visually inspected with view_image",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 2560,
+        "notes": "Real source image; no generated replacement, crop, upscale, or retouch applied."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/evidence/camposanto-buffalmacco-thebaid.download.json",
+      "medium": "Fresco, detached and remounted"
+    }
+  ],
+  "missing": [
+    {
+      "key": "palatine-museum-winged-victory",
+      "venue": "Palatine Museum, Rome",
+      "title": "Winged Victory sculpture",
+      "status": "omitted-unverified-exact-object",
+      "reason": "No institution-backed exact sculpture identity and matching photograph verified. Other museums' Winged Victories and casts were not substituted.",
+      "factSource": [
+        {
+          "url": "https://cultura.gov.it/luogo/parco-archeologico-del-colosseo-museo-palatino",
+          "publisher": "Ministero della Cultura",
+          "supports": "Museum context only, not an exact Winged Victory identification."
+        }
+      ],
+      "file": null
+    },
+    {
+      "key": "colosseum-porta-triumphalis",
+      "venue": "Colosseum, Rome",
+      "title": "Porta Triumphalis arena entrance",
+      "status": "missing-matching-image",
+      "reason": "The institution verifies the western entrance, but the acquired photograph primarily shows its later Jerusalem wall painting and only part of an arch. It was rejected as an inadequate entrance asset.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/percorsi/il-colosseo-romano-e-cristiano/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Western Porta Triumphalis identity and Jerusalem painting location."
+        }
+      ],
+      "file": null
+    },
+    {
+      "key": "colosseum-arena-floor-underground",
+      "venue": "Colosseum, Rome",
+      "title": "Restored arena floor contrasted with exposed underground",
+      "status": "missing-matching-image",
+      "reason": "The downloaded candidate is a broad aerial view and does not adequately show the requested modern arena-floor versus hypogeum contrast. No generic Colosseum image substituted.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/area/the-colosseum/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Colosseum and underground context."
+        }
+      ],
+      "file": null
+    },
+    {
+      "key": "colosseum-seating-inscription",
+      "venue": "Colosseum, Rome",
+      "title": "Exact seating inscription or numbering artifact",
+      "status": "missing-matching-image",
+      "reason": "The institutional barrier page discusses loca on reverse faces, but all three acquired photos show decorative reliefs or balustrade fragments, not the inscribed seat markers. All were rejected for this request.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/en/opere/barriers-and-balustrades/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Seat-marking evidence on reverse sides of ancient marble barriers."
+        }
+      ],
+      "file": null
+    },
+    {
+      "key": "ludwig-klein-monogold-mg45",
+      "venue": "Museum Ludwig, Cologne",
+      "title": "Yves Klein, Monogold MG 45",
+      "status": "omitted-unverified-version",
+      "reason": "No authoritative match established between identifier MG 45 and Museum Ludwig. Other Monogolds and Klein works were not substituted.",
+      "factSource": [],
+      "file": null
+    },
+    {
+      "key": "pisa-giovanni-ivory-crucifix",
+      "venue": "Museo dell'Opera del Duomo, Pisa",
+      "title": "Giovanni Pisano, ivory Crucifix",
+      "status": "omitted-object-location-material-mismatch",
+      "reason": "The requested combination was not verified. Pisa descriptions distinguish an ivory Madonna from a wooden crucifix. A Giovanni Pisano ivory Crucified Christ is documented by the V&A in London. Neither work was substituted.",
+      "factSource": [
+        {
+          "url": "https://www.visittuscany.com/en/attractions/opera-duomo-museum-pisa/",
+          "publisher": "Visit Tuscany, regional tourism institution",
+          "supports": "Pisa ivory Madonna and wooden crucifix distinction."
+        },
+        {
+          "url": "https://www.vam.ac.uk/blog/museum-life/twenty-objects-twenty-years-crucified-christ-giovanni-pisano-1285-13-1",
+          "publisher": "Victoria and Albert Museum",
+          "supports": "Giovanni Pisano ivory Crucified Christ in London, not Pisa."
+        }
+      ],
+      "file": null
+    },
+    {
+      "key": "pisa-bonanno-san-ranieri-door",
+      "venue": "Museo dell'Opera del Duomo, Pisa",
+      "title": "Bonanno Pisano, original San Ranieri bronze door",
+      "status": "verified-object-missing-image",
+      "reason": "Original museum door location is documented, but no matching image was acquired and inspected before the requested manifest handoff. The cathedral replica and Monreale door were not substituted.",
+      "factSource": [
+        {
+          "url": "https://www.opapisa.it/visita/museo-dellopera/",
+          "publisher": "Opera della Primaziale Pisana",
+          "supports": "Ground-floor museum route opens with the Porta di Bonanno."
+        },
+        {
+          "url": "https://www.kornbluthphoto.com/PisaDoors.html",
+          "publisher": "Genevra Kornbluth, art-historical photographic archive",
+          "supports": "Original San Ranieri panels now in the Museo dell'Opera del Duomo; circa 1180."
+        }
+      ],
+      "file": null
+    }
+  ],
+  "excludedExisting": [
+    {
+      "key": "medici-madonna-existing",
+      "title": "Michelangelo, Medici Madonna group",
+      "status": "excluded-user-request",
+      "reason": "Existing group explicitly excluded; new Lorenzo photograph does not contain it."
+    },
+    {
+      "key": "ludwig-lichtenstein-m-maybe-existing",
+      "title": "Roy Lichtenstein, M-Maybe",
+      "status": "excluded-user-request",
+      "reason": "Existing artwork explicitly excluded; not acquired."
+    }
+  ]
+}

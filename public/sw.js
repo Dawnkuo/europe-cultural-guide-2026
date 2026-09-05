@@ -1,6 +1,7 @@
-const CACHE = 'europe-cultural-guide-v7';
+const CACHE = 'europe-cultural-guide-v9';
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '');
 const scoped = (path) => `${BASE_PATH}${path}`;
+const READY = scoped('/offline-ready');
 const CORE = [
   '/',
   '/itinerary/',
@@ -31,21 +32,23 @@ async function installOfflineRoutes() {
   const cache = await caches.open(CACHE);
   const manifestUrl = scoped('/guide-precache.json');
 
-  try {
-    const response = await fetch(manifestUrl, { cache: 'no-store' });
-    if (!response.ok) throw new Error(`Guide manifest ${response.status}`);
-    const manifest = await response.clone().json();
-    const guideRoutes = manifest.routes.map(scoped);
-    await cache.put(manifestUrl, response);
-    await cache.addAll([...CORE, ...guideRoutes]);
-  } catch (error) {
-    console.warn(
-      'Guide route manifest unavailable; caching the core shell only.',
-      error,
-    );
-    await cache.addAll(CORE);
-  }
+  const response = await fetch(manifestUrl, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Guide manifest ${response.status}`);
+  const manifest = await response.clone().json();
+  if (manifest.version !== 2 || !Array.isArray(manifest.assets) || !Array.isArray(manifest.routes)) throw new Error('Incomplete offline manifest');
+  const guideRoutes = manifest.routes.map(scoped);
+  const guideAssets = manifest.assets.map(scoped);
+  await cache.addAll([...new Set([...CORE, ...guideRoutes, ...guideAssets])]);
+  await cache.put(manifestUrl, response);
+  await cache.put(READY, new Response(CACHE));
 }
+
+self.addEventListener('message', (event) => {
+  if (event.data?.type !== 'OFFLINE_STATUS') return;
+  event.waitUntil(caches.open(CACHE).then(async (cache) => {
+    event.source?.postMessage({ type: 'OFFLINE_STATUS', ready: Boolean(await cache.match(READY)), version: CACHE });
+  }));
+});
 
 self.addEventListener('install', (event) => {
   event.waitUntil(installOfflineRoutes());
@@ -58,7 +61,7 @@ self.addEventListener('activate', (event) => {
       .keys()
       .then((keys) =>
         Promise.all(
-          keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)),
+          keys.filter((key) => key.startsWith('europe-cultural-guide-') && key !== CACHE).map((key) => caches.delete(key)),
         ),
       ),
   );
@@ -82,7 +85,22 @@ self.addEventListener('fetch', (event) => {
         return response;
       })
       .catch(
-        async () => (await caches.match(event.request)) ?? Response.error(),
+        async () => {
+          const cache = await caches.open(CACHE);
+          const exact = await cache.match(event.request);
+          if (exact) return exact;
+          const url = new URL(event.request.url);
+          if (url.pathname.startsWith(`${BASE_PATH}/`) && url.pathname.endsWith('.rsc')) {
+            url.searchParams.delete('_rsc');
+            const payload = await cache.match(url.href);
+            if (payload) {
+              const headers = new Headers(payload.headers);
+              headers.set('Content-Type', 'text/x-component');
+              return new Response(payload.body, { status: payload.status, headers });
+            }
+          }
+          return Response.error();
+        },
       ),
   );
 });

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0",
+  "status": "replacement-ready",
+  "generatedDate": "2026-09-05",
+  "scope": "Only the requested Forum image replacements; no other asset records changed.",
+  "root": "/tmp/europe-expansion-rome-extra/replacements",
+  "baseManifest": "/tmp/europe-expansion-rome-extra/manifest.json",
+  "baseManifestSha256": "9099b6fb768585fe895f00056d4ee335c51ec16a00de4d75c56bc90e496bd4fb",
+  "counts": {
+    "replacementAssets": 1,
+    "notReplaced": 1
+  },
+  "integration": {
+    "operation": "replace matching records by assets[].key",
+    "allowedKeys": [
+      "forum-castor-pollux"
+    ],
+    "leaveAllOtherRecordsUnchanged": true,
+    "pathsAreAbsolute": true,
+    "publicationRightsCleared": false,
+    "notes": "Use only the assets array as replacements. notReplaced documents an unsuccessful search, not an asset replacement."
+  },
+  "assets": [
+    {
+      "key": "forum-castor-pollux",
+      "status": "verified-acquired",
+      "venue": "Roman Forum, Rome",
+      "title": "Temple of Castor and Pollux, daylight detail of three columns and capitals",
+      "artist": "Ancient Roman builders; Tiberian rebuilding",
+      "date": "Surviving colonnade from the rebuilding dedicated in 6 CE",
+      "documentedLocation": "Southeastern side of the Forum square, near the Fountain of Juturna.",
+      "factSource": [
+        {
+          "url": "https://colosseo.it/education/percorsi-la-fonte-di-giuturna-e-il-tempio-dei-dioscuri/",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Official identification and location of the Temple of Castor and Pollux; not the replacement photograph source."
+        },
+        {
+          "url": "https://colosseo.it/sito/wp-content/uploads/2024/03/QuaderniDidattica_Tempio-dei-Castori.pdf",
+          "publisher": "Parco archeologico del Colosseo",
+          "supports": "Educational account of temple location and building phases."
+        },
+        {
+          "url": "http://www.digital-images.net/Gallery/Scenic/Rome/Forum/RomanForum/romanforum.html",
+          "publisher": "Ron Reznick, original photographer",
+          "supports": "Exact photograph caption Temple of Castor and Pollux 3705, 795 x 1290 pixels. Historical dating continues to follow the existing official PArCO sources."
+        }
+      ],
+      "imageSource": "http://www.digital-images.net/Gallery/Scenic/Rome/Forum/RomanForum/romanforum.html",
+      "downloadUrl": "http://www.digital-images.net/Images/Rome/Roman_Forum/Temple_ofCastor_andPollux_3705.jpg",
+      "file": "/tmp/europe-expansion-rome-extra/replacements/images/forum-castor-pollux-daylight-3705.jpg",
+      "relativeFile": "images/forum-castor-pollux-daylight-3705.jpg",
+      "width": 795,
+      "height": 1290,
+      "sha256": "2857161f5d99374b584579bd051b8ef8f38d3f0ee9fa70824cce10d57cf0a855",
+      "description": "Close daylight photograph of the three surviving columns of the Temple of Castor and Pollux in the Roman Forum. All three Corinthian capitals are visibly articulated: acanthus leaves, volutes and abaci can be inspected. The fluted shafts, weathered stone, joints and cracks, architrave and surviving entablature fill the frame. The columns are light against a blue sky, not silhouettes. The lower shafts continue beyond the source framing; the bases and podium are not shown. The photographer identifies this specific image as Temple of Castor and Pollux 3705. The source watermark and black caption/signature strip remain intact.",
+      "rights": {
+        "status": "not-cleared-for-publication",
+        "license": null,
+        "credit": "Ron Reznick / Digital-Images.net, Temple of Castor and Pollux 3705",
+        "source": "http://www.digital-images.net/Gallery/Scenic/Rome/Forum/RomanForum/romanforum.html",
+        "notes": "Copyrighted photographer image with visible watermark, caption and signature. No reusable license verified. Do not remove the watermark or imply publication permission; contact the photographer for licensed use."
+      },
+      "identification": {
+        "confidence": "high",
+        "versionCheck": "Close daylight photograph of the three surviving columns of the Temple of Castor and Pollux in the Roman Forum. All three Corinthian capitals are visibly articulated: acanthus leaves, volutes and abaci can be inspected. The fluted shafts, weathered stone, joints and cracks, architrave and surviving entablature fill the frame. The columns are light against a blue sky, not silhouettes. The lower shafts continue beyond the source framing; the bases and podium are not shown. The photographer identifies this specific image as Temple of Castor and Pollux 3705. The source watermark and black caption/signature strip remain intact.",
+        "limitations": [
+          "Detail view excludes bases and podium.",
+          "Original watermark and caption strip are present; no watermark removal performed."
+        ]
+      },
+      "visualInspection": {
+        "status": "passed",
+        "method": "Individual full image opened with view_image at 795 x 1290 pixels",
+        "minimumDisplayedLongEdge": 800,
+        "sourceLongEdge": 1290,
+        "checks": {
+          "daylight": true,
+          "threeColumnsVisible": true,
+          "capitalsInspectable": true,
+          "shaftFlutingInspectable": true,
+          "entablatureInspectable": true,
+          "notSilhouette": true
+        },
+        "notes": "Real source photograph, byte-identical to download. No cropping, upscaling, retouching or generated content."
+      },
+      "downloadEvidence": "/tmp/europe-expansion-rome-extra/replacements/evidence/forum-castor-pollux-daylight-3705.download.json",
+      "replacement": {
+        "action": "replace-by-key",
+        "key": "forum-castor-pollux",
+        "supersedesFile": "/tmp/europe-expansion-rome-extra/images/forum-castor-pollux.jpg",
+        "supersedesSha256": "c9ad628bb07e12e20974fff815ad9665743828b2bfaa20274a4c454f34ba99a3",
+        "reason": "Parent rejected the prior silhouette because columns and capitals could not be inspected."
+      }
+    }
+  ],
+  "notReplaced": [
+    {
+      "key": "forum-basilica-maxentius",
+      "status": "no-qualifying-replacement-within-source-limit",
+      "action": "leave-existing-record-unchanged",
+      "reason": "The university archive close views are below 800 pixels. The official daylight image remains a distant view with deep shadow and event equipment, so it does not adequately solve the requested framing problem.",
+      "candidates": [
+        {
+          "source": "https://homepages.bluffton.edu/~sullivanm/romanforum/forum.html",
+          "image": "https://homepages.bluffton.edu/~sullivanm/romanforum/maxbasilica.jpg",
+          "width": 786,
+          "height": 546,
+          "reason": "Below required 800-pixel long edge; not upscaled."
+        },
+        {
+          "source": "https://homepages.bluffton.edu/~sullivanm/romanforum/forum.html",
+          "image": "https://homepages.bluffton.edu/~sullivanm/romanforum/maxbasilica2.jpg",
+          "width": 699,
+          "height": 469,
+          "reason": "Below required 800-pixel long edge; not upscaled."
+        },
+        {
+          "source": "https://colosseo.it/en/marvels/basilica-of-maxentius/",
+          "image": "https://colosseo.it/sito/wp-content/uploads/2018/11/foro_romano_veduta_basilica_massenzio.jpeg",
+          "width": 1600,
+          "height": 1200,
+          "reason": "Visually inspected: daylight but too distant; the vault interiors are deeply shadowed and the foreground is dominated by terraces and event equipment."
+        }
+      ]
+    }
+  ],
+  "sourceAudit": {
+    "limitPerObject": 2,
+    "forum-castor-pollux": [
+      {
+        "source": "http://www.digital-images.net/Gallery/Scenic/Rome/Forum/RomanForum/romanforum.html",
+        "result": "Accepted photograph 3705. HTTPS failed with a certificate error; the same public source was available over HTTP. No authentication involved."
+      },
+      {
+        "source": "https://homepages.bluffton.edu/~sullivanm/romanforum/forum.html",
+        "result": "Rejected castor.jpg: 281 x 443 pixels."
+      }
+    ],
+    "forum-basilica-maxentius": [
+      {
+        "source": "https://homepages.bluffton.edu/~sullivanm/romanforum/forum.html",
+        "result": "Close views undersized."
+      },
+      {
+        "source": "https://colosseo.it/en/marvels/basilica-of-maxentius/",
+        "result": "Daylight image too distant and shadowed."
+      }
+    ],
+    "commonsRequestsThisTurn": 0,
+    "commonsStatus": "Still stopped after earlier HTTP 429; no Wikimedia fetches made."
+  },
+  "constraints": {
+    "siteCheckoutEdited": false,
+    "sitesSkillsUsed": false,
+    "sitesToolsUsed": false,
+    "spawnUsed": false,
+    "baseManifestModified": false
+  }
+}
