@@ -1,7 +1,7 @@
 {
   "slug": "medici-chapels",
   "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared all four independent authoritative plans. Crypt selection retains its four pier holes; the New Sacristy's paired structural outlines remain walls while monuments stay details. ICCD0900335014 supports the Princes' Chapel thick perimeter and pier-free central hall. Lorraine crypt retains the printed named location without guessing an unmarked room boundary.",
     "floorCoverageReview": "Crypt, Lorraine detail, New Sacristy and historical Princes' Chapel sources at independent scales; treasure zone is missing.",
@@ -335,5 +335,9 @@
     "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

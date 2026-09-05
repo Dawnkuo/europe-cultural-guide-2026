@@ -1,7 +1,7 @@
 {
   "slug": "sagrada-familia",
   "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared the main published plan and underground church drawing. Retains main column grid,actual nave/apse geometry,planned areas and all repeated source identifiers. Crypt chapels and circular supports remain distinct; source planning elements are not claimed to be finished current fabric.",
     "floorCoverageReview": "Main planning level and crypt only. Passion-tower visitor floors remain missing.",
@@ -229,5 +229,9 @@
     "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

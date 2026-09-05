@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import type * as THREE from 'three';
 import type { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { independentFloorScale, placesWithGuideNumbers, placeSceneLabels, planTones, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint } from '../lib/architectural-plan';
+import { independentFloorScale, planFloorGap, placesWithGuideNumbers, placeSceneLabels, planTones, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint } from '../lib/architectural-plan';
 import { focusPlanAnchor, isPlanAnchorVisible } from '../lib/architectural-visibility';
 import { PlanPlaceMarker } from './PlanPlaceMarker';
 
@@ -69,7 +69,7 @@ export default function ArchitecturalScene(props: Props) {
       const projectPoint = (floorId: string, [x,y]: MapPoint, lift = 0) => {
         const index = floors.findIndex((f) => f.id === floorId), floor = floors[index];
         const scale = independentFloorScale(floor);
-        return new Three.Vector3((x-(floor.bounds[0]+floor.bounds[2])/2)*scale+index*.7, index*7.5+lift,
+        return new Three.Vector3((x-(floor.bounds[0]+floor.bounds[2])/2)*scale+index*.7, index*planFloorGap(plan)+lift,
           (y-(floor.bounds[1]+floor.bounds[3])/2)*scale+index*.4);
       };
       const materials: Array<{ floorId: string; material: THREE.MeshStandardMaterial; kind: string; color: THREE.Color; spaceId?: string }> = [];

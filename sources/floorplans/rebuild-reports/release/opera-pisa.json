@@ -1,7 +1,7 @@
 {
   "slug": "opera-pisa",
   "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared the architect's ground-floor project drawing: actual building wings, cloister and courtyard void are retained with the visible partitions, not a simplified museum rectangle.",
     "floorCoverageReview": "Ground project level only; upper rooms, present exhibition partitions and vertical landings are missing.",
@@ -191,5 +191,9 @@
     "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

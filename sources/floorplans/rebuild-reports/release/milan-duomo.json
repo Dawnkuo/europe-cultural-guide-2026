@@ -1,7 +1,7 @@
 {
   "slug": "milan-duomo",
   "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared the cathedral authority's actual main-floor/security attachment and separate Scurolo di San Carlo inset. Retains continuous black structural walls, piers, transepts, choir and apse; red camera-coverage hatching, entry glyphs and lettering are not masonry. The crypt crop excludes the neighboring baptistery overlay and the locator inset.",
     "floorCoverageReview": "Main church and San Carlo crypt. The31m/45m terraces have no reviewed orthographic plan and are not cloned from the nave.",
@@ -229,5 +229,9 @@
     "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

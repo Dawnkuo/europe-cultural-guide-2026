@@ -1,7 +1,7 @@
 {
   "slug": "sforza",
   "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared the Polimi2024 Piazza d'Armi-level raster in unrotated native720x480 page coordinates. Corrected all four anchors against its printed courtyard names and actual right-hand Filarete gate gap. Retains thick black core/rooms/towers and flat small linework; the red study circle and pale demolished Ghirlanda are excluded. Official2025 upper axonometric blocks were rejected rather than cloned as floor plates.",
     "floorCoverageReview": "Principal courtyard-level historical fabric only. Upper museum galleries remain unavailable orthographic geometry.",
@@ -191,5 +191,9 @@
     "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

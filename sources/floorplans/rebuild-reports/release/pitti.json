@@ -1,7 +1,7 @@
 {
   "slug": "pitti",
   "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared ground,mezzanine,first and second published diagrams. Preserves all available numbered treasure rooms and Palatine/royal suite divisions, with sixty-three places and six supported region selections. Second floor remains a collection-zone outline, not falsely detailed rooms. Closure notices do not delete treasure-room geometry.",
     "floorCoverageReview": "Four source diagrams of unequal detail and independent scale. Second-floor individual-room layout remains missing.",
@@ -332,5 +332,9 @@
     "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

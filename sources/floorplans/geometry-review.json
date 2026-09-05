@@ -79,17 +79,23 @@
       ]
     },
     "casa-batllo": {
-      "geometryReview": "Compared all three rectified historical source plans. Retains the irregular frontage, rear terrace, central light well, curved rooms, stair treads and furniture as distinct structure/detail classes. Source-pixel checkpoints exclude73 isolated thin-line intersections from masonry without removing perimeter or stair enclosure walls. Two closed source regions support selection; open entrance and terrace grids are not artificially sealed.",
-      "floorCoverageReview": "Historical ground, principal and second floors only. The attic section cannot become a floor plan. Current third-floor twelve-room program, roof, Cube and Dome remain an explicit unlocated inventory.",
-      "stopBindingReview": "Stops0-2 locate entrance, principal rooms and the light-well zone. Missing upper/basement spaces are not assigned these coordinates.",
-      "verticalConnectionReview": "Separate published crops have no measured landing registration; no guessed link or copied floor.",
-      "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
-      "sourceDigest": "bd3d92782bd35d3ab93aa3c55f291cae05163b7742a2ff2269cd16c74343d3ba",
+      "geometryReview": "Visually compared all nine plan levels against both pinned 2000px architect-supplied KKAA plates and the longitudinal section. Orthographic crops preserve equal-axis source geometry. Thick neutral cut masonry is separate from flat treads, ceiling projections, glazing and furniture. Ten strictly closed source-white components provide selective floor surfaces; unknown open faces are not invented.",
+      "floorCoverageReview": "Nine plan levels: basement, ground, noble, first, second, third, fourth, attic and rooftop. The publication explicitly assigns the first-through-third common drawing to three levels. Roof is not counted as an enclosed storey. Current 2026 private rooms and temporary-exhibition partitions are not asserted by this 2021 source.",
+      "stopBindingReview": "Original six guide steps retained. Steps 1-3 are rebound to the newer ground/noble plans, steps 4-5 now locate the attic and rooftop. Step 6 remains unlocated because exact current exhibit-room assignments, including Cube and Dome, are not established. No ticket or itinerary data changed.",
+      "verticalConnectionReview": "Seven consecutive stair-core links from basement through attic are supported by the matching plan cores and continuous longitudinal stair section. Two separately drawn spiral stairs link attic and rooftop. These are topological selection links, not surveyed shafts or a promise of public access.",
+      "modelDigest": "3fdfb3b9a1367b057a771b238768df96dd4eaa28df47249f8a626f4c928c7a29",
+      "sourceDigest": "894881441edfdbdc862751d528678eddaf181389738954f3b04b68304a92f149",
       "sourceEvidence": "sources/floorplans/evidence/casa-batllo.json",
       "comparedFloors": [
-        "historic-ground-floor",
-        "historic-first-floor",
-        "historic-second-floor"
+        "basement",
+        "ground",
+        "noble",
+        "upper-1",
+        "upper-2",
+        "upper-3",
+        "upper-4",
+        "attic",
+        "rooftop"
       ]
     },
     "cologne-cathedral": {

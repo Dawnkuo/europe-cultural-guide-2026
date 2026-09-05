@@ -1,7 +1,7 @@
 {
   "slug": "picasso-barcelona",
   "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared both official palace/gallery plans. Retains all forty-seven places, rooms1-16,B1,B2 and named services. Twenty-four source regions preserve real palace courtyards, partitions and shared gallery groups instead of assigning one polygon per artwork.",
     "floorCoverageReview": "Published ground service/courtyard and first collection/exhibition levels.",
@@ -295,5 +295,9 @@
     "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

@@ -1,0 +1,107 @@
+{
+  "baseCommit": "5db44c04174422c4656e258c7df1f2e1f9b03c31",
+  "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "proof": "Exact source reversal verified: scene replaces only index*7.5 with planFloorGap(plan); unchanged models have no display field, so the helper returns exactly 7.5. All remaining scene source is byte-identical. Other shared runtime files are identical after removal of that helper/type field; per-venue notes are deep-equal. Prior evidence retains its dates; this is not a fresh whole-site run.",
+  "freshRegressionPages": [
+    {
+      "route": "/guides/uffizi/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 84.98465478161489,
+      "screenshot": "work/casa-nine-levels/pages/_guides_uffizi_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/sagrada-familia/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 115.89689381249497,
+      "screenshot": "work/casa-nine-levels/pages/_guides_sagrada-familia_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/accademia-florence/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 110.97514324701488,
+      "screenshot": "work/casa-nine-levels/pages/_guides_accademia-florence_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/uffizi/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 94.65250897670413,
+      "screenshot": "work/casa-nine-levels/pages/_guides_uffizi_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/sagrada-familia/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 130.16887499009,
+      "screenshot": "work/casa-nine-levels/pages/_guides_sagrada-familia_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/accademia-florence/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 123.55293676153666,
+      "screenshot": "work/casa-nine-levels/pages/_guides_accademia-florence_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/uffizi/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 107.27779353011577,
+      "screenshot": "work/casa-nine-levels/pages/_guides_uffizi_-390.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/sagrada-familia/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 133.71771453456452,
+      "screenshot": "work/casa-nine-levels/pages/_guides_sagrada-familia_-390.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/accademia-florence/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 127.75989692281406,
+      "screenshot": "work/casa-nine-levels/pages/_guides_accademia-florence_-390.png",
+      "passed": true
+    }
+  ]
+}

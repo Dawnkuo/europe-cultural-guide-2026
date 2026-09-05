@@ -1,7 +1,7 @@
 {
   "slug": "museum-ludwig",
   "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared all four official2021 visitor-plan levels. Maintains different floor envelopes, voids, room bands and service positions rather than repeated floor plates. Eighteen places and three collection-zone selections are at the source's actual level of detail.",
     "floorCoverageReview": "Basement,ground,first,second with historical2021 display zones; no claim of current hanging.",
@@ -336,5 +336,9 @@
     "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

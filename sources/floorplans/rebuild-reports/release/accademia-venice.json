@@ -1,7 +1,7 @@
 {
   "slug": "accademia-venice",
   "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared both museum leaflet floors with their 2D renderings. Ground-floor Arabic and first-floor Roman identifiers retain their identities, including XXIV and the irregular VI area. Forty-two source-connected gallery selection regions preserve real partitions, shared openings, courtyards and service spaces.",
     "floorCoverageReview": "Both published visitor levels. VIa/VIb lack separately recoverable locations and are explicitly unresolved, not silently substituted with new rooms.",
@@ -307,5 +307,9 @@
     "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

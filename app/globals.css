@@ -3399,6 +3399,16 @@ img {
   }
 }
 
+.architectural-map[data-guide-slug='casa-batllo'] .architectural-map__scene {
+  height: 860px;
+}
+
+@media (max-width: 700px) {
+  .architectural-map[data-guide-slug='casa-batllo'] .architectural-map__scene {
+    height: 740px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

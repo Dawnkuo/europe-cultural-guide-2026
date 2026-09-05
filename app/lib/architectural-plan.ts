@@ -31,6 +31,7 @@ export type ArchitecturalPlan = {
   slug: string;
   projection: 'orthographic';
   registration: 'independent-floor-diagrams';
+  display?: { floorGap: number };
   sourceDigest: string;
   sourceDigests?: Record<string, string>;
   floors: ArchitecturalFloor[];
@@ -104,6 +105,11 @@ function placeLabelWidth(place: PlanPlace) {
 export function independentFloorScale(floor: ArchitecturalFloor, span = 16) {
   // Printed page units are not comparable between independently drawn plans.
   return span / Math.max(floor.bounds[2] - floor.bounds[0], floor.bounds[3] - floor.bounds[1]);
+}
+
+export function planFloorGap(plan: ArchitecturalPlan) {
+  const gap = plan.display?.floorGap;
+  return typeof gap === 'number' && Number.isFinite(gap) && gap >= 3 && gap <= 10 ? gap : 7.5;
 }
 
 export const planTones: Record<string, string> = {

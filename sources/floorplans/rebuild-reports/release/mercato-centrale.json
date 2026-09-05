@@ -1,7 +1,7 @@
 {
   "slug": "mercato-centrale",
   "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared the municipal1869 ground plan and renovated upper-floor project. Historic stall grid remains flat detail, red ironwork and resolved coarse perimeter structure remain masonry. The upper open hall follows its actual project outline; neither level is replaced by a generic market grid.",
     "floorCoverageReview": "Historic ground and renovation upper plan with independent scales; not current stall numbers or tenants.",
@@ -250,5 +250,9 @@
     "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

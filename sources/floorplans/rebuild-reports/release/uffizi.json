@@ -1,7 +1,7 @@
 {
   "slug": "uffizi",
   "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared all three official visitor-plan floors. Preserves109 identifiers and eighty-nine source gallery/service faces,actual U-shaped courtyard void,unequal galleries and north connections. A/B/C/D/E numbering stays on its actual floor; ground reception zones do not gain invented partitions.",
     "floorCoverageReview": "Published ground reception plus both collection floors; Vasari corridor is a separate evidence-limited guide.",
@@ -297,5 +297,9 @@
     "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

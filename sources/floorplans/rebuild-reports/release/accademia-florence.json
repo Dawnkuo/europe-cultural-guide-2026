@@ -1,7 +1,7 @@
 {
   "slug": "accademia-florence",
   "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared both official floor crops: irregular main galleries, the Tribune, side collection rooms, upper galleries and the underlying lower-level reference remain distinct. Keeps 6a/6b/6c separately and all twenty place identifiers. Five source-connected selection areas do not introduce new partitions.",
     "floorCoverageReview": "Both published visitor levels; lower-level reference lines on the upper diagram stay flat.",
@@ -250,5 +250,9 @@
     "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

@@ -1,7 +1,7 @@
 {
   "slug": "st-mark-campanile",
   "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared all four levels on the municipality's1912 reconstruction engineering plate. Retains actual tower core,base Loggetta,ramp geometry,bell chamber and upper-service structure. No solid external shell conceals the source interiors.",
     "floorCoverageReview": "Four1912 reconstruction levels, not a surveyed current visitor plan or ticket-access statement.",
@@ -305,5 +305,9 @@
     "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

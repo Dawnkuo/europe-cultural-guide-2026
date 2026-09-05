@@ -1,7 +1,7 @@
 {
   "slug": "pisa-baptistery",
   "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared HBIM ground plan and the same authors' first-gallery VR plan. Retains the actual twelve-sided ground outline,font,pulpit and upper masonry/real twelve supports. Upper radial arch lines remain flat, not wedge-room walls. A-A section annotation is removed without reconstructing occluded lines.",
     "floorCoverageReview": "Ground and women's gallery only; dome maintenance plan is a different level and excluded. No invented annular slab closes an open source region.",
@@ -229,5 +229,9 @@
     "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

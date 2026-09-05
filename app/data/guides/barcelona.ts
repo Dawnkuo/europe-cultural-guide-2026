@@ -556,7 +556,7 @@ export const barcelonaGuideContent = defineGuideContent({
     spatial: {
       type: 'floorplan',
       title: 'Eixample 联排住宅的垂直路线',
-      note: '按照官网公开的主要参观空间组织，不推断未开放房间；私人住宅、展览与沉浸空间的先后以现场分流为准。',
+      note: '九个建筑平面层级：地下、底层、主层、上部一至四层、阁楼、屋顶。建筑结构依据 2021 年改造图；2026 年私人住宅、临展和沉浸展项的房间对应尚未核定，先后以现场分流为准。',
       stops: [
         'Passeig de Gràcia 外立面与入口',
         '主层住宅及临街大厅',

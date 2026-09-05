@@ -1,7 +1,7 @@
 {
   "slug": "brera",
   "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared the official gallery leaflet with the complete overhead render: irregular north galleries, open courtyard, perimeter columns, stair treads and lower room sequence are retained. All thirty-five printed gallery identifiers include1A; unprinted16/17/25/26 are not fabricated. Thirty-four selection faces preserve the shared1/6 room.",
     "floorCoverageReview": "The published principal Pinacoteca level, not the palace ground floor or other La Grande Brera institutions.",
@@ -227,5 +227,9 @@
     "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

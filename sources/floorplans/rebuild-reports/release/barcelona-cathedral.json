@@ -1,7 +1,7 @@
 {
   "slug": "barcelona-cathedral",
   "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared the official raster's nave, apse, radiating chapels and cloister. Preserves all fifty-nine printed numbers and five descriptive areas; 12 and 27 are absent in the source and are not invented. Fifty-seven selection regions follow the visible wall boundaries. Shared nave/ambulatory and shared 71/72 chapel remain shared; outdoor26 has no invented indoor face.",
     "floorCoverageReview": "Main church and cloister only. The crypt and roof are not supplied; red annotation occlusions remain unresolved.",
@@ -206,5 +206,9 @@
     "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

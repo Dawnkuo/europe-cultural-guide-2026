@@ -1,7 +1,7 @@
 {
   "slug": "santa-maria-grazie",
   "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared Pica's1937 survey and legend. All thirteen printed numbers,twenty-one locations and sixteen source-connected regions retain church aisles,chapels,Tribune,apse and neighboring historical rooms. Vault lines/dimensions stay flat. Temporary semantic cuts are not exported as new walls.",
     "floorCoverageReview": "Historical church principal plan, not post-war arrangement or a new library floor from legend12.",
@@ -209,5 +209,9 @@
     "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

@@ -1,7 +1,7 @@
 {
   "slug": "pisa-cathedral",
   "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared the authoritative1817 ground drawing: long nave column rows, transept arms, central crossing, lateral aisles and apse preserve native proportions and all visible structural detail.",
     "floorCoverageReview": "Historic ground only, not current furnishings, crypt,upper galleries,roof or service areas.",
@@ -191,5 +191,9 @@
     "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

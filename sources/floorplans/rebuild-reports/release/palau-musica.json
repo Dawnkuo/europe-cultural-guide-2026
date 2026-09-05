@@ -1,7 +1,7 @@
 {
   "slug": "palau-musica",
   "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
-  "runtimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c",
+  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
   "sourceReview": {
     "geometryReview": "Compared all four historical plan drawings. Retains actual auditorium curves, foyer/service boundaries, stage geometry and upper seating with twenty-one source faces and twenty-three places. The detached upper11 detail is not moved into an invented main-building position.",
     "floorCoverageReview": "Four historical building plans, excluding later additions and current visitor-route changes.",
@@ -329,5 +329,9 @@
     "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
     "routeNumbering": true,
     "passed": true
+  },
+  "runtimeCarryForward": {
+    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
+    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

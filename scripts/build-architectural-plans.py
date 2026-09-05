@@ -513,6 +513,11 @@ def build(config):
              "registration": "independent-floor-diagrams", "floors": floors, "places": places,
              "limitations": config["limitations"], "stopBindings": config.get("stopBindings", []),
              "sourceDigest": digest, "verticalLinks": links, "spaces":spaces, "openings":openings}
+    if "display" in config:
+        gap = config["display"]["floorGap"]
+        if not math.isfinite(gap) or not 3 <= gap <= 10:
+            raise ValueError("Invalid display-only floor separation")
+        model["display"] = {"floorGap": gap}
     if config.get("unlocatedPlaces"):
         model["unlocatedPlaces"] = [{key: place[key] for key in ("id", "label", "name", "reason")} for place in config["unlocatedPlaces"]]
         for place in config["unlocatedPlaces"]:
