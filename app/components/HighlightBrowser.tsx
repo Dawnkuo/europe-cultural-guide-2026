@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, ArrowRight, Search, X } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 import { useEffect, useId, useRef, useState } from 'react';
 import type { GuideHighlight } from '../data/types';
 import dimensions from '../data/media-dimensions.generated.json';
@@ -8,7 +8,6 @@ import { withBasePath } from '../lib/paths';
 import './highlight-browser.css';
 
 const sizes: Record<string, { width: number; height: number }> = dimensions;
-const PAGE_SIZE = 8;
 export const workId = (slug: string, item: GuideHighlight, index: number) =>
   item.id ?? `${slug}-highlight-${index + 1}`;
 
@@ -21,7 +20,6 @@ export function HighlightBrowser({
 }) {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('全部');
-  const [page, setPage] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const opener = useRef<HTMLElement | null>(null);
@@ -48,8 +46,6 @@ export function HighlightBrowser({
         .toLocaleLowerCase()
         .includes(needle),
   );
-  const pageCount = Math.max(1, Math.ceil(matches.length / PAGE_SIZE));
-  const visible = matches.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
   const detail = records.find((item) => item.id === selected);
   const hasDetail = Boolean(detail);
 
@@ -88,12 +84,6 @@ export function HighlightBrowser({
     }
     opener.current?.focus();
   };
-  const changePage = (next: number) => {
-    setPage(next);
-    document
-      .getElementById('guide-highlights')
-      ?.scrollIntoView({ block: 'start', behavior: 'instant' });
-  };
 
   return (
     <div className="highlight-browser">
@@ -107,7 +97,6 @@ export function HighlightBrowser({
             value={query}
             onChange={(event) => {
               setQuery(event.target.value);
-              setPage(0);
             }}
           />
         </label>
@@ -117,7 +106,6 @@ export function HighlightBrowser({
             value={category}
             onChange={(event) => {
               setCategory(event.target.value);
-              setPage(0);
             }}
           >
             <option>全部</option>
@@ -131,7 +119,7 @@ export function HighlightBrowser({
         </output>
       </div>
       <div className="highlight-browser__grid">
-        {visible.map((item) => (
+        {matches.map((item) => (
           <article key={item.id}>
             <button
               type="button"
@@ -167,31 +155,6 @@ export function HighlightBrowser({
       </div>
       {!matches.length && (
         <p className="highlight-browser__empty">没有匹配的作品或空间。</p>
-      )}
-      {pageCount > 1 && (
-        <nav className="highlight-browser__pages" aria-label="藏品分页">
-          <button
-            type="button"
-            aria-label="上一页藏品"
-            title="上一页藏品"
-            disabled={page === 0}
-            onClick={() => changePage(page - 1)}
-          >
-            <ArrowLeft size={20} />
-          </button>
-          <span>
-            {page + 1} / {pageCount}
-          </span>
-          <button
-            type="button"
-            aria-label="下一页藏品"
-            title="下一页藏品"
-            disabled={page >= pageCount - 1}
-            onClick={() => changePage(page + 1)}
-          >
-            <ArrowRight size={20} />
-          </button>
-        </nav>
       )}
       <dialog
         ref={dialog}

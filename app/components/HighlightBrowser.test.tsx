@@ -17,24 +17,17 @@ beforeEach(() => {
 });
 
 describe('collection browsing', () => {
-  it('paginates all works without permanently truncating to the first page', async () => {
-    const user = userEvent.setup();
+  it('shows every work in order without pagination or a load-more step', () => {
     render(<HighlightBrowser slug={guide.slug} items={guide.highlights} />);
-    const titles = new Set<string>();
-    for (let page = 0; page < 3; page++) {
-      screen
-        .getAllByRole('heading', { level: 3 })
-        .forEach((h) => titles.add(h.textContent!));
-      if (page < 2)
-        await user.click(screen.getByRole('button', { name: '下一页藏品' }));
-    }
-    expect(titles.size).toBe(21);
-    expect(screen.getByRole('button', { name: '下一页藏品' })).toBeDisabled();
-    await user.click(screen.getByRole('button', { name: '上一页藏品' }));
-    expect(screen.getByText('2 / 3')).toBeInTheDocument();
+    expect(screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual(
+      guide.highlights.map((item) => item.title),
+    );
+    expect(screen.getByRole('status')).toHaveTextContent('21 / 21');
+    expect(screen.queryByRole('navigation', { name: '藏品分页' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /上一页|下一页|加载更多/ })).not.toBeInTheDocument();
   });
 
-  it('searches later pages, filters categories and handles empty results', async () => {
+  it('searches the whole collection, filters categories and restores all results', async () => {
     const user = userEvent.setup();
     render(<HighlightBrowser slug={guide.slug} items={guide.highlights} />);
     const search = screen.getByRole('searchbox');
@@ -48,9 +41,12 @@ describe('collection browsing', () => {
     expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(3);
     await user.type(search, 'no-matching-object');
     expect(screen.getByText('没有匹配的作品或空间。')).toBeInTheDocument();
+    await user.clear(search);
+    await user.selectOptions(screen.getByRole('combobox'), '全部');
+    expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(guide.highlights.length);
   });
 
-  it('opens the correct full entry, restores focus on close and supports a deep link beyond page one', async () => {
+  it('opens the correct full entry, restores focus on close and supports a deep link', async () => {
     const user = userEvent.setup();
     render(<HighlightBrowser slug={guide.slug} items={guide.highlights} />);
     const button = screen.getByRole('button', { name: /诸圣教堂圣母/ });

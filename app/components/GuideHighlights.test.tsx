@@ -12,13 +12,13 @@ describe('uncropped guide illustrations', () => {
         'text/html',
       );
       const images = [...dom.querySelectorAll('img')];
-      const initiallyVisible =
-        guide.highlights.length > 6
-          ? guide.highlights.slice(0, 8)
-          : guide.highlights;
       expect(images).toHaveLength(
-        initiallyVisible.filter((item) => item.image).length,
+        guide.highlights.filter((item) => item.image).length,
       );
+      expect([...dom.querySelectorAll('h3')].map((heading) => heading.textContent)).toEqual(
+        guide.highlights.map((highlight) => highlight.title),
+      );
+      expect(dom.querySelector('[aria-label="藏品分页"]')).toBeNull();
       for (const img of images) {
         expect(img.getAttribute('alt')).toBeTruthy();
         expect(Number(img.getAttribute('width'))).toBeGreaterThan(0);

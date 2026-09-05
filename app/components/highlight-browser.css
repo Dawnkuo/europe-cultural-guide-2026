@@ -104,14 +104,6 @@
   margin: 8px 0 0;
   color: var(--muted);
 }
-.highlight-browser__pages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding: 24px 0;
-}
-.highlight-browser__pages button,
 .highlight-detail__close {
   display: grid;
   place-items: center;
@@ -121,10 +113,6 @@
   background: var(--white);
   color: var(--ink);
   cursor: pointer;
-}
-.highlight-browser__pages button:disabled {
-  opacity: 0.3;
-  cursor: default;
 }
 .highlight-browser__empty {
   padding: 40px 0;
