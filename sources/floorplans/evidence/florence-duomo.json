@@ -1,0 +1,1260 @@
+{
+  "source": "https://flore.unifi.it/retrieve/24ede0a0-28b1-4244-a64a-8738b8401ff1/03-VESSELLA%2BET%2BALII_compressed.pdf",
+  "sha256": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+  "projection": {
+    "kind": "orthographic",
+    "pages": [
+      15
+    ],
+    "basis": "Figure 6 is explicitly captioned as the cathedral ground-floor plan and includes a 0-50 m scale. Nave, crossing, radial apses, perimeter walls and piers are drawn in direct top view without perspective convergence. The red accessibility audit labels are annotations, not architecture, and are excluded by neutral-ink selection."
+  },
+  "transform": "translation only, equal x/y units; floor stacking is display-only",
+  "review": "University of Florence architectural-accessibility study, Figure 6, visually checked at the native 1961 by 1448 image resolution. Only neutral dark structural ink is extracted. Red accessibility callouts, pale grid lines, captions, scale graphics and the detached baptistery footprint are outside the reviewed crop or rejected by colour/area filters. Where a red callout physically covers an original structural corner, the underlying line is unreadable and no replacement wall is inferred. Earlier coarse selectable rectangles were removed because they did not follow the actual inner wall boundaries.",
+  "claims": [
+    {
+      "featureId": "main-raster-111-wall-0",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-1",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-2",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-3",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-13",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-14",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-22",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-23",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-24",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-25",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-32",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-33",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-34",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-35",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-36",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-37",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-raster-111-wall-38",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "imageXref": 111,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            40,
+            40,
+            40
+          ]
+        ],
+        "wallKernel": 6,
+        "tolerancePixels": 0.25,
+        "excludeRects": [
+          {
+            "rect": [
+              238,
+              156,
+              307,
+              172
+            ]
+          },
+          {
+            "rect": [
+              327,
+              168,
+              366,
+              185
+            ]
+          },
+          {
+            "rect": [
+              327,
+              212,
+              366,
+              230
+            ]
+          },
+          {
+            "rect": [
+              366,
+              164,
+              414,
+              181
+            ]
+          },
+          {
+            "rect": [
+              366,
+              232,
+              415,
+              249
+            ]
+          }
+        ],
+        "includeKinds": [
+          "wall"
+        ]
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "main-中殿-1",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "sourceAnchor": [
+        280,
+        200
+      ],
+      "classification": "Anchor at the reviewed center of the long basilical body shown in the ground-floor plan; the three-nave arrangement is stated by the cathedral's official description.",
+      "precision": "reviewed-source-plan-zone-center-not-surveyed"
+    },
+    {
+      "featureId": "main-中央八角交叉部-1",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "sourceAnchor": [
+        403,
+        200
+      ],
+      "classification": "Anchor at the reviewed center of the open octagonal crossing beneath the dome.",
+      "precision": "reviewed-source-plan-zone-center-not-surveyed"
+    },
+    {
+      "featureId": "main-放射状礼拜堂-1",
+      "sourceHash": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "page": 15,
+      "sourceAnchor": [
+        466,
+        200
+      ],
+      "classification": "Anchor within the source-drawn eastern tribune group; the official cathedral description supports three apses, each with five radial chapels.",
+      "precision": "reviewed-source-plan-zone-center-not-individual-cell"
+    }
+  ],
+  "coverage": {
+    "floors": 1,
+    "labels": 3,
+    "features": 17
+  }
+}

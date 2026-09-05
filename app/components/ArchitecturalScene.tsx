@@ -3,8 +3,9 @@
 import { useEffect, useRef } from 'react';
 import type * as THREE from 'three';
 import type { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { placeRoomLabels, planTones, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint } from '../lib/architectural-plan';
+import { independentFloorScale, placeSceneLabels, planTones, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint } from '../lib/architectural-plan';
 import { isPlanAnchorVisible } from '../lib/architectural-visibility';
+import { PlanPlaceMarker } from './PlanPlaceMarker';
 
 type Props = {
   plan: ArchitecturalPlan;
@@ -49,7 +50,7 @@ export default function ArchitecturalScene(props: Props) {
         redraw.current = () => {}; execute.current = () => {};
       };
       const renderer = new Three.WebGLRenderer({ antialias: true, alpha: false });
-      disposers.push(() => { renderer.dispose(); renderer.domElement.remove(); });
+      disposers.push(() => { renderer.dispose(); renderer.forceContextLoss(); renderer.domElement.remove(); });
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
       renderer.setClearColor('#061019');
       container.insertBefore(renderer.domElement, container.firstChild);
@@ -64,18 +65,31 @@ export default function ArchitecturalScene(props: Props) {
       const camera = new Three.OrthographicCamera(-12,12,12,-12,.1,200);
       let controls: OrbitControls;
       const floors = [...plan.floors].sort((a,b) => a.order-b.order);
-      const largestSpan = Math.max(...floors.map((f) => Math.max(f.bounds[2]-f.bounds[0], f.bounds[3]-f.bounds[1])));
-      const scale = 16/largestSpan;
       const projectPoint = (floorId: string, [x,y]: MapPoint, lift = 0) => {
         const index = floors.findIndex((f) => f.id === floorId), floor = floors[index];
+        const scale = independentFloorScale(floor);
         return new Three.Vector3((x-(floor.bounds[0]+floor.bounds[2])/2)*scale+index*.7, index*7.5+lift,
           (y-(floor.bounds[1]+floor.bounds[3])/2)*scale+index*.4);
       };
       const materials: Array<{ floorId: string; material: THREE.MeshStandardMaterial; kind: string; color: THREE.Color; spaceId?: string }> = [];
+      const detailLines: Array<{ floorId: string; material: THREE.LineBasicMaterial }> = [];
       for (const floor of floors) {
+        const scale = independentFloorScale(floor);
         const buckets = new Map<string, THREE.BufferGeometry[]>();
+        const detailEdges: number[] = [];
         for (const feature of floor.features) {
           for (const polygon of feature.polygons) {
+            if (feature.kind === 'detail') {
+              // Hairline boundaries have a pixel-width display stroke. Their
+              // positions and planar height remain the source geometry.
+              for (const ring of [polygon.outer, ...polygon.holes]) {
+                for (let i = 1; i < ring.length; i++) {
+                  const a = projectPoint(floor.id, ring[i-1], .032);
+                  const b = projectPoint(floor.id, ring[i], .032);
+                  detailEdges.push(a.x,a.y,a.z,b.x,b.y,b.z);
+                }
+              }
+            }
             const shape = new Three.Shape(polygon.outer.map(([x,y]) => new Three.Vector2(x,y)));
             for (const ring of polygon.holes) shape.holes.push(new Three.Path(ring.map(([x,y]) => new Three.Vector2(x,y))));
             const depth = feature.kind === 'wall' ? .11/scale : .012/scale;
@@ -110,6 +124,17 @@ export default function ArchitecturalScene(props: Props) {
           scene.add(mesh);
           materials.push({ floorId: floor.id, material, kind, color: material.color.clone(), spaceId });
         }
+        if (detailEdges.length) {
+          const geometry = new Three.BufferGeometry();
+          geometry.setAttribute('position', new Three.Float32BufferAttribute(detailEdges, 3));
+          liveGeometries.add(geometry);
+          const material = new Three.LineBasicMaterial({ color: '#d7c49a', transparent: true, opacity: .4, depthWrite: false });
+          disposers.push(() => material.dispose());
+          const lines = new Three.LineSegments(geometry, material);
+          lines.raycast = () => {};
+          scene.add(lines);
+          detailLines.push({ floorId: floor.id, material });
+        }
       }
       const connections = plan.verticalLinks.map((link) => {
         const from = plan.places.find((place) => place.id === link.fromPlaceId)!;
@@ -124,6 +149,15 @@ export default function ArchitecturalScene(props: Props) {
       const bounds = new Three.Box3().setFromObject(scene);
       const center = bounds.getCenter(new Three.Vector3());
       let selectedId: string | undefined;
+      let selectionId: string | undefined;
+      let selectionGeometry: THREE.BufferGeometry | undefined;
+      const selectionMaterial = new Three.MeshBasicMaterial({ color: '#e8bd5e', side: Three.DoubleSide, transparent: true, opacity: .65, depthWrite: false });
+      disposers.push(() => selectionMaterial.dispose());
+      const selectionMesh = new Three.Mesh(new Three.BufferGeometry(), selectionMaterial);
+      liveGeometries.add(selectionMesh.geometry);
+      selectionMesh.visible = false;
+      selectionMesh.raycast = () => {};
+      scene.add(selectionMesh);
       const labelRaycaster = new Three.Raycaster();
       labelRaycaster.firstHitOnly = true;
       const occluders = scene.children.filter((object) => object instanceof Three.Mesh);
@@ -132,11 +166,39 @@ export default function ArchitecturalScene(props: Props) {
         const started = performance.now();
         const { floorId, selected } = latest.current;
         const selectedSpace = spaceForPlace(plan, selected);
+        if (selectionId !== selectedSpace?.id) {
+          if (selectionGeometry) { selectionGeometry.dispose(); liveGeometries.delete(selectionGeometry); selectionGeometry = undefined; }
+          selectionId = selectedSpace?.id;
+          selectionMesh.visible = false;
+          if (selectedSpace) {
+            const parts = selectedSpace.polygons.map((polygon) => {
+              const shape = new Three.Shape(polygon.outer.map(([x, y]) => new Three.Vector2(x, y)));
+              for (const ring of polygon.holes) shape.holes.push(new Three.Path(ring.map(([x, y]) => new Three.Vector2(x, y))));
+              const geometry = new Three.ShapeGeometry(shape);
+              const position = geometry.getAttribute('position');
+              for (let i = 0; i < position.count; i++) {
+                const p = projectPoint(selectedSpace.floorId, [position.getX(i), position.getY(i)], .04);
+                position.setXYZ(i, p.x, p.y, p.z);
+              }
+              return geometry;
+            });
+            selectionGeometry = mergeGeometries(parts, false) ?? undefined;
+            parts.forEach((part) => part.dispose());
+            if (!selectionGeometry) throw new Error('Cannot draw selected room geometry');
+            liveGeometries.add(selectionGeometry);
+            selectionMesh.geometry = selectionGeometry;
+            selectionMesh.visible = true;
+          }
+        }
+        selectionMesh.visible = Boolean(selectionGeometry && selectedSpace?.floorId === floorId);
+        container.dataset.selectedSpaceId = selectionMesh.visible ? selectionId ?? '' : '';
+        container.dataset.selectionVertices = selectionMesh.visible ? String(selectionGeometry!.getAttribute('position').count) : '0';
         for (const record of materials) {
           record.material.opacity = record.floorId === floorId ? 1 : (record.kind === 'surface' ? .5 : .65);
           record.material.color.copy(record.color);
           if (record.spaceId && record.spaceId === selectedSpace?.id) record.material.color.set('#b99443');
         }
+        for (const { floorId: lineFloor, material } of detailLines) material.opacity = lineFloor === floorId ? .4 : .22;
         for (const { link, material } of connections) material.opacity = selected === link.fromPlaceId || selected === link.toPlaceId ? 1 : .3;
         if (selected && selected !== selectedId) {
           const place = plan.places.find((p) => p.id === selected);
@@ -156,18 +218,21 @@ export default function ArchitecturalScene(props: Props) {
           const anchor = projectPoint(place.floorId,place.at,.14);
           const visible = isPlanAnchorVisible(anchor,camera,occluders,labelRaycaster);
           const button = labelNodes.current.get(place.id);
-          if (button) { button.style.visibility = visible ? 'visible' : 'hidden'; button.tabIndex = visible ? 0 : -1; }
+          if (button) { button.style.visibility = 'hidden'; button.tabIndex = -1; }
           const leader = leaderNodes.current.get(place.id);
-          if (leader) leader.style.visibility = visible ? 'visible' : 'hidden';
+          if (leader) leader.style.visibility = 'hidden';
           if (!visible) return [];
           const point = anchor.project(camera);
+          if (button) { button.dataset.anchorX = String((point.x + 1) * width / 2); button.dataset.anchorY = String((1 - point.y) * height / 2); }
           return { ...place, at: [(point.x+1)*width/2, (1-point.y)*height/2] as MapPoint };
         });
-        for (const place of placeRoomLabels(points,1,[width,height])) {
+        const visibleLabels = placeSceneLabels(points, [width, height], selected);
+        for (const place of visibleLabels) {
           const button = labelNodes.current.get(place.id);
-          if (button) button.style.transform = `translate(${place.displayAt[0]}px,${place.displayAt[1]}px) translate(-50%,-50%)`;
+          if (button) { button.style.visibility = 'visible'; button.tabIndex = 0; button.style.transform = `translate(${place.displayAt[0]}px,${place.displayAt[1]}px) translate(-50%,-50%)`; }
           const leader = leaderNodes.current.get(place.id);
           if (leader) {
+            leader.style.visibility = 'visible';
             leader.setAttribute('x1',String(place.at[0])); leader.setAttribute('y1',String(place.at[1]));
             leader.setAttribute('x2',String(place.displayAt[0])); leader.setAttribute('y2',String(place.displayAt[1]));
           }
@@ -176,7 +241,7 @@ export default function ArchitecturalScene(props: Props) {
           container.dataset.renderMs = (performance.now()-started).toFixed(2);
           container.dataset.drawCalls = String(renderer.info.render.calls);
           container.dataset.triangles = String(renderer.info.render.triangles);
-          container.dataset.visibleLabels = String(points.length);
+          container.dataset.visibleLabels = String(visibleLabels.length);
         }
       };
       const connect = () => {
@@ -197,12 +262,16 @@ export default function ArchitecturalScene(props: Props) {
         camera.position.copy(center).add(new Three.Vector3(18,28,27));
         camera.lookAt(center);
         camera.updateMatrixWorld();
-        const size = bounds.getSize(new Three.Vector3());
-        let halfWidth = 0, halfHeight = 0;
-        for (const x of [-.5,.5]) for (const y of [-.5,.5]) for (const z of [-.5,.5]) {
-          const corner = center.clone().add(new Three.Vector3(x*size.x,y*size.y,z*size.z)).applyMatrix4(camera.matrixWorldInverse);
-          halfWidth = Math.max(halfWidth,Math.abs(corner.x)); halfHeight = Math.max(halfHeight,Math.abs(corner.y));
+        // Fit the real floor contours, not the empty corners of a tall stack box.
+        let left = Infinity, right = -Infinity, top = -Infinity, bottom = Infinity;
+        for (const floor of floors) for (const feature of floor.features) for (const polygon of feature.polygons) for (const point of polygon.outer) {
+          const projected = projectPoint(floor.id, point, .14).applyMatrix4(camera.matrixWorldInverse);
+          left = Math.min(left, projected.x); right = Math.max(right, projected.x);
+          top = Math.max(top, projected.y); bottom = Math.min(bottom, projected.y);
         }
+        const offset = new Three.Vector3((left + right) / 2, (top + bottom) / 2, 0).applyQuaternion(camera.quaternion);
+        camera.position.add(offset); controls.target.add(offset);
+        const halfWidth = (right - left) / 2, halfHeight = (top - bottom) / 2;
         const aspect = container.clientWidth/container.clientHeight;
         const half = Math.max(halfHeight,halfWidth/aspect)*1.15;
         camera.left = -half*aspect; camera.right = half*aspect; camera.top = half; camera.bottom = -half;
@@ -268,8 +337,16 @@ export default function ArchitecturalScene(props: Props) {
         const rect = canvas.getBoundingClientRect();
         raycaster.setFromCamera(new Three.Vector2((event.clientX-rect.left)/rect.width*2-1,1-(event.clientY-rect.top)/rect.height*2),camera);
         // Respect opaque geometry: do not select an interior through another floor.
+        const index = floors.findIndex((floor) => floor.id === latest.current.floorId);
+        const floor = floors[index];
+        const floorPlane = new Three.Plane(new Three.Vector3(0, 1, 0), -(index * 7.5 + .04));
+        const intersection = raycaster.ray.intersectPlane(floorPlane, new Three.Vector3());
+        if (!intersection) return;
         const hit = raycaster.intersectObjects(scene.children,false).find((hit) => hit.object instanceof Three.Mesh);
-        const space = plan.spaces?.find((s) => s.id === hit?.object.userData.spaceId && s.floorId === latest.current.floorId);
+        if (hit && hit.distance < raycaster.ray.origin.distanceTo(intersection) - .01) return;
+        const scale = independentFloorScale(floor);
+        const at: MapPoint = [(intersection.x-index*.7)/scale+(floor.bounds[0]+floor.bounds[2])/2, (intersection.z-index*.4)/scale+(floor.bounds[1]+floor.bounds[3])/2];
+        const space = spaceAtPoint(plan, floor.id, at);
         if (space) latest.current.onSelect(space.placeId);
       };
       const key = (event: KeyboardEvent) => {
@@ -284,7 +361,8 @@ export default function ArchitecturalScene(props: Props) {
         if (event.key === 'ArrowDown') spherical.phi += .1;
         spherical.phi = Math.min(Math.PI*.47,Math.max(.15,spherical.phi));
         camera.position.copy(controls.target).add(new Three.Vector3().setFromSpherical(spherical));
-        controls.update(); draw();
+        // OrbitControls emits change synchronously when update moves the camera.
+        if (!controls.update()) draw();
       };
       const failure = (event: Event) => { event.preventDefault(); latest.current.onFailure(); };
       container.addEventListener('pointerdown',down);
@@ -316,7 +394,7 @@ export default function ArchitecturalScene(props: Props) {
         {places.map((place) => <line key={place.id} ref={(node) => { if (node) leaderNodes.current.set(place.id,node); else leaderNodes.current.delete(place.id); }} stroke="#d5ba76" strokeWidth="1" opacity=".6" />)}
       </svg>
       {places.map((place) => <button key={place.id} type="button" ref={(node) => { if (node) labelNodes.current.set(place.id,node); else labelNodes.current.delete(place.id); }}
-        data-place-id={place.id} aria-label={`${place.label} ${place.name}`} aria-pressed={props.selected === place.id} onClick={(event) => { if (!labelDrag.current || event.detail === 0) props.onSelect(place.id); }}>{place.label}</button>)}
+        data-place-id={place.id} title={place.name} data-place-kind={place.kind} aria-label={`${place.label} ${place.name}`} aria-pressed={props.selected === place.id} onClick={(event) => { if (!labelDrag.current || event.detail === 0) props.onSelect(place.id); }}><PlanPlaceMarker place={place} /></button>)}
     </div>
   </div>;
 }

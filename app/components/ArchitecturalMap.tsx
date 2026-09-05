@@ -1,16 +1,19 @@
 'use client';
 
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowUpDown, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
+import { ArrowUpDown, MapPin, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
 import type { GuideRecord } from '../data/types';
-import { containsPoint, placeRoomLabels, planTones, polygonPath, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint, type PlanPlace } from '../lib/architectural-plan';
+import mapNotes from '../data/architectural-map-notes.json';
+import { placeRoomLabels, placesForStop, planTones, polygonPath, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint, type PlanPlace } from '../lib/architectural-plan';
 import './architectural-map.css';
+import { PlanPlaceMarker } from './PlanPlaceMarker';
 
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex -- The bounded map viewport is intentionally keyboard-focusable for arrow-key scrolling; room actions remain native buttons. */
 
 const ArchitecturalScene = lazy(() => import('./ArchitecturalScene'));
 
 export function ArchitecturalMap({ plan, guide, active = true }: { plan: ArchitecturalPlan; guide: GuideRecord; active?: boolean }) {
+  const visitorNotes = (mapNotes as Record<string, string[]>)[plan.slug] ?? plan.limitations;
   const [view, setView] = useState<'2d' | '3d'>('3d');
   const [floorId, setFloorId] = useState(plan.floors[0].id);
   const [selected, setSelected] = useState<string>();
@@ -55,7 +58,7 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
     setSelected(place.id);
     setFloorId(place.floorId);
     if (focus && view === '2d') requestAnimationFrame(() => {
-      const node = svg.current?.querySelector<SVGGElement>(`[data-place-id="${place.id}"]`);
+      const node = viewport.current?.querySelector<HTMLElement>(`[data-place-id="${place.id}"]`);
       const host = viewport.current;
       if (!node || !host) return;
       const rect = node.getBoundingClientRect(), bounds = host.getBoundingClientRect();
@@ -94,7 +97,7 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
           const matrix = svg.current?.getScreenCTM();
           if (!matrix) return;
           const point = new DOMPoint(event.clientX, event.clientY).matrixTransform(matrix.inverse());
-          const space = plan.spaces?.find((space) => space.floorId === floorId && space.polygons.some((p) => containsPoint(p,[point.x,point.y])));
+          const space = spaceAtPoint(plan, floorId, [point.x, point.y]);
           const place = space && plan.places.find((p) => p.id === space.placeId);
           if (place) selectPlace(place);
         }}
@@ -123,31 +126,44 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
           drag.current = null;
         }}
       >
+        <div className="architectural-map__plane" style={{ width: availableSize.width * zoom, height: availableSize.height * zoom }}>
         <svg ref={svg} aria-label={`${floor.label}完整俯视图`} viewBox={`${minX} ${minY} ${maxX-minX} ${maxY-minY}`} style={{ width: (maxX-minX)*pixelsPerUnit*zoom, height: (maxY-minY)*pixelsPerUnit*zoom }}>
           <title>{floor.label}</title>
           {floor.features.map((feature) => <g key={feature.id} data-feature-id={feature.id} data-space-id={spaceForFeature(plan, feature.id)?.id}
             fill={selectedSpace && spaceForFeature(plan, feature.id)?.id === selectedSpace.id ? '#b99443' : planTones[feature.tone]} opacity={feature.kind === 'detail' ? .65 : 1}>
-            {feature.polygons.map((polygon, index) => <path key={index} d={polygonPath(polygon)} fillRule="evenodd" />)}
+            {feature.polygons.map((polygon, index) => <path key={index} d={polygonPath(polygon)} fillRule="evenodd"
+              stroke={feature.kind === 'detail' ? planTones[feature.tone] : undefined}
+              strokeWidth={feature.kind === 'detail' ? .35 : undefined} vectorEffect="non-scaling-stroke" />)}
           </g>)}
-          {labels.map((place) => <g key={place.id} data-place-id={place.id}>
+          {selectedSpace?.floorId === floorId && <g data-selected-space-id={selectedSpace.id} fill="#e8bd5e" fillOpacity=".65" stroke="#f3d894" strokeWidth={1 / pixelsPerUnit} pointerEvents="none">
+            {selectedSpace.polygons.map((polygon, index) => <path key={index} d={polygonPath(polygon)} fillRule="evenodd" />)}
+          </g>}
+          {labels.map((place) => <g key={place.id} data-anchor-id={place.id}>
             <line x1={place.at[0]} y1={place.at[1]} x2={place.displayAt[0]} y2={place.displayAt[1]} stroke="#e7cc85" strokeWidth={1/pixelsPerUnit} />
             <circle cx={place.at[0]} cy={place.at[1]} r={1.7/pixelsPerUnit} fill="#ead797" />
-            <foreignObject x={place.displayAt[0]-place.width/2} y={place.displayAt[1]-place.height/2} width={place.width} height={place.height}>
-              <button className="architectural-map__room" type="button" aria-label={`${place.label} ${place.name}`} aria-pressed={selected === place.id}
-                data-room-id={place.kind === 'room' ? place.id : undefined} style={{ fontSize:13/pixelsPerUnit, borderWidth:1/pixelsPerUnit, borderRadius:2/pixelsPerUnit }}
-                onClick={() => { if (!drag.current?.moved) selectPlace(place); }}>{place.label}</button>
-            </foreignObject>
           </g>)}
         </svg>
+        <div className="architectural-map__2d-labels">
+          {labels.map((place) => <div key={place.id} data-place-id={place.id} style={{
+            left: (place.displayAt[0] - place.width / 2 - minX) * pixelsPerUnit * zoom,
+            top: (place.displayAt[1] - place.height / 2 - minY) * pixelsPerUnit * zoom,
+            width: place.width * pixelsPerUnit * zoom, height: place.height * pixelsPerUnit * zoom,
+          }}>
+              <button className="architectural-map__room" type="button" title={place.name} data-place-kind={place.kind} aria-label={`${place.label} ${place.name}`} aria-pressed={selected === place.id}
+                data-room-id={place.kind === 'room' ? place.id : undefined} style={{ fontSize:13*zoom, borderWidth:zoom, borderRadius:2*zoom }}
+                onClick={() => { if (!drag.current?.moved) selectPlace(place); }}><PlanPlaceMarker place={place} /></button>
+          </div>)}
+        </div>
+        </div>
       </section>}
       <fieldset className="architectural-map__floors" aria-label="楼层">
         {orderedFloors.map((f) => <button key={f.id} type="button" aria-pressed={floorId === f.id} onClick={() => { setFloorId(f.id); viewport.current?.scrollTo(0,0); }}>{f.label}</button>)}
       </fieldset>
       <div className="architectural-map__inspector">
         <span>{floorPlaces.length} 个空间标记</span>
-        <strong>{current?.floorId === floorId ? `${current.label} · ${current.name === current.label ? '展厅' : current.name}` : floor.label}</strong>
-        <label>展厅<select aria-label="定位展厅" value={current?.floorId === floorId ? current.id : ''} onChange={(event) => { const p = plan.places.find((p) => p.id === event.target.value); if (p) selectPlace(p, true); }}>
-          <option value="">选择展厅</option>{floorPlaces.map((p) => <option key={p.id} value={p.id}>{p.label}{p.name !== p.label ? ` · ${p.name}` : ''}</option>)}
+        <strong>{current?.floorId === floorId ? `${current.label}${current.name !== current.label ? ` · ${current.name}` : ''}` : floor.label}</strong>
+        <label>地点<select aria-label="定位地点" value={current?.floorId === floorId ? current.id : ''} onChange={(event) => { const p = plan.places.find((p) => p.id === event.target.value); if (p) selectPlace(p, true); }}>
+          <option value="">选择地点</option>{floorPlaces.map((p) => <option key={p.id} value={p.id}>{p.label}{p.name !== p.label ? ` · ${p.name}` : ''}</option>)}
         </select></label>
       </div>
       {plan.verticalLinks.length > 0 && <div className="architectural-map__connections">
@@ -159,14 +175,17 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
           return <button key={link.id} type="button" onClick={() => selectPlace(target, true)}><ArrowUpDown size={16} aria-hidden="true" />{link.label} → {plan.floors.find((f) => f.id === target.floorId)!.label}</button>;
         })}
       </div>}
-      <details open className="architectural-map__notes"><summary>平面范围与说明</summary>
+      <details className="architectural-map__notes"><summary>平面范围与说明</summary>
         <p>平面保留资料图上比例；墙高、层间距与楼层错位仅为示意，不代表实测尺寸或楼层的实际水平对齐。</p>
-        {plan.limitations.map((text) => <p key={text}>{text}</p>)}
+        {visitorNotes.map((text) => <p key={text}>{text}</p>)}
+        {plan.unlocatedPlaces?.map((place) => <p key={place.id}>{place.label} · {place.name}：{place.reason}</p>)}
       </details>
       <ol className="architectural-map__stops">{guide.spatial.stops.map((stop, index) => {
-        const binding = plan.stopBindings.find((b) => b.stopIndex === index);
-        const place = binding && plan.places.find((p) => p.id === binding.placeId);
-        return <li key={`${index}-${stop}`}>{place ? <button type="button" onClick={() => selectPlace(place, true)}>{stop}</button> : <span>{stop}</span>}</li>;
+        const places = placesForStop(plan, index);
+        return <li key={`${index}-${stop}`} data-stop-index={index}>
+          {places.length === 1 ? <button type="button" className="architectural-map__stop-focus" onClick={() => selectPlace(places[0], true)}><MapPin size={15} aria-hidden="true" />{stop}</button> : <span>{stop}</span>}
+          {places.length > 1 && <div className="architectural-map__stop-targets">{places.map((place) => <button key={place.id} type="button" aria-label={`定位：${place.name}`} onClick={() => selectPlace(place, true)}><MapPin size={15} aria-hidden="true" />{place.name}</button>)}</div>}
+        </li>;
       })}</ol>
     </div>
   );

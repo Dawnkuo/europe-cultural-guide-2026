@@ -1,0 +1,301 @@
+{
+  "slug": "accademia-venice",
+  "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared both museum leaflet floors with their 2D renderings. Ground-floor Arabic and first-floor Roman identifiers retain their identities, including XXIV and the irregular VI area. Forty-two source-connected gallery selection regions preserve real partitions, shared openings, courtyards and service spaces.",
+    "floorCoverageReview": "Both published visitor levels. VIa/VIb lack separately recoverable locations and are explicitly unresolved, not silently substituted with new rooms.",
+    "stopBindingReview": "All six original stops retain entrance/service, XXIV, VIII, X, XIX-XXIII and ground-gallery bindings at gallery-group precision.",
+    "verticalConnectionReview": "Only the museum elevator and central staircase whose two landings are documented are connected.",
+    "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+    "sourceDigest": "6809eac6370f94b3a12017d6e243e3789135a4f9c97d1dc810f7c3d462a11264",
+    "sourceEvidence": "sources/floorplans/evidence/accademia-venice.json",
+    "comparedFloors": [
+      "ground",
+      "first"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:36:24.462Z",
+    "slug": "accademia-venice",
+    "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+    "sourceDigest": "6809eac6370f94b3a12017d6e243e3789135a4f9c97d1dc810f7c3d462a11264",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 19,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "first",
+            "exactLabels": 29,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/accademia-venice-1440-3d.png",
+          "work/map-review/release-final/accademia-venice-1440-ground-2d.png",
+          "work/map-review/release-final/accademia-venice-1440-first-2d.png",
+          "work/map-review/release-final/accademia-venice-1440-first-selection-2d.png",
+          "work/map-review/release-final/accademia-venice-1440-first-selection-3d.png",
+          "work/map-review/release-final/accademia-venice-1440-ground-selection-2d.png",
+          "work/map-review/release-final/accademia-venice-1440-ground-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 613,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 48,
+        "selectedSpaces": [
+          "first-rooms-XXIV",
+          "first-rooms-VIII",
+          "first-rooms-X",
+          "first-rooms-XIX",
+          "first-rooms-XX",
+          "first-rooms-XXI",
+          "first-rooms-XXII",
+          "first-source-XXIII-footprint",
+          "ground-rooms-1",
+          "ground-rooms-2",
+          "ground-rooms-3",
+          "ground-rooms-4",
+          "ground-rooms-5",
+          "ground-rooms-6",
+          "ground-rooms-7",
+          "ground-rooms-8",
+          "ground-rooms-9",
+          "ground-rooms-10",
+          "ground-rooms-11",
+          "ground-rooms-12",
+          "ground-rooms-13"
+        ],
+        "stopTargets": 24,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 19,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "first",
+            "exactLabels": 29,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/accademia-venice-1094-3d.png",
+          "work/map-review/release-final/accademia-venice-1094-ground-2d.png",
+          "work/map-review/release-final/accademia-venice-1094-first-2d.png",
+          "work/map-review/release-final/accademia-venice-1094-first-selection-2d.png",
+          "work/map-review/release-final/accademia-venice-1094-first-selection-3d.png",
+          "work/map-review/release-final/accademia-venice-1094-ground-selection-2d.png",
+          "work/map-review/release-final/accademia-venice-1094-ground-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 810,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 48,
+        "selectedSpaces": [
+          "first-rooms-XXIV",
+          "first-rooms-VIII",
+          "first-rooms-X",
+          "first-rooms-XIX",
+          "first-rooms-XX",
+          "first-rooms-XXI",
+          "first-rooms-XXII",
+          "first-source-XXIII-footprint",
+          "ground-rooms-1",
+          "ground-rooms-2",
+          "ground-rooms-3",
+          "ground-rooms-4",
+          "ground-rooms-5",
+          "ground-rooms-6",
+          "ground-rooms-7",
+          "ground-rooms-8",
+          "ground-rooms-9",
+          "ground-rooms-10",
+          "ground-rooms-11",
+          "ground-rooms-12",
+          "ground-rooms-13"
+        ],
+        "stopTargets": 24,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 19,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "first",
+            "exactLabels": 29,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/accademia-venice-390-3d.png",
+          "work/map-review/release-final/accademia-venice-390-ground-2d.png",
+          "work/map-review/release-final/accademia-venice-390-first-2d.png",
+          "work/map-review/release-final/accademia-venice-390-first-selection-2d.png",
+          "work/map-review/release-final/accademia-venice-390-first-selection-3d.png",
+          "work/map-review/release-final/accademia-venice-390-ground-selection-2d.png",
+          "work/map-review/release-final/accademia-venice-390-ground-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1063,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 48,
+        "selectedSpaces": [
+          "first-rooms-XXIV",
+          "first-rooms-VIII",
+          "first-rooms-X",
+          "first-rooms-XIX",
+          "first-rooms-XX",
+          "first-rooms-XXI",
+          "first-rooms-XXII",
+          "first-source-XXIII-footprint",
+          "ground-rooms-1",
+          "ground-rooms-2",
+          "ground-rooms-3",
+          "ground-rooms-4",
+          "ground-rooms-5",
+          "ground-rooms-6",
+          "ground-rooms-7",
+          "ground-rooms-8",
+          "ground-rooms-9",
+          "ground-rooms-10",
+          "ground-rooms-11",
+          "ground-rooms-12",
+          "ground-rooms-13"
+        ],
+        "stopTargets": 24,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "accademia-venice",
+    "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "ground",
+      "first"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "accademia-venice",
+    "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.800000000000182,
+    "renderP95Ms": 3.7,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/accademia-venice/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 90.39762535653806,
+      "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/accademia-venice/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 99.84430405401562,
+      "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/accademia-venice/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 102.04355783501143,
+      "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/accademia-venice/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+    "passed": true
+  }
+}

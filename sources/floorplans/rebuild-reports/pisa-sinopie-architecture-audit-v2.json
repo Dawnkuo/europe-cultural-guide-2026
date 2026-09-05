@@ -1,0 +1,133 @@
+{
+  "group": "pisa",
+  "venue": "sinopie",
+  "increment": "architecture-audit-v2",
+  "status": "research-exhausted-public-sources-no-indoor-model",
+  "scratchRoot": "/tmp/europe-map-rebuild-pisa/increments/sinopie-architecture-audit-v2",
+  "conclusion": "The reviewed public official and scholarly sources document a two-level museum, elevator, cinema steps and alternate ramp, historic suspended platforms, and the building's position in the Santa Chiara complex. None provides a current orthographic visitor plan or independently encoded floor surface/void. No indoor model, room anchor, sourceSpace or verticalLink can be generated without invention.",
+  "sources": [
+    {
+      "title": "Museo delle Sinopie accessibility audit",
+      "institution": "Musei Toscana / Handy Superabile",
+      "url": "https://accessibilita.museitoscana.cultura.gov.it/wp-content/uploads/2023/11/Museo-delle-Sinopie.pdf",
+      "file": "sources/floorplans/sinopie-accessibility.pdf",
+      "sha256": "4914e6df122280a00fb5221e7e6505a7fe6899c3374b877b17f5a55695de3a79",
+      "pages": 12,
+      "finding": "Summer 2024 audit. Page 2 states the museum is arranged on two levels. Page 7 explicitly records no visitor maps and no tactile maps. Page 8 documents the upper level by elevator and a cinema reached by three steps or a 4.90 m by 0.80 m rear-corridor ramp at 10.3 percent. Page 10 places the bookshop at the cinema level. It supplies operational topology but no plan geometry."
+    },
+    {
+      "title": "Pisa restaurata. Un profilo della tutela e del restauro monumentale nella citta del Novecento",
+      "institution": "Edizioni della Normale / Scuola Normale Superiore",
+      "url": "https://edizioni.sns.it/wp-content/uploads/2026/01/Pisa-restaurata.pdf",
+      "file": "sources/floorplans/pisa-restaurata-sns-2026.pdf",
+      "sha256": "3e95643985a875313f2daf89baaa0c856b5d6479bdb8d0d639d4d2b0a2f83a87",
+      "pages": 222,
+      "finding": "Page-by-page text and visual audit found Sinopie references but no plan of the museum in the former Ospedale Nuovo di Santo Spirito. Plan-like pages concern other buildings or infrastructure."
+    },
+    {
+      "title": "Pisa 292, Santa Chiara international design competition, elaborato 5",
+      "institution": "Comune di Pisa",
+      "url": "https://www.comune.pisa.it/ocmultibinary/download/18550/452054/4/8bcb1fd7e419c08a6bf5bdfe14de030e.pdf/file/elaborato%2B5.pdf",
+      "file": "sources/floorplans/sinopie-comune-pisa292-elaborato5.pdf",
+      "sha256": "4db0fd1d054bba5e01606397cd66b15ffb73e6d692e27ebea4521e0b302b576a",
+      "pages": 40,
+      "finding": "Pages 18 and 20 give competition-era site massing and the relationship of buildings 1, 2 and 9. Page 20 states that the complex contains the Sinopie Museum on the north side. These are context/proposal diagrams, not a current museum interior visitor plan."
+    }
+  ],
+  "onlineSourcesInvestigated": [
+    {
+      "url": "https://censimentoarchitetturecontemporanee.cultura.gov.it/scheda-opera?id=330",
+      "institution": "Ministero della Cultura",
+      "finding": "Official census dates the project to 1971-1979, credits Gaetano Nencini and Giovanna Piancastelli Politi, and describes an internal parallelepiped volume with platforms at different heights. No public plan download was found."
+    },
+    {
+      "url": "https://www.opapisa.it/visita/museo-delle-sinopie/",
+      "institution": "Opera della Primaziale Pisana",
+      "finding": "Official page confirms the great rectangular Peregrinaio hall, the 1970s installation, and a 2005 visitor-information area. It provides no plan."
+    },
+    {
+      "url": "https://alap.unipi.it/wp-content/uploads/2024/10/2023_1-2-3articoli.pdf",
+      "institution": "University of Pisa",
+      "finding": "Indexed scholarly article describes horizontal and vertical use, a ticket-desk filter, the elevator column, and platforms at different heights; figures document the installation. The PDF endpoint repeatedly failed TLS transfer in this environment, and no indexed text identifies an orthographic plan. No geometry was taken from snippets."
+    },
+    {
+      "url": "https://trasparenza.cultura.gov.it/archivio96_atti-a-rilevanza-esterna-o-provvedimenti-di-tutela-e-valorizzazione_0_255007_950_1.html",
+      "institution": "Ministero della Cultura",
+      "finding": "A 2024 record approves in-person archival consultation of restoration documents. It confirms non-public archival material exists but does not expose a usable plan."
+    },
+    {
+      "url": "https://biblio.toscana.it/catalogo/record/a_pisa_caleca_antonino_1943_1979_opera_della_primaziale-pisa_302328",
+      "institution": "BiblioToscana",
+      "finding": "Catalog record for the 1979 museum publication; no digital plan or full text is attached."
+    },
+    {
+      "url": "https://dsdra.web.uniroma1.it/sites/default/files/allegati/2024-05/FondoMinissi_Catalogo.pdf",
+      "institution": "Sapienza Universita di Roma",
+      "finding": "Archive catalog records related museum material but does not publish an indoor plan in the reviewed public item."
+    }
+  ],
+  "queries": [
+    "site:unipi.it Museo delle Sinopie Pisa pianta architettura Ospedale Santa Chiara pdf",
+    "site:opapisa.it Museo delle Sinopie pianta piano floor plan",
+    "\"Museo delle Sinopie\" planimetria Pisa restauro",
+    "\"Spedale della Misericordia\" Pisa pianta Museo Sinopie",
+    "\"Gaetano Nencini\" \"Museo delle Sinopie\" pianta",
+    "\"Giovanna Piancastelli\" \"Museo delle Sinopie\" progetto",
+    "\"Museo delle sinopie\" \"pianta\" Nencini Piancastelli",
+    "\"Museo delle Sinopie\" \"progetto\" \"1979\" architettura",
+    "\"Pisa. Museo delle Sinopie del Camposanto Monumentale\" planimetria",
+    "\"Pisa. Museo delle Sinopie\" \"pianta\" Caleca Nencini Piancastelli",
+    "\"Allestimento del Museo\" Nencini Piancastelli Sinopie figure",
+    "\"sistema a pedane\" \"Museo delle Sinopie\""
+  ],
+  "exactMissingFloorEvidence": [
+    "Current ground-level orthographic plan showing the Peregrinaio hall shell, entrance, reception/ticket desk, cinema, bookshop, rear corridor and accessible ramp.",
+    "Current upper-level or suspended-platform orthographic plan showing every walkable surface and central void.",
+    "Plan positions and landing geometry for the documented stairs and elevator on both levels.",
+    "Section or level schedule establishing the platform heights and changes of level.",
+    "Plan evidence for the 2005 visitor-information insertion and later reception/accessibility revisions.",
+    "Current object/group positions for all four guide stops: technique introduction, Buffalmacco group, Taddeo Gaddi/Piero di Puccio group, and Benozzo Gozzoli group."
+  ],
+  "routeStopDisposition": [
+    {
+      "stopIndex": 0,
+      "title": "技法导入",
+      "status": "unresolved-no-current-position"
+    },
+    {
+      "stopIndex": 1,
+      "title": "布法尔马科组",
+      "status": "unresolved-no-current-position"
+    },
+    {
+      "stopIndex": 2,
+      "title": "塔代奥·加迪与彼得罗·迪·普乔组",
+      "status": "unresolved-no-current-position"
+    },
+    {
+      "stopIndex": 3,
+      "title": "贝诺佐·戈佐利组",
+      "status": "unresolved-no-current-position"
+    }
+  ],
+  "disposition": {
+    "modelChange": false,
+    "configChange": false,
+    "indoorLoader": "remain excluded",
+    "limitation": "公开资料证实博物馆有两层、电梯、影院台阶与替代坡道，但没有可核验的现行室内平面；不得从照片、竞赛提案、文字描述或其他建筑图纸推断楼板、挑空、展墙、楼梯落点和藏品位置。"
+  },
+  "qa": [
+    {
+      "file": "qa/sinopie-architecture-audit-v2/sinopie-architecture-evidence-contact-v2.png",
+      "sha256": "d4c9abafd76a58a868ea6e2e793a3f6063d5322f7d8aa435228e68824164404a"
+    },
+    {
+      "file": "qa/sinopie-architecture-audit-v2/pisa-restaurata-reviewed-pages-contact.png",
+      "sha256": "71958a9531ab6c0931c6b8d4dcaed8c747cbc11e3f6cb9992b30d2bd4e7c54d4"
+    }
+  ],
+  "reproduction": {
+    "file": "scripts/build-sinopie-audit-contact.py",
+    "sha256": "59b5f8eda3620a4caa1cc2bf35c43147a7dad15168598886b3156ffb6a759b56"
+  }
+}

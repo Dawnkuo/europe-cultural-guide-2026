@@ -1,0 +1,188 @@
+{
+  "slug": "camposanto",
+  "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the university survey crop: the long enclosed courtyard, four cloister walks, east annexes, repeated bays and wall details retain the measured source proportions. No replacement ideal rectangle or inferred floor slab.",
+    "floorCoverageReview": "Surveyed ground level only; roof and service levels are not supplied.",
+    "stopBindingReview": "Courtyard and the documented southern fresco wall are located. Individual sarcophagi and later monuments have no established current object positions.",
+    "verticalConnectionReview": "No unsupported upper floor or vertical connection is introduced.",
+    "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+    "sourceDigest": "a6ee767951badd43aa8d19ed6b87b2615f729bb0c9af9aa5efc35ad7c4525e73",
+    "sourceEvidence": "sources/floorplans/evidence/camposanto.json",
+    "comparedFloors": [
+      "ground"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:37:22.898Z",
+    "slug": "camposanto",
+    "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+    "sourceDigest": "a6ee767951badd43aa8d19ed6b87b2615f729bb0c9af9aa5efc35ad7c4525e73",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/camposanto-1440-3d.png",
+          "work/map-review/release-final/camposanto-1440-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 739,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 8,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/camposanto-1094-3d.png",
+          "work/map-review/release-final/camposanto-1094-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 763,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 8,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/camposanto-390-3d.png",
+          "work/map-review/release-final/camposanto-390-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 374,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 8,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "camposanto",
+    "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "ground"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "camposanto",
+    "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 1.8,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/camposanto/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 169.24847438501246,
+      "screenshot": "work/map-review/guide-pages-final/_guides_camposanto_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/camposanto/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 172.2034585838906,
+      "screenshot": "work/map-review/guide-pages-final/_guides_camposanto_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/camposanto/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 138.8646054980704,
+      "screenshot": "work/map-review/guide-pages-final/_guides_camposanto_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/camposanto/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+    "passed": true
+  }
+}

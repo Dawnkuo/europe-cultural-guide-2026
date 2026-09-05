@@ -1,0 +1,39 @@
+{
+  "venue": "last-supper",
+  "source": {
+    "file": "sources/floorplans/last-supper-candidate-1.pdf",
+    "sha256": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+    "coordinateSystem": "PDF page 1 points before crop translation"
+  },
+  "floors": {
+    "L0": {
+      "page": 1, "crop": [234, 157, 623, 482],
+      "expectedWalls": [
+        {"id": "refectory-north", "point": [540, 189.8471], "sourcePath": 6},
+        {"id": "refectory-west", "point": [507.2324, 300], "sourcePath": 6},
+        {"id": "refectory-east", "point": [573.9824, 300], "sourcePath": 6},
+        {"id": "refectory-south", "point": [540, 446.9477], "sourcePath": 5},
+        {"id": "refectory-west-lower", "point": [507.3828, 440], "sourcePath": 4},
+        {"id": "classroom-west", "point": [425.4824, 360], "sourcePath": 10},
+        {"id": "classroom-south", "point": [450, 379.6725], "sourcePath": 14},
+        {"id": "bookshop-west", "point": [395.3325, 190], "sourcePath": 24},
+        {"id": "bookshop-south", "point": [446, 220.1479], "sourcePath": 21},
+        {"id": "ticket-north-diagonal", "point": [294.3075, 304.186], "sourcePath": 35},
+        {"id": "ticket-east-diagonal", "point": [289.7325, 347.8465], "sourcePath": 35},
+        {"id": "information-partition", "point": [480, 431.7973], "sourcePath": 56}
+      ],
+      "expectedDetails": [
+        {"id": "last-supper-wall-bar", "point": [540, 194.5478], "sourcePath": 54},
+        {"id": "crucifixion-wall-bar", "point": [540, 440.8725], "sourcePath": 55},
+        {"id": "locker-top-edge", "point": [269.7447, 324.5191], "sourcePath": 36}
+      ],
+      "expectedDoorGaps": [
+        {"id": "refectory-east-entry", "point": [573.9826, 326.7604], "minClearance": 4.5},
+        {"id": "refectory-west-exit", "point": [507.3076, 420.098], "minClearance": 4.5},
+        {"id": "classroom-east-door", "point": [474.1128, 361.5468], "minClearance": 6},
+        {"id": "ticket-office-entry", "point": [252.2072, 371.7603], "minClearance": 5}
+      ]
+    }
+  },
+  "scope": "Complete single-level visitor plan of the Cenacolo museum, not the separate Santa Maria delle Grazie church. Source has named places but no numeric room IDs. All twelve mapped names are retained; toilet position follows its printed service label, not an inferred door. Single level, so no inter-floor connection is claimed."
+}

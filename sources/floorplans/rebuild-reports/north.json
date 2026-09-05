@@ -1,0 +1,209 @@
+{
+  "group": "north",
+  "generatedAt": "2026-09-05",
+  "root": "/tmp/europe-map-rebuild-north",
+  "installReady": true,
+  "validation": {
+    "validator": "app/lib/architectural-plan.ts::validateArchitecturalPlan",
+    "result": "7/7 通过",
+    "serializedShapely": "5319/5319 个模型与空间 polygon 均为有效、非空且面积为正",
+    "duplicateFeatureIds": 0,
+    "nonChinesePublicLabelsOrLimitations": 0,
+    "projectionReview": "所有实际提取页均由共享生成器 validate_projection 复核通过"
+  },
+  "venues": [
+    {
+      "slug": "milan-duomo",
+      "status": "可安装（地面层部分覆盖）",
+      "floors": 1,
+      "places": 4,
+      "features": 468,
+      "boundStops": [0, 1, 2, 3],
+      "unresolvedStops": [4, 5],
+      "unresolved": ["约31米屋顶露台", "约45米屋顶露台"],
+      "visualReview": ["work/model-review/milan-duomo/cathedral.png"],
+      "source": {
+        "file": "sources/floorplans/duomo-polimi-annals-2010.pdf",
+        "sha256": "3b809fa503e1ff4da95e085937e8a796c887eeb4c2b390859eb93c277c9baa9f",
+        "url": "https://re.public.polimi.it/retrieve/e0c31c08-fbb1-4599-e053-1705fe0aef77/2011_annaliduomo_completo.pdf",
+        "page": 209
+      }
+    },
+    {
+      "slug": "santa-maria-grazie",
+      "status": "可安装",
+      "floors": 1,
+      "places": 7,
+      "features": 2235,
+      "boundStops": [0, 1, 2, 3, 4, 5],
+      "unresolvedStops": [],
+      "note": "停靠点2以两个绑定分别保留南、北礼拜堂带。",
+      "visualReview": ["work/model-review/santa-maria-grazie/church.png"],
+      "source": {
+        "file": "sources/floorplans/santa-maria-grazie-polimi-2024.pdf",
+        "sha256": "bdb42b20b4981f402eab2295760688c7c694dce632ac6da099ef629891885364",
+        "url": "https://re.public.polimi.it/retrieve/e08dc9b5-d9c0-4d62-bdaf-9101e49d5a69/UID24.pdf",
+        "page": 18
+      }
+    },
+    {
+      "slug": "sforza",
+      "status": "可安装（城堡核心与庭院部分覆盖）",
+      "floors": 1,
+      "places": 4,
+      "features": 749,
+      "boundStops": [0, 1, 2],
+      "unresolvedStops": [3, 4, 5],
+      "unresolved": ["古代艺术博物馆室内层", "舞厅与月份挂毯室", "西班牙医院与《隆达尼尼圣殇》室内层"],
+      "visualReview": ["work/model-review/sforza/site.png"],
+      "source": {
+        "file": "sources/floorplans/sforza-polimi-fortmed-2024.pdf",
+        "sha256": "e6cbe669780d75ba15c3a950f9a35345c0234490f08076cff4d7285a09247808",
+        "url": "https://re.public.polimi.it/retrieve/9f7696bb-c747-494c-af4b-33d2848257c4/Pertot%20Fortmed%20XVI%202024.pdf",
+        "page": 11
+      },
+      "investigatedUrls": [
+        "https://www2.comune.milano.it/web/castello-sforzesco/visita/materiali-utili-per-la-visita",
+        "https://www2.comune.milano.it/documents/461595483/477971915/mappa-castello+e++itinerario_def+LL+14.01.25.pdf/b3319db7-1c76-758b-f6a8-8e2453136a9e?t=1754403241406"
+      ]
+    },
+    {
+      "slug": "galleria-vittorio",
+      "status": "可安装",
+      "floors": 1,
+      "places": 5,
+      "features": 1,
+      "boundStops": [0, 1, 2, 3, 4, 5],
+      "unresolvedStops": [],
+      "note": "停靠点2与3共享中央八角厅；所有 PlanSpace 均有有效 placeId。",
+      "visualReview": ["work/model-review/galleria-vittorio/arcade.png"],
+      "source": {
+        "file": "sources/floorplans/galleria-polimi-2016.pdf",
+        "sha256": "8d346ae41dd4b5272c8431bc03ebffa66190532521c4dd349bc6776f3fb422ef",
+        "url": "https://re.public.polimi.it/retrieve/e0c31c0a-3376-4599-e053-1705fe0aef77/GVE%20volume%20OS%202016.pdf",
+        "page": 81
+      }
+    },
+    {
+      "slug": "museum-ludwig",
+      "status": "可安装",
+      "floors": 4,
+      "places": 18,
+      "features": 43,
+      "boundStops": [0, 1, 2, 3, 4],
+      "unresolvedStops": [],
+      "note": "楼层显示按欧洲习惯统一为地下层、底层、一层、二层；四层均保留来源中的楼梯、电梯、卫生间或入口符号锚点。藏品主题仅按2020年12月节目图作楼层级绑定。共享生成器 occurrence feature ID 修复后已重新生成，无重复 ID。",
+      "visualReview": [
+        "work/model-review/museum-ludwig/basement.png",
+        "work/model-review/museum-ludwig/ground.png",
+        "work/model-review/museum-ludwig/first.png",
+        "work/model-review/museum-ludwig/second.png"
+      ],
+      "source": {
+        "file": "sources/floorplans/museum-ludwig-program-2021.pdf",
+        "sha256": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+        "url": "https://www.museum-ludwig.de/fileadmin/content/01_Programm/ML_Z08-Credit-400x234_lay_10.pdf",
+        "page": 1
+      }
+    },
+    {
+      "slug": "koln-triangle",
+      "status": "可安装（建筑层覆盖，游客屋顶路线未定位）",
+      "floors": 3,
+      "places": 3,
+      "features": 239,
+      "boundStops": [],
+      "unresolvedStops": [0, 1, 2, 3, 4],
+      "unresolved": ["现行游客入口", "最后一段上行楼梯", "公共观景平台", "各观景方向锚点"],
+      "visualReview": [
+        "work/model-review/koln-triangle/ground.png",
+        "work/model-review/koln-triangle/office-typical.png",
+        "work/model-review/koln-triangle/event-28.png"
+      ],
+      "source": {
+        "file": "sources/floorplans/koln-triangle-architect.pdf",
+        "sha256": "0374f07240ef75e38d40c861410ff9bff6552226bd6f373107104750ff7dba7b",
+        "url": "https://www.supergelb-architekten.de/cms-assets/files/322_Layout_final_lowRes.pdf?v=1694683319",
+        "pages": [10, 11, 13]
+      }
+    },
+    {
+      "slug": "notre-dame-towers",
+      "status": "可安装（南塔历史钟架部分覆盖）",
+      "floors": 2,
+      "places": 2,
+      "features": 352,
+      "boundStops": [2, 4],
+      "unresolvedStops": [0, 1, 3, 5],
+      "unresolved": ["入口与下层接待厅", "四叶厅", "新双向橡木楼梯", "奇美拉长廊与69米眺望台", "蓄水池庭院与屋顶视角", "北塔钟架及出口"],
+      "visualReview": [
+        "work/model-review/notre-dame-towers/south-belfry-lower.png",
+        "work/model-review/notre-dame-towers/south-belfry-upper.png"
+      ],
+      "sources": [
+        {
+          "file": "sources/floorplans/notre-dame-dictionnaire-v2.pdf",
+          "sha256": "9f1ae751ae81ac962144d94abdf29f482fa66fa9b371898b5c0e23e24afc42e9",
+          "url": "https://archive.org/download/dictionnairerais02violuoft/dictionnairerais02violuoft.pdf",
+          "page": 201,
+          "role": "未修改权威原书"
+        },
+        {
+          "file": "sources/floorplans/notre-dame-dictionnaire-v2-page201-render.pdf",
+          "sha256": "0394060017e82ddbc323ed78d943143d2fc1bc79b58d2338eb3566688479ee21",
+          "url": "https://archive.org/download/dictionnairerais02violuoft/dictionnairerais02violuoft.pdf#page=201",
+          "page": 1,
+          "role": "同页固定四倍审阅渲染件，页面坐标未改变"
+        }
+      ],
+      "investigatedSources": [
+        {
+          "file": "sources/floorplans/notre-dame-towers-falc-2025.pdf",
+          "sha256": "98134437a63fc782af35233984ed4b6b0d50e0a592b08dd9b2f36df07a2deb85",
+          "result": "官方文字路线，无正投影平面"
+        },
+        {
+          "file": "sources/floorplans/notre-dame-towers-accessibility-2026.pdf",
+          "sha256": "6036a0a2b4321f059ec3306afaa772750fa5ac08dc08e8c8ca43f2a20c0aac6f",
+          "result": "第13页为路线立面示意，不用于平面几何"
+        }
+      ]
+    }
+  ],
+  "sharedSupportRequest": {
+    "owner": "main",
+    "scope": "cologne-cathedral 塔楼与宝库缺层",
+    "reason": "该场馆不在北组独占写入范围，未改动其配置或模型。",
+    "officialUrlsInvestigated": [
+      "https://www.koelner-dom.de/besuchen/turmbesteigung",
+      "https://tickets.koelner-dom.de/schatzkammer",
+      "https://www.koelner-dom.de/aktuelles/aufgerissen-die-mittelalterlichen-baurisse-des-koelner-domes"
+    ],
+    "findings": [
+      "现行官方塔楼页可证明南侧入口、533级台阶、约75米以下螺旋梯、其上金属梯、约100米平台及途经钟架，但未发布各层正投影平面。",
+      "官方宝库售票页只给出主教座堂外部入口定位图，未给宝库内部楼层、展室或服务节点平面。",
+      "官方档案展页面展示历史Riss D南塔地面层图，并明确说明中世纪图缺比例尺与尺寸；它不能直接替代现行塔楼游客路线。"
+    ],
+    "exactMissing": [
+      "南塔入口层、螺旋梯各停靠层、钟架层、金属梯与观景平台的现行正投影关系",
+      "宝库各公共层、展室边界、楼梯、电梯与入口之间的现行正投影关系"
+    ],
+    "request": "请主任务取得现行管理方平面，或明确批准仅用Riss D制作标注为历史记录的南塔地面层局部模型。"
+  },
+  "install": {
+    "configs": "sources/floorplans/venues/*.json",
+    "models": "app/data/architectural-plans/*.json",
+    "evidence": "sources/floorplans/evidence/*.json",
+    "referencedSources": [
+      "sources/floorplans/duomo-polimi-annals-2010.pdf",
+      "sources/floorplans/santa-maria-grazie-polimi-2024.pdf",
+      "sources/floorplans/sforza-polimi-fortmed-2024.pdf",
+      "sources/floorplans/galleria-polimi-2016.pdf",
+      "sources/floorplans/museum-ludwig-program-2021.pdf",
+      "sources/floorplans/koln-triangle-architect.pdf",
+      "sources/floorplans/notre-dame-dictionnaire-v2.pdf",
+      "sources/floorplans/notre-dame-dictionnaire-v2-page201-render.pdf"
+    ],
+    "helper": "scripts/rebuild-north.py"
+  }
+}

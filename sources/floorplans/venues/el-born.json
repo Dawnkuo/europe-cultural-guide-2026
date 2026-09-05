@@ -1,0 +1,113 @@
+{
+  "slug": "el-born",
+  "file": "investigated/el-born-2013-third-party-official-plan-copy.pdf",
+  "url": "https://plural-21.org/wp-content/uploads/2013/09/Pres%C3%A8ncia-300-anys-i-encara-som-aqu%C3%AD4.pdf",
+  "sha256": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [23],
+    "basis": "Page 23 reproduces the dated September 2013 El Born Centre Cultural visitor diagram as an undistorted top-down schematic. Its vector paths separately encode the public-space fill, four named rooms, three archaeological-site panels, entrance arrows and room borders."
+  },
+  "review": "The 8 September 2013 Presencia page was inspected at native PDF vector resolution. Its El Born Centre Cultural diagram and 1-7 legend match the search-indexed official planol-catala.pdf graphic, whose legacy official URL now redirects instead of returning PDF bytes. This pinned republication is historical visitor evidence, not a current measured architectural survey. Exact PDF path bounds provide the public-space and room faces; red outline paths remain flat detail. Printed identifiers remain semantic labels and are not included in geometry.",
+  "limitations": [
+    "本图为 2013 年 9 月开馆时期访客示意图，不代表 2024–2026 年改展后的现状布局或开放状态。",
+    "公共空间、1–4 号功能室与三块 5 号遗址范围按原 PDF 矢量边界保留；示意比例不等同测绘精度。",
+    "红色房间框、遗址点线和入口箭头均保持平面细节，不挤出为实体墙。",
+    "地下遗址内部街巷、住宅、排水线、高差与下行路线没有在此图中绘出，不补造。",
+    "桑树墓园、博恩大道与通往巴塞罗内塔的室外路线不在本平面范围内。"
+  ],
+  "unresolved": [
+    "2024 年改造之后各展厅的 2026 年现状边界、名称与开放状态。",
+    "地下考古遗址内部街巷、住宅、排水线、参观平台与竖向交通正投影。",
+    "卫生间、电梯、楼梯及无障碍路线的准确平面位置。",
+    "官方原始 planol-catala.pdf 与 2018 教育访问图的旧网址现重定向；Internet Archive 精确与通配 CDX 检索于 2026-09-05 均返回暂时离线，因此本候选使用可哈希的 2013 同图刊物转载。"
+  ],
+  "research": [
+    {
+      "url": "https://elbornculturaimemoria.barcelona.cat/wp-content/uploads/2015/05/planol-catala.pdf",
+      "result": "Official search index exposes the same numbered 1-7 visitor plan and legend, but the legacy URL now redirects to the museum homepage rather than returning the original PDF bytes."
+    },
+    {
+      "url": "https://plural-21.org/wp-content/uploads/2013/09/Pres%C3%A8ncia-300-anys-i-encara-som-aqu%C3%AD4.pdf",
+      "result": "Used: pinned September 2013 publication page 23 reproduces the official visitor plan as inspectable PDF vectors with the complete 1-7 legend."
+    },
+    {
+      "url": "https://elbornculturaimemoria.barcelona.cat/wp-content/uploads/2018/07/bccm_pe18_b.pdf",
+      "result": "Official search index exposes a later educational visit map with the same 1-7 semantics; its legacy URL also redirects and did not return a pin-able plan file."
+    },
+    {
+      "url": "https://www.bcn.cat/museuhistoriaciutat/docs/Programa_Activitats.pdf",
+      "result": "Investigated and rejected as building geometry: the February-May 2024 top-down graphic is a future program/narrative scheme, not a visitor architectural floor plan."
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=elbornculturaimemoria.barcelona.cat/wp-content/uploads/2015/05/planol-catala.pdf&output=json&filter=statuscode:200&filter=mimetype:application/pdf",
+      "result": "Queried on 2026-09-05 together with exact legacy-domain and wildcard Barcelona-host variants. Internet Archive returned its Temporarily Offline page for every CDX request, so no archived official PDF bytes were obtained and no archive result is claimed."
+    }
+  ],
+  "stopBindings": [
+    {"stopIndex": 2, "placeId": "street-level-公共空间-1"},
+    {"stopIndex": 3, "placeId": "street-level-5-2"}
+  ],
+  "floors": [
+    {
+      "id": "street-level",
+      "label": "2013 年街面层访客图（历史）",
+      "order": 0,
+      "page": 23,
+      "crop": [80, 165, 350, 282],
+      "rules": [
+        {
+          "ids": [18, 20, 22, 24, 26, 29, 30, 31, 32, 34, 35, 36, 37, 38, 40, 41, 42, 43, 44, 46, 47, 48, 49, 50],
+          "channel": "fill",
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls."
+        }
+      ],
+      "spaces": [
+        {
+          "id": "public-space",
+          "label": "2013 年公共空间与博物馆阳台",
+          "placeId": "street-level-公共空间-1",
+          "tone": "neutral",
+          "outer": [[85.84,171.0],[344.19,171.0],[344.19,277.5],[85.84,277.5]],
+          "holes": [
+            [[87.22,172.28],[185.4,172.28],[185.4,194.45],[87.22,194.45]],
+            [[245.41,171.68],[343.59,171.68],[343.59,194.44],[245.41,194.44]],
+            [[87.22,253.72],[185.4,253.72],[185.4,275.89],[87.22,275.89]],
+            [[245.41,253.72],[343.59,253.72],[343.59,275.89],[245.41,275.89]],
+            [[103.99,203.89],[182.9,203.89],[182.9,244.6],[103.99,244.6]],
+            [[194.07,203.89],[236.94,203.89],[236.94,244.6],[194.07,244.6]],
+            [[249.09,203.89],[326.04,203.89],[326.04,244.6],[249.09,244.6]]
+          ],
+          "sourcePaths": [17,19,21,23,25,33,39,45],
+          "evidence": "Composite of the exact source public-space rectangle after subtracting the seven exact white room and archaeology fills; it represents the 2013 public band only."
+        },
+        {"id":"room-1","label":"1","placeId":"street-level-1-1","tone":"neutral","outer":[[245.41,171.68],[343.59,171.68],[343.59,194.44],[245.41,194.44]],"sourcePaths":[25],"evidence":"Exact white fill of printed room 1, Sala Villarroel, in the 2013 visitor diagram."},
+        {"id":"room-2","label":"2","placeId":"street-level-2-1","tone":"neutral","outer":[[87.22,172.28],[185.4,172.28],[185.4,194.45],[87.22,194.45]],"sourcePaths":[21],"evidence":"Exact white fill of printed room 2, Sala Casanova, in the 2013 visitor diagram."},
+        {"id":"room-3","label":"3","placeId":"street-level-3-1","tone":"neutral","outer":[[87.22,253.72],[185.4,253.72],[185.4,275.89],[87.22,275.89]],"sourcePaths":[19],"evidence":"Exact white fill of printed room 3, Sala Moragues, in the 2013 visitor diagram."},
+        {"id":"room-4","label":"4","placeId":"street-level-4-1","tone":"neutral","outer":[[245.41,253.72],[343.59,253.72],[343.59,275.89],[245.41,275.89]],"sourcePaths":[23],"evidence":"Exact white fill of printed room 4, Sala Castellvi, in the 2013 visitor diagram."}
+      ],
+      "selectionSpaces": [
+        {"id":"archaeology-west","label":"5","placeId":"street-level-5-1","selectionOnly":true,"outer":[[103.99,203.89],[182.9,203.89],[182.9,244.6],[103.99,244.6]],"sourcePaths":[33],"evidence":"Exact white source fill enclosed by the west dotted 5 archaeology boundary; selection-only, with no subsoil surface generated."},
+        {"id":"archaeology-centre","label":"5","placeId":"street-level-5-2","selectionOnly":true,"outer":[[194.07,203.89],[236.94,203.89],[236.94,244.6],[194.07,244.6]],"sourcePaths":[39],"evidence":"Exact white source fill enclosed by the centre dotted 5 archaeology boundary; selection-only, with no subsoil surface generated."},
+        {"id":"archaeology-east","label":"5","placeId":"street-level-5-3","selectionOnly":true,"outer":[[249.09,203.89],[326.04,203.89],[326.04,244.6],[249.09,244.6]],"sourcePaths":[45],"evidence":"Exact white source fill enclosed by the east dotted 5 archaeology boundary; selection-only, with no subsoil surface generated."}
+      ],
+      "places": [
+        {"label":"1","name":"常设展厅：Villarroel 厅","kind":"room","at":[296.37,182.38],"evidence":"Printed identifier 1 at the original PDF text-box center.","precision":"printed-room-label-position"},
+        {"label":"2","name":"临时展厅：Casanova 厅","kind":"room","at":[135.69,182.38],"evidence":"Printed identifier 2 at the original PDF text-box center.","precision":"printed-room-label-position"},
+        {"label":"3","name":"多功能空间：Moragues 厅","kind":"room","at":[135.65,264.41],"evidence":"Printed identifier 3 at the original PDF text-box center.","precision":"printed-room-label-position"},
+        {"label":"4","name":"商店书店与餐饮：Castellví 厅","kind":"room","at":[294.29,264.42],"evidence":"Printed identifier 4 at the original PDF text-box center.","precision":"printed-room-label-position"},
+        {"label":"5","name":"西侧考古遗址范围","kind":"area","at":[144.33,222.69],"evidence":"First printed identifier 5 at the original PDF text-box center.","precision":"printed-room-label-position"},
+        {"label":"5","name":"中央考古遗址范围","kind":"area","at":[216.39,222.69],"evidence":"Second printed identifier 5 at the original PDF text-box center.","precision":"printed-room-label-position"},
+        {"label":"5","name":"东侧考古遗址范围","kind":"area","at":[288.44,222.69],"evidence":"Third printed identifier 5 at the original PDF text-box center.","precision":"printed-room-label-position"},
+        {"label":"6","name":"建筑触觉模型","kind":"object","at":[207.0,194.07],"evidence":"Printed identifier 6 at the original PDF text-box center.","precision":"printed-object-label-position"},
+        {"label":"7","name":"北侧触觉导向图","kind":"object","at":[202.11,183.34],"evidence":"First printed identifier 7 at the original PDF text-box center.","precision":"printed-object-label-position"},
+        {"label":"7","name":"南侧触觉导向图","kind":"object","at":[203.54,261.8],"evidence":"Second printed identifier 7 at the original PDF text-box center.","precision":"printed-object-label-position"},
+        {"label":"公共空间","name":"2013 年公共通行与博物馆阳台范围","kind":"area","at":[215.0,249.0],"evidence":"Geometry anchor inside the exact composite public-space face.","precision":"historical-visitor-diagram-zone"},
+        {"label":"北入口","name":"Ciutadella 门与商业街团体入口","kind":"service","at":[215.0,167.0],"evidence":"Anchor at the tip of the source entrance arrow; opening width is not asserted.","precision":"historical-visitor-diagram-entry"},
+        {"label":"南入口","name":"Born 门与商业广场入口","kind":"service","at":[215.0,280.0],"evidence":"Anchor at the tip of the source entrance arrow; opening width is not asserted.","precision":"historical-visitor-diagram-entry"}
+      ]
+    }
+  ]
+}

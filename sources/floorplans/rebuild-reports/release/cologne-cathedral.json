@@ -1,0 +1,223 @@
+{
+  "slug": "cologne-cathedral",
+  "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the main church plan and the actual2009 underground south-tower access drawing. Keeps nave piers, aisles, transepts, radiating apse and foundation-access passage. Vault diagonals remain flat details, not partitions. Rejected medieval tower elevation is not repurposed as present-day tower levels.",
+    "floorCoverageReview": "Church main level and2009 tower-access courtyard only. Treasury, spiral staircase levels, bells and observation deck remain missing plans.",
+    "stopBindingReview": "Stops0,1,3 bind the west central doorway, choir and south transept; stop5 locates only the documented start of tower ascent. Gero cross and treasury stay unlocated.",
+    "verticalConnectionReview": "No continuous tower ascent or treasury connection without documented paired landings.",
+    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "sourceDigest": "3c3aa37060e3003a57dc5ac776a5e869a59d3de29cca86715bb2a4ec9c8d742d",
+    "sourceEvidence": "sources/floorplans/evidence/cologne-cathedral.json",
+    "comparedFloors": [
+      "south-tower-access-2009",
+      "nave"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:38:07.501Z",
+    "slug": "cologne-cathedral",
+    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "sourceDigest": "3c3aa37060e3003a57dc5ac776a5e869a59d3de29cca86715bb2a4ec9c8d742d",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "south-tower-access-2009",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "nave",
+            "exactLabels": 7,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/cologne-cathedral-1440-3d.png",
+          "work/map-review/release-final/cologne-cathedral-1440-south-tower-access-2009-2d.png",
+          "work/map-review/release-final/cologne-cathedral-1440-nave-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 613,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "south-tower-access-2009",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "nave",
+            "exactLabels": 7,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/cologne-cathedral-1094-3d.png",
+          "work/map-review/release-final/cologne-cathedral-1094-south-tower-access-2009-2d.png",
+          "work/map-review/release-final/cologne-cathedral-1094-nave-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 735,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "south-tower-access-2009",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "nave",
+            "exactLabels": 7,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/cologne-cathedral-390-3d.png",
+          "work/map-review/release-final/cologne-cathedral-390-south-tower-access-2009-2d.png",
+          "work/map-review/release-final/cologne-cathedral-390-nave-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 626,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "cologne-cathedral",
+    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "south-tower-access-2009",
+      "nave"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "cologne-cathedral",
+    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.3,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/cologne-cathedral/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 114.56923086654949,
+      "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/cologne-cathedral/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 130.3367908154214,
+      "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/cologne-cathedral/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 120.98919982195774,
+      "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/cologne-cathedral/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "passed": true
+  }
+}

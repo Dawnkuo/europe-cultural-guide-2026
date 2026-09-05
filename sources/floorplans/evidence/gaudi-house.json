@@ -1,0 +1,48 @@
+{
+  "slug": "gaudi-house",
+  "status": "evidence-only-no-indoor-model",
+  "publicLimitation": "官网与出版物可确认高迪故居的建筑身份、屋顶外廓和花园环境，但已检查的图册、论文附图及博物馆资料均未提供室内正投影平面；本场馆不进入室内模型加载器。",
+  "sources": [
+    {
+      "url": "https://parkguell.barcelona/en/park-guell/emblematic-features/gaudi-museum-house",
+      "finding": "The official Park Guell page identifies the model house, its authorship by Francesc Berenguer i Mestres and Gaudi's residence there from 1906 to 1925, but publishes no indoor plan."
+    },
+    {
+      "url": "https://parkguell.barcelona/index.php/en/planning-your-visit/maps-and-services",
+      "finding": "The official maps and services page confirms visitor access and park-level context; its downloadable map is an illustrated site map, not an indoor orthographic plan of the Gaudi House Museum."
+    },
+    {
+      "url": "https://geoserveis.icgc.cat/servei/catalunya/orto-territorial/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=ortofoto_color_vigent&STYLES=&CRS=EPSG:4326&BBOX=41.4137,2.1528,41.4152,2.1544&WIDTH=1600&HEIGHT=1500&FORMAT=image/png&TRANSPARENT=false",
+      "file": "gaudi-house-icgc-orthophoto.pdf",
+      "sha256": "0e1f3d9a0c510eddd039591d88ee22cdc992c48131ec85f5fe0e1ca9d3567437",
+      "finding": "Official ICGC north-up orthophoto verifies the roof footprint and garden context only."
+    },
+    {
+      "file": "investigated/gaudi-house-muhba-elevation-no-plan.pdf",
+      "sha256": "3fca1b32b03819bafd6f07770411dd66cf4b005ea1f46efef990302b7e74ec21",
+      "finding": "The inspected MUHBA publication provides facade and elevation evidence but no usable indoor floor plan."
+    },
+    {
+      "url": "https://www.triangle.cat/pdfs/g1-e.pdf",
+      "file": "investigated/gaudi-buildings-triangle-g1-e.pdf",
+      "sha256": "bb0ffc0b34d0b5f39dde8938aed7d3af4a4f93f7c54e837693fc8c0d1d181846",
+      "finding": "Pages 8, 11 and 12 were visually inspected. The book shows a Gaudi House Museum photograph and Park Guell/other Gaudi-building drawings, but no interior floor plan for the museum house."
+    },
+    {
+      "url": "https://upcommons.upc.edu/bitstreams/a176d131-672a-4944-ab37-43b75eb881d7/download",
+      "file": "investigated/gaudi-house-upc-thesis-annex.pdf",
+      "sha256": "467b54b57a00ca3b034f89152dbf0ef8aa30ef9bf1a08c7e6eed4ebfd6cd8429",
+      "finding": "Pages 27-35 were visually inspected. Page 34 contains Park Guell planning, Casa Trias plans, entrance-pavilion plans and a photograph/description of the sample house; it does not contain the Gaudi House Museum interior plan."
+    }
+  ],
+  "missing": [
+    "开放楼层数量及各层外墙、房间与楼梯边界",
+    "入口、生活空间与祈祷相关陈设的平面关系",
+    "家具、模型、私人用品及楼层连接的准确位置",
+    "花园开放范围与铁艺构件的可核验导览位置"
+  ],
+  "routeCoverage": {
+    "resolvedStops": [],
+    "unresolvedStops": [0, 1, 2, 3, 4]
+  }
+}

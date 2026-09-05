@@ -965,6 +965,17 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L0-meca-source-stair",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourcePaths": [
+        47,
+        67
+      ],
+      "classification": "Exact yellow original Meca stair-flight and landing polygons in the official ground plan. Does not fabricate a polygon for the unbounded white circulation court.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
       "featureId": "L0-寄存-1",
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 2,
@@ -972,8 +983,8 @@
         310,
         702
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-售票-1",
@@ -983,8 +994,8 @@
         285,
         968
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-书店-1",
@@ -994,8 +1005,8 @@
         590,
         552
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-Meca-1",
@@ -1005,8 +1016,8 @@
         300,
         1190
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-Mauri-1",
@@ -1016,8 +1027,8 @@
         301,
         1308
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-礼堂-1",
@@ -1027,8 +1038,8 @@
         906,
         1000
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-集合-1",
@@ -1038,8 +1049,5625 @@
         578,
         741
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-Meca宫院-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        323,
+        1044
+      ],
+      "classification": "Primary p2 labelled Palau Meca court between ticket office and original external stair.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-Meca楼梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        336,
+        1136
+      ],
+      "classification": "Primary p2 exact stair-flight footprints47/67 next to E-TICKET in Palau Meca.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-Aguilar楼梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        330,
+        560
+      ],
+      "classification": "Primary p2 north external stair flight, below Palau Aguilar label.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-Finestres楼梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        355,
+        1580
+      ],
+      "classification": "Primary p2 south external stair landing, below Palau Finestres label.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-团队接待-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        290,
+        889
+      ],
+      "classification": "Primary p2 GROUPS-labelled room, directly north of ticket office.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-女卫生间-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        586,
+        888
+      ],
+      "classification": "Primary p2 female pictogram inside north service room; room-level position, not doorway.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-男卫生间-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        587,
+        971
+      ],
+      "classification": "Primary p2 male pictogram inside the adjacent service room.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-无障碍卫生间-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        585,
+        1250
+      ],
+      "classification": "Primary p2 combined male/female/wheelchair pictograms in the south service room.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-藏品区电梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        606,
+        1095
+      ],
+      "classification": "Primary p2 north yellow lift room with wheelchair and vertical arrows.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-临展区电梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        608,
+        1325
+      ],
+      "classification": "Primary p2 south lift pictogram above the interior stair.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-南侧内楼梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        610,
+        1380
+      ],
+      "classification": "Primary p2 short interior stair treads south of accessible lift; destination not inferred.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-办公室-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        302,
+        382
+      ],
+      "classification": "Primary p2 OFFICES AND RECEPTION room; restricted-use marking does not erase the room.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-急救设备-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 2,
+      "sourceAnchor": [
+        455,
+        369
+      ],
+      "classification": "Primary p2 heart/defibrillator symbol in the north passage; equipment marker, not a room.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-rooms-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-2",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-3",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-4-5",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-6",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-7",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-8",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-9",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-10",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-11",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-12",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-13",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-14",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-15",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-16",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-B1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "featureId": "L1-rooms-B2",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33,
+        34,
+        36,
+        119,
+        120,
+        121,
+        3,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        50,
+        52,
+        53,
+        54,
+        56,
+        57,
+        58,
+        59,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        77,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        96,
+        97,
+        99,
+        128,
+        129,
+        130,
+        131,
+        132,
+        136,
+        137,
+        138,
+        139,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        170,
+        171,
+        172,
+        222,
+        223,
+        224,
+        78,
+        79,
+        80,
+        82,
+        90,
+        93,
+        94,
+        95,
+        98,
+        149,
+        167,
+        39
+      ],
+      "classification": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
     },
     {
       "featureId": "L1-path-0-surface",
@@ -1258,6 +6886,17 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L1-path-39-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 39,
+      "classification": "Native L-shaped service core, with later grey lift fill 41 retained as an interior hole rather than extruded solid masonry.",
+      "precision": "source-proportional",
+      "overpaintFillPaths": [
+        41
+      ]
+    },
+    {
       "featureId": "L1-path-41-surface",
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 3,
@@ -1426,6 +7065,38 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L1-path-78-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 78,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L1-path-79-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 79,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L1-path-80-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 80,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L1-path-82-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 82,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
       "featureId": "L1-path-84-wall",
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 3,
@@ -1474,6 +7145,14 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L1-path-90-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 90,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
       "featureId": "L1-path-91-wall",
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 3,
@@ -1490,6 +7169,30 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L1-path-93-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 93,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L1-path-94-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 94,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L1-path-95-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 95,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
       "featureId": "L1-path-96-wall",
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 3,
@@ -1502,6 +7205,14 @@
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 3,
       "path": 97,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L1-path-98-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 98,
       "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
       "precision": "source-proportional"
     },
@@ -1642,6 +7353,14 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L1-path-149-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 149,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
       "featureId": "L1-path-150-wall",
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 3,
@@ -1718,6 +7437,14 @@
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 3,
       "path": 166,
+      "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L1-path-167-wall",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "path": 167,
       "classification": "reviewed room/perimeter partitions, excluding arrows and service glyphs",
       "precision": "source-proportional"
     },
@@ -2106,6 +7833,46 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L1-meninas-14-16",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        120
+      ],
+      "classification": "Exact primary p3 connected green floor footprint containing rooms14-16; retain the source partitions and doorway gaps, not independent rectangular approximations.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-early-years",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        33
+      ],
+      "classification": "Exact primary p3 yellow connected gallery floor fill; internal partition gaps retained. Supplementary key p4 identifies rooms1-7 as early years.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-blue-1917",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        121
+      ],
+      "classification": "Exact primary p3 blue gallery floor fill, matching supplementary collection key for rooms8-11; no guessed room-by-room period split.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-ceramics",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourcePaths": [
+        36
+      ],
+      "classification": "Exact primary p3 rose floor fill labelled Ceramic, B1 and B2; A1-A4 in the supplementary edition are not substituted.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
       "featureId": "L1-room-12",
       "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
       "page": 3,
@@ -2133,8 +7900,8 @@
         605,
         1241
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-2-1",
@@ -2144,8 +7911,8 @@
         752,
         1213
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-3-1",
@@ -2155,8 +7922,8 @@
         906,
         1114
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-4-1",
@@ -2166,8 +7933,8 @@
         897,
         878
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-5-1",
@@ -2177,8 +7944,8 @@
         769,
         915
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-6-1",
@@ -2188,8 +7955,8 @@
         719,
         1022
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-7-1",
@@ -2199,8 +7966,8 @@
         602,
         1022
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-8-1",
@@ -2210,8 +7977,8 @@
         618,
         840
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-9-1",
@@ -2221,8 +7988,8 @@
         763,
         804
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-10-1",
@@ -2232,8 +7999,8 @@
         763,
         693
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-11-1",
@@ -2243,8 +8010,8 @@
         885,
         694
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-12-1",
@@ -2254,8 +8021,8 @@
         355,
         644
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-13-1",
@@ -2265,8 +8032,8 @@
         234,
         483
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-14-1",
@@ -2276,8 +8043,8 @@
         584,
         389
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-15-1",
@@ -2287,8 +8054,8 @@
         682,
         392
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-16-1",
@@ -2298,8 +8065,8 @@
         669,
         564
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-B1-1",
@@ -2309,8 +8076,8 @@
         382,
         938
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-B2-1",
@@ -2320,13 +8087,169 @@
         382,
         742
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-Meca楼梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        337,
+        1074
+      ],
+      "classification": "Primary p3 original external stair west of collection entrance, matching p2.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-Aguilar楼梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        361,
+        579
+      ],
+      "classification": "Primary p3 northern external stair beside rooms12/13, matching p2 Aguilar courtyard.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-Finestres楼梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        358,
+        1670
+      ],
+      "classification": "Primary p3 southern external stair leading into temporary exhibitions.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-藏品区电梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        593,
+        1120
+      ],
+      "classification": "Primary p3 accessible lift symbol inside the grey service core between rooms1/7.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-临展区电梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        603,
+        1500
+      ],
+      "classification": "Primary p3 accessible lift symbol in southern temporary-exhibition service core.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-南侧内楼梯-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        610,
+        1670
+      ],
+      "classification": "Primary p3 interior stair treads, destination not inferred from direction arrow alone.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-新古典厅-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        270,
+        850
+      ],
+      "classification": "Primary p3 NEOCLASSIC ROOM labelled area beside B1/B2, not an invented numbered room.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-北临展区-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        300,
+        1255
+      ],
+      "classification": "Primary p3 green temporary exhibition area; exhibition artist name is not a permanent room name.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-南临展区-1",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "page": 3,
+      "sourceAnchor": [
+        280,
+        1450
+      ],
+      "classification": "Primary p3 southern TEMPORARY EXHIBITIONS wing.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "meca-stairs",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "classification": "Primary official floor diagrams p2/p3 depict the corresponding Meca external staircase beside the E-TICKET and collection entrance respectively; no shaft dimensions or walking path are inferred.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "aguilar-stairs",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "classification": "The north courtyard external staircase appears on both primary p2/p3, beside Aguilar reception below and galleries12/13 above. Connectivity only; no fabricated stair trajectory.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "finestres-stairs",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "classification": "The south Finestres courtyard staircase appears on both primary p2/p3, entering the temporary exhibition wing upstairs.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "collection-lift",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "classification": "Matching accessible lift symbols inside the north service core, opposite the Meca courtyard below and between galleries1/7 above, in primary p2/p3.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "temporary-lift",
+      "sourceHash": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "classification": "Matching accessible lift symbols in the southern temporary-exhibition service core in primary p2/p3; does not infer access permissions or additional levels.",
+      "precision": "documented-connection-not-surveyed-shaft"
     }
   ],
   "coverage": {
     "floors": 2,
-    "labels": 25,
-    "features": 252
-  }
+    "labels": 47,
+    "features": 264
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://museupicassobcn.cat/sites/default/files/inline-images/Museu/planol/PLANOL_EN.pdf",
+      "sha256": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "file": "picasso-barcelona-candidate-1.pdf",
+      "projection": {
+        "kind": "orthographic",
+        "pages": [
+          2,
+          3
+        ],
+        "basis": "Both visitor floor diagrams were visually reviewed as overhead plans of the connected palaces. Courtyard context and stair symbols are classified separately; there is no perspective transform."
+      }
+    },
+    {
+      "id": "collection-key",
+      "url": "https://museupicassobcn.cat/sites/default/files/inline-images/Museu/planol/PLANOL_ENG1.pdf",
+      "sha256": "ede0ae4e4a1e9798c3ecfb32479b149bc55952ded2158dc28ab5d6974420dfdd",
+      "file": "picasso-room-key.pdf",
+      "projection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "Supplementary collection key on page 4 only: rooms 1-7 early years, 8-11 Blue period and Barcelona 1917, 13-16 Las Meninas. No geometry extracted; ceramic A1-A4 labels in this edition are not transplanted onto the different primary B1/B2 diagram."
+      }
+    }
+  ]
 }

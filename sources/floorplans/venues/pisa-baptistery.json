@@ -1,0 +1,141 @@
+{
+  "slug": "pisa-baptistery",
+  "file": "derived/pisa-baptistery-ground-plan-strict.pdf",
+  "url": "https://doi.org/10.3390/heritage7110298",
+  "sha256": "9d5592dc069af93f472abaa5dcc10ef5bd58bbd86aca7a8ca1d64e8e8df26182",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [1],
+    "basis": "Figure 6(d) of the 2024 HBIM study was visually checked as a top-down ground plan. The strict semantic raster retains the complete twelve-sided envelope and all reviewed plan ink within it while removing the overprinted A-A section corridor. Annular masonry and true supports are walls; radial vault traces, font, pulpit and outer outline remain flat source detail."
+  },
+  "stopBindings": [
+    {"stopIndex": 0, "placeId": "ground-外部柱廊环-1"},
+    {"stopIndex": 1, "placeId": "ground-八角洗礼池-1"},
+    {"stopIndex": 2, "placeId": "ground-尼古拉·皮萨诺讲坛-1"},
+    {"stopIndex": 3, "placeId": "upper-女性楼廊-1"}
+  ],
+  "review": "The published 2024 HBIM paper was checked in full from the University of Pisa institutional repository. Figure 6(d) remains the ground-floor source. Its full dodecagonal outline is retained rather than clipped by annotation masks; the source A-A section overprint is removed as annotation, and no obscured plan pixels are reconstructed. Ground-floor annular masonry and true supports are walls, while vault traces, font and pulpit remain flat. The paper links its author-created 3DVista environment at maxmartino.it/battistero; that project's script assigns the map object labelled planimetria_p1 to panoramas labelled battistero_primo. The accepted v2 first-floor layer is unchanged: filled outer masonry and twelve source-drawn support profiles are walls; paired radial arch/vault strokes, railings and lower-level references remain flat detail. No ideal circles, replacement columns, contour fills or annular floor fills are introduced.",
+  "limitations": [
+    "底层来自2024年HBIM论文图6(d)；上层来自同一论文作者虚拟导览中明确标作首层并绑定至battistero_primo全景的平面图。",
+    "首层的径向成对线表示拱或拱顶轨迹，均作平面细节；只有原图填实的外圈砌体与十二个实际支承符号作墙体，不把楼廊切成扇形隔间。",
+    "底层完整保留原图十二边形外轮廓；横穿平面的A-A剖切线及其字母属于版面注记，已排除，重叠处不臆补被遮挡线条。",
+    "原图的楼廊、中央挑空与图外白底在不补线时属于同一连通域，透明度也只给出外轮廓而没有单独挑空填色；因此不生成环形地板或中央挑空多边形。",
+    "论文与馆方文字确认两条互不相交的螺旋梯连接两层，但首层图未画梯级、井道边界或上下落点，故不生成垂直连接定位。",
+    "穹顶维护空间另有planimetria_cupola图并绑定至battistero_cupola全景；它不是女性楼廊游客层，本模型不纳入。",
+    "两张图均为建筑与导览证据，不是当前开放、无障碍或疏散路线；开放状态仍须现场确认。"
+  ],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "底层平面",
+      "order": 0,
+      "page": 1,
+      "crop": [0, 0, 895, 898],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "rgbRange": [[0, 0, 0], [0, 0, 0]],
+          "wallKernel": 1,
+          "includeKinds": ["wall"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Black pixels are reviewed original source pixels for annular masonry and true support profiles. The A-A section overprint is excluded before classification; no regularized ring or replacement support is emitted."
+        },
+        {
+          "xref": 5,
+          "rgbRange": [[128, 128, 128], [128, 128, 128]],
+          "wallKernel": 1,
+          "allInkIsDetail": true,
+          "includeKinds": ["detail"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Gray pixels are original source linework kept flat: the complete dodecagonal envelope, vault traces, railings, font and pulpit. The A-A line and surrounding panel labels are absent."
+        }
+      ],
+      "places": [
+        {
+          "label": "外部柱廊环",
+          "kind": "area",
+          "at": [448, 130],
+          "evidence": "Anchor placed on the documented outer ring between the dodecagonal envelope and circular interior."
+        },
+        {
+          "label": "八角洗礼池",
+          "kind": "area",
+          "at": [454, 486],
+          "evidence": "Anchor placed at the center of the explicit octagonal baptismal font footprint. Runtime kind area denotes its mapped footprint rather than an object type."
+        },
+        {
+          "label": "尼古拉·皮萨诺讲坛",
+          "kind": "area",
+          "at": [345, 486],
+          "evidence": "Anchor placed within the explicit freestanding pulpit and access-stair footprint west of the font. Runtime kind area denotes its mapped footprint rather than an object type."
+        }
+      ]
+    },
+    {
+      "id": "upper",
+      "label": "女性楼廊（作者导览首层图）",
+      "order": 1,
+      "sourceId": "hbim-vr-first-floor-v2",
+      "page": 1,
+      "crop": [0, 0, 530, 535],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "rgbRange": [[0, 0, 0], [0, 0, 0]],
+          "wallKernel": 1,
+          "includeKinds": ["wall"],
+          "tolerancePixels": 0,
+          "minAreaPixels": 1,
+          "reason": "Black pixels are the reviewed source-only structural class: original filled outer masonry plus the actual ink in twelve detected support-symbol windows. Paired radial arch/vault strokes are excluded from the wall class. No replacement geometry is drawn."
+        },
+        {
+          "xref": 5,
+          "rgbRange": [[128, 128, 128], [128, 128, 128]],
+          "wallKernel": 1,
+          "allInkIsDetail": true,
+          "includeKinds": ["detail"],
+          "tolerancePixels": 0,
+          "minAreaPixels": 1,
+          "reason": "Gray pixels are remaining source linework kept flat, including paired radial arch/vault strokes, inner railings and lower-level font/pulpit references visible through the first-floor diagram."
+        }
+      ],
+      "places": [
+        {
+          "label": "女性楼廊",
+          "kind": "area",
+          "at": [265, 112],
+          "evidence": "Geometry-based anchor placed in the annular first-floor gallery shown by the planimetria_p1 map and confirmed as the women's gallery by the HBIM paper and OPA description; it does not claim a printed room label or exact visitor path.",
+          "precision": "source-plan-zone-anchor-not-surveyed"
+        }
+      ]
+    }
+  ],
+  "sourceFiles": [
+    {
+      "id": "hbim-audit-figure",
+      "file": "derived/pisa-baptistery-hbim-figure6.pdf",
+      "url": "https://doi.org/10.3390/heritage7110298",
+      "sha256": "f6fb5ceac3c01f7158d8129dec1f416ab78794f0151ed2aea0032eb3f959b414",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "The full published figure is retained as a one-page PDF audit copy containing plan, sections and elevations. Only the lower-right overhead ground plan was derived into the primary source; no floor is extracted directly here."
+      }
+    },
+    {
+      "id": "hbim-vr-first-floor-v2",
+      "file": "derived/pisa-baptistery-first-floor-source-pixels-v2.pdf",
+      "url": "https://www.maxmartino.it/battistero/media/map_AFA9FAE3_83B7_0CD9_41D3_570DD5BA9CED.png",
+      "sha256": "8a5844cf630c808c4edebfad4f0e4e8c88fcf90c87aede37d87a58496e6f7c84",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [1],
+        "basis": "The direct author-published map bitmap is a top-down plan labelled planimetria_p1 in the linked virtual-tour script and is assigned there to battistero_primo panoramas. Equal x/y pixel scale is retained. V2 only recolors reviewed source pixels: outer masonry and actual support marks are wall; radial arch/vault traces and railings are detail."
+      }
+    }
+  ]
+}

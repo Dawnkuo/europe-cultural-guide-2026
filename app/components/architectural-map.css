@@ -15,12 +15,17 @@
 .architectural-map__viewport{overflow:auto;overscroll-behavior:contain;touch-action:pan-x pan-y;cursor:grab}
 .architectural-map__viewport:active{cursor:grabbing}
 .architectural-map__viewport svg{display:block;max-width:none;flex-shrink:0}
+.architectural-map__plane{position:relative}
+.architectural-map__2d-labels{position:absolute;inset:0;pointer-events:none}
+.architectural-map__2d-labels>[data-place-id]{position:absolute;pointer-events:auto}
 .architectural-map__viewport text{font-family:Arial,sans-serif;letter-spacing:0;font-weight:500}
 .architectural-map__viewport g[role=button]{cursor:pointer}
 .architectural-map__scene{overflow:hidden;touch-action:none}
 .architectural-map__scene canvas{display:block;width:100%;height:100%}
 .architectural-map__scene-labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .architectural-map__scene-labels button{position:absolute;left:0;top:0;border:1px solid #baa161;background:#081623ed;color:#f5e6b9;font-size:12px;min-width:26px;height:24px;padding:0 5px;pointer-events:auto;white-space:nowrap;border-radius:2px}
+.architectural-map__room,.architectural-map__scene-labels button{display:inline-flex;align-items:center;justify-content:center}
+.architectural-map button[data-place-kind=service]{color:#c1e1e2;border-color:#62868d}
 .architectural-map__loading{display:grid;place-items:center;color:#b2c0c9}
 .architectural-map__floors{display:flex;flex-wrap:wrap;gap:4px;border:0;border-top:1px solid var(--map-line);padding:12px 16px;background:#0a1b28}
 .architectural-map__inspector{display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px;padding:12px 16px;border-top:1px solid var(--map-line);font-size:14px;min-height:70px}
@@ -33,6 +38,9 @@
 .architectural-map__stops{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:0;padding:0;list-style:decimal inside;border-top:1px solid var(--map-line)}
 .architectural-map__stops li{padding:12px 16px;font-size:14px;border-bottom:1px solid #c9a85a22;overflow-wrap:anywhere}
 .architectural-map__stops button{background:transparent;border:0;padding:0;color:#e3ca83;text-align:left}
+.architectural-map__stop-targets{display:flex;gap:6px 16px;flex-wrap:wrap;margin-top:8px}
+.architectural-map__stop-targets button,.architectural-map__stops .architectural-map__stop-focus{display:inline-flex;align-items:center;gap:6px;min-height:44px;max-width:100%}
+.architectural-map__stop-targets svg,.architectural-map__stop-focus svg{flex-shrink:0}
 @media(max-width:700px){.architectural-map__viewport,.architectural-map__scene,.architectural-map__loading{height:460px}.architectural-map__toolbar{padding:8px}.architectural-map__floors{padding:8px}.architectural-map__floors button{padding:6px 10px;font-size:12px}.architectural-map__stops{grid-template-columns:1fr}.architectural-map__inspector label{margin-left:0}.architectural-map__inspector{align-items:flex-start;flex-direction:column}}
 .architectural-map__connections { padding: 12px 16px; border-top: 1px solid #49412d; }
 .architectural-map__connections button { display: flex; align-items: center; gap: 8px; color: #e8cd88; background: none; border: 0; min-height: 40px; text-align: left; }

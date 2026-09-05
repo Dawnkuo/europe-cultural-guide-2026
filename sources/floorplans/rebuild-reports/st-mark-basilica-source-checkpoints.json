@@ -1,0 +1,1053 @@
+{
+  "slug": "st-mark-basilica",
+  "parentSource": "st-mark-basilica-klein.pdf",
+  "parentSha256": "3262fdff479ebc50a32a7c8982fc5880ea231ff8139d012a5be2ceb6674c383c",
+  "parentPage": 6,
+  "parentImageXref": 11,
+  "derivedSource": "st-mark-basilica-semantic-layers.pdf",
+  "derivedSha256": "ea2ef6f334469b99cb3e58594204d348485072d2615b7de63b18037aaebc5083",
+  "derivedPage": 1,
+  "derivedImageXref": 4,
+  "registration": {
+    "pageSize": [
+      504.0,
+      720.0
+    ],
+    "imageRect": [
+      46.000030517578125,
+      33.0,
+      442.9600524902344,
+      617.760009765625
+    ],
+    "transform": "exact parent page and image rectangle; no resampling or geometric warp"
+  },
+  "classification": {
+    "wallColor": [
+      0,
+      0,
+      0
+    ],
+    "detailColor": [
+      255,
+      0,
+      0
+    ],
+    "backgroundColor": [
+      255,
+      255,
+      255
+    ],
+    "detailMaxChannel": 165,
+    "maxChannel": 250,
+    "windowPixels": 11,
+    "minimumDensity": 0.35,
+    "closeKernel": 3,
+    "openKernel": 7,
+    "detailDefinition": "original dark source pixels outside the wall mask and reviewed annotation masks"
+  },
+  "requiredWall": [
+    {
+      "id": "north-service-west-wall",
+      "sourcePoint": [
+        170,
+        150
+      ]
+    },
+    {
+      "id": "north-service-return",
+      "sourcePoint": [
+        166,
+        180
+      ]
+    },
+    {
+      "id": "north-apse-mass",
+      "sourcePoint": [
+        260,
+        175
+      ]
+    },
+    {
+      "id": "north-east-chapel-wall",
+      "sourcePoint": [
+        300,
+        235
+      ]
+    },
+    {
+      "id": "transept-west-bearing-wall",
+      "sourcePoint": [
+        150,
+        265
+      ]
+    },
+    {
+      "id": "transept-east-bearing-wall",
+      "sourcePoint": [
+        330,
+        265
+      ]
+    },
+    {
+      "id": "west-outer-wall",
+      "sourcePoint": [
+        105,
+        300
+      ]
+    },
+    {
+      "id": "east-outer-wall",
+      "sourcePoint": [
+        365,
+        300
+      ]
+    },
+    {
+      "id": "west-aisle-wall",
+      "sourcePoint": [
+        145,
+        360
+      ]
+    },
+    {
+      "id": "east-aisle-wall",
+      "sourcePoint": [
+        335,
+        360
+      ]
+    },
+    {
+      "id": "west-middle-wall",
+      "sourcePoint": [
+        155,
+        395
+      ]
+    },
+    {
+      "id": "east-middle-wall",
+      "sourcePoint": [
+        320,
+        395
+      ]
+    },
+    {
+      "id": "west-south-wall",
+      "sourcePoint": [
+        155,
+        470
+      ]
+    },
+    {
+      "id": "east-south-wall",
+      "sourcePoint": [
+        315,
+        470
+      ]
+    },
+    {
+      "id": "south-crosswall-west",
+      "sourcePoint": [
+        160,
+        515
+      ]
+    },
+    {
+      "id": "south-crosswall-centre",
+      "sourcePoint": [
+        220,
+        515
+      ]
+    },
+    {
+      "id": "south-crosswall-east",
+      "sourcePoint": [
+        300,
+        515
+      ]
+    },
+    {
+      "id": "narthex-south-west",
+      "sourcePoint": [
+        150,
+        558
+      ]
+    },
+    {
+      "id": "narthex-south-centre",
+      "sourcePoint": [
+        220,
+        558
+      ]
+    },
+    {
+      "id": "narthex-south-east",
+      "sourcePoint": [
+        300,
+        558
+      ]
+    },
+    {
+      "id": "treasury-west-wall",
+      "sourcePoint": [
+        365,
+        400
+      ]
+    },
+    {
+      "id": "treasury-south-wall",
+      "sourcePoint": [
+        365,
+        450
+      ]
+    },
+    {
+      "id": "treasury-east-exterior",
+      "sourcePoint": [
+        410,
+        440
+      ]
+    },
+    {
+      "id": "nave-pier-north-west",
+      "sourcePoint": [
+        165,
+        360
+      ]
+    },
+    {
+      "id": "nave-pier-middle-west",
+      "sourcePoint": [
+        200,
+        395
+      ]
+    },
+    {
+      "id": "nave-pier-middle-east",
+      "sourcePoint": [
+        277,
+        395
+      ]
+    },
+    {
+      "id": "nave-pier-south-east",
+      "sourcePoint": [
+        315,
+        470
+      ]
+    }
+  ],
+  "requiredEmpty": [
+    {
+      "id": "north-service-opening",
+      "sourcePoint": [
+        220,
+        150
+      ]
+    },
+    {
+      "id": "north-west-chapel-opening",
+      "sourcePoint": [
+        175,
+        235
+      ]
+    },
+    {
+      "id": "san-pietro-chapel-gap",
+      "sourcePoint": [
+        180,
+        250
+      ]
+    },
+    {
+      "id": "san-clemente-chapel-gap",
+      "sourcePoint": [
+        295,
+        250
+      ]
+    },
+    {
+      "id": "apse-to-crossing",
+      "sourcePoint": [
+        238,
+        250
+      ]
+    },
+    {
+      "id": "crossing-centre",
+      "sourcePoint": [
+        238,
+        300
+      ]
+    },
+    {
+      "id": "nave-north-centre",
+      "sourcePoint": [
+        238,
+        360
+      ]
+    },
+    {
+      "id": "nave-centre",
+      "sourcePoint": [
+        238,
+        430
+      ]
+    },
+    {
+      "id": "nave-south-centre",
+      "sourcePoint": [
+        238,
+        490
+      ]
+    },
+    {
+      "id": "narthex-centre",
+      "sourcePoint": [
+        238,
+        540
+      ]
+    },
+    {
+      "id": "west-aisle-passage",
+      "sourcePoint": [
+        200,
+        360
+      ]
+    },
+    {
+      "id": "east-aisle-passage",
+      "sourcePoint": [
+        277,
+        360
+      ]
+    },
+    {
+      "id": "treasury-room-interior",
+      "sourcePoint": [
+        380,
+        440
+      ]
+    },
+    {
+      "id": "treasury-north-interior",
+      "sourcePoint": [
+        385,
+        420
+      ]
+    }
+  ],
+  "printedKeyMasks": [
+    {
+      "label": "1",
+      "sourcePoint": [
+        237.76,
+        222.24
+      ],
+      "sourceMaskRect": [
+        230.76,
+        215.24,
+        244.76,
+        229.24
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "2",
+      "sourcePoint": [
+        368.32,
+        525.42
+      ],
+      "sourceMaskRect": [
+        361.32,
+        518.42,
+        375.32,
+        532.42
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "3",
+      "sourcePoint": [
+        343.36,
+        438.11
+      ],
+      "sourceMaskRect": [
+        336.36,
+        431.11,
+        350.36,
+        445.11
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "4",
+      "sourcePoint": [
+        284.8,
+        324.9
+      ],
+      "sourceMaskRect": [
+        277.8,
+        317.9,
+        291.8,
+        331.9
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "5",
+      "sourcePoint": [
+        188.32,
+        408.37
+      ],
+      "sourceMaskRect": [
+        181.32,
+        401.37,
+        195.32,
+        415.37
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "6",
+      "sourcePoint": [
+        295.36,
+        251.03
+      ],
+      "sourceMaskRect": [
+        288.36,
+        244.03,
+        302.36,
+        258.03
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "7",
+      "sourcePoint": [
+        86.56,
+        337.37
+      ],
+      "sourceMaskRect": [
+        79.56,
+        330.37,
+        93.56,
+        344.37
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "8",
+      "sourcePoint": [
+        181.6,
+        251.03
+      ],
+      "sourceMaskRect": [
+        174.6,
+        244.03,
+        188.6,
+        258.03
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "9",
+      "sourcePoint": [
+        342.4,
+        528.77
+      ],
+      "sourceMaskRect": [
+        335.4,
+        521.77,
+        349.4,
+        535.77
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "10",
+      "sourcePoint": [
+        403.84,
+        588.26
+      ],
+      "sourceMaskRect": [
+        396.84,
+        581.26,
+        410.84,
+        595.26
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "11",
+      "sourcePoint": [
+        391.84,
+        329.22
+      ],
+      "sourceMaskRect": [
+        384.84,
+        322.22,
+        398.84,
+        336.22
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "12",
+      "sourcePoint": [
+        331.84,
+        406.45
+      ],
+      "sourceMaskRect": [
+        324.84,
+        399.45,
+        338.84,
+        413.45
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "13",
+      "sourcePoint": [
+        133.12,
+        295.16
+      ],
+      "sourceMaskRect": [
+        126.12,
+        288.16,
+        140.12,
+        302.16
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "14",
+      "sourcePoint": [
+        237.76,
+        204.49
+      ],
+      "sourceMaskRect": [
+        230.76,
+        197.49,
+        244.76,
+        211.49
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "15",
+      "sourcePoint": [
+        419.2,
+        485.12
+      ],
+      "sourceMaskRect": [
+        412.2,
+        478.12,
+        426.2,
+        492.12
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "16",
+      "sourcePoint": [
+        419.2,
+        514.38
+      ],
+      "sourceMaskRect": [
+        412.2,
+        507.38,
+        426.2,
+        521.38
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "17",
+      "sourcePoint": [
+        326.08,
+        290.84
+      ],
+      "sourceMaskRect": [
+        319.08,
+        283.84,
+        333.08,
+        297.84
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "18",
+      "sourcePoint": [
+        137.92,
+        583.46
+      ],
+      "sourceMaskRect": [
+        130.92,
+        576.46,
+        144.92,
+        590.46
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "19",
+      "sourcePoint": [
+        93.28,
+        426.12
+      ],
+      "sourceMaskRect": [
+        86.28,
+        419.12,
+        100.28,
+        433.12
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "20",
+      "sourcePoint": [
+        137.92,
+        388.22
+      ],
+      "sourceMaskRect": [
+        130.92,
+        381.22,
+        144.92,
+        395.22
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "21",
+      "sourcePoint": [
+        327.52,
+        535.01
+      ],
+      "sourceMaskRect": [
+        320.52,
+        528.01,
+        334.52,
+        542.01
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "22",
+      "sourcePoint": [
+        193.6,
+        324.9
+      ],
+      "sourceMaskRect": [
+        186.6,
+        317.9,
+        200.6,
+        331.9
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "23",
+      "sourcePoint": [
+        354.88,
+        407.41
+      ],
+      "sourceMaskRect": [
+        347.88,
+        400.41,
+        361.88,
+        414.41
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "24",
+      "sourcePoint": [
+        421.6,
+        464.01
+      ],
+      "sourceMaskRect": [
+        414.6,
+        457.01,
+        428.6,
+        471.01
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "25",
+      "sourcePoint": [
+        354.4,
+        449.62
+      ],
+      "sourceMaskRect": [
+        347.4,
+        442.62,
+        361.4,
+        456.62
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "26",
+      "sourcePoint": [
+        332.32,
+        494.72
+      ],
+      "sourceMaskRect": [
+        325.32,
+        487.72,
+        339.32,
+        501.72
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "27",
+      "sourcePoint": [
+        388.48,
+        424.2
+      ],
+      "sourceMaskRect": [
+        381.48,
+        417.2,
+        395.48,
+        431.2
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "28",
+      "sourcePoint": [
+        364.0,
+        381.03
+      ],
+      "sourceMaskRect": [
+        357.0,
+        374.03,
+        371.0,
+        388.03
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "29",
+      "sourcePoint": [
+        420.16,
+        437.63
+      ],
+      "sourceMaskRect": [
+        413.16,
+        430.63,
+        427.16,
+        444.63
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "A",
+      "sourcePoint": [
+        183.52,
+        537.89
+      ],
+      "sourceMaskRect": [
+        176.52,
+        530.89,
+        190.52,
+        544.89
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "B",
+      "sourcePoint": [
+        238.72,
+        333.06
+      ],
+      "sourceMaskRect": [
+        231.72,
+        326.06,
+        245.72,
+        340.06
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "C",
+      "sourcePoint": [
+        342.88,
+        384.86
+      ],
+      "sourceMaskRect": [
+        335.88,
+        377.86,
+        349.88,
+        391.86
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "D",
+      "sourcePoint": [
+        295.36,
+        537.89
+      ],
+      "sourceMaskRect": [
+        288.36,
+        530.89,
+        302.36,
+        544.89
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "E",
+      "sourcePoint": [
+        342.88,
+        424.2
+      ],
+      "sourceMaskRect": [
+        335.88,
+        417.2,
+        349.88,
+        431.2
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "F",
+      "sourcePoint": [
+        138.4,
+        537.89
+      ],
+      "sourceMaskRect": [
+        131.4,
+        530.89,
+        145.4,
+        544.89
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "G",
+      "sourcePoint": [
+        137.92,
+        500.47
+      ],
+      "sourceMaskRect": [
+        130.92,
+        493.47,
+        144.92,
+        507.47
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "H",
+      "sourcePoint": [
+        137.92,
+        463.06
+      ],
+      "sourceMaskRect": [
+        130.92,
+        456.06,
+        144.92,
+        470.06
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "I",
+      "sourcePoint": [
+        239.68,
+        577.22
+      ],
+      "sourceMaskRect": [
+        232.68,
+        570.22,
+        246.68,
+        584.22
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "J",
+      "sourcePoint": [
+        342.4,
+        547.96
+      ],
+      "sourceMaskRect": [
+        335.4,
+        540.96,
+        349.4,
+        554.96
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "K",
+      "sourcePoint": [
+        137.92,
+        426.6
+      ],
+      "sourceMaskRect": [
+        130.92,
+        419.6,
+        144.92,
+        433.6
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "L",
+      "sourcePoint": [
+        266.56,
+        537.89
+      ],
+      "sourceMaskRect": [
+        259.56,
+        530.89,
+        273.56,
+        544.89
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "M",
+      "sourcePoint": [
+        211.36,
+        537.89
+      ],
+      "sourceMaskRect": [
+        204.36,
+        530.89,
+        218.36,
+        544.89
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "N",
+      "sourcePoint": [
+        329.92,
+        418.92
+      ],
+      "sourceMaskRect": [
+        322.92,
+        411.92,
+        336.92,
+        425.92
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "O",
+      "sourcePoint": [
+        341.44,
+        577.22
+      ],
+      "sourceMaskRect": [
+        334.44,
+        570.22,
+        348.44,
+        584.22
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "P",
+      "sourcePoint": [
+        296.8,
+        577.22
+      ],
+      "sourceMaskRect": [
+        289.8,
+        570.22,
+        303.8,
+        584.22
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "Q",
+      "sourcePoint": [
+        182.56,
+        577.22
+      ],
+      "sourceMaskRect": [
+        175.56,
+        570.22,
+        189.56,
+        584.22
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    },
+    {
+      "label": "R",
+      "sourcePoint": [
+        137.92,
+        571.47
+      ],
+      "sourceMaskRect": [
+        130.92,
+        564.47,
+        144.92,
+        578.47
+      ],
+      "derivedWallPixels": 0,
+      "derivedDetailPixels": 0
+    }
+  ],
+  "summary": {
+    "wallCheckpoints": 27,
+    "emptyCheckpoints": 14,
+    "printedKeys": 47,
+    "wallPixels": 263345,
+    "detailPixels": 2135
+  }
+}

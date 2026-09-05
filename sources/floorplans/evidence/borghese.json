@@ -1,984 +1,4967 @@
 {
-  "source": "https://galleriaborghese.cultura.gov.it/en/wp-content/uploads/BirdCage_CS_04-05_ENG_Press-R.pdf",
-  "sha256": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
+  "source": "https://www.gebart.it/wp-content/uploads/2018/05/Italiano.pdf",
+  "sha256": "2e9b1a3d5fd11a45ca900747f6667596d024bc05b5a937237a63c19775e2c198",
   "projection": {
     "kind": "orthographic",
-    "pages": [
-      10
-    ],
-    "basis": "The sculpture-floor and garden diagram is an overhead plan with repeated aligned room boundaries. Curved exterior landscaping is not interpreted as perspective distortion."
+    "pages": [],
+    "basis": "Gebart visitor brochure contains three compact, top-down equal-axis plans for basement, sculpture floor, and Pinacoteca; each plan crop was visually reviewed. Extraction uses the source-pixel classified supplementary derivative."
   },
   "transform": "translation only, equal x/y units; floor stacking is display-only",
-  "review": "Physical page 10 visually inspected. Orthographic sculpture-floor plan. Visible filled paths 53/60/61/62/65 are structural masonry with door gaps. Paths 63-67 and 81-162 are terrace, garden and stair detail, retained flat. Stair pictogram 54-59 is a symbol rather than its physical geometry. The second duplicated drawing stream is outside its clipping path and is not used. Roman room numerals I-VIII retained directly from text anchors. Exhibition hatching is not a wall or a current artwork position.",
+  "review": "Official museum service-operator brochure inspected at native image resolution. Because printed room labels touch several walls, geometry is selected positively from actual neutral source pixels within named wall and detail bands rather than deleting whole connected components. All 72 named wall segments have source-coordinate pixel checkpoints, including the lift-adjacent north walls and vertical boundaries on every floor. The black wall layer is traced without simplification and retains single-pixel reviewed source components. A horizontal five-pixel closing is applied only within the reviewed P0 north-wall strip [247.0,437.2,352.6,438.3] to reconnect JPEG antialias breaks in the visibly continuous source wall; the QA record reports exactly 23 added pixels. B1 adds no wall pixels: exact source component rectangles remove the gift-box, headphones and paint-palette pictograms where they overlap reviewed wall bands, while narrowed positive detail bands retain the complete central upper stair, return and side treads without retaining the handbag or ticket pictograms. The B1 visitor-service space is limited to the central source-bounded hall. P0 chapel C begins below the source horizontal wall at y=450.4, leaving the separate northern lift and spiral-stair compartment as structural context only. P1 rooms 19/9 end at y=489.2 and rooms 20/10 begin at y=490.0 around the source wall; terrace T independently begins at y=499.5. P1 room 14 and vestibule V meet at the observed lift boundary x=466.4. The printed gray terrace fill is emitted only as flat detail and does not define or enlarge a room. Current room names are cross-checked to the Galleria Borghese official Villa page.",
   "claims": [
     {
-      "featureId": "L0-path-53-wall",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 53,
-      "classification": "printed structural masonry, preserving every doorway",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-60-wall",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 60,
-      "classification": "printed structural masonry, preserving every doorway",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-61-wall",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 61,
-      "classification": "printed structural masonry, preserving every doorway",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-62-wall",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 62,
-      "classification": "printed structural masonry, preserving every doorway",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-63-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 63,
-      "classification": "garden and terrace boundaries, not indoor partitions",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-64-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 64,
-      "classification": "garden and terrace boundaries, not indoor partitions",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-65-wall",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 65,
-      "classification": "printed structural masonry, preserving every doorway",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-66-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 66,
-      "classification": "garden and terrace boundaries, not indoor partitions",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-67-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 67,
-      "classification": "garden and terrace boundaries, not indoor partitions",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-68-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 68,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-69-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 69,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-70-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 70,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-71-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 71,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-72-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 72,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-73-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 73,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-74-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 74,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-75-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 75,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-76-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 76,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-77-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 77,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-78-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 78,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-79-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 79,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-80-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 80,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-81-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 81,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-82-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 82,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-83-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 83,
-      "classification": "porch and terrace stair treads",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-84-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 84,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-85-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 85,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-86-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 86,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-87-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 87,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-88-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 88,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-89-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 89,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-90-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 90,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-91-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 91,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-92-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 92,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-93-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 93,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-94-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 94,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-95-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 95,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-96-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 96,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-97-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 97,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-98-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 98,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-99-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 99,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-100-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 100,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-101-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 101,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-102-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 102,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-103-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 103,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-104-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 104,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-105-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 105,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-106-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 106,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-107-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 107,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-108-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 108,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-109-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 109,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-110-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 110,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-111-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 111,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-112-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 112,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-113-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 113,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-114-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 114,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-115-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 115,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-116-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 116,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-117-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 117,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-118-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 118,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-119-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 119,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-120-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 120,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-121-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 121,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-122-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 122,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-123-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 123,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-124-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 124,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-125-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 125,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-126-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 126,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-127-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 127,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-128-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 128,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-129-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 129,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-130-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 130,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-131-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 131,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-132-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 132,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-133-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 133,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-134-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 134,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-135-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 135,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-136-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 136,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-137-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 137,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-138-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 138,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-139-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 139,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-140-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 140,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-141-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 141,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-142-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 142,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-143-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 143,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-144-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 144,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-145-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 145,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-146-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 146,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-147-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 147,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-148-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 148,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-149-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 149,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-150-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 150,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-151-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 151,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-152-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 152,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-153-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 153,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-154-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 154,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-155-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 155,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-156-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 156,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-157-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 157,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-158-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 158,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-159-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 159,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-160-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 160,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-161-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 161,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-path-162-detail",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "path": 162,
-      "classification": "formal garden planting beds and fountain geometry",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L0-II-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "sourceAnchor": [
-        485.2519226074219,
-        204.31609344482422
+      "featureId": "B1-visitor-service-hall",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "sourcePaths": [
+        "brochure-raster:visitor-service-hall"
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
     },
     {
-      "featureId": "L0-I-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
-      "sourceAnchor": [
-        485.2883758544922,
-        254.26348114013672
+      "featureId": "B1-visitor-service-hall-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "sourcePaths": [
+        "brochure-raster:visitor-service-hall"
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
     },
     {
-      "featureId": "L0-VII-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "B1-raster-5-wall-0",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-2",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-3",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-4",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-5",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-6",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-7",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-8",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-9",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-10",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-wall-11",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-4",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-8",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-11",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-12",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-14",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-15",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-18",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-19",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-22",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-25",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-26",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-30",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-35",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-36",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-37",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-39",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-40",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-47",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-48",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-50",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-53",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-54",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-68",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-71",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-73",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-76",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-88",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-92",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-93",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-96",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-97",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-102",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-104",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-105",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-106",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-109",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-110",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-111",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-112",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-113",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-114",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-115",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-116",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-120",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-123",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-127",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-128",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-129",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-131",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-136",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-137",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-138",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-145",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-150",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-152",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-153",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-154",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-157",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-158",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-167",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-174",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-175",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-177",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-179",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-186",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-187",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-188",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-190",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-198",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-199",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-202",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-204",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-205",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-raster-5-instance-1-detail-206",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
+      "imageXref": 5,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "B1-售票服务-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
       "sourceAnchor": [
-        339.4942169189453,
-        204.31609344482422
+        147,
+        487
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-VIII-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "B1-入口-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 1,
       "sourceAnchor": [
-        339.5317687988281,
-        254.26348114013672
+        147,
+        526
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-IV-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "P0-room-6",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-6"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-6-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-6"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-5",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-5"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-5-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-5"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-4",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-4"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-4-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-4"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-C",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-C"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-C-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-C"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-3",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-3"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-3-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-3"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-7",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-7"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-7-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-7"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-S",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-S"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-S-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-S"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-2",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-2"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-2-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-2"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-8",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-8"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-8-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-8"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-P",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-P"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-P-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-P"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-1"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-room-1-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourcePaths": [
+        "brochure-raster:room-1"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P0-raster-11-wall-0",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-2",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-3",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-4",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-5",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-6",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-7",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-8",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-9",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-10",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-11",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-12",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-13",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-14",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-wall-15",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-0",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-2",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-4",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-5",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-7",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-8",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-9",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-13",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-15",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-17",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-20",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-26",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-31",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-34",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-35",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-39",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-43",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-44",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-46",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-47",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-51",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-54",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-55",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-61",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-62",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-63",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-66",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-67",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-69",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-72",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-75",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-77",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-79",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-81",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-88",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-89",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-raster-11-instance-1-detail-91",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "imageXref": 11,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P0-P-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
       "sourceAnchor": [
-        412.35768127441406,
-        152.68053436279297
+        300,
+        507
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-III-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "P0-S-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
       "sourceAnchor": [
-        514.0083618164062,
-        152.68053436279297
+        299,
+        482
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-VI-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "P0-C-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
       "sourceAnchor": [
-        309.7691345214844,
-        152.68053436279297
+        326,
+        456
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-V-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "P0-1-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
       "sourceAnchor": [
-        350.70240783691406,
-        152.68053436279297
+        331,
+        501
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-中央大厅-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "P0-2-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
       "sourceAnchor": [
-        412,
-        215
+        331,
+        477
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-门廊-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "P0-3-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourceAnchor": [
+        342,
+        451
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P0-4-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourceAnchor": [
+        300,
+        451
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P0-5-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourceAnchor": [
+        273.5,
+        451
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P0-6-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourceAnchor": [
+        258,
+        451
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P0-7-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourceAnchor": [
+        268,
+        478
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P0-8-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 2,
+      "sourceAnchor": [
+        268,
+        502
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-room-18",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-18"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-18-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-18"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-17",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-17"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-17-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-17"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-16",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-16"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-16-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-16"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-15",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-15"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-15-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-15"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-14",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-14"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-14-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-14"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-V",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-V"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-V-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-V"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-13",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-13"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-13-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-13"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-12",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-12"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-12-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-12"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-11",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-11"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-11-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-11"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-19",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-19"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-19-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-19"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-9",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-9"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-9-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-9"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-20",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-20"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-20-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-20"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-T",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-T"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-T-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-T"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-10",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-10"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-room-10-floor",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourcePaths": [
+        "brochure-raster:room-10"
+      ],
+      "classification": "Gebart visitor brochure printed room boundary.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "P1-raster-15-wall-0",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-2",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-3",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-4",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-5",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-6",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-7",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-8",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-wall-9",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tolerancePixels": 0,
+        "allInkIsDetail": false,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-instance-1-detail-0",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-instance-1-detail-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-raster-15-instance-1-detail-2",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "imageXref": 15,
+      "imageOccurrence": 0,
+      "extractionInstance": 1,
+      "classification": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+      "traceParameters": {
+        "rgbRange": [
+          [
+            128,
+            128,
+            128
+          ],
+          [
+            128,
+            128,
+            128
+          ]
+        ],
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true,
+        "excludeRects": []
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "P1-9-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        476,
+        477
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-10-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        476,
+        507
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-11-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        487,
+        457
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-12-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        491.5,
+        447
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-13-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        481,
+        447
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-14-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        446,
+        450
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-15-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        418.5,
+        451
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-16-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        398,
+        457
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-17-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        408.5,
+        447
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-18-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        398,
+        447
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-19-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
       "sourceAnchor": [
         413,
-        275
+        477
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-梯-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "P1-20-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
       "sourceAnchor": [
-        474,
-        142
+        413,
+        507
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
-      "featureId": "L0-花园-1",
-      "sourceHash": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-      "page": 10,
+      "featureId": "P1-T-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
       "sourceAnchor": [
-        180,
-        234
+        445,
+        507
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "P1-V-1",
+      "sourceHash": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "page": 3,
+      "sourceAnchor": [
+        473,
+        457
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     }
   ],
   "coverage": {
-    "floors": 1,
-    "labels": 12,
-    "features": 104
-  }
+    "floors": 3,
+    "labels": 27,
+    "features": 178
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.gebart.it/wp-content/uploads/2018/05/Italiano.pdf",
+      "sha256": "2e9b1a3d5fd11a45ca900747f6667596d024bc05b5a937237a63c19775e2c198",
+      "file": "borghese-official-visitor-brochure.pdf",
+      "projection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "Gebart visitor brochure contains three compact, top-down equal-axis plans for basement, sculpture floor, and Pinacoteca; each plan crop was visually reviewed. Extraction uses the source-pixel classified supplementary derivative."
+      }
+    },
+    {
+      "id": "reviewed-plan",
+      "url": "https://www.gebart.it/wp-content/uploads/2018/05/Italiano.pdf",
+      "sha256": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "file": "borghese-reviewed-plan.pdf",
+      "projection": {
+        "kind": "orthographic",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "basis": "Lossless source-pixel classification from the three orthographic plan crops. Black pixels are source wall ink inside named reviewed structural bands; gray pixels are source stair, threshold, terrace and column details. Blank source door gaps are not filled. No connected-component label removal or broad exclusion rectangle is used."
+      }
+    }
+  ]
 }

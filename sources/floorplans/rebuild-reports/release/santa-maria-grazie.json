@@ -1,0 +1,206 @@
+{
+  "slug": "santa-maria-grazie",
+  "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared Pica's1937 survey and legend. All thirteen printed numbers,twenty-one locations and sixteen source-connected regions retain church aisles,chapels,Tribune,apse and neighboring historical rooms. Vault lines/dimensions stay flat. Temporary semantic cuts are not exported as new walls.",
+    "floorCoverageReview": "Historical church principal plan, not post-war arrangement or a new library floor from legend12.",
+    "stopBindingReview": "Stops0/1/3/4 bind entry,2,3 and Tribune apse at area precision. Stops2/5 lack exact current locations.",
+    "verticalConnectionReview": "No upper library or undocumented connection is reconstructed.",
+    "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+    "sourceDigest": "9ffc21b257440d523715954e7bb830cc19baee7e81981c3870540912b8e6966a",
+    "sourceEvidence": "sources/floorplans/evidence/santa-maria-grazie.json",
+    "comparedFloors": [
+      "church"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:46:36.862Z",
+    "slug": "santa-maria-grazie",
+    "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+    "sourceDigest": "9ffc21b257440d523715954e7bb830cc19baee7e81981c3870540912b8e6966a",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "church",
+            "exactLabels": 21,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/santa-maria-grazie-1440-3d.png",
+          "work/map-review/release-final/santa-maria-grazie-1440-church-2d.png",
+          "work/map-review/release-final/santa-maria-grazie-1440-church-selection-2d.png",
+          "work/map-review/release-final/santa-maria-grazie-1440-church-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 897,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 21,
+        "selectedSpaces": [
+          "church-solari-central-nave",
+          "church-tribune-core",
+          "church-tribune-apse"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "church",
+            "exactLabels": 21,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/santa-maria-grazie-1094-3d.png",
+          "work/map-review/release-final/santa-maria-grazie-1094-church-2d.png",
+          "work/map-review/release-final/santa-maria-grazie-1094-church-selection-2d.png",
+          "work/map-review/release-final/santa-maria-grazie-1094-church-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1134,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 21,
+        "selectedSpaces": [
+          "church-solari-central-nave",
+          "church-tribune-core",
+          "church-tribune-apse"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "church",
+            "exactLabels": 21,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/santa-maria-grazie-390-3d.png",
+          "work/map-review/release-final/santa-maria-grazie-390-church-2d.png",
+          "work/map-review/release-final/santa-maria-grazie-390-church-selection-2d.png",
+          "work/map-review/release-final/santa-maria-grazie-390-church-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 705,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 21,
+        "selectedSpaces": [
+          "church-solari-central-nave",
+          "church-tribune-core",
+          "church-tribune-apse"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "santa-maria-grazie",
+    "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "church"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "santa-maria-grazie",
+    "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 3,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/santa-maria-grazie/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 135.51371779300203,
+      "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-grazie_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/santa-maria-grazie/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 151.5496994554992,
+      "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-grazie_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/santa-maria-grazie/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 126.12080637259523,
+      "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-grazie_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/santa-maria-grazie/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+    "passed": true
+  }
+}

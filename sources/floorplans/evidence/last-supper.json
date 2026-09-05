@@ -533,8 +533,8 @@
         541,
         316
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-晚餐-1",
@@ -544,8 +544,8 @@
         540,
         195
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-受难-1",
@@ -555,8 +555,8 @@
         540,
         441
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-售票处-1",
@@ -566,8 +566,30 @@
         290,
         335
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-寄存-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        264.0422,
+        333.0441
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-闸室-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        588,
+        360
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-书店-1",
@@ -577,8 +599,8 @@
         437,
         204
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-教学室-1",
@@ -588,8 +610,8 @@
         451,
         362
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-咨询-1",
@@ -599,8 +621,8 @@
         478,
         446
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-入口-1",
@@ -610,8 +632,8 @@
         482,
         472
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L0-出口-1",
@@ -621,13 +643,24 @@
         441,
         470
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L0-卫生间-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        435.18495178222656,
+        171.42787170410156
+      ],
+      "classification": "Center of the printed TOILETTE label, PDF page 1 text bounds [417.6849670410156,167.27926635742188,452.6849365234375,175.57647705078125]. Kept separate from the adjacent bookshop.",
+      "precision": "printed-service-label-position"
     }
   ],
   "coverage": {
     "floors": 1,
-    "labels": 9,
+    "labels": 12,
     "features": 49
   }
 }

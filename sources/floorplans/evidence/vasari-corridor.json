@@ -1,0 +1,129 @@
+{
+  "slug": "vasari-corridor",
+  "status": "source-limited",
+  "modelProduced": false,
+  "reviewedAt": "2026-09-05",
+  "review": "Official visitor material confirms the controlled one-way itinerary and endpoints but does not publish an orthographic plan of the corridor body. The official access PDF maps only the route through the Uffizi to D19; those Uffizi floors are owned by the main task and do not establish corridor geometry. Two independently published aerials were explicitly tested as rectification candidates rather than rejected merely for being oblique. Both are perspective images of non-coplanar ground, roofs, facades and elevated corridor segments, with height-dependent parallax and roof occlusion; neither one affine inverse nor one planar homography can recover the corridor interior. The 2025 Uffizi CIG B78AF05213 notice confirms that a procurement package for climate works in a corridor portion exists and directs bidders to the official procurement portal. The downloadable official notice contains no plan, while the procurement portal returned HTTP 403 in both a direct request and a visible browser. A third-party index names an attachment category 'Planimetria' but exposes no authoritative attachment URL, so it is retained only as a discovery lead. No legacy corridor line was retained.",
+  "rectificationReview": {
+    "source": "vasari-official-publication-sample.pdf",
+    "sources": [
+      {"file": "vasari-official-publication-sample.pdf", "page": 3},
+      {"file": "vasari-sira-restoration-2023.pdf", "pdfPage": 58, "printedPage": 806, "figure": 3}
+    ],
+    "page": 3,
+    "candidate": "single affine or planar projective rectification to a top view",
+    "result": "rejected after visual geometric review",
+    "observations": [
+      "The photograph visibly includes vertical facades as well as roofs and ground, proving that the mapped evidence is distributed across different depth and height planes rather than one parallel projection plane.",
+      "Long architectural axes undergo perspective foreshortening and convergence; an affine inverse cannot restore parallel top-view geometry.",
+      "A homography could rectify one selected plane only. The corridor changes elevation and runs across roofs, bridge fabric and building interiors, so a ground-plane homography would displace its elevated segments by height-dependent parallax.",
+      "Roofs and adjoining buildings occlude the corridor's interior walls, doors, width changes and junctions. The source provides no measured control points or surveyed corridor outline with which to reconstruct the hidden boundaries."
+    ],
+    "conclusion": "The aerial supports city-scale route context only. It cannot be converted into an evidence-backed indoor top-view model without inventing concealed geometry."
+  },
+  "sources": [
+    {
+      "authority": "Gallerie degli Uffizi",
+      "title": "The Vasari Corridor",
+      "url": "https://www.uffizi.it/en/corridoio-vasariano",
+      "scope": ["length", "entry", "route description", "exit"],
+      "finding": "Confirms the approximately 750-metre controlled route from the Uffizi across Ponte Vecchio to the Boboli exit, but provides no floor-plan geometry."
+    },
+    {
+      "authority": "Gallerie degli Uffizi",
+      "title": "Rules for accessing the Vasari Corridor",
+      "url": "https://www.uffizi.it/en/notices/rules-for-accessing-the-vasari-corridor",
+      "scope": ["D19 meeting point", "one-way operation", "Boboli/Ammannati handoff"],
+      "finding": "Confirms operations and named endpoints only; no corridor floor plan is published."
+    },
+    {
+      "authority": "Gallerie degli Uffizi",
+      "title": "Vasari Corridor access map and regulations",
+      "url": "https://pdf.uffizi.it/1777908455903-mappa-e-regolamento_4.pdf",
+      "file": "vasari-corridor-official.pdf",
+      "sha256": "bcae3fa4419faa450ac5351184c8311912738e351f9ae42ef0f64141f095083c",
+      "pagesInspected": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "finding": "Pages 1-3 are orthographic Uffizi visitor diagrams leading to D19. Pages 4-9 are regulations. No page maps the corridor body; Uffizi geometry is outside this assigned scope."
+    },
+    {
+      "authority": "Gallerie degli Uffizi shop publication sample",
+      "title": "The Vasari Corridor publication sample",
+      "url": "https://shop.uffizi.it/wp-content/uploads/2022/04/9788833401430-VasarianCORRIDOR_eng_assaggio.pdf",
+      "file": "vasari-official-publication-sample.pdf",
+      "sha256": "e2c94f8fe428b3214b919e9a5e9d45e3ea1de8a32997d08541986c00c57eda68",
+      "pagesInspected": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "finding": "Page 3 is an oblique aerial overview; the remaining inspected pages are text and photographs. The aerial lacks corridor interior boundaries and sufficient control points for defensible rectification."
+    },
+    {
+      "authority": "Invitalia",
+      "title": "Vasari Corridor reopening works tender",
+      "url": "https://gareappalti.invitalia.it/tendering/tenders/000147-2020/view/detail/1",
+      "scope": ["technical-document search", "possible measured-plan source"],
+      "finding": "The official tender record was investigated as the likeliest route to project drawings. No retrievable public technical plan of the complete corridor body was available during this review, so no geometry was derived from search-result descriptions."
+    },
+    {
+      "authority": "Gallerie degli Uffizi transparency archive",
+      "title": "Vasari Corridor works tender archive",
+      "url": "https://trasparenza.uffizi.it/archivio11_bandi-gare-e-contratti-fino-al-31122023_0_1068688_875_1.html",
+      "scope": ["technical-document search"],
+      "finding": "Investigated as a possible route to technical plans; no publicly linked orthographic corridor-body plan suitable for extraction was identified."
+    },
+    {
+      "authority": "Gallerie degli Uffizi transparency archive",
+      "title": "Avviso preventivo di procedura negoziata · CIG B78AF05213",
+      "url": "https://trasparenza.uffizi.it/archivio77_news-e-avvisi_0_459.html",
+      "file": "vasari-b78af05213-official-notice.pdf",
+      "downloadUrl": "https://trasparenza.uffizi.it/moduli/downloadFile.php?file=oggetto_allegati/2516916072565252260O__Oprotn5791p_avviso_preventivo_di_procedura_negoziata_lavori_impianti_climatizzazion.pdf",
+      "sha256": "29dcb1162ea4d9432d47d3842963785a212eb0f02634332118623d841f04d5a3",
+      "pagesInspected": [1, 2],
+      "scope": ["CIG", "procurement-platform pointer", "technical-attachment search"],
+      "finding": "The two-page official notice concerns completion of climate and humidity-control systems in a portion of the Vasari Corridor and directs the procedure to https://portalegare.uffizi.it/. It contains no plan, dimensions or attachment links."
+    },
+    {
+      "authority": "Gallerie degli Uffizi procurement portal",
+      "title": "Portale Gare Telematiche",
+      "url": "https://portalegare.uffizi.it/",
+      "scope": ["CIG B78AF05213 attachment retrieval"],
+      "finding": "Investigated by direct HTTP request and visible browser on 2026-09-05; both returned HTTP 403 Forbidden before any public tender search or attachment list could be reached. No credentials or restricted access were attempted."
+    },
+    {
+      "authority": "Autorita Nazionale Anticorruzione",
+      "title": "Dettaglio CIG B78AF05213",
+      "url": "https://dettaglio-cig.anticorruzione.it/cig/B78AF05213",
+      "scope": ["official procurement metadata", "attachment-location search"],
+      "finding": "The public detail route and its API were investigated. The API response required anti-spam tokens and did not expose technical attachments; no plan URL was recovered."
+    },
+    {
+      "authority": "Appalti.net",
+      "title": "Manifestazione di Interesse · CIG B78AF05213",
+      "url": "https://www.appalti.net/Bando/265477/Manifestazione-di-Interesse---LAVORI-DI-COMPLETAMENTO-DEGLI-IMPIANTI-DI-CLIMATIZZAZIONE-E-REGOLAZIONE-DELL-UMIDIT%C3%80-AMBIENTALE-DI-PORZIONE-DEL-CORRIDOIO-VASARIANO.html",
+      "scope": ["discovery lead only"],
+      "finding": "The third-party index lists an attachment category named 'Planimetria', but it provides no authoritative downloadable plan URL. This is not treated as evidence for geometry."
+    },
+    {
+      "authority": "Societa Italiana per il Restauro dell'Architettura",
+      "title": "Fragile da conservare. Percorsi di conoscenza per i restauri del Corridoio Vasariano agli Uffizi",
+      "url": "https://sira-restauroarchitettonico.it/wp-content/uploads/2024/02/Atti_SIRA_2023-Sezione0-LOW.pdf",
+      "recordUrl": "https://flore.unifi.it/handle/2158/1403096",
+      "file": "vasari-sira-restoration-2023.pdf",
+      "sha256": "278386ad49f74db4ea8a9f77d56b5e8692c8d7b9923e7c78a77736e2168ae151",
+      "pagesInspected": [804, 805, 806, 807, 808, 809, 810],
+      "pdfPagesInspected": [56, 57, 58, 59, 60, 61, 62],
+      "finding": "The article's figure 3 is a perspective aerial overview and the remaining inspected figures are historical or interior photographs. No orthographic corridor plan is published. The aerial has the same non-coplanar parallax and occlusion limits recorded in rectificationReview."
+    }
+  ],
+  "missing": [
+    "从乌菲兹连接段到老桥的走廊本体正投影几何",
+    "马内利塔绕行段与圣费利奇塔教堂旁通道的实测或图源比例转折",
+    "从波波里花园／布翁塔伦蒂洞窟出口到阿曼纳蒂庭院的有图路径",
+    "公共路线沿线的楼层变化、门、收窄、窗与内部交叉点"
+  ],
+  "routeNodes": [
+    {"stopIndex": 0, "label": "乌菲兹一层D19集合点", "status": "unresolved", "reason": "馆方在乌菲兹内部图上标明该点，但乌菲兹楼层几何由主任务负责，且此处没有可连接的走廊本体模型。"},
+    {"stopIndex": 1, "label": "乌菲兹连接段", "status": "unresolved", "reason": "文字有描述，但已检查的正投影图源未绘出该段。"},
+    {"stopIndex": 2, "label": "老桥上方", "status": "unresolved", "reason": "城市尺度位置明确，但走廊内部边界缺失。"},
+    {"stopIndex": 3, "label": "马内利塔与圣费利奇塔段", "status": "unresolved", "reason": "有文字与照片证据，但没有可可靠校正的室内平面。"},
+    {"stopIndex": 4, "label": "波波里出口与阿曼纳蒂庭院", "status": "unresolved", "reason": "运营终点有记录，但缺少连接两处的正投影平面。"}
+  ],
+  "coverage": {"floors": 0, "labels": 0, "features": 0, "boundStops": 0, "guideStops": 5}
+}

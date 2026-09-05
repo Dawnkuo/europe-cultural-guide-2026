@@ -1,0 +1,324 @@
+{
+  "slug": "museum-ludwig",
+  "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared all four official2021 visitor-plan levels. Maintains different floor envelopes, voids, room bands and service positions rather than repeated floor plates. Eighteen places and three collection-zone selections are at the source's actual level of detail.",
+    "floorCoverageReview": "Basement,ground,first,second with historical2021 display zones; no claim of current hanging.",
+    "stopBindingReview": "All five original stops bind entry or documented floor-scale collection groups, not individual work wall positions.",
+    "verticalConnectionReview": "No undocumented paired landing or continuous route is added.",
+    "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+    "sourceDigest": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+    "sourceEvidence": "sources/floorplans/evidence/museum-ludwig.json",
+    "comparedFloors": [
+      "basement",
+      "ground",
+      "first",
+      "second"
+    ],
+    "displayReview": "All four source-grey surface themes use the existing gold display tone for readable dark-background contrast; geometry and source classifications are unchanged."
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:47:12.705Z",
+    "slug": "museum-ludwig",
+    "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+    "sourceDigest": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "basement",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "ground",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "first",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "second",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/museum-ludwig-1440-3d.png",
+          "work/map-review/release-final/museum-ludwig-1440-basement-2d.png",
+          "work/map-review/release-final/museum-ludwig-1440-ground-2d.png",
+          "work/map-review/release-final/museum-ludwig-1440-first-2d.png",
+          "work/map-review/release-final/museum-ludwig-1440-second-2d.png",
+          "work/map-review/release-final/museum-ludwig-1440-second-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-1440-second-selection-3d.png",
+          "work/map-review/release-final/museum-ludwig-1440-first-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-1440-first-selection-3d.png",
+          "work/map-review/release-final/museum-ludwig-1440-basement-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-1440-basement-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 380,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "second-region-1",
+          "first-region-1",
+          "basement-region-1"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "basement",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "ground",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "first",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "second",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/museum-ludwig-1094-3d.png",
+          "work/map-review/release-final/museum-ludwig-1094-basement-2d.png",
+          "work/map-review/release-final/museum-ludwig-1094-ground-2d.png",
+          "work/map-review/release-final/museum-ludwig-1094-first-2d.png",
+          "work/map-review/release-final/museum-ludwig-1094-second-2d.png",
+          "work/map-review/release-final/museum-ludwig-1094-second-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-1094-second-selection-3d.png",
+          "work/map-review/release-final/museum-ludwig-1094-first-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-1094-first-selection-3d.png",
+          "work/map-review/release-final/museum-ludwig-1094-basement-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-1094-basement-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 497,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "second-region-1",
+          "first-region-1",
+          "basement-region-1"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "basement",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "ground",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "first",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "second",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/museum-ludwig-390-3d.png",
+          "work/map-review/release-final/museum-ludwig-390-basement-2d.png",
+          "work/map-review/release-final/museum-ludwig-390-ground-2d.png",
+          "work/map-review/release-final/museum-ludwig-390-first-2d.png",
+          "work/map-review/release-final/museum-ludwig-390-second-2d.png",
+          "work/map-review/release-final/museum-ludwig-390-second-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-390-second-selection-3d.png",
+          "work/map-review/release-final/museum-ludwig-390-first-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-390-first-selection-3d.png",
+          "work/map-review/release-final/museum-ludwig-390-basement-selection-2d.png",
+          "work/map-review/release-final/museum-ludwig-390-basement-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1088,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "second-region-1",
+          "first-region-1",
+          "basement-region-1"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "museum-ludwig",
+    "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "basement",
+      "ground",
+      "first",
+      "second"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "museum-ludwig",
+    "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 2.3,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/museum-ludwig/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 70.54726394088723,
+      "screenshot": "work/map-review/guide-pages-final/_guides_museum-ludwig_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/museum-ludwig/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 88.35493978894985,
+      "screenshot": "work/map-review/guide-pages-final/_guides_museum-ludwig_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/museum-ludwig/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 104.21866429431097,
+      "screenshot": "work/map-review/guide-pages-final/_guides_museum-ludwig_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/museum-ludwig/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+    "passed": true
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "slug": "pitti",
+  "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared ground,mezzanine,first and second published diagrams. Preserves all available numbered treasure rooms and Palatine/royal suite divisions, with sixty-three places and six supported region selections. Second floor remains a collection-zone outline, not falsely detailed rooms. Closure notices do not delete treasure-room geometry.",
+    "floorCoverageReview": "Four source diagrams of unequal detail and independent scale. Second-floor individual-room layout remains missing.",
+    "stopBindingReview": "Stops1-4 bind Palatine,royal apartments,modern art and treasure/fashion zones at their documented precision; exterior arrival is separate.",
+    "verticalConnectionReview": "No paired stairs/elevators established across these independently scaled sources.",
+    "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+    "sourceDigest": "48ffb473f8c1ad772e3873c9011de35e2426901b27c13e58f813c48c991ef244",
+    "sourceEvidence": "sources/floorplans/evidence/pitti.json",
+    "comparedFloors": [
+      "L0",
+      "MZ",
+      "L1",
+      "L2"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:45:54.195Z",
+    "slug": "pitti",
+    "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+    "sourceDigest": "48ffb473f8c1ad772e3873c9011de35e2426901b27c13e58f813c48c991ef244",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "MZ",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 31,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L2",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pitti-1440-3d.png",
+          "work/map-review/release-final/pitti-1440-L0-2d.png",
+          "work/map-review/release-final/pitti-1440-MZ-2d.png",
+          "work/map-review/release-final/pitti-1440-L1-2d.png",
+          "work/map-review/release-final/pitti-1440-L2-2d.png",
+          "work/map-review/release-final/pitti-1440-L1-selection-2d.png",
+          "work/map-review/release-final/pitti-1440-L1-selection-3d.png",
+          "work/map-review/release-final/pitti-1440-L2-selection-2d.png",
+          "work/map-review/release-final/pitti-1440-L2-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 460,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 63,
+        "selectedSpaces": [
+          "L1-palatine-source-floor",
+          "L1-royal-source-floor",
+          "L2-modern-source-floor",
+          "L2-fashion-source-floor"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "MZ",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 31,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L2",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pitti-1094-3d.png",
+          "work/map-review/release-final/pitti-1094-L0-2d.png",
+          "work/map-review/release-final/pitti-1094-MZ-2d.png",
+          "work/map-review/release-final/pitti-1094-L1-2d.png",
+          "work/map-review/release-final/pitti-1094-L2-2d.png",
+          "work/map-review/release-final/pitti-1094-L1-selection-2d.png",
+          "work/map-review/release-final/pitti-1094-L1-selection-3d.png",
+          "work/map-review/release-final/pitti-1094-L2-selection-2d.png",
+          "work/map-review/release-final/pitti-1094-L2-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 592,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 63,
+        "selectedSpaces": [
+          "L1-palatine-source-floor",
+          "L1-royal-source-floor",
+          "L2-modern-source-floor",
+          "L2-fashion-source-floor"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "MZ",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 31,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L2",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pitti-390-3d.png",
+          "work/map-review/release-final/pitti-390-L0-2d.png",
+          "work/map-review/release-final/pitti-390-MZ-2d.png",
+          "work/map-review/release-final/pitti-390-L1-2d.png",
+          "work/map-review/release-final/pitti-390-L2-2d.png",
+          "work/map-review/release-final/pitti-390-L1-selection-2d.png",
+          "work/map-review/release-final/pitti-390-L1-selection-3d.png",
+          "work/map-review/release-final/pitti-390-L2-selection-2d.png",
+          "work/map-review/release-final/pitti-390-L2-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1262,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 63,
+        "selectedSpaces": [
+          "L1-palatine-source-floor",
+          "L1-royal-source-floor",
+          "L2-modern-source-floor",
+          "L2-fashion-source-floor"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "pitti",
+    "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "L0",
+      "MZ",
+      "L1",
+      "L2"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "pitti",
+    "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.800000000000182,
+    "renderP95Ms": 3.2,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/pitti/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 92.60120827822486,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/pitti/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 110.52634355775142,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/pitti/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 140.934266158831,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/pitti/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+    "passed": true
+  }
+}

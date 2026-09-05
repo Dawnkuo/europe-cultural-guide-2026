@@ -1,0 +1,40 @@
+{
+  "slug": "chocolate-museum",
+  "status": "evidence-only-no-indoor-model",
+  "publicLimitation": "官网可确认现馆由 Fritz Eller 改扩建并列出主要展览语义，官方正射影像可核验屋顶外廓；已检查的 DAM 清单只记录 1987 年 Stollwerk 方案档案，不能证明其对应 1993 年启用并持续改展的现馆。未找到可核验的现状室内正投影平面，因此本场馆不进入室内模型加载器。",
+  "sources": [
+    {
+      "url": "https://www.schokoladenmuseum.de/en/press/press-release-architecture/",
+      "finding": "The museum's official architecture page states that Fritz Eller renovated the listed customs office and designed the new construction begun in October 1992 and completed for the museum; it provides architectural history but no floor plan."
+    },
+    {
+      "url": "https://www.schokoladenmuseum.de/en/the-museum/exhibition/",
+      "finding": "The official exhibition page verifies current visitor semantics including the 600-square-metre World Tour of Cocoa, tropical greenhouse, transparent factory, cultural-history exhibition and top-level finale; it does not publish orthographic room boundaries or level connections."
+    },
+    {
+      "url": "https://www.schokoladenmuseum.de/en/plan-a-visit/aktuelles/schokolade-ist-ein-gefuehl/",
+      "finding": "The official 2025 announcement explicitly places the new finale on the top exhibition level, confirming that exhibition distribution has changed; no level plan accompanies it."
+    },
+    {
+      "url": "https://www.wms.nrw.de/geobasis/wms_nw_dop?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=nw_dop_rgb&STYLES=&CRS=EPSG:25832&BBOX=356862.6904,5644064.2605,357062.6904,5644404.2605&WIDTH=1200&HEIGHT=2040&FORMAT=image/png&TRANSPARENT=false",
+      "file": "chocolate-museum-nrw-orthophoto.pdf",
+      "sha256": "37e72e490ee0385d409a6b21e5f9a08ca8bc3330063e63686a5d7b9b97a4e5be",
+      "finding": "Official NRW orthophoto verifies the glazed prow, historic block and curved entrance-wing roof footprints only."
+    },
+    {
+      "url": "https://dam-online.de/wp-content/uploads/2020/05/B%C3%B6hmG_Suchausgabe.pdf",
+      "finding": "The official Deutsches Architekturmuseum inventory, printed page 118, lists archive records 028-219-000 through 028-219-011 for a 1987 Stollwerk Schokoladen Museum proposal, including site plans, ground/upper-floor plans and sections. The inventory does not reproduce the drawings or establish that this unbuilt or superseded proposal matches the current Fritz Eller museum."
+    }
+  ],
+  "missing": [
+    "现状各开放楼层的外墙、房间边界与层间连接",
+    "独木舟、可可世界之旅与热带温室的准确平面位置",
+    "可可文化史展区与透明巧克力工厂的准确楼层关系",
+    "巧克力喷泉、咖啡厅、商店、出口与无障碍设施的准确位置",
+    "2025 年顶层新展览与既有展区的现状边界"
+  ],
+  "routeCoverage": {
+    "resolvedStops": [],
+    "unresolvedStops": [0, 1, 2, 3, 4, 5]
+  }
+}

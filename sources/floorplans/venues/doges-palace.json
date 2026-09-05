@@ -1,0 +1,1004 @@
+{
+  "slug": "doges-palace",
+  "file": "doges-palace-2025.pdf",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [
+      4,
+      6,
+      7,
+      12,
+      16
+    ],
+    "basis": "Each of the five extracted diagrams was visually checked as an overhead plan, not the booklet's perspective illustrations. Their horizontal registration is unknown and is not inferred from the page layout."
+  },
+  "stopBindings": [
+    {
+      "stopIndex": 0,
+      "placeId": "L0-1-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L0-2-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L0-giants-stair-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-5-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-6-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-7-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-8-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-9-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-10-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-11-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-12-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-13-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-24-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-25-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-26-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-27-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-28-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-29-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-30-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-31-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "L1-27-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "L2-22-1"
+    },
+    {
+      "stopIndex": 5,
+      "placeId": "loggia-33-1"
+    },
+    {
+      "stopIndex": 5,
+      "placeId": "loggia-34-1"
+    }
+  ],
+  "verticalLinks": [
+    {"id":"lift-ground-loggia","label":"电梯","kind":"elevator","fromPlaceId":"L0-lift-1","toPlaceId":"loggia-lift-1","evidence":"Official p4/p6 mark the same western lift core and wheelchair symbol; anchors are the museum-side endpoints of leaders186/178, not the external pictograms."},
+    {"id":"lift-loggia-first","label":"电梯","kind":"elevator","fromPlaceId":"loggia-lift-1","toPlaceId":"L1-lift-1","evidence":"Official p6/p7 mark the corresponding western lift landings via leaders178/283; no surveyed shaft alignment is inferred."},
+    {"id":"lift-first-second","label":"电梯","kind":"elevator","fromPlaceId":"L1-lift-1","toPlaceId":"L2-lift-1","evidence":"Official p7/p12 mark the corresponding western lift landings via leaders283/155."},
+    {"id":"lift-second-attic","label":"电梯","kind":"elevator","fromPlaceId":"L2-lift-1","toPlaceId":"attic-lift-1","evidence":"Official p12/p16 show the western lift core with wheelchair and lift pictograms via leaders155/64. This is architectural connectivity, not current visitor permission for the secret itinerary."},
+    {
+      "id": "censors-stair",
+      "label": "监察官阶梯",
+      "kind": "stairs",
+      "fromPlaceId": "L0-3-1",
+      "toPlaceId": "loggia-3-1",
+      "evidence": "PDF p4 describes Stair of the Censors leading from the courtyard to the loggia; p6 explicitly labels the corresponding landing 3."
+    },
+    {
+      "id": "golden-stair-first-flight",
+      "label": "黄金阶梯第一段",
+      "kind": "stairs",
+      "fromPlaceId": "loggia-4-1",
+      "toPlaceId": "L1-14-1",
+      "evidence": "Official guide p6 labels 4 as Golden Stair, first flight and says it leads from the loggia to the upper floors; p7 labels the receiving stair 14 as the Golden Stair."
+    },
+    {
+      "id": "golden-stair-upper-flight",
+      "label": "黄金阶梯至方形前厅",
+      "kind": "stairs",
+      "fromPlaceId": "L1-14-1",
+      "toPlaceId": "L2-15-1",
+      "evidence": "Official p7 locates Golden Stair14; p12 shows its corresponding upper flight opening into Square Atrium15. This connects the published stair/landing locations, not a surveyed staircase trajectory."
+    },
+    {
+      "id": "prison-entry-stairs",
+      "label": "监狱入口楼梯",
+      "kind": "stairs",
+      "fromPlaceId": "L1-32-1",
+      "toPlaceId": "loggia-32-1",
+      "evidence": "Official p7/p6 both label Prisons Entrance32, with descending treads from the first-floor courtrooms to the bridge-level approach. Do not infer a separate modern entrance."
+    }
+  ],
+  "sha256": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+  "url": "https://palazzoducale.visitmuve.it/wp-content/uploads/sites/2/2025/10/Guida-Ducale-ENG.pdf",
+  "review": "Orthographic diagrams on PDF pages 4/6/7/12/16 checked visually. L1 and L2 generated wall/detail polygons were overlaid directly on the official source coordinates; all visible room partitions and stair treads align, and 72 independent wall/detail/door-gap checkpoints pass. Columns are solid black circles in architectural runs, not service-symbol circles. Wall strokes are >1 source unit, stair treads and handrails remain flat. Service leaders and PDF duplicate clipped drawing streams excluded. Page16's Piombi and attic/Great Council ceiling are drawn independently, not inferred from lower floors. All printed place numbers 1-38 retained, including duplicated cross-level stair/prison-entry labels; letter l has five distinct source anchors. Browser 3D rendering remains an integration-stage check.",
+  "internalNotes": ["五组平面包含庭院、回廊、叹息桥与监狱、总督公寓、议事厅和秘境屋架。","秘境、屋架及其他限制区域仅作建筑位置展示，不代表已购票包含或当天开放。","各层使用独立导览平面的原图比例；楼层错位和墙高用于显示，尚无核验过的逐步跨层导航。"],
+  "limitations": ["包含庭院、回廊、叹息桥与监狱、总督公寓、议事厅及屋架区域。","秘境和屋架等限制区域仅作建筑展示，不代表已购票包含；跨层连接不是逐步导航。"],
+  "floors": [
+    {
+      "id": "L0",
+      "label": "底层 · 庭院与建筑博物馆",
+      "order": 0,
+      "page": 4,
+      "crop": [
+        186,
+        465,
+        534,
+        697
+      ],
+      "labelPattern": "[123]",
+      "expectedLabels": [
+        "1",
+        "2",
+        "3"
+      ],
+      "rules": [
+        {
+          "ids": [
+            0,
+            14,
+            15
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "ground floor and courtyard silhouette"
+        },
+        {
+          "ids": [
+            5
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "Museo dell'Opera floor"
+        },
+        {
+          "ids": [
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "blue",
+          "reason": "enclosed service rooms and restricted museum spaces, retained as geometry"
+        },
+        {
+          "ranges": [
+            [
+              16,
+              149
+            ]
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "minWidth": 1,
+          "kind": "wall",
+          "reason": "thick structural contours, not external service leaders"
+        },
+        {
+          "ranges": [
+            [
+              17,
+              117
+            ]
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "kind": "wall",
+          "reason": "courtyard and exterior colonnade columns"
+        },
+        {
+          "ids": [
+            3,
+            58,
+            99,
+            148
+          ],
+          "kind": "detail",
+          "reason": "well-heads and stair tread diagrams remain flat"
+        }
+      ],
+      "labelNames": {
+        "1": "建筑博物馆",
+        "2": "庭院",
+        "3": "监察官阶梯"
+      },
+      "servicePlaces": [
+        {"label":"lift","displayLabel":"电梯","name":"无障碍电梯","kind":"service","at":[198.546997,484.485016],"precision":"printed-service-leader-endpoint","evidence":"P4 path186 museum endpoint; paired lift and wheelchair pictograms."},
+        {"label":"cafe","displayLabel":"咖啡馆","name":"咖啡馆","kind":"service","at":[266.661011,482.996002],"precision":"printed-service-leader-endpoint","evidence":"P4 path157 museum endpoint; cup pictogram."},
+        {"label":"cloakroom","displayLabel":"寄存","name":"衣物寄存","kind":"service","at":[349.154999,484.981018],"precision":"printed-service-leader-endpoint","evidence":"P4 path178 museum endpoint; hanger pictogram."},
+        {"label":"toilets","displayLabel":"卫生间","name":"卫生间","kind":"service","at":[430.735992,482.492004],"precision":"printed-service-leader-endpoint","evidence":"P4 paths180/193 duplicate the same gendered WC target."},
+        {"label":"accessible-wc","displayLabel":"无障碍卫生间","name":"无障碍卫生间","kind":"service","at":[430.735992,499.343018],"precision":"printed-service-leader-endpoint","evidence":"P4 path195 is the second endpoint below the shared general-WC leader, paired with wheelchair pictogram."},
+        {"label":"bookshop","displayLabel":"书店","name":"书店","kind":"service","at":[477.619995,595.462036],"precision":"printed-service-leader-endpoint","evidence":"P4 path182 museum endpoint at the right, not the external book pictogram."},
+        {"label":"tickets","displayLabel":"售票","name":"售票柜台","kind":"service","at":[493.755005,620.341003],"precision":"printed-service-leader-endpoint","evidence":"P4 path184 museum endpoint at the right; staffed-counter pictogram."},
+        {
+          "label": "giants-stair",
+          "displayLabel": "巨人阶梯",
+          "name": "巨人阶梯",
+          "kind": "area",
+          "at": [
+            283,
+            555
+          ]
+        }
+      ],
+      "sourceSpaces": [
+        {
+          "id": "museo",
+          "label": "建筑博物馆展区",
+          "placeId": "L0-1-1",
+          "sourcePaths": [
+            5
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        }
+      ]
+    },
+    {
+      "id": "loggia",
+      "label": "回廊层 · 叹息桥与新监狱",
+      "order": 0.5,
+      "page": 6,
+      "crop": [
+        177,
+        453,
+        495,
+        759
+      ],
+      "labelPattern": "[0-9]+",
+      "expectedLabels": [
+        "3",
+        "4",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38"
+      ],
+      "rules": [
+        {
+          "ids": [
+            65,
+            68,
+            69
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "loggia-floor silhouette and service rooms"
+        },
+        {
+          "ids": [63],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "excludeContextRegions": [{
+            "bounds": [177.5364990234375, 613.618408203125, 279.44305419921875, 757.9937133789062],
+            "evidence": "P6 source63 combines this floor with a pale lower-floor ghost west of the courtyard. The removal region starts at the real northern loggia colonnade ordinate from source165, ends at the real western edge of the southern loggia rooms from source226, and extends only to source63's printed outer bounds. No wall or stair stroke is clipped: the Giants' Stair continues as its own source detail. The lower-floor footprint remains on L0."
+          }],
+          "reason": "actual loggia floor only; lower-floor ghost is not an elevated slab"
+        },
+        {
+          "ids": [
+            66,
+            70
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "green",
+          "reason": "administration rooms retained despite restricted access"
+        },
+        {
+          "ids": [
+            71
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "state rooms at loggia level"
+        },
+        {
+          "ids": [
+            73,
+            128
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "rose",
+          "reason": "New Prisons and bridge corridor outlines"
+        },
+        {
+          "ranges": [
+            [
+              63,
+              182
+            ],
+            [
+              226,
+              245
+            ]
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "minWidth": 1,
+          "kind": "wall",
+          "reason": "reviewed thick prison, bridge and loggia walls"
+        },
+        {
+          "ranges": [
+            [
+              74,
+              171
+            ],
+            [
+              229,
+              235
+            ]
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "kind": "wall",
+          "reason": "colonnade piers; service-anchor circles 174/179/214 excluded"
+        },
+        {
+          "ranges": [
+            [
+              63,
+              182
+            ],
+            [
+              215,
+              215
+            ],
+            [
+              236,
+              242
+            ]
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "minWidth": 0.4,
+          "maxWidth": 0.5,
+          "kind": "detail",
+          "reason": "stairs and railing lines, not vertical room partitions"
+        }
+      ],
+      "labelNames": {
+        "3": "回廊",
+        "4": "黄金阶梯第一段",
+        "32": "监狱入口",
+        "33": "叹息桥",
+        "34": "新监狱",
+        "35": "监察官厅",
+        "36": "国家律师厅",
+        "37": "法令匣厅",
+        "38": "海军将领厅"
+      },
+      "servicePlaces": [
+        {"label":"lift","displayLabel":"电梯","name":"无障碍电梯","kind":"service","at":[187.700928,571.356628],"precision":"printed-service-leader-endpoint","evidence":"P6 path178 museum endpoint; lift and wheelchair pictograms."},
+        {"label":"bookshop","displayLabel":"书店","name":"书店","kind":"service","at":[290.259644,565.253723],"precision":"printed-service-leader-endpoint","evidence":"P6 path173 museum endpoint; book pictogram."},
+        {"label":"toilets","displayLabel":"卫生间","name":"卫生间","kind":"service","at":[426.121796,564.414307],"precision":"printed-service-leader-endpoint","evidence":"P6 path213 second endpoint, inside the WC room."}
+      ],
+      "sourceSpaces": [
+        {
+          "id": "state-rooms",
+          "label": "回廊层厅室",
+          "placeId": "loggia-35-1",
+          "sourcePaths": [
+            71
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        },
+        {
+          "id": "new-prisons",
+          "label": "新监狱展区",
+          "placeId": "loggia-34-1",
+          "sourcePaths": [
+            73,
+            128
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        }
+      ]
+    },
+    {
+      "id": "L1",
+      "servicePlaces": [{"label":"lift","displayLabel":"电梯","name":"无障碍电梯","kind":"service","at":[207.022003,494.539001],"precision":"printed-service-leader-endpoint","evidence":"P7 path283 first endpoint, at the western lift core. The external pictogram is below the plan."}],
+      "label": "一层 · 总督公寓与大议会厅",
+      "order": 1,
+      "page": 7,
+      "crop": [
+        197,
+        469,
+        558,
+        705
+      ],
+      "labelPattern": "[0-9]+",
+      "expectedLabels": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32"
+      ],
+      "rules": [
+        {
+          "ids": [
+            65,
+            258,
+            263,
+            275
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "floor silhouette, service spaces and stair landings"
+        },
+        {
+          "ids": [61],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "withinClosedPaths": [66],
+          "reason": "Original grey service/stair floor clipped to the explicitly closed current-level perimeter66. Grey lower-floor context west of the courtyard is not an upper-floor slab."
+        },
+        {
+          "ids": [
+            62,
+            279
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "institutional chambers, using printed polygons"
+        },
+        {
+          "ids": [
+            63,
+            269,
+            271
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "blue",
+          "reason": "Doge apartments and golden stair landing"
+        },
+        {
+          "ids": [
+            64
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "rose",
+          "reason": "prison entrance area"
+        },
+        {
+          "ids": [
+            66,
+            67,
+            69,
+            71,
+            73,
+            75,
+            77,
+            79,
+            82,
+            84,
+            173,
+            175,
+            191,
+            270,
+            274,
+            280
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "minWidth": 1,
+          "kind": "wall",
+          "reason": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded"
+        },
+        {
+          "ids": [
+            68,
+            70,
+            72,
+            74,
+            76,
+            78,
+            80,
+            81,
+            83,
+            174,
+            186,
+            188,
+            256,
+            257
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "maxWidth": 0.6,
+          "kind": "detail",
+          "reason": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded"
+        }
+      ],
+      "labelNames": {
+        "5": "猩红厅",
+        "6": "盾徽厅",
+        "7": "格里马尼厅",
+        "8": "埃里佐厅",
+        "9": "灰泥厅",
+        "10": "哲学家厅",
+        "11": "转角厅",
+        "12": "肖像厅",
+        "13": "侍从厅",
+        "14": "黄金阶梯",
+        "24": "利亚戈廊厅",
+        "25": "旧民事四十人议会厅",
+        "26": "瓜里恩托厅",
+        "27": "大议会厅",
+        "28": "选举厅",
+        "29": "刑事四十人议会厅",
+        "30": "皮革厅",
+        "31": "法律官厅",
+        "32": "监狱入口"
+      },
+      "sourceSpaces": [
+        {
+          "id": "doge-apartments",
+          "label": "总督公寓展区",
+          "placeId": "L1-5-1",
+          "sourcePaths": [
+            63,
+            269,
+            271
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        },
+        {
+          "id": "institutional",
+          "label": "一层议事厅展区",
+          "placeId": "L1-24-1",
+          "sourcePaths": [
+            62,
+            279
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        }
+      ]
+    },
+    {
+      "id": "L2",
+      "servicePlaces": [{"label":"lift","displayLabel":"电梯","name":"无障碍电梯","kind":"service","at":[206.582642,612.062622],"precision":"printed-service-leader-endpoint","evidence":"P12 path155 first endpoint, at the western lift core."}],
+      "label": "二层 · 议事厅与军械库",
+      "order": 2,
+      "page": 12,
+      "crop": [
+        197,
+        587,
+        558,
+        648
+      ],
+      "labelPattern": "([0-9]+|[abc])",
+      "expectedLabels": [
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "a",
+        "b",
+        "c"
+      ],
+      "rules": [
+        {
+          "ids": [
+            103
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "institutional second-floor rooms; grey lower-floor silhouette 102 excluded"
+        },
+        {
+          "ids": [
+            104,
+            105,
+            106,
+            128
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "stairs and service spaces on this level"
+        },
+        {
+          "ids": [
+            107
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "rose",
+          "reason": "special itinerary rooms a-c"
+        },
+        {
+          "ids": [
+            127
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "blue",
+          "reason": "armoury interior footprint"
+        },
+        {
+          "ids": [
+            130,
+            132,
+            134
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "green",
+          "reason": "restricted north-west rooms retained"
+        },
+        {
+          "ids": [
+            109,
+            111,
+            113,
+            115,
+            116,
+            118,
+            120,
+            122,
+            124,
+            126,
+            129,
+            131,
+            133,
+            136,
+            139
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "minWidth": 1,
+          "kind": "wall",
+          "reason": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture"
+        },
+        {
+          "ids": [
+            108,
+            110,
+            112,
+            114,
+            117,
+            119,
+            121,
+            123,
+            125,
+            146
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "maxWidth": 0.5,
+          "kind": "detail",
+          "reason": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded"
+        }
+      ],
+      "labelNames": {
+        "15": "方形前厅",
+        "16": "四门厅",
+        "17": "全体委员会前厅",
+        "18": "全体委员会厅",
+        "19": "元老院厅",
+        "20": "十人议会厅",
+        "21": "罗盘厅",
+        "22": "军械库",
+        "23": "监察官厅",
+        "a": "总督公证人与代表厅",
+        "b": "三位首席长官厅",
+        "c": "国家审讯官厅"
+      },
+      "sourceSpaces": [
+        {
+          "id": "institutional",
+          "label": "二层议事厅展区",
+          "placeId": "L2-15-1",
+          "sourcePaths": [
+            103
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        },
+        {
+          "id": "secret-itinerary",
+          "label": "秘境展区",
+          "placeId": "L2-a-1",
+          "sourcePaths": [
+            107
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        },
+        {
+          "id": "armoury",
+          "label": "军械库展区",
+          "placeId": "L2-22-1",
+          "sourcePaths": [
+            127
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        }
+      ]
+    },
+    {
+      "id": "attic",
+      "servicePlaces": [{"label":"lift","displayLabel":"电梯","name":"无障碍电梯","kind":"service","at":[197.283005,579.788025],"precision":"printed-service-leader-endpoint","evidence":"P16 path64 first endpoint, at the western lift core; historic secret itinerary permission is separate."}],
+      "label": "上层 · 秘境与屋架",
+      "order": 3,
+      "page": 16,
+      "crop": [
+        189,
+        550,
+        558,
+        788
+      ],
+      "labelPattern": "[defghilmn]",
+      "expectedLabels": [
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "l",
+        "l",
+        "l",
+        "l",
+        "l",
+        "m",
+        "n"
+      ],
+      "rules": [
+        {
+          "ids": [35, 38],
+          "kind": "detail",
+          "reason": "Page 16 printed dashed overhead/context lines across the attic, not continuous partition walls. Preserve the original PDF dash lengths and gaps as flat detail."
+        },
+        {
+          "ids": [
+            7,
+            16,
+            17,
+            18,
+            52
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "rose",
+          "reason": "special itinerary and attic spaces shown on source map"
+        },
+        {
+          "ids": [
+            49
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "blue",
+          "reason": "Great Council ceiling context; not asserted as a visitor floor"
+        },
+        {
+          "ids": [
+            8,
+            20,
+            21
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "stair and internal void/context areas"
+        },
+        {
+          "ranges": [
+            [
+              1,
+              59
+            ]
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "minWidth": 1,
+          "kind": "wall",
+          "reason": "architectural partitions from the actual attic diagram"
+        },
+        {
+          "ranges": [
+            [
+              1,
+              59
+            ]
+          ],
+          "type": [
+            "s"
+          ],
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "maxWidth": 0.6,
+          "kind": "detail",
+          "reason": "roof/ceiling joist and stair lines, not walls"
+        }
+      ],
+      "labelNames": {
+        "d": "大法官办公室",
+        "e": "副统领厅",
+        "f": "统领厅",
+        "g": "下层刑讯室",
+        "h": "卡萨诺瓦第一囚室",
+        "i": "卡萨诺瓦第二囚室",
+        "l": "铅顶监狱",
+        "m": "武器室",
+        "n": "大议会厅天花结构"
+      },
+      "sourceSpaces": [
+        {
+          "id": "secret-itinerary",
+          "label": "上层秘境展区",
+          "placeId": "attic-d-1",
+          "sourcePaths": [
+            7,
+            16,
+            17,
+            18,
+            52
+          ],
+          "evidence": "Exact reviewed thematic floor fill from the official guide diagram."
+        }
+      ]
+    }
+  ]
+}

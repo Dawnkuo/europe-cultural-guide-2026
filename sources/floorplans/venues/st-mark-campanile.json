@@ -1,0 +1,300 @@
+{
+  "slug": "st-mark-campanile",
+  "file": "st-mark-campanile-rebuilt-1912.pdf",
+  "url": "https://books.google.it/books?hl=it&id=1I5ZAAAAYAAJ",
+  "sha256": "53e7180a82f4cb819bb1c489558699cbcec981c0eaa18f660675767996b03997",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [183],
+    "basis": "Visually reviewed Comune di Venezia reconstruction volume page 144 (PDF page 183): the four labelled plans AB, CD, Pianta cella and EF are top-down orthographic sections on the same scale-marked project plate; the elevation and longitudinal section are excluded."
+  },
+  "sourceFiles": [
+    {
+      "id": "pre-collapse-1858",
+      "file": "st-mark-campanile-1858.pdf",
+      "url": "https://exhibits.lib.ttu.edu/files/original/55f3c51f93e80fa1b0c2a702d07bc118e00ede3b.jpg",
+      "sha256": "2f1e1e564f38eb8e71d75b6178fcca6be9e4140895caec4f49cda96621782767",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "Visually reviewed Cicognara 1858 plate 15. Its ground and bell-cell plans remain an archival comparison only; no generated floor selects this source because it predates the 1902 collapse and 1912 reconstruction."
+      }
+    }
+  ],
+  "review": "The post-reconstruction volume was issued for the Comune di Venezia in 1912. Page 144 (PDF 183) was inspected at high resolution: all four horizontal plans are complete within their crops and the page caption identifies them as the general Commission project. Page 173 (PDF 212) documents thirty-six reconstructed ramps and an electric lift, but the plan plate does not label the lift shaft or the current ticket entrance.",
+  "limitations": [
+    "四层平面均来自威尼斯市政府 1912 年重建专书同一张带比例尺的委员会工程图；记录重建结构，不等同于竣工实测或当前运营导览图。",
+    "正文证实重建时设有电梯，但平面未标明电梯井与现行售票入口，故不添加推测点位或电梯连线。",
+    "钟室平面未单独标注朝向，南、西、北三处观景停靠仅绑定钟室整体，不虚构栏边方位点。"
+  ],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "塔基与小凉廊",
+      "order": 0,
+      "page": 183,
+      "crop": [284, 539, 418, 627],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 1448,
+          "maxChannel": 150,
+          "wallKernel": 7,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 3,
+          "excludeRects": [
+            {
+              "rect": [334, 530, 418, 543],
+              "reason": "Remove the printed 12.88 m dimension and its arrowheads above Pianta AB without touching the plan, whose tower masonry begins below page y=544 and whose Loggetta lies west of x=334."
+            },
+            {
+              "rect": [368, 622.5, 383, 627],
+              "reason": "Remove the continuation of the vertical section line below the complete south plan outline."
+            }
+          ],
+          "reason": "Reviewed complete Pianta AB crop from the 1912 reconstruction project. Dense black masonry becomes wall; entrance outlines, Loggetta columns, stairs and section axes remain flat detail. Caption, dimensions, elevation and longitudinal section are outside the crop."
+        }
+      ],
+      "places": [
+        {
+          "label": "loggetta",
+          "displayLabel": "小凉廊",
+          "name": "桑索维诺小凉廊",
+          "kind": "area",
+          "at": [310, 584],
+          "evidence": "Anchor lies within the Loggetta footprint drawn against the north side of the tower in Pianta AB and identified by the page caption.",
+          "precision": "reviewed-1912-plan-area-anchor-not-current-operational-point"
+        },
+        {
+          "label": "tower-base",
+          "displayLabel": "塔基",
+          "name": "钟楼塔基",
+          "kind": "area",
+          "at": [365, 580],
+          "evidence": "Anchor lies in the open interior of the reconstructed tower footprint in Pianta AB.",
+          "precision": "reviewed-1912-plan-area-anchor-not-current-operational-point"
+        },
+        {
+          "label": "ramp-base",
+          "displayLabel": "坡道起点",
+          "name": "塔内坡道起点",
+          "kind": "service",
+          "at": [380, 600],
+          "evidence": "Anchor is placed in the open approach immediately north of the stair/ramp symbol at the south side of the tower interior in Pianta AB; the reconstruction text documents thirty-six ramps.",
+          "precision": "reviewed-1912-plan-stair-symbol-anchor-not-surveyed"
+        }
+      ],
+      "expectedLabels": ["loggetta", "ramp-base", "tower-base"]
+    },
+    {
+      "id": "ramp",
+      "label": "塔身坡道层",
+      "order": 1,
+      "page": 183,
+      "crop": [340, 425, 414, 497],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 1448,
+          "maxChannel": 150,
+          "wallKernel": 7,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 3,
+          "flatRects": [
+            {
+              "rect": [365.5, 445, 392.5, 452],
+              "reason": "The north ramp-edge and tread strokes are circulation detail, not masonry."
+            },
+            {
+              "rect": [364, 451, 369, 471],
+              "reason": "The west ramp-edge, treads and direction mark are circulation detail, not masonry."
+            },
+            {
+              "rect": [391, 451, 396, 471],
+              "reason": "The east ramp-edge, treads and direction mark are circulation detail, not masonry."
+            },
+            {
+              "rect": [365.5, 471, 392.5, 478],
+              "reason": "The south ramp-edge and tread strokes are circulation detail, not masonry."
+            },
+            {
+              "rect": [369, 452, 391, 471],
+              "reason": "The central ramp outlines and direction arrows are circulation detail, not masonry."
+            }
+          ],
+          "reason": "Reviewed complete Pianta CD crop from the 1912 reconstruction project. The outer shaft and four internal piers become wall; ramp edges, treads and centre marks remain flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "ramp-shaft",
+          "displayLabel": "塔身坡道",
+          "name": "塔身坡道",
+          "kind": "service",
+          "at": [377, 462],
+          "evidence": "Anchor lies at the centre of complete Pianta CD, whose concentric ramp geometry corresponds to the reconstructed ramp sequence shown in the adjacent section and described on page 173.",
+          "precision": "reviewed-1912-plan-ramp-area-anchor-not-surveyed"
+        }
+      ],
+      "expectedLabels": ["ramp-shaft"]
+    },
+    {
+      "id": "bell-cell",
+      "label": "钟室",
+      "order": 2,
+      "page": 183,
+      "crop": [340, 324, 416, 397],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 1448,
+          "maxChannel": 150,
+          "wallKernel": 7,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 3,
+          "flatRects": [
+            {
+              "rect": [373, 344, 392, 362],
+              "reason": "The spiral stair symbol is circulation detail, not masonry."
+            },
+            {
+              "rect": [394, 355, 404.5, 380],
+              "reason": "The east stair flight and its treads are circulation detail, not masonry."
+            }
+          ],
+          "reason": "Reviewed complete Pianta cella crop from the 1912 reconstruction project. Corner and perimeter masonry become wall; stair treads, bell supports and interior symbols remain flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "bell-cell",
+          "displayLabel": "钟室",
+          "name": "钟室",
+          "kind": "room",
+          "at": [377, 360],
+          "evidence": "Anchor lies in the open centre of the explicitly captioned Pianta cella.",
+          "precision": "reviewed-1912-plan-room-anchor-not-directional-viewpoint"
+        },
+        {
+          "label": "bell-stair",
+          "displayLabel": "钟室楼梯",
+          "name": "钟室楼梯",
+          "kind": "service",
+          "at": [401, 361],
+          "evidence": "Anchor is placed on the stair treads drawn at the east side of Pianta cella.",
+          "precision": "reviewed-1912-plan-stair-symbol-anchor-not-surveyed"
+        }
+      ],
+      "expectedLabels": ["bell-cell", "bell-stair"]
+    },
+    {
+      "id": "upper-service",
+      "label": "尖顶基座层",
+      "order": 3,
+      "page": 183,
+      "crop": [345, 217, 409, 280],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 1448,
+          "maxChannel": 150,
+          "wallKernel": 7,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 3,
+          "flatRects": [
+            {
+              "rect": [366, 238, 389, 243],
+              "reason": "The north edge of the central access opening is circulation detail, not masonry; the four isolated piers remain outside this mask."
+            },
+            {
+              "rect": [366, 241, 377, 264],
+              "reason": "The access stair flight and treads are circulation detail, not masonry."
+            },
+            {
+              "rect": [390, 239, 395, 263],
+              "reason": "The east edge of the central access opening is circulation detail, not masonry."
+            },
+            {
+              "rect": [366, 263, 389, 269],
+              "reason": "The south edge of the central access opening is circulation detail, not masonry; the isolated corner piers remain outside this mask."
+            }
+          ],
+          "reason": "Reviewed complete Pianta EF crop from the 1912 reconstruction project. Perimeter and pier mass becomes wall; the access stair and central opening remain flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "upper-service",
+          "displayLabel": "尖顶基座",
+          "name": "尖顶基座层",
+          "kind": "area",
+          "at": [382, 250],
+          "evidence": "Anchor lies in the open interior of the explicitly captioned Pianta EF at the base of the cusp shown by the adjacent E-F section line.",
+          "precision": "reviewed-1912-plan-area-anchor-not-public-visitor-stop"
+        },
+        {
+          "label": "upper-stair",
+          "displayLabel": "检修楼梯",
+          "name": "尖顶基座检修楼梯",
+          "kind": "service",
+          "at": [368, 251],
+          "evidence": "Anchor is placed on the stair treads drawn beside the central opening in Pianta EF.",
+          "precision": "reviewed-1912-plan-stair-symbol-anchor-not-surveyed"
+        }
+      ],
+      "expectedLabels": ["upper-service", "upper-stair"]
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "reconstructed-ramp-sequence",
+      "label": "重建坡道序列",
+      "kind": "stairs",
+      "fromPlaceId": "ground-ramp-base-1",
+      "toPlaceId": "ramp-ramp-shaft-1",
+      "evidence": "The longitudinal section on the same project plate shows the repeated ramp sequence rising from Pianta AB through section CD; page 173 states that the tower contains thirty-six reconstructed ramps."
+    },
+    {
+      "id": "ramp-to-bell-cell",
+      "label": "坡道至钟室",
+      "kind": "stairs",
+      "fromPlaceId": "ramp-ramp-shaft-1",
+      "toPlaceId": "bell-cell-bell-stair-1",
+      "evidence": "The page 144 longitudinal section connects the repeated tower ramps to the bell-cell stair shown in Pianta cella."
+    },
+    {
+      "id": "bell-cell-to-upper-service",
+      "label": "钟室至尖顶基座",
+      "kind": "stairs",
+      "fromPlaceId": "bell-cell-bell-stair-1",
+      "toPlaceId": "upper-service-upper-stair-1",
+      "evidence": "The page 144 section and text on page 148 describe ramps from the bell cell to the terrace around the dado and another stair giving access above; Pianta cella and Pianta EF each draw the corresponding stair."
+    }
+  ],
+  "stopBindings": [
+    {"stopIndex": 0, "placeId": "ground-loggetta-1"}
+  ],
+  "guideRouteNodes": [
+    "桑索维诺小凉廊与塔基",
+    "票务入口及电梯",
+    "钟室南向潟湖视角",
+    "钟室西向主广场视角",
+    "钟室北向城市屋顶视角",
+    "塔顶加百列天使风向标"
+  ],
+  "routeBindingReview": [
+    {"stopIndex": 0, "status": "bound", "scope": "The reconstructed Loggetta footprint in Pianta AB."},
+    {"stopIndex": 1, "status": "unresolved", "reason": "The modern ticket entrance and lift cannot be assigned to the historical tower-base centre."},
+    {"stopIndex": 2, "status": "unresolved", "reason": "Bell-cell footprint retained, but its centre is not the southern viewpoint."},
+    {"stopIndex": 3, "status": "unresolved", "reason": "Bell-cell footprint retained, but its centre is not the western viewpoint."},
+    {"stopIndex": 4, "status": "unresolved", "reason": "Bell-cell footprint retained, but its centre is not the northern viewpoint."},
+    {"stopIndex": 5, "status": "unresolved", "reason": "The vane is documented in elevation, not as an occupiable point on any extracted horizontal plan."}
+  ],
+  "unresolvedRouteNodes": [
+    {"stopIndex": 1, "reason": "Modern ticket entrance, lift shaft and landings have no source-backed coordinates."},
+    {"stopIndex": 2, "reason": "Exact south-facing viewing position not established."},
+    {"stopIndex": 3, "reason": "Exact west-facing viewing position not established."},
+    {"stopIndex": 4, "reason": "Exact north-facing viewing position not established."},
+    {"stopIndex": 5, "status": "unresolved", "reason": "The vane is documented in elevation, not as an occupiable point on any extracted horizontal plan."}
+  ]
+}

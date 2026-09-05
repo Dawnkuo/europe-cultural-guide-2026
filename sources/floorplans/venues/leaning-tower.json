@@ -1,0 +1,197 @@
+{
+  "slug": "leaning-tower",
+  "file": "derived/leaning-tower-base-plan-strict.pdf",
+  "url": "https://cdn.archilovers.com/projects/07c1d012-26ec-4f7a-bfa0-c5d6d472a391.pdf",
+  "sha256": "c393192a76ad386ad08ea06fceb4b0638800ffc19449783b9358fca662436184",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [1],
+    "basis": "The isolated circular drawing was visually checked against page 3 of the museum architect's project sheet. Original source pixels for structural cores are walls and thinner original plan lines remain flat detail. The drawing has no legend proving that the outer radial ring is the guide's exterior arcade stop, so no such route binding is made."
+  },
+  "stopBindings": [
+    {"stopIndex": 2, "placeId": "entry-first-螺旋梯入口-1"},
+    {"stopIndex": 3, "placeId": "upper-钟层柱廊-1"}
+  ],
+  "verticalLinks": [
+    {
+      "id": "base-to-entry-stair",
+      "fromPlaceId": "base-内部螺旋梯-1",
+      "toPlaceId": "entry-first-螺旋梯入口-1",
+      "kind": "stairs",
+      "label": "基座至入口螺旋梯",
+      "evidence": "The current base plan and Goodyear sheet 2 independently document the same spiral stair inside the masonry annulus."
+    },
+    {
+      "id": "lower-to-upper-galleries",
+      "fromPlaceId": "galleries-1-3-第三层回廊平台-1",
+      "toPlaceId": "galleries-4-7-第四至第七层螺旋梯-1",
+      "kind": "stairs",
+      "label": "第三层至上层回廊楼梯",
+      "evidence": "The consecutive 1910 survey sheets retain the continuous measured spiral stair between the third and upper gallery platforms."
+    },
+    {
+      "id": "upper-to-bell-level",
+      "fromPlaceId": "galleries-4-7-第七层回廊平台-1",
+      "toPlaceId": "upper-钟层螺旋梯-1",
+      "kind": "stairs",
+      "label": "第七层至钟层楼梯",
+      "evidence": "Goodyear sheets 4 and 5 preserve the upper stair transition after the seventh gallery platform; the OPA 2025 publication identifies the eighth floor as the bell chamber."
+    }
+  ],
+  "review": "Completed source-pixel repair for all four Goodyear Tower plan sheets plus the architect base inset used by the model. Long original circular and masonry-boundary traces plus source-resolved member profiles are walls. Original radial tread edges, long stair arcs, dashed transition flights and sheet 5 masonry hatching are flat detail. Sheet 3 preserves 26 visually resolvable column profiles and leaves four annotation-obscured or ambiguous positions blank; sheet 5 preserves 30 independently detected profiles at their actual source shapes and radii. Upper masonry is not filled. Every semantic pixel is present in its original scan threshold; no ideal circle, standardized member, contour fill, wall closure or inferred floor slab is drawn. The two first-gallery labels on consecutive Goodyear sheets are duplicate representations of one physical level, so no vertical link is asserted between them. The architect inset's outer radial ring has no printed legend that proves the guide stop's exterior-arcade position; that place and binding are removed.",
+  "limitations": [
+    "模型包含一张现行建筑师基座图与四张1910年分组实测图；五张图是来源平面组，不代表八个实际楼层均有独立完整楼板平面。",
+    "连续两张实测图都表示第一层回廊平台，属于同一物理层的重复来源表达，故不生成跨图楼梯连接。",
+    "螺旋梯入口与钟层已有平面依据；入口浮雕、外部柱廊停点的精确地面锚点及顶部环台仍缺少可核验平面，保持未绑定。",
+    "四张实测图只保留原扫描中经分类的墙、柱、踏步与砌体排线像素；第一至第三层图有四处柱位被注记遮挡或候选不明确，保持留空；不补圆、不统一柱尺寸、不闭合墙线，也不凭空补楼板或填实砌体。",
+    "历史测绘与建筑方案不证明当前开放、安保、无障碍或单向通行状态。"
+  ],
+  "floors": [
+    {
+      "id": "base",
+      "label": "基座平面",
+      "order": 0,
+      "page": 1,
+      "crop": [0, 0, 592, 616],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "rgbRange": [[0, 0, 0], [0, 0, 0]],
+          "wallKernel": 1,
+          "includeKinds": ["wall"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Black pixels are original architect-plan source pixels retained by the three-pixel structural classifier; no inferred exterior-arcade semantics are attached."
+        },
+        {
+          "xref": 5,
+          "rgbRange": [[128, 128, 128], [128, 128, 128]],
+          "wallKernel": 1,
+          "allInkIsDetail": true,
+          "includeKinds": ["detail"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Gray pixels are thinner original source-plan lines retained flat; they are not evidence for a named exterior arcade stop."
+        }
+      ],
+      "places": [
+        {"label": "内部螺旋梯", "kind": "service", "at": [205, 225], "evidence": "Anchor placed on the explicit curved stair flight within the tower wall."},
+        {"label": "中央井筒", "kind": "area", "at": [292, 310], "evidence": "Geometric anchor at the center of the documented open core; it is not presented as a visitor room."}
+      ]
+    },
+    {
+      "id": "entry-first",
+      "label": "入口至第一层回廊（1910年实测）",
+      "order": 1,
+      "sourceId": "goodyear-entry-first-v5",
+      "page": 1,
+      "crop": [0, 0, 910, 1000],
+      "rules": [],
+      "rasterLayers": [
+        {"xref": 5, "rgbRange": [[0, 0, 0], [32, 32, 32]], "wallKernel": 1, "tolerancePixels": 0.2, "minAreaPixels": 1, "reason": "Black pixels are original scan pixels only, classified from long circular traces and repeated exterior member profiles. Glyph components are removed independently; no circle, contour, closure or replacement wall stroke is emitted."},
+        {"xref": 5, "rgbRange": [[120, 120, 120], [136, 136, 136]], "allInkIsDetail": true, "tolerancePixels": 0.2, "minAreaPixels": 1, "reason": "Gray pixels are original scan pixels only, selected by radial tread corridors, long tangential stair edges and the explicit bottom dashed transition flight. Printed station and title components are excluded rather than converted to geometry."}
+      ],
+      "places": [
+        {"label": "螺旋梯入口", "kind": "service", "at": [455, 825], "evidence": "Anchor placed at the source-printed 'Entrance to spiral stairway' opening on Goodyear sheet 2."},
+        {"label": "第一层回廊平台", "kind": "area", "at": [690, 690], "evidence": "Anchor placed in the source-printed first gallery platform sector on Goodyear sheet 2."}
+      ]
+    },
+    {
+      "id": "galleries-1-3",
+      "label": "第一至第三层回廊（1910年实测）",
+      "order": 2,
+      "sourceId": "goodyear-galleries-1-3-v6",
+      "page": 1,
+      "crop": [0, 0, 915, 1005],
+      "rules": [],
+      "rasterLayers": [
+        {"xref": 5, "rgbRange": [[0, 0, 0], [32, 32, 32]], "wallKernel": 1, "tolerancePixels": 0.2, "minAreaPixels": 1, "reason": "Black pixels are original scan pixels only: long inner-shaft and perimeter traces plus 26 source-resolved colonnade profiles at independently detected centers. Four annotation-obscured or ambiguous positions remain blank; no replacement column shape is drawn."},
+        {"xref": 5, "rgbRange": [[120, 120, 120], [136, 136, 136]], "allInkIsDetail": true, "tolerancePixels": 0.2, "minAreaPixels": 1, "reason": "Gray pixels are original scan pixels only, selected by radial tread corridors, long stair-edge traces and a reviewed narrow region around the explicit right-side dashed flight. Numeric cells, platform titles and measurement lines outside the stair region are excluded."}
+      ],
+      "places": [
+        {"label": "第一层回廊平台", "kind": "area", "at": [715, 670], "evidence": "Anchor placed in the source-printed first gallery platform sector on Goodyear sheet 3."},
+        {"label": "第二层回廊平台", "kind": "area", "at": [215, 520], "evidence": "Anchor placed in the source-printed second gallery platform sector on Goodyear sheet 3."},
+        {"label": "第三层回廊平台", "kind": "area", "at": [710, 325], "evidence": "Anchor placed in the source-printed third gallery platform sector on Goodyear sheet 3."}
+      ]
+    },
+    {
+      "id": "galleries-4-7",
+      "label": "第四至第七层回廊（1910年实测）",
+      "order": 3,
+      "sourceId": "goodyear-galleries-4-7-v4",
+      "page": 1,
+      "crop": [0, 0, 915, 985],
+      "rules": [],
+      "rasterLayers": [
+        {"xref": 5, "rgbRange": [[0, 0, 0], [32, 32, 32]], "wallKernel": 1, "tolerancePixels": 0.2, "minAreaPixels": 1, "reason": "Black pixels are source pixels only: long original inner-shaft and exterior circular traces plus actual ink selected around 30 independently detected colonnade members. No ideal circle, square, median member size or closed contour is emitted."},
+        {"xref": 5, "rgbRange": [[120, 120, 120], [136, 136, 136]], "allInkIsDetail": true, "tolerancePixels": 0.2, "minAreaPixels": 1, "reason": "Gray pixels are source pixels only, selected where detected radial tread corridors and long tangential stair edges intersect the original scan ink. Values, labels, station glyphs, axes and dimensions are excluded."}
+      ],
+      "places": [
+        {"label": "第四至第七层螺旋梯", "kind": "service", "at": [735, 515], "evidence": "Geometry anchor within the continuous measured upper spiral stair; the grouped label avoids inventing separate floor plates not supplied by the source."},
+        {"label": "第五层回廊平台", "kind": "area", "at": [500, 210], "evidence": "Anchor placed in the source-printed fifth gallery platform sector on Goodyear sheet 4."},
+        {"label": "第七层回廊平台", "kind": "area", "at": [245, 750], "evidence": "Anchor placed in the source-printed seventh gallery platform sector on Goodyear sheet 4."}
+      ]
+    },
+    {
+      "id": "upper",
+      "label": "第八层钟层与顶部楼梯（1910年实测）",
+      "order": 4,
+      "sourceId": "goodyear-upper-v7",
+      "page": 1,
+      "crop": [0, 0, 915, 1005],
+      "rules": [],
+      "rasterLayers": [
+        {"xref": 5, "rgbRange": [[0, 0, 0], [32, 32, 32]], "wallKernel": 1, "tolerancePixels": 0.2, "minAreaPixels": 1, "reason": "Black pixels are original scan pixels only: long shaft/perimeter traces, source masonry boundary strokes and 30 independently detected outer member profiles at their actual source shapes. No masonry region is filled and no wall is closed by inference."},
+        {"xref": 5, "rgbRange": [[120, 120, 120], [136, 136, 136]], "allInkIsDetail": true, "tolerancePixels": 0.2, "minAreaPixels": 1, "reason": "Gray pixels are original scan pixels only: the two measured tread sequences, the isolated small circular stair and the source's diagonal masonry hatching. Small reviewed station, title and measurement glyph components are excluded; no floor slab is supplied."}
+      ],
+      "places": [
+        {"label": "钟层柱廊", "kind": "area", "at": [455, 85], "evidence": "Cross-source anchor in the outer column ring of the final Goodyear stair sheet; the OPA 2025 publication identifies the eighth floor as the bell chamber with seven bells."},
+        {"label": "钟层螺旋梯", "kind": "service", "at": [720, 515], "evidence": "Anchor placed on the explicit upper spiral stair flight at the right of Goodyear sheet 5."},
+        {"label": "顶部小楼梯", "kind": "service", "at": [275, 735], "evidence": "Anchor placed on the explicit small circular stair in Goodyear sheet 5; it is not treated as proof of the top ring's exact visitor standing area."}
+      ]
+    }
+  ],
+  "sourceFiles": [
+    {
+      "id": "architect-project", "file": "opera-pisa-architect-project.pdf", "url": "https://cdn.archilovers.com/projects/07c1d012-26ec-4f7a-bfa0-c5d6d472a391.pdf", "sha256": "f7bfc501ea03aa032bb20168c31d20a365509ae7cd45f4bb39872af0efe6080d",
+      "sourceProjection": {"kind": "orthographic", "pages": [], "basis": "Page 3 contains the visually reviewed source drawing from which the primary one-page audit mask was derived. It is stored for provenance, while no floor is extracted directly from this supplementary record."}
+    },
+    {
+      "id": "opa-technical-2025", "file": "opapisa-tower-caa-2025.pdf", "url": "https://www.opapisa.it/wp-content/uploads/2025/03/CAA-Torre-di-Pisa.pdf", "sha256": "1bb8c25396700e8c8daa3bc89c652065d26ad8ae9e6370af41dd17cf553ded21",
+      "sourceProjection": {"kind": "orthographic", "pages": [], "basis": "The official technical publication was inspected for the eight-floor inventory and bell-chamber identification. It supplies no floor used by the model, so its illustrations are not converted into plans."}
+    },
+    {
+      "id": "goodyear-entry-first-v5", "file": "derived/leaning-tower-goodyear-entry-first-source-pixels.pdf", "url": "https://commons.wikimedia.org/wiki/File:S03_06_01_008_image_1069.jpg", "sha256": "49465336933d572a8c1fa8424a84768d4cbb4a9308f306d3b8cb2737a5fff435",
+      "sourceProjection": {"kind": "orthographic", "pages": [1], "basis": "Brooklyn Museum Goodyear measurement sheet 2 was visually checked as a direct overhead stair projection. This v5 semantic raster contains only classified original scan pixels for the concentric masonry faces, repeated exterior profiles, spiral treads and the dashed first-gallery transition; it contains no redrawn circles, closed walls or text geometry."}
+    },
+    {
+      "id": "goodyear-galleries-1-3-v6", "file": "derived/leaning-tower-goodyear-galleries-1-3-source-pixels.pdf", "url": "https://commons.wikimedia.org/wiki/File:S03_06_01_008_image_1070.jpg", "sha256": "05963c729dac961271e7fc15b40470d60ed02652c00cef6defab86dc6628e543",
+      "sourceProjection": {"kind": "orthographic", "pages": [1], "basis": "Brooklyn Museum Goodyear measurement sheet 3 was visually checked as a direct overhead stair projection. This v6 semantic raster contains only classified original scan pixels for long concentric wall traces, 26 unambiguous source-resolved column profiles, spiral treads and the explicit right-side dashed flight. Four annotation-obscured member positions are omitted rather than reconstructed."}
+    },
+    {
+      "id": "goodyear-galleries-4-7-v4", "file": "derived/leaning-tower-goodyear-galleries-4-7-v4.pdf", "url": "https://commons.wikimedia.org/wiki/File:S03_06_01_008_image_1071.jpg", "sha256": "edd18ec04ca28fe8ed4500aadf9afd057a9cafb31f2be62ad1d29dddeb80e013",
+      "sourceProjection": {"kind": "orthographic", "pages": [1], "basis": "Brooklyn Museum Goodyear measurement sheet 4 was visually checked as a direct overhead projection. This v4 semantic raster contains only classified pixels from the original scan: source circular wall traces, source column ink and source stair-edge ink. It contains no redrawn circles, standardized column shapes or filled masonry regions."}
+    },
+    {
+      "id": "goodyear-upper-v7", "file": "derived/leaning-tower-goodyear-upper-source-pixels.pdf", "url": "https://commons.wikimedia.org/wiki/File:S03_06_01_008_image_1073.jpg", "sha256": "657e340d35dbdc7fb75a972ee3ceb2f77aa20fe1c16087c7d57401fcbc54d797",
+      "sourceProjection": {"kind": "orthographic", "pages": [1], "basis": "Brooklyn Museum Goodyear measurement sheet 5 was visually checked as a direct overhead upper plan. This v7 semantic raster contains only classified original scan pixels for long wall boundaries, 30 source-detected outer profiles, two stair sequences, the small circular stair and masonry hatching. Hatch lines remain flat detail; no masonry area, missing slab or replacement geometry is filled."}
+    },
+    {
+      "id": "goodyear-original-1069", "file": "tower-goodyear-1069.jpg", "url": "https://commons.wikimedia.org/wiki/File:S03_06_01_008_image_1069.jpg", "sha256": "73b5adfd52398d447c65b4d6dc7ed6d42db40e07f271ee5b52fb9ea9e23b997e",
+      "sourceProjection": {"kind": "orthographic", "pages": [], "basis": "The complete Brooklyn Museum source scan is retained for audit of the margin crop and ink threshold; the model floor selects its deterministic one-page derived mask instead."}
+    },
+    {
+      "id": "goodyear-original-1070", "file": "tower-goodyear-1070.jpg", "url": "https://commons.wikimedia.org/wiki/File:S03_06_01_008_image_1070.jpg", "sha256": "b8de1b54a99b36656cf4929e3e7a1c8d67a7d9d4f3f902b4b9e72e0b8f796291",
+      "sourceProjection": {"kind": "orthographic", "pages": [], "basis": "The complete Brooklyn Museum source scan is retained for audit of the margin crop and ink threshold; the model floor selects its deterministic one-page derived mask instead."}
+    },
+    {
+      "id": "goodyear-original-1071", "file": "tower-goodyear-1071.jpg", "url": "https://commons.wikimedia.org/wiki/File:S03_06_01_008_image_1071.jpg", "sha256": "acd3c1475c58915201b95eb9eb6e19fef86645c2761e9a399b1fe240a0819aa6",
+      "sourceProjection": {"kind": "orthographic", "pages": [], "basis": "The complete Brooklyn Museum source scan is retained for audit of the margin crop and ink threshold; the model floor selects its deterministic one-page derived mask instead."}
+    },
+    {
+      "id": "goodyear-original-1073", "file": "tower-goodyear-1073.jpg", "url": "https://commons.wikimedia.org/wiki/File:S03_06_01_008_image_1073.jpg", "sha256": "5066b4d2ec38a1f26789f21fbc1280fe0079e8cc443570cd9c15a6b2853a93a0",
+      "sourceProjection": {"kind": "orthographic", "pages": [], "basis": "The complete Brooklyn Museum source scan is retained for audit of the margin crop and ink threshold; the model floor selects its deterministic one-page derived mask instead."}
+    }
+  ]
+}

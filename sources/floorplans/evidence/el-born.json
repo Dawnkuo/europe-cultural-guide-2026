@@ -1,0 +1,489 @@
+{
+  "source": "https://plural-21.org/wp-content/uploads/2013/09/Pres%C3%A8ncia-300-anys-i-encara-som-aqu%C3%AD4.pdf",
+  "sha256": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+  "projection": {
+    "kind": "orthographic",
+    "pages": [
+      23
+    ],
+    "basis": "Page 23 reproduces the dated September 2013 El Born Centre Cultural visitor diagram as an undistorted top-down schematic. Its vector paths separately encode the public-space fill, four named rooms, three archaeological-site panels, entrance arrows and room borders."
+  },
+  "transform": "translation only, equal x/y units; floor stacking is display-only",
+  "review": "The 8 September 2013 Presencia page was inspected at native PDF vector resolution. Its El Born Centre Cultural diagram and 1-7 legend match the search-indexed official planol-catala.pdf graphic, whose legacy official URL now redirects instead of returning PDF bytes. This pinned republication is historical visitor evidence, not a current measured architectural survey. Exact PDF path bounds provide the public-space and room faces; red outline paths remain flat detail. Printed identifiers remain semantic labels and are not included in geometry.",
+  "claims": [
+    {
+      "featureId": "street-level-public-space",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        17,
+        19,
+        21,
+        23,
+        25,
+        33,
+        39,
+        45
+      ],
+      "classification": "Composite of the exact source public-space rectangle after subtracting the seven exact white room and archaeology fills; it represents the 2013 public band only.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-public-space-floor",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        17,
+        19,
+        21,
+        23,
+        25,
+        33,
+        39,
+        45
+      ],
+      "classification": "Composite of the exact source public-space rectangle after subtracting the seven exact white room and archaeology fills; it represents the 2013 public band only.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-room-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        25
+      ],
+      "classification": "Exact white fill of printed room 1, Sala Villarroel, in the 2013 visitor diagram.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-room-1-floor",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        25
+      ],
+      "classification": "Exact white fill of printed room 1, Sala Villarroel, in the 2013 visitor diagram.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-room-2",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        21
+      ],
+      "classification": "Exact white fill of printed room 2, Sala Casanova, in the 2013 visitor diagram.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-room-2-floor",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        21
+      ],
+      "classification": "Exact white fill of printed room 2, Sala Casanova, in the 2013 visitor diagram.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-room-3",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        19
+      ],
+      "classification": "Exact white fill of printed room 3, Sala Moragues, in the 2013 visitor diagram.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-room-3-floor",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        19
+      ],
+      "classification": "Exact white fill of printed room 3, Sala Moragues, in the 2013 visitor diagram.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-room-4",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        23
+      ],
+      "classification": "Exact white fill of printed room 4, Sala Castellvi, in the 2013 visitor diagram.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-room-4-floor",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        23
+      ],
+      "classification": "Exact white fill of printed room 4, Sala Castellvi, in the 2013 visitor diagram.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "street-level-archaeology-west",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        33
+      ],
+      "classification": "Exact white source fill enclosed by the west dotted 5 archaeology boundary; selection-only, with no subsoil surface generated.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": []
+    },
+    {
+      "featureId": "street-level-archaeology-centre",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        39
+      ],
+      "classification": "Exact white source fill enclosed by the centre dotted 5 archaeology boundary; selection-only, with no subsoil surface generated.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": []
+    },
+    {
+      "featureId": "street-level-archaeology-east",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourcePaths": [
+        45
+      ],
+      "classification": "Exact white source fill enclosed by the east dotted 5 archaeology boundary; selection-only, with no subsoil surface generated.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": []
+    },
+    {
+      "featureId": "street-level-path-18-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 18,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-20-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 20,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-22-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 22,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-24-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 24,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-26-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 26,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-30-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 30,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-32-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 32,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-34-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 34,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-35-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 35,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-36-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 36,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-37-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 37,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-38-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 38,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-40-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 40,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-41-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 41,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-42-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 42,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-43-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 43,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-44-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 44,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-46-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 46,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-47-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 47,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-48-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 48,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-49-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 49,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-path-50-detail",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "path": 50,
+      "classification": "Exact reviewed PDF vectors for the visitor-diagram perimeter, four room borders, three dotted archaeology boundaries and two entrance arrows; these are schematic flat details, not extruded walls.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "street-level-1-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        296.37,
+        182.38
+      ],
+      "classification": "Printed identifier 1 at the original PDF text-box center.",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "street-level-2-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        135.69,
+        182.38
+      ],
+      "classification": "Printed identifier 2 at the original PDF text-box center.",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "street-level-3-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        135.65,
+        264.41
+      ],
+      "classification": "Printed identifier 3 at the original PDF text-box center.",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "street-level-4-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        294.29,
+        264.42
+      ],
+      "classification": "Printed identifier 4 at the original PDF text-box center.",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "street-level-5-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        144.33,
+        222.69
+      ],
+      "classification": "First printed identifier 5 at the original PDF text-box center.",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "street-level-5-2",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        216.39,
+        222.69
+      ],
+      "classification": "Second printed identifier 5 at the original PDF text-box center.",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "street-level-5-3",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        288.44,
+        222.69
+      ],
+      "classification": "Third printed identifier 5 at the original PDF text-box center.",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "street-level-6-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        207.0,
+        194.07
+      ],
+      "classification": "Printed identifier 6 at the original PDF text-box center.",
+      "precision": "printed-object-label-position"
+    },
+    {
+      "featureId": "street-level-7-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        202.11,
+        183.34
+      ],
+      "classification": "First printed identifier 7 at the original PDF text-box center.",
+      "precision": "printed-object-label-position"
+    },
+    {
+      "featureId": "street-level-7-2",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        203.54,
+        261.8
+      ],
+      "classification": "Second printed identifier 7 at the original PDF text-box center.",
+      "precision": "printed-object-label-position"
+    },
+    {
+      "featureId": "street-level-公共空间-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        215.0,
+        249.0
+      ],
+      "classification": "Geometry anchor inside the exact composite public-space face.",
+      "precision": "historical-visitor-diagram-zone"
+    },
+    {
+      "featureId": "street-level-北入口-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        215.0,
+        167.0
+      ],
+      "classification": "Anchor at the tip of the source entrance arrow; opening width is not asserted.",
+      "precision": "historical-visitor-diagram-entry"
+    },
+    {
+      "featureId": "street-level-南入口-1",
+      "sourceHash": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "page": 23,
+      "sourceAnchor": [
+        215.0,
+        280.0
+      ],
+      "classification": "Anchor at the tip of the source entrance arrow; opening width is not asserted.",
+      "precision": "historical-visitor-diagram-entry"
+    }
+  ],
+  "coverage": {
+    "floors": 1,
+    "labels": 13,
+    "features": 27
+  }
+}

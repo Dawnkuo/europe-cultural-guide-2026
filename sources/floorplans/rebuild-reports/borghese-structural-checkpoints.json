@@ -1,0 +1,1994 @@
+{
+  "B1": {
+    "crop": [
+      95,
+      430,
+      210,
+      540
+    ],
+    "method": "actual neutral source pixels inside reviewed architectural bands",
+    "wallBands": [
+      {
+        "name": "outer-top-left",
+        "rect": [
+          97.8,
+          436.7,
+          171.0,
+          439.0
+        ]
+      },
+      {
+        "name": "outer-top-right",
+        "rect": [
+          181.5,
+          436.7,
+          203.5,
+          439.0
+        ]
+      },
+      {
+        "name": "upper-left-outer",
+        "rect": [
+          97.7,
+          437.0,
+          100.1,
+          463.3
+        ]
+      },
+      {
+        "name": "upper-left-bottom",
+        "rect": [
+          98.0,
+          461.2,
+          120.0,
+          463.8
+        ]
+      },
+      {
+        "name": "upper-left-divider",
+        "rect": [
+          118.0,
+          436.8,
+          120.6,
+          463.2
+        ]
+      },
+      {
+        "name": "upper-middle-left",
+        "rect": [
+          125.8,
+          436.8,
+          128.3,
+          449.2
+        ]
+      },
+      {
+        "name": "upper-middle-divider",
+        "rect": [
+          137.5,
+          436.8,
+          140.2,
+          449.2
+        ]
+      },
+      {
+        "name": "upper-middle-bottom",
+        "rect": [
+          126.0,
+          446.6,
+          171.2,
+          449.4
+        ]
+      },
+      {
+        "name": "upper-middle-right-visible",
+        "rect": [
+          171.0,
+          449.0,
+          173.7,
+          479.3
+        ]
+      },
+      {
+        "name": "upper-right-divider",
+        "rect": [
+          191.0,
+          436.8,
+          193.5,
+          451.0
+        ]
+      },
+      {
+        "name": "upper-right-stair-base",
+        "rect": [
+          181.0,
+          446.5,
+          193.5,
+          450.2
+        ]
+      },
+      {
+        "name": "upper-right-outer",
+        "rect": [
+          201.4,
+          437.0,
+          203.8,
+          463.3
+        ]
+      },
+      {
+        "name": "upper-right-bottom",
+        "rect": [
+          181.0,
+          461.2,
+          203.4,
+          463.8
+        ]
+      },
+      {
+        "name": "lower-top",
+        "rect": [
+          108.5,
+          461.1,
+          193.0,
+          463.8
+        ]
+      },
+      {
+        "name": "lower-left-upper",
+        "rect": [
+          108.3,
+          461.5,
+          110.8,
+          491.0
+        ]
+      },
+      {
+        "name": "lower-left-lower",
+        "rect": [
+          108.3,
+          502.0,
+          110.8,
+          515.7
+        ]
+      },
+      {
+        "name": "lower-right",
+        "rect": [
+          190.8,
+          461.5,
+          193.3,
+          515.1
+        ]
+      },
+      {
+        "name": "lower-inner-left-upper",
+        "rect": [
+          127.6,
+          461.5,
+          130.4,
+          493.5
+        ]
+      },
+      {
+        "name": "lower-inner-left-beside-gift",
+        "rect": [
+          128.7,
+          493.5,
+          130.4,
+          501.8
+        ]
+      },
+      {
+        "name": "lower-inner-right-above-palette",
+        "rect": [
+          171.8,
+          461.5,
+          173.5,
+          500.5
+        ]
+      },
+      {
+        "name": "lower-middle-row",
+        "rect": [
+          108.5,
+          487.8,
+          193.0,
+          490.8
+        ]
+      },
+      {
+        "name": "lower-bottom-row",
+        "rect": [
+          108.5,
+          497.8,
+          193.0,
+          501.5
+        ]
+      },
+      {
+        "name": "lower-bottom",
+        "rect": [
+          108.5,
+          513.4,
+          193.0,
+          516.5
+        ]
+      }
+    ],
+    "fineWallBands": [
+      {
+        "name": "north-wall-over-lift",
+        "rect": [
+          97.8,
+          437.2,
+          203.5,
+          438.3
+        ]
+      },
+      {
+        "name": "lift-left-visible-boundary",
+        "rect": [
+          171.8,
+          437.0,
+          172.6,
+          449.2
+        ]
+      }
+    ],
+    "connectWallBands": [],
+    "wallExcludeRects": [
+      {
+        "name": "gift-box-icon",
+        "rect": [
+          116.1259,
+          495.732,
+          122.2485,
+          504.0135
+        ]
+      },
+      {
+        "name": "headphones-icon",
+        "rect": [
+          164.3869,
+          488.1708,
+          176.6322,
+          501.8531
+        ]
+      },
+      {
+        "name": "paint-palette-icon",
+        "rect": [
+          177.7127,
+          498.2525,
+          186.3565,
+          506.8939
+        ]
+      }
+    ],
+    "wallRestoreBands": [
+      {
+        "name": "lower-inner-right-straight-wall-core",
+        "rect": [
+          171.8,
+          461.5,
+          173.5,
+          500.5
+        ]
+      }
+    ],
+    "detailBands": [
+      {
+        "name": "upper-right-stair-treads",
+        "rect": [
+          181.0,
+          447.0,
+          202.5,
+          452.0
+        ]
+      },
+      {
+        "name": "central-column-dots",
+        "rect": [
+          126.0,
+          476.8,
+          173.0,
+          482.8
+        ]
+      },
+      {
+        "name": "central-column-circle",
+        "rect": [
+          137.0,
+          479.0,
+          162.5,
+          493.0
+        ]
+      },
+      {
+        "name": "lower-left-stair",
+        "rect": [
+          101.0,
+          504.0,
+          121.5,
+          524.8
+        ]
+      },
+      {
+        "name": "entrance-left-stair",
+        "rect": [
+          116.0,
+          514.0,
+          146.8,
+          525.0
+        ]
+      },
+      {
+        "name": "front-central-upper-stair",
+        "rect": [
+          138.5,
+          503.5,
+          162.5,
+          514.0
+        ]
+      },
+      {
+        "name": "entrance-center",
+        "rect": [
+          145.5,
+          514.0,
+          166.5,
+          530.0
+        ]
+      },
+      {
+        "name": "entrance-right-stair",
+        "rect": [
+          166.5,
+          514.0,
+          187.8,
+          525.0
+        ]
+      }
+    ],
+    "wallPixels": 4221,
+    "rectifiedWallPixels": 0,
+    "wallExcludedPixels": 296,
+    "sourceWallPixelsRestoredAfterIconMask": 74,
+    "detailPixels": 3843,
+    "allWallCheckpoints": [
+      {
+        "name": "outer-top-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          97.8,
+          436.7,
+          171.0,
+          439.0
+        ],
+        "sourcePixels": 424,
+        "retainedPixels": 424,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "outer-top-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          181.5,
+          436.7,
+          203.5,
+          439.0
+        ],
+        "sourcePixels": 132,
+        "retainedPixels": 132,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-left-outer",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          97.7,
+          437.0,
+          100.1,
+          463.3
+        ],
+        "sourcePixels": 158,
+        "retainedPixels": 158,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-left-bottom",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          98.0,
+          461.2,
+          120.0,
+          463.8
+        ],
+        "sourcePixels": 137,
+        "retainedPixels": 137,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-left-divider",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          118.0,
+          436.8,
+          120.6,
+          463.2
+        ],
+        "sourcePixels": 144,
+        "retainedPixels": 144,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-middle-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          125.8,
+          436.8,
+          128.3,
+          449.2
+        ],
+        "sourcePixels": 25,
+        "retainedPixels": 25,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-middle-divider",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          137.5,
+          436.8,
+          140.2,
+          449.2
+        ],
+        "sourcePixels": 115,
+        "retainedPixels": 115,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-middle-bottom",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          126.0,
+          446.6,
+          171.2,
+          449.4
+        ],
+        "sourcePixels": 346,
+        "retainedPixels": 346,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-middle-right-visible",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          171.0,
+          449.0,
+          173.7,
+          479.3
+        ],
+        "sourcePixels": 130,
+        "retainedPixels": 130,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-right-divider",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          191.0,
+          436.8,
+          193.5,
+          451.0
+        ],
+        "sourcePixels": 133,
+        "retainedPixels": 133,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-right-stair-base",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          181.0,
+          446.5,
+          193.5,
+          450.2
+        ],
+        "sourcePixels": 134,
+        "retainedPixels": 134,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-right-outer",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          201.4,
+          437.0,
+          203.8,
+          463.3
+        ],
+        "sourcePixels": 227,
+        "retainedPixels": 227,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-right-bottom",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          181.0,
+          461.2,
+          203.4,
+          463.8
+        ],
+        "sourcePixels": 139,
+        "retainedPixels": 139,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-top",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          108.5,
+          461.1,
+          193.0,
+          463.8
+        ],
+        "sourcePixels": 320,
+        "retainedPixels": 320,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-left-upper",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          108.3,
+          461.5,
+          110.8,
+          491.0
+        ],
+        "sourcePixels": 176,
+        "retainedPixels": 176,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-left-lower",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          108.3,
+          502.0,
+          110.8,
+          515.7
+        ],
+        "sourcePixels": 81,
+        "retainedPixels": 81,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          190.8,
+          461.5,
+          193.3,
+          515.1
+        ],
+        "sourcePixels": 319,
+        "retainedPixels": 319,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-inner-left-upper",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          127.6,
+          461.5,
+          130.4,
+          493.5
+        ],
+        "sourcePixels": 99,
+        "retainedPixels": 99,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-inner-left-beside-gift",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          128.7,
+          493.5,
+          130.4,
+          501.8
+        ],
+        "sourcePixels": 51,
+        "retainedPixels": 51,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-inner-right-above-palette",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          171.8,
+          461.5,
+          173.5,
+          500.5
+        ],
+        "sourcePixels": 204,
+        "retainedPixels": 204,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-middle-row",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          108.5,
+          487.8,
+          193.0,
+          490.8
+        ],
+        "sourcePixels": 168,
+        "retainedPixels": 168,
+        "excludedIconPixels": 26
+      },
+      {
+        "name": "lower-bottom-row",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          108.5,
+          497.8,
+          193.0,
+          501.5
+        ],
+        "sourcePixels": 175,
+        "retainedPixels": 175,
+        "excludedIconPixels": 270
+      },
+      {
+        "name": "lower-bottom",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          108.5,
+          513.4,
+          193.0,
+          516.5
+        ],
+        "sourcePixels": 704,
+        "retainedPixels": 704,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "north-wall-over-lift",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          97.8,
+          437.2,
+          203.5,
+          438.3
+        ],
+        "sourcePixels": 874,
+        "retainedPixels": 874,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lift-left-visible-boundary",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          171.8,
+          437.0,
+          172.6,
+          449.2
+        ],
+        "sourcePixels": 67,
+        "retainedPixels": 67,
+        "excludedIconPixels": 0
+      }
+    ],
+    "checkpoints": [
+      {
+        "name": "B1-central-column-dots",
+        "mode": "detail",
+        "rect": [
+          126.0,
+          476.8,
+          173.0,
+          482.8
+        ],
+        "sourcePixels": 357,
+        "retainedPixels": 357
+      },
+      {
+        "name": "B1-central-column-circle",
+        "mode": "detail",
+        "rect": [
+          137.0,
+          482.0,
+          162.5,
+          493.0
+        ],
+        "sourcePixels": 119,
+        "retainedPixels": 119
+      },
+      {
+        "name": "B1-front-central-upper-stair",
+        "mode": "detail",
+        "rect": [
+          138.5,
+          503.5,
+          162.5,
+          514.0
+        ],
+        "sourcePixels": 632,
+        "retainedPixels": 632
+      },
+      {
+        "name": "B1-front-left-stair",
+        "mode": "detail",
+        "rect": [
+          116.0,
+          514.0,
+          146.8,
+          525.0
+        ],
+        "sourcePixels": 993,
+        "retainedPixels": 993
+      },
+      {
+        "name": "B1-front-center-return",
+        "mode": "detail",
+        "rect": [
+          145.5,
+          514.0,
+          166.5,
+          530.0
+        ],
+        "sourcePixels": 977,
+        "retainedPixels": 977
+      },
+      {
+        "name": "B1-front-right-stair",
+        "mode": "detail",
+        "rect": [
+          166.5,
+          514.0,
+          187.8,
+          525.0
+        ],
+        "sourcePixels": 769,
+        "retainedPixels": 769
+      }
+    ],
+    "excludedIconChecks": [
+      {
+        "name": "gift-box-icon",
+        "rect": [
+          116.1259,
+          495.732,
+          122.2485,
+          504.0135
+        ],
+        "retainedPixels": 0
+      },
+      {
+        "name": "headphones-icon-left-of-wall-core",
+        "rect": [
+          164.3869,
+          488.1708,
+          171.75,
+          501.8531
+        ],
+        "retainedPixels": 0
+      },
+      {
+        "name": "paint-palette-icon",
+        "rect": [
+          177.7127,
+          498.2525,
+          186.3565,
+          506.8939
+        ],
+        "retainedPixels": 0
+      },
+      {
+        "name": "handbag-icon",
+        "rect": [
+          131.2525,
+          505.4537,
+          137.015,
+          511.5747
+        ],
+        "retainedPixels": 0
+      },
+      {
+        "name": "ticket-icon",
+        "rect": [
+          163.6666,
+          505.0936,
+          170.8697,
+          511.9348
+        ],
+        "retainedPixels": 0
+      }
+    ]
+  },
+  "P0": {
+    "crop": [
+      245,
+      430,
+      365,
+      540
+    ],
+    "method": "actual neutral source pixels inside reviewed architectural bands",
+    "wallBands": [
+      {
+        "name": "outer-top-left",
+        "rect": [
+          247.0,
+          436.7,
+          320.0,
+          439.0
+        ]
+      },
+      {
+        "name": "outer-top-right",
+        "rect": [
+          332.5,
+          436.7,
+          352.6,
+          439.0
+        ]
+      },
+      {
+        "name": "upper-left",
+        "rect": [
+          246.8,
+          437.0,
+          249.4,
+          463.5
+        ]
+      },
+      {
+        "name": "upper-right",
+        "rect": [
+          350.7,
+          437.0,
+          353.1,
+          463.5
+        ]
+      },
+      {
+        "name": "room-6-5",
+        "rect": [
+          267.4,
+          437.0,
+          269.8,
+          454.5
+        ]
+      },
+      {
+        "name": "room-5-4",
+        "rect": [
+          276.8,
+          437.0,
+          279.4,
+          454.5
+        ]
+      },
+      {
+        "name": "chapel-left-visible",
+        "rect": [
+          320.0,
+          447.5,
+          322.7,
+          466.5
+        ]
+      },
+      {
+        "name": "chapel-right-visible",
+        "rect": [
+          330.0,
+          448.8,
+          332.5,
+          454.5
+        ]
+      },
+      {
+        "name": "chapel-horizontal",
+        "rect": [
+          320.5,
+          448.3,
+          332.6,
+          451.3
+        ]
+      },
+      {
+        "name": "upper-bottom",
+        "rect": [
+          247.0,
+          460.8,
+          352.5,
+          464.2
+        ]
+      },
+      {
+        "name": "lower-left",
+        "rect": [
+          257.3,
+          461.5,
+          259.9,
+          515.8
+        ]
+      },
+      {
+        "name": "lower-right",
+        "rect": [
+          339.7,
+          461.5,
+          342.3,
+          515.8
+        ]
+      },
+      {
+        "name": "lower-inner-left",
+        "rect": [
+          276.8,
+          458.5,
+          279.5,
+          516.0
+        ]
+      },
+      {
+        "name": "lower-inner-right",
+        "rect": [
+          320.0,
+          458.5,
+          322.7,
+          516.0
+        ]
+      },
+      {
+        "name": "room-7-8",
+        "rect": [
+          257.5,
+          487.8,
+          279.5,
+          491.0
+        ]
+      },
+      {
+        "name": "room-2-1",
+        "rect": [
+          320.0,
+          487.8,
+          342.2,
+          491.0
+        ]
+      },
+      {
+        "name": "hall-porch",
+        "rect": [
+          277.0,
+          497.6,
+          323.0,
+          500.7
+        ]
+      },
+      {
+        "name": "lower-bottom",
+        "rect": [
+          257.5,
+          513.5,
+          342.0,
+          516.8
+        ]
+      }
+    ],
+    "fineWallBands": [
+      {
+        "name": "north-wall-over-lift",
+        "rect": [
+          247.0,
+          437.2,
+          352.6,
+          438.3
+        ]
+      },
+      {
+        "name": "lift-left-boundary",
+        "rect": [
+          320.9,
+          437.0,
+          322.0,
+          454.5
+        ]
+      },
+      {
+        "name": "lift-right-boundary",
+        "rect": [
+          330.8,
+          437.0,
+          331.9,
+          454.5
+        ]
+      },
+      {
+        "name": "lift-bottom-boundary",
+        "rect": [
+          320.7,
+          449.1,
+          332.1,
+          450.2
+        ]
+      }
+    ],
+    "connectWallBands": [
+      {
+        "name": "north-wall-jpeg-antialias-bridge",
+        "rect": [
+          247.0,
+          437.2,
+          352.6,
+          438.3
+        ]
+      }
+    ],
+    "wallExcludeRects": [],
+    "wallRestoreBands": [],
+    "detailBands": [
+      {
+        "name": "porch-threshold",
+        "rect": [
+          277.0,
+          497.6,
+          323.0,
+          500.7
+        ]
+      },
+      {
+        "name": "entrance-left-stair",
+        "rect": [
+          275.5,
+          515.0,
+          296.0,
+          524.8
+        ]
+      },
+      {
+        "name": "entrance-right-stair",
+        "rect": [
+          303.5,
+          515.0,
+          324.0,
+          524.8
+        ]
+      }
+    ],
+    "wallPixels": 4913,
+    "rectifiedWallPixels": 23,
+    "wallExcludedPixels": 0,
+    "sourceWallPixelsRestoredAfterIconMask": 0,
+    "detailPixels": 1499,
+    "allWallCheckpoints": [
+      {
+        "name": "outer-top-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          247.0,
+          436.7,
+          320.0,
+          439.0
+        ],
+        "sourcePixels": 405,
+        "retainedPixels": 405,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "outer-top-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          332.5,
+          436.7,
+          352.6,
+          439.0
+        ],
+        "sourcePixels": 118,
+        "retainedPixels": 118,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          246.8,
+          437.0,
+          249.4,
+          463.5
+        ],
+        "sourcePixels": 159,
+        "retainedPixels": 159,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          350.7,
+          437.0,
+          353.1,
+          463.5
+        ],
+        "sourcePixels": 227,
+        "retainedPixels": 227,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "room-6-5",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          267.4,
+          437.0,
+          269.8,
+          454.5
+        ],
+        "sourcePixels": 146,
+        "retainedPixels": 146,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "room-5-4",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          276.8,
+          437.0,
+          279.4,
+          454.5
+        ],
+        "sourcePixels": 103,
+        "retainedPixels": 103,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "chapel-left-visible",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          320.0,
+          447.5,
+          322.7,
+          466.5
+        ],
+        "sourcePixels": 139,
+        "retainedPixels": 139,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "chapel-right-visible",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          330.0,
+          448.8,
+          332.5,
+          454.5
+        ],
+        "sourcePixels": 49,
+        "retainedPixels": 49,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "chapel-horizontal",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          320.5,
+          448.3,
+          332.6,
+          451.3
+        ],
+        "sourcePixels": 162,
+        "retainedPixels": 162,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-bottom",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          247.0,
+          460.8,
+          352.5,
+          464.2
+        ],
+        "sourcePixels": 827,
+        "retainedPixels": 827,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          257.3,
+          461.5,
+          259.9,
+          515.8
+        ],
+        "sourcePixels": 321,
+        "retainedPixels": 321,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          339.7,
+          461.5,
+          342.3,
+          515.8
+        ],
+        "sourcePixels": 466,
+        "retainedPixels": 466,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-inner-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          276.8,
+          458.5,
+          279.5,
+          516.0
+        ],
+        "sourcePixels": 315,
+        "retainedPixels": 315,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-inner-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          320.0,
+          458.5,
+          322.7,
+          516.0
+        ],
+        "sourcePixels": 441,
+        "retainedPixels": 441,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "room-7-8",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          257.5,
+          487.8,
+          279.5,
+          491.0
+        ],
+        "sourcePixels": 150,
+        "retainedPixels": 150,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "room-2-1",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          320.0,
+          487.8,
+          342.2,
+          491.0
+        ],
+        "sourcePixels": 165,
+        "retainedPixels": 165,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "hall-porch",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          277.0,
+          497.6,
+          323.0,
+          500.7
+        ],
+        "sourcePixels": 251,
+        "retainedPixels": 251,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-bottom",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          257.5,
+          513.5,
+          342.0,
+          516.8
+        ],
+        "sourcePixels": 591,
+        "retainedPixels": 591,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "north-wall-over-lift",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          247.0,
+          437.2,
+          352.6,
+          438.3
+        ],
+        "sourcePixels": 859,
+        "retainedPixels": 859,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lift-left-boundary",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          320.9,
+          437.0,
+          322.0,
+          454.5
+        ],
+        "sourcePixels": 114,
+        "retainedPixels": 114,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lift-right-boundary",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          330.8,
+          437.0,
+          331.9,
+          454.5
+        ],
+        "sourcePixels": 144,
+        "retainedPixels": 144,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lift-bottom-boundary",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          320.7,
+          449.1,
+          332.1,
+          450.2
+        ],
+        "sourcePixels": 115,
+        "retainedPixels": 115,
+        "excludedIconPixels": 0
+      }
+    ],
+    "checkpoints": [
+      {
+        "name": "P0-lift-C-horizontal-wall",
+        "mode": "wall",
+        "rect": [
+          320.8,
+          448.6,
+          332.0,
+          451.0
+        ],
+        "sourcePixels": 137,
+        "retainedPixels": 137
+      }
+    ],
+    "excludedIconChecks": []
+  },
+  "P1": {
+    "crop": [
+      386,
+      430,
+      505,
+      540
+    ],
+    "method": "actual neutral source pixels inside reviewed architectural bands",
+    "wallBands": [
+      {
+        "name": "outer-top-left",
+        "rect": [
+          392.2,
+          436.7,
+          465.0,
+          439.0
+        ]
+      },
+      {
+        "name": "outer-top-right",
+        "rect": [
+          477.5,
+          436.7,
+          497.5,
+          439.0
+        ]
+      },
+      {
+        "name": "upper-left",
+        "rect": [
+          391.7,
+          437.0,
+          394.2,
+          463.7
+        ]
+      },
+      {
+        "name": "upper-right",
+        "rect": [
+          495.8,
+          437.0,
+          498.1,
+          463.5
+        ]
+      },
+      {
+        "name": "rooms-18-17-visible-divider",
+        "rect": [
+          402.5,
+          437.0,
+          404.8,
+          442.0
+        ]
+      },
+      {
+        "name": "rooms-17-15",
+        "rect": [
+          412.5,
+          437.0,
+          415.1,
+          454.8
+        ]
+      },
+      {
+        "name": "rooms-15-14",
+        "rect": [
+          421.8,
+          437.0,
+          424.6,
+          454.8
+        ]
+      },
+      {
+        "name": "rooms-18-17-over-16",
+        "rect": [
+          392.0,
+          448.7,
+          415.0,
+          452.0
+        ]
+      },
+      {
+        "name": "service-left-upper",
+        "rect": [
+          465.2,
+          437.0,
+          467.8,
+          442.0
+        ]
+      },
+      {
+        "name": "service-left-lower",
+        "rect": [
+          465.2,
+          445.5,
+          467.8,
+          454.8
+        ]
+      },
+      {
+        "name": "service-right",
+        "rect": [
+          474.8,
+          437.0,
+          477.5,
+          454.8
+        ]
+      },
+      {
+        "name": "rooms-13-12-visible-divider",
+        "rect": [
+          484.8,
+          437.0,
+          487.1,
+          443.0
+        ]
+      },
+      {
+        "name": "rooms-13-12-over-11",
+        "rect": [
+          475.0,
+          448.7,
+          497.5,
+          452.0
+        ]
+      },
+      {
+        "name": "upper-bottom",
+        "rect": [
+          392.0,
+          460.8,
+          497.5,
+          464.5
+        ]
+      },
+      {
+        "name": "lower-left",
+        "rect": [
+          402.3,
+          462.0,
+          405.0,
+          515.8
+        ]
+      },
+      {
+        "name": "lower-left-inner",
+        "rect": [
+          421.8,
+          458.5,
+          424.6,
+          515.8
+        ]
+      },
+      {
+        "name": "lower-right-inner",
+        "rect": [
+          465.0,
+          458.5,
+          467.8,
+          506.5
+        ]
+      },
+      {
+        "name": "lower-right",
+        "rect": [
+          484.5,
+          462.0,
+          487.2,
+          515.8
+        ]
+      },
+      {
+        "name": "room-19-20",
+        "rect": [
+          402.0,
+          488.0,
+          424.8,
+          491.2
+        ]
+      },
+      {
+        "name": "room-9-10",
+        "rect": [
+          465.0,
+          488.0,
+          487.5,
+          491.2
+        ]
+      },
+      {
+        "name": "lower-bottom",
+        "rect": [
+          402.0,
+          513.4,
+          487.5,
+          516.8
+        ]
+      }
+    ],
+    "fineWallBands": [
+      {
+        "name": "north-wall-over-lift",
+        "rect": [
+          392.2,
+          437.2,
+          497.5,
+          438.3
+        ]
+      },
+      {
+        "name": "lift-left-boundary",
+        "rect": [
+          466.0,
+          437.0,
+          466.9,
+          454.5
+        ]
+      },
+      {
+        "name": "lift-right-boundary",
+        "rect": [
+          475.7,
+          437.0,
+          476.6,
+          454.5
+        ]
+      },
+      {
+        "name": "lift-bottom-boundary",
+        "rect": [
+          465.7,
+          450.1,
+          477.0,
+          450.9
+        ]
+      }
+    ],
+    "connectWallBands": [],
+    "wallExcludeRects": [],
+    "wallRestoreBands": [],
+    "detailBands": [
+      {
+        "name": "terrace-threshold",
+        "rect": [
+          422.5,
+          497.8,
+          467.5,
+          501.0
+        ]
+      },
+      {
+        "name": "terrace-fill",
+        "rect": [
+          423.5,
+          500.0,
+          466.0,
+          514.0
+        ]
+      }
+    ],
+    "wallPixels": 4728,
+    "rectifiedWallPixels": 0,
+    "wallExcludedPixels": 0,
+    "sourceWallPixelsRestoredAfterIconMask": 0,
+    "detailPixels": 4734,
+    "allWallCheckpoints": [
+      {
+        "name": "outer-top-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          392.2,
+          436.7,
+          465.0,
+          439.0
+        ],
+        "sourcePixels": 497,
+        "retainedPixels": 497,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "outer-top-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          477.5,
+          436.7,
+          497.5,
+          439.0
+        ],
+        "sourcePixels": 122,
+        "retainedPixels": 122,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          391.7,
+          437.0,
+          394.2,
+          463.7
+        ],
+        "sourcePixels": 161,
+        "retainedPixels": 161,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          495.8,
+          437.0,
+          498.1,
+          463.5
+        ],
+        "sourcePixels": 164,
+        "retainedPixels": 164,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "rooms-18-17-visible-divider",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          402.5,
+          437.0,
+          404.8,
+          442.0
+        ],
+        "sourcePixels": 29,
+        "retainedPixels": 29,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "rooms-17-15",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          412.5,
+          437.0,
+          415.1,
+          454.8
+        ],
+        "sourcePixels": 111,
+        "retainedPixels": 111,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "rooms-15-14",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          421.8,
+          437.0,
+          424.6,
+          454.8
+        ],
+        "sourcePixels": 102,
+        "retainedPixels": 102,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "rooms-18-17-over-16",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          392.0,
+          448.7,
+          415.0,
+          452.0
+        ],
+        "sourcePixels": 167,
+        "retainedPixels": 167,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "service-left-upper",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          465.2,
+          437.0,
+          467.8,
+          442.0
+        ],
+        "sourcePixels": 33,
+        "retainedPixels": 33,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "service-left-lower",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          465.2,
+          445.5,
+          467.8,
+          454.8
+        ],
+        "sourcePixels": 46,
+        "retainedPixels": 46,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "service-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          474.8,
+          437.0,
+          477.5,
+          454.8
+        ],
+        "sourcePixels": 119,
+        "retainedPixels": 119,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "rooms-13-12-visible-divider",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          484.8,
+          437.0,
+          487.1,
+          443.0
+        ],
+        "sourcePixels": 52,
+        "retainedPixels": 52,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "rooms-13-12-over-11",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          475.0,
+          448.7,
+          497.5,
+          452.0
+        ],
+        "sourcePixels": 180,
+        "retainedPixels": 180,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "upper-bottom",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          392.0,
+          460.8,
+          497.5,
+          464.5
+        ],
+        "sourcePixels": 898,
+        "retainedPixels": 898,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-left",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          402.3,
+          462.0,
+          405.0,
+          515.8
+        ],
+        "sourcePixels": 320,
+        "retainedPixels": 320,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-left-inner",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          421.8,
+          458.5,
+          424.6,
+          515.8
+        ],
+        "sourcePixels": 369,
+        "retainedPixels": 369,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-right-inner",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          465.0,
+          458.5,
+          467.8,
+          506.5
+        ],
+        "sourcePixels": 291,
+        "retainedPixels": 291,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-right",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          484.5,
+          462.0,
+          487.2,
+          515.8
+        ],
+        "sourcePixels": 462,
+        "retainedPixels": 462,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "room-19-20",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          402.0,
+          488.0,
+          424.8,
+          491.2
+        ],
+        "sourcePixels": 80,
+        "retainedPixels": 80,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "room-9-10",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          465.0,
+          488.0,
+          487.5,
+          491.2
+        ],
+        "sourcePixels": 82,
+        "retainedPixels": 82,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lower-bottom",
+        "sourceClass": "dark-neutral",
+        "rect": [
+          402.0,
+          513.4,
+          487.5,
+          516.8
+        ],
+        "sourcePixels": 727,
+        "retainedPixels": 727,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "north-wall-over-lift",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          392.2,
+          437.2,
+          497.5,
+          438.3
+        ],
+        "sourcePixels": 629,
+        "retainedPixels": 629,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lift-left-boundary",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          466.0,
+          437.0,
+          466.9,
+          454.5
+        ],
+        "sourcePixels": 82,
+        "retainedPixels": 82,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lift-right-boundary",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          475.7,
+          437.0,
+          476.6,
+          454.5
+        ],
+        "sourcePixels": 141,
+        "retainedPixels": 141,
+        "excludedIconPixels": 0
+      },
+      {
+        "name": "lift-bottom-boundary",
+        "sourceClass": "fine-neutral",
+        "rect": [
+          465.7,
+          450.1,
+          477.0,
+          450.9
+        ],
+        "sourcePixels": 32,
+        "retainedPixels": 32,
+        "excludedIconPixels": 0
+      }
+    ],
+    "checkpoints": [
+      {
+        "name": "P1-rooms-18-17-visible-divider",
+        "mode": "wall",
+        "rect": [
+          402.6,
+          437.1,
+          404.7,
+          441.6
+        ],
+        "sourcePixels": 27,
+        "retainedPixels": 27
+      },
+      {
+        "name": "P1-rooms-12-13-over-11-horizontal-wall",
+        "mode": "wall",
+        "rect": [
+          475.5,
+          448.9,
+          497.3,
+          451.7
+        ],
+        "sourcePixels": 162,
+        "retainedPixels": 162
+      }
+    ],
+    "excludedIconChecks": []
+  }
+}

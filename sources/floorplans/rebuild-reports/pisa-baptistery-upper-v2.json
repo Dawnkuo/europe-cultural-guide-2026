@@ -1,0 +1,109 @@
+{
+  "group": "pisa-baptistery-upper-v2",
+  "status": "ready-source-exact",
+  "supersedes": "baptistery-upper-v1; v1 was not installed",
+  "root": "/tmp/europe-map-rebuild-pisa/increments/baptistery-upper-v2-stable",
+  "coverage": {
+    "floors": 2,
+    "places": 4,
+    "features": 1449,
+    "boundStops": [0, 1, 2, 3],
+    "unresolvedStops": [],
+    "sourceSpaces": 0
+  },
+  "upperClassification": {
+    "sourceInkPixels": 35261,
+    "retainedArchitecturalPixels": 35253,
+    "wallPixels": 26481,
+    "detailPixels": 8772,
+    "excludedGlyphOrNoisePixels": 8,
+    "outsideSourcePixels": 0,
+    "unclassifiedRetainedPixels": 0,
+    "sourceDetectedSupports": 12,
+    "wallScope": "Original filled outer masonry plus actual source ink in the twelve detected support-symbol windows.",
+    "detailScope": "Paired radial arch/vault strokes, inner railing and circular traces, and lower-level font/pulpit references.",
+    "radialArchVaultWallPromotion": false
+  },
+  "surfaceBoundaryAudit": {
+    "method": "Four-connected white-background components at the retained source-ink threshold; no closure, dilation or ideal-circle mask.",
+    "backgroundComponents": 109,
+    "seedCoordinates": {
+      "outside": [0, 0],
+      "gallery": [265, 140],
+      "centralVoid": [265, 200]
+    },
+    "seedComponentIds": {
+      "outside": 1,
+      "gallery": 1,
+      "centralVoid": 1
+    },
+    "sourceSpaceEmitted": false,
+    "reason": "The gallery, central void and exterior remain one white-background component when only source ink is used as the boundary. Source alpha provides an outer disc but no independently encoded central void. An annular floor would therefore require invented closure geometry."
+  },
+  "install": [
+    {
+      "file": "sources/floorplans/derived/pisa-baptistery-ground-plan.pdf",
+      "sha256": "7029712a259f51f4e7a83f1e7c532d00b4c1bc08eeaab37910bf5c4cf7ade686"
+    },
+    {
+      "file": "sources/floorplans/derived/pisa-baptistery-hbim-figure6.pdf",
+      "sha256": "f6fb5ceac3c01f7158d8129dec1f416ab78794f0151ed2aea0032eb3f959b414"
+    },
+    {
+      "file": "sources/floorplans/pisa-baptistery-vr-first-floor.png",
+      "sha256": "b08ccd0c7b6388b351f6b416fc35bde1333821ade39d0f31621ef2ba5fde4092"
+    },
+    {
+      "file": "sources/floorplans/derived/pisa-baptistery-first-floor-source-pixels-v2.pdf",
+      "sha256": "8a5844cf630c808c4edebfad4f0e4e8c88fcf90c87aede37d87a58496e6f7c84"
+    },
+    {
+      "file": "sources/floorplans/venues/pisa-baptistery.json",
+      "sha256": "be5e71e3e220ae10e65b285b7e3cbc23d321af55335ea00d4130a8b8da40dfc3"
+    },
+    {
+      "file": "sources/floorplans/evidence/pisa-baptistery.json",
+      "sha256": "24169e6a2b3118793bba4ef6ba47c6dd9905d38b305381eeb880374692a4c039"
+    },
+    {
+      "file": "app/data/architectural-plans/pisa-baptistery.json",
+      "sha256": "2956082fa16499a25f1c77723f936f26799d85d8feb387f8e4905463db3d6a76"
+    }
+  ],
+  "reproduction": [
+    {
+      "file": "scripts/build-architectural-plans.py",
+      "sha256": "7f01ed5535871ea9deaef591087a1f97b9a8b638bb40c9cf89900cbd21d61daa"
+    },
+    {
+      "file": "scripts/architectural_preview.py",
+      "sha256": "431ee1dc5075abf3e405a89a84e1123d0c12eec0a71d1e37ce4f3b3ed381bfc0"
+    },
+    {
+      "file": "scripts/rebuild-pisa-baptistery-upper.py",
+      "sha256": "23907afa09e8944d19e3686f055720e3c859ae9c43f3935c985f969a1be76f8c"
+    }
+  ],
+  "qa": [
+    {
+      "file": "qa/baptistery-upper-v2/pisa-baptistery-first-floor-contact-v2.png",
+      "sha256": "1d934a992982fd7bf75da328c61f7dbb332d14adfff31316f8b83e19d7e064a3"
+    },
+    {
+      "file": "qa/baptistery-upper-v2/pisa-baptistery-first-floor-audit-v2.json",
+      "sha256": "300e133ae0860c68dde608345b22f2eefcfc8b3581597ef0741985601efa23f3"
+    }
+  ],
+  "validation": {
+    "sourcePixelPartition": "pass",
+    "outsideSourcePixels": 0,
+    "radialTracesFlat": "pass",
+    "sourceSpaceTopology": "pass-no-source-space",
+    "polygonValidity": "pass",
+    "runtimePlaceKinds": "pass",
+    "deterministicDerivedPdf": true,
+    "deterministicModel": true,
+    "visualContactReview": "pass",
+    "sharedRepositoryTests": "not run; package remains isolated from MAIN"
+  }
+}

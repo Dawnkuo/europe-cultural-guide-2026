@@ -1,0 +1,80 @@
+{
+  "snapshot": "/tmp/europe-map-rebuild-north-incremental-2026-09-05-cologne-south-tower-access-2009-v2",
+  "status": "科隆大教堂主层与2009年南塔地下入口层可交浏览器复核；本版修复A-A剖切注记宽遮罩造成的真实墙断口",
+  "stableSlug": "cologne-cathedral",
+  "supersedesSnapshot": "/tmp/europe-map-rebuild-north-incremental-2026-09-05-cologne-south-tower-access-2009-v1",
+  "generator": {
+    "file": "scripts/build-architectural-plans.py",
+    "sha256": "7f01ed5535871ea9deaef591087a1f97b9a8b638bb40c9cf89900cbd21d61daa",
+    "copiedFromMainBeforeRegeneration": true,
+    "previewHelper": {
+      "file": "scripts/architectural_preview.py",
+      "sha256": "431ee1dc5075abf3e405a89a84e1123d0c12eec0a71d1e37ce4f3b3ed381bfc0",
+      "method": "孔洞通过透明遮罩合成，不以白色擦除先前几何。"
+    }
+  },
+  "modelCoverage": {
+    "floors": ["south-tower-access-2009", "nave"],
+    "places": 12,
+    "features": 5848,
+    "featureKindsByFloor": {
+      "south-tower-access-2009": {"wall": 18, "detail": 428},
+      "nave": {"wall": 166, "detail": 5236}
+    },
+    "boundStopIndices": [0, 1, 3, 5],
+    "unresolvedStopIndices": [2, 4]
+  },
+  "southTowerAccessSource": {
+    "publicationPage": "https://german-architects.com/de/architecture-news/building-of-the-week/turmchen-zum-turm",
+    "sourceImageUrl": "https://german-architects.com/images/CmsPageElementImage/76/41/00/5903b748d89043c6adb2346367d6201c/5903b748d89043c6adb2346367d6201c.c4b964ca.jpg",
+    "rawImage": {
+      "file": "sources/floorplans/cologne-south-tower-access-plan-2009.jpg",
+      "sha256": "bfcf3a34027b10e1492f61186f094bc1d724d6841dba79b4b903ba04cfc77657",
+      "dimensions": [450, 459]
+    },
+    "reviewWrapper": {
+      "file": "sources/floorplans/cologne-south-tower-access-plan-2009-review.pdf",
+      "sha256": "7a57a71c2b3888365117b1d6aa70e3e4ca51e201c0312e4f61818fdd28ad14bb",
+      "method": "原始JPEG以原生像素和同尺寸页面嵌入；不重采样、不校正、不重绘。"
+    }
+  },
+  "rasterCorrection": {
+    "rejectedV1Rule": "excludeRects [278,0,290,431]以12像素宽整带删除A-A剖切注记，同时截断其相交的真实墙像素。",
+    "v2Method": "同一原图拆为墙与细节两条审阅通道。墙通道保留粗黑和深红构造墨迹，只在实际文字行及楼梯、电梯、门扇区域阻止抬升；细节通道只保留中性细墨迹，并以4像素窄分段剔除A-A竖线。",
+    "preservedSourceBands": [
+      {"y": [24, 27], "role": "上部边界与剖切线交叉带"},
+      {"y": [49, 52], "role": "塔二标注附近真实折墙交叉带"},
+      {"y": [276, 281], "role": "南塔基础下缘"},
+      {"y": [387, 392], "role": "地下庭院南侧墙"},
+      {"y": [403, 408], "role": "南侧重墙"}
+    ],
+    "modelCheckpoints": [
+      {"sourcePoint": [284, 276.5], "role": "南塔基础下缘", "distanceToAnyModelInk": 0},
+      {"sourcePoint": [284, 390], "role": "地下庭院南侧墙", "distanceToWall": 0},
+      {"sourcePoint": [284, 406], "role": "南侧重墙", "distanceToWall": 0},
+      {"sourcePoint": [284, 100], "role": "A-A开放段", "distanceToAnyModelInk": 16.763},
+      {"sourcePoint": [284, 200], "role": "A-A开放段", "distanceToAnyModelInk": 8},
+      {"sourcePoint": [284, 350], "role": "A-A开放段", "distanceToAnyModelInk": 10}
+    ],
+    "southTowerAccessAreas": {"wall": 9610, "detail": 5084}
+  },
+  "validation": {
+    "validateArchitecturalPlanErrors": 0,
+    "serializedShapely": "5848/5848个polygon有效、非空、面积为正",
+    "duplicateFeatureIds": 0,
+    "sourceDigestChecks": "primary与south-tower-access-2009两项sourceDigests均和固定文件一致"
+  },
+  "visualReview": [
+    "work/cologne-tower-access-review/v2-model/source-model-overlay-transparent-holes-4x.png",
+    "work/cologne-tower-access-review/v2-model/model-transparent-holes-4x.png",
+    "work/cologne-tower-access-review/exclusion-rects-source-4x.png",
+    "work/cologne-tower-access-review/aa-mid-10x-grid.png",
+    "work/cologne-tower-access-review/aa-bottom-10x-grid.png"
+  ],
+  "remainingScope": [
+    "停靠点2 Gero十字架具名位置仍未绑定。",
+    "珍宝馆两层、六展室、楼梯、电梯和门洞仍缺公开正投影平面。",
+    "南塔约75米钟架层、金属梯连接和约100米观景平台仍缺公开正投影平面。"
+  ],
+  "integrationNote": "以本包v2替换v1配置、模型和证据，并安装两项必需PDF；原JPEG和复核图用于QA。不要安装Riss D或推测钟架、观景平台和珍宝馆几何。"
+}

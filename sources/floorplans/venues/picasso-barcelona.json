@@ -1,38 +1,4117 @@
 {
-  "slug":"picasso-barcelona","file":"picasso-barcelona-candidate-1.pdf",
-  "sourceProjection":{"kind":"orthographic","pages":[2,3],"basis":"Both visitor floor diagrams were visually reviewed as overhead plans of the connected palaces. Courtyard context and stair symbols are classified separately; there is no perspective transform."},
-  "sha256":"14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
-  "url":"https://museupicassobcn.cat/sites/default/files/inline-images/Museu/planol/PLANOL_EN.pdf",
-  "review":"Official orthographic visitor diagrams p2 and p3 visually checked. Retain actual plan simplification, not surveying precision. Room labels 1-16 were visually transcribed from the rendered plan because the page text extraction omitted them; the PDF encoding mechanism was not assumed. B1/B2 are two actual ceramic-area labels. Separate source wall polygons from arrows, stair treads, pictograms and text. First-floor pale courtyard context fills 37/38 are omitted as floor slabs, while their evidenced stair lines remain. No artwork wall position inferred from room-label center.",
-  "limitations":["两层按馆内导览平面绘制，保留全部展厅编号及底层服务区。", "平面属于展馆导览比例，不是建筑测绘；展览名称和开放范围可能变化。", "楼梯保留原图位置与踏步，跨层连接尚未作为可导航路径发布。"],
-  "floors":[
-    {"id":"L0","label":"底层 · 庭院与服务","order":0,"page":2,"crop":[181,324,1079,1699],
-     "places":[{"label":"寄存","kind":"service","at":[310,702]},{"label":"售票","kind":"service","at":[285,968]},{"label":"书店","kind":"service","at":[590,552]},{"label":"Meca","at":[300,1190]},{"label":"Mauri","at":[301,1308]},{"label":"礼堂","at":[906,1000]},{"label":"集合","kind":"service","at":[578,741]}],
-     "expectedLabels":["寄存","售票","书店","Meca","Mauri","礼堂","集合"],
-     "rules":[
-      {"ids":[2,3,4,5,6,7,8,13,14,30,31,98],"channel":"fill","kind":"surface","tone":"neutral","reason":"printed occupied floor areas, excluding street strip 1"},
-      {"ids":[0,9,10,11,12,39,47,48,49,67],"channel":"fill","kind":"surface","tone":"gold","reason":"visitor service and staircase areas"},
-      {"ranges":[[17,29],[173,208]],"exclude":[173,194,195,196],"channel":"fill","kind":"wall","reason":"reviewed source wall polygons and openings"},
-      {"ids":[35,38,96,100],"channel":"fill","kind":"wall","reason":"remaining perimeter and room walls"},
-      {"ranges":[[50,60],[63,66],[68,79],[81,94],[194,196]],"channel":"fill","kind":"detail","reason":"stair tread and balustrade polygons are flat detail"},
-      {"ids":[32,33,36,37],"kind":"detail","reason":"dashed source links across open circulation spaces, not solid walls"}
-     ]},
-    {"id":"L1","label":"一层 · 藏品与临展","order":1,"page":3,"crop":[181,263,976,1800],
-     "places":[{"label":"1","at":[605,1241]},{"label":"2","at":[752,1213]},{"label":"3","at":[906,1114]},{"label":"4","at":[897,878]},{"label":"5","at":[769,915]},{"label":"6","at":[719,1022]},{"label":"7","at":[602,1022]},{"label":"8","at":[618,840]},{"label":"9","at":[763,804]},{"label":"10","at":[763,693]},{"label":"11","at":[885,694]},{"label":"12","at":[355,644]},{"label":"13","at":[234,483]},{"label":"14","at":[584,389]},{"label":"15","at":[682,392]},{"label":"16","at":[669,564]},{"label":"B1","at":[382,938]},{"label":"B2","at":[382,742]}],
-     "expectedLabels":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","B1","B2"],
-     "sourceSpaces":[
-       {"id":"room-12","label":"12号展厅","placeId":"L1-12-1","sourcePaths":[119],"evidence":"p3: the bounded cyan gallery 12 uses its exact source floor polygon, without changing the two doorway gaps."},
-       {"id":"room-13","label":"13号展厅","placeId":"L1-13-1","sourcePaths":[34],"evidence":"p3: the long green gallery 13 is the complete original footprint including the connected northern end, not a rectangle around its number."}
-     ],
-     "rules":[
-      {"ids":[0,34,120],"channel":"fill","kind":"surface","tone":"green","reason":"printed gallery and temporary-exhibition floor areas"},
-      {"ids":[33],"channel":"fill","kind":"surface","tone":"gold","reason":"rooms 1-7, retaining doorway boundaries"},
-      {"ids":[35,41],"channel":"fill","kind":"surface","tone":"neutral","reason":"temporary-exhibition and lift spaces; pale courtyard context fills 37/38 are not upper-floor slabs"},
-      {"ids":[36],"channel":"fill","kind":"surface","tone":"rose","reason":"ceramics B1/B2 footprint"},
-      {"ids":[119],"channel":"fill","kind":"surface","tone":"teal","reason":"room 12 floor"},
-      {"ids":[121],"channel":"fill","kind":"surface","tone":"blue","reason":"rooms 8-11 floor"},
-      {"ids":[3,5,7,8,10,12,13,50,52,53,54,56,57,58,59,61,64,65,66,67,68,69,70,71,72,73,77,84,85,86,87,88,89,91,92,96,97,99,128,129,130,131,132,136,137,138,139,145,146,147,148,150,151,152,153,154,155,163,164,165,166,168,169,170,171,172,222,223,224],"channel":"fill","kind":"wall","reason":"reviewed room/perimeter partitions, excluding arrows and service glyphs"},
-      {"ranges":[[18,32],[173,212]],"channel":"fill","kind":"detail","reason":"staircases at original plan positions; no stairs inferred from hatching"}
-     ]}
+  "slug": "picasso-barcelona",
+  "file": "picasso-barcelona-candidate-1.pdf",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [
+      2,
+      3
+    ],
+    "basis": "Both visitor floor diagrams were visually reviewed as overhead plans of the connected palaces. Courtyard context and stair symbols are classified separately; there is no perspective transform."
+  },
+  "sha256": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+  "url": "https://museupicassobcn.cat/sites/default/files/inline-images/Museu/planol/PLANOL_EN.pdf",
+  "sourceFiles": [
+    {
+      "id": "collection-key",
+      "file": "picasso-room-key.pdf",
+      "url": "https://museupicassobcn.cat/sites/default/files/inline-images/Museu/planol/PLANOL_ENG1.pdf",
+      "sha256": "ede0ae4e4a1e9798c3ecfb32479b149bc55952ded2158dc28ab5d6974420dfdd",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "Supplementary collection key on page 4 only: rooms 1-7 early years, 8-11 Blue period and Barcelona 1917, 13-16 Las Meninas. No geometry extracted; ceramic A1-A4 labels in this edition are not transplanted onto the different primary B1/B2 diagram."
+      }
+    }
+  ],
+  "stopBindings": [
+    {
+      "stopIndex": 0,
+      "placeId": "L0-Meca宫院-1"
+    },
+    {
+      "stopIndex": 0,
+      "placeId": "L0-Meca楼梯-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L1-1-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L1-2-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L1-3-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L1-4-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L1-5-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L1-6-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "L1-7-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-8-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-9-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-10-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "L1-11-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "L1-8-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "L1-9-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "L1-10-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "L1-11-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "L1-13-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "L1-14-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "L1-15-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "L1-16-1"
+    },
+    {
+      "stopIndex": 5,
+      "placeId": "L1-B1-1"
+    },
+    {
+      "stopIndex": 5,
+      "placeId": "L1-B2-1"
+    }
+  ],
+  "verticalLinks": [
+    {
+      "id": "meca-stairs",
+      "label": "Meca宫楼梯 · 底层至藏品层",
+      "kind": "stairs",
+      "fromPlaceId": "L0-Meca楼梯-1",
+      "toPlaceId": "L1-Meca楼梯-1",
+      "evidence": "Primary official floor diagrams p2/p3 depict the corresponding Meca external staircase beside the E-TICKET and collection entrance respectively; no shaft dimensions or walking path are inferred."
+    },
+    {
+      "id": "aguilar-stairs",
+      "label": "Aguilar宫楼梯 · 底层至藏品层",
+      "kind": "stairs",
+      "fromPlaceId": "L0-Aguilar楼梯-1",
+      "toPlaceId": "L1-Aguilar楼梯-1",
+      "evidence": "The north courtyard external staircase appears on both primary p2/p3, beside Aguilar reception below and galleries12/13 above. Connectivity only; no fabricated stair trajectory."
+    },
+    {
+      "id": "finestres-stairs",
+      "label": "Finestres宫楼梯 · 底层至临展层",
+      "kind": "stairs",
+      "fromPlaceId": "L0-Finestres楼梯-1",
+      "toPlaceId": "L1-Finestres楼梯-1",
+      "evidence": "The south Finestres courtyard staircase appears on both primary p2/p3, entering the temporary exhibition wing upstairs."
+    },
+    {
+      "id": "collection-lift",
+      "label": "藏品区电梯",
+      "kind": "elevator",
+      "fromPlaceId": "L0-藏品区电梯-1",
+      "toPlaceId": "L1-藏品区电梯-1",
+      "evidence": "Matching accessible lift symbols inside the north service core, opposite the Meca courtyard below and between galleries1/7 above, in primary p2/p3."
+    },
+    {
+      "id": "temporary-lift",
+      "label": "临展区电梯",
+      "kind": "elevator",
+      "fromPlaceId": "L0-临展区电梯-1",
+      "toPlaceId": "L1-临展区电梯-1",
+      "evidence": "Matching accessible lift symbols in the southern temporary-exhibition service core in primary p2/p3; does not infer access permissions or additional levels."
+    }
+  ],
+  "review": "Official orthographic visitor diagrams p2 and p3 visually checked. Retain actual plan simplification, not surveying precision. Room labels 1-16 were visually transcribed from the rendered plan because the page text extraction omitted them; the PDF encoding mechanism was not assumed. B1/B2 are two actual ceramic-area labels. Separate source wall polygons from arrows, stair treads, pictograms and text. First-floor pale courtyard context fills 37/38 are omitted as floor slabs, while their evidenced stair lines remain. No artwork wall position inferred from room-label center.",
+  "internalNotes": [
+    "两层按馆内导览平面绘制，保留全部展厅编号及底层服务区。",
+    "平面属于展馆导览比例，不是建筑测绘；展览名称和开放范围可能变化。",
+    "Meca宫楼梯在两层原图中均有明确位置；跨层连线只表达楼层连接，不代表逐步导航。",
+    "蓝色时期与1917年作品合列于8至11厅，不推测它们之间的逐室分界；作品位置以展厅为粒度。",
+    "陶瓷按本平面标注的B1、B2定位，不混用另一版本的A1至A4编号。"
+  ],
+  "limitations": [
+    "包含两层展厅及底层服务区；Meca 宫楼梯连接两层。",
+    "蓝色时期与 1917 年作品共用 8–11 厅，陶瓷位于 B1、B2；定位粒度为展厅，不代表单件作品墙位。"
+  ],
+  "floors": [
+    {
+      "id": "L0",
+      "label": "底层 · 庭院与服务",
+      "order": 0,
+      "page": 2,
+      "crop": [
+        181,
+        324,
+        1079,
+        1699
+      ],
+      "places": [
+        {
+          "label": "寄存",
+          "kind": "service",
+          "at": [
+            310,
+            702
+          ]
+        },
+        {
+          "label": "售票",
+          "kind": "service",
+          "at": [
+            285,
+            968
+          ]
+        },
+        {
+          "label": "书店",
+          "kind": "service",
+          "at": [
+            590,
+            552
+          ]
+        },
+        {
+          "label": "Meca",
+          "at": [
+            300,
+            1190
+          ]
+        },
+        {
+          "label": "Mauri",
+          "at": [
+            301,
+            1308
+          ]
+        },
+        {
+          "label": "礼堂",
+          "at": [
+            906,
+            1000
+          ]
+        },
+        {
+          "label": "集合",
+          "kind": "service",
+          "at": [
+            578,
+            741
+          ]
+        }
+      ],
+      "expectedLabels": [
+        "寄存",
+        "售票",
+        "书店",
+        "Meca",
+        "Mauri",
+        "礼堂",
+        "集合"
+      ],
+      "servicePlaces": [
+        {
+          "label": "Meca宫院",
+          "name": "Meca宫庭院",
+          "kind": "area",
+          "at": [
+            323,
+            1044
+          ],
+          "evidence": "Primary p2 labelled Palau Meca court between ticket office and original external stair."
+        },
+        {
+          "label": "Meca楼梯",
+          "kind": "service",
+          "at": [
+            336,
+            1136
+          ],
+          "evidence": "Primary p2 exact stair-flight footprints47/67 next to E-TICKET in Palau Meca."
+        },
+        {
+          "label": "Aguilar楼梯",
+          "kind": "service",
+          "at": [
+            330,
+            560
+          ],
+          "evidence": "Primary p2 north external stair flight, below Palau Aguilar label."
+        },
+        {
+          "label": "Finestres楼梯",
+          "kind": "service",
+          "at": [
+            355,
+            1580
+          ],
+          "evidence": "Primary p2 south external stair landing, below Palau Finestres label."
+        },
+        {
+          "label": "团队接待",
+          "kind": "service",
+          "at": [
+            290,
+            889
+          ],
+          "evidence": "Primary p2 GROUPS-labelled room, directly north of ticket office."
+        },
+        {
+          "label": "女卫生间",
+          "kind": "service",
+          "at": [
+            586,
+            888
+          ],
+          "evidence": "Primary p2 female pictogram inside north service room; room-level position, not doorway."
+        },
+        {
+          "label": "男卫生间",
+          "kind": "service",
+          "at": [
+            587,
+            971
+          ],
+          "evidence": "Primary p2 male pictogram inside the adjacent service room."
+        },
+        {
+          "label": "无障碍卫生间",
+          "kind": "service",
+          "at": [
+            585,
+            1250
+          ],
+          "evidence": "Primary p2 combined male/female/wheelchair pictograms in the south service room."
+        },
+        {
+          "label": "藏品区电梯",
+          "kind": "service",
+          "at": [
+            606,
+            1095
+          ],
+          "evidence": "Primary p2 north yellow lift room with wheelchair and vertical arrows."
+        },
+        {
+          "label": "临展区电梯",
+          "kind": "service",
+          "at": [
+            608,
+            1325
+          ],
+          "evidence": "Primary p2 south lift pictogram above the interior stair."
+        },
+        {
+          "label": "南侧内楼梯",
+          "kind": "service",
+          "at": [
+            610,
+            1380
+          ],
+          "evidence": "Primary p2 short interior stair treads south of accessible lift; destination not inferred."
+        },
+        {
+          "label": "办公室",
+          "kind": "service",
+          "at": [
+            302,
+            382
+          ],
+          "evidence": "Primary p2 OFFICES AND RECEPTION room; restricted-use marking does not erase the room."
+        },
+        {
+          "label": "急救设备",
+          "kind": "service",
+          "at": [
+            455,
+            369
+          ],
+          "evidence": "Primary p2 heart/defibrillator symbol in the north passage; equipment marker, not a room."
+        }
+      ],
+      "rules": [
+        {
+          "ids": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            13,
+            14,
+            30,
+            31,
+            98
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "printed occupied floor areas, excluding street strip 1"
+        },
+        {
+          "ids": [
+            0,
+            9,
+            10,
+            11,
+            12,
+            39,
+            47,
+            48,
+            49,
+            67
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "visitor service and staircase areas"
+        },
+        {
+          "ranges": [
+            [
+              17,
+              29
+            ],
+            [
+              173,
+              208
+            ]
+          ],
+          "exclude": [
+            173,
+            194,
+            195,
+            196
+          ],
+          "channel": "fill",
+          "kind": "wall",
+          "reason": "reviewed source wall polygons and openings"
+        },
+        {
+          "ids": [
+            35,
+            38,
+            96,
+            100
+          ],
+          "channel": "fill",
+          "kind": "wall",
+          "reason": "remaining perimeter and room walls"
+        },
+        {
+          "ranges": [
+            [
+              50,
+              60
+            ],
+            [
+              63,
+              66
+            ],
+            [
+              68,
+              79
+            ],
+            [
+              81,
+              94
+            ],
+            [
+              194,
+              196
+            ]
+          ],
+          "channel": "fill",
+          "kind": "detail",
+          "reason": "stair tread and balustrade polygons are flat detail"
+        },
+        {
+          "ids": [
+            32,
+            33,
+            36,
+            37
+          ],
+          "kind": "detail",
+          "reason": "dashed source links across open circulation spaces, not solid walls"
+        }
+      ],
+      "sourceSpaces": [
+        {
+          "id": "meca-source-stair",
+          "label": "Meca宫楼梯",
+          "placeId": "L0-Meca楼梯-1",
+          "sourcePaths": [
+            47,
+            67
+          ],
+          "evidence": "Exact yellow original Meca stair-flight and landing polygons in the official ground plan. Does not fabricate a polygon for the unbounded white circulation court."
+        }
+      ]
+    },
+    {
+      "id": "L1",
+      "label": "一层 · 藏品与临展",
+      "order": 1,
+      "page": 3,
+      "crop": [
+        181,
+        263,
+        976,
+        1800
+      ],
+      "places": [
+        {
+          "label": "1",
+          "at": [
+            605,
+            1241
+          ]
+        },
+        {
+          "label": "2",
+          "at": [
+            752,
+            1213
+          ]
+        },
+        {
+          "label": "3",
+          "at": [
+            906,
+            1114
+          ]
+        },
+        {
+          "label": "4",
+          "at": [
+            897,
+            878
+          ]
+        },
+        {
+          "label": "5",
+          "at": [
+            769,
+            915
+          ]
+        },
+        {
+          "label": "6",
+          "at": [
+            719,
+            1022
+          ]
+        },
+        {
+          "label": "7",
+          "at": [
+            602,
+            1022
+          ]
+        },
+        {
+          "label": "8",
+          "at": [
+            618,
+            840
+          ]
+        },
+        {
+          "label": "9",
+          "at": [
+            763,
+            804
+          ]
+        },
+        {
+          "label": "10",
+          "at": [
+            763,
+            693
+          ]
+        },
+        {
+          "label": "11",
+          "at": [
+            885,
+            694
+          ]
+        },
+        {
+          "label": "12",
+          "at": [
+            355,
+            644
+          ]
+        },
+        {
+          "label": "13",
+          "at": [
+            234,
+            483
+          ]
+        },
+        {
+          "label": "14",
+          "at": [
+            584,
+            389
+          ]
+        },
+        {
+          "label": "15",
+          "at": [
+            682,
+            392
+          ]
+        },
+        {
+          "label": "16",
+          "at": [
+            669,
+            564
+          ]
+        },
+        {
+          "label": "B1",
+          "at": [
+            382,
+            938
+          ]
+        },
+        {
+          "label": "B2",
+          "at": [
+            382,
+            742
+          ]
+        }
+      ],
+      "expectedLabels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "B1",
+        "B2"
+      ],
+      "servicePlaces": [
+        {
+          "label": "Meca楼梯",
+          "kind": "service",
+          "at": [
+            337,
+            1074
+          ],
+          "evidence": "Primary p3 original external stair west of collection entrance, matching p2."
+        },
+        {
+          "label": "Aguilar楼梯",
+          "kind": "service",
+          "at": [
+            361,
+            579
+          ],
+          "evidence": "Primary p3 northern external stair beside rooms12/13, matching p2 Aguilar courtyard."
+        },
+        {
+          "label": "Finestres楼梯",
+          "kind": "service",
+          "at": [
+            358,
+            1670
+          ],
+          "evidence": "Primary p3 southern external stair leading into temporary exhibitions."
+        },
+        {
+          "label": "藏品区电梯",
+          "kind": "service",
+          "at": [
+            593,
+            1120
+          ],
+          "evidence": "Primary p3 accessible lift symbol inside the grey service core between rooms1/7."
+        },
+        {
+          "label": "临展区电梯",
+          "kind": "service",
+          "at": [
+            603,
+            1500
+          ],
+          "evidence": "Primary p3 accessible lift symbol in southern temporary-exhibition service core."
+        },
+        {
+          "label": "南侧内楼梯",
+          "kind": "service",
+          "at": [
+            610,
+            1670
+          ],
+          "evidence": "Primary p3 interior stair treads, destination not inferred from direction arrow alone."
+        },
+        {
+          "label": "新古典厅",
+          "kind": "area",
+          "at": [
+            270,
+            850
+          ],
+          "evidence": "Primary p3 NEOCLASSIC ROOM labelled area beside B1/B2, not an invented numbered room."
+        },
+        {
+          "label": "北临展区",
+          "kind": "area",
+          "at": [
+            300,
+            1255
+          ],
+          "evidence": "Primary p3 green temporary exhibition area; exhibition artist name is not a permanent room name."
+        },
+        {
+          "label": "南临展区",
+          "kind": "area",
+          "at": [
+            280,
+            1450
+          ],
+          "evidence": "Primary p3 southern TEMPORARY EXHIBITIONS wing."
+        }
+      ],
+      "sourceSpaces": [
+        {
+          "id": "meninas-14-16",
+          "label": "宫娥系列 · 14至16厅",
+          "placeId": "L1-14-1",
+          "sourcePaths": [
+            120
+          ],
+          "evidence": "Exact primary p3 connected green floor footprint containing rooms14-16; retain the source partitions and doorway gaps, not independent rectangular approximations."
+        },
+        {
+          "id": "early-years",
+          "label": "早年作品 · 1至7厅",
+          "placeId": "L1-1-1",
+          "sourcePaths": [
+            33
+          ],
+          "evidence": "Exact primary p3 yellow connected gallery floor fill; internal partition gaps retained. Supplementary key p4 identifies rooms1-7 as early years."
+        },
+        {
+          "id": "blue-1917",
+          "label": "蓝色时期与1917年 · 8至11厅",
+          "placeId": "L1-8-1",
+          "sourcePaths": [
+            121
+          ],
+          "evidence": "Exact primary p3 blue gallery floor fill, matching supplementary collection key for rooms8-11; no guessed room-by-room period split."
+        },
+        {
+          "id": "ceramics",
+          "label": "陶瓷区 · B1与B2",
+          "placeId": "L1-B1-1",
+          "sourcePaths": [
+            36
+          ],
+          "evidence": "Exact primary p3 rose floor fill labelled Ceramic, B1 and B2; A1-A4 in the supplementary edition are not substituted."
+        },
+        {
+          "id": "room-12",
+          "label": "12号展厅",
+          "placeId": "L1-12-1",
+          "sourcePaths": [
+            119
+          ],
+          "evidence": "p3: the bounded cyan gallery 12 uses its exact source floor polygon, without changing the two doorway gaps."
+        },
+        {
+          "id": "room-13",
+          "label": "13号展厅",
+          "placeId": "L1-13-1",
+          "sourcePaths": [
+            34
+          ],
+          "evidence": "p3: the long green gallery 13 is the complete original footprint including the connected northern end, not a rectangle around its number."
+        }
+      ],
+      "rules": [
+        {
+          "ids": [
+            0,
+            34,
+            120
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "green",
+          "reason": "printed gallery and temporary-exhibition floor areas"
+        },
+        {
+          "ids": [
+            33
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "rooms 1-7, retaining doorway boundaries"
+        },
+        {
+          "ids": [
+            35,
+            41
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "temporary-exhibition and lift spaces; pale courtyard context fills 37/38 are not upper-floor slabs"
+        },
+        {
+          "ids": [
+            36
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "rose",
+          "reason": "ceramics B1/B2 footprint"
+        },
+        {
+          "ids": [
+            119
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "teal",
+          "reason": "room 12 floor"
+        },
+        {
+          "ids": [
+            121
+          ],
+          "channel": "fill",
+          "kind": "surface",
+          "tone": "blue",
+          "reason": "rooms 8-11 floor"
+        },
+        {
+          "ids": [
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167
+          ],
+          "channel": "fill",
+          "kind": "wall",
+          "reason": "reviewed room/perimeter partitions, excluding arrows and service glyphs"
+        },
+        {
+          "ranges": [
+            [
+              18,
+              32
+            ],
+            [
+              173,
+              212
+            ]
+          ],
+          "channel": "fill",
+          "kind": "detail",
+          "reason": "staircases at original plan positions; no stairs inferred from hatching"
+        },
+        {
+          "ids": [
+            39
+          ],
+          "channel": "fill",
+          "kind": "wall",
+          "overpaintFillPaths": [
+            41
+          ],
+          "reason": "Native L-shaped service core, with later grey lift fill 41 retained as an interior hole rather than extruded solid masonry."
+        }
+      ],
+      "selectionSpaces": [
+        {
+          "id": "rooms-1",
+          "label": "1",
+          "placeId": "L1-1-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  661.694,
+                  1182.6962
+                ],
+                [
+                  544.347,
+                  1182.6962
+                ],
+                [
+                  544.347,
+                  1216.2061
+                ],
+                [
+                  542.1958,
+                  1216.2061
+                ],
+                [
+                  542.1958,
+                  1304.177
+                ],
+                [
+                  661.667,
+                  1304.177
+                ],
+                [
+                  661.667,
+                  1288.366
+                ],
+                [
+                  663.788,
+                  1288.366
+                ],
+                [
+                  663.815,
+                  1216.1951
+                ],
+                [
+                  661.694,
+                  1216.1951
+                ],
+                [
+                  661.694,
+                  1182.6962
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-2",
+          "label": "2",
+          "placeId": "L1-2-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  837.696,
+                  1128.1492
+                ],
+                [
+                  665.996,
+                  1128.1492
+                ],
+                [
+                  665.996,
+                  1216.1951
+                ],
+                [
+                  663.875,
+                  1216.1951
+                ],
+                [
+                  663.848,
+                  1288.366
+                ],
+                [
+                  665.969,
+                  1288.366
+                ],
+                [
+                  665.969,
+                  1300.835
+                ],
+                [
+                  837.704,
+                  1300.835
+                ],
+                [
+                  837.704,
+                  1288.384
+                ],
+                [
+                  839.8245,
+                  1288.384
+                ],
+                [
+                  839.817,
+                  1216.02
+                ],
+                [
+                  837.696,
+                  1216.02
+                ],
+                [
+                  837.696,
+                  1128.1492
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-3",
+          "label": "3",
+          "placeId": "L1-3-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  841.998,
+                  975.945
+                ],
+                [
+                  841.998,
+                  1216.02
+                ],
+                [
+                  839.877,
+                  1216.02
+                ],
+                [
+                  839.8845,
+                  1288.384
+                ],
+                [
+                  842.005,
+                  1288.384
+                ],
+                [
+                  842.005,
+                  1300.835
+                ],
+                [
+                  966.124,
+                  1300.835
+                ],
+                [
+                  966.124,
+                  973.824
+                ],
+                [
+                  890.923,
+                  973.824
+                ],
+                [
+                  890.923,
+                  975.945
+                ],
+                [
+                  841.998,
+                  975.945
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-4-5",
+          "label": "4 / 5",
+          "placeId": "L1-4-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  770.314,
+                  971.8062
+                ],
+                [
+                  770.314,
+                  971.643
+                ],
+                [
+                  890.923,
+                  971.643
+                ],
+                [
+                  890.923,
+                  973.764
+                ],
+                [
+                  966.124,
+                  973.764
+                ],
+                [
+                  966.124,
+                  782.4896
+                ],
+                [
+                  821.984,
+                  782.4896
+                ],
+                [
+                  821.984,
+                  870.2211
+                ],
+                [
+                  817.682,
+                  870.2211
+                ],
+                [
+                  817.682,
+                  870.2175
+                ],
+                [
+                  705.138,
+                  870.2175
+                ],
+                [
+                  705.138,
+                  971.746
+                ],
+                [
+                  705.138,
+                  972.7285
+                ],
+                [
+                  705.138,
+                  973.8665
+                ],
+                [
+                  770.2021,
+                  973.7642
+                ],
+                [
+                  770.2021,
+                  971.8062
+                ],
+                [
+                  770.314,
+                  971.8062
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-6",
+          "label": "6",
+          "placeId": "L1-6-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  770.2021,
+                  973.8242
+                ],
+                [
+                  705.138,
+                  973.9265
+                ],
+                [
+                  705.138,
+                  976.047
+                ],
+                [
+                  664.88,
+                  976.047
+                ],
+                [
+                  664.88,
+                  995.98
+                ],
+                [
+                  662.759,
+                  995.98
+                ],
+                [
+                  662.759,
+                  1068.9912
+                ],
+                [
+                  770.2021,
+                  1068.9912
+                ],
+                [
+                  770.2021,
+                  973.8242
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-7",
+          "label": "7",
+          "placeId": "L1-7-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  529.0831,
+                  1165.0262
+                ],
+                [
+                  529.0831,
+                  1100.4912
+                ],
+                [
+                  529.0831,
+                  1068.9912
+                ],
+                [
+                  622.7711,
+                  1068.9912
+                ],
+                [
+                  662.699,
+                  1068.9912
+                ],
+                [
+                  662.699,
+                  995.98
+                ],
+                [
+                  660.578,
+                  995.98
+                ],
+                [
+                  660.578,
+                  976.047
+                ],
+                [
+                  537.005,
+                  976.047
+                ],
+                [
+                  531.314,
+                  976.047
+                ],
+                [
+                  531.314,
+                  995.979
+                ],
+                [
+                  528.8718,
+                  995.979
+                ],
+                [
+                  528.8718,
+                  1180.5696
+                ],
+                [
+                  529.0831,
+                  1180.5696
+                ],
+                [
+                  529.0831,
+                  1165.0262
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-8",
+          "label": "8",
+          "placeId": "L1-8-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  531.314,
+                  902.687
+                ],
+                [
+                  566.416,
+                  902.687
+                ],
+                [
+                  566.416,
+                  906.989
+                ],
+                [
+                  531.314,
+                  906.989
+                ],
+                [
+                  531.314,
+                  971.746
+                ],
+                [
+                  537.005,
+                  971.746
+                ],
+                [
+                  700.836,
+                  971.746
+                ],
+                [
+                  700.836,
+                  907.037
+                ],
+                [
+                  670.868,
+                  907.037
+                ],
+                [
+                  670.868,
+                  902.735
+                ],
+                [
+                  700.836,
+                  902.735
+                ],
+                [
+                  700.836,
+                  865.9155
+                ],
+                [
+                  702.806,
+                  865.9155
+                ],
+                [
+                  702.6969,
+                  816.5001
+                ],
+                [
+                  702.6969,
+                  816.5
+                ],
+                [
+                  700.7269,
+                  816.5
+                ],
+                [
+                  700.7269,
+                  782.1851
+                ],
+                [
+                  670.803,
+                  782.1851
+                ],
+                [
+                  670.803,
+                  777.8831
+                ],
+                [
+                  700.7269,
+                  777.8831
+                ],
+                [
+                  700.7269,
+                  686.0291
+                ],
+                [
+                  531.372,
+                  686.0291
+                ],
+                [
+                  531.372,
+                  777.8149
+                ],
+                [
+                  566.522,
+                  777.8149
+                ],
+                [
+                  566.522,
+                  782.1169
+                ],
+                [
+                  531.372,
+                  782.1169
+                ],
+                [
+                  531.372,
+                  803.983
+                ],
+                [
+                  529.2074,
+                  803.983
+                ],
+                [
+                  529.2356,
+                  881.264
+                ],
+                [
+                  531.314,
+                  881.264
+                ],
+                [
+                  531.314,
+                  902.687
+                ]
+              ],
+              "holes": [
+                [
+                  [
+                    638.247,
+                    782.172
+                  ],
+                  [
+                    601.359,
+                    782.172
+                  ],
+                  [
+                    601.359,
+                    777.87
+                  ],
+                  [
+                    638.247,
+                    777.87
+                  ],
+                  [
+                    638.247,
+                    782.172
+                  ]
+                ],
+                [
+                  [
+                    638.127,
+                    902.752
+                  ],
+                  [
+                    638.127,
+                    907.054
+                  ],
+                  [
+                    600.992,
+                    907.054
+                  ],
+                  [
+                    600.992,
+                    902.752
+                  ],
+                  [
+                    638.127,
+                    902.752
+                  ]
+                ]
+              ]
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-9",
+          "label": "9",
+          "placeId": "L1-9-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  817.682,
+                  750.3
+                ],
+                [
+                  797.217,
+                  750.3
+                ],
+                [
+                  797.217,
+                  748.179
+                ],
+                [
+                  797.2151,
+                  748.179
+                ],
+                [
+                  734.181,
+                  744.152
+                ],
+                [
+                  734.181,
+                  746.2729
+                ],
+                [
+                  705.028,
+                  746.2729
+                ],
+                [
+                  705.028,
+                  816.5
+                ],
+                [
+                  702.7569,
+                  816.5
+                ],
+                [
+                  702.866,
+                  865.9155
+                ],
+                [
+                  817.682,
+                  865.9155
+                ],
+                [
+                  817.682,
+                  750.3
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-10",
+          "label": "10",
+          "placeId": "L1-10-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  817.682,
+                  745.998
+                ],
+                [
+                  817.682,
+                  730.165
+                ],
+                [
+                  819.803,
+                  730.165
+                ],
+                [
+                  819.803,
+                  730.1646
+                ],
+                [
+                  820.891,
+                  659.187
+                ],
+                [
+                  819.055,
+                  659.187
+                ],
+                [
+                  819.055,
+                  641.721
+                ],
+                [
+                  705.028,
+                  641.721
+                ],
+                [
+                  705.028,
+                  741.9709
+                ],
+                [
+                  734.181,
+                  741.9709
+                ],
+                [
+                  734.181,
+                  744.092
+                ],
+                [
+                  734.1829,
+                  744.092
+                ],
+                [
+                  797.217,
+                  748.119
+                ],
+                [
+                  797.217,
+                  745.998
+                ],
+                [
+                  817.682,
+                  745.998
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-11",
+          "label": "11",
+          "placeId": "L1-11-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  821.984,
+                  777.942
+                ],
+                [
+                  937.542,
+                  777.942
+                ],
+                [
+                  937.542,
+                  615.887
+                ],
+                [
+                  822.787,
+                  615.887
+                ],
+                [
+                  822.787,
+                  659.187
+                ],
+                [
+                  820.951,
+                  659.187
+                ],
+                [
+                  820.951,
+                  659.1875
+                ],
+                [
+                  819.863,
+                  730.165
+                ],
+                [
+                  821.984,
+                  730.165
+                ],
+                [
+                  821.984,
+                  777.942
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-12",
+          "label": "12",
+          "placeId": "L1-12-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  432.772,
+                  593.439
+                ],
+                [
+                  278.803,
+                  593.439
+                ],
+                [
+                  278.803,
+                  623.7721
+                ],
+                [
+                  276.682,
+                  623.7721
+                ],
+                [
+                  276.682,
+                  698.5827
+                ],
+                [
+                  432.8596,
+                  697.899
+                ],
+                [
+                  432.799,
+                  684.3588
+                ],
+                [
+                  435.051,
+                  684.3483
+                ],
+                [
+                  435.051,
+                  631.744
+                ],
+                [
+                  432.772,
+                  631.744
+                ],
+                [
+                  432.772,
+                  593.439
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-13",
+          "label": "13",
+          "placeId": "L1-13-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  274.501,
+                  337.302
+                ],
+                [
+                  258.369,
+                  337.302
+                ],
+                [
+                  258.369,
+                  333.0
+                ],
+                [
+                  274.501,
+                  333.0
+                ],
+                [
+                  274.501,
+                  329.6331
+                ],
+                [
+                  274.5687,
+                  329.6331
+                ],
+                [
+                  274.1584,
+                  271.736
+                ],
+                [
+                  190.1544,
+                  271.736
+                ],
+                [
+                  190.1624,
+                  333.0
+                ],
+                [
+                  206.386,
+                  333.0
+                ],
+                [
+                  206.386,
+                  337.302
+                ],
+                [
+                  190.1629,
+                  337.302
+                ],
+                [
+                  190.221,
+                  782.264
+                ],
+                [
+                  234.622,
+                  782.264
+                ],
+                [
+                  234.622,
+                  787.858
+                ],
+                [
+                  190.2217,
+                  787.858
+                ],
+                [
+                  190.2458,
+                  972.47
+                ],
+                [
+                  190.353,
+                  972.47
+                ],
+                [
+                  190.353,
+                  971.567
+                ],
+                [
+                  327.281,
+                  971.567
+                ],
+                [
+                  327.281,
+                  944.797
+                ],
+                [
+                  329.402,
+                  944.797
+                ],
+                [
+                  329.402,
+                  944.7969
+                ],
+                [
+                  329.468,
+                  906.82
+                ],
+                [
+                  327.498,
+                  906.82
+                ],
+                [
+                  327.498,
+                  786.4871
+                ],
+                [
+                  296.863,
+                  786.4871
+                ],
+                [
+                  296.863,
+                  782.1851
+                ],
+                [
+                  329.4667,
+                  782.1851
+                ],
+                [
+                  329.4386,
+                  730.3338
+                ],
+                [
+                  329.4387,
+                  730.3308
+                ],
+                [
+                  329.4392,
+                  730.3279
+                ],
+                [
+                  329.4399,
+                  730.325
+                ],
+                [
+                  329.4404,
+                  730.3237
+                ],
+                [
+                  327.3811,
+                  730.3337
+                ],
+                [
+                  327.2596,
+                  702.6629
+                ],
+                [
+                  190.4941,
+                  703.2611
+                ],
+                [
+                  190.4731,
+                  698.9601
+                ],
+                [
+                  276.622,
+                  698.583
+                ],
+                [
+                  276.622,
+                  623.7721
+                ],
+                [
+                  274.501,
+                  623.7721
+                ],
+                [
+                  274.501,
+                  337.302
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-14",
+          "label": "14",
+          "placeId": "L1-14-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  633.763,
+                  335.0972
+                ],
+                [
+                  633.3074,
+                  335.0972
+                ],
+                [
+                  633.3074,
+                  335.098
+                ],
+                [
+                  632.9633,
+                  335.0972
+                ],
+                [
+                  632.5609,
+                  335.0972
+                ],
+                [
+                  632.5609,
+                  335.0962
+                ],
+                [
+                  531.607,
+                  334.8545
+                ],
+                [
+                  531.607,
+                  382.9231
+                ],
+                [
+                  529.2217,
+                  382.9231
+                ],
+                [
+                  529.2217,
+                  438.614
+                ],
+                [
+                  531.372,
+                  438.614
+                ],
+                [
+                  531.372,
+                  452.906
+                ],
+                [
+                  607.537,
+                  452.906
+                ],
+                [
+                  607.537,
+                  455.027
+                ],
+                [
+                  635.884,
+                  455.0401
+                ],
+                [
+                  635.884,
+                  383.989
+                ],
+                [
+                  633.763,
+                  383.989
+                ],
+                [
+                  633.763,
+                  335.0972
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-15",
+          "label": "15",
+          "placeId": "L1-15-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  723.9329,
+                  452.949
+                ],
+                [
+                  723.9329,
+                  335.0972
+                ],
+                [
+                  638.065,
+                  335.0972
+                ],
+                [
+                  638.065,
+                  383.989
+                ],
+                [
+                  635.944,
+                  383.989
+                ],
+                [
+                  635.944,
+                  455.0401
+                ],
+                [
+                  700.679,
+                  455.07
+                ],
+                [
+                  700.679,
+                  452.949
+                ],
+                [
+                  723.9329,
+                  452.949
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-16",
+          "label": "16",
+          "placeId": "L1-16-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  723.4794,
+                  479.6276
+                ],
+                [
+                  723.4209,
+                  479.6274
+                ],
+                [
+                  723.4409,
+                  479.6273
+                ],
+                [
+                  723.5414,
+                  479.6272
+                ],
+                [
+                  723.7242,
+                  479.6272
+                ],
+                [
+                  723.9329,
+                  479.6272
+                ],
+                [
+                  723.9329,
+                  457.251
+                ],
+                [
+                  700.679,
+                  457.251
+                ],
+                [
+                  700.679,
+                  455.13
+                ],
+                [
+                  607.537,
+                  455.087
+                ],
+                [
+                  607.537,
+                  457.208
+                ],
+                [
+                  531.372,
+                  457.208
+                ],
+                [
+                  531.372,
+                  681.7271
+                ],
+                [
+                  700.7269,
+                  681.7271
+                ],
+                [
+                  700.7269,
+                  637.419
+                ],
+                [
+                  808.4506,
+                  637.419
+                ],
+                [
+                  819.055,
+                  637.2366
+                ],
+                [
+                  819.055,
+                  614.861
+                ],
+                [
+                  818.995,
+                  614.861
+                ],
+                [
+                  818.995,
+                  483.501
+                ],
+                [
+                  725.088,
+                  483.501
+                ],
+                [
+                  725.088,
+                  483.1462
+                ],
+                [
+                  723.9329,
+                  483.1462
+                ],
+                [
+                  723.9329,
+                  479.6286
+                ],
+                [
+                  723.8249,
+                  479.6284
+                ],
+                [
+                  723.6147,
+                  479.628
+                ],
+                [
+                  723.4794,
+                  479.6276
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-B1",
+          "label": "B1",
+          "placeId": "L1-B1-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  331.583,
+                  971.567
+                ],
+                [
+                  432.796,
+                  971.567
+                ],
+                [
+                  432.796,
+                  941.183
+                ],
+                [
+                  435.053,
+                  941.183
+                ],
+                [
+                  435.053,
+                  907.034
+                ],
+                [
+                  421.309,
+                  907.034
+                ],
+                [
+                  421.309,
+                  906.82
+                ],
+                [
+                  329.528,
+                  906.82
+                ],
+                [
+                  329.528,
+                  906.8201
+                ],
+                [
+                  329.462,
+                  944.797
+                ],
+                [
+                  331.583,
+                  944.797
+                ],
+                [
+                  331.583,
+                  971.567
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        },
+        {
+          "id": "rooms-B2",
+          "label": "B2",
+          "placeId": "L1-B2-1",
+          "scope": "room",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  432.902,
+                  760.394
+                ],
+                [
+                  435.053,
+                  760.394
+                ],
+                [
+                  435.053,
+                  729.7222
+                ],
+                [
+                  433.002,
+                  729.7318
+                ],
+                [
+                  432.8788,
+                  702.201
+                ],
+                [
+                  331.5616,
+                  702.6441
+                ],
+                [
+                  331.6831,
+                  730.3127
+                ],
+                [
+                  329.4967,
+                  730.3234
+                ],
+                [
+                  329.4973,
+                  730.325
+                ],
+                [
+                  329.498,
+                  730.3279
+                ],
+                [
+                  329.4984,
+                  730.3308
+                ],
+                [
+                  329.4986,
+                  730.3337
+                ],
+                [
+                  329.5267,
+                  782.1851
+                ],
+                [
+                  432.902,
+                  782.1851
+                ],
+                [
+                  432.902,
+                  760.394
+                ]
+              ],
+              "holes": []
+            }
+          ],
+          "sourcePaths": [
+            33,
+            34,
+            36,
+            119,
+            120,
+            121,
+            3,
+            5,
+            7,
+            8,
+            10,
+            12,
+            13,
+            50,
+            52,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            77,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            91,
+            92,
+            96,
+            97,
+            99,
+            128,
+            129,
+            130,
+            131,
+            132,
+            136,
+            137,
+            138,
+            139,
+            145,
+            146,
+            147,
+            148,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            163,
+            164,
+            165,
+            166,
+            168,
+            169,
+            170,
+            171,
+            172,
+            222,
+            223,
+            224,
+            78,
+            79,
+            80,
+            82,
+            90,
+            93,
+            94,
+            95,
+            98,
+            149,
+            167,
+            39
+          ],
+          "evidence": "Exact visitor floor fills minus the complete reviewed wall polygons, with source-jamb gaps closed for selection only; not new walls or access permissions."
+        }
+      ],
+      "selectionCuts": [
+        {
+          "id": "1-2",
+          "sourcePaths": [
+            84,
+            82
+          ],
+          "segment": [
+            [
+              663.844970703125,
+              1216.195068359375
+            ],
+            [
+              663.8179931640625,
+              1288.365966796875
+            ]
+          ]
+        },
+        {
+          "id": "2-3",
+          "sourcePaths": [
+            97,
+            98
+          ],
+          "segment": [
+            [
+              839.8469848632812,
+              1216.02001953125
+            ],
+            [
+              839.8544921875,
+              1288.384033203125
+            ]
+          ]
+        },
+        {
+          "id": "3-4",
+          "sourcePaths": [
+            92,
+            155
+          ],
+          "segment": [
+            [
+              890.9230346679688,
+              973.7940063476562
+            ],
+            [
+              966.1240234375,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "5-6",
+          "sourcePaths": [
+            172,
+            92
+          ],
+          "segment": [
+            [
+              705.1380004882812,
+              973.896484375
+            ],
+            [
+              770.3140258789062,
+              973.7940063476562
+            ]
+          ]
+        },
+        {
+          "id": "6-7",
+          "sourcePaths": [
+            78,
+            39,
+            41
+          ],
+          "segment": [
+            [
+              662.72900390625,
+              995.9800415039062
+            ],
+            [
+              662.72900390625,
+              1074.9010009765625
+            ]
+          ]
+        },
+        {
+          "id": "8-9",
+          "sourcePaths": [
+            132,
+            168
+          ],
+          "segment": [
+            [
+              702.7269287109375,
+              816.5
+            ],
+            [
+              702.8359985351562,
+              865.91552734375
+            ]
+          ]
+        },
+        {
+          "id": "9-10",
+          "sourcePaths": [
+            166,
+            167
+          ],
+          "segment": [
+            [
+              734.1809692382812,
+              744.1219482421875
+            ],
+            [
+              797.2169799804688,
+              748.1490478515625
+            ]
+          ]
+        },
+        {
+          "id": "10-11",
+          "sourcePaths": [
+            145,
+            146
+          ],
+          "segment": [
+            [
+              820.9209899902344,
+              659.18701171875
+            ],
+            [
+              819.8330078125,
+              730.1650390625
+            ]
+          ]
+        },
+        {
+          "id": "12-13",
+          "sourcePaths": [
+            152,
+            64
+          ],
+          "segment": [
+            [
+              276.6520080566406,
+              623.7720947265625
+            ],
+            [
+              276.6520080566406,
+              700.5401000976562
+            ]
+          ]
+        },
+        {
+          "id": "14-15",
+          "sourcePaths": [
+            148,
+            163,
+            149
+          ],
+          "segment": [
+            [
+              635.9140014648438,
+              383.989013671875
+            ],
+            [
+              635.9140014648438,
+              455.0570068359375
+            ]
+          ]
+        },
+        {
+          "id": "14-15-to-16",
+          "sourcePaths": [
+            163,
+            149
+          ],
+          "segment": [
+            [
+              607.5369873046875,
+              455.0570068359375
+            ],
+            [
+              700.6790161132812,
+              455.0999755859375
+            ]
+          ]
+        },
+        {
+          "id": "B2-west",
+          "sourcePaths": [
+            79,
+            50
+          ],
+          "segment": [
+            [
+              329.4685821533203,
+              730.333740234375
+            ],
+            [
+              329.49798583984375,
+              784.614990234375
+            ]
+          ]
+        },
+        {
+          "id": "B1-west",
+          "sourcePaths": [
+            50,
+            80
+          ],
+          "segment": [
+            [
+              329.49798583984375,
+              906.8200073242188
+            ],
+            [
+              329.4320068359375,
+              944.7969970703125
+            ]
+          ]
+        }
+      ]
+    }
   ]
 }

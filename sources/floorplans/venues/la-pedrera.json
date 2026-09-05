@@ -1,0 +1,1050 @@
+{
+  "slug": "la-pedrera",
+  "file": "investigated/la-pedrera-visitor-brochure-third-party.pdf",
+  "url": "https://carole-pascal.fr/Barcelone_2006/LaPedrera.pdf",
+  "sha256": "a50e5212e85eff30cb7574939d90f3b3f81c075de5292e377c24b9b74deb37f0",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [],
+    "basis": "The scanned Fundacio Caixa Catalunya visitor brochure was visually inspected after rotating its sideways plans: pages 2 and 3 contain top-down plans, while no geometry is extracted directly from the full scans."
+  },
+  "sourceFiles": [
+    {
+      "id": "historic-visitor-plans",
+      "file": "la-pedrera-historic-visitor-plans.pdf",
+      "url": "https://carole-pascal.fr/Barcelone_2006/LaPedrera.pdf",
+      "sha256": "c43a31cbd4880d001a88a06bc979730d79979f9152006846bbbd796f218befe0",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "basis": "Four plan crops were extracted from the 2480 by 3507 brochure scans after a lossless 90-degree rotation and without rescaling. Their vector surface paths follow the brochure's printed visitor-area colour fills and retain the reviewed courtyard, roof-void and skylight holes. Entrance a/b glyph and arrow bounds are removed before segmentation; a reviewed 3-pixel kernel on every plan joins only scan halftone."
+      }
+    }
+  ],
+  "review": "The source is a public third-party scan of an undated historic visitor brochure visibly issued by Fundacio Caixa Catalunya; it is not represented as a current map. The brochure explicitly marks the terrace, Espai Gaudi attic and fourth-floor Pedrera Apartment as areas included in the visit, and its entrance plan identifies Carrer Provenca and Passeig de Gracia access. Current official La Pedrera accessibility and practical-information pages independently confirm that the ground floor, rooftop, attic and fourth-floor apartment remain visitor levels, but they publish no downloadable plan. For each used crop, one vector surface was traced from the largest coloured visitor-area component. A 3-pixel close on every plan joins scan halftone only; entrance a/b letters and arrows are excluded before segmentation, and enclosed gaps below reviewed thresholds of 10000, 20000, 5000 and 10000 pixels are label/halftone gaps, while larger source-shaped courtyard, roof-void and skylight holes remain. Neutral ink at RGB max 100 and chroma <= 15 supplies architectural linework; overprinted black wayfinding badges are masked tightly. Attic and roof use a 5-pixel structural classifier so thin stair and rooftop-object ink remains flat detail.",
+  "limitations": [
+    "四层平面来自未标日期的旧 Fundacio Caixa Catalunya 访客折页，不是当前运营地图；现官网仅核验这些楼层仍属参观范围。",
+    "彩色楼面严格跟随折页标出的参观区域与孔洞；入口 a/b 字母、箭头和外部路线墨迹在分割前排除，没有手工补画庭院或屋顶大板。",
+    "黑色电梯、楼梯、服务和信息图标遮住了少量原始线稿；图标已排除为几何，其下被遮挡的墙线保持未知。",
+    "主层临时展厅、地下礼堂、私人住宅与非开放区域未纳入本模型；外立面停靠点也未绑定到室内图。",
+    "各层以独立来源图展示，不推断统一测量配准、当前单向路线或当日开放状态。",
+    "旧折页的服务图标保留在原标注位置，不代表现行服务设施；庭院为位置标注，不用整层楼面代替庭院边界。"
+  ],
+  "unresolved": [
+    "Current downloadable visitor plans or current route overlays",
+    "Architectural linework hidden beneath the historic brochure's wayfinding badges",
+    "Current main-floor exhibition hall, basement auditorium and private-use layouts"
+  ],
+  "research": [
+    {
+      "url": "https://carole-pascal.fr/Barcelone_2006/LaPedrera.pdf",
+      "status": "used-historic-official-issuer-scan",
+      "finding": "Public scan visibly branded Fundacio Caixa Catalunya supplies orthographic plans for the terrace, Espai Gaudi attic, fourth-floor Pedrera Apartment and entrances; the scan itself is undated and not hosted by the current institution."
+    },
+    {
+      "url": "https://www.lapedrera.com/en/accessibility/",
+      "status": "semantic-corroboration",
+      "finding": "Current official page states that tactile plans are present on the ground floor, rooftop, attic and fourth-floor apartment, and confirms those visitor levels; no downloadable floor geometry is published."
+    },
+    {
+      "url": "https://www.lapedrera.com/en/practical-information/",
+      "status": "semantic-corroboration",
+      "finding": "Current official practical page confirms the two courtyards, Pedrera Apartment, Whale Attic and Warrior Rooftop as the visit's principal spaces."
+    },
+    {
+      "url": "https://www.lapedrera.com/downloads/pdf/catalogue-events-eng-2026.pdf",
+      "status": "inspected-not-used",
+      "finding": "Current official events catalogue provides room and event descriptions but no complete orthographic visitor plan."
+    },
+    {
+      "url": "https://www.lapedrera.com/en/accessibility/",
+      "status": "linked-guide-inspected-not-used",
+      "finding": "The official easy-to-read visitor guide was downloaded and visually inspected; it supplies route semantics and photographs but no complete orthographic floor plan."
+    },
+    {
+      "url": "https://patrimoni.gencat.cat/en/catalunyapaisdarxius/digital-resource/resource/document/planol-3a-planta-de-la-casa-mila-coneguda-com-la-pedrera-antoni-gaudi/",
+      "status": "inspected-not-used-in-this-model",
+      "finding": "Barcelona Municipal Archive record CAT-AMCB-Q127_Eix105261905_R0048 supplies a 1906 third-floor project plan, but it is not the current fourth-floor visitor apartment and therefore remains research evidence only."
+    }
+  ],
+  "stopBindings": [
+    {
+      "stopIndex": 1,
+      "placeId": "historic-visitor-ground-花卉庭院-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "historic-visitor-ground-蝴蝶庭院-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "historic-visitor-apartment-米拉之家历史公寓-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "historic-visitor-attic-鲸腹阁楼与高迪展览-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "historic-visitor-roof-武士屋顶-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "historic-visitor-roof-楼梯塔、通风塔与烟囱-1"
+    }
+  ],
+  "floors": [
+    {
+      "id": "historic-visitor-ground",
+      "label": "入口层 · 庭院",
+      "order": 0,
+      "sourceId": "historic-visitor-plans",
+      "page": 1,
+      "crop": [
+        0,
+        0,
+        1145,
+        745
+      ],
+      "rules": [
+        {
+          "ids": [
+            0
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.93,
+              0.9,
+              0.78
+            ]
+          ],
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "Exact vectorization of the brochure's largest coloured entrance-level visitor-area component; the large enclosed source void remains a hole."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 6,
+          "maxChannel": 100,
+          "maxChroma": 15,
+          "wallKernel": 3,
+          "tolerancePixels": 0.15,
+          "minAreaPixels": 2,
+          "excludeRects": [
+            {
+              "rect": [
+                230,
+                62,
+                302,
+                143
+              ],
+              "reason": "Elevator wayfinding badge"
+            },
+            {
+              "rect": [
+                301,
+                62,
+                397,
+                151
+              ],
+              "reason": "Stair wayfinding badge"
+            },
+            {
+              "rect": [
+                399,
+                62,
+                475,
+                145
+              ],
+              "reason": "Elevator wayfinding badge"
+            },
+            {
+              "rect": [
+                488,
+                81,
+                573,
+                168
+              ],
+              "reason": "Audioguide wayfinding badge"
+            },
+            {
+              "rect": [
+                705,
+                84,
+                800,
+                160
+              ],
+              "reason": "WC wayfinding badge"
+            },
+            {
+              "rect": [
+                800,
+                83,
+                879,
+                161
+              ],
+              "reason": "Toilet wayfinding badge"
+            },
+            {
+              "rect": [
+                879,
+                84,
+                957,
+                162
+              ],
+              "reason": "Baby-care wayfinding badge"
+            },
+            {
+              "rect": [
+                958,
+                84,
+                1035,
+                163
+              ],
+              "reason": "Accessible-service wayfinding badge"
+            },
+            {
+              "rect": [
+                777,
+                218,
+                859,
+                305
+              ],
+              "reason": "Cloakroom wayfinding badge"
+            },
+            {
+              "rect": [
+                269,
+                388,
+                349,
+                465
+              ],
+              "reason": "Stair wayfinding badge"
+            },
+            {
+              "rect": [
+                482,
+                438,
+                561,
+                518
+              ],
+              "reason": "Shop wayfinding badge"
+            },
+            {
+              "rect": [
+                815,
+                601,
+                899,
+                684
+              ],
+              "reason": "Information wayfinding badge"
+            },
+            {
+              "rect": [
+                140,
+                540,
+                174,
+                581
+              ],
+              "reason": "Exterior entrance-b arrow"
+            },
+            {
+              "rect": [
+                112,
+                583,
+                141,
+                622
+              ],
+              "reason": "Printed entrance letter b"
+            },
+            {
+              "rect": [
+                665,
+                640,
+                700,
+                687
+              ],
+              "reason": "Exterior entrance-a arrow"
+            },
+            {
+              "rect": [
+                640,
+                694,
+                671,
+                745
+              ],
+              "reason": "Printed entrance letter a"
+            }
+          ],
+          "flatRects": [
+            {
+              "rect": [
+                357,
+                377,
+                399,
+                422
+              ],
+              "reason": "Reviewed interior of the printed stair flight; its surrounding enclosure remains structural"
+            }
+          ],
+          "reason": "Reviewed neutral architectural ink from the historic entrance plan; coloured area fills are separate source surfaces and overprinted service badges are excluded."
+        }
+      ],
+      "sourceSpaces": [
+        {
+          "id": "brochure-visitor-area",
+          "label": "折页标色参观区域",
+          "placeId": "historic-visitor-ground-入口层参观区-1",
+          "sourcePaths": [
+            0
+          ],
+          "scope": "floor",
+          "evidence": "Historic-brochure scope: the coloured entrance-level area was vectorized from its exact scan boundary and retained source hole."
+        }
+      ],
+      "places": [
+        {
+          "label": "入口层参观区",
+          "name": "旧折页标色入口层参观区",
+          "kind": "area",
+          "at": [
+            650,
+            350
+          ],
+          "evidence": "Anchor inside the brochure's coloured entrance-level visitor area.",
+          "precision": "historic-brochure-area"
+        },
+        {
+          "label": "花卉庭院",
+          "name": "花卉庭院（格拉西亚大道侧）",
+          "kind": "area",
+          "at": [
+            330,
+            260
+          ],
+          "evidence": "Brochure entrance b explicitly identifies Passeig de Gracia. The Flower Courtyard is the western courtyard by its curved stair and ramp, not the purple shop area at the former erroneous anchor500,535. Current official practical-information page confirms Flower=Passeig de Gracia and Butterfly=Provenca; this point locates the visible courtyard zone without inventing a closed room boundary.",
+          "precision": "historic-plan-zone-current-name"
+        },
+        {
+          "label": "蝴蝶庭院",
+          "name": "蝴蝶庭院（普罗旺斯街侧）",
+          "kind": "area",
+          "at": [
+            765,
+            385
+          ],
+          "evidence": "Geometry anchor within the Provenca-side courtyard zone; the current official page supplies the modern courtyard name.",
+          "precision": "historic-plan-zone-current-name"
+        }
+      ],
+      "servicePlaces": [
+        {
+          "label": "西侧电梯",
+          "name": "西侧电梯",
+          "kind": "service",
+          "at": [
+            266.0,
+            102.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Elevator wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "中央楼梯",
+          "name": "中央楼梯",
+          "kind": "service",
+          "at": [
+            349.0,
+            106.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Stair wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "东侧电梯",
+          "name": "东侧电梯",
+          "kind": "service",
+          "at": [
+            437.0,
+            103.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Elevator wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "语音导览",
+          "name": "语音导览",
+          "kind": "service",
+          "at": [
+            530.5,
+            124.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Audioguide wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "卫生间标志",
+          "name": "卫生间标志",
+          "kind": "service",
+          "at": [
+            752.5,
+            122.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: WC wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "男女卫生间",
+          "name": "男女卫生间",
+          "kind": "service",
+          "at": [
+            839.5,
+            122.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Toilet wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "育婴设施",
+          "name": "育婴设施",
+          "kind": "service",
+          "at": [
+            918.0,
+            123.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Baby-care wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "无障碍设施",
+          "name": "无障碍设施",
+          "kind": "service",
+          "at": [
+            996.5,
+            123.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Accessible-service wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "衣帽寄存",
+          "name": "衣帽寄存",
+          "kind": "service",
+          "at": [
+            818.0,
+            261.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Cloakroom wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "庭院楼梯",
+          "name": "庭院楼梯",
+          "kind": "service",
+          "at": [
+            309.0,
+            426.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Stair wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "商店",
+          "name": "商店",
+          "kind": "service",
+          "at": [
+            521.5,
+            478.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Shop wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "信息咨询",
+          "name": "信息咨询",
+          "kind": "service",
+          "at": [
+            857.0,
+            642.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Information wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        }
+      ]
+    },
+    {
+      "id": "historic-visitor-apartment",
+      "label": "四层 · 历史公寓",
+      "order": 4,
+      "sourceId": "historic-visitor-plans",
+      "page": 2,
+      "crop": [
+        0,
+        0,
+        1130,
+        740
+      ],
+      "rules": [
+        {
+          "ids": [
+            0
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.93,
+              0.9,
+              0.78
+            ]
+          ],
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "Exact vectorization of the brochure's coloured fourth-floor Pedrera Apartment area; the central courtyard source hole remains."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 13,
+          "maxChannel": 100,
+          "maxChroma": 15,
+          "wallKernel": 3,
+          "tolerancePixels": 0.15,
+          "minAreaPixels": 2,
+          "excludeRects": [
+            {
+              "rect": [
+                157,
+                0,
+                230,
+                100
+              ],
+              "reason": "Elevator wayfinding badge"
+            },
+            {
+              "rect": [
+                263,
+                66,
+                337,
+                145
+              ],
+              "reason": "Stair wayfinding badge"
+            },
+            {
+              "rect": [
+                350,
+                65,
+                429,
+                146
+              ],
+              "reason": "Elevator wayfinding badge"
+            },
+            {
+              "rect": [
+                479,
+                8,
+                558,
+                90
+              ],
+              "reason": "WC wayfinding badge"
+            },
+            {
+              "rect": [
+                558,
+                8,
+                650,
+                90
+              ],
+              "reason": "Toilet wayfinding badges"
+            },
+            {
+              "rect": [
+                648,
+                8,
+                722,
+                90
+              ],
+              "reason": "Baby-care wayfinding badge"
+            },
+            {
+              "rect": [
+                728,
+                9,
+                810,
+                93
+              ],
+              "reason": "Accessible-service wayfinding badge"
+            },
+            {
+              "rect": [
+                506,
+                111,
+                586,
+                190
+              ],
+              "reason": "Shop wayfinding badge"
+            }
+          ],
+          "flatRects": [
+            {
+              "rect": [
+                482,
+                322,
+                529,
+                398
+              ],
+              "reason": "Reviewed interior stair-tread ink; the stair enclosure and adjoining partitions remain structural"
+            }
+          ],
+          "reason": "Reviewed neutral room boundaries and fixtures from the historic fourth-floor apartment plan; the coloured visitor fill is a separate source surface."
+        }
+      ],
+      "sourceSpaces": [
+        {
+          "id": "brochure-visitor-area",
+          "label": "折页标色公寓区域",
+          "placeId": "historic-visitor-apartment-米拉之家历史公寓-1",
+          "sourcePaths": [
+            0
+          ],
+          "scope": "collection",
+          "evidence": "Historic-brochure scope: the brochure explicitly marks the Pedrera Apartment as included in the visit; the source fill and central courtyard hole are retained."
+        }
+      ],
+      "places": [
+        {
+          "label": "米拉之家历史公寓",
+          "name": "米拉之家四层历史公寓",
+          "kind": "area",
+          "at": [
+            250,
+            330
+          ],
+          "evidence": "Anchor inside the brochure's coloured Pedrera Apartment area.",
+          "precision": "historic-brochure-area"
+        }
+      ],
+      "servicePlaces": [
+        {
+          "label": "西侧电梯",
+          "name": "西侧电梯",
+          "kind": "service",
+          "at": [
+            193.5,
+            50.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Elevator wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "中央楼梯",
+          "name": "中央楼梯",
+          "kind": "service",
+          "at": [
+            300.0,
+            105.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Stair wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "东侧电梯",
+          "name": "东侧电梯",
+          "kind": "service",
+          "at": [
+            389.5,
+            105.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Elevator wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "卫生间标志",
+          "name": "卫生间标志",
+          "kind": "service",
+          "at": [
+            518.5,
+            49.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: WC wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "男女卫生间",
+          "name": "男女卫生间",
+          "kind": "service",
+          "at": [
+            604.0,
+            49.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Toilet wayfinding badges. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "育婴设施",
+          "name": "育婴设施",
+          "kind": "service",
+          "at": [
+            685.0,
+            49.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Baby-care wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "无障碍设施",
+          "name": "无障碍设施",
+          "kind": "service",
+          "at": [
+            769.0,
+            51.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Accessible-service wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "商店",
+          "name": "商店",
+          "kind": "service",
+          "at": [
+            546.0,
+            150.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Shop wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        }
+      ]
+    },
+    {
+      "id": "historic-visitor-attic",
+      "label": "阁楼 · 高迪展览",
+      "order": 5,
+      "sourceId": "historic-visitor-plans",
+      "page": 3,
+      "crop": [
+        0,
+        0,
+        1140,
+        725
+      ],
+      "rules": [
+        {
+          "ids": [
+            0
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.93,
+              0.9,
+              0.78
+            ]
+          ],
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "Exact vectorization of the brochure's coloured Espai Gaudi attic area, retaining both large courtyard holes and two smaller source skylight/void holes."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 18,
+          "maxChannel": 100,
+          "maxChroma": 15,
+          "wallKernel": 5,
+          "tolerancePixels": 0.15,
+          "minAreaPixels": 2,
+          "excludeRects": [
+            {
+              "rect": [
+                140,
+                0,
+                205,
+                80
+              ],
+              "reason": "Elevator wayfinding badge"
+            },
+            {
+              "rect": [
+                275,
+                35,
+                354,
+                132
+              ],
+              "reason": "Stair wayfinding badge"
+            },
+            {
+              "rect": [
+                404,
+                0,
+                486,
+                85
+              ],
+              "reason": "Elevator wayfinding badge"
+            },
+            {
+              "rect": [
+                168,
+                170,
+                246,
+                246
+              ],
+              "reason": "Stair wayfinding badge"
+            },
+            {
+              "rect": [
+                888,
+                241,
+                969,
+                320
+              ],
+              "reason": "Stair wayfinding badge"
+            }
+          ],
+          "flatRects": [
+            {
+              "rect": [
+                252,
+                28,
+                385,
+                86
+              ],
+              "reason": "Reviewed interior of the north stair flight; enclosing walls remain structural"
+            },
+            {
+              "rect": [
+                1053,
+                292,
+                1102,
+                410
+              ],
+              "reason": "Reviewed interior of the east stair flight; enclosing walls remain structural"
+            }
+          ],
+          "reason": "Reviewed neutral attic and void boundaries from the historic Espai Gaudi plan; coloured fill and large voids are represented by the exact source surface."
+        }
+      ],
+      "sourceSpaces": [
+        {
+          "id": "brochure-visitor-area",
+          "label": "折页标色阁楼区域",
+          "placeId": "historic-visitor-attic-鲸腹阁楼与高迪展览-1",
+          "sourcePaths": [
+            0
+          ],
+          "scope": "collection",
+          "evidence": "Historic-brochure scope: the brochure explicitly marks Espai Gaudi as included in the visit; its source-shaped courtyards and smaller voids are retained."
+        }
+      ],
+      "places": [
+        {
+          "label": "鲸腹阁楼与高迪展览",
+          "name": "鲸腹阁楼与高迪展览",
+          "kind": "area",
+          "at": [
+            720,
+            180
+          ],
+          "evidence": "Anchor inside the brochure's coloured Espai Gaudi attic area, corroborated by the current official visit description.",
+          "precision": "historic-plan-zone-current-name"
+        }
+      ],
+      "servicePlaces": [
+        {
+          "label": "西侧电梯",
+          "name": "西侧电梯",
+          "kind": "service",
+          "at": [
+            172.5,
+            40.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Elevator wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "中央楼梯",
+          "name": "中央楼梯",
+          "kind": "service",
+          "at": [
+            314.5,
+            83.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Stair wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "东侧电梯",
+          "name": "东侧电梯",
+          "kind": "service",
+          "at": [
+            445.0,
+            42.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Elevator wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "西侧螺旋楼梯",
+          "name": "西侧螺旋楼梯",
+          "kind": "service",
+          "at": [
+            207.0,
+            208.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Stair wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "东侧螺旋楼梯",
+          "name": "东侧螺旋楼梯",
+          "kind": "service",
+          "at": [
+            928.5,
+            280.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Stair wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        }
+      ]
+    },
+    {
+      "id": "historic-visitor-roof",
+      "label": "屋顶 · 武士烟囱",
+      "order": 6,
+      "sourceId": "historic-visitor-plans",
+      "page": 4,
+      "crop": [
+        0,
+        0,
+        1130,
+        705
+      ],
+      "rules": [
+        {
+          "ids": [
+            0
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.93,
+              0.9,
+              0.78
+            ]
+          ],
+          "kind": "surface",
+          "tone": "neutral",
+          "reason": "Exact vectorization of the brochure's coloured roof visitor area, retaining its three large source-shaped openings."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 23,
+          "maxChannel": 100,
+          "maxChroma": 15,
+          "wallKernel": 5,
+          "tolerancePixels": 0.15,
+          "minAreaPixels": 2,
+          "excludeRects": [
+            {
+              "rect": [
+                155,
+                180,
+                235,
+                255
+              ],
+              "reason": "Stair wayfinding badge"
+            },
+            {
+              "rect": [
+                878,
+                225,
+                958,
+                305
+              ],
+              "reason": "Stair wayfinding badge"
+            }
+          ],
+          "reason": "Reviewed neutral roof perimeter, openings and rooftop-object outlines from the historic terrace plan; the coloured visitor fill is a separate exact surface."
+        }
+      ],
+      "sourceSpaces": [
+        {
+          "id": "brochure-visitor-area",
+          "label": "折页标色屋顶区域",
+          "placeId": "historic-visitor-roof-武士屋顶-1",
+          "sourcePaths": [
+            0
+          ],
+          "scope": "collection",
+          "evidence": "Historic-brochure scope: the brochure explicitly marks the terrace area included in the visit; three large plan voids remain source-shaped."
+        }
+      ],
+      "places": [
+        {
+          "label": "武士屋顶",
+          "name": "武士屋顶参观区域",
+          "kind": "area",
+          "at": [
+            700,
+            180
+          ],
+          "evidence": "Anchor inside the brochure's coloured terrace visitor area, corroborated by the current official visit description.",
+          "precision": "historic-plan-zone-current-name"
+        },
+        {
+          "label": "楼梯塔、通风塔与烟囱",
+          "name": "楼梯塔、通风塔与烟囱群",
+          "kind": "object",
+          "at": [
+            975,
+            205
+          ],
+          "evidence": "Geometry anchor among the roof-object symbols; the brochure text identifies the rooftop construction types but does not individually number every object.",
+          "precision": "historic-plan-object-group-zone"
+        }
+      ],
+      "servicePlaces": [
+        {
+          "label": "西侧螺旋楼梯",
+          "name": "西侧螺旋楼梯",
+          "kind": "service",
+          "at": [
+            195.0,
+            217.5
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Stair wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        },
+        {
+          "label": "东侧螺旋楼梯",
+          "name": "东侧螺旋楼梯",
+          "kind": "service",
+          "at": [
+            918.0,
+            265.0
+          ],
+          "evidence": "Restored semantic symbol at the original historic brochure badge position: Stair wayfinding badge. Badge is omitted only from physical linework; its location is not an inferred service-room footprint or present-day access promise.",
+          "precision": "historic-brochure-printed-service-symbol"
+        }
+      ]
+    }
+  ]
+}

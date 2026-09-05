@@ -1,0 +1,54 @@
+{
+  "slug":"santa-maria-mar",
+  "file":"santa-maria-mar-cyan-structural.pdf",
+  "url":"https://upcommons.upc.edu/bitstreams/2955b804-1bb7-4a49-b99c-05d3fc045a4b/download",
+  "sha256":"d4056b802a37ee8e096393b931738c856a85425faf7a54e3b98ff2a20188c131",
+  "sourceProjection":{"kind":"orthographic","pages":[1],"basis":"This unwarped derivative preserves the exact image placement of the cyan top-down structural overlay from UPC thesis page 50; the original page was visually inspected for the apse, repeated octagonal piers, side chapels and west entrance."},
+  "review":"Original thesis page 50 image xref 104 was inspected at native 5159 by 2282 resolution; the retained original thesis SHA-256 is 7fc3848f35ba223860d8c2cf2639520105e632fa1a4ed24aed0130a886f985e5. The deterministic derivative retains source pixels where green-red and blue-red are each at least 8, abs(green-blue) is at most 50, and max(green,blue) is at least 80; it applies no morphology and removes only disconnected colour components below 100 native source pixels. Native-resolution comparison across delta 8, 10, 12 and 18 confirms that delta 8 best preserves the anti-aliased continuous outer perimeter, apse, chapel divisions and both octagonal pier rows without admitting the greyscale photomontage. No filled floor region is supplied because the source has no closed floor-fill path.",
+  "limitations":[
+    "本图为学术结构研究中的正投影复合平面，不是教堂当前访客导览图。",
+    "图中没有展厅编号；不补造编号，也不据此承诺礼拜堂开放状态或以近似多边形补画楼板。",
+    "玫瑰窗、搬运工浮雕与博恩一侧入口属于立面或未标注细部，均保持未绑定。",
+    "官网所列地下室、侧廊博物馆、塔楼及多层屋顶没有可核验正投影平面，本候选仅呈现教堂主层。"
+  ],
+  "unresolved":[
+    "地下室：官网确认属于当前文化参观范围，但未找到带边界与入口关系的官方或测绘平面。",
+    "侧廊博物馆：官网确认属于当前文化参观范围，但未找到可定位展陈空间与通道的平面。",
+    "塔楼及多层屋顶：官网确认属于当前文化参观范围，但未找到各层正投影边界、楼梯落点或开放路线图。",
+    "主层礼拜堂逐间名称与当前开放状态：学术图只给结构轮廓，没有访客编号或现行开放标注。"
+  ],
+  "research":[
+    {
+      "url":"https://upcommons.upc.edu/bitstreams/2955b804-1bb7-4a49-b99c-05d3fc045a4b/download",
+      "result":"Used: UPC thesis page 50 contains the native orthographic cyan structural overlay extracted by the pinned producer."
+    },
+    {
+      "url":"https://www.santamariadelmar.barcelona/en/opening-hours-and-admission-fees/",
+      "result":"Official current visitor page confirms church interior, crypt, gallery museum, towers and multiple roof levels; it exposes no downloadable floor plan."
+    },
+    {
+      "url":"https://www.santamariadelmar.barcelona/en/visitor-services/",
+      "result":"Official page locates the visitor information point and shop-bookshop in an apse chapel by the Passeig del Born portal, but provides no orthographic geometry or opening width."
+    },
+    {
+      "url":"https://upcommons.upc.edu/entities/publication/f1e9c5ee-11fe-4961-82e6-14f85d3adedf",
+      "result":"UPC record documents a 2006 laser-scanning project and 2D orthographic products; the accessible article record did not expose a current visitor-floor set suitable for the missing crypt, gallery, tower or roof levels."
+    }
+  ],
+  "stopBindings":[
+    {"stopIndex":0,"placeId":"main-level-西立面入口-1"},
+    {"stopIndex":1,"placeId":"main-level-中央中殿-1"},
+    {"stopIndex":2,"placeId":"main-level-侧廊与礼拜堂-1"},
+    {"stopIndex":3,"placeId":"main-level-后殿与主祭坛-1"}
+  ],
+  "floors":[{
+    "id":"main-level","label":"教堂主层平面","order":0,"page":1,"crop":[87.84,318.96,502.32,502.92],"rules":[],
+    "rasterLayers":[{"xref":5,"maxChannel":32,"wallKernel":3,"tolerancePixels":0.1,"minAreaPixels":1,"reason":"Native-resolution source-only cyan derivative of the reviewed structural perimeter, chapel boundaries and pier outlines; thin architectural lines remain flat detail instead of being promoted to masonry."}],
+    "places":[
+      {"label":"西立面入口","name":"西立面主入口","kind":"service","at":[492,411]},
+      {"label":"中央中殿","name":"中央中殿","kind":"area","at":[400,411]},
+      {"label":"侧廊与礼拜堂","name":"侧廊与周边礼拜堂","kind":"area","at":[395,350]},
+      {"label":"后殿与主祭坛","name":"后殿与主祭坛区","kind":"area","at":[175,411]}
+    ]
+  }]
+}

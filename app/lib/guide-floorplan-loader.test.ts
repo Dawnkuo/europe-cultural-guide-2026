@@ -20,6 +20,11 @@ describe('guide floor-plan loader', () => {
     expect(getFloorPlanAvailability('fenice')).toBe('source-limited');
     await expect(loadGuideFloorPlan('fenice')).resolves.toBeUndefined();
     await expect(loadGuideFloorPlan('unknown')).resolves.toBeUndefined();
+    for (const slug of ['st-mark-campanile', 'vatican-post', 'vasari-corridor', 'gaudi-house', 'chocolate-museum']) {
+      expect(getFloorPlanAvailability(slug)).toBe('source-limited');
+      await expect(loadGuideFloorPlan(slug)).resolves.toBeUndefined();
+      expect(guideFloorPlans[slug]).toBeUndefined();
+    }
   });
 
   it('keeps every generated lazy module identical to the reviewed source model', async () => {

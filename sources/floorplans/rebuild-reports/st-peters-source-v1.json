@@ -1,0 +1,80 @@
+{
+  "venue": "st-peters-basilica",
+  "version": "st-peters-source-v1",
+  "status": "ready-for-parent-visual-review",
+  "installRoot": "/tmp/europe-map-rebuild-rome/handoff/st-peters-source-v1",
+  "installFiles": [
+    "sources/floorplans/venues/st-peters-basilica.json",
+    "sources/floorplans/evidence/st-peters-basilica.json",
+    "sources/floorplans/st-peters-churches-of-rome-127.pdf",
+    "sources/floorplans/st-peters-reviewed-plans.pdf",
+    "sources/floorplans/st-peters-source-spaces.json",
+    "app/data/architectural-plans/st-peters-basilica.json"
+  ],
+  "supportFiles": [
+    "sources/floorplans/st-peters-basilica-plan-1966.jpg",
+    "sources/floorplans/st-peters-1966-rectified.pdf",
+    "scripts/make_st_peters_source_plans.py",
+    "scripts/audit-st-peters.py",
+    "scripts/build-architectural-plans.py"
+  ],
+  "qaFiles": [
+    "work/st-peters-source-qa/basilica-wall-comparison.png",
+    "work/st-peters-source-qa/grottoes-wall-comparison.png",
+    "work/st-peters-source-qa/millon-1966-wall-comparison.png",
+    "work/st-peters-source-qa/basilica-spaces-overlay.png",
+    "work/st-peters-source-qa/grottoes-spaces-overlay.png",
+    "work/st-peters-source-qa/space-selector-checkpoints.json",
+    "work/st-peters-source-qa/model-audit.json",
+    "work/model-renders/st-peters-basilica--basilica.png",
+    "work/model-renders/st-peters-basilica--grottoes.png"
+  ],
+  "validation": {
+    "exportedValidatorErrors": [],
+    "floors": 2,
+    "places": 17,
+    "features": 1841,
+    "spaces": 8,
+    "verticalLinks": 0,
+    "stopBindings": 11,
+    "resolvedGuideStopIndices": [0, 1, 2, 3, 4, 5, 6],
+    "unresolvedGuideStopIndices": [7, 8, 9],
+    "basilicaSourceWallPixels": 34908,
+    "grottoesSourceWallPixels": 62983,
+    "syntheticWallPixels": 0,
+    "spaceSourceWallPixelsMissingFromBarriers": 0,
+    "spaceSourceWallPixelsInsideComponents": 0,
+    "spaceClosurePixelsInsideComponents": 0,
+    "spaceClosurePixelsEmittedAsWalls": 0
+  },
+  "sourceSemantics": [
+    "The installed basilica floor comes from the 483 x 479 native embedded plan on Churches of Rome page 15, xref 99. It avoids the PDF page's non-uniform image placement.",
+    "The installed grottoes floor comes from the distinct 880 x 784 native embedded plan on page 63, xref 261, cropped to the documented plan area at y=740.",
+    "Black basilica numerals and text, red grotto labels, compass, decorative background, and generated bridges are excluded. Emitted wall pixels are always a subset of source ink.",
+    "Eight selectable spaces come from source-wall components. Closing kernels are selectors only; each per-space overlay and checkpoint reports no source-wall crossing and no selector pixels emitted as walls.",
+    "The 1966 Accademia delle Scienze di Torino Fondo Millon slide 48_13_060 is rectified from the photographed paper corners. Its dome-circle axis ratio is 1.0064907, but the drawing is historical and partial, so it is support evidence only and is not a model floor."
+  ],
+  "limitations": [
+    "专业导览平面，不是测绘图；只保持来源原生像素比例。",
+    "墓穴图早于若干墓葬迁移；只绑定稳定建筑核心，不宣称旧墓葬编号仍为现状陈列。",
+    "1966 年历史图只覆盖中轴与单侧，未镜像、未补齐，也未作为现状楼层。",
+    "穹顶电梯入口在大殿层可定位；屋顶平台、穹顶内环与灯笼观景台没有可验证正投影楼层平面，stop 7／8／9 保持未解析。",
+    "主流程安装后仍需浏览器视觉复核。"
+  ],
+  "sha256": {
+    "sources/floorplans/venues/st-peters-basilica.json": "760866b27c063447cd95b4b34a9c17135e6a2a74e6bd0842cbdbb6a47c95b835",
+    "sources/floorplans/evidence/st-peters-basilica.json": "085fa186d0e4a31bfeafbde400417682798db78b6a61f79537397577d1e1c6b2",
+    "sources/floorplans/st-peters-churches-of-rome-127.pdf": "6a1dc0f4506c0dc2364a80812d21e8713f1c57771905299fa2ba9849d811e429",
+    "sources/floorplans/st-peters-reviewed-plans.pdf": "51da12fadf649428f0e5c1911fef7ff0a99cef8672182320c5ff2a14b6efb507",
+    "sources/floorplans/st-peters-source-spaces.json": "63353aa48935074b3e3ca2b13fea13cfd54cf1ac8d81e24e24f90e77189e84be",
+    "sources/floorplans/st-peters-basilica-plan-1966.jpg": "36ecedb8b637608338ca6bc4de06b155a63135128d8481675d08e0b4ce79d6e5",
+    "sources/floorplans/st-peters-1966-rectified.pdf": "cefb7b0bd52459b2cae413c7b8e30195d2387c7949f75dfd1ac839bb5bdedd16",
+    "app/data/architectural-plans/st-peters-basilica.json": "df5704fddcdce23c4e6c2b16596610f2c4c66953f463d6e7de8238e53c43583d",
+    "scripts/make_st_peters_source_plans.py": "aa7db55b6770113bce0414077e732606859943f04f0f01caf1c9728853177536",
+    "scripts/audit-st-peters.py": "22da6e9145e8bb67d76b641789bcfc4fa39d4c215821f670b136916d1c24b04e",
+    "scripts/build-architectural-plans.py": "7f01ed5535871ea9deaef591087a1f97b9a8b638bb40c9cf89900cbd21d61daa",
+    "work/st-peters-source-qa/review.json": "1f9e2b3416dcaad26d93cc54842230cb48079bc995ac0fac24890b94feb297ca",
+    "work/st-peters-source-qa/space-selector-checkpoints.json": "5e49fef8291eda240a9f656beda25f98255487905194a5290d00d19f36b420bc",
+    "work/st-peters-source-qa/model-audit.json": "468ef1859f09270aaf323b0070cff6c369b76bf6d277e938f990d46f912023bc"
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "slug": "st-mark-campanile",
+  "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared all four levels on the municipality's1912 reconstruction engineering plate. Retains actual tower core,base Loggetta,ramp geometry,bell chamber and upper-service structure. No solid external shell conceals the source interiors.",
+    "floorCoverageReview": "Four1912 reconstruction levels, not a surveyed current visitor plan or ticket-access statement.",
+    "stopBindingReview": "Ground Loggetta stop0 locates precisely enough. Current visitor entry and directional observation-edge stops lack printed anchors and remain unlocated.",
+    "verticalConnectionReview": "Three historical ramp/stair segments are documented. The text mentions an elevator but supplies no current shaft/landing positions, so no elevator link is invented.",
+    "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+    "sourceDigest": "53e7180a82f4cb819bb1c489558699cbcec981c0eaa18f660675767996b03997",
+    "sourceEvidence": "sources/floorplans/evidence/st-mark-campanile.json",
+    "comparedFloors": [
+      "ground",
+      "ramp",
+      "bell-cell",
+      "upper-service"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:47:24.139Z",
+    "slug": "st-mark-campanile",
+    "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+    "sourceDigest": "53e7180a82f4cb819bb1c489558699cbcec981c0eaa18f660675767996b03997",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "ramp",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "bell-cell",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper-service",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-mark-campanile-1440-3d.png",
+          "work/map-review/release-final/st-mark-campanile-1440-ground-2d.png",
+          "work/map-review/release-final/st-mark-campanile-1440-ramp-2d.png",
+          "work/map-review/release-final/st-mark-campanile-1440-bell-cell-2d.png",
+          "work/map-review/release-final/st-mark-campanile-1440-upper-service-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 637,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 8,
+        "selectedSpaces": [],
+        "stopTargets": 1,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "ramp",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "bell-cell",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper-service",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-mark-campanile-1094-3d.png",
+          "work/map-review/release-final/st-mark-campanile-1094-ground-2d.png",
+          "work/map-review/release-final/st-mark-campanile-1094-ramp-2d.png",
+          "work/map-review/release-final/st-mark-campanile-1094-bell-cell-2d.png",
+          "work/map-review/release-final/st-mark-campanile-1094-upper-service-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 802,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 8,
+        "selectedSpaces": [],
+        "stopTargets": 1,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "ramp",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "bell-cell",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper-service",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-mark-campanile-390-3d.png",
+          "work/map-review/release-final/st-mark-campanile-390-ground-2d.png",
+          "work/map-review/release-final/st-mark-campanile-390-ramp-2d.png",
+          "work/map-review/release-final/st-mark-campanile-390-bell-cell-2d.png",
+          "work/map-review/release-final/st-mark-campanile-390-upper-service-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1511,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 8,
+        "selectedSpaces": [],
+        "stopTargets": 1,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "st-mark-campanile",
+    "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "ground",
+      "ramp",
+      "bell-cell",
+      "upper-service"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "st-mark-campanile",
+    "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 2.4,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/st-mark-campanile/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 140.39887354997097,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-campanile_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/st-mark-campanile/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 158.77683473506917,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-campanile_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/st-mark-campanile/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 197.4831077272866,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-campanile_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/st-mark-campanile/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+    "passed": true
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "group": "tuscany",
+  "status": "stable-partial-handoff-four-models-plus-one-source-limited-record",
+  "scratchRoot": "/tmp/europe-map-rebuild-tuscany",
+  "generatedAt": "2026-09-05",
+  "summary": {
+    "venuesAssigned": 5,
+    "modelsProduced": 4,
+    "sourceLimited": 1,
+    "sourceBackedDiagrams": 7,
+    "places": 18,
+    "features": 6827,
+    "spaces": 8,
+    "guideStops": 23,
+    "boundStops": 8,
+    "unresolvedStops": 15
+  },
+  "venues": [
+    {
+      "slug": "florence-duomo",
+      "status": "partial-source-backed-model-route-unbound",
+      "diagrams": ["historic cathedral main floor"],
+      "source": "https://catalogo.duomo.firenze.it/disegni/5550",
+      "sourceImage": "https://catalogo.duomo.firenze.it/dam/opa/resize/6570/original?w=1080",
+      "sourceImageSha256": "7c13c26c014788d43216d91a076706ac0189a5e8dfce60053f3ed14f5040bdd8",
+      "wrapperPdfSha256": "5644e6790156e90a33ddecbf7de335e1c559537765043792cafa3c4fa78b1071",
+      "projection": "orthographic historic architectural plan; source pixels wrapped one-to-one in a one-page PDF",
+      "coverage": {"floors": 1, "places": 5, "spaces": 2, "features": 2063},
+      "routeNodes": [
+        {"stopIndex": 0, "label": "West facade", "status": "unresolved", "reason": "Exterior elevation observation is outside the floor plan."},
+        {"stopIndex": 1, "label": "Side wall and drum", "status": "unresolved", "reason": "Exterior/vertical observation is outside the floor plan."},
+        {"stopIndex": 2, "label": "Ticket-designated entrance", "status": "unresolved", "reason": "Historic plan does not establish current ticket-specific access."},
+        {"stopIndex": 3, "label": "Inner dome rim", "status": "unresolved", "reason": "No ascent-level plan was found."},
+        {"stopIndex": 4, "label": "Roof terrace", "status": "unresolved", "reason": "No roof/ascent plan was found."}
+      ],
+      "note": "Complete visible plan ink is flat detail. Dense pavement and wall ink share one grayscale image layer, so wall extrusion would create false barriers."
+    },
+    {
+      "slug": "giunti-odeon",
+      "status": "source-backed-three-floor-model-operational-access-unresolved",
+      "diagrams": ["ground floor", "first floor", "second floor"],
+      "source": "https://www.premio-architettura-toscana.it/wp-content/uploads/2024/10/Catalogo-PAT-2024.pdf",
+      "sourceSha256": "0f8091906ce4cccde5ec905098a20dbca1746770944114b517a5b972337cecbb",
+      "pages": [50],
+      "projection": "three orthographic floor plans on the PAT 2024 award-catalogue spread",
+      "coverage": {"floors": 3, "places": 9, "spaces": 3, "features": 1846},
+      "routeNodes": [
+        {"stopIndex": 0, "label": "Entrance foyer", "status": "bound", "placeId": "ground-入口门厅-1"},
+        {"stopIndex": 1, "label": "Central bookcase zone", "status": "bound", "placeId": "ground-中央书架区-1"},
+        {"stopIndex": 2, "label": "Stage and screen axis", "status": "bound", "placeId": "ground-舞台银幕轴线-1"},
+        {"stopIndex": 3, "label": "Open decorative space", "status": "bound", "placeId": "ground-观众厅装饰区-1", "reason": "Bound to the visible ground-floor auditorium decoration, not an unlabelled or access-uncertain first-floor Mirror Hall."}
+      ],
+      "note": "All three plan images and physical stair footprints are retained; the stair links describe architecture, not current public access."
+    },
+    {
+      "slug": "mercato-centrale",
+      "status": "partial-source-backed-model-ground-floor-unresolved",
+      "diagrams": ["refurbished upper hall"],
+      "source": "https://www.archea.it/wp-content/uploads/2019/09/Area-140-Mercato-Centrale-San-Lorenzo.pdf",
+      "sourceSha256": "b71738cd8a1b56ca0c0799dc0df8f53d120e314fedeaad87d74cd7e77f7fb00b",
+      "pages": [2],
+      "projection": "orthographic project plan assembled from ten source image tiles",
+      "coverage": {"floors": 1, "places": 2, "spaces": 1, "features": 2042},
+      "routeNodes": [
+        {"stopIndex": 0, "label": "Exterior", "status": "unresolved", "reason": "No elevation/site plan in the extracted source."},
+        {"stopIndex": 1, "label": "Ground-floor stall grid", "status": "unresolved", "reason": "The project publication does not provide a ground-floor plan."},
+        {"stopIndex": 2, "label": "Central structural sightline", "status": "bound", "placeId": "upper-中央结构视线-1"},
+        {"stopIndex": 3, "label": "Upper hall", "status": "bound", "placeId": "upper-上层大厅-1"}
+      ]
+    },
+    {
+      "slug": "medici-chapels",
+      "status": "partial-source-backed-independent-diagrams-three-areas-unresolved",
+      "diagrams": ["existing chapel-complex overview", "New Sacristy measured plan"],
+      "sources": [
+        {"url": "https://www.datocms-assets.com/65416/1674211771-presentazione-vincitori-e-segnalati.pdf", "sha256": "25ed2e07ddc78dc0dc1a55c1b88deb3980ad4bcaf172bc7e0a5a23e5c7c3654e", "pages": [4]},
+        {"url": "https://iris.uniroma1.it/retrieve/ae977f6d-b4d7-4fd2-a839-abf57bf1d655/Bianchini_Spazio-rivelato_2023.pdf", "sha256": "7c1f1f17a430e62e16907f17bdf1ba142b03d090ede75e0a990ebbcf8ac5b689", "pages": [18]}
+      ],
+      "projection": "official 1:400 competition context plus independent 1:50 laser-survey plan; no forced registration",
+      "coverage": {"floors": 2, "places": 2, "spaces": 2, "features": 876},
+      "routeNodes": [
+        {"stopIndex": 0, "label": "Medici crypt", "status": "unresolved", "reason": "No usable orthographic plan found."},
+        {"stopIndex": 1, "label": "San Lorenzo treasury", "status": "unresolved", "reason": "No usable orthographic plan found."},
+        {"stopIndex": 2, "label": "Chapel of the Princes", "status": "bound", "placeId": "complex-王公礼拜堂-1"},
+        {"stopIndex": 3, "label": "New Sacristy", "status": "bound", "placeId": "new-sacristy-新圣器室-1"},
+        {"stopIndex": 4, "label": "Lorraine crypt", "status": "unresolved", "reason": "No usable orthographic plan found."}
+      ],
+      "note": "The proposed new-exit zone and proposal route are outside the extracted overview crop; no proposed circulation is encoded as current."
+    },
+    {
+      "slug": "vasari-corridor",
+      "status": "source-limited-no-model",
+      "coverage": {"floors": 0, "places": 0, "features": 0, "guideStops": 5, "boundStops": 0},
+      "evidence": "sources/floorplans/evidence/vasari-corridor.json",
+      "reason": "No official or authoritative orthographic corridor-body plan was found; the available Uffizi access map stops at D19 and the publication overview is oblique."
+    }
+  ],
+  "validation": {
+    "command": "work/map-venv/bin/python /tmp/europe-map-rebuild-tuscany/scripts/rebuild-tuscany.py",
+    "result": "pass",
+    "checks": [
+      "source SHA-256 pins",
+      "per-source projection page coverage",
+      "model version and projection",
+      "sourceDigests for supplementary Medici source",
+      "Chinese public floor labels, limitations, place names and space labels",
+      "place evidence and precision metadata",
+      "at least one valid semantic space on every generated floor",
+      "unique feature and place identifiers",
+      "finite, closed, positive-area, valid polygon rings",
+      "place bounds, stop references and vertical-link references",
+      "evidence claim source hashes and coverage totals",
+      "visual inspection of every selected source diagram and all seven generated top-view renders"
+    ],
+    "machineReadable": "/tmp/europe-map-rebuild-tuscany/work/validation.json"
+  },
+  "installable": {
+    "configs": [
+      "sources/floorplans/venues/florence-duomo.json",
+      "sources/floorplans/venues/giunti-odeon.json",
+      "sources/floorplans/venues/mercato-centrale.json",
+      "sources/floorplans/venues/medici-chapels.json"
+    ],
+    "models": [
+      "app/data/architectural-plans/florence-duomo.json",
+      "app/data/architectural-plans/giunti-odeon.json",
+      "app/data/architectural-plans/mercato-centrale.json",
+      "app/data/architectural-plans/medici-chapels.json"
+    ],
+    "evidence": [
+      "sources/floorplans/evidence/florence-duomo.json",
+      "sources/floorplans/evidence/giunti-odeon.json",
+      "sources/floorplans/evidence/mercato-centrale.json",
+      "sources/floorplans/evidence/medici-chapels.json",
+      "sources/floorplans/evidence/vasari-corridor.json"
+    ],
+    "sourceFiles": [
+      "sources/floorplans/florence-duomo-plan.jpg",
+      "sources/floorplans/florence-duomo-plan.pdf",
+      "sources/floorplans/giunti-pat-2024.pdf",
+      "sources/floorplans/mercato-centrale-archea.pdf",
+      "sources/floorplans/medici-new-exit-competition.pdf",
+      "sources/floorplans/medici-new-sacristy-survey.pdf",
+      "sources/floorplans/vasari-corridor-official.pdf",
+      "sources/floorplans/vasari-official-publication-sample.pdf"
+    ],
+    "helper": "scripts/rebuild-tuscany.py"
+  },
+  "integrationNotes": [
+    "Main should install the four generated models/configs and decide how the global availability inventory represents Vasari's evidence-only source-limited state.",
+    "All eight semantic spaces are reviewed raster-derived `spaces` polygons. The sources contain no independently extractable vector floor-fill paths, so `sourceSpaces` would falsely identify raster xrefs as vector path IDs.",
+    "The current shared generator writes manual anchor evidence/precision into evidence claims but not onto model place records. The scratch helper enriches the installable models with those runtime-supported fields; main should preserve the generated models or add the same copy-through to shared code.",
+    "No shared generator, UI, inventory, package, review-gate or repository file was edited by this task."
+  ]
+}

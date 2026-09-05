@@ -1,0 +1,223 @@
+{
+  "slug": "colosseum",
+  "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared both themes of the archaeological DAI plate: hypogeum and podium preserve their distinct source ink, elliptical corridors, radial structures and archaeological detail. The source's reconstruction proposal status is explicit; the model does not claim all inferred ancient fabric survives today.",
+    "floorCoverageReview": "Two archaeological plan themes, not two copies of a colored visitor route or a complete modern visitor building.",
+    "stopBindingReview": "Underground center and arena stops2/4 have source-area locations. Modern security entry, lift shafts and complete seating routes remain unlocated.",
+    "verticalConnectionReview": "No modern visitor stair or elevator landing is established by the archaeological plate.",
+    "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+    "sourceDigest": "194075112aea65e2b0a9f6c8f5f6cbf07a0ce91129307978b063b5601a2806f3",
+    "sourceEvidence": "sources/floorplans/evidence/colosseum.json",
+    "comparedFloors": [
+      "hypogeum-level-2",
+      "podium-level-3"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:38:37.628Z",
+    "slug": "colosseum",
+    "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+    "sourceDigest": "194075112aea65e2b0a9f6c8f5f6cbf07a0ce91129307978b063b5601a2806f3",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "hypogeum-level-2",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "podium-level-3",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/colosseum-1440-3d.png",
+          "work/map-review/release-final/colosseum-1440-hypogeum-level-2-2d.png",
+          "work/map-review/release-final/colosseum-1440-podium-level-3-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 574,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 10,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "hypogeum-level-2",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "podium-level-3",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/colosseum-1094-3d.png",
+          "work/map-review/release-final/colosseum-1094-hypogeum-level-2-2d.png",
+          "work/map-review/release-final/colosseum-1094-podium-level-3-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 731,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 10,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "hypogeum-level-2",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "podium-level-3",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/colosseum-390-3d.png",
+          "work/map-review/release-final/colosseum-390-hypogeum-level-2-2d.png",
+          "work/map-review/release-final/colosseum-390-podium-level-3-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 762,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 10,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "colosseum",
+    "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "hypogeum-level-2",
+      "podium-level-3"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "colosseum",
+    "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.69999999999891,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/colosseum/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 109.79623932271424,
+      "screenshot": "work/map-review/guide-pages-final/_guides_colosseum_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/colosseum/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 123.06781472353879,
+      "screenshot": "work/map-review/guide-pages-final/_guides_colosseum_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/colosseum/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 128.05136633655053,
+      "screenshot": "work/map-review/guide-pages-final/_guides_colosseum_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/colosseum/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+    "passed": true
+  }
+}

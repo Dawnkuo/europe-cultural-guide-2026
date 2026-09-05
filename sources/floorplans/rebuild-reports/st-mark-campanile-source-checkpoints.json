@@ -1,0 +1,126 @@
+{
+  "slug": "st-mark-campanile",
+  "source": "st-mark-campanile-rebuilt-1912.pdf",
+  "sha256": "53e7180a82f4cb819bb1c489558699cbcec981c0eaa18f660675767996b03997",
+  "page": 183,
+  "printedPage": 144,
+  "imageXref": 1448,
+  "reviewBasis": "Manual high-resolution review of all four labelled horizontal sections on the Comune di Venezia 1912 reconstruction plate. Points use original PDF coordinates and are independent of generated model coordinates.",
+  "floors": [
+    {
+      "id": "ground",
+      "plan": "Pianta AB",
+      "crop": [284, 539, 418, 627],
+      "requiredWall": [
+        {"id": "tower-east-masonry", "sourcePoint": [403.02, 582.78]},
+        {"id": "tower-west-masonry", "sourcePoint": [347.28, 582.66]},
+        {"id": "tower-central-pier", "sourcePoint": [380.1, 583.02]},
+        {"id": "loggetta-north-column", "sourcePoint": [313.38, 546.54]},
+        {"id": "loggetta-upper-middle-column", "sourcePoint": [313.08, 570.78]},
+        {"id": "loggetta-lower-middle-column", "sourcePoint": [313.2, 595.56]},
+        {"id": "loggetta-south-column", "sourcePoint": [313.92, 620.28]},
+        {"id": "tower-north-wall-pier", "sourcePoint": [357.54, 545.82]}
+      ],
+      "requiredDetail": [
+        {"id": "north-west-curved-outline", "sourcePoint": [338.88, 557.82]},
+        {"id": "south-west-curved-outline", "sourcePoint": [339.18, 607.14]},
+        {"id": "south-double-outline", "sourcePoint": [389.7, 622.26]},
+        {"id": "loggetta-west-outline", "sourcePoint": [285.54, 594.48]},
+        {"id": "section-axis-flat", "sourcePoint": [369.3, 582.72]}
+      ],
+      "requiredEmpty": [
+        {"id": "loggetta-interior", "sourcePoint": [300, 580]},
+        {"id": "loggetta-central-bay", "sourcePoint": [330, 580]},
+        {"id": "tower-south-west-open-area", "sourcePoint": [370, 595]},
+        {"id": "east-wall-opening", "sourcePoint": [412.5, 560]},
+        {"id": "west-wall-opening", "sourcePoint": [342, 574]}
+      ]
+    },
+    {
+      "id": "ramp",
+      "plan": "Pianta CD",
+      "crop": [340, 425, 414, 497],
+      "requiredWall": [
+        {"id": "west-outer-shaft", "sourcePoint": [349.5, 470.46]},
+        {"id": "north-outer-shaft", "sourcePoint": [370.92, 435.18]},
+        {"id": "east-outer-shaft", "sourcePoint": [406.56, 456.9]},
+        {"id": "south-outer-shaft", "sourcePoint": [385.02, 491.1]},
+        {"id": "north-west-inner-pier", "sourcePoint": [362.94, 449.16]},
+        {"id": "north-east-inner-pier", "sourcePoint": [394.2, 448.8]},
+        {"id": "south-west-inner-pier", "sourcePoint": [362.94, 474.72]},
+        {"id": "south-east-inner-pier", "sourcePoint": [394.08, 475.5]}
+      ],
+      "requiredDetail": [
+        {"id": "north-ramp-treads", "sourcePoint": [378, 450]},
+        {"id": "west-ramp-edge", "sourcePoint": [363, 460]},
+        {"id": "east-ramp-edge", "sourcePoint": [393, 460]},
+        {"id": "south-ramp-treads", "sourcePoint": [378, 474]},
+        {"id": "ramp-direction-mark", "sourcePoint": [372, 464]}
+      ],
+      "requiredEmpty": [
+        {"id": "central-shaft-open-1", "sourcePoint": [377, 461]},
+        {"id": "central-shaft-open-2", "sourcePoint": [377, 455]},
+        {"id": "north-ramp-open-band", "sourcePoint": [377, 442]},
+        {"id": "north-east-open-corner", "sourcePoint": [398, 442]},
+        {"id": "south-ramp-open-band", "sourcePoint": [377, 482]}
+      ]
+    },
+    {
+      "id": "bell-cell",
+      "plan": "Pianta cella",
+      "crop": [340, 324, 416, 397],
+      "requiredWall": [
+        {"id": "north-east-corner-mass", "sourcePoint": [406.2, 332.94]},
+        {"id": "south-east-corner-mass", "sourcePoint": [406.32, 387.84]},
+        {"id": "north-west-corner-mass", "sourcePoint": [350.04, 332.34]},
+        {"id": "south-west-corner-mass", "sourcePoint": [350.04, 387.6]},
+        {"id": "south-east-interior-support", "sourcePoint": [391.8, 373.44]},
+        {"id": "south-west-interior-support", "sourcePoint": [363.42, 373.14]},
+        {"id": "north-west-interior-support", "sourcePoint": [363.42, 345.36]},
+        {"id": "north-east-interior-support", "sourcePoint": [393, 345.72]},
+        {"id": "north-middle-pier", "sourcePoint": [377.88, 331.02]}
+      ],
+      "requiredDetail": [
+        {"id": "east-stair-flight", "sourcePoint": [402.96, 359.82]},
+        {"id": "spiral-stair-east", "sourcePoint": [389.52, 348.3]},
+        {"id": "spiral-stair-west", "sourcePoint": [373.02, 359.52]},
+        {"id": "east-fine-outline", "sourcePoint": [411.6, 360.36]}
+      ],
+      "requiredEmpty": [
+        {"id": "south-central-room", "sourcePoint": [377, 370]},
+        {"id": "central-hatch-interior", "sourcePoint": [377, 360]},
+        {"id": "north-west-room", "sourcePoint": [365, 350]},
+        {"id": "south-west-room", "sourcePoint": [365, 370]},
+        {"id": "east-central-room", "sourcePoint": [390, 360]}
+      ]
+    },
+    {
+      "id": "upper-service",
+      "plan": "Pianta EF",
+      "crop": [345, 217, 409, 280],
+      "requiredWall": [
+        {"id": "east-perimeter-mass", "sourcePoint": [404.46, 251.34]},
+        {"id": "west-perimeter-mass", "sourcePoint": [352.86, 251.52]},
+        {"id": "south-perimeter-mass", "sourcePoint": [381.78, 279.12]},
+        {"id": "east-inner-mass", "sourcePoint": [397.98, 251.88]},
+        {"id": "west-inner-mass", "sourcePoint": [357.48, 252.48]},
+        {"id": "north-west-isolated-pier", "sourcePoint": [363.42, 237.9]},
+        {"id": "north-east-isolated-pier", "sourcePoint": [391.44, 238.08]},
+        {"id": "south-west-isolated-pier", "sourcePoint": [363.42, 266.04]},
+        {"id": "south-east-isolated-pier", "sourcePoint": [391.74, 265.5]}
+      ],
+      "requiredDetail": [
+        {"id": "central-access-stair", "sourcePoint": [372.66, 252.18]},
+        {"id": "north-fine-outline", "sourcePoint": [377.46, 220.26]},
+        {"id": "west-fine-outline", "sourcePoint": [346.32, 258.06]},
+        {"id": "north-inner-opening-edge", "sourcePoint": [374.88, 230.52]}
+      ],
+      "requiredEmpty": [
+        {"id": "central-opening", "sourcePoint": [382, 250]},
+        {"id": "north-inner-open-area", "sourcePoint": [380, 235]},
+        {"id": "south-inner-open-area", "sourcePoint": [380, 270]},
+        {"id": "west-inner-open-area", "sourcePoint": [355, 240]}
+      ]
+    }
+  ]
+}

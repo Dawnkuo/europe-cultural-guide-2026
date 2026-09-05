@@ -1,0 +1,203 @@
+{
+  "slug": "barcelona-cathedral",
+  "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the official raster's nave, apse, radiating chapels and cloister. Preserves all fifty-nine printed numbers and five descriptive areas; 12 and 27 are absent in the source and are not invented. Fifty-seven selection regions follow the visible wall boundaries. Shared nave/ambulatory and shared 71/72 chapel remain shared; outdoor26 has no invented indoor face.",
+    "floorCoverageReview": "Main church and cloister only. The crypt and roof are not supplied; red annotation occlusions remain unresolved.",
+    "stopBindingReview": "Stops0,1,3,4 locate the nave/chapels, choir, Lepanto chapel and cloister. The crypt stop is not assigned a main-floor coordinate.",
+    "verticalConnectionReview": "No source-backed paired crypt/roof landings exist; no connection is drawn.",
+    "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+    "sourceDigest": "5bb9a64dbe11ef80b9c4bab154c72ffecb6334f6c45a10e8c7d27e9bde30bbff",
+    "sourceEvidence": "sources/floorplans/evidence/barcelona-cathedral.json",
+    "comparedFloors": [
+      "main-level"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:36:37.426Z",
+    "slug": "barcelona-cathedral",
+    "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+    "sourceDigest": "5bb9a64dbe11ef80b9c4bab154c72ffecb6334f6c45a10e8c7d27e9bde30bbff",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "main-level",
+            "exactLabels": 64,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/barcelona-cathedral-1440-3d.png",
+          "work/map-review/release-final/barcelona-cathedral-1440-main-level-2d.png",
+          "work/map-review/release-final/barcelona-cathedral-1440-main-level-selection-2d.png",
+          "work/map-review/release-final/barcelona-cathedral-1440-main-level-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 960,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 64,
+        "selectedSpaces": [
+          "main-level-number-2-13-24-selection",
+          "main-level-number-39-selection"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "main-level",
+            "exactLabels": 64,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/barcelona-cathedral-1094-3d.png",
+          "work/map-review/release-final/barcelona-cathedral-1094-main-level-2d.png",
+          "work/map-review/release-final/barcelona-cathedral-1094-main-level-selection-2d.png",
+          "work/map-review/release-final/barcelona-cathedral-1094-main-level-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1236,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 64,
+        "selectedSpaces": [
+          "main-level-number-2-13-24-selection",
+          "main-level-number-39-selection"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "main-level",
+            "exactLabels": 64,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/barcelona-cathedral-390-3d.png",
+          "work/map-review/release-final/barcelona-cathedral-390-main-level-2d.png",
+          "work/map-review/release-final/barcelona-cathedral-390-main-level-selection-2d.png",
+          "work/map-review/release-final/barcelona-cathedral-390-main-level-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 840,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 64,
+        "selectedSpaces": [
+          "main-level-number-2-13-24-selection",
+          "main-level-number-39-selection"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "barcelona-cathedral",
+    "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "main-level"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "barcelona-cathedral",
+    "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 4,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/barcelona-cathedral/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 152.748556021171,
+      "screenshot": "work/map-review/guide-pages-final/_guides_barcelona-cathedral_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/barcelona-cathedral/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 167.9995351554785,
+      "screenshot": "work/map-review/guide-pages-final/_guides_barcelona-cathedral_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/barcelona-cathedral/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 142.82659449168733,
+      "screenshot": "work/map-review/guide-pages-final/_guides_barcelona-cathedral_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/barcelona-cathedral/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+    "passed": true
+  }
+}

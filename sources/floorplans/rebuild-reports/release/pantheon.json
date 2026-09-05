@@ -1,0 +1,209 @@
+{
+  "slug": "pantheon",
+  "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the complete specialist plan and legend. Thick circular cella masonry, angled chapels, apse,niches,bronze portal and three portico bays follow native outlines. All eighteen identifiers retain their names. Eight connected white-source selection regions preserve chapel angles without replacing the original with an ideal circle.",
+    "floorCoverageReview": "Single visitor church floor; the exterior square and maintenance levels are not included.",
+    "stopBindingReview": "Interior stops1-4 bind portico/portal,cella,Raphael chapel and sanctuary. Exterior stop0 remains outside the plan.",
+    "verticalConnectionReview": "No unprovided upper floor or stair link.",
+    "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+    "sourceDigest": "3efb12cd15f6ad7228ef8e60987e6428a0572247ab44623d79d6c5dafdc79f39",
+    "sourceEvidence": "sources/floorplans/evidence/pantheon.json",
+    "comparedFloors": [
+      "L0"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:44:50.805Z",
+    "slug": "pantheon",
+    "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+    "sourceDigest": "3efb12cd15f6ad7228ef8e60987e6428a0572247ab44623d79d6c5dafdc79f39",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 18,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pantheon-1440-3d.png",
+          "work/map-review/release-final/pantheon-1440-L0-2d.png",
+          "work/map-review/release-final/pantheon-1440-L0-selection-2d.png",
+          "work/map-review/release-final/pantheon-1440-L0-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1042,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "L0-portico",
+          "L0-portal",
+          "L0-cella",
+          "L0-sanctuary"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 18,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pantheon-1094-3d.png",
+          "work/map-review/release-final/pantheon-1094-L0-2d.png",
+          "work/map-review/release-final/pantheon-1094-L0-selection-2d.png",
+          "work/map-review/release-final/pantheon-1094-L0-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1341,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "L0-portico",
+          "L0-portal",
+          "L0-cella",
+          "L0-sanctuary"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 18,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pantheon-390-3d.png",
+          "work/map-review/release-final/pantheon-390-L0-2d.png",
+          "work/map-review/release-final/pantheon-390-L0-selection-2d.png",
+          "work/map-review/release-final/pantheon-390-L0-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1024,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "L0-portico",
+          "L0-portal",
+          "L0-cella",
+          "L0-sanctuary"
+        ],
+        "stopTargets": 5,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "pantheon",
+    "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "L0"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "pantheon",
+    "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.9,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/pantheon/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 163.86544836472885,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pantheon_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/pantheon/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 173.38846952136484,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pantheon_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/pantheon/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 154.15317461370108,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pantheon_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/pantheon/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+    "passed": true
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "slug": "la-pedrera",
+  "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared all four former Fundacio Caixa Catalunya visitor-leaflet plans. Maintains genuine curved room fabric, irregular courtyards, attic route and roof voids. Source floor colors determine surfaces; entry letters/arrows and service glyphs are excluded from masonry. Thirty-four source points include the actual printed service positions.",
+    "floorCoverageReview": "Historic ground, apartment, attic and roof diagrams only. Current private areas, basement and temporary exhibition floor are not inferred; independent diagrams do not claim surveyed vertical alignment.",
+    "stopBindingReview": "Stops1-4 bind courtyards, apartment, attic and roof zones. Facade stop0 remains exterior.",
+    "verticalConnectionReview": "Printed service positions are retained, but no current through-route or independently unverified landing correspondence is added.",
+    "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+    "sourceDigest": "a50e5212e85eff30cb7574939d90f3b3f81c075de5292e377c24b9b74deb37f0",
+    "sourceEvidence": "sources/floorplans/evidence/la-pedrera.json",
+    "comparedFloors": [
+      "historic-visitor-ground",
+      "historic-visitor-apartment",
+      "historic-visitor-attic",
+      "historic-visitor-roof"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:41:25.752Z",
+    "slug": "la-pedrera",
+    "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+    "sourceDigest": "a50e5212e85eff30cb7574939d90f3b3f81c075de5292e377c24b9b74deb37f0",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "historic-visitor-ground",
+            "exactLabels": 15,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-apartment",
+            "exactLabels": 9,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-attic",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-roof",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/la-pedrera-1440-3d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-ground-2d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-apartment-2d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-attic-2d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-roof-2d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-apartment-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-apartment-selection-3d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-attic-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-attic-selection-3d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-roof-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-1440-historic-visitor-roof-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 550,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 34,
+        "selectedSpaces": [
+          "historic-visitor-apartment-brochure-visitor-area",
+          "historic-visitor-attic-brochure-visitor-area",
+          "historic-visitor-roof-brochure-visitor-area"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "historic-visitor-ground",
+            "exactLabels": 15,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-apartment",
+            "exactLabels": 9,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-attic",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-roof",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/la-pedrera-1094-3d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-ground-2d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-apartment-2d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-attic-2d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-roof-2d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-apartment-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-apartment-selection-3d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-attic-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-attic-selection-3d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-roof-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-1094-historic-visitor-roof-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 699,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 34,
+        "selectedSpaces": [
+          "historic-visitor-apartment-brochure-visitor-area",
+          "historic-visitor-attic-brochure-visitor-area",
+          "historic-visitor-roof-brochure-visitor-area"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "historic-visitor-ground",
+            "exactLabels": 15,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-apartment",
+            "exactLabels": 9,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-attic",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-visitor-roof",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/la-pedrera-390-3d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-ground-2d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-apartment-2d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-attic-2d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-roof-2d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-apartment-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-apartment-selection-3d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-attic-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-attic-selection-3d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-roof-selection-2d.png",
+          "work/map-review/release-final/la-pedrera-390-historic-visitor-roof-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1437,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 34,
+        "selectedSpaces": [
+          "historic-visitor-apartment-brochure-visitor-area",
+          "historic-visitor-attic-brochure-visitor-area",
+          "historic-visitor-roof-brochure-visitor-area"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "la-pedrera",
+    "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "historic-visitor-ground",
+      "historic-visitor-apartment",
+      "historic-visitor-attic",
+      "historic-visitor-roof"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "la-pedrera",
+    "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 4.5,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/la-pedrera/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 73.51875262206414,
+      "screenshot": "work/map-review/guide-pages-final/_guides_la-pedrera_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/la-pedrera/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 86.2824515141115,
+      "screenshot": "work/map-review/guide-pages-final/_guides_la-pedrera_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/la-pedrera/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 104.03582538268809,
+      "screenshot": "work/map-review/guide-pages-final/_guides_la-pedrera_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/la-pedrera/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+    "passed": true
+  }
+}

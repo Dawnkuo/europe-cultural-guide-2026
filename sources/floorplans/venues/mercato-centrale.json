@@ -1,0 +1,354 @@
+{
+  "slug": "mercato-centrale",
+  "file": "mercato-centrale-archea.pdf",
+  "url": "https://www.archea.it/wp-content/uploads/2019/09/Area-140-Mercato-Centrale-San-Lorenzo.pdf",
+  "sha256": "b71738cd8a1b56ca0c0799dc0df8f53d120e314fedeaad87d74cd7e77f7fb00b",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [
+      2
+    ],
+    "basis": "Archea Associati's project publication labels the drawing 'plan'; it is a direct top-down view with parallel perimeter walls, repeated iron-column grid and orthogonal fitted service blocks. The photographs and sections on other pages are not extracted."
+  },
+  "review": "Two independent orthographic sources are used without geometric stacking. Archea Associati page 2 supplies the contemporary reuse-project upper hall. Comune di Firenze publication page 56 reproduces the 1869 ground-floor construction plan at 1:100, captioned as vendor-category positions. The historic page's native 638 by 598 raster is converted reproducibly into a two-channel reviewed source: exact red iron supports and thick perimeter ink are walls; local-contrast stall boundaries survive horizontal or vertical length filtering as flat detail; isolated numeral, letter and residual glyph-stroke components are removed. The historical plan is not represented as the present-day merchant layout.",
+  "limitations": [
+    "底层采用佛罗伦萨市政府出版物所载1869年1:100历史平面；它证明历史摊位网格与结构，不代表当前商户、铺位编号或开放范围。",
+    "历史原图的红色铁构件与外圈粗结构线归为墙；摊位边界保留为平面细节，独立的小型数字与文字连通块已剔除，不把房号字形当作几何。",
+    "历史底层与改造后的上层项目图比例彼此独立，只作分层显示，不做测量配准，也不生成推测性跨层连接。",
+    "停点1绑定历史底层摊位网格；停点2和3仍绑定上层项目平面。停点0外立面没有室内平面锚点，保持未解决。",
+    "两份图源均不能证明现行参观路线、临时关闭或商户布置；不据此推断现场运营状态。"
+  ],
+  "stopBindings": [
+    {
+      "stopIndex": 2,
+      "placeId": "upper-中央结构视线-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "upper-上层大厅-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "ground-historic-历史摊位网格-1"
+    }
+  ],
+  "floors": [
+    {
+      "id": "ground-historic",
+      "label": "底层 · 1869年历史摊位平面",
+      "order": 0,
+      "sourceId": "historic-ground-reviewed",
+      "page": 1,
+      "crop": [
+        65,
+        95,
+        570,
+        520
+      ],
+      "rules": [],
+      "spaces": [
+        {
+          "id": "historic-market-floor",
+          "label": "历史市场大厅平面范围",
+          "placeId": "ground-historic-历史摊位网格-1",
+          "tone": "neutral",
+          "outer": [
+            [
+              74,
+              102
+            ],
+            [
+              555,
+              102
+            ],
+            [
+              555,
+              513
+            ],
+            [
+              74,
+              513
+            ],
+            [
+              74,
+              102
+            ]
+          ],
+          "sourcePaths": [],
+          "evidence": "Reviewed rectangular inner market footprint follows the continuous perimeter of the official 1869 ground plan. It is a historical hall surface beneath the stall grid, not a claim about current merchant access."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "rgbRange": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              70,
+              70,
+              70
+            ]
+          ],
+          "wallKernel": 1,
+          "includeKinds": [
+            "wall"
+          ],
+          "tolerancePixels": 0.15,
+          "minAreaPixels": 0.5,
+          "tone": "stone",
+          "reason": "Black reviewed channel in the derived source: exact original red iron-support pixels plus thick perimeter structural ink selected from the official historic plan."
+        },
+        {
+          "xref": 5,
+          "rgbRange": [
+            [
+              120,
+              120,
+              120
+            ],
+            [
+              180,
+              180,
+              180
+            ]
+          ],
+          "wallKernel": 1,
+          "allInkIsDetail": true,
+          "includeKinds": [
+            "detail"
+          ],
+          "tolerancePixels": 0.15,
+          "minAreaPixels": 0.5,
+          "tone": "stone",
+          "reason": "Grey reviewed channel in the derived source: locally contrasted horizontal and vertical historic stall boundaries after individual small numeral, letter and residual glyph-stroke components are removed; retained flat, never extruded as walls."
+        }
+      ],
+      "places": [
+        {
+          "label": "历史摊位网格",
+          "name": "1869年历史底层摊位网格",
+          "at": [
+            315,
+            305
+          ],
+          "kind": "area",
+          "evidence": "Anchor in the central cross aisle of the official plan, whose caption identifies assigned vendor-category positions on the 1869 ground floor.",
+          "precision": "reviewed-historic-plan-zone-center-not-current-stall-location"
+        }
+      ]
+    },
+    {
+      "id": "upper",
+      "label": "上层大厅 · 改造项目平面",
+      "order": 1,
+      "page": 2,
+      "crop": [
+        730,
+        60,
+        1375,
+        560
+      ],
+      "rules": [],
+      "spaces": [
+        {
+          "id": "upper-hall-floor",
+          "label": "上层大厅平面范围",
+          "placeId": "upper-上层大厅-1",
+          "tone": "neutral",
+          "outer": [
+            [
+              920,
+              95
+            ],
+            [
+              1185,
+              95
+            ],
+            [
+              1185,
+              235
+            ],
+            [
+              1250,
+              305
+            ],
+            [
+              1185,
+              375
+            ],
+            [
+              1185,
+              515
+            ],
+            [
+              920,
+              515
+            ],
+            [
+              920,
+              375
+            ],
+            [
+              855,
+              305
+            ],
+            [
+              920,
+              235
+            ],
+            [
+              920,
+              95
+            ]
+          ],
+          "sourcePaths": [],
+          "evidence": "Reviewed upper-floor selection polygon follows the central H-shaped hall boundary between the two large hatched side roof/void zones in the assembled page-2 raster plan; internal fitted structures remain source detail above the floor surface."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 9,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 11,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 12,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 13,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 14,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 15,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 20,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 24,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 26,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        },
+        {
+          "xref": 28,
+          "maxChannel": 185,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed upper-hall plan tile; thick structural ink is wall and fine plan ink remains flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "中央结构视线",
+          "name": "铁柱与屋架中央轴线视点",
+          "at": [
+            1035,
+            330
+          ],
+          "kind": "room",
+          "evidence": "Geometry anchor on the central longitudinal axis defined by the repeated iron-column grid and roof/vertical-opening alignment in the project plan.",
+          "precision": "reviewed-source-plan-axis-anchor-not-surveyed"
+        },
+        {
+          "label": "上层大厅",
+          "name": "改造后的市场上层大厅",
+          "at": [
+            1035,
+            440
+          ],
+          "kind": "room",
+          "evidence": "Geometry anchor within the bounded upper-hall floor area shown in the assembled project plan.",
+          "precision": "reviewed-source-plan-zone-center-not-surveyed"
+        }
+      ]
+    }
+  ],
+  "sourceFiles": [
+    {
+      "id": "historic-ground-reviewed",
+      "file": "mercato-centrale-comune-historic-reviewed.pdf",
+      "url": "https://cultura.comune.fi.it/system/files/2018-12/Dal_mercato_vecchio_ai_nuovi_mercati.pdf",
+      "sha256": "c98a07d95223c54fa1a885b19ea919e7a56240ff2c06e9204e3e08f0f3f330cd",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [
+          1
+        ],
+        "basis": "One-page reviewed pixel extraction of the direct top-view 1:100 historic ground plan printed on official Comune di Firenze publication page 56. Source pixels are classified without perspective transformation; numbered glyph islands are removed, while stall boundaries, perimeter structure and iron supports retain their original image coordinates."
+      },
+      "derivedFrom": {
+        "file": "mercato-centrale-comune-historic.pdf",
+        "url": "https://cultura.comune.fi.it/system/files/2018-12/Dal_mercato_vecchio_ai_nuovi_mercati.pdf",
+        "sha256": "b248daf2d9e2acfc5293dc167b9db806d52fa5f6aa12a65d06bd385c0b05b680",
+        "page": 56,
+        "imageXref": 140,
+        "imageSize": [
+          638,
+          598
+        ]
+      }
+    }
+  ],
+  "contextSources": [
+    {
+      "authority": "Comune di Firenze",
+      "title": "Dal mercato vecchio ai nuovi mercati — Mercato Centrale construction plan",
+      "url": "https://cultura.comune.fi.it/system/files/2018-12/Dal_mercato_vecchio_ai_nuovi_mercati.pdf#page=56",
+      "finding": "Printed page 52 / PDF page 56 captions the plate as the ground floor with positions assigned to vendor categories, construction project 1869, scale 1:100, ASCFi Fondo disegni car. 003/003."
+    }
+  ]
+}

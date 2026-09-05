@@ -1,0 +1,104 @@
+{
+  "venue": "accademia-venice",
+  "checkpointKinds": {
+    "expectedWalls": "wall",
+    "expectedDetails": "detail, explicitly not wall",
+    "expectedDoorGaps": "empty of wall and detail geometry"
+  },
+  "source": {
+    "file": "sources/floorplans/accademia-venice-2026.pdf",
+    "sha256": "6809eac6370f94b3a12017d6e243e3789135a4f9c97d1dc810f7c3d462a11264",
+    "coordinateSystem": "PDF user-space points, top-left origin, coordinates before floor-crop translation"
+  },
+  "floors": {
+    "ground": {
+      "page": 1,
+      "crop": [230, 215, 890, 1165],
+      "expectedWalls": [
+        {"id": "ground-wall-6-5-upper", "point": [522.702, 250.0], "sourcePath": 997, "description": "upper segment of the room 6/5 partition"},
+        {"id": "ground-wall-6-5-lower", "point": [522.702, 330.0], "sourcePath": 962, "description": "lower segment of the room 6/5 partition"},
+        {"id": "ground-wall-west-cross-1", "point": [240.0, 520.29], "sourcePath": 977, "description": "west segment of a west-wing room boundary"},
+        {"id": "ground-wall-west-vertical-1", "point": [286.116, 550.0], "sourcePath": 986, "description": "upper west-wing longitudinal wall"},
+        {"id": "ground-wall-west-vertical-2", "point": [286.116, 700.0], "sourcePath": 987, "description": "lower west-wing longitudinal wall"},
+        {"id": "ground-wall-room-3-west", "point": [673.831, 450.0], "sourcePath": 990, "description": "west wall of rooms 3 and 4"},
+        {"id": "ground-wall-room-4-west-segment", "point": [700.0, 402.315], "sourcePath": 992, "description": "west segment of the room 4 boundary"},
+        {"id": "ground-wall-room-4-east-segment", "point": [755.0, 402.315], "sourcePath": 993, "description": "east segment of the room 4 boundary"},
+        {"id": "ground-wall-room-3-west-segment", "point": [700.0, 524.106], "sourcePath": 994, "description": "west segment of the room 3 boundary"},
+        {"id": "ground-wall-room-3-east-segment", "point": [755.0, 524.106], "sourcePath": 995, "description": "east segment of the room 3 boundary"},
+        {"id": "ground-wall-main-north", "point": [400.0, 360.588], "sourcePath": 996, "description": "north boundary of the central court"},
+        {"id": "ground-wall-east-gallery", "point": [762.955, 500.0], "sourcePath": 966, "description": "east gallery partition"},
+        {"id": "ground-wall-room-1-east", "point": [878.066, 680.0], "sourcePath": 1102, "description": "east wall beside room 1"},
+        {"id": "ground-wall-central-south", "point": [620.27, 700.0], "sourcePath": 968, "description": "central south wall"},
+        {"id": "ground-wall-west-lower", "point": [359.402, 800.0], "sourcePath": 971, "description": "west lower-room partition"}
+      ],
+      "expectedDetails": [
+        {"id": "ground-detail-door-swing", "point": [792.41, 746.81], "sourcePath": 976, "description": "door-swing arc; detail, not wall"},
+        {"id": "ground-detail-east-stair-left", "point": [760.0, 1001.347], "sourcePath": 1120, "description": "left entrance stair tread; detail, not wall"},
+        {"id": "ground-detail-east-stair-right", "point": [860.0, 1001.347], "sourcePath": 1112, "description": "right entrance stair tread; detail, not wall"},
+        {"id": "ground-detail-central-stair-vertical", "point": [465.72, 850.0], "sourcePath": 1139, "description": "central stair tread; detail, not wall"},
+        {"id": "ground-detail-central-stair-horizontal-1", "point": [480.0, 881.6], "sourcePath": 1145, "description": "central stair tread; detail, not wall"},
+        {"id": "ground-detail-central-stair-horizontal-2", "point": [480.0, 871.0044], "sourcePath": 1149, "description": "central stair tread; detail, not wall"},
+        {"id": "ground-detail-central-stair-lower", "point": [450.0, 913.0], "sourcePath": 1155, "description": "lower central stair tread; detail, not wall"},
+        {"id": "ground-detail-round-stair", "point": [276.63, 923.74], "sourcePath": 1128, "description": "round stair edge; detail, not wall"}
+      ],
+      "expectedDoorGaps": [
+        {"id": "ground-gap-6-5", "point": [522.702, 289.0], "adjacentSourcePaths": [962, 997], "minClearance": 9.0, "description": "opening between the two 6/5 partition segments"},
+        {"id": "ground-gap-west-1", "point": [260.0, 520.29], "adjacentSourcePaths": [977, 978], "minClearance": 10.0, "description": "west-wing opening"},
+        {"id": "ground-gap-west-2", "point": [260.0, 612.407], "adjacentSourcePaths": [979, 980], "minClearance": 10.0, "description": "west-wing opening"},
+        {"id": "ground-gap-west-3", "point": [260.0, 658.685], "adjacentSourcePaths": [981, 982], "minClearance": 10.0, "description": "west-wing opening"},
+        {"id": "ground-gap-west-vertical-1", "point": [286.116, 636.0], "adjacentSourcePaths": [986, 987], "minClearance": 7.0, "description": "opening in the west longitudinal wall"},
+        {"id": "ground-gap-west-vertical-2", "point": [286.116, 780.0], "adjacentSourcePaths": [985, 987], "minClearance": 7.0, "description": "opening in the west longitudinal wall"},
+        {"id": "ground-gap-room-4", "point": [736.0, 402.315], "adjacentSourcePaths": [992, 993], "minClearance": 10.0, "description": "opening in the room 4 boundary"},
+        {"id": "ground-gap-room-3", "point": [736.0, 524.106], "adjacentSourcePaths": [994, 995], "minClearance": 10.0, "description": "opening in the room 3 boundary"}
+      ]
+    },
+    "first": {
+      "page": 1,
+      "crop": [1320, 215, 1975, 1165],
+      "expectedWalls": [
+        {"id": "first-wall-XI-X-upper", "point": [1612.678, 250.0], "sourcePath": 1041, "description": "upper segment of the XI/X partition"},
+        {"id": "first-wall-XI-X-lower", "point": [1612.678, 330.0], "sourcePath": 1087, "description": "lower segment of the XI/X partition"},
+        {"id": "first-wall-west-cross", "point": [1330.0, 520.29], "sourcePath": 1020, "description": "west-wing room-boundary segment"},
+        {"id": "first-wall-west-vertical-1", "point": [1376.092, 550.0], "sourcePath": 1027, "description": "upper west-wing longitudinal wall"},
+        {"id": "first-wall-west-vertical-2", "point": [1376.092, 680.0], "sourcePath": 1028, "description": "lower west-wing longitudinal wall"},
+        {"id": "first-wall-V-IV-west", "point": [1625.96, 800.0], "sourcePath": 1012, "description": "west wall of rooms V and IV"},
+        {"id": "first-wall-IV-west-lower", "point": [1625.96, 900.0], "sourcePath": 1015, "description": "lower west wall of room IV"},
+        {"id": "first-wall-VI-west", "point": [1763.807, 500.0], "sourcePath": 1036, "description": "west wall of room VI"},
+        {"id": "first-wall-III-west", "point": [1763.807, 630.0], "sourcePath": 1035, "description": "west wall of room III"},
+        {"id": "first-wall-II-west", "point": [1852.93, 600.0], "sourcePath": 1038, "description": "west wall of room II"},
+        {"id": "first-wall-east-cross-west", "point": [1900.0, 688.873], "sourcePath": 1055, "description": "west segment of the east-room boundary"},
+        {"id": "first-wall-VIII-cross-west", "point": [1880.0, 515.144], "sourcePath": 1056, "description": "west segment of the room VIII boundary"},
+        {"id": "first-wall-I-west", "point": [1834.237, 800.0], "sourcePath": 1042, "description": "west wall of room I"},
+        {"id": "first-wall-I-east", "point": [1968.041, 800.0], "sourcePath": 1042, "description": "east wall of room I"},
+        {"id": "first-wall-central-lower", "point": [1500.0, 834.076], "sourcePath": 1018, "description": "central lower-room boundary"}
+      ],
+      "expectedDetails": [
+        {"id": "first-detail-east-stair-left", "point": [1850.0, 1001.347], "sourcePath": 945, "description": "left east-stair tread; detail, not wall"},
+        {"id": "first-detail-east-stair-right", "point": [1950.0, 990.25], "sourcePath": 957, "description": "right east-stair tread; detail, not wall"},
+        {"id": "first-detail-east-door-swing", "point": [1942.75, 963.43], "sourcePath": 1043, "description": "east door-swing arc; detail, not wall"},
+        {"id": "first-detail-central-stair-vertical", "point": [1550.61, 850.0], "sourcePath": 1065, "description": "central stair tread; detail, not wall"},
+        {"id": "first-detail-central-stair-horizontal", "point": [1580.0, 881.614], "sourcePath": 1070, "description": "central stair tread; detail, not wall"},
+        {"id": "first-detail-small-stair", "point": [1644.51, 955.0], "sourcePath": 1049, "description": "small stair tread; detail, not wall"},
+        {"id": "first-detail-room-IX-stair", "point": [1860.0, 629.774], "sourcePath": 1085, "description": "room IX stair tread; detail, not wall"},
+        {"id": "first-detail-room-II-stair", "point": [1877.69, 700.0], "sourcePath": 1089, "description": "room II stair tread; detail, not wall"}
+      ],
+      "expectedDoorGaps": [
+        {"id": "first-gap-XI-X", "point": [1612.678, 289.0], "adjacentSourcePaths": [1041, 1087], "minClearance": 9.0, "description": "opening between XI and X partition segments"},
+        {"id": "first-gap-west-cross", "point": [1350.0, 520.29], "adjacentSourcePaths": [1020, 1021], "minClearance": 10.0, "description": "west-wing opening"},
+        {"id": "first-gap-west-vertical-1", "point": [1376.092, 588.0], "adjacentSourcePaths": [1027, 1028], "minClearance": 8.0, "description": "opening in the west longitudinal wall"},
+        {"id": "first-gap-west-vertical-2", "point": [1376.092, 728.0], "adjacentSourcePaths": [1028, 1029], "minClearance": 8.0, "description": "opening in the west longitudinal wall"},
+        {"id": "first-gap-V-IV-west", "point": [1625.96, 875.0], "adjacentSourcePaths": [1012, 1015], "minClearance": 10.0, "description": "opening in the V/IV west wall"},
+        {"id": "first-gap-VI-west", "point": [1763.807, 603.0], "adjacentSourcePaths": [1035, 1036], "minClearance": 6.0, "description": "opening in the room VI west wall"},
+        {"id": "first-gap-III-west", "point": [1763.807, 654.0], "adjacentSourcePaths": [1034, 1035], "minClearance": 7.0, "description": "opening in the room III west wall"},
+        {"id": "first-gap-east-cross", "point": [1908.0, 688.873], "adjacentSourcePaths": [1054, 1055], "minClearance": 6.0, "description": "opening in the east-room boundary"},
+        {"id": "first-gap-VIII-cross", "point": [1902.0, 515.144], "adjacentSourcePaths": [1056, 1057], "minClearance": 10.0, "description": "opening in the room VIII boundary"},
+        {"id": "first-gap-II-west", "point": [1852.93, 648.0], "adjacentSourcePaths": [1037, 1038], "minClearance": 6.0, "description": "opening in the room II west wall"}
+      ]
+    }
+  },
+  "verticalLinkReview": {
+    "gallery-elevator": "documented on both official floor diagrams at the corresponding central shaft",
+    "central-stair": "matching wall and tread geometry immediately east of the elevator on both floor diagrams",
+    "eastEntranceStairs": "geometry retained but not linked because the visitor map does not explicitly identify the two east stair drawings as one continuous inter-floor stair"
+  }
+}

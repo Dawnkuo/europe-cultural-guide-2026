@@ -1,0 +1,203 @@
+{
+  "group": "pisa",
+  "status": "ready-for-main-install",
+  "scratchRoot": "/tmp/europe-map-rebuild-pisa",
+  "scope": [
+    "leaning-tower",
+    "pisa-cathedral",
+    "pisa-baptistery",
+    "camposanto",
+    "opera-pisa",
+    "sinopie"
+  ],
+  "coverage": [
+    {
+      "slug": "leaning-tower",
+      "floors": 1,
+      "floorScope": "基座平面",
+      "places": 3,
+      "features": 6425,
+      "sourceSpaces": 0,
+      "boundStops": [1, 2],
+      "unresolvedStops": [0, 3, 4],
+      "miss": "No reviewed upper-level plans. The official technical publication confirms eight levels and seven bells but does not supply extractable floor plans."
+    },
+    {
+      "slug": "pisa-cathedral",
+      "floors": 1,
+      "floorScope": "底层平面（1817年测绘）",
+      "places": 4,
+      "features": 288,
+      "sourceSpaces": 0,
+      "boundStops": [1, 3],
+      "unresolvedStops": [0, 2, 4],
+      "miss": "No current visitor plan or reviewed crypt, roof, matroneum or service-level plan. The 1817 sheet cannot evidence the later reassembled pulpit position."
+    },
+    {
+      "slug": "pisa-baptistery",
+      "floors": 1,
+      "floorScope": "底层平面",
+      "places": 3,
+      "features": 1099,
+      "sourceSpaces": 0,
+      "boundStops": [0, 1, 2],
+      "unresolvedStops": [3],
+      "miss": "The women's gallery is documented in section but no orthographic gallery-floor plan was published in the reviewed source."
+    },
+    {
+      "slug": "camposanto",
+      "floors": 1,
+      "floorScope": "底层测绘平面",
+      "places": 5,
+      "features": 4883,
+      "sourceSpaces": 0,
+      "boundStops": [0],
+      "unresolvedStops": [1, 2, 3],
+      "miss": "The measured survey does not label current fresco, sarcophagus or monument display positions, so artwork stops remain unbound."
+    },
+    {
+      "slug": "opera-pisa",
+      "floors": 1,
+      "floorScope": "底层与回廊",
+      "places": 3,
+      "features": 1486,
+      "sourceSpaces": 0,
+      "boundStops": [4],
+      "unresolvedStops": [0, 1, 2, 3],
+      "miss": "No complete upper-floor plan and no current collection-zone labels on the ground-floor architect plan."
+    },
+    {
+      "slug": "sinopie",
+      "floors": 1,
+      "floorScope": "已发表的建筑外轮廓",
+      "places": 1,
+      "features": 1,
+      "sourceSpaces": 0,
+      "boundStops": [],
+      "unresolvedStops": [0, 1, 2, 3],
+      "miss": "Current sources confirm two visitor levels, ramp, lift and cinema but publish no orthographic interior plan; model is explicitly exterior-footprint-only."
+    }
+  ],
+  "sourceSpacePolicy": "No reviewed source used here exposes exact interior floor-fill paths. Architectural line surveys are not closed into invented floor polygons. Sinopie's official building fill is retained as flat exterior context and not promoted to an interior sourceSpace.",
+  "validation": {
+    "generatorBuild": "pass",
+    "sourceDigests": "pass",
+    "projectionCoverage": "pass",
+    "bindingReferences": "pass",
+    "anchorBounds": "pass",
+    "areaAnchorsOutsideWalls": "pass",
+    "polygonValidity": "pass",
+    "publicFloorPlaceLimitationLabelsChinese": "pass",
+    "deriveAndBuildByteDeterminism": "pass",
+    "visualInspection": "pass: six derived extracts and six generated model renders inspected"
+  },
+  "investigated": [
+    {
+      "url": "https://www.opapisa.it/en/mappa/",
+      "outcome": "Current official overhead site map; supports Sinopie exterior footprint and site registration, not interiors."
+    },
+    {
+      "url": "https://www.opapisa.it/en/square-of-miracles/tower/",
+      "outcome": "Official current venue facts; no floor plan."
+    },
+    {
+      "url": "https://www.opapisa.it/en/square-of-miracles/cathedral/",
+      "outcome": "Official architectural and object context; no current floor plan."
+    },
+    {
+      "url": "https://www.opapisa.it/en/square-of-miracles/baptistery/",
+      "outcome": "Official architectural context; no downloadable gallery-floor plan."
+    },
+    {
+      "url": "https://www.opapisa.it/en/square-of-miracles/camposanto/",
+      "outcome": "Official venue context; no object-position floor plan."
+    },
+    {
+      "url": "https://www.opapisa.it/en/square-of-miracles/opera-del-duomo-museum/",
+      "outcome": "Official venue context; no complete public multi-floor visitor plan."
+    },
+    {
+      "url": "https://www.opapisa.it/en/square-of-miracles/sinopie-museum/",
+      "outcome": "Official venue context; no interior plan."
+    },
+    {
+      "url": "https://collections.soane.org/THES70896",
+      "outcome": "Authoritative 1817 measured Cathedral ground plan; used with historical-date limitation."
+    },
+    {
+      "url": "https://doi.org/10.3390/heritage7110298",
+      "outcome": "Peer-reviewed 2024 Baptistery HBIM plan and sections; ground plan used, gallery plan absent."
+    },
+    {
+      "url": "https://doi.org/10.36153/ARCHIMED-3-032",
+      "outcome": "University of Florence laser and photogrammetric Camposanto survey; complete ground plan used."
+    },
+    {
+      "url": "https://cdn.archilovers.com/projects/07c1d012-26ec-4f7a-bfa0-c5d6d472a391.pdf",
+      "outcome": "Museum architect project sheet; Tower base and Opera ground floor used."
+    },
+    {
+      "url": "https://accessibilita.museitoscana.cultura.gov.it/wp-content/uploads/2023/11/Museo-delle-Sinopie.pdf",
+      "outcome": "Current regional accessibility evidence; two levels and facilities documented, no plan."
+    },
+    {
+      "url": "https://archive.org/download/lesmonumentsdep00fleugoog/lesmonumentsdep00fleugoog.pdf",
+      "outcome": "Historical comparative source inspected; not used for current visitor-floor geometry."
+    }
+  ],
+  "install": {
+    "configs": [
+      "sources/floorplans/venues/leaning-tower.json",
+      "sources/floorplans/venues/pisa-cathedral.json",
+      "sources/floorplans/venues/pisa-baptistery.json",
+      "sources/floorplans/venues/camposanto.json",
+      "sources/floorplans/venues/opera-pisa.json",
+      "sources/floorplans/venues/sinopie.json"
+    ],
+    "models": [
+      "app/data/architectural-plans/leaning-tower.json",
+      "app/data/architectural-plans/pisa-cathedral.json",
+      "app/data/architectural-plans/pisa-baptistery.json",
+      "app/data/architectural-plans/camposanto.json",
+      "app/data/architectural-plans/opera-pisa.json",
+      "app/data/architectural-plans/sinopie.json"
+    ],
+    "evidence": [
+      "sources/floorplans/evidence/leaning-tower.json",
+      "sources/floorplans/evidence/pisa-cathedral.json",
+      "sources/floorplans/evidence/pisa-baptistery.json",
+      "sources/floorplans/evidence/camposanto.json",
+      "sources/floorplans/evidence/opera-pisa.json",
+      "sources/floorplans/evidence/sinopie.json"
+    ],
+    "derivedSources": [
+      "sources/floorplans/derived/leaning-tower-base-plan.pdf",
+      "sources/floorplans/derived/pisa-cathedral-ground-plan.pdf",
+      "sources/floorplans/derived/pisa-cathedral-soane-sheet.pdf",
+      "sources/floorplans/derived/pisa-baptistery-ground-plan.pdf",
+      "sources/floorplans/derived/pisa-baptistery-hbim-figure6.pdf",
+      "sources/floorplans/derived/camposanto-ground-plan.pdf",
+      "sources/floorplans/derived/opera-pisa-ground-plan.pdf",
+      "sources/floorplans/derived/sinopie-published-footprint.pdf",
+      "sources/floorplans/derived/derivation-manifest.json"
+    ],
+    "parentSources": [
+      "sources/floorplans/opapisa-mappa-vert-2026.pdf",
+      "sources/floorplans/opapisa-tower-caa-2025.pdf",
+      "sources/floorplans/camposanto-unifi-survey.pdf",
+      "sources/floorplans/opera-pisa-architect-project.pdf",
+      "sources/floorplans/sinopie-accessibility.pdf",
+      "sources/floorplans/soane-pisa-cathedral-plan-high.jpg",
+      "sources/floorplans/pisa-baptistery-hbim-figure6.png",
+      "sources/floorplans/download-manifest.json"
+    ],
+    "helper": "scripts/rebuild-pisa.py"
+  },
+  "doNotInstall": [
+    "sources/floorplans/pisa-baptistery-hbim.pdf: publisher access-denied HTML, not a PDF",
+    "sources/floorplans/sinopie-pisa292-plan.pdf: competition context for Santa Chiara, not a current museum visitor plan",
+    "sources/floorplans/pisa-management-plan-2021.pdf: contextual management document, no extracted venue floor",
+    "sources/floorplans/opapisa-mandate-report-2019.pdf: contextual report, no extracted venue floor",
+    "sources/floorplans/rohault-de-fleury-pisa-1866.pdf: historical comparative publication, no current visitor-floor extraction"
+  ]
+}

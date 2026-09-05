@@ -1,0 +1,131 @@
+{
+  "venue": "doges-palace",
+  "checkpointKinds": {
+    "expectedWalls": "wall",
+    "expectedStairTreads": "detail, explicitly not wall",
+    "expectedDoorGaps": "empty of wall and detail geometry"
+  },
+  "source": {
+    "file": "sources/floorplans/doges-palace-2025.pdf",
+    "sha256": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+    "coordinateSystem": "PDF user-space points, top-left origin, coordinates before floor-crop translation"
+  },
+  "floors": {
+    "L1": {
+      "page": 7,
+      "crop": [197, 469, 558, 705],
+      "expectedWalls": [
+        {"id": "L1-wall-9-8", "point": [240.035, 522.0], "sourcePath": 79, "description": "partition between rooms 9 and 8"},
+        {"id": "L1-wall-8-7", "point": [282.053, 520.0], "sourcePath": 79, "description": "partition between rooms 8 and 7"},
+        {"id": "L1-wall-7-6", "point": [310.25, 520.0], "sourcePath": 79, "description": "partition between rooms 7 and 6"},
+        {"id": "L1-wall-6-5", "point": [334.517, 520.0], "sourcePath": 79, "description": "partition between rooms 6 and 5"},
+        {"id": "L1-wall-5-east", "point": [356.493, 520.0], "sourcePath": 67, "description": "east partition of room 5"},
+        {"id": "L1-wall-central-west", "point": [380.047, 490.0], "sourcePath": 73, "description": "central stair enclosure west wall"},
+        {"id": "L1-wall-central-1", "point": [401.555, 490.0], "sourcePath": 67, "description": "central stair enclosure partition"},
+        {"id": "L1-wall-central-2", "point": [418.725, 490.0], "sourcePath": 67, "description": "central stair enclosure partition"},
+        {"id": "L1-wall-central-3", "point": [448.489, 490.0], "sourcePath": 69, "description": "central stair enclosure partition"},
+        {"id": "L1-wall-central-4", "point": [473.116, 490.0], "sourcePath": 84, "description": "central stair enclosure partition"},
+        {"id": "L1-wall-room-29-west", "point": [485.739, 490.0], "sourcePath": 71, "description": "west wall beside room 29"},
+        {"id": "L1-wall-room-25-west", "point": [513.368, 500.0], "sourcePath": 73, "description": "partition west of room 25"},
+        {"id": "L1-wall-room-26-west", "point": [535.566, 500.0], "sourcePath": 73, "description": "partition west of room 26"},
+        {"id": "L1-wall-lower-opening", "point": [447.439, 675.0], "sourcePath": 173, "description": "west jamb of the lower documented opening"}
+      ],
+      "expectedStairTreads": [
+        {"id": "L1-tread-west-flight-1", "point": [245.4, 518.94], "sourcePath": 80, "description": "tread in the west apartment flight"},
+        {"id": "L1-tread-west-flight-2", "point": [245.4, 524.66], "sourcePath": 80, "description": "second tread in the west apartment flight"},
+        {"id": "L1-tread-north-flight-1", "point": [307.0, 488.632], "sourcePath": 256, "description": "tread in the north apartment flight"},
+        {"id": "L1-tread-north-flight-2", "point": [307.0, 494.504], "sourcePath": 256, "description": "second tread in the north apartment flight"},
+        {"id": "L1-tread-golden-west-1", "point": [365.0, 489.708], "sourcePath": 76, "description": "tread in the west Golden Stair flight"},
+        {"id": "L1-tread-golden-west-2", "point": [365.0, 498.245], "sourcePath": 76, "description": "second tread in the west Golden Stair flight"},
+        {"id": "L1-tread-central-short", "point": [406.877, 517.0], "sourcePath": 74, "description": "short central stair tread"},
+        {"id": "L1-tread-central-east-1", "point": [455.0, 500.502], "sourcePath": 70, "description": "tread in the central east flight"},
+        {"id": "L1-tread-central-east-2", "point": [455.0, 509.081], "sourcePath": 68, "description": "tread in the adjoining central flight"},
+        {"id": "L1-tread-central-east-3", "point": [455.0, 517.661], "sourcePath": 68, "description": "lower tread in the adjoining central flight"},
+        {"id": "L1-tread-room-29-1", "point": [480.0, 497.642], "sourcePath": 72, "description": "tread west of room 29"},
+        {"id": "L1-tread-room-29-2", "point": [480.0, 506.222], "sourcePath": 72, "description": "second tread west of room 29"}
+      ],
+      "expectedDoorGaps": [
+        {"id": "L1-gap-9-8", "point": [240.035, 532.0], "adjacentSourcePaths": [79, 173], "minClearance": 2.0, "description": "opening at the south end of the 9/8 partition"},
+        {"id": "L1-gap-8-7", "point": [282.1, 530.5], "adjacentSourcePaths": [79], "minClearance": 2.0, "description": "opening at the south end of the 8/7 partition"},
+        {"id": "L1-gap-7-6", "point": [310.235, 530.5], "adjacentSourcePaths": [79], "minClearance": 2.0, "description": "opening at the south end of the 7/6 partition"},
+        {"id": "L1-gap-6-5", "point": [334.44, 530.5], "adjacentSourcePaths": [79], "minClearance": 2.0, "description": "opening at the south end of the 6/5 partition"},
+        {"id": "L1-gap-5-east", "point": [356.4, 530.5], "adjacentSourcePaths": [67, 75], "minClearance": 2.0, "description": "opening at the south end of room 5's east partition"},
+        {"id": "L1-gap-central-west", "point": [401.43, 482.5], "adjacentSourcePaths": [67, 75], "minClearance": 2.0, "description": "north opening in the central west partition"},
+        {"id": "L1-gap-room-25-west", "point": [513.368, 484.0], "adjacentSourcePaths": [73], "minClearance": 2.0, "description": "north opening west of room 25"},
+        {"id": "L1-gap-room-26-west", "point": [535.566, 484.0], "adjacentSourcePaths": [73, 173], "minClearance": 2.0, "description": "north opening west of room 26"},
+        {"id": "L1-gap-lower-opening-west", "point": [447.439, 659.0], "adjacentSourcePaths": [71, 173], "minClearance": 2.0, "description": "gap above the west jamb of the lower opening"},
+        {"id": "L1-gap-lower-opening-east", "point": [473.564, 659.0], "adjacentSourcePaths": [71, 173], "minClearance": 2.0, "description": "gap above the east jamb of the lower opening"}
+      ]
+    },
+    "L2": {
+      "page": 12,
+      "crop": [197, 587, 558, 648],
+      "expectedWalls": [
+        {"id": "L2-wall-19-18-west", "point": [260.0, 623.438], "sourcePath": 115, "description": "west segment between rooms 19 and 18"},
+        {"id": "L2-wall-19-18-east", "point": [300.0, 623.438], "sourcePath": 111, "description": "east segment between rooms 19 and 18"},
+        {"id": "L2-wall-18-17", "point": [298.75, 630.0], "sourcePath": 115, "description": "partition between rooms 18 and 17"},
+        {"id": "L2-wall-17-16", "point": [326.45, 620.0], "sourcePath": 115, "description": "partition between rooms 17 and 16"},
+        {"id": "L2-wall-16-15", "point": [359.98, 620.0], "sourcePath": 113, "description": "partition between rooms 16 and 15"},
+        {"id": "L2-wall-stair-20-west", "point": [385.15, 610.0], "sourcePath": 113, "description": "west stair enclosure beside room 20"},
+        {"id": "L2-wall-room-20-east", "point": [422.829, 601.0], "sourcePath": 109, "description": "east wall of room 20 above the curved wall"},
+        {"id": "L2-wall-room-21-east", "point": [448.837, 610.0], "sourcePath": 113, "description": "east partition beside room 21"},
+        {"id": "L2-wall-room-22-west", "point": [476.937, 615.0], "sourcePath": 122, "description": "west wall of room 22"},
+        {"id": "L2-wall-armoury-1", "point": [492.335, 610.0], "sourcePath": 122, "description": "first armoury partition"},
+        {"id": "L2-wall-armoury-2", "point": [515.996, 615.0], "sourcePath": 111, "description": "second armoury partition"},
+        {"id": "L2-wall-armoury-3", "point": [534.959, 615.0], "sourcePath": 111, "description": "third armoury partition"},
+        {"id": "L2-wall-annex-horizontal", "point": [211.795, 604.368], "sourcePath": 131, "description": "left annex horizontal partition"},
+        {"id": "L2-wall-annex-vertical", "point": [226.532, 600.0], "sourcePath": 133, "description": "left annex vertical partition"}
+      ],
+      "expectedStairTreads": [
+        {"id": "L2-tread-west-stair-1", "point": [378.0, 616.464], "sourcePath": 110, "description": "tread in the stair west of room 20"},
+        {"id": "L2-tread-west-stair-2", "point": [378.0, 621.532], "sourcePath": 110, "description": "middle tread in the stair west of room 20"},
+        {"id": "L2-tread-west-stair-3", "point": [378.0, 629.134], "sourcePath": 110, "description": "lower tread in the stair west of room 20"},
+        {"id": "L2-tread-east-stair-1", "point": [480.693, 598.0], "sourcePath": 112, "description": "tread in the upper stair east of room 22"},
+        {"id": "L2-tread-east-stair-2", "point": [486.262, 598.0], "sourcePath": 112, "description": "middle tread in the upper stair east of room 22"},
+        {"id": "L2-tread-east-stair-3", "point": [489.045, 598.0], "sourcePath": 112, "description": "east tread in the upper stair east of room 22"},
+        {"id": "L2-tread-central-stair-1", "point": [467.875, 628.0], "sourcePath": 117, "description": "tread in the central east stair"},
+        {"id": "L2-tread-central-stair-2", "point": [473.612, 628.0], "sourcePath": 117, "description": "second tread in the central east stair"},
+        {"id": "L2-tread-stair-diagonal", "point": [379.0, 609.4], "sourcePath": 114, "description": "diagonal stair detail west of room 20"},
+        {"id": "L2-tread-room-23-top", "point": [485.0, 594.425], "sourcePath": 121, "description": "top horizontal detail in the room 23 stair"}
+      ],
+      "expectedDoorGaps": [
+        {"id": "L2-gap-19-18", "point": [279.0, 623.438], "adjacentSourcePaths": [111, 115], "minClearance": 3.0, "description": "opening between the two horizontal 19/18 wall segments"},
+        {"id": "L2-gap-18-17", "point": [298.75, 638.3], "adjacentSourcePaths": [115, 126], "minClearance": 2.0, "description": "south opening in the 18/17 partition"},
+        {"id": "L2-gap-17-16", "point": [326.4, 638.3], "adjacentSourcePaths": [115, 126], "minClearance": 2.0, "description": "south opening in the 17/16 partition"},
+        {"id": "L2-gap-17-16-north", "point": [326.5, 606.5], "adjacentSourcePaths": [115], "minClearance": 2.0, "description": "north opening in the 17/16 partition"},
+        {"id": "L2-gap-16-15-north", "point": [359.98, 606.7], "adjacentSourcePaths": [111, 113, 124], "minClearance": 2.0, "description": "north opening in the 16/15 partition"},
+        {"id": "L2-gap-16-15-south", "point": [359.98, 638.3], "adjacentSourcePaths": [113, 126], "minClearance": 2.0, "description": "south opening in the 16/15 partition"},
+        {"id": "L2-gap-room-20-west", "point": [385.14, 597.5], "adjacentSourcePaths": [109, 111, 113], "minClearance": 3.0, "description": "north opening west of room 20"},
+        {"id": "L2-gap-room-20-east", "point": [422.829, 597.5], "adjacentSourcePaths": [109, 111], "minClearance": 3.0, "description": "north opening east of room 20"},
+        {"id": "L2-gap-room-21-east", "point": [448.837, 597.5], "adjacentSourcePaths": [113], "minClearance": 3.0, "description": "north opening east of room 21"},
+        {"id": "L2-gap-armoury-1", "point": [492.335, 622.5], "adjacentSourcePaths": [111, 122], "minClearance": 2.0, "description": "opening in the first armoury partition"},
+        {"id": "L2-gap-armoury-2", "point": [515.996, 622.5], "adjacentSourcePaths": [111], "minClearance": 2.0, "description": "opening in the second armoury partition"},
+        {"id": "L2-gap-armoury-3", "point": [534.959, 622.2], "adjacentSourcePaths": [111], "minClearance": 2.0, "description": "opening in the third armoury partition"}
+      ]
+    }
+  },
+  "selectorAudit": {
+    "finding": "No visible architectural wall or stair-tread stroke was omitted by the previous type/width predicates. The empty-room QA image was caused by opaque rendering of holes in late duplicate perimeter polygons.",
+    "L1": {
+      "omittedDarkStrokeIds": [276, 283],
+      "omittedFilledStrokeIds": [285, 297],
+      "omissionClassification": {
+        "276": "thin annotation leader through the lower opening; not a wall or tread",
+        "283": "thin external accessibility callout leader; not a wall or tread",
+        "285": "white-filled accessibility icon frame; not building geometry",
+        "297": "white-filled lift icon frame; not building geometry"
+      },
+      "clippedOutDuplicateInstanceIds": [409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 516, 517, 518, 529, 531, 534, 599, 600, 613, 615, 616, 617, 619, 623, 624, 625],
+      "removedRedundantSelectedIds": [272, 273, 281, 282],
+      "unionDifferenceAfterDeduplication": 0.0
+    },
+    "L2": {
+      "omittedDarkStrokeIds": [155],
+      "omissionClassification": {
+        "155": "thin external service callout leader; not a wall or tread"
+      },
+      "removedRedundantSelectedIds": [135, 140, 141],
+      "unionDifferenceAfterDeduplication": 0.000369301
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "venue": "fenice",
+  "checkpointKinds": {
+    "expectedWalls": "source-ink checkpoints that must remain classified as extruded wall geometry",
+    "expectedDetails": "source-ink checkpoints that must remain flat door, stair or non-structural detail geometry",
+    "excludedAnnotations": "dark source pixels from printed labels, dimensions or section markers that must not become geometry",
+    "expectedVoids": "reviewed source-white openings or shaded non-architectural regions that must remain empty geometry",
+    "expectedRoomSpaces": "reviewed room floor surface with scope=room containing its bound place anchor",
+    "selectionOnlyClosures": "reviewed source-white doorway thresholds used only to isolate selectable faces; they must remain absent from wall/detail geometry",
+    "minimumBoundsSpan": "guards against regression from the complete source floor to a cropped room group"
+  },
+  "sources": [
+    {
+      "id": "museum-thesis",
+      "file": "sources/floorplans/fenice-museum-thesis-2018.pdf",
+      "sha256": "559f1ce49f1fbed14f5bf4b0a96e0e2f98fa45d03fd3cc7344279a04a2e7f779",
+      "pages": [202, 203]
+    },
+    {
+      "id": "primary",
+      "file": "sources/floorplans/fenice-thesis-2023.pdf",
+      "sha256": "d170c145ce13217b6082489e0f48217a3de3d8b72077f0723ca02c9bbfb7b0ff",
+      "pages": [33],
+      "identityEvidencePage": 27
+    }
+  ],
+  "coordinateSystem": "PDF user-space points, top-left origin, before floor-crop translation",
+  "floors": {
+    "foyer": {
+      "sourceId": "museum-thesis",
+      "page": 202,
+      "sourceImageXref": 748,
+      "crop": [85.05, 70.85, 536.5, 676.6],
+      "minimumWallFeatures": 40,
+      "minimumDetailFeatures": 20,
+      "minimumBoundsSpan": [400, 500],
+      "classificationReason": "Reviewed source pixels preserve double-line wall runs, stair enclosures and load-bearing columns as walls. Tight source-coordinate masks demote only door leaves, swing arcs and stair treads to detail and remove printed annotations.",
+      "expectedWalls": [
+        {"id": "foyer-north-perimeter", "point": [457.6277, 297.1618], "description": "continuous north perimeter wall run"},
+        {"id": "foyer-central-cross-wall", "point": [331.0916, 369.9719], "description": "central transverse wall between the two large foyer halls"},
+        {"id": "foyer-load-bearing-column", "point": [181.5746, 338.0705], "description": "reviewed square load-bearing column on the west hall line"},
+        {"id": "foyer-west-stair-enclosure", "point": [248.4283, 552.3724], "description": "wall enclosing the west lower stair while its treads stay flat"},
+        {"id": "foyer-east-stair-enclosure", "point": [443.7312, 536.2341], "description": "wall enclosing the east lower stair while its treads stay flat"}
+      ],
+      "expectedDetails": [
+        {"id": "foyer-north-door-leaf", "point": [300.3171, 186.4454], "description": "door leaf in the north entrance sequence"},
+        {"id": "foyer-central-door-leaf", "point": [311.1506, 255.1271], "description": "central paired-door plan detail"},
+        {"id": "foyer-west-stair-tread", "point": [213.4992, 530.6045], "description": "tread inside the west lower stair enclosure"},
+        {"id": "foyer-central-stair-tread", "point": [278.8505, 515.2168], "description": "tread inside the central lower stair enclosure"},
+        {"id": "foyer-lower-door-leaf", "point": [320.9158, 478.8117], "description": "door leaf above the central lower stair"}
+      ],
+      "excludedAnnotations": [
+        {"id": "foyer-scale", "point": [109.4629, 87.7389]},
+        {"id": "foyer-street-label", "point": [122.2327, 336.9446]},
+        {"id": "foyer-room-text", "point": [320.5402, 216.0949]},
+        {"id": "foyer-section-marker", "point": [315.282, 164.3021]},
+        {"id": "foyer-lower-room-text", "point": [327.3006, 517.8439]}
+      ],
+      "expectedRoomSpaces": ["foyer-foyer"],
+      "roomSpaceCheckpoints": [
+        {
+          "id": "foyer-foyer",
+          "sourceBounds": [250.31, 344.08, 397.53, 481.44],
+          "boundsTolerance": 0.2,
+          "sourceAreaRange": [17338, 17340],
+          "holes": 4,
+          "contains": [[315, 420]],
+          "excludes": [[245, 420], [405, 420], [315, 338], [315, 486], [326.34, 466.92], [331.83, 401.79], [264.86, 396.72], [259.74, 462.25]],
+          "boundaryNear": [[307, 345.58], [251.06, 420], [396.03, 420], [315, 476.94]],
+          "boundaryTolerance": 1
+        }
+      ]
+    },
+    "auditorium": {
+      "sourceId": "primary",
+      "page": 33,
+      "sourceImageXref": 337,
+      "crop": [135, 335, 346, 550],
+      "minimumWallFeatures": 30,
+      "minimumDetailFeatures": 500,
+      "minimumBoundsSpan": [200, 200],
+      "classificationReason": "The current-state first-tier plan uses neutral mid-grey fills for structural perimeter and box pier or partition bodies, black linework for stage edges, box dividers and stairs, and a tonal gradient only to depict the stage surface. The two source channels preserve those semantics instead of extruding all dark raster ink.",
+      "expectedWalls": [
+        {"id": "auditorium-north-perimeter", "point": [175, 345], "description": "neutral-grey north exterior wall body"},
+        {"id": "auditorium-west-return", "point": [149, 370], "description": "west structural return beside the stage"},
+        {"id": "auditorium-east-perimeter", "point": [335, 390], "description": "neutral-grey east exterior wall body"},
+        {"id": "auditorium-south-curved-perimeter", "point": [250, 540], "description": "curved south exterior wall body"},
+        {"id": "auditorium-north-box-pier", "point": [221, 363], "description": "filled pier at the outer end of a north box divider"},
+        {"id": "auditorium-east-box-pier", "point": [303, 404], "description": "filled pier at the outer end of an east box divider"},
+        {"id": "auditorium-upper-proscenium-mass", "point": [307, 428], "description": "upper filled structural mass at the proscenium-side passage"},
+        {"id": "auditorium-lower-proscenium-mass", "point": [306, 458], "description": "lower filled structural mass at the proscenium-side passage"},
+        {"id": "auditorium-south-box-pier", "point": [220, 522], "description": "filled pier at the outer end of a south box divider"}
+      ],
+      "expectedDetails": [
+        {"id": "auditorium-north-box-divider", "point": [230, 363], "description": "black radial box-divider line retained flat"},
+        {"id": "auditorium-east-box-outline", "point": [300, 402], "description": "black box outline retained flat beside its grey pier"},
+        {"id": "auditorium-stage-edge", "point": [194.38, 404], "description": "black stage edge retained flat while stage shading is excluded"},
+        {"id": "auditorium-upper-stair", "point": [228, 382], "description": "upper grey stair platform and black treads retained flat"},
+        {"id": "auditorium-lower-stair", "point": [228, 502], "description": "lower grey stair platform and black treads retained flat"},
+        {"id": "auditorium-south-box-divider", "point": [270.3384, 512.2379], "description": "black south radial box-divider line retained flat"}
+      ],
+      "excludedAnnotations": [],
+      "expectedVoids": [
+        {"id": "auditorium-stage-shading", "point": [170, 440], "description": "tonal stage shading is not architectural geometry"},
+        {"id": "auditorium-platea-interior", "point": [240, 440], "description": "open platea floor remains unfilled by wall or detail ink"},
+        {"id": "auditorium-central-passage", "point": [306, 444], "description": "source-white passage between the two proscenium masses remains open"},
+        {"id": "auditorium-north-wall-opening-west", "point": [208, 345], "description": "source-white opening between north wall segments remains open"},
+        {"id": "auditorium-north-wall-opening-east", "point": [255, 345], "description": "second source-white opening between north wall segments remains open"}
+      ],
+      "expectedRoomSpaces": [
+        "auditorium-platea",
+        "auditorium-first-tier-boxes"
+      ],
+      "roomSpaceCheckpoints": [
+        {
+          "id": "auditorium-platea",
+          "sourceBounds": [187.34, 381.49, 293.42, 504.55],
+          "boundsTolerance": 0.2,
+          "sourceAreaRange": [10314, 10316],
+          "components": 1,
+          "holes": 0,
+          "contains": [[243, 445], [210, 410], [280, 445], [220, 490]],
+          "excludes": [[170, 445], [214, 368], [228, 382], [228, 502], [305, 443], [320, 445]],
+          "boundaryNear": [[194.54, 445], [250, 381.49], [293.42, 445], [250, 504.55]],
+          "boundaryTolerance": 2
+        },
+        {
+          "id": "auditorium-first-tier-boxes",
+          "sourceBounds": [151.32, 364.47, 305.54, 521.89],
+          "boundsTolerance": 0.2,
+          "sourceAreaRange": [4795, 4798],
+          "components": 30,
+          "holes": 0,
+          "contains": [[214, 368], [156.2, 380.8], [274.6, 385.3], [296.3, 410.4], [296.4, 475.4], [244.2, 513], [156.3, 505.3]],
+          "excludes": [[243, 445], [220, 350], [170, 445], [228, 382], [228, 502], [299, 443]],
+          "boundaryNear": [[158, 369.33], [227.6, 363.57], [282.67, 380.86], [298.79, 487.83], [239.4, 522.11], [158.05, 516.7]],
+          "boundaryTolerance": 1.1
+        }
+      ],
+      "selectionOnlyClosures": [
+        {"id": "upper-west-door-threshold", "spaceId": "auditorium-first-tier-boxes", "point": [158, 369.33], "tolerance": 1.2},
+        {"id": "upper-central-door-threshold", "spaceId": "auditorium-first-tier-boxes", "point": [227.6, 363.57], "tolerance": 1.2},
+        {"id": "upper-curved-door-threshold", "spaceId": "auditorium-first-tier-boxes", "point": [282.67, 380.86], "tolerance": 1.2},
+        {"id": "lower-curved-door-threshold", "spaceId": "auditorium-first-tier-boxes", "point": [298.79, 487.83], "tolerance": 1.2},
+        {"id": "lower-central-door-threshold", "spaceId": "auditorium-first-tier-boxes", "point": [239.4, 522.11], "tolerance": 1.2},
+        {"id": "lower-west-door-threshold", "spaceId": "auditorium-first-tier-boxes", "point": [158.05, 516.7], "tolerance": 1.2}
+      ]
+    },
+    "apollinee": {
+      "sourceId": "museum-thesis",
+      "page": 203,
+      "sourceImageXref": 752,
+      "crop": [85.05, 91.5349, 554.0676, 653.8852],
+      "minimumWallFeatures": 30,
+      "minimumDetailFeatures": 15,
+      "minimumBoundsSpan": [420, 530],
+      "classificationReason": "Reviewed source pixels preserve the complete double-line room perimeter, partitions, stair enclosures and service-core walls as walls. Door leaves, stair treads and the large hall's non-structural inner outline remain flat detail; printed names, dimensions and side titles are removed.",
+      "expectedWalls": [
+        {"id": "apollinee-great-hall-north-wall", "point": [370.1318, 139.8326], "description": "north wall run of the great Apollinee hall"},
+        {"id": "apollinee-great-hall-east-wall", "point": [469.4515, 213.2152], "description": "east wall run of the great Apollinee hall"},
+        {"id": "apollinee-upper-room-partition", "point": [342.7686, 402.6621], "description": "partition between the upper rooms and central circulation"},
+        {"id": "apollinee-central-stair-west-wall", "point": [220.0779, 485.7791], "description": "west wall enclosing the central stair"},
+        {"id": "apollinee-central-stair-east-wall", "point": [326.0256, 461.0687], "description": "east wall enclosing the central stair"},
+        {"id": "apollinee-service-core-wall", "point": [452.9216, 357.734], "description": "reviewed wall in the east service core"}
+      ],
+      "expectedDetails": [
+        {"id": "apollinee-great-hall-inner-outline", "point": [160.7221, 169.0359], "description": "non-structural inner outline within the great hall"},
+        {"id": "apollinee-upper-door-leaf", "point": [293.7104, 315.0523], "description": "door leaf between the great hall and upper rooms"},
+        {"id": "apollinee-central-stair-tread", "point": [296.3327, 452.083], "description": "tread inside the central stair enclosure"},
+        {"id": "apollinee-lower-door-leaf", "point": [354.7726, 490.2719], "description": "door leaf between the two east rooms"},
+        {"id": "apollinee-service-stair-tread", "point": [502.9361, 492.5183], "description": "tread in the east service stair"}
+      ],
+      "excludedAnnotations": [
+        {"id": "apollinee-side-title", "point": [116.143, 225.9448]},
+        {"id": "apollinee-court-label", "point": [530.4668, 210.22]},
+        {"id": "apollinee-great-hall-text", "point": [331.1718, 222.9496]},
+        {"id": "apollinee-top-dimension", "point": [209.7967, 109.1317]},
+        {"id": "apollinee-lower-room-text", "point": [188.8183, 535.9489]}
+      ],
+      "expectedRoomSpaces": [
+        "apollinee-grande",
+        "apollinee-sinopoli",
+        "apollinee-verdi",
+        "apollinee-ammannati",
+        "apollinee-dante"
+      ],
+      "roomSpaceCheckpoints": [
+        {
+          "id": "apollinee-grande",
+          "sourceBounds": [153.98, 126.73, 473.15, 315.43],
+          "boundsTolerance": 0.2,
+          "sourceAreaRange": [50264, 50266],
+          "holes": 0,
+          "contains": [[313.56, 226.32]],
+          "excludes": [[150, 225], [313, 320]],
+          "boundaryNear": [[313, 137.96], [298.58, 302.7]],
+          "boundaryTolerance": 1
+        },
+        {
+          "id": "apollinee-sinopoli",
+          "sourceBounds": [330.8, 314.68, 463.41, 497.39],
+          "boundsTolerance": 0.2,
+          "sourceAreaRange": [18603, 18605],
+          "holes": 1,
+          "contains": [[392.23, 398.54]],
+          "excludes": [[429.76, 408.27], [392, 502]],
+          "boundaryNear": [[337.54, 401.54], [398.98, 492.14]],
+          "boundaryTolerance": 1
+        },
+        {
+          "id": "apollinee-verdi",
+          "sourceBounds": [323.3, 494.39, 449.18, 599.97],
+          "boundsTolerance": 0.2,
+          "sourceAreaRange": [10533, 10535],
+          "holes": 0,
+          "contains": [[388.49, 555.79]],
+          "excludes": [[388, 488], [455, 555]],
+          "boundaryNear": [[401.22, 496.64], [396, 591.73]],
+          "boundaryTolerance": 1
+        },
+        {
+          "id": "apollinee-ammannati",
+          "sourceBounds": [138.99, 299.7, 268.61, 480.16],
+          "boundsTolerance": 0.2,
+          "sourceAreaRange": [19666, 19668],
+          "holes": 0,
+          "contains": [[204.93, 376.08]],
+          "excludes": [[205, 490], [275, 376]],
+          "boundaryNear": [[205, 304.19], [205.68, 475.67]],
+          "boundaryTolerance": 1
+        },
+        {
+          "id": "apollinee-dante",
+          "sourceBounds": [131.5, 480.91, 253.63, 585],
+          "boundsTolerance": 0.2,
+          "sourceAreaRange": [10961, 10963],
+          "holes": 0,
+          "contains": [[205, 545]],
+          "excludes": [[205, 470], [260, 545]],
+          "boundaryNear": [[205, 485.4], [205, 582]],
+          "boundaryTolerance": 1
+        }
+      ],
+      "identityCrossCheck": "Appendix 3 legacy Sala Malibran/Rubinstein/Guidi names are cross-identified as current Sala Sinopoli/Verdi/Dante on the 2023 measured plan, page 27 figure 23."
+    }
+  },
+  "verticalLinkReview": {
+    "status": "not-built",
+    "reason": "The two complete plans preserve stair geometry, but the reviewed sources do not label a shared shaft endpoint pair. The 2023 text also distinguishes closed west stairs from current north-wing access, so no cross-floor link is inferred."
+  },
+  "routeBindingReview": {
+    "preservedGuideStop": 3,
+    "status": "unbound",
+    "guideSubject": "皇家包厢",
+    "reason": "Figure 29 is explicitly the first box tier. The 2023 thesis states that its central axial bay is a large entrance and locates the imperial loggia on the second and third tiers; no reviewed upper-tier plan is available, so the guide stop is not assigned a false first-tier position."
+  },
+  "auditoriumSurfaceReview": {
+    "stage": "anchor-only: the source uses a tonal gradient and thresholding yields only an interior fragment, so no incomplete selectable polygon is published",
+    "platea": "one source-white component at min RGB 220, with compression holes under one source square point filled",
+    "firstTierBoxes": "thirty source-white components at min RGB 220, isolated only by reviewed selection-only doorway threshold closures between source T-end piers"
+  }
+}

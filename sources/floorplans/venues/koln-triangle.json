@@ -1,0 +1,1207 @@
+{
+  "slug": "koln-triangle",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [
+      3,
+      4
+    ],
+    "basis": "Pages 3 and 4 explicitly caption the extracted diagrams as Ground floor plan, Ninth to 27th floor plan and 28th floor plan; each is a top-down orthographic drawing with a scale bar and parallel plan linework."
+  },
+  "stopBindings": [],
+  "file": "koln-triangle-architect.pdf",
+  "url": "https://www.supergelb-architekten.de/cms-assets/files/322_Layout_final_lowRes.pdf?v=1694683319",
+  "sha256": "0374f07240ef75e38d40c861410ff9bff6552226bd6f373107104750ff7dba7b",
+  "review": "Architect-published monograph pp.3-4, individually compared against native high-resolution source crops. All source black filled core walls, radial partitions and columns are recovered in addition to glass/door/furniture linework. Upper floors follow the many native facade vertices. The former ground envelope was actually the dashed projection of upper floors and has been removed, not rounded into a fictional ground slab.",
+  "internalNotes": [
+    "来源记录了地面层、九至二十七层的代表性办公层，以及二十八层活动空间；这些图不能被表述为上方公共观景平台的测绘平面。",
+    "既有导览停靠点0至4均涉及现行访客入口、最后一段楼梯和屋顶观景方向。它们保留在重建报告中，但由于来源没有访客标注或屋顶平台平面，暂不绑定。",
+    "建筑师图纸带有比例尺，但生成模型只保持来源页面单位，不对外提供米制测量。各层独立摆放仅用于显示。",
+    "图中没有访客房间编号，因此模型不虚构编号。办公桌和活动座椅仅作为平面细节，不抬升为墙体。",
+    "Ground native path 325 is an upper-storey projection, visually confirmed with subpath overlays. It remains dashed detail only; no ground slab is inferred across the low-rise junction or external door openings.",
+    "Upper-floor native paths 130 and 40 carry the convex glazing perimeter; original facade samples replace the coarse manual outlines. The floor surface is a display footprint, not a navigable room or published access permission."
+  ],
+  "limitations": [
+    "目前只有地面层、九至二十七层的代表性办公层，以及二十八层活动空间。",
+    "公共观景平台、游客入口与最后一段楼梯尚未定位；办公空间不代表可参观范围。"
+  ],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "地面层（建筑师平面）",
+      "order": 0,
+      "page": 3,
+      "crop": [
+        1028,
+        92,
+        1086,
+        154
+      ],
+      "rules": [
+        {
+          "ids": [
+            12,
+            13,
+            15,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279,
+            280,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296,
+            297,
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            308,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            351,
+            484,
+            485,
+            487,
+            489,
+            500,
+            501,
+            503,
+            504,
+            505,
+            506,
+            507,
+            508,
+            509,
+            510,
+            511,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519,
+            520,
+            521,
+            522,
+            523,
+            524,
+            525,
+            526,
+            528,
+            529,
+            530,
+            531,
+            533,
+            534,
+            536,
+            537,
+            541,
+            542,
+            676,
+            677,
+            894,
+            895,
+            898,
+            899,
+            901,
+            902,
+            950,
+            954
+          ],
+          "channel": "fill",
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Native black filled concrete/partition profiles and solid columns, visually checked against the architect's plan. Compound-path holes stay open; no floor or furniture outline is extruded."
+        },
+        {
+          "ids": [
+            298,
+            299,
+            306,
+            307,
+            309,
+            527,
+            535
+          ],
+          "channel": "fill",
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "Native thin stair-tread/service details retain their black fill as flat ink, not full-height masonry."
+        },
+        {
+          "type": [
+            "s",
+            "fs"
+          ],
+          "colors": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "All remaining source linework inside the reviewed crop: glass facade, doors, stairs, lift cabins, furniture and dashed projections. Dashed upper-floor projections stay flat and do not define the ground-floor footprint."
+        }
+      ],
+      "spaces": [],
+      "places": [
+        {
+          "label": "塔楼地面层",
+          "name": "塔楼地面层公共轮廓",
+          "at": [
+            1057,
+            123
+          ],
+          "kind": "area",
+          "evidence": "锚点取建筑师地面层图中塔楼外轮廓与电梯核心之间的几何中心，仅用于标识该来源楼层。",
+          "precision": "reviewed-floor-area-anchor-not-visitor-route"
+        }
+      ]
+    },
+    {
+      "id": "office-typical",
+      "label": "九至二十七层标准平面",
+      "order": 1,
+      "page": 4,
+      "crop": [
+        820,
+        575,
+        934,
+        695
+      ],
+      "rules": [
+        {
+          "ids": [
+            113,
+            117,
+            119,
+            121,
+            123,
+            133,
+            135,
+            137,
+            139,
+            141,
+            143,
+            145,
+            147,
+            149,
+            151,
+            153,
+            155,
+            157,
+            159,
+            161,
+            163,
+            165,
+            168,
+            171,
+            174,
+            176,
+            178,
+            180,
+            183,
+            185,
+            187,
+            189,
+            191,
+            194,
+            196,
+            199,
+            202,
+            205,
+            207,
+            211,
+            213,
+            215,
+            218,
+            221,
+            224,
+            227,
+            230,
+            511,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519,
+            520,
+            521,
+            522
+          ],
+          "channel": "fill",
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Native black filled concrete/partition profiles and solid columns, visually checked against the architect's plan. Compound-path holes stay open; no floor or furniture outline is extruded."
+        },
+        {
+          "ids": [],
+          "channel": "fill",
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "Native thin stair-tread/service details retain their black fill as flat ink, not full-height masonry."
+        },
+        {
+          "type": [
+            "s",
+            "fs"
+          ],
+          "colors": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "All remaining source linework inside the reviewed crop: glass facade, doors, stairs, lift cabins, furniture and dashed projections. Dashed upper-floor projections stay flat and do not define the ground-floor footprint."
+        }
+      ],
+      "spaces": [
+        {
+          "id": "office-floor-envelope",
+          "label": "九至二十七层代表性轮廓",
+          "placeId": "office-typical-九至二十七层标准办公层-1",
+          "tone": "neutral",
+          "outer": [
+            [
+              877.01721,
+              577.63538
+            ],
+            [
+              875.21722,
+              578.13037
+            ],
+            [
+              874.97717,
+              578.20538
+            ],
+            [
+              870.20721,
+              579.87036
+            ],
+            [
+              869.96722,
+              579.96039
+            ],
+            [
+              865.3172,
+              581.95538
+            ],
+            [
+              865.09222,
+              582.06036
+            ],
+            [
+              860.60718,
+              584.38538
+            ],
+            [
+              860.3822,
+              584.50537
+            ],
+            [
+              856.06219,
+              587.14539
+            ],
+            [
+              855.86719,
+              587.2804
+            ],
+            [
+              851.74219,
+              590.23535
+            ],
+            [
+              851.54718,
+              590.38538
+            ],
+            [
+              847.64722,
+              593.61035
+            ],
+            [
+              847.45221,
+              593.77539
+            ],
+            [
+              843.79218,
+              597.27039
+            ],
+            [
+              843.6272,
+              597.45038
+            ],
+            [
+              840.22217,
+              601.18536
+            ],
+            [
+              840.05719,
+              601.38037
+            ],
+            [
+              836.93719,
+              605.35535
+            ],
+            [
+              836.78717,
+              605.56537
+            ],
+            [
+              833.95221,
+              609.75037
+            ],
+            [
+              833.8172,
+              609.96039
+            ],
+            [
+              831.29718,
+              614.34039
+            ],
+            [
+              831.17719,
+              614.56537
+            ],
+            [
+              828.95721,
+              619.12537
+            ],
+            [
+              826.97717,
+              624.04535
+            ],
+            [
+              825.35718,
+              629.10034
+            ],
+            [
+              825.28223,
+              629.34039
+            ],
+            [
+              824.08221,
+              634.26038
+            ],
+            [
+              824.03723,
+              634.50037
+            ],
+            [
+              823.1972,
+              639.49536
+            ],
+            [
+              823.16718,
+              639.73535
+            ],
+            [
+              822.67218,
+              644.77539
+            ],
+            [
+              822.65723,
+              645.01538
+            ],
+            [
+              822.53723,
+              650.08539
+            ],
+            [
+              822.32721,
+              669.4054
+            ],
+            [
+              824.53223,
+              671.31036
+            ],
+            [
+              828.67218,
+              674.88037
+            ],
+            [
+              833.05219,
+              678.13538
+            ],
+            [
+              837.73218,
+              681.15039
+            ],
+            [
+              842.53223,
+              683.76038
+            ],
+            [
+              847.5722,
+              686.04034
+            ],
+            [
+              852.67218,
+              687.93036
+            ],
+            [
+              857.93719,
+              689.49036
+            ],
+            [
+              863.36719,
+              690.6604
+            ],
+            [
+              868.7522,
+              691.42535
+            ],
+            [
+              874.27222,
+              691.83038
+            ],
+            [
+              879.74719,
+              691.83038
+            ],
+            [
+              885.22217,
+              691.44037
+            ],
+            [
+              890.72717,
+              690.6604
+            ],
+            [
+              896.03717,
+              689.49036
+            ],
+            [
+              901.34717,
+              687.94537
+            ],
+            [
+              906.53717,
+              686.02539
+            ],
+            [
+              911.51721,
+              683.74536
+            ],
+            [
+              916.33221,
+              681.13538
+            ],
+            [
+              920.99719,
+              678.15039
+            ],
+            [
+              925.36218,
+              674.86536
+            ],
+            [
+              929.48718,
+              671.31036
+            ],
+            [
+              931.6922,
+              669.4054
+            ],
+            [
+              931.51221,
+              650.08539
+            ],
+            [
+              931.3772,
+              645.01538
+            ],
+            [
+              931.36218,
+              644.77539
+            ],
+            [
+              930.8822,
+              639.73535
+            ],
+            [
+              930.85217,
+              639.49536
+            ],
+            [
+              930.01221,
+              634.50037
+            ],
+            [
+              928.7522,
+              629.34039
+            ],
+            [
+              928.6922,
+              629.10034
+            ],
+            [
+              927.14722,
+              624.27039
+            ],
+            [
+              925.18219,
+              619.35034
+            ],
+            [
+              925.07721,
+              619.12537
+            ],
+            [
+              922.87219,
+              614.56537
+            ],
+            [
+              922.7522,
+              614.34039
+            ],
+            [
+              920.21722,
+              609.96039
+            ],
+            [
+              920.08221,
+              609.75037
+            ],
+            [
+              917.11218,
+              605.35535
+            ],
+            [
+              913.97717,
+              601.38037
+            ],
+            [
+              913.81219,
+              601.18536
+            ],
+            [
+              910.42218,
+              597.43536
+            ],
+            [
+              906.58221,
+              593.77539
+            ],
+            [
+              906.40222,
+              593.61035
+            ],
+            [
+              902.30719,
+              590.22034
+            ],
+            [
+              898.18219,
+              587.2804
+            ],
+            [
+              897.97217,
+              587.14539
+            ],
+            [
+              893.65222,
+              584.50537
+            ],
+            [
+              893.4422,
+              584.38538
+            ],
+            [
+              888.9422,
+              582.06036
+            ],
+            [
+              888.71722,
+              581.95538
+            ],
+            [
+              884.0672,
+              579.96039
+            ],
+            [
+              883.84222,
+              579.87036
+            ],
+            [
+              879.05719,
+              578.20538
+            ],
+            [
+              878.8172,
+              578.13037
+            ],
+            [
+              877.01721,
+              577.63538
+            ]
+          ],
+          "holes": [],
+          "sourcePaths": [
+            130
+          ],
+          "evidence": "Outer convex glazing envelope reconstructed from all native facade-path vertices, including the original curved-edge sampling. This is a whole-floor footprint, not a room. Internal core partitions and door gaps are retained separately as native geometry.",
+          "scope": "floor"
+        }
+      ],
+      "places": [
+        {
+          "label": "九至二十七层标准办公层",
+          "name": "九至二十七层代表性办公平面",
+          "at": [
+            876,
+            640
+          ],
+          "kind": "area",
+          "evidence": "锚点取建筑师标注为九至二十七层平面的塔楼轮廓几何中心，不代表某一具体楼层的访客位置。",
+          "precision": "reviewed-floor-area-anchor-not-visitor-route"
+        }
+      ]
+    },
+    {
+      "id": "event-28",
+      "label": "二十八层活动空间平面",
+      "order": 2,
+      "page": 4,
+      "crop": [
+        1018,
+        575,
+        1133,
+        695
+      ],
+      "rules": [
+        {
+          "ids": [
+            3,
+            4,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            29,
+            30,
+            31,
+            32,
+            34,
+            36,
+            37,
+            38,
+            39,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            90,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            99,
+            101,
+            103,
+            105,
+            107,
+            109
+          ],
+          "channel": "fill",
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Native black filled concrete/partition profiles and solid columns, visually checked against the architect's plan. Compound-path holes stay open; no floor or furniture outline is extruded."
+        },
+        {
+          "ids": [],
+          "channel": "fill",
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "Native thin stair-tread/service details retain their black fill as flat ink, not full-height masonry."
+        },
+        {
+          "type": [
+            "s",
+            "fs"
+          ],
+          "colors": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "All remaining source linework inside the reviewed crop: glass facade, doors, stairs, lift cabins, furniture and dashed projections. Dashed upper-floor projections stay flat and do not define the ground-floor footprint."
+        }
+      ],
+      "spaces": [
+        {
+          "id": "event-floor-envelope",
+          "label": "二十八层活动空间轮廓",
+          "placeId": "event-28-二十八层活动空间-1",
+          "tone": "neutral",
+          "outer": [
+            [
+              1075.80652,
+              577.54041
+            ],
+            [
+              1074.00659,
+              578.02039
+            ],
+            [
+              1073.7666,
+              578.0954
+            ],
+            [
+              1068.99658,
+              579.76038
+            ],
+            [
+              1068.75659,
+              579.8504
+            ],
+            [
+              1064.10657,
+              581.86041
+            ],
+            [
+              1063.88159,
+              581.96539
+            ],
+            [
+              1059.39661,
+              584.29041
+            ],
+            [
+              1059.17163,
+              584.4104
+            ],
+            [
+              1054.85156,
+              587.05042
+            ],
+            [
+              1054.65662,
+              587.18536
+            ],
+            [
+              1050.53162,
+              590.12537
+            ],
+            [
+              1050.33655,
+              590.27539
+            ],
+            [
+              1046.43652,
+              593.50037
+            ],
+            [
+              1046.24158,
+              593.66541
+            ],
+            [
+              1042.58154,
+              597.1604
+            ],
+            [
+              1042.41663,
+              597.34039
+            ],
+            [
+              1039.0116,
+              601.09039
+            ],
+            [
+              1038.84656,
+              601.2854
+            ],
+            [
+              1035.72656,
+              605.26038
+            ],
+            [
+              1035.57654,
+              605.45538
+            ],
+            [
+              1032.74158,
+              609.6554
+            ],
+            [
+              1032.60657,
+              609.86542
+            ],
+            [
+              1030.08655,
+              614.24536
+            ],
+            [
+              1029.96655,
+              614.4704
+            ],
+            [
+              1027.74658,
+              619.01538
+            ],
+            [
+              1025.7666,
+              623.93536
+            ],
+            [
+              1025.67651,
+              624.17542
+            ],
+            [
+              1024.14661,
+              628.99042
+            ],
+            [
+              1024.07153,
+              629.23041
+            ],
+            [
+              1022.87158,
+              634.15039
+            ],
+            [
+              1022.8266,
+              634.39038
+            ],
+            [
+              1021.94159,
+              639.62537
+            ],
+            [
+              1021.46155,
+              644.66541
+            ],
+            [
+              1021.44659,
+              644.92041
+            ],
+            [
+              1021.3266,
+              649.9754
+            ],
+            [
+              1021.11658,
+              669.31036
+            ],
+            [
+              1023.06659,
+              671.42542
+            ],
+            [
+              1027.23657,
+              675.04041
+            ],
+            [
+              1031.67651,
+              678.34039
+            ],
+            [
+              1036.47656,
+              680.99536
+            ],
+            [
+              1057.29663,
+              686.7854
+            ],
+            [
+              1057.53662,
+              686.8454
+            ],
+            [
+              1062.48657,
+              687.9104
+            ],
+            [
+              1062.72656,
+              687.95538
+            ],
+            [
+              1067.73657,
+              688.67542
+            ],
+            [
+              1067.99158,
+              688.70538
+            ],
+            [
+              1073.03162,
+              689.06537
+            ],
+            [
+              1073.28662,
+              689.08038
+            ],
+            [
+              1078.34155,
+              689.08038
+            ],
+            [
+              1078.59656,
+              689.06537
+            ],
+            [
+              1083.6366,
+              688.70538
+            ],
+            [
+              1083.8916,
+              688.67542
+            ],
+            [
+              1088.90161,
+              687.95538
+            ],
+            [
+              1089.1416,
+              687.9104
+            ],
+            [
+              1094.09155,
+              686.8454
+            ],
+            [
+              1094.33154,
+              686.7854
+            ],
+            [
+              1115.30164,
+              681.31036
+            ],
+            [
+              1119.96655,
+              678.34039
+            ],
+            [
+              1124.19653,
+              674.74042
+            ],
+            [
+              1130.49658,
+              669.29541
+            ],
+            [
+              1130.30164,
+              649.94537
+            ],
+            [
+              1130.16663,
+              644.66541
+            ],
+            [
+              1129.67163,
+              639.62537
+            ],
+            [
+              1129.6416,
+              639.38538
+            ],
+            [
+              1128.80164,
+              634.39038
+            ],
+            [
+              1127.48157,
+              628.99042
+            ],
+            [
+              1125.86157,
+              623.93536
+            ],
+            [
+              1123.97156,
+              619.24042
+            ],
+            [
+              1123.86658,
+              619.01538
+            ],
+            [
+              1121.66162,
+              614.45538
+            ],
+            [
+              1121.54163,
+              614.24536
+            ],
+            [
+              1118.8866,
+              609.6554
+            ],
+            [
+              1116.05164,
+              605.45538
+            ],
+            [
+              1115.90161,
+              605.26038
+            ],
+            [
+              1112.7666,
+              601.27039
+            ],
+            [
+              1112.61658,
+              601.09039
+            ],
+            [
+              1109.0166,
+              597.13037
+            ],
+            [
+              1105.37158,
+              593.66541
+            ],
+            [
+              1105.19153,
+              593.50037
+            ],
+            [
+              1101.29163,
+              590.27539
+            ],
+            [
+              1101.09656,
+              590.12537
+            ],
+            [
+              1096.97156,
+              587.18536
+            ],
+            [
+              1096.7616,
+              587.05042
+            ],
+            [
+              1092.44153,
+              584.4104
+            ],
+            [
+              1092.23157,
+              584.29041
+            ],
+            [
+              1087.73157,
+              581.95038
+            ],
+            [
+              1087.50659,
+              581.8454
+            ],
+            [
+              1082.85657,
+              579.8504
+            ],
+            [
+              1082.63159,
+              579.76038
+            ],
+            [
+              1077.84656,
+              578.0954
+            ],
+            [
+              1077.62158,
+              578.02039
+            ],
+            [
+              1075.80652,
+              577.54041
+            ]
+          ],
+          "holes": [],
+          "sourcePaths": [
+            40
+          ],
+          "evidence": "Outer convex glazing envelope reconstructed from all native facade-path vertices, including the original curved-edge sampling. This is a whole-floor footprint, not a room. Internal core partitions and door gaps are retained separately as native geometry.",
+          "scope": "floor"
+        }
+      ],
+      "places": [
+        {
+          "label": "二十八层活动空间",
+          "name": "二十八层活动空间",
+          "at": [
+            1076,
+            640
+          ],
+          "kind": "area",
+          "evidence": "锚点取建筑师明确标注的二十八层活动平面轮廓几何中心，不外推到上方观景平台。",
+          "precision": "reviewed-floor-area-anchor-not-observation-deck"
+        }
+      ]
+    }
+  ]
+}

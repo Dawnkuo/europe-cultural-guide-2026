@@ -38,7 +38,10 @@ async function installOfflineRoutes() {
   if (manifest.version !== 2 || !Array.isArray(manifest.assets) || !Array.isArray(manifest.routes)) throw new Error('Incomplete offline manifest');
   const guideRoutes = manifest.routes.map(scoped);
   const guideAssets = manifest.assets.map(scoped);
-  await cache.addAll([...new Set([...CORE, ...guideRoutes, ...guideAssets])]);
+  const resources = [...new Set([...CORE, ...guideRoutes, ...guideAssets])];
+  for (let start = 0; start < resources.length; start += 16) {
+    await cache.addAll(resources.slice(start, start + 16));
+  }
   await cache.put(manifestUrl, response);
   await cache.put(READY, new Response(CACHE));
 }

@@ -1,0 +1,160 @@
+{
+  "slug": "milan-duomo",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [1],
+    "basis": "The Veneranda Fabbrica attachment is a current top-down plan of the cathedral and archaeological area. Parallel plan axes, the continuous perimeter, repeated pier symbols and a separately coloured surveillance hatch establish an orthographic projection."
+  },
+  "stopBindings": [
+    {"stopIndex": 0, "placeId": "cathedral-西侧入口-1"},
+    {"stopIndex": 1, "placeId": "cathedral-中央大殿-1"},
+    {"stopIndex": 2, "placeId": "cathedral-唱诗席-1"},
+    {"stopIndex": 3, "placeId": "cathedral-东侧后殿-1"}
+  ],
+  "file": "milan-duomo-official-visitor-plan-2024.pdf",
+  "url": "https://www.duomomilano.it/wp-content/uploads/2024/01/Planimetria-Visitatori.pdf",
+  "sha256": "4397e81e57eec8b278e6eb02a66f70e292881e1618f0acc2660e13fb10e13515",
+  "review": "Official Veneranda Fabbrica attachment linked as Planimetria Visitatori. The native vector page was inspected in Chrome and at full PDF resolution. The left-hand cathedral plan and the separately titled right-hand Scurolo di San Carlo plan were reviewed independently. Charcoal pier and perimeter strokes plus the black continuation strokes form structural layers; red surveillance hatching, entrance symbols, text, the San Giovanni foreground overlay and the lower-right locator diagram are excluded from the crypt floor.",
+  "limitations": [
+    "来源是米兰大教堂管理机构发布的现行访客平面附件，但其用途是标示视频监控范围；模型只据此保留主教座堂连续外轮廓、柱墩、耳堂、唱诗席与后殿，不把监控覆盖解释为可通行区域。",
+    "墙体层只采用全分辨率下可与平面轮廓连续对应的黑色和炭灰色结构线。红色斜线是监控范围填充，入口三角符号和文字是注记，均不抬升为墙体。",
+    "来源未印公共房间编号，也没有墙厚尺寸，因此模型不虚构编号或测量精度。",
+    "同页右侧明确题名为Scurolo di San Carlo的独立俯视平面构成地下圣嘉禄圣堂层；本层裁切只含该平面及其右侧台阶，不采用下方小型定位图，也不把左侧San Giovanni洗礼堂前厅的叠加阴影并入地下圣堂。",
+    "导览停靠点0至3绑定到平面上可识别的入口、中殿、唱诗席和后殿位置。停靠点4与5涉及约31米和45米高的屋顶露台；未找到经审阅的正投影露台图，因此不把中殿轮廓错误投射到屋顶。",
+    "先前1869年档案图的阈值模型因遗漏深色连续轮廓并保留纸张噪声而在浏览器视觉检查中被否决；本版不再使用该几何。"
+  ],
+  "floors": [
+    {
+      "id": "crypt-san-carlo",
+      "label": "圣嘉禄地下圣堂（官方独立平面）",
+      "order": 0,
+      "page": 1,
+      "crop": [390, 300, 493, 571],
+      "rules": [
+        {
+          "ranges": [[0, 1843]],
+          "type": ["s"],
+          "colors": [[0, 0, 0]],
+          "minWidth": 0.2,
+          "maxWidth": 0.3,
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Reviewed black vector strokes within the separately titled Scurolo di San Carlo crop form its perimeter, octagonal lower chamber and principal internal boundaries. The title rule, dotted surveillance boundary and lower-right locator are outside the crop."
+        },
+        {
+          "ranges": [[0, 1843]],
+          "type": ["s"],
+          "colors": [[0.137, 0.122, 0.125]],
+          "minWidth": 0.1,
+          "maxWidth": 0.15,
+          "kind": "detail",
+          "tone": "neutral",
+          "reason": "Reviewed brown-gray fine strokes retain the stair treads, fittings and secondary plan detail as flat evidence; they are not extruded as walls."
+        }
+      ],
+      "places": [
+        {
+          "label": "圣嘉禄地下圣堂",
+          "name": "Scurolo di San Carlo地下圣堂主空间",
+          "at": [423, 424],
+          "kind": "room",
+          "evidence": "锚点位于官方独立平面纵向主体的中心，避开右侧台阶和下方定位图。",
+          "precision": "reviewed-independent-plan-room-anchor-not-surveyed"
+        },
+        {
+          "label": "地下圣堂台阶",
+          "name": "官方平面右侧所示地下圣堂台阶",
+          "at": [477, 338],
+          "kind": "service",
+          "evidence": "锚点取独立平面右上方连续平行踏步的中心；只证明图示台阶位置，不推断现行通行方向。",
+          "precision": "printed-stair-run-center-access-direction-unresolved"
+        }
+      ]
+    },
+    {
+      "id": "cathedral",
+      "label": "主教座堂地面层（官方现行平面）",
+      "order": 1,
+      "page": 1,
+      "crop": [45, 220, 300, 625],
+      "rules": [
+        {
+          "ids": [1408, 1409, 1410, 1423, 1424, 1457, 1533],
+          "type": ["fs"],
+          "colors": [[0.071, 0.088, 0.093]],
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Exact reviewed charcoal, white-filled structural paths around the upper-left transition: six-sided pier outlines 1408-1410, 1423-1424 and 1533, plus perimeter block 1457. Their closed source paths are retained as stroked wall rings; white fills remain transparent voids."
+        },
+        {
+          "ids": [1483, 1504, 1524],
+          "type": ["s"],
+          "colors": [[0, 0, 0]],
+          "maxWidth": 0.3,
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Exact reviewed black structural strokes at the upper-left transition. Path 1504 is the diagonal from (69.1932,308.8951) to (81.1542,297.5761); paths 1483 and 1524 are its source-connected perimeter and pier-side continuations."
+        },
+        {
+          "ranges": [[0, 1843]],
+          "type": ["s", "fs"],
+          "colors": [[0.071, 0.088, 0.093]],
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Reviewed charcoal vector strokes form the pier perimeters, central choir enclosure and repeated exterior masonry outlines; white fills remain voids rather than solid room masses."
+        },
+        {
+          "ranges": [[718, 1826]],
+          "type": ["s"],
+          "colors": [[0, 0, 0]],
+          "maxWidth": 0.3,
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Reviewed black vector strokes continue the cathedral perimeter and transept geometry between the charcoal pier profiles inside the cathedral-only crop. Text, red hatching and filled entrance symbols are excluded by type, colour and crop."
+        },
+        {
+          "ids": [1366, 1466, 1467, 1468, 1469, 1470, 1471, 1472, 1473, 1474, 1475, 1476, 1477, 1478, 1493],
+          "type": ["fs"],
+          "colors": [[0, 0, 0]],
+          "kind": "wall",
+          "tone": "stone",
+          "reason": "Exactly reviewed white-filled, black-stroked structural paths: west facade connectors 1466-1470, west perimeter segments and transept junction 1471-1478, and paired transept-side connectors 1366 and 1493. The explicit IDs exclude surveillance hatching, text and filled entrance symbols."
+        }
+      ],
+      "places": [
+        {
+          "label": "西侧入口",
+          "name": "大教堂广场一侧的西侧门廊",
+          "at": [166, 612],
+          "kind": "service",
+          "evidence": "官方平面南端中央入口符号与纵轴相交；锚点取中央门洞轴线内侧，不把相邻入口符号解释为房间。",
+          "precision": "reviewed-portal-axis-anchor-not-surveyed"
+        },
+        {
+          "label": "中央大殿",
+          "name": "中央大殿与两侧纵向空间",
+          "at": [166, 485],
+          "kind": "area",
+          "evidence": "锚点位于官方平面纵轴上、重复柱墩围合的中段，可由五条纵向空间直接识别。",
+          "precision": "reviewed-architectural-zone-anchor-not-surveyed"
+        },
+        {
+          "label": "唱诗席",
+          "name": "唱诗席与后唱诗席区域",
+          "at": [166, 305],
+          "kind": "area",
+          "evidence": "锚点位于耳堂以北、官方平面明确绘出的长圆形围合唱诗席中央。",
+          "precision": "reviewed-architectural-zone-anchor-not-surveyed"
+        },
+        {
+          "label": "东侧后殿",
+          "name": "东侧后殿与环廊",
+          "at": [166, 248],
+          "kind": "area",
+          "evidence": "锚点位于官方平面最北端后殿轮廓的中心轴线上；方向按图面而非游客朝向描述。",
+          "precision": "reviewed-architectural-zone-anchor-not-surveyed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "slug": "sagrada-familia",
+  "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the main published plan and underground church drawing. Retains main column grid,actual nave/apse geometry,planned areas and all repeated source identifiers. Crypt chapels and circular supports remain distinct; source planning elements are not claimed to be finished current fabric.",
+    "floorCoverageReview": "Main planning level and crypt only. Passion-tower visitor floors remain missing.",
+    "stopBindingReview": "Stops0/1/2/4 bind published main-level locations2/11/5/3. The ascent is not put into the crypt.",
+    "verticalConnectionReview": "Crypt access is distinct from visitor tower access; no source-backed tower landing pairs.",
+    "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+    "sourceDigest": "56d0ee92ae7c1ca2bb3760dbc4f6c8e3810b83a56a408ee81acae8c2f7686da7",
+    "sourceEvidence": "sources/floorplans/evidence/sagrada-familia.json",
+    "comparedFloors": [
+      "main",
+      "crypt"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:46:05.674Z",
+    "slug": "sagrada-familia",
+    "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+    "sourceDigest": "56d0ee92ae7c1ca2bb3760dbc4f6c8e3810b83a56a408ee81acae8c2f7686da7",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 26,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "crypt",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/sagrada-familia-1440-3d.png",
+          "work/map-review/release-final/sagrada-familia-1440-main-2d.png",
+          "work/map-review/release-final/sagrada-familia-1440-crypt-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 641,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 39,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 26,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "crypt",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/sagrada-familia-1094-3d.png",
+          "work/map-review/release-final/sagrada-familia-1094-main-2d.png",
+          "work/map-review/release-final/sagrada-familia-1094-crypt-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 826,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 39,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 26,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "crypt",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/sagrada-familia-390-3d.png",
+          "work/map-review/release-final/sagrada-familia-390-main-2d.png",
+          "work/map-review/release-final/sagrada-familia-390-crypt-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 839,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 39,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "sagrada-familia",
+    "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "main",
+      "crypt"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "sagrada-familia",
+    "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.8,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/sagrada-familia/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 115.54192712727821,
+      "screenshot": "work/map-review/guide-pages-final/_guides_sagrada-familia_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/sagrada-familia/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 129.45670880265854,
+      "screenshot": "work/map-review/guide-pages-final/_guides_sagrada-familia_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/sagrada-familia/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 128.59924341476494,
+      "screenshot": "work/map-review/guide-pages-final/_guides_sagrada-familia_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/sagrada-familia/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+    "passed": true
+  }
+}

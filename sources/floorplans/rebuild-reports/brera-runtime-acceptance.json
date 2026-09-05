@@ -1,0 +1,133 @@
+{
+  "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+  "sourceDigest": "f60d3d81dba635652fac312a8ec833a810b15bacf0452425cb2d2a598922a298",
+  "reports": {
+    "browser": {
+      "target": "http://localhost:55838",
+      "timestamp": "2026-09-05T04:05:57.129Z",
+      "slug": "brera",
+      "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+      "sourceDigest": "f60d3d81dba635652fac312a8ec833a810b15bacf0452425cb2d2a598922a298",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "floors": [
+            {
+              "id": "gallery",
+              "exactLabels": 40,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/brera-spaces/brera-1440-3d.png",
+            "work/map-review/brera-spaces/brera-1440-gallery-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 515,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        },
+        {
+          "viewport": {
+            "width": 1094,
+            "height": 768
+          },
+          "floors": [
+            {
+              "id": "gallery",
+              "exactLabels": 40,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/brera-spaces/brera-1094-3d.png",
+            "work/map-review/brera-spaces/brera-1094-gallery-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 672,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "floors": [
+            {
+              "id": "gallery",
+              "exactLabels": 40,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/brera-spaces/brera-390-3d.png",
+            "work/map-review/brera-spaces/brera-390-gallery-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 791,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        }
+      ]
+    },
+    "touch": {
+      "slug": "brera",
+      "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+      "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+      "errors": [],
+      "drag": true,
+      "pinch": true,
+      "cancellationRecovery": true,
+      "floorTaps": [
+        "gallery"
+      ],
+      "passed": true
+    },
+    "performance": {
+      "slug": "brera",
+      "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+      "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+      "frames": 134,
+      "frameP50Ms": 16.699999999999818,
+      "frameP95Ms": 33.30000000000018,
+      "renderP95Ms": 9.1,
+      "contexts": {
+        "created": 7,
+        "lost": 6,
+        "live": 1
+      },
+      "errors": [],
+      "emulated30Fps": true
+    },
+    "offline": {
+      "revision": "685d2728c9727225cadc",
+      "route": "/guides/brera/",
+      "hasMap": true,
+      "errors": [],
+      "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+      "passed": true
+    }
+  }
+}

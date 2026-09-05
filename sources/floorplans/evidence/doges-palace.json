@@ -13,7 +13,7 @@
     "basis": "Each of the five extracted diagrams was visually checked as an overhead plan, not the booklet's perspective illustrations. Their horizontal registration is unknown and is not inferred from the page layout."
   },
   "transform": "translation only, equal x/y units; floor stacking is display-only",
-  "review": "Orthographic diagrams on PDF pages 4/6/7/12/16 checked visually. Columns are solid black circles in architectural runs, not service-symbol circles. Wall strokes are >1 source unit, stair treads and handrails remain flat. Service leaders and PDF duplicate clipped drawing streams excluded. Page16's Piombi and attic/Great Council ceiling are drawn independently, not inferred from lower floors. All printed place numbers 1-38 retained, including duplicated cross-level stair/prison-entry labels; letter l has five distinct source anchors.",
+  "review": "Orthographic diagrams on PDF pages 4/6/7/12/16 checked visually. L1 and L2 generated wall/detail polygons were overlaid directly on the official source coordinates; all visible room partitions and stair treads align, and 72 independent wall/detail/door-gap checkpoints pass. Columns are solid black circles in architectural runs, not service-symbol circles. Wall strokes are >1 source unit, stair treads and handrails remain flat. Service leaders and PDF duplicate clipped drawing streams excluded. Page16's Piombi and attic/Great Council ceiling are drawn independently, not inferred from lower floors. All printed place numbers 1-38 retained, including duplicated cross-level stair/prison-entry labels; letter l has five distinct source anchors. Browser 3D rendering remains an integration-stage check.",
   "claims": [
     {
       "featureId": "L0-path-0-surface",
@@ -1024,6 +1024,16 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L0-museo",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourcePaths": [
+        5
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
       "featureId": "L0-1-1",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 4,
@@ -1031,8 +1041,8 @@
         487.4253692626953,
         634.388427734375
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L0-3-1",
@@ -1042,8 +1052,8 @@
         446.99205017089844,
         514.5334014892578
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L0-2-1",
@@ -1053,16 +1063,115 @@
         311.6717987060547,
         624.980712890625
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "L0-lift-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourceAnchor": [
+        198.546997,
+        484.485016
+      ],
+      "classification": "P4 path186 museum endpoint; paired lift and wheelchair pictograms.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L0-cafe-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourceAnchor": [
+        266.661011,
+        482.996002
+      ],
+      "classification": "P4 path157 museum endpoint; cup pictogram.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L0-cloakroom-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourceAnchor": [
+        349.154999,
+        484.981018
+      ],
+      "classification": "P4 path178 museum endpoint; hanger pictogram.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L0-toilets-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourceAnchor": [
+        430.735992,
+        482.492004
+      ],
+      "classification": "P4 paths180/193 duplicate the same gendered WC target.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L0-accessible-wc-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourceAnchor": [
+        430.735992,
+        499.343018
+      ],
+      "classification": "P4 path195 is the second endpoint below the shared general-WC leader, paired with wheelchair pictogram.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L0-bookshop-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourceAnchor": [
+        477.619995,
+        595.462036
+      ],
+      "classification": "P4 path182 museum endpoint at the right, not the external book pictogram.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L0-tickets-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourceAnchor": [
+        493.755005,
+        620.341003
+      ],
+      "classification": "P4 path184 museum endpoint at the right; staffed-counter pictogram.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L0-giants-stair-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 4,
+      "sourceAnchor": [
+        283,
+        555
+      ],
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "loggia-path-63-surface",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 6,
       "path": 63,
-      "classification": "loggia-floor silhouette and service rooms",
-      "precision": "source-proportional"
+      "classification": "actual loggia floor only; lower-floor ghost is not an elevated slab",
+      "precision": "source-proportional",
+      "excludeContextRegions": [
+        {
+          "bounds": [
+            177.5364990234375,
+            613.618408203125,
+            279.44305419921875,
+            757.9937133789062
+          ],
+          "evidence": "P6 source63 combines this floor with a pale lower-floor ghost west of the courtyard. The removal region starts at the real northern loggia colonnade ordinate from source165, ends at the real western edge of the southern loggia rooms from source226, and extends only to source63's printed outer bounds. No wall or stair stroke is clipped: the Giants' Stair continues as its own source detail. The lower-floor footprint remains on L0."
+        }
+      ]
     },
     {
       "featureId": "loggia-path-65-surface",
@@ -2073,6 +2182,27 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "loggia-state-rooms",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 6,
+      "sourcePaths": [
+        71
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "loggia-new-prisons",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 6,
+      "sourcePaths": [
+        73,
+        128
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
       "featureId": "loggia-4-1",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 6,
@@ -2080,8 +2210,8 @@
         339.3985595703125,
         599.904541015625
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "loggia-35-1",
@@ -2091,8 +2221,8 @@
         392.0566711425781,
         572.8846435546875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "loggia-36-1",
@@ -2102,8 +2232,8 @@
         351.95172119140625,
         572.8917236328125
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "loggia-37-1",
@@ -2113,8 +2243,8 @@
         332.62744140625,
         572.8917236328125
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "loggia-32-1",
@@ -2124,8 +2254,8 @@
         362.095703125,
         541.6226806640625
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "loggia-33-1",
@@ -2135,8 +2265,8 @@
         388.1295166015625,
         541.6226806640625
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "loggia-38-1",
@@ -2146,8 +2276,8 @@
         317.5491638183594,
         572.8988037109375
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "loggia-34-1",
@@ -2157,8 +2287,8 @@
         394.5421142578125,
         511.3245849609375
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "loggia-3-1",
@@ -2168,16 +2298,52 @@
         346.83470153808594,
         496.0069885253906
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "loggia-lift-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 6,
+      "sourceAnchor": [
+        187.700928,
+        571.356628
+      ],
+      "classification": "P6 path178 museum endpoint; lift and wheelchair pictograms.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "loggia-bookshop-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 6,
+      "sourceAnchor": [
+        290.259644,
+        565.253723
+      ],
+      "classification": "P6 path173 museum endpoint; book pictogram.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "loggia-toilets-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 6,
+      "sourceAnchor": [
+        426.121796,
+        564.414307
+      ],
+      "classification": "P6 path213 second endpoint, inside the WC room.",
+      "precision": "printed-service-leader-endpoint"
     },
     {
       "featureId": "L1-path-61-surface",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 61,
-      "classification": "floor silhouette, service spaces and stair landings",
-      "precision": "source-proportional"
+      "classification": "Original grey service/stair floor clipped to the explicitly closed current-level perimeter66. Grey lower-floor context west of the courtyard is not an upper-floor slab.",
+      "precision": "source-proportional",
+      "withinClosedPaths": [
+        66
+      ]
     },
     {
       "featureId": "L1-path-62-surface",
@@ -2216,7 +2382,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 66,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2224,7 +2390,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 67,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2232,7 +2398,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 68,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2240,7 +2406,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 69,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2248,7 +2414,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 70,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2256,7 +2422,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 71,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2264,7 +2430,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 72,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2272,7 +2438,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 73,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2280,7 +2446,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 74,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2288,7 +2454,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 75,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2296,7 +2462,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 76,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2304,7 +2470,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 77,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2312,7 +2478,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 78,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2320,7 +2486,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 79,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2328,7 +2494,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 80,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2336,7 +2502,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 81,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2344,7 +2510,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 82,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2352,7 +2518,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 83,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2360,7 +2526,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 84,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2368,7 +2534,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 173,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2376,7 +2542,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 174,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2384,7 +2550,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 175,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2392,7 +2558,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 186,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2400,7 +2566,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 188,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2408,7 +2574,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 191,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2416,7 +2582,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 256,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2424,7 +2590,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 257,
-      "classification": "thin stair and railing details",
+      "classification": "visually reviewed stair treads, stair diagonals and railing details; duplicate tread path 281 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2456,7 +2622,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 270,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2468,27 +2634,11 @@
       "precision": "source-proportional"
     },
     {
-      "featureId": "L1-path-272-wall",
-      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
-      "page": 7,
-      "path": 272,
-      "classification": "main structural contours including original openings",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L1-path-273-wall",
-      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
-      "page": 7,
-      "path": 273,
-      "classification": "main structural contours including original openings",
-      "precision": "source-proportional"
-    },
-    {
       "featureId": "L1-path-274-wall",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 274,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
@@ -2512,24 +2662,31 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
       "path": 280,
-      "classification": "main structural contours including original openings",
+      "classification": "visually reviewed unique structural contours and complementary wall segments; redundant closed perimeter paths 273/282 and duplicate fragments 272/281 are excluded",
       "precision": "source-proportional"
     },
     {
-      "featureId": "L1-path-281-detail",
+      "featureId": "L1-doge-apartments",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
-      "path": 281,
-      "classification": "thin stair and railing details",
-      "precision": "source-proportional"
+      "sourcePaths": [
+        63,
+        269,
+        271
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
     },
     {
-      "featureId": "L1-path-282-wall",
+      "featureId": "L1-institutional",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 7,
-      "path": 282,
-      "classification": "main structural contours including original openings",
-      "precision": "source-proportional"
+      "sourcePaths": [
+        62,
+        279
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
     },
     {
       "featureId": "L1-5-1",
@@ -2539,8 +2696,8 @@
         342.1938018798828,
         532.9747314453125
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-6-1",
@@ -2550,8 +2707,8 @@
         317.39039611816406,
         532.9666748046875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-7-1",
@@ -2561,8 +2718,8 @@
         289.4391326904297,
         532.9666748046875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-8-1",
@@ -2572,8 +2729,8 @@
         257.16160583496094,
         532.9586181640625
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-9-1",
@@ -2583,8 +2740,8 @@
         227.85436248779297,
         532.9666748046875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-10-1",
@@ -2594,8 +2751,8 @@
         227.85032653808594,
         504.7894287109375
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-11-1",
@@ -2605,8 +2762,8 @@
         257.14949798583984,
         489.9622802734375
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-12-1",
@@ -2616,8 +2773,8 @@
         296.90113830566406,
         490.86627197265625
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-13-1",
@@ -2627,8 +2784,8 @@
         340.8579864501953,
         497.8964538574219
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-14-1",
@@ -2638,8 +2795,8 @@
         374.7820739746094,
         480.16357421875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-24-1",
@@ -2649,8 +2806,8 @@
         520.5273742675781,
         531.2474975585938
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-25-1",
@@ -2660,8 +2817,8 @@
         493.22181701660156,
         512.0375366210938
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-26-1",
@@ -2671,8 +2828,8 @@
         530.7619323730469,
         512.0375366210938
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-27-1",
@@ -2682,8 +2839,8 @@
         482.32545471191406,
         689.8666381835938
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-28-1",
@@ -2693,8 +2850,8 @@
         326.45863342285156,
         689.8666381835938
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-29-1",
@@ -2704,8 +2861,8 @@
         426.0112609863281,
         512.0455932617188
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-30-1",
@@ -2715,8 +2872,8 @@
         408.7546081542969,
         494.02215576171875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-31-1",
@@ -2726,8 +2883,8 @@
         387.5914001464844,
         494.02215576171875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L1-32-1",
@@ -2737,8 +2894,19 @@
         387.5914001464844,
         511.82769775390625
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "L1-lift-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 7,
+      "sourceAnchor": [
+        207.022003,
+        494.539001
+      ],
+      "classification": "P7 path283 first endpoint, at the western lift core. The external pictogram is below the plan.",
+      "precision": "printed-service-leader-endpoint"
     },
     {
       "featureId": "L2-path-103-surface",
@@ -2785,7 +2953,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 108,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2793,7 +2961,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 109,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2801,7 +2969,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 110,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2809,7 +2977,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 111,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2817,7 +2985,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 112,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2825,7 +2993,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 113,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2833,7 +3001,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 114,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2841,7 +3009,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 115,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2849,7 +3017,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 116,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2857,7 +3025,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 117,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2865,7 +3033,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 118,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2873,7 +3041,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 119,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2881,7 +3049,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 120,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2889,7 +3057,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 121,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2897,7 +3065,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 122,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2905,7 +3073,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 123,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2913,7 +3081,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 124,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2921,7 +3089,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 125,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
     },
     {
@@ -2929,7 +3097,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 126,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2953,7 +3121,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 129,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2969,7 +3137,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 131,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2985,7 +3153,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 133,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -2997,19 +3165,11 @@
       "precision": "source-proportional"
     },
     {
-      "featureId": "L2-path-135-wall",
-      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
-      "page": 12,
-      "path": 135,
-      "classification": "second-floor architectural walls, not label leader 155",
-      "precision": "source-proportional"
-    },
-    {
       "featureId": "L2-path-136-wall",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 136,
-      "classification": "second-floor architectural walls, not label leader 155",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -3017,23 +3177,7 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 139,
-      "classification": "second-floor architectural walls, not label leader 155",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L2-path-140-wall",
-      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
-      "page": 12,
-      "path": 140,
-      "classification": "second-floor architectural walls, not label leader 155",
-      "precision": "source-proportional"
-    },
-    {
-      "featureId": "L2-path-141-detail",
-      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
-      "page": 12,
-      "path": 141,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed structural walls including the left annex and armoury; redundant wall paths 135/140 are excluded and label leader 155 is not architecture",
       "precision": "source-proportional"
     },
     {
@@ -3041,8 +3185,38 @@
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 12,
       "path": 146,
-      "classification": "stair treads and railing details",
+      "classification": "visually reviewed stair treads and railing details; duplicate tread path 141 is excluded",
       "precision": "source-proportional"
+    },
+    {
+      "featureId": "L2-institutional",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 12,
+      "sourcePaths": [
+        103
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L2-secret-itinerary",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 12,
+      "sourcePaths": [
+        107
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L2-armoury",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 12,
+      "sourcePaths": [
+        127
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
     },
     {
       "featureId": "L2-15-1",
@@ -3052,8 +3226,8 @@
         381.42994689941406,
         638.3392944335938
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-16-1",
@@ -3063,8 +3237,8 @@
         334.3329315185547,
         638.346435546875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-17-1",
@@ -3074,8 +3248,8 @@
         306.17015075683594,
         638.346435546875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-18-1",
@@ -3085,8 +3259,8 @@
         254.79454040527344,
         638.346435546875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-19-1",
@@ -3096,8 +3270,8 @@
         254.79454040527344,
         615.8624267578125
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-20-1",
@@ -3107,8 +3281,8 @@
         391.9525604248047,
         603.6907958984375
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-21-1",
@@ -3118,8 +3292,8 @@
         429.7805938720703,
         603.6979370117188
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-22-1",
@@ -3129,8 +3303,8 @@
         483.96278381347656,
         637.5740966796875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-23-1",
@@ -3140,8 +3314,8 @@
         472.1056365966797,
         593.1639404296875
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-a-1",
@@ -3151,8 +3325,8 @@
         391.00624084472656,
         640.7064208984375
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-b-1",
@@ -3162,8 +3336,8 @@
         429.07691955566406,
         640.4990234375
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "L2-c-1",
@@ -3173,8 +3347,19 @@
         455.12059020996094,
         640.6992797851562
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "L2-lift-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 12,
+      "sourceAnchor": [
+        206.582642,
+        612.062622
+      ],
+      "classification": "P12 path155 first endpoint, at the western lift core.",
+      "precision": "printed-service-leader-endpoint"
     },
     {
       "featureId": "attic-path-1-wall",
@@ -3409,11 +3594,11 @@
       "precision": "source-proportional"
     },
     {
-      "featureId": "attic-path-35-wall",
+      "featureId": "attic-path-35-detail",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 16,
       "path": 35,
-      "classification": "architectural partitions from the actual attic diagram",
+      "classification": "Page 16 printed dashed overhead/context lines across the attic, not continuous partition walls. Preserve the original PDF dash lengths and gaps as flat detail.",
       "precision": "source-proportional"
     },
     {
@@ -3433,11 +3618,11 @@
       "precision": "source-proportional"
     },
     {
-      "featureId": "attic-path-38-wall",
+      "featureId": "attic-path-38-detail",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 16,
       "path": 38,
-      "classification": "architectural partitions from the actual attic diagram",
+      "classification": "Page 16 printed dashed overhead/context lines across the attic, not continuous partition walls. Preserve the original PDF dash lengths and gaps as flat detail.",
       "precision": "source-proportional"
     },
     {
@@ -3561,6 +3746,20 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "attic-secret-itinerary",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 16,
+      "sourcePaths": [
+        7,
+        16,
+        17,
+        18,
+        52
+      ],
+      "classification": "Exact reviewed thematic floor fill from the official guide diagram.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
       "featureId": "attic-d-1",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "page": 16,
@@ -3568,8 +3767,8 @@
         354.5203399658203,
         557.5896301269531
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-e-1",
@@ -3579,8 +3778,8 @@
         389.83380126953125,
         606.0393371582031
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-f-1",
@@ -3590,8 +3789,8 @@
         403.122802734375,
         614.7583312988281
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-g-1",
@@ -3601,8 +3800,8 @@
         425.890380859375,
         614.0812683105469
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-h-1",
@@ -3612,8 +3811,8 @@
         472.1851348876953,
         607.1457214355469
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-i-1",
@@ -3623,8 +3822,8 @@
         455.6141357421875,
         562.6013488769531
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-l-1",
@@ -3634,8 +3833,8 @@
         477.857421875,
         595.1323547363281
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-l-2",
@@ -3645,8 +3844,8 @@
         477.857421875,
         585.7941589355469
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-l-3",
@@ -3656,8 +3855,8 @@
         440.71923828125,
         579.0897521972656
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-l-4",
@@ -3667,8 +3866,8 @@
         426.63348388671875,
         579.2053527832031
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-l-5",
@@ -3678,8 +3877,8 @@
         484.2645568847656,
         562.9563903808594
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-m-1",
@@ -3689,8 +3888,8 @@
         498.6021423339844,
         612.5042419433594
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
     },
     {
       "featureId": "attic-n-1",
@@ -3700,19 +3899,72 @@
         486.642578125,
         724.6806640625
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Printed identifier extracted at the original text-box center",
+      "precision": "printed-room-label-position"
+    },
+    {
+      "featureId": "attic-lift-1",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "page": 16,
+      "sourceAnchor": [
+        197.283005,
+        579.788025
+      ],
+      "classification": "P16 path64 first endpoint, at the western lift core; historic secret itinerary permission is separate.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "lift-ground-loggia",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "classification": "Official p4/p6 mark the same western lift core and wheelchair symbol; anchors are the museum-side endpoints of leaders186/178, not the external pictograms.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "lift-loggia-first",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "classification": "Official p6/p7 mark the corresponding western lift landings via leaders178/283; no surveyed shaft alignment is inferred.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "lift-first-second",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "classification": "Official p7/p12 mark the corresponding western lift landings via leaders283/155.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "lift-second-attic",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "classification": "Official p12/p16 show the western lift core with wheelchair and lift pictograms via leaders155/64. This is architectural connectivity, not current visitor permission for the secret itinerary.",
+      "precision": "documented-connection-not-surveyed-shaft"
     },
     {
       "featureId": "censors-stair",
       "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
       "classification": "PDF p4 describes Stair of the Censors leading from the courtyard to the loggia; p6 explicitly labels the corresponding landing 3.",
       "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "golden-stair-first-flight",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "classification": "Official guide p6 labels 4 as Golden Stair, first flight and says it leads from the loggia to the upper floors; p7 labels the receiving stair 14 as the Golden Stair.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "golden-stair-upper-flight",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "classification": "Official p7 locates Golden Stair14; p12 shows its corresponding upper flight opening into Square Atrium15. This connects the published stair/landing locations, not a surveyed staircase trajectory.",
+      "precision": "documented-connection-not-surveyed-shaft"
+    },
+    {
+      "featureId": "prison-entry-stairs",
+      "sourceHash": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "classification": "Official p7/p6 both label Prisons Entrance32, with descending treads from the first-floor courtrooms to the bridge-level approach. Do not infer a separate modern entrance.",
+      "precision": "documented-connection-not-surveyed-shaft"
     }
   ],
   "coverage": {
     "floors": 5,
-    "labels": 56,
-    "features": 384
+    "labels": 70,
+    "features": 377
   }
 }

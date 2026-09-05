@@ -1,0 +1,203 @@
+{
+  "slug": "last-supper",
+  "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the complete official single-level plan. Nineteen source checkpoints protect twelve wall segments, three artwork/locker details and four entry gaps. All twelve printed/descriptive places and four source regions remain distinct.",
+    "floorCoverageReview": "Complete published museum visitor plan, not the separate Santa Maria delle Grazie church.",
+    "stopBindingReview": "All six original stops locate tickets, lockers, airlock, Last Supper, Crucifixion and exit; murals are wall-zone locations.",
+    "verticalConnectionReview": "Single-level source; no upper level or connection invented.",
+    "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+    "sourceDigest": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+    "sourceEvidence": "sources/floorplans/evidence/last-supper.json",
+    "comparedFloors": [
+      "L0"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:42:06.299Z",
+    "slug": "last-supper",
+    "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+    "sourceDigest": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 12,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/last-supper-1440-3d.png",
+          "work/map-review/release-final/last-supper-1440-L0-2d.png",
+          "work/map-review/release-final/last-supper-1440-L0-selection-2d.png",
+          "work/map-review/release-final/last-supper-1440-L0-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 625,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [
+          "L0-ticket-office",
+          "L0-refectory"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 12,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/last-supper-1094-3d.png",
+          "work/map-review/release-final/last-supper-1094-L0-2d.png",
+          "work/map-review/release-final/last-supper-1094-L0-selection-2d.png",
+          "work/map-review/release-final/last-supper-1094-L0-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 840,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [
+          "L0-ticket-office",
+          "L0-refectory"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 12,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/last-supper-390-3d.png",
+          "work/map-review/release-final/last-supper-390-L0-2d.png",
+          "work/map-review/release-final/last-supper-390-L0-selection-2d.png",
+          "work/map-review/release-final/last-supper-390-L0-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 518,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [
+          "L0-ticket-office",
+          "L0-refectory"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "last-supper",
+    "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "L0"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "last-supper",
+    "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.5,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/last-supper/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 127.53910830087368,
+      "screenshot": "work/map-review/guide-pages-final/_guides_last-supper_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/last-supper/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 142.7787121349616,
+      "screenshot": "work/map-review/guide-pages-final/_guides_last-supper_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/last-supper/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 118.57081979550051,
+      "screenshot": "work/map-review/guide-pages-final/_guides_last-supper_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/last-supper/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+    "passed": true
+  }
+}

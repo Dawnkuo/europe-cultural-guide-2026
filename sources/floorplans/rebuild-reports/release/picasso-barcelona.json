@@ -1,0 +1,289 @@
+{
+  "slug": "picasso-barcelona",
+  "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared both official palace/gallery plans. Retains all forty-seven places, rooms1-16,B1,B2 and named services. Twenty-four source regions preserve real palace courtyards, partitions and shared gallery groups instead of assigning one polygon per artwork.",
+    "floorCoverageReview": "Published ground service/courtyard and first collection/exhibition levels.",
+    "stopBindingReview": "All six original stops bind their documented gallery groups. Blue-period and1917 works share8-11; ceramics remainB1/B2, not an invented separate floor.",
+    "verticalConnectionReview": "Three named palace stairs and two exhibition/collection elevators use paired source landings.",
+    "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+    "sourceDigest": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+    "sourceEvidence": "sources/floorplans/evidence/picasso-barcelona.json",
+    "comparedFloors": [
+      "L0",
+      "L1"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:45:14.027Z",
+    "slug": "picasso-barcelona",
+    "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+    "sourceDigest": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 20,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 27,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/picasso-barcelona-1440-3d.png",
+          "work/map-review/release-final/picasso-barcelona-1440-L0-2d.png",
+          "work/map-review/release-final/picasso-barcelona-1440-L1-2d.png",
+          "work/map-review/release-final/picasso-barcelona-1440-L0-selection-2d.png",
+          "work/map-review/release-final/picasso-barcelona-1440-L0-selection-3d.png",
+          "work/map-review/release-final/picasso-barcelona-1440-L1-selection-2d.png",
+          "work/map-review/release-final/picasso-barcelona-1440-L1-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 664,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 47,
+        "selectedSpaces": [
+          "L0-meca-source-stair",
+          "L1-rooms-1",
+          "L1-rooms-2",
+          "L1-rooms-3",
+          "L1-rooms-4-5",
+          "L1-rooms-6",
+          "L1-rooms-7",
+          "L1-rooms-8",
+          "L1-rooms-9",
+          "L1-rooms-10",
+          "L1-rooms-11",
+          "L1-rooms-13",
+          "L1-rooms-14",
+          "L1-rooms-15",
+          "L1-rooms-16",
+          "L1-rooms-B1",
+          "L1-rooms-B2"
+        ],
+        "stopTargets": 23,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 20,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 27,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/picasso-barcelona-1094-3d.png",
+          "work/map-review/release-final/picasso-barcelona-1094-L0-2d.png",
+          "work/map-review/release-final/picasso-barcelona-1094-L1-2d.png",
+          "work/map-review/release-final/picasso-barcelona-1094-L0-selection-2d.png",
+          "work/map-review/release-final/picasso-barcelona-1094-L0-selection-3d.png",
+          "work/map-review/release-final/picasso-barcelona-1094-L1-selection-2d.png",
+          "work/map-review/release-final/picasso-barcelona-1094-L1-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 879,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 47,
+        "selectedSpaces": [
+          "L0-meca-source-stair",
+          "L1-rooms-1",
+          "L1-rooms-2",
+          "L1-rooms-3",
+          "L1-rooms-4-5",
+          "L1-rooms-6",
+          "L1-rooms-7",
+          "L1-rooms-8",
+          "L1-rooms-9",
+          "L1-rooms-10",
+          "L1-rooms-11",
+          "L1-rooms-13",
+          "L1-rooms-14",
+          "L1-rooms-15",
+          "L1-rooms-16",
+          "L1-rooms-B1",
+          "L1-rooms-B2"
+        ],
+        "stopTargets": 23,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 20,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 27,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/picasso-barcelona-390-3d.png",
+          "work/map-review/release-final/picasso-barcelona-390-L0-2d.png",
+          "work/map-review/release-final/picasso-barcelona-390-L1-2d.png",
+          "work/map-review/release-final/picasso-barcelona-390-L0-selection-2d.png",
+          "work/map-review/release-final/picasso-barcelona-390-L0-selection-3d.png",
+          "work/map-review/release-final/picasso-barcelona-390-L1-selection-2d.png",
+          "work/map-review/release-final/picasso-barcelona-390-L1-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1197,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 47,
+        "selectedSpaces": [
+          "L0-meca-source-stair",
+          "L1-rooms-1",
+          "L1-rooms-2",
+          "L1-rooms-3",
+          "L1-rooms-4-5",
+          "L1-rooms-6",
+          "L1-rooms-7",
+          "L1-rooms-8",
+          "L1-rooms-9",
+          "L1-rooms-10",
+          "L1-rooms-11",
+          "L1-rooms-13",
+          "L1-rooms-14",
+          "L1-rooms-15",
+          "L1-rooms-16",
+          "L1-rooms-B1",
+          "L1-rooms-B2"
+        ],
+        "stopTargets": 23,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "picasso-barcelona",
+    "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "L0",
+      "L1"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "picasso-barcelona",
+    "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 4.8,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/picasso-barcelona/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 110.1821244431363,
+      "screenshot": "work/map-review/guide-pages-final/_guides_picasso-barcelona_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/picasso-barcelona/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 122.15131484639767,
+      "screenshot": "work/map-review/guide-pages-final/_guides_picasso-barcelona_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/picasso-barcelona/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 133.62640088752443,
+      "screenshot": "work/map-review/guide-pages-final/_guides_picasso-barcelona_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/picasso-barcelona/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+    "passed": true
+  }
+}

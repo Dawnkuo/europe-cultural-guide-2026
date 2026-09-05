@@ -1,0 +1,323 @@
+{
+  "slug": "medici-chapels",
+  "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared all four independent authoritative plans. Crypt selection retains its four pier holes; the New Sacristy's paired structural outlines remain walls while monuments stay details. ICCD0900335014 supports the Princes' Chapel thick perimeter and pier-free central hall. Lorraine crypt retains the printed named location without guessing an unmarked room boundary.",
+    "floorCoverageReview": "Crypt, Lorraine detail, New Sacristy and historical Princes' Chapel sources at independent scales; treasure zone is missing.",
+    "stopBindingReview": "Stops0/2/3/4 have the four verified source bindings. Treasure stop1 remains unlocated.",
+    "verticalConnectionReview": "No measured registration or matched stair landings between the independent plans.",
+    "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+    "sourceDigest": "25ed2e07ddc78dc0dc1a55c1b88deb3980ad4bcaf172bc7e0a5a23e5c7c3654e",
+    "sourceEvidence": "sources/floorplans/evidence/medici-chapels.json",
+    "comparedFloors": [
+      "crypt-level",
+      "lorraine-crypt-detail",
+      "new-sacristy",
+      "princes-chapel-historic"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:43:08.633Z",
+    "slug": "medici-chapels",
+    "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+    "sourceDigest": "25ed2e07ddc78dc0dc1a55c1b88deb3980ad4bcaf172bc7e0a5a23e5c7c3654e",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "crypt-level",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "lorraine-crypt-detail",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "new-sacristy",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "princes-chapel-historic",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/medici-chapels-1440-3d.png",
+          "work/map-review/release-final/medici-chapels-1440-crypt-level-2d.png",
+          "work/map-review/release-final/medici-chapels-1440-lorraine-crypt-detail-2d.png",
+          "work/map-review/release-final/medici-chapels-1440-new-sacristy-2d.png",
+          "work/map-review/release-final/medici-chapels-1440-princes-chapel-historic-2d.png",
+          "work/map-review/release-final/medici-chapels-1440-crypt-level-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-1440-crypt-level-selection-3d.png",
+          "work/map-review/release-final/medici-chapels-1440-new-sacristy-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-1440-new-sacristy-selection-3d.png",
+          "work/map-review/release-final/medici-chapels-1440-princes-chapel-historic-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-1440-princes-chapel-historic-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 557,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [
+          "crypt-level-medici-crypt-floor",
+          "new-sacristy-new-sacristy-floor",
+          "princes-chapel-historic-princes-central-floor"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "crypt-level",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "lorraine-crypt-detail",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "new-sacristy",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "princes-chapel-historic",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/medici-chapels-1094-3d.png",
+          "work/map-review/release-final/medici-chapels-1094-crypt-level-2d.png",
+          "work/map-review/release-final/medici-chapels-1094-lorraine-crypt-detail-2d.png",
+          "work/map-review/release-final/medici-chapels-1094-new-sacristy-2d.png",
+          "work/map-review/release-final/medici-chapels-1094-princes-chapel-historic-2d.png",
+          "work/map-review/release-final/medici-chapels-1094-crypt-level-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-1094-crypt-level-selection-3d.png",
+          "work/map-review/release-final/medici-chapels-1094-new-sacristy-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-1094-new-sacristy-selection-3d.png",
+          "work/map-review/release-final/medici-chapels-1094-princes-chapel-historic-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-1094-princes-chapel-historic-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 720,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [
+          "crypt-level-medici-crypt-floor",
+          "new-sacristy-new-sacristy-floor",
+          "princes-chapel-historic-princes-central-floor"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "crypt-level",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "lorraine-crypt-detail",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "new-sacristy",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "princes-chapel-historic",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/medici-chapels-390-3d.png",
+          "work/map-review/release-final/medici-chapels-390-crypt-level-2d.png",
+          "work/map-review/release-final/medici-chapels-390-lorraine-crypt-detail-2d.png",
+          "work/map-review/release-final/medici-chapels-390-new-sacristy-2d.png",
+          "work/map-review/release-final/medici-chapels-390-princes-chapel-historic-2d.png",
+          "work/map-review/release-final/medici-chapels-390-crypt-level-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-390-crypt-level-selection-3d.png",
+          "work/map-review/release-final/medici-chapels-390-new-sacristy-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-390-new-sacristy-selection-3d.png",
+          "work/map-review/release-final/medici-chapels-390-princes-chapel-historic-selection-2d.png",
+          "work/map-review/release-final/medici-chapels-390-princes-chapel-historic-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1274,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [
+          "crypt-level-medici-crypt-floor",
+          "new-sacristy-new-sacristy-floor",
+          "princes-chapel-historic-princes-central-floor"
+        ],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "medici-chapels",
+    "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "crypt-level",
+      "lorraine-crypt-detail",
+      "new-sacristy",
+      "princes-chapel-historic"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "medici-chapels",
+    "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.799999999999272,
+    "renderP95Ms": 1.9,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/medici-chapels/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 116.02394764756217,
+      "screenshot": "work/map-review/guide-pages-final/_guides_medici-chapels_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/medici-chapels/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 134.7517303072581,
+      "screenshot": "work/map-review/guide-pages-final/_guides_medici-chapels_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/medici-chapels/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 164.15466152671343,
+      "screenshot": "work/map-review/guide-pages-final/_guides_medici-chapels_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/medici-chapels/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+    "passed": true
+  }
+}

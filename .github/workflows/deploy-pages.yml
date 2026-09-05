@@ -36,6 +36,8 @@ jobs:
           GITHUB_PAGES: "true"
           NEXT_PUBLIC_BASE_PATH: /europe-cultural-guide-2026
       - uses: actions/configure-pages@v5
+      - name: Require complete indoor-map acceptance
+        run: node scripts/audit-architectural-migration.mjs --release
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/client

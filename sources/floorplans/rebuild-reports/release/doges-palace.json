@@ -1,0 +1,370 @@
+{
+  "slug": "doges-palace",
+  "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared all five source diagrams. Retains actual courtyard, loggia, apartments, council chambers, prison/Bridge of Sighs alignment and roof-frame layer with seventy place identifiers. Nine supported faces give room focus without filling the courtyard or cloning one outer shell across levels.",
+    "floorCoverageReview": "All five published diagrams, including restricted attic and prison areas. Spatial inclusion is not admission entitlement.",
+    "stopBindingReview": "All six original stops retain entrance/courtyard, stair, apartment/gallery groups, Great Council27,armory22,bridge/prison33/34 bindings.",
+    "verticalConnectionReview": "Eight documented elevator/stair segments use source endpoints. No direct straight walking line bypasses floors.",
+    "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+    "sourceDigest": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+    "sourceEvidence": "sources/floorplans/evidence/doges-palace.json",
+    "comparedFloors": [
+      "L0",
+      "loggia",
+      "L1",
+      "L2",
+      "attic"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:39:16.669Z",
+    "slug": "doges-palace",
+    "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+    "sourceDigest": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 11,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "loggia",
+            "exactLabels": 12,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 20,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L2",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "attic",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/doges-palace-1440-3d.png",
+          "work/map-review/release-final/doges-palace-1440-L0-2d.png",
+          "work/map-review/release-final/doges-palace-1440-loggia-2d.png",
+          "work/map-review/release-final/doges-palace-1440-L1-2d.png",
+          "work/map-review/release-final/doges-palace-1440-L2-2d.png",
+          "work/map-review/release-final/doges-palace-1440-attic-2d.png",
+          "work/map-review/release-final/doges-palace-1440-L0-selection-2d.png",
+          "work/map-review/release-final/doges-palace-1440-L0-selection-3d.png",
+          "work/map-review/release-final/doges-palace-1440-L1-selection-2d.png",
+          "work/map-review/release-final/doges-palace-1440-L1-selection-3d.png",
+          "work/map-review/release-final/doges-palace-1440-L2-selection-2d.png",
+          "work/map-review/release-final/doges-palace-1440-L2-selection-3d.png",
+          "work/map-review/release-final/doges-palace-1440-loggia-selection-2d.png",
+          "work/map-review/release-final/doges-palace-1440-loggia-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 407,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 70,
+        "selectedSpaces": [
+          "L0-museo",
+          "L1-doge-apartments",
+          "L1-institutional",
+          "L2-armoury",
+          "loggia-new-prisons"
+        ],
+        "stopTargets": 24,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 11,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "loggia",
+            "exactLabels": 12,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 20,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L2",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "attic",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/doges-palace-1094-3d.png",
+          "work/map-review/release-final/doges-palace-1094-L0-2d.png",
+          "work/map-review/release-final/doges-palace-1094-loggia-2d.png",
+          "work/map-review/release-final/doges-palace-1094-L1-2d.png",
+          "work/map-review/release-final/doges-palace-1094-L2-2d.png",
+          "work/map-review/release-final/doges-palace-1094-attic-2d.png",
+          "work/map-review/release-final/doges-palace-1094-L0-selection-2d.png",
+          "work/map-review/release-final/doges-palace-1094-L0-selection-3d.png",
+          "work/map-review/release-final/doges-palace-1094-L1-selection-2d.png",
+          "work/map-review/release-final/doges-palace-1094-L1-selection-3d.png",
+          "work/map-review/release-final/doges-palace-1094-L2-selection-2d.png",
+          "work/map-review/release-final/doges-palace-1094-L2-selection-3d.png",
+          "work/map-review/release-final/doges-palace-1094-loggia-selection-2d.png",
+          "work/map-review/release-final/doges-palace-1094-loggia-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 530,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 70,
+        "selectedSpaces": [
+          "L0-museo",
+          "L1-doge-apartments",
+          "L1-institutional",
+          "L2-armoury",
+          "loggia-new-prisons"
+        ],
+        "stopTargets": 24,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "L0",
+            "exactLabels": 11,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "loggia",
+            "exactLabels": 12,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L1",
+            "exactLabels": 20,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "L2",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "attic",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/doges-palace-390-3d.png",
+          "work/map-review/release-final/doges-palace-390-L0-2d.png",
+          "work/map-review/release-final/doges-palace-390-loggia-2d.png",
+          "work/map-review/release-final/doges-palace-390-L1-2d.png",
+          "work/map-review/release-final/doges-palace-390-L2-2d.png",
+          "work/map-review/release-final/doges-palace-390-attic-2d.png",
+          "work/map-review/release-final/doges-palace-390-L0-selection-2d.png",
+          "work/map-review/release-final/doges-palace-390-L0-selection-3d.png",
+          "work/map-review/release-final/doges-palace-390-L1-selection-2d.png",
+          "work/map-review/release-final/doges-palace-390-L1-selection-3d.png",
+          "work/map-review/release-final/doges-palace-390-L2-selection-2d.png",
+          "work/map-review/release-final/doges-palace-390-L2-selection-3d.png",
+          "work/map-review/release-final/doges-palace-390-loggia-selection-2d.png",
+          "work/map-review/release-final/doges-palace-390-loggia-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1116,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 70,
+        "selectedSpaces": [
+          "L0-museo",
+          "L1-doge-apartments",
+          "L1-institutional",
+          "L2-armoury",
+          "loggia-new-prisons"
+        ],
+        "stopTargets": 24,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "doges-palace",
+    "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "L0",
+      "loggia",
+      "L1",
+      "L2",
+      "attic"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "doges-palace",
+    "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 5.3,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/doges-palace/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 89.81341119960894,
+      "screenshot": "work/map-review/guide-pages-final/_guides_doges-palace_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/doges-palace/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 99.7031172084235,
+      "screenshot": "work/map-review/guide-pages-final/_guides_doges-palace_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/doges-palace/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 118.45921384106893,
+      "screenshot": "work/map-review/guide-pages-final/_guides_doges-palace_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/doges-palace/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+    "passed": true
+  }
+}

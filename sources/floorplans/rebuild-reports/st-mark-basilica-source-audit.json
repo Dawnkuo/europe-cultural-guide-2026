@@ -1,0 +1,74 @@
+{
+  "slug": "st-mark-basilica",
+  "usableGeometrySource": {
+    "file": "st-mark-basilica-klein.pdf",
+    "sha256": "3262fdff479ebc50a32a7c8982fc5880ea231ff8139d012a5be2ceb6674c383c",
+    "url": "https://arthistory.columbia.edu/sites/arthistory.columbia.edu/files/content/faculty/pdfs/klein/SanMarco-offprint.pdf",
+    "finding": "Complete scale-marked orthographic main-floor plan on PDF page 6; page 7 supplies keys 1-29 and A-R."
+  },
+  "derivedGeometrySource": {
+    "file": "st-mark-basilica-semantic-layers.pdf",
+    "sha256": "ea2ef6f334469b99cb3e58594204d348485072d2615b7de63b18037aaebc5083",
+    "producer": "scripts/derive-st-mark-basilica-layers.py",
+    "finding": "Deterministic, registered classification of the parent plan into black wall pixels and red flat-detail pixels; consumed directly by the unchanged shared builder."
+  },
+  "inspectedUpperSources": [
+    {
+      "file": "st-mark-basilica-hopkins-2019.pdf",
+      "sha256": "b974f5625b47bf490053c6fc58c77b0175cd5deb2b15a9e98bff4a6c03b6bdef",
+      "url": "https://ricerca.univaq.it/retrieve/e2188bfa-9957-f28d-e053-d805fe0ac2bb/2019SanMarcoHopkins.pdf",
+      "finding": "The authoritative contents name plate III.1b, Pianta matronei, but the downloaded 15-page excerpt omits the plate section."
+    },
+    {
+      "file": "st-mark-basilica-de-franceschi-2019.pdf",
+      "sha256": "67608375b5ceba8051e774ba5c6cd78187a3e5fc404b0137e831922fa7b810bc",
+      "url": "https://www.basilicasanmarco.it/wp-content/uploads/2023/10/Pdf-6-De-Franceschi.pdf",
+      "finding": "Official 13-page article excerpt was rendered page by page; it contains contents and article pages, not the plate section."
+    },
+    {
+      "file": "st-mark-basilica-matronei-structural.pdf",
+      "sha256": "bd8b450c67c90c17ac35331e90eea13e647fe64453c2f59c5c50df81a1fef8d2",
+      "url": "https://www.rteknos.it/wp-content/uploads/2025/06/467.pdf",
+      "finding": "All 23 pages were visually inspected. Orthographic figures are ground/main-level structural measurement diagrams, not the upper museum or matronei floor."
+    },
+    {
+      "file": "st-mark-basilica-bim.pdf",
+      "sha256": "494dd6c2e489d83cd3b842262091a913a9e2715a5adb0b209e2428a7aa9b8895",
+      "url": "https://re.public.polimi.it/handle/11311/1050361",
+      "finding": "All 26 pages were visually inspected. The publication documents survey/BIM methods and selected 3D elements but publishes no complete upper visitor-floor plan."
+    },
+    {
+      "file": "st-mark-basilica-3d-model-2020.pdf",
+      "sha256": "777d9a4dfc6393bc2404a1a40c91caa0f1b844ee76cd790e6794e60013ee1d31",
+      "url": "https://doi.org/10.1007/978-3-030-33570-0_31",
+      "finding": "All 12 pages were visually inspected. The chapter contains 3D survey views, not a complete orthographic museum/matronei floor."
+    },
+    {
+      "file": "st-mark-basilica-ongania-tav-III.jpg",
+      "sha256": "e8f488fe603bb421ba8413f2080524d2476d5eca5f5e35b55e85672168deee95",
+      "url": "https://archive.org/details/basilicadisanmar01onga",
+      "finding": "Historic detailed orthographic plate confirms the main level only; it does not draw the current upper museum as a separate floor."
+    },
+    {
+      "file": "st-mark-basilica-organ-press-2026.pdf",
+      "sha256": "8f4572899fc99d79cb81cf3d27ba8035179560c87964a907e4358bcc231269b0",
+      "url": "https://www.basilicasanmarco.it/2026/02/10/comunicato-stampa-nuovi-organi-per-la-basilica-di-san-marco/",
+      "finding": "Official current organ-project release does not publish a complete upper visitor-floor plan."
+    },
+    {
+      "file": "work/st-mark-organ-rai-1.jpeg and work/st-mark-organ-rai-2.jpeg",
+      "sha256": [
+        "75aa041e680851bb8b41335a718f552505a27922aa7be32cf20d2039a434fa42",
+        "7fc240112a23537deab1da17104dcf901e6e421a7f3b91405ecd8c30262b174b"
+      ],
+      "url": "https://www.rainews.it/tgr/veneto/video/2026/02/venezia-un-nuovo-organo-per-la-basilica-di-san-marco-60599ca8-3e6b-4097-8ea7-cc1e2fdcc4bc.html",
+      "finding": "The two oblique project-board photographs show portions of a Pianta matronei, but opposite plan edges are cropped; no rectification or partial floor was used."
+    }
+  ],
+  "missingGeometry": [
+    "complete current museum floor above the narthex",
+    "complete current matronei connection used by the visitor route",
+    "Foresti stair footprint and receiving landing",
+    "complete facade loggia floor and horses position"
+  ]
+}

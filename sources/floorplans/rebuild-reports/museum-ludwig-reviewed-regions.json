@@ -1,0 +1,110 @@
+{
+  "slug": "museum-ludwig",
+  "sourceDigests": {
+    "primary": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8"
+  },
+  "floors": {
+    "basement": {
+      "geometryDigest": "aac51f51f2ebe4e4c9ed8a82852a42183b7049c60780bc819013a961f91fdb4d",
+      "recipe": {
+        "placeIds": [
+          "basement-地下层当代艺术展区-1"
+        ],
+        "surfaceFeatures": {
+          "basement-地下层当代艺术展区-1": [
+            "basement-path-47-surface"
+          ]
+        }
+      },
+      "regions": [
+        {
+          "placeId": "basement-地下层当代艺术展区-1",
+          "unresolved": false,
+          "shapeSha256": "f77404f352877c909ed31178231e017ebe6df8a25eab0dc83d4d71521f8a8d4c",
+          "area": 12916.60446,
+          "bounds": [
+            8.3627,
+            8.4138,
+            260.1417,
+            79.1798
+          ]
+        }
+      ]
+    },
+    "ground": {
+      "geometryDigest": "f70de5231e7ea9be47866045dbb2340a2d9b02778336daf6a763800de21ab849",
+      "recipe": {
+        "placeIds": []
+      },
+      "regions": []
+    },
+    "first": {
+      "geometryDigest": "19997591aa7abb5b103027ea6fc592eccab03b89355f4590e3fef5a07f79b157",
+      "recipe": {
+        "placeIds": [
+          "first-一层藏品主题区-1"
+        ],
+        "surfaceFeatures": {
+          "first-一层藏品主题区-1": [
+            "first-path-48-surface",
+            "first-path-50-surface",
+            "first-path-51-surface",
+            "first-path-52-surface",
+            "first-path-53-surface",
+            "first-path-54-surface",
+            "first-path-55-surface",
+            "first-path-56-surface",
+            "first-path-57-surface"
+          ]
+        }
+      },
+      "regions": [
+        {
+          "placeId": "first-一层藏品主题区-1",
+          "unresolved": false,
+          "shapeSha256": "72aa37845d13969a7c8ddf674c26f187024e18870df9abed5c65e2912e71e845",
+          "area": 24849.7817,
+          "bounds": [
+            7.5752,
+            11.1252,
+            194.4492,
+            324.567
+          ]
+        }
+      ]
+    },
+    "second": {
+      "geometryDigest": "05523d9cb589fec4dea9ce22bd78cb23ba2f86077f0a39bc35b188f91f32c3a4",
+      "recipe": {
+        "placeIds": [
+          "second-二层藏品主题区-1"
+        ],
+        "surfaceFeatures": {
+          "second-二层藏品主题区-1": [
+            "second-path-44-surface"
+          ]
+        }
+      },
+      "regions": [
+        {
+          "placeId": "second-二层藏品主题区-1",
+          "unresolved": false,
+          "shapeSha256": "aecb8a49e9322610e49a09e3a67d97f3b03afd75b71d5e08043909355344c4b8",
+          "area": 22402.70137,
+          "bounds": [
+            7.6375,
+            9.8445,
+            171.4614,
+            270.7735
+          ]
+        }
+      ]
+    }
+  },
+  "visualReview": true,
+  "reviewNotes": [
+    "Compared all three generated theme-region overlays with the original 2021 published grey compounds: preserves all blank partition slots and auditorium void, including first-floor detached lower blocks.",
+    "First-floor and second-floor anchors corrected from external whitespace and an inter-block gap into source-filled exhibition areas. These remain floor-theme anchors, not precise artwork positions.",
+    "Ground-level entrance remains a point, not a falsely claimed enclosed room. No source room numbers exist, so none are invented."
+  ]
+}

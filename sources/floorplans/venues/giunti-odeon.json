@@ -1,0 +1,147 @@
+{
+  "slug": "giunti-odeon",
+  "file": "giunti-pat-2024.pdf",
+  "url": "https://www.premio-architettura-toscana.it/wp-content/uploads/2024/10/Catalogo-PAT-2024.pdf",
+  "sha256": "0f8091906ce4cccde5ec905098a20dbca1746770944114b517a5b972337cecbb",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [50],
+    "basis": "The Premio Architettura Toscana 2024 catalogue page places three separately labelled floor plans in parallel. Each has parallel outer walls and a consistent top-down auditorium footprint; adjacent sections and elevations are not extracted."
+  },
+  "review": "Premio Architettura Toscana 2024 official award catalogue, PDF page 50 (printed spread 96-97), project by Studio Benaim. The three embedded images labelled piano terra, piano primo and piano secondo were inspected individually. Their walls, stage/screen end, seating tiers, bookcase/furnishing layout and stair footprints are retained. The source prints no room numbers. Physical stair cores are linked across levels, but that does not claim public access on a particular day.",
+  "limitations": [
+    "获奖项目图记录建筑改造结果，不代表实时开放限制或活动布置。",
+    "图源未印展厅编号；地点只使用描述性建筑名称。",
+    "导览停点3绑定于底层可见的观众厅装饰区，不把未标名且开放状态不确定的一层镜厅写成已确认空间。"
+  ],
+  "stopBindings": [
+    {"stopIndex": 0, "placeId": "ground-入口门厅-1"},
+    {"stopIndex": 1, "placeId": "ground-中央书架区-1"},
+    {"stopIndex": 2, "placeId": "ground-舞台银幕轴线-1"},
+    {"stopIndex": 3, "placeId": "ground-观众厅装饰区-1"}
+  ],
+  "verticalLinks": [
+    {
+      "id": "giunti-entry-side-stair-ground-first",
+      "kind": "stairs",
+      "label": "入口侧楼梯 · 地面层至一层",
+      "fromPlaceId": "ground-入口侧楼梯-1",
+      "toPlaceId": "first-入口侧楼梯-1",
+      "evidence": "A stair footprint occupies the corresponding lower-left/entrance-side bay in the ground- and first-floor plans. This records a physical stair, not current visitor permission."
+    },
+    {
+      "id": "giunti-entry-side-stair-first-second",
+      "kind": "stairs",
+      "label": "入口侧楼梯 · 一层至二层",
+      "fromPlaceId": "first-入口侧楼梯-1",
+      "toPlaceId": "second-入口侧楼梯-1",
+      "evidence": "The same entrance-side stair footprint continues in the first- and second-floor plans. This records a physical stair, not current visitor permission."
+    }
+  ],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "底层 · 书店与历史观众厅",
+      "order": 0,
+      "page": 50,
+      "crop": [20.1, 514.7, 197.0, 719.5],
+      "rules": [],
+      "spaces": [
+        {
+          "id": "auditorium-book-floor",
+          "label": "底层观众厅书店区",
+          "placeId": "ground-中央书架区-1",
+          "tone": "neutral",
+          "outer": [[62, 555], [153, 555], [153, 660], [145, 672], [70, 672], [62, 660], [62, 555]],
+          "sourcePaths": [],
+          "evidence": "Reviewed floor-selection polygon follows the inner wall and chamfer boundaries of the ground-floor auditorium in raster xref 272; openings are closed only for the semantic floor surface."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 272,
+          "maxChannel": 175,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed ground-floor plan image. Four-pixel structural ink is extruded; thinner furnishings, bookcases, seating and hatch remain flat detail."
+        }
+      ],
+      "places": [
+        {"label": "入口门厅", "name": "入口门厅", "at": [111, 704], "kind": "service", "evidence": "Geometry anchor in the entrance-side foyer visible at the lower edge of the ground-floor plan.", "precision": "reviewed-source-plan-zone-center-not-surveyed"},
+        {"label": "中央书架区", "name": "观众厅中央书架区", "at": [111, 623], "kind": "room", "evidence": "Geometry anchor in the central ground-floor auditorium where the project plan draws the bookstore furnishing field.", "precision": "reviewed-source-plan-zone-center-not-surveyed"},
+        {"label": "舞台银幕轴线", "name": "观众厅舞台与银幕轴线", "at": [110, 545], "kind": "room", "evidence": "Geometry anchor on the retained stage/screen end of the auditorium axis after accounting for the embedded image rotation on the PDF page.", "precision": "reviewed-source-plan-axis-anchor-not-surveyed"},
+        {"label": "观众厅装饰区", "name": "底层观众厅装饰区", "at": [163, 622], "kind": "room", "evidence": "Geometry anchor in the visible perimeter decorative zone of the ground-floor auditorium; it does not assert access to an upper Mirror Hall.", "precision": "reviewed-source-plan-zone-center-not-surveyed"},
+        {"label": "入口侧楼梯", "name": "入口侧楼梯", "at": [50, 696], "kind": "service", "evidence": "Geometry anchor at the stair footprint repeated on the corresponding side of all three floor plans.", "precision": "reviewed-source-plan-stair-footprint-not-surveyed"}
+      ]
+    },
+    {
+      "id": "first",
+      "label": "一层 · 马蹄形楼座",
+      "order": 1,
+      "page": 50,
+      "crop": [194.8, 507.9, 371.8, 723.9],
+      "rules": [],
+      "spaces": [
+        {
+          "id": "first-balcony-floor",
+          "label": "一层马蹄形楼座区",
+          "placeId": "first-马蹄形楼座-1",
+          "tone": "neutral",
+          "outer": [[245, 560], [330, 560], [340, 575], [340, 625], [338, 640], [334, 653], [328, 663], [320, 672], [310, 680], [299, 686], [288, 690], [277, 688], [266, 684], [255, 678], [246, 670], [240, 660], [236, 648], [235, 630], [235, 575], [245, 560]],
+          "holes": [[[258, 575], [318, 575], [318, 620], [317, 628], [314, 638], [309, 646], [303, 652], [296, 657], [288, 660], [280, 658], [273, 654], [267, 648], [262, 640], [259, 631], [258, 620], [258, 575]]],
+          "sourcePaths": [],
+          "evidence": "Reviewed horseshoe floor-selection polygon follows the first-floor balcony perimeter and central void in raster xref 280; the curved tier is simplified only within source-line thickness."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 280,
+          "maxChannel": 175,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed first-floor plan image. Thick walls and piers are separated from seating, hatch and furnishing detail."
+        }
+      ],
+      "places": [
+        {"label": "马蹄形楼座", "name": "一层马蹄形楼座", "at": [330, 640], "kind": "room", "evidence": "Geometry anchor on the right-hand band of the horseshoe seating tier drawn on the first-floor plan, outside the central void.", "precision": "reviewed-source-plan-zone-center-not-surveyed"},
+        {"label": "入口侧楼梯", "name": "入口侧楼梯", "at": [232, 700], "kind": "service", "evidence": "Geometry anchor at the first-floor stair footprint corresponding to the same source-page side as the ground and second floors.", "precision": "reviewed-source-plan-stair-footprint-not-surveyed"}
+      ]
+    },
+    {
+      "id": "second",
+      "label": "二层 · 上层座席",
+      "order": 2,
+      "page": 50,
+      "crop": [371.5, 507.9, 548.5, 723.9],
+      "rules": [],
+      "spaces": [
+        {
+          "id": "second-seating-floor",
+          "label": "二层上层座席区",
+          "placeId": "second-上层座席-1",
+          "tone": "neutral",
+          "outer": [[420, 560], [510, 560], [520, 575], [520, 625], [518, 640], [514, 653], [508, 663], [500, 672], [490, 680], [478, 686], [465, 690], [453, 688], [442, 684], [431, 678], [422, 670], [416, 660], [412, 648], [410, 630], [410, 575], [420, 560]],
+          "holes": [[[435, 575], [495, 575], [495, 620], [494, 628], [491, 638], [486, 646], [480, 652], [473, 657], [465, 660], [457, 658], [450, 654], [444, 648], [439, 640], [436, 631], [435, 620], [435, 575]]],
+          "sourcePaths": [],
+          "evidence": "Reviewed horseshoe floor-selection polygon follows the second-floor seating perimeter and central void in raster xref 282; the curved tier is simplified only within source-line thickness."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 282,
+          "maxChannel": 175,
+          "wallKernel": 4,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Reviewed second-floor plan image. Thick walls and piers are separated from seating, hatch and furnishing detail."
+        }
+      ],
+      "places": [
+        {"label": "上层座席", "name": "二层上层座席", "at": [510, 640], "kind": "room", "evidence": "Geometry anchor on the right-hand band of the upper seating tier drawn on the second-floor plan, outside the central void.", "precision": "reviewed-source-plan-zone-center-not-surveyed"},
+        {"label": "入口侧楼梯", "name": "入口侧楼梯", "at": [409, 700], "kind": "service", "evidence": "Geometry anchor at the second-floor stair footprint corresponding to the same source-page side as the lower floors.", "precision": "reviewed-source-plan-stair-footprint-not-surveyed"}
+      ]
+    }
+  ]
+}

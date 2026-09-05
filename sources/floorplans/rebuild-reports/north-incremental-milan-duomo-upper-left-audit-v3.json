@@ -1,0 +1,75 @@
+{
+  "snapshot": "/tmp/europe-map-rebuild-north-incremental-2026-09-05-milan-duomo-upper-left-audit-v3",
+  "status": "米兰大教堂官方2024主层与圣嘉禄地下圣堂保持完整；左上斜边和六边柱已按原生PDF路径逐项核对并以透明孔洞预览复核",
+  "supersedes": "/tmp/europe-map-rebuild-north-incremental-2026-09-05-milan-duomo-vector-gap-v2",
+  "scope": "本增量只澄清左上结构路径的精确选择证据，不改变v2已通过来源检查的墙体几何。",
+  "generator": {
+    "file": "scripts/build-architectural-plans.py",
+    "sha256": "7f01ed5535871ea9deaef591087a1f97b9a8b638bb40c9cf89900cbd21d61daa",
+    "previewHelper": "scripts/architectural_preview.py",
+    "previewHelperSha256": "431ee1dc5075abf3e405a89a84e1123d0c12eec0a71d1e37ce4f3b3ed381bfc0",
+    "transparentHoleRendering": true
+  },
+  "source": {
+    "file": "sources/floorplans/milan-duomo-official-visitor-plan-2024.pdf",
+    "url": "https://www.duomomilano.it/wp-content/uploads/2024/01/Planimetria-Visitatori.pdf",
+    "sha256": "4397e81e57eec8b278e6eb02a66f70e292881e1618f0acc2660e13fb10e13515",
+    "page": 1,
+    "cathedralCrop": [45, 220, 300, 625]
+  },
+  "upperLeftAudit": {
+    "result": "原生PDF裁切内没有未选中的黑色fs结构路径。用户指出的上半部左斜边和相邻六边柱已全部存在于模型；旧白孔洞预览造成的假断线不属于几何缺失。",
+    "exactStrokePaths": [1483, 1504, 1524],
+    "diagonalPath": {
+      "id": 1504,
+      "sourceEndpoints": [[69.1932, 308.8951], [81.1542, 297.5761]],
+      "sourceConnections": [1483, 1524],
+      "role": "左上过渡区斜向外轮廓"
+    },
+    "exactFilledStrokePaths": [1408, 1409, 1410, 1423, 1424, 1457, 1533],
+    "roles": {
+      "sixSidedPierOutlines": [1408, 1409, 1410, 1423, 1424, 1533],
+      "whiteFilledCharcoalPerimeterBlock": [1457]
+    },
+    "selectionSafety": "精确ID规则置于通用颜色规则之前；没有扩大到全部黑线、文字、红色监控斜线或实心入口符号。",
+    "maximumSourceToSerializedHausdorffPdfPoints": 0.00006619,
+    "focusedOverlay": "work/milan-v3-review/focused/source-model-wall-overlay-12x-upper-left.png",
+    "visualConclusion": "透明孔洞叠图中斜边连续、六边柱闭合，模型线与原生PDF结构路径重合。"
+  },
+  "geometryComparison": {
+    "v2ModelSha256": "27e9e3b8e6461626412ab9ddab80e082f5378cfe93e09553cf141664d2c3b159",
+    "v3ModelSha256": "27e9e3b8e6461626412ab9ddab80e082f5378cfe93e09553cf141664d2c3b159",
+    "canonicalGeometryDigestV2": "a80ef9ccbb2d97728e2ac72e0a6c8c6a010c313b4793442f8e029715ccb6caa1",
+    "canonicalGeometryDigestV3": "a80ef9ccbb2d97728e2ac72e0a6c8c6a010c313b4793442f8e029715ccb6caa1",
+    "geometryIdentical": true,
+    "reason": "v2已经包含这些源路径；v3把它们提升为可审计的精确ID规则，并更新证据台账。"
+  },
+  "previousWestAndFacadeCorrection": {
+    "unchanged": true,
+    "exactPaths": [1366, 1466, 1467, 1468, 1469, 1470, 1471, 1472, 1473, 1474, 1475, 1476, 1477, 1478, 1493],
+    "sourceMidpointChecks": "15/15路径中点到序列化墙多边形距离为0"
+  },
+  "validation": {
+    "validateArchitecturalPlanErrors": 0,
+    "serializedShapely": "533/533个polygon有效、非空、面积为正",
+    "features": 532,
+    "duplicateFeatureIds": 0,
+    "floors": 2,
+    "places": 6,
+    "verticalLinks": "空数组；来源没有证明主层与地下圣堂的现行竖向连接"
+  },
+  "coverage": {
+    "floors": ["crypt-san-carlo", "cathedral"],
+    "unresolved": ["约31米屋顶露台正投影", "约45米中央露台正投影"]
+  },
+  "reviewArtifacts": [
+    "work/milan-v3-review/focused/source-cathedral-12x-upper-left.png",
+    "work/milan-v3-review/focused/model-cathedral-transparent-holes-12x-upper-left.png",
+    "work/milan-v3-review/focused/source-model-wall-overlay-12x-upper-left.png",
+    "work/milan-v3-review/source-cathedral-12x.png",
+    "work/milan-v3-review/model-cathedral-transparent-holes-12x.png",
+    "work/milan-v3-review/source-model-wall-overlay-12x.png",
+    "work/model-review/milan-duomo/cathedral.png",
+    "work/model-review/milan-duomo/crypt-san-carlo.png"
+  ]
+}

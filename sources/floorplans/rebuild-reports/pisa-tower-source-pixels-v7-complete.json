@@ -1,0 +1,151 @@
+{
+  "group": "pisa",
+  "venue": "leaning-tower",
+  "increment": "v7-complete-source-pixel-repair",
+  "status": "ready-complete-tower",
+  "scratchRoot": "/tmp/europe-map-rebuild-pisa/increments/tower-v7-upper",
+  "supersedes": [
+    "pisa-tower-source-pixels-v5-entry",
+    "pisa-tower-source-pixels-v6-galleries-1-3"
+  ],
+  "fullTowerSourceClassification": true,
+  "floors": [
+    "base",
+    "entry-first",
+    "galleries-1-3",
+    "galleries-4-7",
+    "upper"
+  ],
+  "sourcePixelRepairs": {
+    "entry-first": {
+      "source": "tower-goodyear-1069.jpg",
+      "sourceInkPixels": 107116,
+      "wallPixels": 25461,
+      "detailPixels": 9706,
+      "syntheticPixels": 0,
+      "filledContours": 0
+    },
+    "galleries-1-3": {
+      "source": "tower-goodyear-1070.jpg",
+      "sourceInkPixels": 115263,
+      "wallPixels": 15350,
+      "detailPixels": 14868,
+      "resolvedColumnProfiles": 26,
+      "unclassifiedAnnotationObscuredSlotsDegrees": [53.5, 197.5, 245.5, 293.5],
+      "syntheticPixels": 0,
+      "filledContours": 0
+    },
+    "galleries-4-7": {
+      "source": "tower-goodyear-1071.jpg",
+      "sourceInkPixels": 110598,
+      "wallPixels": 17912,
+      "detailPixels": 13798,
+      "syntheticPixels": 0,
+      "filledContours": 0
+    },
+    "upper": {
+      "source": "tower-goodyear-1073.jpg",
+      "sourceInkPixels": 92211,
+      "wallPixels": 17937,
+      "detailPixels": 34716,
+      "resolvedColumnProfiles": 30,
+      "classifiedGlyphPixelsRemoved": 2904,
+      "syntheticPixels": 0,
+      "filledContours": 0,
+      "masonry": "Original boundary pixels are wall; original diagonal hatch pixels are flat detail; no enclosed masonry area is filled."
+    }
+  },
+  "install": [
+    {
+      "source": "sources/floorplans/derived/leaning-tower-goodyear-entry-first-source-pixels.pdf",
+      "target": "sources/floorplans/derived/leaning-tower-goodyear-entry-first-source-pixels.pdf",
+      "sha256": "49465336933d572a8c1fa8424a84768d4cbb4a9308f306d3b8cb2737a5fff435"
+    },
+    {
+      "source": "sources/floorplans/derived/leaning-tower-goodyear-galleries-1-3-source-pixels.pdf",
+      "target": "sources/floorplans/derived/leaning-tower-goodyear-galleries-1-3-source-pixels.pdf",
+      "sha256": "05963c729dac961271e7fc15b40470d60ed02652c00cef6defab86dc6628e543"
+    },
+    {
+      "source": "sources/floorplans/derived/leaning-tower-goodyear-galleries-4-7-v4.pdf",
+      "target": "sources/floorplans/derived/leaning-tower-goodyear-galleries-4-7-v4.pdf",
+      "sha256": "edd18ec04ca28fe8ed4500aadf9afd057a9cafb31f2be62ad1d29dddeb80e013"
+    },
+    {
+      "source": "sources/floorplans/derived/leaning-tower-goodyear-upper-source-pixels.pdf",
+      "target": "sources/floorplans/derived/leaning-tower-goodyear-upper-source-pixels.pdf",
+      "sha256": "657e340d35dbdc7fb75a972ee3ceb2f77aa20fe1c16087c7d57401fcbc54d797"
+    },
+    {
+      "source": "sources/floorplans/venues/leaning-tower.json",
+      "target": "sources/floorplans/venues/leaning-tower.json",
+      "sha256": "a69e5699c2669468142ad2880170f9f333b0a6cc1cd629d7f5312aa619d48de8"
+    },
+    {
+      "source": "sources/floorplans/evidence/leaning-tower.json",
+      "target": "sources/floorplans/evidence/leaning-tower.json",
+      "sha256": "d18f4d07f5b5f3150be8b6b8f445ae2fd7baa04a47f1359259dd897dcad39c23"
+    },
+    {
+      "source": "app/data/architectural-plans/leaning-tower.json",
+      "target": "app/data/architectural-plans/leaning-tower.json",
+      "sha256": "e4c743cc43bbdfc9c1c478dc4201f0477648e150c68bf251675342947a7a05bf"
+    }
+  ],
+  "frozenBuildTools": [
+    {
+      "file": "scripts/build-architectural-plans.py",
+      "sha256": "7f01ed5535871ea9deaef591087a1f97b9a8b638bb40c9cf89900cbd21d61daa",
+      "requiredFixes": [
+        "walls &= ink after MORPH_OPEN",
+        "details = ink & (1 - walls)",
+        "trace_pixel_ink rejects non-binary masks"
+      ]
+    },
+    {
+      "file": "scripts/architectural_preview.py",
+      "sha256": "431ee1dc5075abf3e405a89a84e1123d0c12eec0a71d1e37ce4f3b3ed381bfc0"
+    },
+    {
+      "file": "scripts/rebuild-pisa-tower-source-pixels-v7.py",
+      "sha256": "f93f21e22588a6df5dd10e5f4886a86cdb1d92256e85d49817b2cba9991907db"
+    }
+  ],
+  "qaContacts": [
+    {
+      "floor": "entry-first",
+      "file": "qa/tower-source-pixels/leaning-tower-entry-first-source-pixels-contact.png",
+      "sha256": "78cfc8fee3fcbe8cc0b4e2f674b92140641b488080f4838d67b597e1fc23639f"
+    },
+    {
+      "floor": "galleries-1-3",
+      "file": "qa/tower-source-pixels/leaning-tower-galleries-1-3-source-pixels-contact.png",
+      "sha256": "03d67d2621bfa97df8b9b674acc68e0f16b5b233c0b9ac833898dc538094e271"
+    },
+    {
+      "floor": "galleries-4-7",
+      "file": "qa/tower-source-pixels/leaning-tower-galleries-4-7-source-pixels-contact.png",
+      "sha256": "092f16fe995bd7a3dbe2f3340ff5582c3261eaba60a365f69362251980601023"
+    },
+    {
+      "floor": "upper",
+      "file": "qa/tower-source-pixels/leaning-tower-upper-source-pixels-contact.png",
+      "sha256": "c14bffc6dc4528444cde00bbd6c0f07b8cefb499ce4b73e5a5ab041feda40276"
+    }
+  ],
+  "verticalLinks": [
+    {"id": "base-to-entry-stair", "kind": "stairs", "label": "基座至入口螺旋梯"},
+    {"id": "entry-to-lower-galleries", "kind": "stairs", "label": "入口至第一层回廊楼梯"},
+    {"id": "lower-to-upper-galleries", "kind": "stairs", "label": "第三层至上层回廊楼梯"},
+    {"id": "upper-to-bell-level", "kind": "stairs", "label": "第七层至钟层楼梯"}
+  ],
+  "validation": {
+    "allSemanticPixelsSubsetOfSource": true,
+    "deriveDeterministic": true,
+    "buildDeterministic": true,
+    "sharedPreviewMaskUsed": true,
+    "verticalLinkContract": true,
+    "copiedPostFixBuilderUsed": true,
+    "sharedUnitTests": "19 passed"
+  }
+}

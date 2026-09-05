@@ -29,4 +29,13 @@ describe('architectural map release gate', () => {
     expect(migrationRows(inventory, [], { museum: { state: 'evidence-limited' } })[0].releaseReady).toBe(false);
     expect(migrationRows(inventory, [], { museum: { state: 'evidence-limited', reason: 'Only exterior elevations were published; no indoor floor geometry was provided.', inspectedSources: ['local/source-review.json'] } })[0].releaseReady).toBe(true);
   });
+  it('invalidates browser acceptance when the renderer or offline runtime changes', () => {
+    const review = { state: 'verified', sourceDigest: model.sourceDigest, modelDigest: modelDigest(model), runtimeDigest: 'reviewed-runtime', checks: Object.fromEntries(requiredMapChecks.map((key: string) => [key,true])) };
+    expect(migrationRows(inventory, [model], { museum: review }, 'reviewed-runtime')[0].releaseReady).toBe(true);
+    expect(migrationRows(inventory, [model], { museum: review }, 'changed-runtime')[0].releaseReady).toBe(false);
+  });
+  it('counts a multi-location stop once rather than overstating route coverage', () => {
+    const multiple = { ...model, stopBindings: [{ stopIndex: 0, placeId: 'a' }, { stopIndex: 0, placeId: 'b' }, { stopIndex: 1, placeId: 'c' }] };
+    expect(migrationRows(inventory, [multiple], {})[0].boundStops).toBe(2);
+  });
 });

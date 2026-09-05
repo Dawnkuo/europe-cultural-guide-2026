@@ -1,0 +1,258 @@
+{
+  "slug": "casa-batllo",
+  "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared all three rectified historical source plans. Retains the irregular frontage, rear terrace, central light well, curved rooms, stair treads and furniture as distinct structure/detail classes. Source-pixel checkpoints exclude73 isolated thin-line intersections from masonry without removing perimeter or stair enclosure walls. Two closed source regions support selection; open entrance and terrace grids are not artificially sealed.",
+    "floorCoverageReview": "Historical ground, principal and second floors only. The attic section cannot become a floor plan. Current third-floor twelve-room program, roof, Cube and Dome remain an explicit unlocated inventory.",
+    "stopBindingReview": "Stops0-2 locate entrance, principal rooms and the light-well zone. Missing upper/basement spaces are not assigned these coordinates.",
+    "verticalConnectionReview": "Separate published crops have no measured landing registration; no guessed link or copied floor.",
+    "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
+    "sourceDigest": "bd3d92782bd35d3ab93aa3c55f291cae05163b7742a2ff2269cd16c74343d3ba",
+    "sourceEvidence": "sources/floorplans/evidence/casa-batllo.json",
+    "comparedFloors": [
+      "historic-ground-floor",
+      "historic-first-floor",
+      "historic-second-floor"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:37:49.084Z",
+    "slug": "casa-batllo",
+    "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
+    "sourceDigest": "bd3d92782bd35d3ab93aa3c55f291cae05163b7742a2ff2269cd16c74343d3ba",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "historic-ground-floor",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-first-floor",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-second-floor",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/casa-batllo-1440-3d.png",
+          "work/map-review/release-final/casa-batllo-1440-historic-ground-floor-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-historic-first-floor-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-historic-second-floor-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 597,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 11,
+        "selectedSpaces": [],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "historic-ground-floor",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-first-floor",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-second-floor",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/casa-batllo-1094-3d.png",
+          "work/map-review/release-final/casa-batllo-1094-historic-ground-floor-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-historic-first-floor-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-historic-second-floor-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 776,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 11,
+        "selectedSpaces": [],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "historic-ground-floor",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-first-floor",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "historic-second-floor",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/casa-batllo-390-3d.png",
+          "work/map-review/release-final/casa-batllo-390-historic-ground-floor-2d.png",
+          "work/map-review/release-final/casa-batllo-390-historic-first-floor-2d.png",
+          "work/map-review/release-final/casa-batllo-390-historic-second-floor-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1273,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 11,
+        "selectedSpaces": [],
+        "stopTargets": 6,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "casa-batllo",
+    "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "historic-ground-floor",
+      "historic-first-floor",
+      "historic-second-floor"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "casa-batllo",
+    "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.69999999999891,
+    "frameP95Ms": 16.799999999999272,
+    "renderP95Ms": 2,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/casa-batllo/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 88.9292539726535,
+      "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/casa-batllo/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 104.30047698550342,
+      "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/casa-batllo/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 124.59189407985544,
+      "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/casa-batllo/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
+    "passed": true
+  }
+}

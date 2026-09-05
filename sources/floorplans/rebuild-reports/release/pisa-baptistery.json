@@ -1,0 +1,223 @@
+{
+  "slug": "pisa-baptistery",
+  "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared HBIM ground plan and the same authors' first-gallery VR plan. Retains the actual twelve-sided ground outline,font,pulpit and upper masonry/real twelve supports. Upper radial arch lines remain flat, not wedge-room walls. A-A section annotation is removed without reconstructing occluded lines.",
+    "floorCoverageReview": "Ground and women's gallery only; dome maintenance plan is a different level and excluded. No invented annular slab closes an open source region.",
+    "stopBindingReview": "All four original stops locate colonnade,font,pulpit and upper gallery at documented zone precision.",
+    "verticalConnectionReview": "Texts confirm two spiral stairs, but paired locations are absent from the plans; no invented link.",
+    "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+    "sourceDigest": "9d5592dc069af93f472abaa5dcc10ef5bd58bbd86aca7a8ca1d64e8e8df26182",
+    "sourceEvidence": "sources/floorplans/evidence/pisa-baptistery.json",
+    "comparedFloors": [
+      "ground",
+      "upper"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:45:26.439Z",
+    "slug": "pisa-baptistery",
+    "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+    "sourceDigest": "9d5592dc069af93f472abaa5dcc10ef5bd58bbd86aca7a8ca1d64e8e8df26182",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pisa-baptistery-1440-3d.png",
+          "work/map-review/release-final/pisa-baptistery-1440-ground-2d.png",
+          "work/map-review/release-final/pisa-baptistery-1440-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 920,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pisa-baptistery-1094-3d.png",
+          "work/map-review/release-final/pisa-baptistery-1094-ground-2d.png",
+          "work/map-review/release-final/pisa-baptistery-1094-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1151,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pisa-baptistery-390-3d.png",
+          "work/map-review/release-final/pisa-baptistery-390-ground-2d.png",
+          "work/map-review/release-final/pisa-baptistery-390-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1383,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "pisa-baptistery",
+    "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "ground",
+      "upper"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "pisa-baptistery",
+    "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 1.7,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/pisa-baptistery/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 152.34266296279293,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pisa-baptistery_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/pisa-baptistery/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 169.0729364069282,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pisa-baptistery_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/pisa-baptistery/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 182.33182591978306,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pisa-baptistery_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/pisa-baptistery/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+    "passed": true
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "slug": "st-mark-basilica",
+  "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the published main plan and full letter/number legend. All forty-seven positioned identifiers,chapels,narthex,treasury and genuine Byzantine wall/pier fabric remain. Source stippled masonry is classified separately from black outlines,stairs and dome projections, which stay flat.",
+    "floorCoverageReview": "Published main church/narthex/chapel/treasury level only; museum/loggia upper plan is absent.",
+    "stopBindingReview": "Stops1/2/3 bind D,B,1,14 at source precision. Unprinted Peter's Door/Foresti Stair names do not receive inferred anchors.",
+    "verticalConnectionReview": "No unsupported upper museum connection.",
+    "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+    "sourceDigest": "3262fdff479ebc50a32a7c8982fc5880ea231ff8139d012a5be2ceb6674c383c",
+    "sourceEvidence": "sources/floorplans/evidence/st-mark-basilica.json",
+    "comparedFloors": [
+      "main"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:47:09.092Z",
+    "slug": "st-mark-basilica",
+    "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+    "sourceDigest": "3262fdff479ebc50a32a7c8982fc5880ea231ff8139d012a5be2ceb6674c383c",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 47,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-mark-basilica-1440-3d.png",
+          "work/map-review/release-final/st-mark-basilica-1440-main-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 485,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 47,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 47,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-mark-basilica-1094-3d.png",
+          "work/map-review/release-final/st-mark-basilica-1094-main-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 630,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 47,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 47,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-mark-basilica-390-3d.png",
+          "work/map-review/release-final/st-mark-basilica-390-main-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 640,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 47,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "st-mark-basilica",
+    "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "main"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "st-mark-basilica",
+    "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 3.2,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/st-mark-basilica/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 175.616599307768,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-basilica_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/st-mark-basilica/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 194.5151783890496,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-basilica_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/st-mark-basilica/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 186.18753886517564,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-basilica_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/st-mark-basilica/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+    "passed": true
+  }
+}

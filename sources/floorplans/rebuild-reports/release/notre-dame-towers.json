@@ -1,0 +1,223 @@
+{
+  "slug": "notre-dame-towers",
+  "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the1856 lower and upper south-belfry timber plans. Keeps actual beam lattice, framing gaps and printed structural detail; source ink is not replaced by a generic square tower floor.",
+    "floorCoverageReview": "Two historical south-belfry framing levels only, not the reopened full visitor circuit, north tower or galleries.",
+    "stopBindingReview": "Stops2/4 locate the documented timber/bell-hanging zones; reception,Chimeras and present stairs remain unlocated.",
+    "verticalConnectionReview": "No historical-to-current visitor stair correspondence can be established from these framing plans.",
+    "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+    "sourceDigest": "9f1ae751ae81ac962144d94abdf29f482fa66fa9b371898b5c0e23e24afc42e9",
+    "sourceEvidence": "sources/floorplans/evidence/notre-dame-towers.json",
+    "comparedFloors": [
+      "south-belfry-lower",
+      "south-belfry-upper"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:44:01.945Z",
+    "slug": "notre-dame-towers",
+    "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+    "sourceDigest": "9f1ae751ae81ac962144d94abdf29f482fa66fa9b371898b5c0e23e24afc42e9",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "south-belfry-lower",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "south-belfry-upper",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/notre-dame-towers-1440-3d.png",
+          "work/map-review/release-final/notre-dame-towers-1440-south-belfry-lower-2d.png",
+          "work/map-review/release-final/notre-dame-towers-1440-south-belfry-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 520,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 2,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "south-belfry-lower",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "south-belfry-upper",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/notre-dame-towers-1094-3d.png",
+          "work/map-review/release-final/notre-dame-towers-1094-south-belfry-lower-2d.png",
+          "work/map-review/release-final/notre-dame-towers-1094-south-belfry-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 634,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 2,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "south-belfry-lower",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "south-belfry-upper",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/notre-dame-towers-390-3d.png",
+          "work/map-review/release-final/notre-dame-towers-390-south-belfry-lower-2d.png",
+          "work/map-review/release-final/notre-dame-towers-390-south-belfry-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 770,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 2,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "notre-dame-towers",
+    "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "south-belfry-lower",
+      "south-belfry-upper"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "notre-dame-towers",
+    "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 1.5,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/notre-dame-towers/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 82.95070147754019,
+      "screenshot": "work/map-review/guide-pages-final/_guides_notre-dame-towers_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/notre-dame-towers/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 99.82575253981426,
+      "screenshot": "work/map-review/guide-pages-final/_guides_notre-dame-towers_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/notre-dame-towers/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 105.81980475931744,
+      "screenshot": "work/map-review/guide-pages-final/_guides_notre-dame-towers_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/notre-dame-towers/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+    "passed": true
+  }
+}

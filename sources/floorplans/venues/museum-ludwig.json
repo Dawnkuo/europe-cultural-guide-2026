@@ -1,0 +1,2409 @@
+{
+  "slug": "museum-ludwig",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [
+      1
+    ],
+    "basis": "Page 1 prints four separate top-down public-floor diagrams with parallel page axes, rectilinear partitions, stair symbols, lift symbols, entrances and WC markers; none is a perspective view."
+  },
+  "stopBindings": [
+    {
+      "stopIndex": 0,
+      "placeId": "ground-入口-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "second-二层藏品主题区-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "second-二层藏品主题区-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "first-一层藏品主题区-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "basement-地下层当代艺术展区-1"
+    }
+  ],
+  "file": "museum-ludwig-program-2021.pdf",
+  "url": "https://www.museum-ludwig.de/fileadmin/content/01_Programm/ML_Z08-Credit-400x234_lay_10.pdf",
+  "sha256": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+  "review": "Museum Ludwig official PROGRAMM PLAN / MAP 1/2 2021, page 1, last updated December 2020. All four grey floor diagrams were visually inspected at full rendered resolution. Compound grey fills preserve the published footprint and white partition voids. The thematic collection headings are a dated program snapshot and are not converted into exact room anchors or present-day artwork locations.",
+  "internalNotes": [
+    "四张楼层图在出版物页面上彼此独立排布；楼层叠放仅用于显示，不表示各层之间存在可量测的配准关系。",
+    "来源是2020年12月更新、用于2021年1月至2月的节目地图。它可证明楼层轮廓与服务设施位置，但藏品主题不应视为当前展陈。",
+    "导览停靠点0绑定到底层东侧已标注入口；停靠点1至4只绑定到来源明确指定的楼层主题区，不声称具体展厅或作品位置。",
+    "来源未提供公共展厅编号，因此模型不虚构编号。灰色复合图形中的白色分隔是示意性分区，不代表测绘墙厚。"
+  ],
+  "limitations": [
+    "包含四层建筑与服务设施；分区名称反映 2021 年初的展陈。",
+    "藏品主题只定位到楼层区域，不表示当前展厅或单件作品位置。"
+  ],
+  "floors": [
+    {
+      "id": "basement",
+      "label": "地下层",
+      "order": -1,
+      "page": 1,
+      "crop": [
+        50,
+        322,
+        326,
+        444
+      ],
+      "rules": [
+        {
+          "ids": [
+            47
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.82,
+              0.826,
+              0.832
+            ]
+          ],
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "Reviewed compound grey fill is the complete basement diagram; its white slots and grid lines remain voids rather than fabricated rooms."
+        },
+        {
+          "ids": [
+            46
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "Reviewed black stair pictogram retained as flat source detail."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 29,
+          "occurrence": 1,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed lift pictogram occurrence retained at its exact PDF placement as flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "地下层当代艺术展区",
+          "name": "地下层当代艺术展区",
+          "at": [
+            184,
+            365
+          ],
+          "kind": "area",
+          "evidence": "节目地图在地下层图形内印有当代艺术收藏的新陈列主题；锚点取该楼层公共展区的几何中心，不表示具体展厅。",
+          "precision": "published-floor-theme-centroid-not-room-specific"
+        },
+        {
+          "label": "电梯",
+          "name": "地下层电梯",
+          "at": [
+            173.48,
+            336.38
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中电梯象形图 occurrence 1 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        },
+        {
+          "label": "楼梯",
+          "name": "地下层楼梯",
+          "at": [
+            153.78,
+            366.57
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中黑色楼梯象形图 path 46 的边界框中心。",
+          "precision": "vector-service-symbol-center"
+        }
+      ],
+      "selectionSpaces": [
+        {
+          "id": "region-1",
+          "label": "地下层当代艺术展区",
+          "placeId": "basement-地下层当代艺术展区-1",
+          "scope": "collection",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  245.4167,
+                  339.7448
+                ],
+                [
+                  231.9327,
+                  339.7448
+                ],
+                [
+                  231.9327,
+                  338.2888
+                ],
+                [
+                  243.6367,
+                  338.2888
+                ],
+                [
+                  243.6367,
+                  330.4138
+                ],
+                [
+                  231.9327,
+                  330.4138
+                ],
+                [
+                  228.8037,
+                  330.4138
+                ],
+                [
+                  228.8037,
+                  338.2888
+                ],
+                [
+                  228.8037,
+                  339.7448
+                ],
+                [
+                  217.0457,
+                  339.7448
+                ],
+                [
+                  214.7807,
+                  339.7448
+                ],
+                [
+                  212.4077,
+                  339.7448
+                ],
+                [
+                  127.4017,
+                  339.7448
+                ],
+                [
+                  127.4017,
+                  359.9178
+                ],
+                [
+                  120.6597,
+                  359.9178
+                ],
+                [
+                  120.6597,
+                  339.7448
+                ],
+                [
+                  58.3627,
+                  339.7448
+                ],
+                [
+                  58.3627,
+                  391.9558
+                ],
+                [
+                  120.6597,
+                  391.9558
+                ],
+                [
+                  120.6597,
+                  370.5968
+                ],
+                [
+                  127.4017,
+                  370.5968
+                ],
+                [
+                  127.4017,
+                  391.9558
+                ],
+                [
+                  212.4077,
+                  391.9558
+                ],
+                [
+                  214.7807,
+                  391.9558
+                ],
+                [
+                  217.0457,
+                  391.9558
+                ],
+                [
+                  228.8037,
+                  391.9558
+                ],
+                [
+                  228.8037,
+                  393.3048
+                ],
+                [
+                  228.8037,
+                  401.1798
+                ],
+                [
+                  231.9327,
+                  401.1798
+                ],
+                [
+                  243.6367,
+                  401.1798
+                ],
+                [
+                  243.6367,
+                  393.3048
+                ],
+                [
+                  231.9327,
+                  393.3048
+                ],
+                [
+                  231.9327,
+                  391.9558
+                ],
+                [
+                  245.4167,
+                  391.9558
+                ],
+                [
+                  247.6817,
+                  391.9558
+                ],
+                [
+                  265.5897,
+                  391.9558
+                ],
+                [
+                  265.5897,
+                  393.3048
+                ],
+                [
+                  253.8847,
+                  393.3048
+                ],
+                [
+                  253.8847,
+                  401.1798
+                ],
+                [
+                  265.5897,
+                  401.1798
+                ],
+                [
+                  268.7177,
+                  401.1798
+                ],
+                [
+                  268.7177,
+                  393.3048
+                ],
+                [
+                  268.7177,
+                  391.9558
+                ],
+                [
+                  272.6007,
+                  391.9558
+                ],
+                [
+                  281.3927,
+                  391.9558
+                ],
+                [
+                  286.4177,
+                  391.9558
+                ],
+                [
+                  310.1417,
+                  391.9558
+                ],
+                [
+                  310.1417,
+                  339.7448
+                ],
+                [
+                  286.4177,
+                  339.7448
+                ],
+                [
+                  281.3927,
+                  339.7448
+                ],
+                [
+                  272.6007,
+                  339.7448
+                ],
+                [
+                  268.7177,
+                  339.7448
+                ],
+                [
+                  268.7177,
+                  338.2888
+                ],
+                [
+                  268.7177,
+                  330.4138
+                ],
+                [
+                  265.5897,
+                  330.4138
+                ],
+                [
+                  253.8847,
+                  330.4138
+                ],
+                [
+                  253.8847,
+                  338.2888
+                ],
+                [
+                  265.5897,
+                  338.2888
+                ],
+                [
+                  265.5897,
+                  339.7448
+                ],
+                [
+                  247.6817,
+                  339.7448
+                ],
+                [
+                  245.4167,
+                  339.7448
+                ]
+              ],
+              "holes": [
+                [
+                  [
+                    247.6817,
+                    365.2568
+                  ],
+                  [
+                    267.6387,
+                    365.2568
+                  ],
+                  [
+                    267.6387,
+                    343.1968
+                  ],
+                  [
+                    268.7177,
+                    343.1968
+                  ],
+                  [
+                    268.7177,
+                    347.4328
+                  ],
+                  [
+                    268.7177,
+                    351.0718
+                  ],
+                  [
+                    268.7177,
+                    352.1508
+                  ],
+                  [
+                    268.7177,
+                    356.6018
+                  ],
+                  [
+                    268.7177,
+                    373.9698
+                  ],
+                  [
+                    268.7177,
+                    379.5508
+                  ],
+                  [
+                    268.7177,
+                    380.6298
+                  ],
+                  [
+                    268.7177,
+                    383.1388
+                  ],
+                  [
+                    268.7177,
+                    388.2348
+                  ],
+                  [
+                    267.6387,
+                    388.2348
+                  ],
+                  [
+                    267.6387,
+                    366.4438
+                  ],
+                  [
+                    247.6817,
+                    366.4438
+                  ],
+                  [
+                    247.6817,
+                    388.5038
+                  ],
+                  [
+                    245.4167,
+                    388.5038
+                  ],
+                  [
+                    245.4167,
+                    366.4438
+                  ],
+                  [
+                    217.0457,
+                    366.4438
+                  ],
+                  [
+                    217.0457,
+                    388.5038
+                  ],
+                  [
+                    214.7807,
+                    388.5038
+                  ],
+                  [
+                    214.7807,
+                    343.1968
+                  ],
+                  [
+                    217.0457,
+                    343.1968
+                  ],
+                  [
+                    217.0457,
+                    365.2568
+                  ],
+                  [
+                    245.4167,
+                    365.2568
+                  ],
+                  [
+                    245.4167,
+                    343.1968
+                  ],
+                  [
+                    247.6817,
+                    343.1968
+                  ],
+                  [
+                    247.6817,
+                    365.2568
+                  ]
+                ],
+                [
+                  [
+                    273.1427,
+                    351.0718
+                  ],
+                  [
+                    281.3927,
+                    351.0718
+                  ],
+                  [
+                    281.3927,
+                    380.6298
+                  ],
+                  [
+                    273.1427,
+                    380.6298
+                  ],
+                  [
+                    273.1427,
+                    379.5508
+                  ],
+                  [
+                    277.5677,
+                    379.5508
+                  ],
+                  [
+                    277.5677,
+                    352.1508
+                  ],
+                  [
+                    273.1427,
+                    352.1508
+                  ],
+                  [
+                    273.1427,
+                    351.0718
+                  ]
+                ]
+              ]
+            }
+          ],
+          "sourcePaths": [
+            "basement-path-47-surface"
+          ],
+          "evidence": "Exact source-derived boundary faces; reviewed source doorway cuts affect selection only, never masonry. Theme-floor selections use original published surface compounds without invented room partitions."
+        }
+      ],
+      "selectionCuts": []
+    },
+    {
+      "id": "ground",
+      "label": "底层",
+      "order": 0,
+      "page": 1,
+      "crop": [
+        305,
+        34,
+        560,
+        448
+      ],
+      "rules": [
+        {
+          "ids": [
+            41,
+            42
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.82,
+              0.826,
+              0.832
+            ]
+          ],
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "Reviewed grey compounds together form the published ground-floor diagram, including the lower entrance wing and the tall main footprint."
+        },
+        {
+          "ids": [
+            43
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "Reviewed black stair pictogram retained as flat source detail."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 29,
+          "occurrence": 0,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed lower ground-floor lift pictogram retained at its exact PDF placement as flat detail."
+        },
+        {
+          "xref": 29,
+          "occurrence": 4,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed upper ground-floor lift pictogram retained at its exact PDF placement as flat detail."
+        },
+        {
+          "xref": 23,
+          "occurrence": 0,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed lower ground-floor WC pictogram retained at its exact PDF placement as flat detail."
+        },
+        {
+          "xref": 23,
+          "occurrence": 1,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed upper ground-floor WC pictogram retained at its exact PDF placement as flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "入口",
+          "name": "底层东侧入口",
+          "at": [
+            500.17,
+            424.25
+          ],
+          "kind": "service",
+          "evidence": "来源在一层东侧边界外印有EINGANG / ENTRANCE；锚点落在对应灰色楼层轮廓的开口边缘。",
+          "precision": "reviewed-entrance-edge-anchor-not-surveyed"
+        },
+        {
+          "label": "楼梯",
+          "name": "底层楼梯",
+          "at": [
+            383.62,
+            366.57
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中黑色楼梯象形图 path 43 的边界框中心。",
+          "precision": "vector-service-symbol-center"
+        },
+        {
+          "label": "电梯-南",
+          "name": "底层南侧电梯",
+          "at": [
+            407.48,
+            336.38
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中电梯象形图 occurrence 0 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        },
+        {
+          "label": "电梯-北",
+          "name": "底层北侧电梯",
+          "at": [
+            488.27,
+            152.98
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中电梯象形图 occurrence 4 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        },
+        {
+          "label": "卫生间-南",
+          "name": "底层南侧卫生间",
+          "at": [
+            449.29,
+            438.44
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中WC象形图 occurrence 0 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        },
+        {
+          "label": "卫生间-北",
+          "name": "底层北侧卫生间",
+          "at": [
+            511.94,
+            90.14
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中WC象形图 occurrence 1 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        }
+      ],
+      "selectionSpaces": [],
+      "selectionCuts": []
+    },
+    {
+      "id": "first",
+      "label": "一层",
+      "order": 1,
+      "page": 1,
+      "crop": [
+        595,
+        110,
+        795,
+        440
+      ],
+      "rules": [
+        {
+          "ids": [
+            48,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.82,
+              0.826,
+              0.832
+            ]
+          ],
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published."
+        },
+        {
+          "ids": [
+            49
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "Reviewed black stair pictogram retained as flat source detail."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 29,
+          "occurrence": 2,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed lower second-floor lift pictogram retained at its exact PDF placement as flat detail."
+        },
+        {
+          "xref": 29,
+          "occurrence": 5,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed upper second-floor lift pictogram retained at its exact PDF placement as flat detail."
+        },
+        {
+          "xref": 23,
+          "occurrence": 2,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed second-floor WC pictogram retained at its exact PDF placement as flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "一层藏品主题区",
+          "name": "波普、激浪派与观念艺术主题楼层",
+          "at": [
+            748,
+            250
+          ],
+          "kind": "area",
+          "evidence": "节目地图把波普艺术、激浪派与观念艺术列为该楼层主题；锚点位于原图灰色展区内部，不表示具体展厅或作品位置。旧坐标落在图形外的文字空白处，已移除。",
+          "precision": "published-floor-theme-area-not-room-specific"
+        },
+        {
+          "label": "楼梯",
+          "name": "一层楼梯",
+          "at": [
+            618.11,
+            366.57
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中黑色楼梯象形图 path 49 的边界框中心。",
+          "precision": "vector-service-symbol-center"
+        },
+        {
+          "label": "电梯-南",
+          "name": "一层南侧电梯",
+          "at": [
+            640.91,
+            336.38
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中电梯象形图 occurrence 2 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        },
+        {
+          "label": "电梯-北",
+          "name": "一层北侧电梯",
+          "at": [
+            711.28,
+            152.98
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中电梯象形图 occurrence 5 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        },
+        {
+          "label": "卫生间",
+          "name": "一层卫生间",
+          "at": [
+            714.33,
+            396.85
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中WC象形图 occurrence 2 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        }
+      ],
+      "selectionSpaces": [
+        {
+          "id": "region-1",
+          "label": "波普、激浪派与观念艺术主题楼层",
+          "placeId": "first-一层藏品主题区-1",
+          "scope": "collection",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  718.2282,
+                  339.5062
+                ],
+                [
+                  602.5752,
+                  339.5062
+                ],
+                [
+                  602.5752,
+                  392.2302
+                ],
+                [
+                  637.517,
+                  392.2302
+                ],
+                [
+                  637.517,
+                  393.493
+                ],
+                [
+                  637.517,
+                  400.211
+                ],
+                [
+                  637.517,
+                  401.402
+                ],
+                [
+                  620.509,
+                  401.402
+                ],
+                [
+                  620.509,
+                  434.567
+                ],
+                [
+                  649.848,
+                  434.567
+                ],
+                [
+                  649.848,
+                  401.402
+                ],
+                [
+                  644.32,
+                  401.402
+                ],
+                [
+                  644.32,
+                  400.211
+                ],
+                [
+                  651.549,
+                  400.211
+                ],
+                [
+                  651.549,
+                  401.402
+                ],
+                [
+                  651.549,
+                  422.419
+                ],
+                [
+                  651.549,
+                  434.567
+                ],
+                [
+                  703.848,
+                  434.567
+                ],
+                [
+                  703.848,
+                  401.402
+                ],
+                [
+                  658.352,
+                  401.402
+                ],
+                [
+                  658.352,
+                  400.211
+                ],
+                [
+                  673.446,
+                  400.211
+                ],
+                [
+                  673.446,
+                  393.493
+                ],
+                [
+                  658.352,
+                  393.493
+                ],
+                [
+                  658.352,
+                  392.2302
+                ],
+                [
+                  718.624,
+                  392.2302
+                ],
+                [
+                  718.624,
+                  393.493
+                ],
+                [
+                  674.509,
+                  393.493
+                ],
+                [
+                  674.509,
+                  400.211
+                ],
+                [
+                  718.624,
+                  400.211
+                ],
+                [
+                  718.624,
+                  401.402
+                ],
+                [
+                  705.761,
+                  401.402
+                ],
+                [
+                  705.761,
+                  434.567
+                ],
+                [
+                  732.123,
+                  434.567
+                ],
+                [
+                  732.123,
+                  401.402
+                ],
+                [
+                  725.427,
+                  401.402
+                ],
+                [
+                  725.427,
+                  392.2302
+                ],
+                [
+                  748.9842,
+                  392.2302
+                ],
+                [
+                  748.9842,
+                  356.2872
+                ],
+                [
+                  789.4492,
+                  356.2872
+                ],
+                [
+                  789.4492,
+                  305.2632
+                ],
+                [
+                  738.2122,
+                  305.2632
+                ],
+                [
+                  738.2122,
+                  313.4342
+                ],
+                [
+                  736.7242,
+                  313.4342
+                ],
+                [
+                  736.7242,
+                  292.4722
+                ],
+                [
+                  738.2122,
+                  292.4722
+                ],
+                [
+                  738.2122,
+                  302.9392
+                ],
+                [
+                  767.5512,
+                  302.9392
+                ],
+                [
+                  767.5512,
+                  292.4722
+                ],
+                [
+                  768.8272,
+                  292.4722
+                ],
+                [
+                  768.8272,
+                  302.9392
+                ],
+                [
+                  789.4492,
+                  302.9392
+                ],
+                [
+                  789.4492,
+                  279.4112
+                ],
+                [
+                  768.8272,
+                  279.4112
+                ],
+                [
+                  768.8272,
+                  287.5822
+                ],
+                [
+                  767.5512,
+                  287.5822
+                ],
+                [
+                  767.5512,
+                  281.4522
+                ],
+                [
+                  767.5512,
+                  279.4112
+                ],
+                [
+                  767.5512,
+                  277.1442
+                ],
+                [
+                  767.5512,
+                  268.9802
+                ],
+                [
+                  767.5512,
+                  266.7122
+                ],
+                [
+                  767.5512,
+                  264.6712
+                ],
+                [
+                  767.5512,
+                  257.3932
+                ],
+                [
+                  768.8272,
+                  257.3932
+                ],
+                [
+                  768.8272,
+                  266.7122
+                ],
+                [
+                  789.4492,
+                  266.7122
+                ],
+                [
+                  789.4492,
+                  243.1842
+                ],
+                [
+                  768.8272,
+                  243.1842
+                ],
+                [
+                  768.8272,
+                  252.5032
+                ],
+                [
+                  767.5512,
+                  252.5032
+                ],
+                [
+                  767.5512,
+                  243.1842
+                ],
+                [
+                  738.2122,
+                  243.1842
+                ],
+                [
+                  738.2122,
+                  252.5032
+                ],
+                [
+                  736.7242,
+                  252.5032
+                ],
+                [
+                  736.7242,
+                  231.5412
+                ],
+                [
+                  738.2122,
+                  231.5412
+                ],
+                [
+                  738.2122,
+                  240.8602
+                ],
+                [
+                  767.5512,
+                  240.8602
+                ],
+                [
+                  767.5512,
+                  231.5412
+                ],
+                [
+                  768.8272,
+                  231.5412
+                ],
+                [
+                  768.8272,
+                  240.8602
+                ],
+                [
+                  789.4492,
+                  240.8602
+                ],
+                [
+                  789.4492,
+                  217.3332
+                ],
+                [
+                  768.8272,
+                  217.3332
+                ],
+                [
+                  768.8272,
+                  226.6512
+                ],
+                [
+                  767.5512,
+                  226.6512
+                ],
+                [
+                  767.5512,
+                  219.3732
+                ],
+                [
+                  767.5512,
+                  217.3332
+                ],
+                [
+                  767.5512,
+                  215.0082
+                ],
+                [
+                  767.5512,
+                  206.8442
+                ],
+                [
+                  767.5512,
+                  204.2932
+                ],
+                [
+                  789.4492,
+                  204.2932
+                ],
+                [
+                  789.4492,
+                  180.7662
+                ],
+                [
+                  752.8822,
+                  180.7662
+                ],
+                [
+                  752.8822,
+                  190.4252
+                ],
+                [
+                  752.0312,
+                  190.4252
+                ],
+                [
+                  752.0312,
+                  169.4622
+                ],
+                [
+                  752.8822,
+                  169.4622
+                ],
+                [
+                  752.8822,
+                  178.7812
+                ],
+                [
+                  789.4492,
+                  178.7812
+                ],
+                [
+                  789.4492,
+                  155.5312
+                ],
+                [
+                  752.8822,
+                  155.5312
+                ],
+                [
+                  752.8822,
+                  164.5732
+                ],
+                [
+                  752.0312,
+                  164.5732
+                ],
+                [
+                  752.0312,
+                  155.5372
+                ],
+                [
+                  733.5352,
+                  155.5372
+                ],
+                [
+                  733.5352,
+                  121.1252
+                ],
+                [
+                  719.9292,
+                  121.1252
+                ],
+                [
+                  719.9292,
+                  126.5532
+                ],
+                [
+                  718.6532,
+                  126.5532
+                ],
+                [
+                  718.6532,
+                  121.1252
+                ],
+                [
+                  699.7322,
+                  121.1252
+                ],
+                [
+                  699.7322,
+                  143.7452
+                ],
+                [
+                  718.6532,
+                  143.7452
+                ],
+                [
+                  718.6532,
+                  131.4432
+                ],
+                [
+                  719.9292,
+                  131.4432
+                ],
+                [
+                  719.9292,
+                  155.5052
+                ],
+                [
+                  699.7322,
+                  155.5372
+                ],
+                [
+                  699.7322,
+                  204.3012
+                ],
+                [
+                  718.2282,
+                  204.3012
+                ],
+                [
+                  718.2282,
+                  339.5062
+                ]
+              ],
+              "holes": [
+                [
+                  [
+                    644.32,
+                    392.2302
+                  ],
+                  [
+                    651.549,
+                    392.2302
+                  ],
+                  [
+                    651.549,
+                    393.493
+                  ],
+                  [
+                    644.32,
+                    393.493
+                  ],
+                  [
+                    644.32,
+                    392.2302
+                  ]
+                ],
+                [
+                  [
+                    647.7872,
+                    373.2382
+                  ],
+                  [
+                    647.7872,
+                    358.4982
+                  ],
+                  [
+                    713.8912,
+                    358.4982
+                  ],
+                  [
+                    713.8912,
+                    373.2382
+                  ],
+                  [
+                    647.7872,
+                    373.2382
+                  ]
+                ],
+                [
+                  [
+                    763.3842,
+                    215.0082
+                  ],
+                  [
+                    763.3842,
+                    217.3332
+                  ],
+                  [
+                    738.2122,
+                    217.3332
+                  ],
+                  [
+                    738.2122,
+                    226.6512
+                  ],
+                  [
+                    736.7242,
+                    226.6512
+                  ],
+                  [
+                    736.7242,
+                    204.3012
+                  ],
+                  [
+                    752.0312,
+                    204.3012
+                  ],
+                  [
+                    752.0312,
+                    195.3142
+                  ],
+                  [
+                    752.8822,
+                    195.3142
+                  ],
+                  [
+                    752.8822,
+                    204.2932
+                  ],
+                  [
+                    763.3842,
+                    204.2932
+                  ],
+                  [
+                    763.3842,
+                    206.8442
+                  ],
+                  [
+                    752.8822,
+                    206.8442
+                  ],
+                  [
+                    752.8822,
+                    215.0082
+                  ],
+                  [
+                    763.3842,
+                    215.0082
+                  ]
+                ],
+                [
+                  [
+                    763.3842,
+                    279.4112
+                  ],
+                  [
+                    738.2122,
+                    279.4112
+                  ],
+                  [
+                    738.2122,
+                    287.5822
+                  ],
+                  [
+                    736.7242,
+                    287.5822
+                  ],
+                  [
+                    736.7242,
+                    257.3932
+                  ],
+                  [
+                    738.2122,
+                    257.3932
+                  ],
+                  [
+                    738.2122,
+                    266.7122
+                  ],
+                  [
+                    763.3842,
+                    266.7122
+                  ],
+                  [
+                    763.3842,
+                    268.9802
+                  ],
+                  [
+                    752.8822,
+                    268.9802
+                  ],
+                  [
+                    752.8822,
+                    277.1442
+                  ],
+                  [
+                    763.3842,
+                    277.1442
+                  ],
+                  [
+                    763.3842,
+                    279.4112
+                  ]
+                ],
+                [
+                  [
+                    736.7242,
+                    318.3242
+                  ],
+                  [
+                    738.2122,
+                    318.3242
+                  ],
+                  [
+                    738.2122,
+                    386.2782
+                  ],
+                  [
+                    736.7242,
+                    386.2782
+                  ],
+                  [
+                    736.7242,
+                    318.3242
+                  ]
+                ]
+              ]
+            }
+          ],
+          "sourcePaths": [
+            "first-path-48-surface",
+            "first-path-50-surface",
+            "first-path-51-surface",
+            "first-path-52-surface",
+            "first-path-53-surface",
+            "first-path-54-surface",
+            "first-path-55-surface",
+            "first-path-56-surface",
+            "first-path-57-surface"
+          ],
+          "evidence": "Exact source-derived boundary faces; reviewed source doorway cuts affect selection only, never masonry. Theme-floor selections use original published surface compounds without invented room partitions."
+        }
+      ],
+      "selectionCuts": []
+    },
+    {
+      "id": "second",
+      "label": "二层",
+      "order": 2,
+      "page": 1,
+      "crop": [
+        830,
+        125,
+        1007,
+        402
+      ],
+      "rules": [
+        {
+          "ids": [
+            44
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.82,
+              0.826,
+              0.832
+            ]
+          ],
+          "kind": "surface",
+          "tone": "gold",
+          "reason": "Reviewed compound grey fill is the complete second-upper-floor diagram with its published internal voids."
+        },
+        {
+          "ids": [
+            45
+          ],
+          "type": [
+            "f"
+          ],
+          "channel": "fill",
+          "colors": [
+            [
+              0.137,
+              0.122,
+              0.125
+            ]
+          ],
+          "kind": "detail",
+          "tone": "stone",
+          "reason": "Reviewed black stair pictogram retained as flat source detail."
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 29,
+          "occurrence": 3,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed third-floor lift pictogram retained at its exact PDF placement as flat detail."
+        },
+        {
+          "xref": 23,
+          "occurrence": 3,
+          "maxChannel": 200,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.1,
+          "reason": "Reviewed third-floor WC pictogram retained at its exact PDF placement as flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "二层藏品主题区",
+          "name": "表现主义、俄罗斯先锋派、摄影与毕加索主题楼层",
+          "at": [
+            940,
+            225
+          ],
+          "kind": "area",
+          "evidence": "节目地图把表现主义、豪布里希收藏、俄罗斯先锋派、摄影与毕加索列为该楼层主题；锚点位于原图灰色展区内部，不表示具体展厅或作品位置。旧坐标落在展区之间的白色空隙，已移除。",
+          "precision": "published-floor-theme-area-not-room-specific"
+        },
+        {
+          "label": "楼梯",
+          "name": "二层楼梯",
+          "at": [
+            852.82,
+            375.18
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中黑色楼梯象形图 path 45 的边界框中心。",
+          "precision": "vector-service-symbol-center"
+        },
+        {
+          "label": "电梯",
+          "name": "二层电梯",
+          "at": [
+            877.78,
+            336.14
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中电梯象形图 occurrence 3 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        },
+        {
+          "label": "卫生间",
+          "name": "二层卫生间",
+          "at": [
+            899.72,
+            391.47
+          ],
+          "kind": "service",
+          "evidence": "来源PDF中WC象形图 occurrence 3 的边界框中心。",
+          "precision": "embedded-service-symbol-center"
+        }
+      ],
+      "selectionSpaces": [
+        {
+          "id": "region-1",
+          "label": "表现主义、俄罗斯先锋派、摄影与毕加索主题楼层",
+          "placeId": "second-二层藏品主题区-1",
+          "scope": "collection",
+          "selectionOnly": true,
+          "polygons": [
+            {
+              "outer": [
+                [
+                  902.3484,
+                  134.8445
+                ],
+                [
+                  902.3484,
+                  191.3955
+                ],
+                [
+                  907.8824,
+                  191.3955
+                ],
+                [
+                  913.7034,
+                  191.3955
+                ],
+                [
+                  916.2094,
+                  191.3955
+                ],
+                [
+                  921.4534,
+                  191.3955
+                ],
+                [
+                  921.4534,
+                  203.2895
+                ],
+                [
+                  916.2094,
+                  203.2895
+                ],
+                [
+                  913.7034,
+                  203.2895
+                ],
+                [
+                  907.8824,
+                  203.2895
+                ],
+                [
+                  886.6584,
+                  203.2895
+                ],
+                [
+                  886.6584,
+                  259.4275
+                ],
+                [
+                  907.8824,
+                  259.4275
+                ],
+                [
+                  913.7034,
+                  259.4275
+                ],
+                [
+                  916.2094,
+                  259.4275
+                ],
+                [
+                  921.4534,
+                  259.4275
+                ],
+                [
+                  921.4534,
+                  271.1125
+                ],
+                [
+                  840.0994,
+                  271.1025
+                ],
+                [
+                  840.0994,
+                  327.4585
+                ],
+                [
+                  859.3184,
+                  327.4585
+                ],
+                [
+                  862.2094,
+                  327.4585
+                ],
+                [
+                  864.1224,
+                  327.4585
+                ],
+                [
+                  878.7924,
+                  327.4585
+                ],
+                [
+                  879.9005,
+                  327.4585
+                ],
+                [
+                  913.7034,
+                  327.4585
+                ],
+                [
+                  916.2094,
+                  327.4585
+                ],
+                [
+                  921.4534,
+                  327.4585
+                ],
+                [
+                  921.4534,
+                  338.9355
+                ],
+                [
+                  837.6375,
+                  338.9355
+                ],
+                [
+                  837.6375,
+                  359.9435
+                ],
+                [
+                  904.0484,
+                  359.9435
+                ],
+                [
+                  904.0484,
+                  395.7735
+                ],
+                [
+                  950.0125,
+                  395.7735
+                ],
+                [
+                  950.0125,
+                  338.9355
+                ],
+                [
+                  930.8784,
+                  338.9355
+                ],
+                [
+                  930.8784,
+                  327.4585
+                ],
+                [
+                  950.0125,
+                  327.4585
+                ],
+                [
+                  951.5004,
+                  327.4585
+                ],
+                [
+                  963.8494,
+                  327.4585
+                ],
+                [
+                  966.1704,
+                  327.4585
+                ],
+                [
+                  966.1704,
+                  300.1095
+                ],
+                [
+                  951.5645,
+                  300.1095
+                ],
+                [
+                  951.5645,
+                  322.5515
+                ],
+                [
+                  951.5004,
+                  322.5515
+                ],
+                [
+                  951.5004,
+                  322.5685
+                ],
+                [
+                  950.0125,
+                  322.5685
+                ],
+                [
+                  950.0125,
+                  322.5515
+                ],
+                [
+                  949.7155,
+                  322.5515
+                ],
+                [
+                  949.7155,
+                  300.1095
+                ],
+                [
+                  930.7935,
+                  300.1095
+                ],
+                [
+                  930.7935,
+                  298.2595
+                ],
+                [
+                  949.7155,
+                  298.2595
+                ],
+                [
+                  949.7155,
+                  275.8175
+                ],
+                [
+                  951.5645,
+                  275.8175
+                ],
+                [
+                  951.5645,
+                  298.2595
+                ],
+                [
+                  966.1704,
+                  298.2595
+                ],
+                [
+                  966.1704,
+                  271.1125
+                ],
+                [
+                  963.8494,
+                  271.1125
+                ],
+                [
+                  951.5004,
+                  271.1125
+                ],
+                [
+                  950.0125,
+                  271.1125
+                ],
+                [
+                  930.8784,
+                  271.1125
+                ],
+                [
+                  930.8784,
+                  259.4275
+                ],
+                [
+                  950.0125,
+                  259.4275
+                ],
+                [
+                  951.5004,
+                  259.4275
+                ],
+                [
+                  985.3044,
+                  259.4275
+                ],
+                [
+                  986.7924,
+                  259.4275
+                ],
+                [
+                  986.7924,
+                  259.6355
+                ],
+                [
+                  1001.4614,
+                  259.6355
+                ],
+                [
+                  1001.4614,
+                  232.3885
+                ],
+                [
+                  987.0684,
+                  232.3885
+                ],
+                [
+                  987.0684,
+                  254.8305
+                ],
+                [
+                  985.2184,
+                  254.8305
+                ],
+                [
+                  985.2184,
+                  232.3885
+                ],
+                [
+                  951.5645,
+                  232.3885
+                ],
+                [
+                  951.5645,
+                  254.8305
+                ],
+                [
+                  949.7155,
+                  254.8305
+                ],
+                [
+                  949.7155,
+                  232.3885
+                ],
+                [
+                  930.7935,
+                  232.3885
+                ],
+                [
+                  930.7935,
+                  230.5385
+                ],
+                [
+                  949.7155,
+                  230.5385
+                ],
+                [
+                  949.7155,
+                  208.0965
+                ],
+                [
+                  951.5645,
+                  208.0965
+                ],
+                [
+                  951.5645,
+                  230.5385
+                ],
+                [
+                  985.2184,
+                  230.5385
+                ],
+                [
+                  985.2184,
+                  208.0965
+                ],
+                [
+                  987.0684,
+                  208.0965
+                ],
+                [
+                  987.0684,
+                  230.5385
+                ],
+                [
+                  1001.4614,
+                  230.5385
+                ],
+                [
+                  1001.4614,
+                  203.2895
+                ],
+                [
+                  988.4924,
+                  203.2895
+                ],
+                [
+                  986.7924,
+                  203.2895
+                ],
+                [
+                  985.3044,
+                  203.2895
+                ],
+                [
+                  983.1784,
+                  203.2895
+                ],
+                [
+                  951.5004,
+                  203.2895
+                ],
+                [
+                  950.0125,
+                  203.2895
+                ],
+                [
+                  930.8784,
+                  203.2895
+                ],
+                [
+                  930.8784,
+                  191.3955
+                ],
+                [
+                  950.0125,
+                  191.3955
+                ],
+                [
+                  951.5004,
+                  191.3955
+                ],
+                [
+                  985.3044,
+                  191.3955
+                ],
+                [
+                  986.7924,
+                  191.3955
+                ],
+                [
+                  988.4924,
+                  191.3955
+                ],
+                [
+                  1001.4614,
+                  191.3955
+                ],
+                [
+                  1001.4614,
+                  164.0465
+                ],
+                [
+                  987.0684,
+                  164.0465
+                ],
+                [
+                  987.0684,
+                  186.4885
+                ],
+                [
+                  986.7924,
+                  186.4885
+                ],
+                [
+                  986.7924,
+                  186.5055
+                ],
+                [
+                  985.3044,
+                  186.5055
+                ],
+                [
+                  985.3044,
+                  186.4885
+                ],
+                [
+                  985.2184,
+                  186.4885
+                ],
+                [
+                  985.2184,
+                  164.0465
+                ],
+                [
+                  951.5645,
+                  164.0465
+                ],
+                [
+                  951.5645,
+                  186.4885
+                ],
+                [
+                  951.5004,
+                  186.4885
+                ],
+                [
+                  951.5004,
+                  186.5055
+                ],
+                [
+                  950.0125,
+                  186.5055
+                ],
+                [
+                  950.0125,
+                  186.4885
+                ],
+                [
+                  949.7155,
+                  186.4885
+                ],
+                [
+                  949.7155,
+                  164.0465
+                ],
+                [
+                  930.7935,
+                  164.0465
+                ],
+                [
+                  930.7935,
+                  162.1965
+                ],
+                [
+                  949.7155,
+                  162.1965
+                ],
+                [
+                  949.7155,
+                  139.7555
+                ],
+                [
+                  950.0125,
+                  139.7555
+                ],
+                [
+                  950.0125,
+                  139.7345
+                ],
+                [
+                  951.5004,
+                  139.7345
+                ],
+                [
+                  951.5004,
+                  139.7555
+                ],
+                [
+                  951.5645,
+                  139.7555
+                ],
+                [
+                  951.5645,
+                  162.1965
+                ],
+                [
+                  985.2184,
+                  162.1965
+                ],
+                [
+                  985.2184,
+                  139.7555
+                ],
+                [
+                  985.3044,
+                  139.7555
+                ],
+                [
+                  985.3044,
+                  139.7345
+                ],
+                [
+                  986.7924,
+                  139.7345
+                ],
+                [
+                  986.7924,
+                  139.7555
+                ],
+                [
+                  987.0684,
+                  139.7555
+                ],
+                [
+                  987.0684,
+                  162.1965
+                ],
+                [
+                  1001.4614,
+                  162.1965
+                ],
+                [
+                  1001.4614,
+                  134.8445
+                ],
+                [
+                  988.4924,
+                  134.8445
+                ],
+                [
+                  985.3044,
+                  134.8445
+                ],
+                [
+                  951.5004,
+                  134.8445
+                ],
+                [
+                  950.0125,
+                  134.8445
+                ],
+                [
+                  916.2094,
+                  134.8445
+                ],
+                [
+                  913.7034,
+                  134.8445
+                ],
+                [
+                  907.8824,
+                  134.8445
+                ],
+                [
+                  902.3484,
+                  134.8445
+                ]
+              ],
+              "holes": [
+                [
+                  [
+                    913.7034,
+                    186.5055
+                  ],
+                  [
+                    913.7034,
+                    139.7335
+                  ],
+                  [
+                    916.2094,
+                    139.7335
+                  ],
+                  [
+                    916.2094,
+                    186.5055
+                  ],
+                  [
+                    913.7034,
+                    186.5055
+                  ]
+                ],
+                [
+                  [
+                    913.7034,
+                    322.5685
+                  ],
+                  [
+                    913.7034,
+                    300.1045
+                  ],
+                  [
+                    913.7034,
+                    298.4675
+                  ],
+                  [
+                    913.7034,
+                    276.0025
+                  ],
+                  [
+                    916.2094,
+                    276.0025
+                  ],
+                  [
+                    916.2094,
+                    292.5355
+                  ],
+                  [
+                    916.2094,
+                    298.4675
+                  ],
+                  [
+                    916.2094,
+                    300.1045
+                  ],
+                  [
+                    916.2094,
+                    309.3175
+                  ],
+                  [
+                    916.2094,
+                    322.5685
+                  ],
+                  [
+                    913.7034,
+                    322.5685
+                  ]
+                ],
+                [
+                  [
+                    916.2094,
+                    254.5375
+                  ],
+                  [
+                    913.7034,
+                    254.5375
+                  ],
+                  [
+                    913.7034,
+                    208.1795
+                  ],
+                  [
+                    916.2094,
+                    208.1795
+                  ],
+                  [
+                    916.2094,
+                    224.4645
+                  ],
+                  [
+                    916.2094,
+                    230.6445
+                  ],
+                  [
+                    916.2094,
+                    232.0725
+                  ],
+                  [
+                    916.2094,
+                    238.2525
+                  ],
+                  [
+                    916.2094,
+                    254.5375
+                  ]
+                ]
+              ]
+            }
+          ],
+          "sourcePaths": [
+            "second-path-44-surface"
+          ],
+          "evidence": "Exact source-derived boundary faces; reviewed source doorway cuts affect selection only, never masonry. Theme-floor selections use original published surface compounds without invented room partitions."
+        }
+      ],
+      "selectionCuts": []
+    }
+  ]
+}

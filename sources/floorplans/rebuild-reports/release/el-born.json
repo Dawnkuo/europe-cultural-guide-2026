@@ -1,0 +1,203 @@
+{
+  "slug": "el-born",
+  "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the2013 official opening leaflet: exact vector public-zone boundaries, rooms1-4 and three distinct5 archaeological areas are retained. Red frames, dotted outlines and entry arrows remain flat rather than becoming masonry.",
+    "floorCoverageReview": "Historical visitor-level schematic only; the underground street/house fabric and later exhibition changes are not documented by this plan.",
+    "stopBindingReview": "Stops2/3 bind the public space and documented archaeological area. Outdoor boulevard/cemetery/beach route stops stay outside this interior.",
+    "verticalConnectionReview": "No invented descent, underground level or paired stair landings.",
+    "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+    "sourceDigest": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+    "sourceEvidence": "sources/floorplans/evidence/el-born.json",
+    "comparedFloors": [
+      "street-level"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:39:25.560Z",
+    "slug": "el-born",
+    "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+    "sourceDigest": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "street-level",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/el-born-1440-3d.png",
+          "work/map-review/release-final/el-born-1440-street-level-2d.png",
+          "work/map-review/release-final/el-born-1440-street-level-selection-2d.png",
+          "work/map-review/release-final/el-born-1440-street-level-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 940,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 13,
+        "selectedSpaces": [
+          "street-level-public-space",
+          "street-level-archaeology-centre"
+        ],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "street-level",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/el-born-1094-3d.png",
+          "work/map-review/release-final/el-born-1094-street-level-2d.png",
+          "work/map-review/release-final/el-born-1094-street-level-selection-2d.png",
+          "work/map-review/release-final/el-born-1094-street-level-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1066,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 13,
+        "selectedSpaces": [
+          "street-level-public-space",
+          "street-level-archaeology-centre"
+        ],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "street-level",
+            "exactLabels": 13,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/el-born-390-3d.png",
+          "work/map-review/release-final/el-born-390-street-level-2d.png",
+          "work/map-review/release-final/el-born-390-street-level-selection-2d.png",
+          "work/map-review/release-final/el-born-390-street-level-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 530,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 13,
+        "selectedSpaces": [
+          "street-level-public-space",
+          "street-level-archaeology-centre"
+        ],
+        "stopTargets": 2,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "el-born",
+    "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "street-level"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "el-born",
+    "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.6,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/el-born/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 152.32411751905852,
+      "screenshot": "work/map-review/guide-pages-final/_guides_el-born_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/el-born/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 161.35051223807682,
+      "screenshot": "work/map-review/guide-pages-final/_guides_el-born_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/el-born/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 118.25904026476931,
+      "screenshot": "work/map-review/guide-pages-final/_guides_el-born_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/el-born/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+    "passed": true
+  }
+}

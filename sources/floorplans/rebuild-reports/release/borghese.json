@@ -1,0 +1,294 @@
+{
+  "slug": "borghese",
+  "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the three compact official visitor diagrams. Retains basement services, sculpture-level rooms and upper painting rooms with twenty-seven place identifiers. Structural bands exclude printed letters, service icons and arrows; stair/tread and terrace details remain flat. Twenty-six selection regions do not promote terrace shading into masonry.",
+    "floorCoverageReview": "Basement, principal and upper collection levels are independent source diagrams, not a surveyed vertical registration.",
+    "stopBindingReview": "All six original stops bind to ticket service,3,4,8,9 and basement entrance at documented room/service precision.",
+    "verticalConnectionReview": "Independent leaflet diagrams do not establish reliable corresponding landings; no inferred cross-floor link.",
+    "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+    "sourceDigest": "2e9b1a3d5fd11a45ca900747f6667596d024bc05b5a937237a63c19775e2c198",
+    "sourceEvidence": "sources/floorplans/evidence/borghese.json",
+    "comparedFloors": [
+      "B1",
+      "P0",
+      "P1"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:36:53.897Z",
+    "slug": "borghese",
+    "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+    "sourceDigest": "2e9b1a3d5fd11a45ca900747f6667596d024bc05b5a937237a63c19775e2c198",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "B1",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "P0",
+            "exactLabels": 11,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "P1",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/borghese-1440-3d.png",
+          "work/map-review/release-final/borghese-1440-B1-2d.png",
+          "work/map-review/release-final/borghese-1440-P0-2d.png",
+          "work/map-review/release-final/borghese-1440-P1-2d.png",
+          "work/map-review/release-final/borghese-1440-B1-selection-2d.png",
+          "work/map-review/release-final/borghese-1440-B1-selection-3d.png",
+          "work/map-review/release-final/borghese-1440-P0-selection-2d.png",
+          "work/map-review/release-final/borghese-1440-P0-selection-3d.png",
+          "work/map-review/release-final/borghese-1440-P1-selection-2d.png",
+          "work/map-review/release-final/borghese-1440-P1-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 633,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 27,
+        "selectedSpaces": [
+          "B1-visitor-service-hall",
+          "P0-room-3",
+          "P0-room-4",
+          "P0-room-8",
+          "P1-room-9"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "B1",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "P0",
+            "exactLabels": 11,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "P1",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/borghese-1094-3d.png",
+          "work/map-review/release-final/borghese-1094-B1-2d.png",
+          "work/map-review/release-final/borghese-1094-P0-2d.png",
+          "work/map-review/release-final/borghese-1094-P1-2d.png",
+          "work/map-review/release-final/borghese-1094-B1-selection-2d.png",
+          "work/map-review/release-final/borghese-1094-B1-selection-3d.png",
+          "work/map-review/release-final/borghese-1094-P0-selection-2d.png",
+          "work/map-review/release-final/borghese-1094-P0-selection-3d.png",
+          "work/map-review/release-final/borghese-1094-P1-selection-2d.png",
+          "work/map-review/release-final/borghese-1094-P1-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 833,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 27,
+        "selectedSpaces": [
+          "B1-visitor-service-hall",
+          "P0-room-3",
+          "P0-room-4",
+          "P0-room-8",
+          "P1-room-9"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "B1",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "P0",
+            "exactLabels": 11,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "P1",
+            "exactLabels": 14,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/borghese-390-3d.png",
+          "work/map-review/release-final/borghese-390-B1-2d.png",
+          "work/map-review/release-final/borghese-390-P0-2d.png",
+          "work/map-review/release-final/borghese-390-P1-2d.png",
+          "work/map-review/release-final/borghese-390-B1-selection-2d.png",
+          "work/map-review/release-final/borghese-390-B1-selection-3d.png",
+          "work/map-review/release-final/borghese-390-P0-selection-2d.png",
+          "work/map-review/release-final/borghese-390-P0-selection-3d.png",
+          "work/map-review/release-final/borghese-390-P1-selection-2d.png",
+          "work/map-review/release-final/borghese-390-P1-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1475,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 27,
+        "selectedSpaces": [
+          "B1-visitor-service-hall",
+          "P0-room-3",
+          "P0-room-4",
+          "P0-room-8",
+          "P1-room-9"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "borghese",
+    "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "B1",
+      "P0",
+      "P1"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "borghese",
+    "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 3.6,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/borghese/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 100.18018176933305,
+      "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/borghese/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 116.89862043276884,
+      "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/borghese/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 138.84477969637922,
+      "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/borghese/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+    "passed": true
+  }
+}

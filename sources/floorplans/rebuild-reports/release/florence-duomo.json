@@ -1,0 +1,188 @@
+{
+  "slug": "florence-duomo",
+  "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the academic accessibility plan at native crop resolution. Preserves visible church wall fabric and nave piers; annotations obscure several segments and these are not completed from symmetry or photographs.",
+    "floorCoverageReview": "Only the identifiable main church floor. Dome shells, ascent stairs and roof levels remain absent source data.",
+    "stopBindingReview": "Existing guide stops are preserved as text; no exact present-day locations can be verified from the inspected drawing.",
+    "verticalConnectionReview": "No guessed dome/ascent connection.",
+    "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+    "sourceDigest": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+    "sourceEvidence": "sources/floorplans/evidence/florence-duomo.json",
+    "comparedFloors": [
+      "main"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:39:55.558Z",
+    "slug": "florence-duomo",
+    "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+    "sourceDigest": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/florence-duomo-1440-3d.png",
+          "work/map-review/release-final/florence-duomo-1440-main-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 270,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 3,
+        "selectedSpaces": [],
+        "stopTargets": 0,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/florence-duomo-1094-3d.png",
+          "work/map-review/release-final/florence-duomo-1094-main-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 299,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 3,
+        "selectedSpaces": [],
+        "stopTargets": 0,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "main",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/florence-duomo-390-3d.png",
+          "work/map-review/release-final/florence-duomo-390-main-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 140,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 3,
+        "selectedSpaces": [],
+        "stopTargets": 0,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "florence-duomo",
+    "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "main"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "florence-duomo",
+    "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 1.3,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/florence-duomo/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 146.42798413766528,
+      "screenshot": "work/map-review/guide-pages-final/_guides_florence-duomo_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/florence-duomo/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 160.56090087725352,
+      "screenshot": "work/map-review/guide-pages-final/_guides_florence-duomo_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/florence-duomo/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 122.01758248604753,
+      "screenshot": "work/map-review/guide-pages-final/_guides_florence-duomo_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/florence-duomo/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+    "passed": true
+  }
+}

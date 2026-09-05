@@ -1,0 +1,244 @@
+{
+  "slug": "mercato-centrale",
+  "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the municipal1869 ground plan and renovated upper-floor project. Historic stall grid remains flat detail, red ironwork and resolved coarse perimeter structure remain masonry. The upper open hall follows its actual project outline; neither level is replaced by a generic market grid.",
+    "floorCoverageReview": "Historic ground and renovation upper plan with independent scales; not current stall numbers or tenants.",
+    "stopBindingReview": "Stops1/2/3 bind historical stalls and upper structural/hall areas; exterior stop0 is not put indoors.",
+    "verticalConnectionReview": "No measured floor alignment or paired current staircase/elevator landings.",
+    "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+    "sourceDigest": "b71738cd8a1b56ca0c0799dc0df8f53d120e314fedeaad87d74cd7e77f7fb00b",
+    "sourceEvidence": "sources/floorplans/evidence/mercato-centrale.json",
+    "comparedFloors": [
+      "ground-historic",
+      "upper"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:43:24.387Z",
+    "slug": "mercato-centrale",
+    "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+    "sourceDigest": "b71738cd8a1b56ca0c0799dc0df8f53d120e314fedeaad87d74cd7e77f7fb00b",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "ground-historic",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/mercato-centrale-1440-3d.png",
+          "work/map-review/release-final/mercato-centrale-1440-ground-historic-2d.png",
+          "work/map-review/release-final/mercato-centrale-1440-upper-2d.png",
+          "work/map-review/release-final/mercato-centrale-1440-upper-selection-2d.png",
+          "work/map-review/release-final/mercato-centrale-1440-upper-selection-3d.png",
+          "work/map-review/release-final/mercato-centrale-1440-ground-historic-selection-2d.png",
+          "work/map-review/release-final/mercato-centrale-1440-ground-historic-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 942,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 3,
+        "selectedSpaces": [
+          "upper-upper-hall-floor",
+          "ground-historic-historic-market-floor"
+        ],
+        "stopTargets": 3,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "ground-historic",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/mercato-centrale-1094-3d.png",
+          "work/map-review/release-final/mercato-centrale-1094-ground-historic-2d.png",
+          "work/map-review/release-final/mercato-centrale-1094-upper-2d.png",
+          "work/map-review/release-final/mercato-centrale-1094-upper-selection-2d.png",
+          "work/map-review/release-final/mercato-centrale-1094-upper-selection-3d.png",
+          "work/map-review/release-final/mercato-centrale-1094-ground-historic-selection-2d.png",
+          "work/map-review/release-final/mercato-centrale-1094-ground-historic-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1211,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 3,
+        "selectedSpaces": [
+          "upper-upper-hall-floor",
+          "ground-historic-historic-market-floor"
+        ],
+        "stopTargets": 3,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "ground-historic",
+            "exactLabels": 1,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/mercato-centrale-390-3d.png",
+          "work/map-review/release-final/mercato-centrale-390-ground-historic-2d.png",
+          "work/map-review/release-final/mercato-centrale-390-upper-2d.png",
+          "work/map-review/release-final/mercato-centrale-390-upper-selection-2d.png",
+          "work/map-review/release-final/mercato-centrale-390-upper-selection-3d.png",
+          "work/map-review/release-final/mercato-centrale-390-ground-historic-selection-2d.png",
+          "work/map-review/release-final/mercato-centrale-390-ground-historic-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1179,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 3,
+        "selectedSpaces": [
+          "upper-upper-hall-floor",
+          "ground-historic-historic-market-floor"
+        ],
+        "stopTargets": 3,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "mercato-centrale",
+    "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "ground-historic",
+      "upper"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "mercato-centrale",
+    "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 1.7,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/mercato-centrale/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 121.18369312334974,
+      "screenshot": "work/map-review/guide-pages-final/_guides_mercato-centrale_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/mercato-centrale/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 138.26921881463565,
+      "screenshot": "work/map-review/guide-pages-final/_guides_mercato-centrale_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/mercato-centrale/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 138.87518027734913,
+      "screenshot": "work/map-review/guide-pages-final/_guides_mercato-centrale_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/mercato-centrale/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+    "passed": true
+  }
+}

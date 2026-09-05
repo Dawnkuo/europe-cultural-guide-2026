@@ -1,0 +1,133 @@
+{
+  "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+  "sourceDigest": "3efb12cd15f6ad7228ef8e60987e6428a0572247ab44623d79d6c5dafdc79f39",
+  "reports": {
+    "browser": {
+      "target": "http://localhost:55838",
+      "timestamp": "2026-09-05T03:39:24.478Z",
+      "slug": "pantheon",
+      "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+      "sourceDigest": "3efb12cd15f6ad7228ef8e60987e6428a0572247ab44623d79d6c5dafdc79f39",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "floors": [
+            {
+              "id": "L0",
+              "exactLabels": 18,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/pantheon-spaces/pantheon-1440-3d.png",
+            "work/map-review/pantheon-spaces/pantheon-1440-L0-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 878,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        },
+        {
+          "viewport": {
+            "width": 1094,
+            "height": 768
+          },
+          "floors": [
+            {
+              "id": "L0",
+              "exactLabels": 18,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/pantheon-spaces/pantheon-1094-3d.png",
+            "work/map-review/pantheon-spaces/pantheon-1094-L0-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 1145,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "floors": [
+            {
+              "id": "L0",
+              "exactLabels": 18,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/pantheon-spaces/pantheon-390-3d.png",
+            "work/map-review/pantheon-spaces/pantheon-390-L0-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 842,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        }
+      ]
+    },
+    "touch": {
+      "slug": "pantheon",
+      "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+      "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+      "errors": [],
+      "drag": true,
+      "pinch": true,
+      "cancellationRecovery": true,
+      "floorTaps": [
+        "L0"
+      ],
+      "passed": true
+    },
+    "performance": {
+      "slug": "pantheon",
+      "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+      "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+      "frames": 134,
+      "frameP50Ms": 16.699999999999818,
+      "frameP95Ms": 16.800000000000182,
+      "renderP95Ms": 4.8,
+      "contexts": {
+        "created": 7,
+        "lost": 6,
+        "live": 1
+      },
+      "errors": [],
+      "emulated30Fps": true
+    },
+    "offline": {
+      "revision": "685d2728c9727225cadc",
+      "route": "/guides/pantheon/",
+      "hasMap": true,
+      "errors": [],
+      "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+      "passed": true
+    }
+  }
+}

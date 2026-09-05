@@ -1,0 +1,61 @@
+{
+  "group": "pisa",
+  "scope": "camposanto-eight-evidence-anchored-places-v2",
+  "status": "ready",
+  "supersedes": [
+    "sources/floorplans/rebuild-reports/pisa-followup.json#camposanto"
+  ],
+  "install": [
+    {
+      "file": "sources/floorplans/venues/camposanto.json",
+      "sha256": "49495a733f3aae07d9a5477a64e85788e8cc3632342b5add379e9c74517bbca8"
+    },
+    {
+      "file": "app/data/architectural-plans/camposanto.json",
+      "sha256": "ab7e822458b7bcb8df9aa135f2dc43c0be93591ba31a45c7c4b264f3b2b70009"
+    },
+    {
+      "file": "sources/floorplans/evidence/camposanto.json",
+      "sha256": "18784fc28b98dc0307f463bdc3a88ccf2a4eb9780e39f0dead116459653c2c90"
+    }
+  ],
+  "requiresExisting": [
+    {
+      "file": "sources/floorplans/derived/camposanto-ground-plan.pdf",
+      "sha256": "f436726ee222f56afdca1660e4a730afbc0ad8895e0f87aec9d12d54ddb987ba"
+    },
+    {
+      "file": "sources/floorplans/camposanto-unifi-survey.pdf",
+      "sha256": "db701a2dee2ff52725e133fa4ea393c143fa34381de7987780b487e7f664df13"
+    }
+  ],
+  "qa": [
+    {
+      "file": "qa/extracts/camposanto-ground-plan.png",
+      "sha256": "11c31c2766620abdbefcaedab7d17c5985ebfd66e6d58eca82393396ff019482"
+    },
+    {
+      "file": "qa/models/camposanto-ground.png",
+      "sha256": "76d31d07ac4e2122350890e73e4e357ab1b1d2e8cc746e8d3e0598527aaa6328"
+    }
+  ],
+  "coverage": {
+    "floors": 1,
+    "places": 8,
+    "placeKindsValid": true,
+    "features": 4883,
+    "featureKinds": {
+      "wall": 278,
+      "detail": 4605
+    },
+    "boundStops": [0, 1],
+    "unresolvedStops": [2, 3]
+  },
+  "validation": {
+    "allPlaceIdsEmitted": true,
+    "allBindingsResolve": true,
+    "publicLabelsAndLimitationsChinese": true,
+    "individualFrescoPanelEdgesInferred": false,
+    "mainCheckoutEdited": false
+  }
+}

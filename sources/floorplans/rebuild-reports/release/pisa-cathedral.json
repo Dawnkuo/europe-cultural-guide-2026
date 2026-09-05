@@ -1,0 +1,188 @@
+{
+  "slug": "pisa-cathedral",
+  "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the authoritative1817 ground drawing: long nave column rows, transept arms, central crossing, lateral aisles and apse preserve native proportions and all visible structural detail.",
+    "floorCoverageReview": "Historic ground only, not current furnishings, crypt,upper galleries,roof or service areas.",
+    "stopBindingReview": "Nave and apse stops1/3 locate reliably. Facade,San Ranieri door and later reassembled pulpit are not given guessed positions.",
+    "verticalConnectionReview": "No unsupported upper floor or connection.",
+    "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+    "sourceDigest": "0fc8030cb05253e78ff45c09f67ef7c183c6330fb7d53aa2361107c9c1c301f4",
+    "sourceEvidence": "sources/floorplans/evidence/pisa-cathedral.json",
+    "comparedFloors": [
+      "ground"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:45:33.916Z",
+    "slug": "pisa-cathedral",
+    "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+    "sourceDigest": "0fc8030cb05253e78ff45c09f67ef7c183c6330fb7d53aa2361107c9c1c301f4",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pisa-cathedral-1440-3d.png",
+          "work/map-review/release-final/pisa-cathedral-1440-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 185,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pisa-cathedral-1094-3d.png",
+          "work/map-review/release-final/pisa-cathedral-1094-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 240,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/pisa-cathedral-390-3d.png",
+          "work/map-review/release-final/pisa-cathedral-390-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 161,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "pisa-cathedral",
+    "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "ground"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "pisa-cathedral",
+    "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 1.5,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/pisa-cathedral/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 122.81208494375474,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pisa-cathedral_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/pisa-cathedral/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 128.81202514845674,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pisa-cathedral_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/pisa-cathedral/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 119.30850787283012,
+      "screenshot": "work/map-review/guide-pages-final/_guides_pisa-cathedral_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/pisa-cathedral/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+    "passed": true
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "pisa-cathedral",
+  "file": "derived/pisa-cathedral-ground-plan-strict.pdf",
+  "url": "https://collections.soane.org/THES70896",
+  "sha256": "0fc8030cb05253e78ff45c09f67ef7c183c6330fb7d53aa2361107c9c1c301f4",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [1],
+    "basis": "The 1817 Soane Museum architectural sheet was visually checked as a measured overhead ground plan. The strict semantic raster retains only original source pixels for the complete cruciform perimeter masonry and individual piers, including the audited 1,948-pixel south-side wall component; handwritten legends, scale and other sheet annotations are excluded without geometric warping."
+  },
+  "stopBindings": [
+    {"stopIndex": 1, "placeId": "ground-中央中殿-1"},
+    {"stopIndex": 3, "placeId": "ground-后殿-1"}
+  ],
+  "review": "Sir John Soane's Museum drawing 64/6/4, dated 6 January 1817, visually reviewed against the complete digitized sheet. The strict source-pixel derivation restores the previously omitted 1,948-pixel continuous south/right exterior wall component and retains the full cruciform perimeter, nave and aisle piers, crossing piers, transept apses and eastern apse. The handwritten legend, scale and nonarchitectural sheet marks are excluded. No replacement line, closure or idealized column is emitted. Because the sheet predates the twentieth-century reassembly of Giovanni Pisano's pulpit, it is not used to place that object.",
+  "internalNotes": ["采用有文献依据的1817年建筑底层平面，并非当前游客通行图；不推测后期陈设与通行障碍。","此前误删的南侧连续外墙1948个源像素已全部恢复；墙体与柱墩仍保持原图像素形状。","中央中殿与后殿停点已有建筑平面锚点；外部西立面、圣拉涅利门及后期重组的乔瓦尼·皮萨诺讲坛保持未绑定。","未找到经审查的地下室、屋顶、楼廊或服务层平面，因此不绘制这些楼层。"],
+  "limitations": ["目前仅包含1817年底层建筑平面，不代表现行陈设、入口控制或通行路线。","外部西立面、圣拉涅利门、后期重组的讲坛、地下室、屋顶、楼廊及服务层尚未定位。"],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "底层平面（1817年测绘）",
+      "order": 0,
+      "page": 1,
+      "crop": [0, 0, 504, 717],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "rgbRange": [[0, 0, 0], [0, 0, 0]],
+          "wallKernel": 1,
+          "includeKinds": ["wall"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Black pixels are reviewed original Soane source pixels for perimeter masonry and pier footprints. The audited 1,948-pixel south-side wall component is retained exactly; no closing or replacement stroke is emitted."
+        },
+        {
+          "xref": 5,
+          "rgbRange": [[128, 128, 128], [128, 128, 128]],
+          "wallKernel": 1,
+          "allInkIsDetail": true,
+          "includeKinds": ["detail"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Gray pixels are only nearby original architectural hatching retained flat. Handwritten legends, scale and internal drafting annotations are not emitted."
+        }
+      ],
+      "places": [
+        {
+          "label": "中央中殿",
+          "kind": "area",
+          "at": [252, 455],
+          "evidence": "Anchor placed between the documented nave colonnades on the measured ground plan."
+        },
+        {
+          "label": "交叉部",
+          "kind": "area",
+          "at": [252, 270],
+          "evidence": "Anchor placed at the documented crossing between the four major piers."
+        },
+        {
+          "label": "后殿",
+          "kind": "area",
+          "at": [252, 88],
+          "evidence": "Anchor placed inside the documented eastern semicircular apse."
+        },
+        {
+          "label": "西端入口区",
+          "kind": "service",
+          "at": [252, 640],
+          "evidence": "Architectural anchor inside the western end of the nave; it does not assert a current controlled entry route."
+        }
+      ]
+    }
+  ],
+  "sourceFiles": [
+    {
+      "id": "soane-audit-sheet",
+      "file": "derived/pisa-cathedral-soane-sheet.pdf",
+      "url": "https://collections.soane.org/THES70896",
+      "sha256": "9001e1e16c93d60c471033f2156268dc11d00804a0018834c9c7ae347631a987",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "The complete digitized Soane sheet is retained as a one-page PDF audit copy. It confirms the primary mask's orthographic footprint and masked legend, but no floor is extracted directly from this supplementary record."
+      }
+    }
+  ]
+}

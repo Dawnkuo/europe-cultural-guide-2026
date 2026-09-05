@@ -1,0 +1,81 @@
+{
+  "slug": "opera-pisa",
+  "file": "derived/opera-pisa-ground-plan-strict.pdf",
+  "url": "https://cdn.archilovers.com/projects/07c1d012-26ec-4f7a-bfa0-c5d6d472a391.pdf",
+  "sha256": "ecaaab6aa30ec9f8f2581a847b181831805ec4ebeed263eb3a0527ad8303b078",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [1],
+    "basis": "The museum architect's page 3 ground-floor drawing was visually checked as an overhead plan. The strict semantic raster retains original source pixels for connected structural walls and actual support rows; door leaves and swing arcs, stair treads, ramp edges, route traces and cloister-bay diagonals remain flat detail. Tower, scale and site graphics are excluded."
+  },
+  "stopBindings": [
+    {"stopIndex": 4, "placeId": "ground-回廊庭院-1"}
+  ],
+  "review": "Architect project sheet page 3, visually reviewed at four-times render scale. The strict derivation isolates the museum wings and cloister at equal x/y scale and retains only original blue source pixels. Connected dark structural cores and actual support-row profiles are walls; fine wall edges, door leaves and swing arcs, all visible stair treads, ramp edges, circulation traces and cloister-bay diagonals remain flat detail. The Tower inset, scale, roads, trees and planted-court graphics are outside the extraction scope. The sheet does not name current collection zones and supplies no complete upper-floor plan, so route themes are not assigned to rooms.",
+  "internalNotes": ["仅绘制已发表的底层建筑平面；上层礼仪藏品空间仍缺少正投影平面。","细墙线、门扇与开启弧、可见踏步、坡道边缘、流线和回廊跨间对角线均保留为平面细节，不再被开运算删除或挤出为墙。","回廊停点只绑定至有据可查的庭院范围；图中没有现行藏品分区标签，因此主教座堂／洗礼堂雕塑、乔瓦尼·皮萨诺及斜塔构件主题保持未绑定。","本项目图记录建筑方案而非当前游客通行或展品位置。"],
+  "limitations": ["目前仅包含建筑师方案所示底层建筑与回廊；未取得上层完整正投影、分隔、楼梯或电梯落点平面。","现行雕塑、斜塔构件等藏品位置与当前参观流线没有可靠展厅级证据，保持未定位。"],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "底层与回廊",
+      "order": 0,
+      "page": 1,
+      "crop": [0, 0, 1828, 1560],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "rgbRange": [[0, 0, 0], [0, 0, 0]],
+          "wallKernel": 1,
+          "includeKinds": ["wall"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Black pixels are original architect-plan pixels from connected dark structural cores and actual support rows. Disconnected route marks and fine symbols are not promoted by line width alone."
+        },
+        {
+          "xref": 5,
+          "rgbRange": [[128, 128, 128], [128, 128, 128]],
+          "wallKernel": 1,
+          "allInkIsDetail": true,
+          "includeKinds": ["detail"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Gray pixels are original door arcs, stair treads, ramp edges, circulation traces, cloister diagonals and nearby fine architectural linework kept flat."
+        }
+      ],
+      "places": [
+        {
+          "label": "回廊庭院",
+          "kind": "area",
+          "at": [600, 1095],
+          "evidence": "Anchor placed in the documented open cloister court bounded by the surviving colonnade."
+        },
+        {
+          "label": "东侧大厅",
+          "kind": "area",
+          "at": [1460, 815],
+          "evidence": "Architectural-zone anchor inside the large documented east hall; no collection assignment is implied."
+        },
+        {
+          "label": "底层通行区",
+          "kind": "service",
+          "at": [1180, 855],
+          "evidence": "Anchor placed on the documented central ground-floor circulation spine; it is not a current route guarantee."
+        }
+      ]
+    }
+  ],
+  "sourceFiles": [
+    {
+      "id": "architect-project",
+      "file": "opera-pisa-architect-project.pdf",
+      "url": "https://cdn.archilovers.com/projects/07c1d012-26ec-4f7a-bfa0-c5d6d472a391.pdf",
+      "sha256": "f7bfc501ea03aa032bb20168c31d20a365509ae7cd45f4bb39872af0efe6080d",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "The complete four-page architect project PDF is retained as provenance for the page 3 plan. The primary audit mask is derived from that orthographic drawing; no floor is extracted directly from this supplementary record."
+      }
+    }
+  ]
+}

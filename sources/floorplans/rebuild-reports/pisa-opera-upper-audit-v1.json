@@ -1,0 +1,94 @@
+{
+  "group": "pisa",
+  "venue": "opera-pisa",
+  "increment": "opera-upper-audit-v1",
+  "status": "verified-no-upper-plan-no-model-change",
+  "scratchRoot": "/tmp/europe-map-rebuild-pisa/increments/opera-upper-audit-v1",
+  "install": [],
+  "decision": "Do not add or infer an upper-floor model. The reviewed architect publication supplies an orthographic ground-floor plan and building sections, but no upper-floor plan. The official visitor narrative and the 2026 accessibility guide document upstairs collections without room geometry.",
+  "currentModelPreserved": {
+    "config": {
+      "path": "/tmp/europe-map-rebuild-pisa/sources/floorplans/venues/opera-pisa.json",
+      "sha256": "e0ea22501996be1f382c4f3611c09f8295363a54980e864c4fb5efc38c029d12"
+    },
+    "model": {
+      "path": "/tmp/europe-map-rebuild-pisa/app/data/architectural-plans/opera-pisa.json",
+      "sha256": "3e0dcd2aac936660bed954bad2f32786fb93e8024e2beeb2f9af80275d3dd959",
+      "floorCount": 1,
+      "featureCount": 1486
+    },
+    "evidence": {
+      "path": "/tmp/europe-map-rebuild-pisa/sources/floorplans/evidence/opera-pisa.json",
+      "sha256": "a771380ad20054e112b3e04166e9d76982e975f809bec292ac0cd69067f5cd9f"
+    },
+    "routeNodes": {
+      "total": 5,
+      "bound": [4],
+      "unresolved": [0, 1, 2, 3],
+      "note": "All existing guide route nodes are preserved. Only the cloister stop remains bound to documented ground-floor geometry."
+    }
+  },
+  "sourcesReviewed": [
+    {
+      "authority": "Opera della Primaziale Pisana",
+      "url": "https://www.opapisa.it/en/square-of-miracles/opera-del-duomo-museum/",
+      "finding": "The official current route describes the ground-floor sequence, the upper-floor liturgical collections, the upper loggia, and return to the cloister. It contains no plan, room boundaries, dimensions, or room-number diagram."
+    },
+    {
+      "authority": "Guicciardini & Magni Architetti / project publication",
+      "url": "https://cdn.archilovers.com/projects/07c1d012-26ec-4f7a-bfa0-c5d6d472a391.pdf",
+      "localFile": "sources/floorplans/reference/opera-pisa-architect-project.pdf",
+      "sha256": "f7bfc501ea03aa032bb20168c31d20a365509ae7cd45f4bb39872af0efe6080d",
+      "pagesReviewed": [1, 2, 3, 4],
+      "finding": "Page 3 is explicitly labelled 'pianta piano terra e sezioni'. It contains one ground-floor orthographic plan plus sections; no upper-floor orthographic plan appears anywhere in the four-page PDF."
+    },
+    {
+      "authority": "AIPD Pisa 2026 accessibility guide",
+      "url": "https://www.aipdpisa.it/uploads/files/541it-2026-versione-web-light-guida-AIPD.pdf",
+      "localFile": "sources/floorplans/reference/opera-aipd-2026-guide.pdf",
+      "sha256": "0b4011ebe85f126bb7b87fe44c885b9809f65dbbb73c99add20de3d01ab9df55",
+      "pagesReviewed": [8, 74, 75, 76],
+      "finding": "Page 75 documents current upper-floor content including the Burgundian Christ, Giovanni Pisano ivory Madonna, illuminated manuscripts, Exultet rolls, cafe, and terrace. The guide contains a city itinerary map but no museum floor plan."
+    },
+    {
+      "authority": "Guicciardini & Magni project page",
+      "url": "https://www.guicciardinimagni.it/it/Lista-progetti/MUSEO-DELL%E2%80%99OPERA-DEL-DUOMO-2/",
+      "finding": "Project credits, area, and photographs document the renovation but supply no downloadable upper-floor plan."
+    },
+    {
+      "authority": "Archilovers architect project page",
+      "url": "https://www.archilovers.com/projects/302697/museo-dell-opera-del-duomo-di-pisa.html",
+      "finding": "The project text confirms two storeys, a new connecting stair, 3,000 square metres, and 26 display sections. Its attached PDF is the four-page project publication already reviewed and does not include the upper plan."
+    }
+  ],
+  "exactMissingEvidence": [
+    "上层正投影平面轮廓与房间隔墙",
+    "上层展厅编号或二十六个展示分区的空间边界",
+    "新楼梯与电梯在上层的梯井、平台及连接位置",
+    "上层礼仪藏品、手抄本、祭衣、圣器及露台的可定位展厅位置",
+    "可用于 sourceSpaces 的明确楼地面填充边界"
+  ],
+  "excludedInferences": [
+    "No upper footprint was projected from the building sections.",
+    "No upper partitions were copied from the ground floor.",
+    "No collection anchors were inferred from room photographs or prose sequence.",
+    "No vertical link was emitted from the statement that a stair and elevator exist."
+  ],
+  "limitations": [
+    "仅保留已发表的底层建筑平面；上层仍无可核验的正投影平面。",
+    "官方资料可确认上层藏品类别和参观顺序，但不能据此推断房间形状或展品坐标。",
+    "楼梯与电梯确实连接两层，但缺少上层梯井和平台位置，因此不生成垂直连接。",
+    "现有五个路线节点全部保留；仅回廊节点绑定到底层，另四个节点继续明确未绑定。"
+  ],
+  "qa": [
+    {
+      "file": "qa/opera-upper-audit/opera-upper-evidence-contact.png",
+      "sha256": "6ec349f3a09177fa7ac16011a45050f0b99489b10889820d74c9e8b66b0d19e3",
+      "review": "Visually checked: the architect sheet shows ground plan and sections only; the 2026 guide page is text-and-object evidence, not spatial geometry."
+    }
+  ],
+  "failedAcquisitionExcluded": {
+    "url": "https://alap.unipi.it/wp-content/uploads/2024/10/2023_1-2-3articoli.pdf",
+    "result": "TLS download failed before any bytes were received; no partial file exists and this source is not used for any claim."
+  }
+}

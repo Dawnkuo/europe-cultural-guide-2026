@@ -1,0 +1,79 @@
+{
+  "snapshot": "/tmp/europe-map-rebuild-north-incremental-2026-09-05-sforza-ground-only-after-upper-rejection-v3",
+  "status": "Sforza被否决的轴测upper楼层已全部撤下；只保留武器广场标高的来源建筑平面",
+  "supersedes": "/tmp/europe-map-rebuild-north-incremental-2026-09-05-sforza-ground-dedupe-control-v2",
+  "acceptance": "本包只可作为单层历史建筑研究平面；不包含现行博物馆分层室内图",
+  "generator": {
+    "file": "scripts/build-architectural-plans.py",
+    "sha256": "7f01ed5535871ea9deaef591087a1f97b9a8b638bb40c9cf89900cbd21d61daa"
+  },
+  "generatedModel": {
+    "floors": ["ground"],
+    "floorLabel": "武器广场标高建筑平面",
+    "features": 1161,
+    "places": 4,
+    "stopBindings": 4,
+    "spaces": 0,
+    "verticalLinks": 0
+  },
+  "primarySource": {
+    "file": "sources/floorplans/sforza-polimi-fortmed-2024.pdf",
+    "url": "https://re.public.polimi.it/retrieve/9f7696bb-c747-494c-af4b-33d2848257c4/Pertot%20Fortmed%20XVI%202024.pdf",
+    "sha256": "e6cbe669780d75ba15c3a950f9a35345c0234490f08076cff4d7285a09247808",
+    "page": 11,
+    "figure": "图3，武器广场标高平面",
+    "crop": [248, 62, 413, 242],
+    "projection": "orthographic"
+  },
+  "officialAuditSource": {
+    "file": "sources/floorplans/sforza-official-visitor-map-2025.pdf",
+    "url": "https://www2.comune.milano.it/documents/461595483/477971915/mappa-castello+e++itinerario_def+LL+14.01.25.pdf/b3319db7-1c76-758b-f6a8-8e2453136a9e?t=1754403241406",
+    "sha256": "2f5cd7b5d38d0a7421c015327d074d3503354a4c672d98a55ed7b0a70701fa56",
+    "generatedFloorGeometry": false,
+    "page1Role": "正投影场地级博物馆所属馆翼定位",
+    "page2Role": "带竖向厚度的轴测馆藏分布图；不能直接成为楼层平面"
+  },
+  "rejectedUpperAudit": {
+    "removedFloors": ["basement", "first", "second"],
+    "removedMuseumAnchors": 10,
+    "reason": "旧仿射只把两个地面轴对齐，未消除彩色顶面的高度投影；生成结果在upper层重复同一城堡外轮廓，馆藏锚点落入庭院、墙体或轮廓外。",
+    "measuredTopFaceShiftOnOfficialPage2Pdf": [0.0, 1.713],
+    "mappedShiftInRejectedModelUnits": [-6.71, 6.70],
+    "rectifiedDerivativeRetainedInModel": false,
+    "upperGeometryRetained": false
+  },
+  "officialPage1MuseumPinCentersPdf": [
+    {"number": 1, "museum": "隆达尼尼圣殇博物馆", "path": 99, "at": [287.459, 359.227]},
+    {"number": 2, "museum": "古代艺术博物馆与军械库", "path": 167, "at": [512.831, 271.553]},
+    {"number": 3, "museum": "木板厅", "path": 170, "at": [609.915, 176.1]},
+    {"number": 4, "museum": "家具与木雕博物馆", "path": 172, "at": [525.007, 173.033]},
+    {"number": 5, "museum": "绘画陈列馆", "path": 174, "at": [601.571, 219.168]},
+    {"number": 6, "museum": "装饰艺术博物馆", "path": 176, "at": [290.735, 239.239]},
+    {"number": 7, "museum": "乐器博物馆", "path": 178, "at": [359.934, 170.506]},
+    {"number": 8, "museum": "考古博物馆史前与原史区", "path": 180, "at": [576.58, 235.948]},
+    {"number": 9, "museum": "埃及区", "path": 182, "at": [557.89, 196.595]}
+  ],
+  "pinUse": "这些点只证明官方总图上的馆翼归属；在没有可靠楼层配准与房间边界时不生成PlanPlace。",
+  "coverage": {
+    "boundGuideStops": [0, 1, 2],
+    "stop2Bindings": ["罗凯塔庭院", "公爵庭院"],
+    "unresolvedGuideStops": [
+      {"stopIndex": 3, "reason": "古代艺术博物馆的准确楼层房间边界未获可靠正投影图。"},
+      {"stopIndex": 4, "reason": "舞厅与特里武尔齐奥挂毯所在upper馆翼只有轴测分布证据。"},
+      {"stopIndex": 5, "reason": "隆达尼尼圣殇博物馆可在官方场地图定位到馆翼，但与研究平面缺少可证实同尺度配准。"}
+    ]
+  },
+  "validation": {
+    "validateArchitecturalPlanErrors": 0,
+    "serializedShapely": "1161/1161个polygon有效、非空、面积为正",
+    "duplicateFeatureIds": 0,
+    "sourceDigestChecks": "primary与official-original均一致",
+    "generatedFloorCount": 1
+  },
+  "visualReview": [
+    "work/sforza-review/polimi-ground-native-grid-2x.png",
+    "work/model-review/sforza/ground.png",
+    "work/sforza-review/page1-4x.png",
+    "work/sforza-review/page2-4x.png"
+  ]
+}

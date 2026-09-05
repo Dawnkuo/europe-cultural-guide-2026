@@ -1,0 +1,188 @@
+{
+  "slug": "santa-maria-mar",
+  "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the academic orthographic composite plan: west entry,nave piers,side chapels and ambulatory/apse are retained. All four descriptive zones correspond to visible building areas; vault/detail lines do not become extra partitions.",
+    "floorCoverageReview": "Main church only; crypt,museum,towers and multi-level roof have no reviewed plans. No room numbering exists in this source.",
+    "stopBindingReview": "Stops0-3 locate entrance,nave,side chapels and apse; facade reliefs and unspecified doors remain unlocated.",
+    "verticalConnectionReview": "No unsupported tower/crypt/roof connection.",
+    "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+    "sourceDigest": "d4056b802a37ee8e096393b931738c856a85425faf7a54e3b98ff2a20188c131",
+    "sourceEvidence": "sources/floorplans/evidence/santa-maria-mar.json",
+    "comparedFloors": [
+      "main-level"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:46:51.180Z",
+    "slug": "santa-maria-mar",
+    "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+    "sourceDigest": "d4056b802a37ee8e096393b931738c856a85425faf7a54e3b98ff2a20188c131",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "main-level",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/santa-maria-mar-1440-3d.png",
+          "work/map-review/release-final/santa-maria-mar-1440-main-level-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 379,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "main-level",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/santa-maria-mar-1094-3d.png",
+          "work/map-review/release-final/santa-maria-mar-1094-main-level-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 310,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "main-level",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/santa-maria-mar-390-3d.png",
+          "work/map-review/release-final/santa-maria-mar-390-main-level-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 199,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "santa-maria-mar",
+    "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "main-level"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "santa-maria-mar",
+    "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 1.7,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/santa-maria-mar/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 128.1065070371421,
+      "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/santa-maria-mar/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 119.34475475411237,
+      "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/santa-maria-mar/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 99.71727148610702,
+      "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/santa-maria-mar/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+    "passed": true
+  }
+}

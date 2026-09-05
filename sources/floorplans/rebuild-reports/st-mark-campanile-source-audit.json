@@ -1,0 +1,61 @@
+{
+  "slug": "st-mark-campanile",
+  "usableGeometrySource": {
+    "file": "st-mark-campanile-rebuilt-1912.pdf",
+    "sha256": "53e7180a82f4cb819bb1c489558699cbcec981c0eaa18f660675767996b03997",
+    "url": "https://books.google.it/books?hl=it&id=1I5ZAAAAYAAJ",
+    "authority": "Antonio Fradeletto, Il campanile di San Marco riedificato, volume issued for the Comune di Venezia, 1912",
+    "finding": "Printed page 144 (PDF 183) is a scale-marked general Commission project plate with complete Pianta AB, Pianta CD, Pianta cella and Pianta EF horizontal sections. The adjacent elevation and longitudinal section are excluded from floor geometry. Printed page 148 (PDF 187) documents connections above the bell cell; printed page 173 (PDF 212) documents thirty-six ramps and a Stigler electric lift."
+  },
+  "catalogVerification": {
+    "url": "https://www.cca.qc.ca/en/search/details/library/publication/38686898",
+    "finding": "The Canadian Centre for Architecture catalogue independently records the 1912 civic reconstruction volume, its authorship and its plans/illustrations."
+  },
+  "archivalComparisonOnly": {
+    "file": "st-mark-campanile-1858.pdf",
+    "sha256": "2f1e1e564f38eb8e71d75b6178fcca6be9e4140895caec4f49cda96621782767",
+    "originalFile": "st-mark-campanile-1858-original.jpg",
+    "originalSha256": "616cbc265086096b2858f298c30ac8b30029d727fe323b13830f1224cf1321a7",
+    "url": "https://exhibits.lib.ttu.edu/s/openarch/item/18720",
+    "finding": "The Cicognara plate predates the 1902 collapse. It remains in sourceFiles with no selected pages and no floor sourceId; it is not current geometry."
+  },
+  "otherInspectedSources": [
+    {
+      "url": "https://tickets.basilicasanmarco.it/en/product/tickets/bell-tower/2524/9691/",
+      "finding": "Official current ticket page verifies the visitor attraction but publishes no orthographic plan or lift-shaft location."
+    },
+    {
+      "url": "https://www.basilicasanmarco.it/en/bell-tower/",
+      "finding": "Official history page documents the monument and reconstruction but publishes no current operations floor plan."
+    },
+    {
+      "file": "st-mark-campanile-pilutti-namer.pdf",
+      "sha256": "9c94891c6611de53a040f8c6ea8efde6b466a1d0a4c11f11bea0ce6a395d8829",
+      "url": "https://iris.unive.it/bitstream/10278/5008422/2/Pilutti-Namer_Ateneo%20Veneto%202022.pdf",
+      "finding": "All 19 pages were visually reviewed. The scholarly history contains archival images and discussion, not a complete present-day visitor plan."
+    }
+  ],
+  "deliveredCoverage": {
+    "floors": 4,
+    "sourcePlanNames": ["Pianta AB", "Pianta CD", "Pianta cella", "Pianta EF"],
+    "places": 8,
+    "verticalLinks": 3,
+    "stopBindings": 5,
+    "sourceSpaces": 0,
+    "sourceSpaceReason": "The scanned project plate supplies black/white line and mass geometry, not exact vector floor-fill paths. Selection uses reviewed anchors; no coarse whole-floor polygon is presented as a room."
+  },
+  "unresolvedCurrentOperationsGeometry": [
+    "exact current ticket entrance footprint",
+    "exact current lift shaft and landing footprints",
+    "directional registration of the south, west and north viewing positions within the bell cell",
+    "an occupiable horizontal-plan position for the archangel wind vane"
+  ],
+  "routeBindingReview": [
+    {"stopIndex": 0, "status": "bound", "scope": "Reconstructed Loggetta footprint in Pianta AB."},
+    {"stopIndex": 1, "status": "bound-partial", "scope": "Reconstructed tower-base interior only; no current ticket or lift point."},
+    {"stopIndex": 2, "status": "bound-partial", "scope": "Bell-cell room only; no directional railing point."},
+    {"stopIndex": 3, "status": "bound-partial", "scope": "Bell-cell room only; no directional railing point."},
+    {"stopIndex": 4, "status": "bound-partial", "scope": "Bell-cell room only; no directional railing point."},
+    {"stopIndex": 5, "status": "unresolved", "reason": "The vane is elevation evidence, not an occupiable horizontal-plan point."}
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "status": "pass",
+  "scope": "Pinned current-main bytes; read-only source/model acceptance",
+  "builder": {
+    "path": "/Users/dawnkuo/Documents/Codex/2026-05-27/new-chat/europe-cultural-guide/scripts/build-architectural-plans.py",
+    "sha256": "5def3873d9e690de1ebe97b222fe7735a05b780d68b98aebb8efbe7886b0c937",
+    "frozenReplayCopy": "/tmp/europe-map-current-acceptance/replay/build-architectural-plans.py"
+  },
+  "venues": {
+    "correr": {
+      "status": "pass",
+      "hashes": {
+        "config": "22196375333cc834317ef6a39724711ecdba550f8dd03ddbd5a65178a1d7130e",
+        "model": "ccc366652a0510dd30f5e9726fafe89b2ae27682ced730f9d49ad959d97686a8",
+        "evidence": "5db9137373e485c36b94e00b10c5db500c7b8430691465959330d73b3275ffa6"
+      },
+      "canonicalReplayByteIdentical": true,
+      "floors": 2,
+      "places": 16,
+      "spaces": 9,
+      "features": 89,
+      "verticalLinks": 1,
+      "stopBindings": 5,
+      "nativeSourceSpacePaths": 26,
+      "nativeServiceLeaders": 6
+    },
+    "accademia-venice": {
+      "status": "pass",
+      "hashes": {
+        "config": "a75af8bfd6bdc0e7230654d7bb61c0933d717b68e944c6a5f7c22d0396e97d85",
+        "model": "206d0faf5e7070944b6f61cfd34afdfb54fe33acf409947fa0ae2fafd2b2a63b",
+        "evidence": "c6b0a6d0fa8be9a2fb811958af85edf6aeb02f6d19cd5164550cc310b7c2dc3a"
+      },
+      "canonicalReplayByteIdentical": true,
+      "floors": 2,
+      "places": 48,
+      "spaces": 2,
+      "features": 228,
+      "verticalLinks": 2,
+      "stopBindings": 24,
+      "printedRoomIdentifiers": 39,
+      "nativeSourceCheckpoints": 64,
+      "floorScopeSpaces": 2
+    },
+    "fenice": {
+      "status": "pass",
+      "hashes": {
+        "config": "4bf1923befaf6be0f71cd2224032398535a7b490d03264142fd846e9acaf6a87",
+        "model": "ac2e228c94875716354c3838d4f32642d8359002fbb24d2ce006121bdc498088",
+        "evidence": "ad3ec5ba54fd9e26e6cd61d70a0cd9e2e2badc263a5dfa7367fa14d166a4f85d"
+      },
+      "canonicalReplayByteIdentical": true,
+      "floors": 3,
+      "places": 10,
+      "spaces": 8,
+      "features": 1887,
+      "verticalLinks": 0,
+      "stopBindings": 9,
+      "roomSpaces": 8,
+      "firstTierBoxComponents": 30,
+      "boundStopIndexes": [
+        1,
+        2,
+        4
+      ],
+      "intentionallyUnboundStopIndexes": [
+        0,
+        3,
+        5
+      ],
+      "sourceCheckpointAssertions": 2123
+    }
+  }
+}

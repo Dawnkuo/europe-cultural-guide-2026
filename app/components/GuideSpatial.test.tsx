@@ -3,6 +3,8 @@ import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { guideCatalog } from '../data/guides';
 import { GuideSpatial } from './GuideSpatial';
+import * as architecturalLoader from '../lib/architectural-plan-loader';
+import pantheonPlan from '../data/architectural-plans/pantheon.json';
 
 beforeEach(() => {
   configure({ asyncUtilTimeout: 3000 });
@@ -22,6 +24,44 @@ vi.mock('./ArchitecturalScene', () => ({ default: ({ onFailure }: { onFailure: (
 }));
 
 describe('GuideSpatial', () => {
+  it('keeps technical extraction records out of visitor notes without hiding missing areas', async () => {
+    const user = userEvent.setup();
+    render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'vatican-museums')!} />);
+    await screen.findByRole('button', { name: '2D 俯视' });
+    const notes = document.querySelector('.architectural-map__notes')!;
+    expect(notes).not.toHaveAttribute('open');
+    await user.click(screen.getByText('平面范围与说明'));
+    expect(notes).toHaveAttribute('open');
+    expect(notes).toHaveTextContent('地图不代表实时门禁、开放情况或无障碍路线');
+    expect(notes).not.toHaveTextContent(/像素|掩膜|膨胀|几何提取/);
+  });
+
+  it('renders service icons with complete names and keeps gallery numbers as visible text', async () => {
+    const user = userEvent.setup();
+    render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'vatican-museums')!} />);
+    await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    await user.click(screen.getByRole('button', { name: '入口区与一层' }));
+    const plan = (await import('../data/architectural-plans/vatican-museums.json')).default;
+    for (const place of plan.places.filter((p) => p.floorId === 'first')) {
+      const button = document.querySelector(`[data-place-id="${place.id}"] button`)!;
+      expect(button).toHaveAccessibleName(`${place.label} ${place.name}`);
+      expect(button).toHaveAttribute('title', place.name);
+      if (place.kind === 'room') {
+        expect(button.querySelector('.sr-only')).toBeNull();
+        expect(button).toHaveTextContent(place.label);
+      }
+    }
+    expect(document.querySelectorAll('button[data-place-kind="service"] svg').length).toBeGreaterThan(30);
+  });
+
+  it('loads the Medici crypt including the source stair details', async () => {
+    const user = userEvent.setup();
+    render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'medici-chapels')!} />);
+    await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    expect(document.querySelectorAll('svg [data-feature-id]').length).toBeGreaterThan(100);
+    expect(screen.queryByRole('alert')).not.toBeInTheDocument();
+  });
+
   it('renders a real 3D canvas with accessible attraction-specific controls', async () => {
     const guide = guideCatalog.find((item) => item.slug === 'trevi')!;
     render(<GuideSpatial guide={guide} />);
@@ -84,6 +124,21 @@ describe('GuideSpatial', () => {
     expect(document.querySelectorAll('[data-room-id]')).toHaveLength(52);
   });
 
+  it('makes every St Peter bound stop focusable without source-workflow labels', async () => {
+    const user = userEvent.setup();
+    const guide = guideCatalog.find((item) => item.slug === 'st-peters-basilica')!;
+    render(<GuideSpatial guide={guide} />);
+    await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    const plan = (await import('../data/architectural-plans/st-peters-basilica.json')).default;
+    for (const binding of plan.stopBindings) {
+      const place = plan.places.find((item) => item.id === binding.placeId)!;
+      const count = plan.stopBindings.filter((item) => item.stopIndex === binding.stopIndex).length;
+      await user.click(screen.getByRole('button', { name: count === 1 ? guide.spatial.stops[binding.stopIndex] : `定位：${place.name}` }));
+      expect(screen.getByRole('combobox', { name: '定位地点' })).toHaveValue(place.id);
+    }
+    expect(document.querySelector('.architectural-map')).not.toHaveTextContent('来源平面编号');
+  });
+
   it('preserves source holes without duplicate feature keys', async () => {
     const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
     const user = userEvent.setup();
@@ -105,9 +160,33 @@ describe('GuideSpatial', () => {
   });
 
   it.each(['pantheon', 'vatican-museums', 'casa-batllo'])('does not restore rejected generic interiors for %s', async (slug) => {
-    render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === slug)!} />);
-    expect(screen.getByRole('status')).toHaveTextContent('室内地图待重建');
-    expect(screen.queryByRole('button', { name: '内部' })).not.toBeInTheDocument();
+    const unavailable = vi.spyOn(architecturalLoader, 'hasArchitecturalPlan').mockReturnValue(false);
+    try {
+      render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === slug)!} />);
+      expect(screen.getByRole('status')).toHaveTextContent('室内地图待重建');
+      expect(screen.queryByRole('button', { name: '内部' })).not.toBeInTheDocument();
+      expect(document.querySelector('.guide-floorplan')).not.toBeInTheDocument();
+    } finally {
+      unavailable.mockRestore();
+    }
+  });
+
+  it('loads the rebuilt Pantheon with all eighteen printed identifiers', async () => {
+    const user = userEvent.setup();
+    render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'pantheon')!} />);
+    await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    expect([...document.querySelectorAll('.architectural-map__2d-labels [data-place-id]')].map((node) => node.getAttribute('data-place-id')!).sort((a, b) => a.localeCompare(b)))
+      .toEqual(Array.from({ length: 18 }, (_, index) => `L0-${index + 1}-1`).sort((a, b) => a.localeCompare(b)));
+    expect(document.querySelector('foreignObject')).toBeNull();
+    for (const button of document.querySelectorAll('.architectural-map__2d-labels button')) {
+      expect(button.namespaceURI).toBe('http://www.w3.org/1999/xhtml');
+      expect(button).toHaveStyle({ fontSize: '13px' });
+    }
+    const detailIds = new Set(pantheonPlan.floors[0].features.filter((feature) => feature.kind === 'detail').map((feature) => feature.id));
+    const fineLines = [...document.querySelectorAll('[data-feature-id] path')]
+      .filter((path) => detailIds.has(path.parentElement!.getAttribute('data-feature-id')!));
+    expect(fineLines.length).toBeGreaterThan(0);
+    expect(fineLines.every((line) => line.getAttribute('stroke-width') === '0.35' && line.getAttribute('vector-effect') === 'non-scaling-stroke')).toBe(true);
     expect(document.querySelector('.guide-floorplan')).not.toBeInTheDocument();
   });
 
@@ -119,6 +198,15 @@ describe('GuideSpatial', () => {
     expect(screen.getByRole('button', { name: '二层 · A' })).toHaveAttribute('aria-pressed', 'true');
     await user.click(screen.getByRole('button', { name: '兰齐楼梯 → 一层 · B / C / D / E' }));
     expect(screen.getByRole('button', { name: '一层 · B / C / D / E' })).toHaveAttribute('aria-pressed', 'true');
+  });
+
+  it('uses actual service names without relabeling them as exhibition rooms', async () => {
+    const user = userEvent.setup();
+    const { container } = render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'last-supper')!} />);
+    await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    await user.selectOptions(screen.getByRole('combobox', { name: '定位地点' }), 'L0-卫生间-1');
+    expect(container.querySelector('.architectural-map__inspector strong')).toHaveTextContent('卫生间');
+    expect(screen.queryByText('卫生间 · 展厅')).not.toBeInTheDocument();
   });
 
   it('disables automatic exterior rotation when reduced motion is requested', async () => {
@@ -156,13 +244,25 @@ describe('GuideSpatial', () => {
 
   it('keeps source-limited interiors on the exterior model with an explicit status', async () => {
     const guide = guideCatalog.find((item) => item.slug === 'fenice')!;
+    const unavailable = vi.spyOn(architecturalLoader, 'hasArchitecturalPlan').mockReturnValue(false);
+    try {
+      render(<GuideSpatial guide={guide} />);
+      expect(screen.getByRole('status')).toHaveTextContent('内部平面资料待补');
+      expect(screen.queryByRole('button', { name: '内部' })).not.toBeInTheDocument();
+      expect(
+        await screen.findByRole('region', { name: /凤凰歌剧院.*三维空间示意/ }),
+      ).toBeInTheDocument();
+    } finally {
+      unavailable.mockRestore();
+    }
+  });
 
-    render(<GuideSpatial guide={guide} />);
-
-    expect(screen.getByRole('status')).toHaveTextContent('内部平面资料待补');
-    expect(screen.queryByRole('tab', { name: '内部' })).not.toBeInTheDocument();
-    expect(
-      await screen.findByRole('region', { name: /凤凰歌剧院.*三维空间示意/ }),
-    ).toBeInTheDocument();
+  it('loads the rebuilt Fenice plan without restoring its former generic interior', async () => {
+    const user = userEvent.setup();
+    render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'fenice')!} />);
+    await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    expect(screen.getByRole('button', { name: '一层 · 阿波罗厅群' })).toBeInTheDocument();
+    expect(document.querySelectorAll('svg [data-feature-id]').length).toBeGreaterThan(100);
+    expect(document.querySelector('.guide-floorplan')).not.toBeInTheDocument();
   });
 });

@@ -1,0 +1,93 @@
+{
+  "slug": "sforza",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [11],
+    "basis": "PDF page 11, figure 3, is explicitly captioned as the Castello di Milano plan at the Piazza d'Armi level. Parallel walls, scale bar and top-down room/courtyard outlines establish orthographic projection. Coordinates use the native 720 by 480 page, with its 90-degree display rotation removed. Rechecked every courtyard label and the actual Filarete doorway against the native-coordinate source grid; the entrance faces right on this unrotated plan."
+  },
+  "stopBindings": [
+    {"stopIndex": 0, "placeId": "ground-菲拉雷特塔入口轴线-1"},
+    {"stopIndex": 1, "placeId": "ground-武器广场庭院-1"},
+    {"stopIndex": 2, "placeId": "ground-罗凯塔庭院-1"},
+    {"stopIndex": 2, "placeId": "ground-公爵庭院-1"}
+  ],
+  "file": "sforza-polimi-fortmed-2024.pdf",
+  "url": "https://re.public.polimi.it/retrieve/9f7696bb-c747-494c-af4b-33d2848257c4/Pertot%20Fortmed%20XVI%202024.pdf",
+  "sha256": "e6cbe669780d75ba15c3a950f9a35345c0234490f08076cff4d7285a09247808",
+  "review": "Politecnico di Milano repository paper in Defensive Architecture of the Mediterranean XVI (2024), PDF page 11, figure 3. The embedded 745 x 681 Piazza d'Armi-level plan was inspected at native resolution. Dark neutral architectural ink is retained; the author's red Rocchetta study circle and pale demolished Ghirlanda context are not promoted. The official 2025 city map is retained as provenance and was audited separately: its page 1 is an orthographic site-level museum locator, while page 2 contains axonometric collection-distribution blocks and is not emitted as upper-floor geometry.",
+  "sourceFiles": [
+    {
+      "id": "official-original",
+      "file": "sforza-official-visitor-map-2025.pdf",
+      "url": "https://www2.comune.milano.it/documents/461595483/477971915/mappa-castello+e++itinerario_def+LL+14.01.25.pdf/b3319db7-1c76-758b-f6a8-8e2453136a9e?t=1754403241406",
+      "sha256": "2f5cd7b5d38d0a7421c015327d074d3503354a4c672d98a55ed7b0a70701fa56",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "The original official file is retained as provenance. Page 1 is a top-down site-level museum locator. Page 2 is axonometric and is excluded from generated floor geometry."
+      }
+    }
+  ],
+  "limitations": [
+    "当前模型只保留武器广场标高的建筑研究平面，可证明城堡核心、武器广场、罗凯塔、公爵庭院和南侧主入口轴线；它不是现行博物馆逐层导览图。",
+    "厚实黑色结构墨迹抬升为墙体，细部、楼梯线、比例尺和文字保持平面；红色研究圆与浅灰色已拆防御工事不进入墙体。",
+    "米兰市政府2025年官方附件第1页是正投影场地定位图，可证明各博物馆所属馆翼；第2页四张图是带竖向厚度的轴测馆藏分布图，不是可直接挤出的房间平面。",
+    "先前四塔仿射拟合只把轴测图的两个地面轴校正到正投影，不能消除彩色顶面的高度投影；因此地下层、一层、二层的重复外轮廓和漂移锚点已全部撤下。",
+    "导览停靠点0至2只绑定入口和两个具名庭院。停靠点3至5涉及博物馆馆藏或上层空间，在取得可靠分层平面或完成逐馆翼去投影前保持未绑定，不以重复城堡外轮廓凑层数。"
+  ],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "武器广场标高建筑平面",
+      "order": 0,
+      "page": 11,
+      "crop": [248, 62, 413, 242],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 229,
+          "occurrence": 0,
+          "rgbRange": [[0, 0, 0], [105, 105, 105]],
+          "wallKernel": 4,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.2,
+          "reason": "Native embedded plan inspected at full resolution. Four-source-pixel opening retains thick castle masonry as walls; thinner room, stair and annotation strokes remain flat detail. The red study circle and pale historical context fail the neutral range and are excluded."
+        }
+      ],
+      "places": [
+        {
+          "label": "菲拉雷特塔入口轴线",
+          "name": "菲拉雷特塔与南侧主入口轴线",
+          "at": [391.8, 154.5],
+          "kind": "service",
+          "evidence": "锚点取平面南侧Piazza Castello一边的中央门洞轴线；该轴线对应菲拉雷特塔主入口。",
+          "precision": "reviewed-gate-axis-anchor-not-surveyed"
+        },
+        {
+          "label": "武器广场庭院",
+          "name": "武器广场庭院",
+          "at": [360, 156],
+          "kind": "area",
+          "evidence": "来源图在城堡南部大型庭院中央直接标注piazza d'armi；锚点取其几何中心。",
+          "precision": "printed-courtyard-zone-center"
+        },
+        {
+          "label": "罗凯塔庭院",
+          "name": "罗凯塔与内庭院",
+          "at": [307, 184],
+          "kind": "area",
+          "evidence": "来源图在西北方形内庭中央直接标注rocchetta；锚点取具名庭院中心。",
+          "precision": "printed-courtyard-zone-center"
+        },
+        {
+          "label": "公爵庭院",
+          "name": "公爵庭院",
+          "at": [307, 133],
+          "kind": "area",
+          "evidence": "来源图在东北内庭中央直接标注corte ducale；锚点取具名庭院中心。",
+          "precision": "printed-courtyard-zone-center"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "slug": "notre-dame-towers",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [],
+    "basis": "The authoritative original volume supplies the textual and figure context for PDF page 201; geometry is extracted only from the pinned same-page review render declared as the supplementary source below."
+  },
+  "stopBindings": [
+    {
+      "stopIndex": 2,
+      "placeId": "south-belfry-lower-南塔钟架下层木构-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "south-belfry-upper-大钟悬挂区-1"
+    }
+  ],
+  "file": "notre-dame-dictionnaire-v2.pdf",
+  "url": "https://archive.org/download/dictionnairerais02violuoft/dictionnairerais02violuoft.pdf",
+  "sha256": "9f1ae751ae81ac962144d94abdf29f482fa66fa9b371898b5c0e23e24afc42e9",
+  "sourceFiles": [
+    {
+      "id": "page201-review-render",
+      "file": "notre-dame-dictionnaire-v2-page201-render.pdf",
+      "url": "https://archive.org/download/dictionnairerais02violuoft/dictionnairerais02violuoft.pdf#page=201",
+      "sha256": "0394060017e82ddbc323ed78d943143d2fc1bc79b58d2338eb3566688479ee21",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [1],
+        "basis": "Pinned 4x render of original PDF page 201. Figures 7 and 8 are explicitly described on that page as lower and upper horizontal framing plans; parallel axes and printed dimensions establish orthographic projection. The render changes pixels only, not page coordinates."
+      }
+    }
+  ],
+  "review": "Authoritative 1856 Dictionnaire raisonne de l'architecture francaise, volume II, Beffroi article, original PDF page 201 (printed page 191). The original page and a pinned 4x same-page review render were visually inspected. Figure 7 is the lower framing plan and figure 8 the upper framing plan of the Notre-Dame south-tower belfry described in the adjacent text. Geometry is traced from the review render while the unmodified 564-page source and both SHA-256 digests remain bundled for audit.",
+  "internalNotes": ["该模型仅重建1856年权威文献明确给出的巴黎圣母院南塔钟架下层与上层木构平面，不把历史钟架图冒充2025年重新开放后的完整游客楼层图。","图7与图8记录钟架构造而非石砌塔室的完整边界；线条作为来源平面细节保留，不推断墙厚、通道宽度或现行楼梯位置。","提取使用原始PDF第201页的固定四倍渲染件，以避免该扫描文件内部增强遮罩造成断线；原始PDF与渲染件的摘要均记录在证据文件中，页面坐标未重绘或校正。","导览停靠点2只绑定其“南塔钟楼木构”部分；新双向橡木楼梯在来源中没有平面位置。停靠点4只绑定文献说明的大钟悬挂区，不代表蓄水池庭院或屋顶“森林”视角。","官方2025年简明参观手册与2026年无障碍登记册已核查：前者只有文字路线，后者第13页是路线立面示意而非正投影平面。因此停靠点0入口接待厅、1四叶厅、3奇美拉长廊与眺望台、5北塔钟架及出口均保留为未定位，不从立面或路线顺序推造平面。","历史来源中的上下层图在页面上独立排布，模型不声称两层已按现代游客路线或测量坐标配准。"],
+  "limitations": ["目前只包含 1856 年南塔钟架上下层木构，不是重新开放后的完整游客路线。","接待厅、四叶厅、奇美拉长廊、北塔与现行楼梯尚未定位。"],
+  "floors": [
+    {
+      "id": "south-belfry-lower",
+      "sourceId": "page201-review-render",
+      "label": "南塔钟架下层木构（1856年记录）",
+      "order": 0,
+      "page": 1,
+      "crop": [170, 98, 334, 255],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "occurrence": 0,
+          "maxChannel": 155,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.15,
+          "reason": "Full-resolution scan inspected; crop isolates figure 7, the lower belfry framing plan, and retains only dark printed ink as flat source detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "南塔钟架下层木构",
+          "name": "南塔钟架下层木构平面",
+          "at": [255, 187],
+          "kind": "area",
+          "evidence": "文献正文明确说明图7为该钟架下层水平框架平面；锚点取矩形木构图的几何中心，不表示游客楼梯或精确站立点。",
+          "precision": "printed-structural-plan-centroid-not-visitor-position"
+        }
+      ]
+    },
+    {
+      "id": "south-belfry-upper",
+      "sourceId": "page201-review-render",
+      "label": "南塔钟架上层木构（1856年记录）",
+      "order": 1,
+      "page": 1,
+      "crop": [205, 324, 346, 440],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "occurrence": 0,
+          "maxChannel": 155,
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 0.15,
+          "reason": "Full-resolution scan inspected; crop isolates figure 8, the upper belfry framing plan, and retains only dark printed ink as flat source detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "大钟悬挂区",
+          "name": "南塔上层钟架与大钟悬挂区",
+          "at": [276, 408],
+          "kind": "area",
+          "evidence": "图8及相邻正文说明上层框架、服务通道和悬挂于C点的大钟；锚点落在图中中央悬挂构件区域，不推断现代参观边界。",
+          "precision": "printed-belfry-component-anchor-not-current-route-survey"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "scope": "Human source-to-browser geometry review. This file alone grants no runtime or deployment approval. Floor coverage means coverage of the explicitly inspected source, never a claim that missing present-day floors have been recovered.",
+  "venues": {
+    "accademia-florence": {
+      "geometryReview": "Compared both official floor crops: irregular main galleries, the Tribune, side collection rooms, upper galleries and the underlying lower-level reference remain distinct. Keeps 6a/6b/6c separately and all twenty place identifiers. Five source-connected selection areas do not introduce new partitions.",
+      "floorCoverageReview": "Both published visitor levels; lower-level reference lines on the upper diagram stay flat.",
+      "stopBindingReview": "All five original stops locate to printed galleries; the last collection group retains its four room bindings.",
+      "verticalConnectionReview": "West stair and west elevator join their explicitly printed landings on the two levels. These are connections, not a turn-by-turn route.",
+      "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
+      "sourceDigest": "f01a1af6dfc684436e47e4aa48479a0c7d52573d66169ba11fed42e41dced2d9",
+      "sourceEvidence": "sources/floorplans/evidence/accademia-florence.json",
+      "comparedFloors": [
+        "L0",
+        "L1"
+      ]
+    },
+    "accademia-venice": {
+      "geometryReview": "Compared both museum leaflet floors with their 2D renderings. Ground-floor Arabic and first-floor Roman identifiers retain their identities, including XXIV and the irregular VI area. Forty-two source-connected gallery selection regions preserve real partitions, shared openings, courtyards and service spaces.",
+      "floorCoverageReview": "Both published visitor levels. VIa/VIb lack separately recoverable locations and are explicitly unresolved, not silently substituted with new rooms.",
+      "stopBindingReview": "All six original stops retain entrance/service, XXIV, VIII, X, XIX-XXIII and ground-gallery bindings at gallery-group precision.",
+      "verticalConnectionReview": "Only the museum elevator and central staircase whose two landings are documented are connected.",
+      "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+      "sourceDigest": "6809eac6370f94b3a12017d6e243e3789135a4f9c97d1dc810f7c3d462a11264",
+      "sourceEvidence": "sources/floorplans/evidence/accademia-venice.json",
+      "comparedFloors": [
+        "ground",
+        "first"
+      ]
+    },
+    "barcelona-cathedral": {
+      "geometryReview": "Compared the official raster's nave, apse, radiating chapels and cloister. Preserves all fifty-nine printed numbers and five descriptive areas; 12 and 27 are absent in the source and are not invented. Fifty-seven selection regions follow the visible wall boundaries. Shared nave/ambulatory and shared 71/72 chapel remain shared; outdoor26 has no invented indoor face.",
+      "floorCoverageReview": "Main church and cloister only. The crypt and roof are not supplied; red annotation occlusions remain unresolved.",
+      "stopBindingReview": "Stops0,1,3,4 locate the nave/chapels, choir, Lepanto chapel and cloister. The crypt stop is not assigned a main-floor coordinate.",
+      "verticalConnectionReview": "No source-backed paired crypt/roof landings exist; no connection is drawn.",
+      "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+      "sourceDigest": "5bb9a64dbe11ef80b9c4bab154c72ffecb6334f6c45a10e8c7d27e9bde30bbff",
+      "sourceEvidence": "sources/floorplans/evidence/barcelona-cathedral.json",
+      "comparedFloors": [
+        "main-level"
+      ]
+    },
+    "borghese": {
+      "geometryReview": "Compared the three compact official visitor diagrams. Retains basement services, sculpture-level rooms and upper painting rooms with twenty-seven place identifiers. Structural bands exclude printed letters, service icons and arrows; stair/tread and terrace details remain flat. Twenty-six selection regions do not promote terrace shading into masonry.",
+      "floorCoverageReview": "Basement, principal and upper collection levels are independent source diagrams, not a surveyed vertical registration.",
+      "stopBindingReview": "All six original stops bind to ticket service,3,4,8,9 and basement entrance at documented room/service precision.",
+      "verticalConnectionReview": "Independent leaflet diagrams do not establish reliable corresponding landings; no inferred cross-floor link.",
+      "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+      "sourceDigest": "2e9b1a3d5fd11a45ca900747f6667596d024bc05b5a937237a63c19775e2c198",
+      "sourceEvidence": "sources/floorplans/evidence/borghese.json",
+      "comparedFloors": [
+        "B1",
+        "P0",
+        "P1"
+      ]
+    },
+    "brera": {
+      "geometryReview": "Compared the official gallery leaflet with the complete overhead render: irregular north galleries, open courtyard, perimeter columns, stair treads and lower room sequence are retained. All thirty-five printed gallery identifiers include1A; unprinted16/17/25/26 are not fabricated. Thirty-four selection faces preserve the shared1/6 room.",
+      "floorCoverageReview": "The published principal Pinacoteca level, not the palace ground floor or other La Grande Brera institutions.",
+      "stopBindingReview": "Five interior stops1-5 bind to entrance,6,Venetian/Lombard gallery groups,24,28. Exterior Napoleon courtyard stop0 stays outside the interior model.",
+      "verticalConnectionReview": "One published gallery level. Stair footprint remains visible without inventing a lower landing.",
+      "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+      "sourceDigest": "f60d3d81dba635652fac312a8ec833a810b15bacf0452425cb2d2a598922a298",
+      "sourceEvidence": "sources/floorplans/evidence/brera.json",
+      "comparedFloors": [
+        "gallery"
+      ]
+    },
+    "camposanto": {
+      "geometryReview": "Compared the university survey crop: the long enclosed courtyard, four cloister walks, east annexes, repeated bays and wall details retain the measured source proportions. No replacement ideal rectangle or inferred floor slab.",
+      "floorCoverageReview": "Surveyed ground level only; roof and service levels are not supplied.",
+      "stopBindingReview": "Courtyard and the documented southern fresco wall are located. Individual sarcophagi and later monuments have no established current object positions.",
+      "verticalConnectionReview": "No unsupported upper floor or vertical connection is introduced.",
+      "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+      "sourceDigest": "a6ee767951badd43aa8d19ed6b87b2615f729bb0c9af9aa5efc35ad7c4525e73",
+      "sourceEvidence": "sources/floorplans/evidence/camposanto.json",
+      "comparedFloors": [
+        "ground"
+      ]
+    },
+    "casa-batllo": {
+      "geometryReview": "Compared all three rectified historical source plans. Retains the irregular frontage, rear terrace, central light well, curved rooms, stair treads and furniture as distinct structure/detail classes. Source-pixel checkpoints exclude73 isolated thin-line intersections from masonry without removing perimeter or stair enclosure walls. Two closed source regions support selection; open entrance and terrace grids are not artificially sealed.",
+      "floorCoverageReview": "Historical ground, principal and second floors only. The attic section cannot become a floor plan. Current third-floor twelve-room program, roof, Cube and Dome remain an explicit unlocated inventory.",
+      "stopBindingReview": "Stops0-2 locate entrance, principal rooms and the light-well zone. Missing upper/basement spaces are not assigned these coordinates.",
+      "verticalConnectionReview": "Separate published crops have no measured landing registration; no guessed link or copied floor.",
+      "modelDigest": "e8aa6da24d4904b6e1f4472ad976a0b03015097383e6848a21c15a3f8d933253",
+      "sourceDigest": "bd3d92782bd35d3ab93aa3c55f291cae05163b7742a2ff2269cd16c74343d3ba",
+      "sourceEvidence": "sources/floorplans/evidence/casa-batllo.json",
+      "comparedFloors": [
+        "historic-ground-floor",
+        "historic-first-floor",
+        "historic-second-floor"
+      ]
+    },
+    "cologne-cathedral": {
+      "geometryReview": "Compared the main church plan and the actual2009 underground south-tower access drawing. Keeps nave piers, aisles, transepts, radiating apse and foundation-access passage. Vault diagonals remain flat details, not partitions. Rejected medieval tower elevation is not repurposed as present-day tower levels.",
+      "floorCoverageReview": "Church main level and2009 tower-access courtyard only. Treasury, spiral staircase levels, bells and observation deck remain missing plans.",
+      "stopBindingReview": "Stops0,1,3 bind the west central doorway, choir and south transept; stop5 locates only the documented start of tower ascent. Gero cross and treasury stay unlocated.",
+      "verticalConnectionReview": "No continuous tower ascent or treasury connection without documented paired landings.",
+      "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+      "sourceDigest": "3c3aa37060e3003a57dc5ac776a5e869a59d3de29cca86715bb2a4ec9c8d742d",
+      "sourceEvidence": "sources/floorplans/evidence/cologne-cathedral.json",
+      "comparedFloors": [
+        "south-tower-access-2009",
+        "nave"
+      ]
+    },
+    "colosseum": {
+      "geometryReview": "Compared both themes of the archaeological DAI plate: hypogeum and podium preserve their distinct source ink, elliptical corridors, radial structures and archaeological detail. The source's reconstruction proposal status is explicit; the model does not claim all inferred ancient fabric survives today.",
+      "floorCoverageReview": "Two archaeological plan themes, not two copies of a colored visitor route or a complete modern visitor building.",
+      "stopBindingReview": "Underground center and arena stops2/4 have source-area locations. Modern security entry, lift shafts and complete seating routes remain unlocated.",
+      "verticalConnectionReview": "No modern visitor stair or elevator landing is established by the archaeological plate.",
+      "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+      "sourceDigest": "194075112aea65e2b0a9f6c8f5f6cbf07a0ce91129307978b063b5601a2806f3",
+      "sourceEvidence": "sources/floorplans/evidence/colosseum.json",
+      "comparedFloors": [
+        "hypogeum-level-2",
+        "podium-level-3"
+      ]
+    },
+    "correr": {
+      "geometryReview": "Compared the two official collection diagrams, including royal suites and adjacent archaeological/library wings. Keeps sixteen source places and nine connected selection regions; room outlines are not replaced by equal-width thematic blocks.",
+      "floorCoverageReview": "Published first-floor collections and upper picture gallery; surrounding institutions are context, not a claim of ticket access.",
+      "stopBindingReview": "All five original stops locate to entrance, Canova area, Venice-history area and the upper picture gallery.",
+      "verticalConnectionReview": "One documented central stair joins the first floor and picture gallery.",
+      "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
+      "sourceDigest": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "sourceEvidence": "sources/floorplans/evidence/correr.json",
+      "comparedFloors": [
+        "L1",
+        "L2"
+      ]
+    },
+    "doges-palace": {
+      "geometryReview": "Compared all five source diagrams. Retains actual courtyard, loggia, apartments, council chambers, prison/Bridge of Sighs alignment and roof-frame layer with seventy place identifiers. Nine supported faces give room focus without filling the courtyard or cloning one outer shell across levels.",
+      "floorCoverageReview": "All five published diagrams, including restricted attic and prison areas. Spatial inclusion is not admission entitlement.",
+      "stopBindingReview": "All six original stops retain entrance/courtyard, stair, apartment/gallery groups, Great Council27,armory22,bridge/prison33/34 bindings.",
+      "verticalConnectionReview": "Eight documented elevator/stair segments use source endpoints. No direct straight walking line bypasses floors.",
+      "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+      "sourceDigest": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "sourceEvidence": "sources/floorplans/evidence/doges-palace.json",
+      "comparedFloors": [
+        "L0",
+        "loggia",
+        "L1",
+        "L2",
+        "attic"
+      ]
+    },
+    "el-born": {
+      "geometryReview": "Compared the2013 official opening leaflet: exact vector public-zone boundaries, rooms1-4 and three distinct5 archaeological areas are retained. Red frames, dotted outlines and entry arrows remain flat rather than becoming masonry.",
+      "floorCoverageReview": "Historical visitor-level schematic only; the underground street/house fabric and later exhibition changes are not documented by this plan.",
+      "stopBindingReview": "Stops2/3 bind the public space and documented archaeological area. Outdoor boulevard/cemetery/beach route stops stay outside this interior.",
+      "verticalConnectionReview": "No invented descent, underground level or paired stair landings.",
+      "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+      "sourceDigest": "4e9eb9df60836e87de9d6524f926d328811082c9bba2c6670d7c28ba5a803f08",
+      "sourceEvidence": "sources/floorplans/evidence/el-born.json",
+      "comparedFloors": [
+        "street-level"
+      ]
+    },
+    "fenice": {
+      "geometryReview": "Compared the complete foyer and Apollinee plans and the separate auditorium crop. Retains horseshoe seating, the five named Apollinee rooms, real service/entry outlines and eight source regions. Gradient stage shading is not misreported as a complete closed stage face.",
+      "floorCoverageReview": "Three independent source diagrams; first-tier boxes do not locate the royal box on the floor above.",
+      "stopBindingReview": "Stops1/2/4 locate entrance/foyer,auditorium/first-tier and named Apollinee rooms. Canal water gate and royal box remain unlocated.",
+      "verticalConnectionReview": "The2018 and2023 sources disagree on the operational staircase; retain visible stair geometry but no guessed between-plan link.",
+      "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+      "sourceDigest": "d170c145ce13217b6082489e0f48217a3de3d8b72077f0723ca02c9bbfb7b0ff",
+      "sourceEvidence": "sources/floorplans/evidence/fenice.json",
+      "comparedFloors": [
+        "foyer",
+        "auditorium",
+        "apollinee"
+      ]
+    },
+    "florence-duomo": {
+      "geometryReview": "Compared the academic accessibility plan at native crop resolution. Preserves visible church wall fabric and nave piers; annotations obscure several segments and these are not completed from symmetry or photographs.",
+      "floorCoverageReview": "Only the identifiable main church floor. Dome shells, ascent stairs and roof levels remain absent source data.",
+      "stopBindingReview": "Existing guide stops are preserved as text; no exact present-day locations can be verified from the inspected drawing.",
+      "verticalConnectionReview": "No guessed dome/ascent connection.",
+      "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+      "sourceDigest": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+      "sourceEvidence": "sources/floorplans/evidence/florence-duomo.json",
+      "comparedFloors": [
+        "main"
+      ]
+    },
+    "galleria-vittorio": {
+      "geometryReview": "Compared the complete2015 municipal existing-ground-floor PDF, normalized only for page rotation. Replaced the rejected coarse cross. All14255 native stroked features retain shops, doors, stairs, octagonal center and arcade detail. Reviewed all791 nontrivial black-channel faces;314 sufficiently resolved masonry profiles are extruded. Closed shops, lifts and stair pockets are explicitly excluded, while unresolved thin profiles remain flat. The full pinned1885-face graph validates topology and individual source-path provenance.",
+      "floorCoverageReview": "Full2015 ground-level source, not current tenants or undocumented upper/roof floors. No fictitious public-floor polygon seals the octagon.",
+      "stopBindingReview": "All six original stops retain the two entrances, arcade, octagon and storefront-zone anchors. Bull mosaic is only located to the octagon, not an invented exact tile position.",
+      "verticalConnectionReview": "Stair linework is preserved; no unsupported upper landing or floor is created.",
+      "modelDigest": "1683ec93b7b4509e150b6b10ba71eafb41aa25fa59c705743377f8915ed278b1",
+      "sourceDigest": "0ab3ce78886cb0fe6856d108d07344cb1efc5d49bea1d69301aedff3bf636516",
+      "sourceEvidence": "sources/floorplans/evidence/galleria-vittorio.json",
+      "comparedFloors": [
+        "arcade"
+      ]
+    },
+    "giunti-odeon": {
+      "geometryReview": "Compared all three architect-published renovation plans. Keeps the existing theatre envelope, foyer, stage/screen axis, floor openings and balconies. Three source selection faces and nine descriptive points do not invent numbered rooms.",
+      "floorCoverageReview": "Ground and two upper project levels, not a real-time event arrangement.",
+      "stopBindingReview": "All four original stops bind verified ground-level entry, books, screen and auditorium decoration; an unnamed upper room is not labeled as a confirmed mirror hall.",
+      "verticalConnectionReview": "Two source-backed entrance-side staircase segments link the three project levels.",
+      "modelDigest": "64a65857c2351159f618b2666cc964d9dfb9b38e67545d3746eb3ee4ae5e59c0",
+      "sourceDigest": "0f8091906ce4cccde5ec905098a20dbca1746770944114b517a5b972337cecbb",
+      "sourceEvidence": "sources/floorplans/evidence/giunti-odeon.json",
+      "comparedFloors": [
+        "ground",
+        "first",
+        "second"
+      ]
+    },
+    "koln-triangle": {
+      "geometryReview": "Compared all three architect-monograph crops. Ground structure includes104 native filled masonry/core/column profiles; office59 and event55 retain their curved walls. Thin treads, furniture and door swings remain flat. Removed the ground slab previously derived from a dashed upper-storey projection. Both upper floor footprints retain the full native curved exterior rather than a sixteen-point approximation.",
+      "floorCoverageReview": "Ground, representative office9-27 and event28 only. The public observation platform is NOT this event floor.",
+      "stopBindingReview": "All five original visitor stops stay available but unlocated; the architect plans do not establish the current visitor entrance or observation-edge positions.",
+      "verticalConnectionReview": "Visible core linework does not establish the last public stair or its landings; no fabricated connection.",
+      "modelDigest": "2e1babc3e297516d651ce9972fd2cb3ca086860df6987e2c1123c863f62ec6cf",
+      "sourceDigest": "0374f07240ef75e38d40c861410ff9bff6552226bd6f373107104750ff7dba7b",
+      "sourceEvidence": "sources/floorplans/evidence/koln-triangle.json",
+      "comparedFloors": [
+        "ground",
+        "office-typical",
+        "event-28"
+      ]
+    },
+    "la-pedrera": {
+      "geometryReview": "Compared all four former Fundacio Caixa Catalunya visitor-leaflet plans. Maintains genuine curved room fabric, irregular courtyards, attic route and roof voids. Source floor colors determine surfaces; entry letters/arrows and service glyphs are excluded from masonry. Thirty-four source points include the actual printed service positions.",
+      "floorCoverageReview": "Historic ground, apartment, attic and roof diagrams only. Current private areas, basement and temporary exhibition floor are not inferred; independent diagrams do not claim surveyed vertical alignment.",
+      "stopBindingReview": "Stops1-4 bind courtyards, apartment, attic and roof zones. Facade stop0 remains exterior.",
+      "verticalConnectionReview": "Printed service positions are retained, but no current through-route or independently unverified landing correspondence is added.",
+      "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+      "sourceDigest": "a50e5212e85eff30cb7574939d90f3b3f81c075de5292e377c24b9b74deb37f0",
+      "sourceEvidence": "sources/floorplans/evidence/la-pedrera.json",
+      "comparedFloors": [
+        "historic-visitor-ground",
+        "historic-visitor-apartment",
+        "historic-visitor-attic",
+        "historic-visitor-roof"
+      ]
+    },
+    "la-scala": {
+      "geometryReview": "Compared museum and restored-theatre plans. Retains all eight numbered museum rooms, irregular connecting spaces, foyer, auditorium and stage, with eight museum selection faces. Seat numbers are not reused as room identifiers.",
+      "floorCoverageReview": "Museum rooms1-8 and one documented theatre main level. Room9,library,upper boxes and backstage access are not asserted.",
+      "stopBindingReview": "Collection stop1 binds rooms1/3/4; stops5/6 bind theatre foyer, auditorium and stage. Other works lack supported exact room locations.",
+      "verticalConnectionReview": "Two independent buildings/levels have no verified connecting landing pair.",
+      "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+      "sourceDigest": "74a1f5fb0a3828df9f03c38efbf8100e5963fdf77475759dd3c95db9db9a3c33",
+      "sourceEvidence": "sources/floorplans/evidence/la-scala.json",
+      "comparedFloors": [
+        "museum",
+        "theatre"
+      ]
+    },
+    "last-supper": {
+      "geometryReview": "Compared the complete official single-level plan. Nineteen source checkpoints protect twelve wall segments, three artwork/locker details and four entry gaps. All twelve printed/descriptive places and four source regions remain distinct.",
+      "floorCoverageReview": "Complete published museum visitor plan, not the separate Santa Maria delle Grazie church.",
+      "stopBindingReview": "All six original stops locate tickets, lockers, airlock, Last Supper, Crucifixion and exit; murals are wall-zone locations.",
+      "verticalConnectionReview": "Single-level source; no upper level or connection invented.",
+      "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+      "sourceDigest": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "sourceEvidence": "sources/floorplans/evidence/last-supper.json",
+      "comparedFloors": [
+        "L0"
+      ]
+    },
+    "leaning-tower": {
+      "geometryReview": "Compared current base drawing and all four1910 measured-plan groups. Retains native variable column shapes, thick annular masonry, actual voids and tread/hatch details; four annotation-obscured or ambiguous column sites remain missing instead of filled with ideal circles. No universal cylinder or solid center is substituted.",
+      "floorCoverageReview": "Five source-plan groups, not eight separately measured physical floors. Two depictions of the first gallery are not treated as successive levels.",
+      "stopBindingReview": "Stops2/3 locate the documented ascent entrance and bell colonnade. Relief, precise outdoor anchors and upper ring platform remain unlocated.",
+      "verticalConnectionReview": "Three documented ascent segments; no cross-link between two depictions of the same physical level.",
+      "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+      "sourceDigest": "c393192a76ad386ad08ea06fceb4b0638800ffc19449783b9358fca662436184",
+      "sourceEvidence": "sources/floorplans/evidence/leaning-tower.json",
+      "comparedFloors": [
+        "base",
+        "entry-first",
+        "galleries-1-3",
+        "galleries-4-7",
+        "upper"
+      ]
+    },
+    "medici-chapels": {
+      "geometryReview": "Compared all four independent authoritative plans. Crypt selection retains its four pier holes; the New Sacristy's paired structural outlines remain walls while monuments stay details. ICCD0900335014 supports the Princes' Chapel thick perimeter and pier-free central hall. Lorraine crypt retains the printed named location without guessing an unmarked room boundary.",
+      "floorCoverageReview": "Crypt, Lorraine detail, New Sacristy and historical Princes' Chapel sources at independent scales; treasure zone is missing.",
+      "stopBindingReview": "Stops0/2/3/4 have the four verified source bindings. Treasure stop1 remains unlocated.",
+      "verticalConnectionReview": "No measured registration or matched stair landings between the independent plans.",
+      "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+      "sourceDigest": "25ed2e07ddc78dc0dc1a55c1b88deb3980ad4bcaf172bc7e0a5a23e5c7c3654e",
+      "sourceEvidence": "sources/floorplans/evidence/medici-chapels.json",
+      "comparedFloors": [
+        "crypt-level",
+        "lorraine-crypt-detail",
+        "new-sacristy",
+        "princes-chapel-historic"
+      ]
+    },
+    "mercato-centrale": {
+      "geometryReview": "Compared the municipal1869 ground plan and renovated upper-floor project. Historic stall grid remains flat detail, red ironwork and resolved coarse perimeter structure remain masonry. The upper open hall follows its actual project outline; neither level is replaced by a generic market grid.",
+      "floorCoverageReview": "Historic ground and renovation upper plan with independent scales; not current stall numbers or tenants.",
+      "stopBindingReview": "Stops1/2/3 bind historical stalls and upper structural/hall areas; exterior stop0 is not put indoors.",
+      "verticalConnectionReview": "No measured floor alignment or paired current staircase/elevator landings.",
+      "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+      "sourceDigest": "b71738cd8a1b56ca0c0799dc0df8f53d120e314fedeaad87d74cd7e77f7fb00b",
+      "sourceEvidence": "sources/floorplans/evidence/mercato-centrale.json",
+      "comparedFloors": [
+        "ground-historic",
+        "upper"
+      ]
+    },
+    "milan-duomo": {
+      "geometryReview": "Compared the cathedral authority's actual main-floor/security attachment and separate Scurolo di San Carlo inset. Retains continuous black structural walls, piers, transepts, choir and apse; red camera-coverage hatching, entry glyphs and lettering are not masonry. The crypt crop excludes the neighboring baptistery overlay and the locator inset.",
+      "floorCoverageReview": "Main church and San Carlo crypt. The31m/45m terraces have no reviewed orthographic plan and are not cloned from the nave.",
+      "stopBindingReview": "Stops0-3 bind west entry,nave,choir,apse. Both roof stops remain unlocated.",
+      "verticalConnectionReview": "The source does not establish a crypt or terrace stair/elevator connection.",
+      "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
+      "sourceDigest": "4397e81e57eec8b278e6eb02a66f70e292881e1618f0acc2660e13fb10e13515",
+      "sourceEvidence": "sources/floorplans/evidence/milan-duomo.json",
+      "comparedFloors": [
+        "crypt-san-carlo",
+        "cathedral"
+      ]
+    },
+    "museum-ludwig": {
+      "geometryReview": "Compared all four official2021 visitor-plan levels. Maintains different floor envelopes, voids, room bands and service positions rather than repeated floor plates. Eighteen places and three collection-zone selections are at the source's actual level of detail.",
+      "floorCoverageReview": "Basement,ground,first,second with historical2021 display zones; no claim of current hanging.",
+      "stopBindingReview": "All five original stops bind entry or documented floor-scale collection groups, not individual work wall positions.",
+      "verticalConnectionReview": "No undocumented paired landing or continuous route is added.",
+      "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+      "sourceDigest": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "sourceEvidence": "sources/floorplans/evidence/museum-ludwig.json",
+      "comparedFloors": [
+        "basement",
+        "ground",
+        "first",
+        "second"
+      ],
+      "displayReview": "All four source-grey surface themes use the existing gold display tone for readable dark-background contrast; geometry and source classifications are unchanged."
+    },
+    "notre-dame-towers": {
+      "geometryReview": "Compared the1856 lower and upper south-belfry timber plans. Keeps actual beam lattice, framing gaps and printed structural detail; source ink is not replaced by a generic square tower floor.",
+      "floorCoverageReview": "Two historical south-belfry framing levels only, not the reopened full visitor circuit, north tower or galleries.",
+      "stopBindingReview": "Stops2/4 locate the documented timber/bell-hanging zones; reception,Chimeras and present stairs remain unlocated.",
+      "verticalConnectionReview": "No historical-to-current visitor stair correspondence can be established from these framing plans.",
+      "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+      "sourceDigest": "9f1ae751ae81ac962144d94abdf29f482fa66fa9b371898b5c0e23e24afc42e9",
+      "sourceEvidence": "sources/floorplans/evidence/notre-dame-towers.json",
+      "comparedFloors": [
+        "south-belfry-lower",
+        "south-belfry-upper"
+      ]
+    },
+    "opera-pisa": {
+      "geometryReview": "Compared the architect's ground-floor project drawing: actual building wings, cloister and courtyard void are retained with the visible partitions, not a simplified museum rectangle.",
+      "floorCoverageReview": "Ground project level only; upper rooms, present exhibition partitions and vertical landings are missing.",
+      "stopBindingReview": "Only cloister stop4 has a documented location; current individual sculpture/tower-component positions remain unlocated.",
+      "verticalConnectionReview": "No projected upper layer or guessed connecting stair.",
+      "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
+      "sourceDigest": "ecaaab6aa30ec9f8f2581a847b181831805ec4ebeed263eb3a0527ad8303b078",
+      "sourceEvidence": "sources/floorplans/evidence/opera-pisa.json",
+      "comparedFloors": [
+        "ground"
+      ]
+    },
+    "palau-musica": {
+      "geometryReview": "Compared all four historical plan drawings. Retains actual auditorium curves, foyer/service boundaries, stage geometry and upper seating with twenty-one source faces and twenty-three places. The detached upper11 detail is not moved into an invented main-building position.",
+      "floorCoverageReview": "Four historical building plans, excluding later additions and current visitor-route changes.",
+      "stopBindingReview": "Stops2/3/4 locate music hall,stage end and upper seats; unresolved present entrance areas stay textual.",
+      "verticalConnectionReview": "No inferred link between separately published floor fragments.",
+      "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+      "sourceDigest": "7b6ea6df723783a7b4e66fc6b3975f3e1154d066f09f4ceb02eafbb4e65431e3",
+      "sourceEvidence": "sources/floorplans/evidence/palau-musica.json",
+      "comparedFloors": [
+        "plan-I",
+        "plan-II",
+        "plan-III",
+        "plan-IV"
+      ]
+    },
+    "pantheon": {
+      "geometryReview": "Compared the complete specialist plan and legend. Thick circular cella masonry, angled chapels, apse,niches,bronze portal and three portico bays follow native outlines. All eighteen identifiers retain their names. Eight connected white-source selection regions preserve chapel angles without replacing the original with an ideal circle.",
+      "floorCoverageReview": "Single visitor church floor; the exterior square and maintenance levels are not included.",
+      "stopBindingReview": "Interior stops1-4 bind portico/portal,cella,Raphael chapel and sanctuary. Exterior stop0 remains outside the plan.",
+      "verticalConnectionReview": "No unprovided upper floor or stair link.",
+      "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+      "sourceDigest": "3efb12cd15f6ad7228ef8e60987e6428a0572247ab44623d79d6c5dafdc79f39",
+      "sourceEvidence": "sources/floorplans/evidence/pantheon.json",
+      "comparedFloors": [
+        "L0"
+      ]
+    },
+    "picasso-barcelona": {
+      "geometryReview": "Compared both official palace/gallery plans. Retains all forty-seven places, rooms1-16,B1,B2 and named services. Twenty-four source regions preserve real palace courtyards, partitions and shared gallery groups instead of assigning one polygon per artwork.",
+      "floorCoverageReview": "Published ground service/courtyard and first collection/exhibition levels.",
+      "stopBindingReview": "All six original stops bind their documented gallery groups. Blue-period and1917 works share8-11; ceramics remainB1/B2, not an invented separate floor.",
+      "verticalConnectionReview": "Three named palace stairs and two exhibition/collection elevators use paired source landings.",
+      "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+      "sourceDigest": "14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+      "sourceEvidence": "sources/floorplans/evidence/picasso-barcelona.json",
+      "comparedFloors": [
+        "L0",
+        "L1"
+      ]
+    },
+    "pisa-baptistery": {
+      "geometryReview": "Compared HBIM ground plan and the same authors' first-gallery VR plan. Retains the actual twelve-sided ground outline,font,pulpit and upper masonry/real twelve supports. Upper radial arch lines remain flat, not wedge-room walls. A-A section annotation is removed without reconstructing occluded lines.",
+      "floorCoverageReview": "Ground and women's gallery only; dome maintenance plan is a different level and excluded. No invented annular slab closes an open source region.",
+      "stopBindingReview": "All four original stops locate colonnade,font,pulpit and upper gallery at documented zone precision.",
+      "verticalConnectionReview": "Texts confirm two spiral stairs, but paired locations are absent from the plans; no invented link.",
+      "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+      "sourceDigest": "9d5592dc069af93f472abaa5dcc10ef5bd58bbd86aca7a8ca1d64e8e8df26182",
+      "sourceEvidence": "sources/floorplans/evidence/pisa-baptistery.json",
+      "comparedFloors": [
+        "ground",
+        "upper"
+      ]
+    },
+    "pisa-cathedral": {
+      "geometryReview": "Compared the authoritative1817 ground drawing: long nave column rows, transept arms, central crossing, lateral aisles and apse preserve native proportions and all visible structural detail.",
+      "floorCoverageReview": "Historic ground only, not current furnishings, crypt,upper galleries,roof or service areas.",
+      "stopBindingReview": "Nave and apse stops1/3 locate reliably. Facade,San Ranieri door and later reassembled pulpit are not given guessed positions.",
+      "verticalConnectionReview": "No unsupported upper floor or connection.",
+      "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+      "sourceDigest": "0fc8030cb05253e78ff45c09f67ef7c183c6330fb7d53aa2361107c9c1c301f4",
+      "sourceEvidence": "sources/floorplans/evidence/pisa-cathedral.json",
+      "comparedFloors": [
+        "ground"
+      ]
+    },
+    "pitti": {
+      "geometryReview": "Compared ground,mezzanine,first and second published diagrams. Preserves all available numbered treasure rooms and Palatine/royal suite divisions, with sixty-three places and six supported region selections. Second floor remains a collection-zone outline, not falsely detailed rooms. Closure notices do not delete treasure-room geometry.",
+      "floorCoverageReview": "Four source diagrams of unequal detail and independent scale. Second-floor individual-room layout remains missing.",
+      "stopBindingReview": "Stops1-4 bind Palatine,royal apartments,modern art and treasure/fashion zones at their documented precision; exterior arrival is separate.",
+      "verticalConnectionReview": "No paired stairs/elevators established across these independently scaled sources.",
+      "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+      "sourceDigest": "48ffb473f8c1ad772e3873c9011de35e2426901b27c13e58f813c48c991ef244",
+      "sourceEvidence": "sources/floorplans/evidence/pitti.json",
+      "comparedFloors": [
+        "L0",
+        "MZ",
+        "L1",
+        "L2"
+      ]
+    },
+    "sagrada-familia": {
+      "geometryReview": "Compared the main published plan and underground church drawing. Retains main column grid,actual nave/apse geometry,planned areas and all repeated source identifiers. Crypt chapels and circular supports remain distinct; source planning elements are not claimed to be finished current fabric.",
+      "floorCoverageReview": "Main planning level and crypt only. Passion-tower visitor floors remain missing.",
+      "stopBindingReview": "Stops0/1/2/4 bind published main-level locations2/11/5/3. The ascent is not put into the crypt.",
+      "verticalConnectionReview": "Crypt access is distinct from visitor tower access; no source-backed tower landing pairs.",
+      "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+      "sourceDigest": "56d0ee92ae7c1ca2bb3760dbc4f6c8e3810b83a56a408ee81acae8c2f7686da7",
+      "sourceEvidence": "sources/floorplans/evidence/sagrada-familia.json",
+      "comparedFloors": [
+        "main",
+        "crypt"
+      ]
+    },
+    "santa-maria-grazie": {
+      "geometryReview": "Compared Pica's1937 survey and legend. All thirteen printed numbers,twenty-one locations and sixteen source-connected regions retain church aisles,chapels,Tribune,apse and neighboring historical rooms. Vault lines/dimensions stay flat. Temporary semantic cuts are not exported as new walls.",
+      "floorCoverageReview": "Historical church principal plan, not post-war arrangement or a new library floor from legend12.",
+      "stopBindingReview": "Stops0/1/3/4 bind entry,2,3 and Tribune apse at area precision. Stops2/5 lack exact current locations.",
+      "verticalConnectionReview": "No upper library or undocumented connection is reconstructed.",
+      "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+      "sourceDigest": "9ffc21b257440d523715954e7bb830cc19baee7e81981c3870540912b8e6966a",
+      "sourceEvidence": "sources/floorplans/evidence/santa-maria-grazie.json",
+      "comparedFloors": [
+        "church"
+      ]
+    },
+    "santa-maria-mar": {
+      "geometryReview": "Compared the academic orthographic composite plan: west entry,nave piers,side chapels and ambulatory/apse are retained. All four descriptive zones correspond to visible building areas; vault/detail lines do not become extra partitions.",
+      "floorCoverageReview": "Main church only; crypt,museum,towers and multi-level roof have no reviewed plans. No room numbering exists in this source.",
+      "stopBindingReview": "Stops0-3 locate entrance,nave,side chapels and apse; facade reliefs and unspecified doors remain unlocated.",
+      "verticalConnectionReview": "No unsupported tower/crypt/roof connection.",
+      "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+      "sourceDigest": "d4056b802a37ee8e096393b931738c856a85425faf7a54e3b98ff2a20188c131",
+      "sourceEvidence": "sources/floorplans/evidence/santa-maria-mar.json",
+      "comparedFloors": [
+        "main-level"
+      ]
+    },
+    "sforza": {
+      "geometryReview": "Compared the Polimi2024 Piazza d'Armi-level raster in unrotated native720x480 page coordinates. Corrected all four anchors against its printed courtyard names and actual right-hand Filarete gate gap. Retains thick black core/rooms/towers and flat small linework; the red study circle and pale demolished Ghirlanda are excluded. Official2025 upper axonometric blocks were rejected rather than cloned as floor plates.",
+      "floorCoverageReview": "Principal courtyard-level historical fabric only. Upper museum galleries remain unavailable orthographic geometry.",
+      "stopBindingReview": "Stops0-2 bind Filarete doorway,piazza d'armi,Rocchetta and corte ducale. Collection stops3-5 remain text without false floor assignments.",
+      "verticalConnectionReview": "No reliable independent upper plans or paired landings; no fabricated connection.",
+      "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+      "sourceDigest": "e6cbe669780d75ba15c3a950f9a35345c0234490f08076cff4d7285a09247808",
+      "sourceEvidence": "sources/floorplans/evidence/sforza.json",
+      "comparedFloors": [
+        "ground"
+      ]
+    },
+    "st-mark-basilica": {
+      "geometryReview": "Compared the published main plan and full letter/number legend. All forty-seven positioned identifiers,chapels,narthex,treasury and genuine Byzantine wall/pier fabric remain. Source stippled masonry is classified separately from black outlines,stairs and dome projections, which stay flat.",
+      "floorCoverageReview": "Published main church/narthex/chapel/treasury level only; museum/loggia upper plan is absent.",
+      "stopBindingReview": "Stops1/2/3 bind D,B,1,14 at source precision. Unprinted Peter's Door/Foresti Stair names do not receive inferred anchors.",
+      "verticalConnectionReview": "No unsupported upper museum connection.",
+      "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+      "sourceDigest": "3262fdff479ebc50a32a7c8982fc5880ea231ff8139d012a5be2ceb6674c383c",
+      "sourceEvidence": "sources/floorplans/evidence/st-mark-basilica.json",
+      "comparedFloors": [
+        "main"
+      ]
+    },
+    "st-mark-campanile": {
+      "geometryReview": "Compared all four levels on the municipality's1912 reconstruction engineering plate. Retains actual tower core,base Loggetta,ramp geometry,bell chamber and upper-service structure. No solid external shell conceals the source interiors.",
+      "floorCoverageReview": "Four1912 reconstruction levels, not a surveyed current visitor plan or ticket-access statement.",
+      "stopBindingReview": "Ground Loggetta stop0 locates precisely enough. Current visitor entry and directional observation-edge stops lack printed anchors and remain unlocated.",
+      "verticalConnectionReview": "Three historical ramp/stair segments are documented. The text mentions an elevator but supplies no current shaft/landing positions, so no elevator link is invented.",
+      "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+      "sourceDigest": "53e7180a82f4cb819bb1c489558699cbcec981c0eaa18f660675767996b03997",
+      "sourceEvidence": "sources/floorplans/evidence/st-mark-campanile.json",
+      "comparedFloors": [
+        "ground",
+        "ramp",
+        "bell-cell",
+        "upper-service"
+      ]
+    },
+    "st-peters-basilica": {
+      "geometryReview": "Compared church and grotto plans with their complete inventories. Retains156 positioned markers,including repeated79 and historical grotto positions; unpositioned82 remains unpositioned. Native masonry-density extraction and twenty-eight source selection regions preserve actual chapels,pier voids,nave and curved grotto spaces. Printed numbers are HTML labels,not extruded glyphs.",
+      "floorCoverageReview": "Specialist church and grotto plans with historical names,independent registration and no measured distances. Dome platforms/inner ring/lantern lack verified plans.",
+      "stopBindingReview": "All seven original stops retain doorway,works,sanctuary,grotto and dome-elevator-entry bindings. Elevator entry is not a substitute for the missing dome levels.",
+      "verticalConnectionReview": "No independent floor-diagram alignment or historical/current stair relationship is inferred.",
+      "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+      "sourceDigest": "6a1dc0f4506c0dc2364a80812d21e8713f1c57771905299fa2ba9849d811e429",
+      "sourceEvidence": "sources/floorplans/evidence/st-peters-basilica.json",
+      "comparedFloors": [
+        "basilica",
+        "grottoes"
+      ]
+    },
+    "uffizi": {
+      "geometryReview": "Compared all three official visitor-plan floors. Preserves109 identifiers and eighty-nine source gallery/service faces,actual U-shaped courtyard void,unequal galleries and north connections. A/B/C/D/E numbering stays on its actual floor; ground reception zones do not gain invented partitions.",
+      "floorCoverageReview": "Published ground reception plus both collection floors; Vasari corridor is a separate evidence-limited guide.",
+      "stopBindingReview": "All five original stops bind A4,A9,A35,A38,D19 at gallery precision,not individual work wall coordinates.",
+      "verticalConnectionReview": "Three documented Lanzi/Granducal stair segments use verified floor endpoints.",
+      "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
+      "sourceDigest": "160dc6ddcc85d25026f8218cb24e85636b953e8b87261d79c9a9ae88d944c3bb",
+      "sourceEvidence": "sources/floorplans/evidence/uffizi.json",
+      "comparedFloors": [
+        "L1",
+        "L2",
+        "L0"
+      ]
+    },
+    "vatican-museums": {
+      "geometryReview": "Compared all three official visitor-plan crops. Preserves96 positioned identifiers including59 services/repeated leader endpoints and twenty-two source-connected regions. Basement20/21 share one actual source region; upper6/7/8 remain a continuous gallery with no invented partitions. Unsupported enclosed-face claims for first18/upper first5 are rejected while exact endpoints stay. Lower-garden reference is not turned into a second-floor garden slab.",
+      "floorCoverageReview": "Three visitor diagrams with independent source registration,not surveyed construction plans. Service and collection numbers retain distinct semantics.",
+      "stopBindingReview": "All twelve original stops keep every source-backed entrance,collection,Pinacoteca,courtyard,exit/ramp binding,including repeated endpoints.",
+      "verticalConnectionReview": "Only two documented east/west first-to-second stair connections; accessibility topology alone is not used to invent geometry.",
+      "modelDigest": "4f11d473b5e9b7c8f8efefbe85201800e072af54e53f5ae50822e831d8ed8a75",
+      "sourceDigest": "a0c97704c9af1b096f9e9fa12061acd6998f112206af01c24b7cfda7dbf6c9ff",
+      "sourceEvidence": "sources/floorplans/evidence/vatican-museums.json",
+      "comparedFloors": [
+        "basement",
+        "first",
+        "second"
+      ]
+    }
+  }
+}

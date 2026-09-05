@@ -1,0 +1,317 @@
+{
+  "slug": "palau-musica",
+  "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared all four historical plan drawings. Retains actual auditorium curves, foyer/service boundaries, stage geometry and upper seating with twenty-one source faces and twenty-three places. The detached upper11 detail is not moved into an invented main-building position.",
+    "floorCoverageReview": "Four historical building plans, excluding later additions and current visitor-route changes.",
+    "stopBindingReview": "Stops2/3/4 locate music hall,stage end and upper seats; unresolved present entrance areas stay textual.",
+    "verticalConnectionReview": "No inferred link between separately published floor fragments.",
+    "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+    "sourceDigest": "7b6ea6df723783a7b4e66fc6b3975f3e1154d066f09f4ceb02eafbb4e65431e3",
+    "sourceEvidence": "sources/floorplans/evidence/palau-musica.json",
+    "comparedFloors": [
+      "plan-I",
+      "plan-II",
+      "plan-III",
+      "plan-IV"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:44:35.255Z",
+    "slug": "palau-musica",
+    "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+    "sourceDigest": "7b6ea6df723783a7b4e66fc6b3975f3e1154d066f09f4ceb02eafbb4e65431e3",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "plan-I",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-II",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-III",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-IV",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/palau-musica-1440-3d.png",
+          "work/map-review/release-final/palau-musica-1440-plan-I-2d.png",
+          "work/map-review/release-final/palau-musica-1440-plan-II-2d.png",
+          "work/map-review/release-final/palau-musica-1440-plan-III-2d.png",
+          "work/map-review/release-final/palau-musica-1440-plan-IV-2d.png",
+          "work/map-review/release-final/palau-musica-1440-plan-II-selection-2d.png",
+          "work/map-review/release-final/palau-musica-1440-plan-II-selection-3d.png",
+          "work/map-review/release-final/palau-musica-1440-plan-IV-selection-2d.png",
+          "work/map-review/release-final/palau-musica-1440-plan-IV-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 510,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 23,
+        "selectedSpaces": [
+          "plan-II-source-face-5",
+          "plan-II-source-face-6",
+          "plan-IV-source-face-5"
+        ],
+        "stopTargets": 3,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "plan-I",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-II",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-III",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-IV",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/palau-musica-1094-3d.png",
+          "work/map-review/release-final/palau-musica-1094-plan-I-2d.png",
+          "work/map-review/release-final/palau-musica-1094-plan-II-2d.png",
+          "work/map-review/release-final/palau-musica-1094-plan-III-2d.png",
+          "work/map-review/release-final/palau-musica-1094-plan-IV-2d.png",
+          "work/map-review/release-final/palau-musica-1094-plan-II-selection-2d.png",
+          "work/map-review/release-final/palau-musica-1094-plan-II-selection-3d.png",
+          "work/map-review/release-final/palau-musica-1094-plan-IV-selection-2d.png",
+          "work/map-review/release-final/palau-musica-1094-plan-IV-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 662,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 23,
+        "selectedSpaces": [
+          "plan-II-source-face-5",
+          "plan-II-source-face-6",
+          "plan-IV-source-face-5"
+        ],
+        "stopTargets": 3,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "plan-I",
+            "exactLabels": 6,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-II",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-III",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "plan-IV",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/palau-musica-390-3d.png",
+          "work/map-review/release-final/palau-musica-390-plan-I-2d.png",
+          "work/map-review/release-final/palau-musica-390-plan-II-2d.png",
+          "work/map-review/release-final/palau-musica-390-plan-III-2d.png",
+          "work/map-review/release-final/palau-musica-390-plan-IV-2d.png",
+          "work/map-review/release-final/palau-musica-390-plan-II-selection-2d.png",
+          "work/map-review/release-final/palau-musica-390-plan-II-selection-3d.png",
+          "work/map-review/release-final/palau-musica-390-plan-IV-selection-2d.png",
+          "work/map-review/release-final/palau-musica-390-plan-IV-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1381,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 23,
+        "selectedSpaces": [
+          "plan-II-source-face-5",
+          "plan-II-source-face-6",
+          "plan-IV-source-face-5"
+        ],
+        "stopTargets": 3,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "palau-musica",
+    "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "plan-I",
+      "plan-II",
+      "plan-III",
+      "plan-IV"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "palau-musica",
+    "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 3.4,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/palau-musica/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 103.49115559731776,
+      "screenshot": "work/map-review/guide-pages-final/_guides_palau-musica_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/palau-musica/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 120.18028918003223,
+      "screenshot": "work/map-review/guide-pages-final/_guides_palau-musica_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/palau-musica/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 154.81835445906262,
+      "screenshot": "work/map-review/guide-pages-final/_guides_palau-musica_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/palau-musica/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+    "passed": true
+  }
+}

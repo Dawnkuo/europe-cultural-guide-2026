@@ -1,0 +1,788 @@
+{
+  "source": "https://www.museum-ludwig.de/fileadmin/content/01_Programm/ML_Z08-Credit-400x234_lay_10.pdf",
+  "sha256": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+  "projection": {
+    "kind": "orthographic",
+    "pages": [
+      1
+    ],
+    "basis": "Page 1 prints four separate top-down public-floor diagrams with parallel page axes, rectilinear partitions, stair symbols, lift symbols, entrances and WC markers; none is a perspective view."
+  },
+  "transform": "translation only, equal x/y units; floor stacking is display-only",
+  "review": "Museum Ludwig official PROGRAMM PLAN / MAP 1/2 2021, page 1, last updated December 2020. All four grey floor diagrams were visually inspected at full rendered resolution. Compound grey fills preserve the published footprint and white partition voids. The thematic collection headings are a dated program snapshot and are not converted into exact room anchors or present-day artwork locations.",
+  "claims": [
+    {
+      "featureId": "basement-region-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourcePaths": [
+        "basement-path-47-surface"
+      ],
+      "classification": "Exact source-derived boundary faces; reviewed source doorway cuts affect selection only, never masonry. Theme-floor selections use original published surface compounds without invented room partitions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": []
+    },
+    {
+      "featureId": "basement-path-46-detail",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 46,
+      "classification": "Reviewed black stair pictogram retained as flat source detail.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "basement-path-47-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 47,
+      "classification": "Reviewed compound grey fill is the complete basement diagram; its white slots and grid lines remain voids rather than fabricated rooms.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "basement-raster-29-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 1,
+      "extractionInstance": 0,
+      "classification": "Reviewed lift pictogram occurrence retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "basement-raster-29-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 1,
+      "extractionInstance": 0,
+      "classification": "Reviewed lift pictogram occurrence retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "basement-raster-29-detail-2",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 1,
+      "extractionInstance": 0,
+      "classification": "Reviewed lift pictogram occurrence retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "basement-地下层当代艺术展区-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        184,
+        365
+      ],
+      "classification": "节目地图在地下层图形内印有当代艺术收藏的新陈列主题；锚点取该楼层公共展区的几何中心，不表示具体展厅。",
+      "precision": "published-floor-theme-centroid-not-room-specific"
+    },
+    {
+      "featureId": "basement-电梯-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        173.48,
+        336.38
+      ],
+      "classification": "来源PDF中电梯象形图 occurrence 1 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "basement-楼梯-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        153.78,
+        366.57
+      ],
+      "classification": "来源PDF中黑色楼梯象形图 path 46 的边界框中心。",
+      "precision": "vector-service-symbol-center"
+    },
+    {
+      "featureId": "ground-path-41-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 41,
+      "classification": "Reviewed grey compounds together form the published ground-floor diagram, including the lower entrance wing and the tall main footprint.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "ground-path-42-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 42,
+      "classification": "Reviewed grey compounds together form the published ground-floor diagram, including the lower entrance wing and the tall main footprint.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "ground-path-43-detail",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 43,
+      "classification": "Reviewed black stair pictogram retained as flat source detail.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "ground-raster-29-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed lower ground-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-29-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed lower ground-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-29-detail-2",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed lower ground-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-29-instance-1-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 4,
+      "extractionInstance": 1,
+      "classification": "Reviewed upper ground-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-29-instance-1-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 4,
+      "extractionInstance": 1,
+      "classification": "Reviewed upper ground-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-29-instance-1-detail-2",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 4,
+      "extractionInstance": 1,
+      "classification": "Reviewed upper ground-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-23-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 23,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed lower ground-floor WC pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-23-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 23,
+      "imageOccurrence": 0,
+      "extractionInstance": 0,
+      "classification": "Reviewed lower ground-floor WC pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-23-instance-1-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 23,
+      "imageOccurrence": 1,
+      "extractionInstance": 1,
+      "classification": "Reviewed upper ground-floor WC pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-raster-23-instance-1-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 23,
+      "imageOccurrence": 1,
+      "extractionInstance": 1,
+      "classification": "Reviewed upper ground-floor WC pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "ground-入口-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        500.17,
+        424.25
+      ],
+      "classification": "来源在一层东侧边界外印有EINGANG / ENTRANCE；锚点落在对应灰色楼层轮廓的开口边缘。",
+      "precision": "reviewed-entrance-edge-anchor-not-surveyed"
+    },
+    {
+      "featureId": "ground-楼梯-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        383.62,
+        366.57
+      ],
+      "classification": "来源PDF中黑色楼梯象形图 path 43 的边界框中心。",
+      "precision": "vector-service-symbol-center"
+    },
+    {
+      "featureId": "ground-电梯-南-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        407.48,
+        336.38
+      ],
+      "classification": "来源PDF中电梯象形图 occurrence 0 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "ground-电梯-北-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        488.27,
+        152.98
+      ],
+      "classification": "来源PDF中电梯象形图 occurrence 4 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "ground-卫生间-南-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        449.29,
+        438.44
+      ],
+      "classification": "来源PDF中WC象形图 occurrence 0 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "ground-卫生间-北-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        511.94,
+        90.14
+      ],
+      "classification": "来源PDF中WC象形图 occurrence 1 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "first-region-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourcePaths": [
+        "first-path-48-surface",
+        "first-path-50-surface",
+        "first-path-51-surface",
+        "first-path-52-surface",
+        "first-path-53-surface",
+        "first-path-54-surface",
+        "first-path-55-surface",
+        "first-path-56-surface",
+        "first-path-57-surface"
+      ],
+      "classification": "Exact source-derived boundary faces; reviewed source doorway cuts affect selection only, never masonry. Theme-floor selections use original published surface compounds without invented room partitions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": []
+    },
+    {
+      "featureId": "first-path-48-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 48,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-49-detail",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 49,
+      "classification": "Reviewed black stair pictogram retained as flat source detail.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-50-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 50,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-51-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 51,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-52-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 52,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-53-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 53,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-54-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 54,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-55-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 55,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-56-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 56,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-path-57-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 57,
+      "classification": "Reviewed grey compounds are the complete first-upper-floor diagram and its connected lower blocks as published.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "first-raster-29-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 2,
+      "extractionInstance": 0,
+      "classification": "Reviewed lower second-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "first-raster-29-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 2,
+      "extractionInstance": 0,
+      "classification": "Reviewed lower second-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "first-raster-29-detail-2",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 2,
+      "extractionInstance": 0,
+      "classification": "Reviewed lower second-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "first-raster-29-instance-1-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 5,
+      "extractionInstance": 1,
+      "classification": "Reviewed upper second-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "first-raster-29-instance-1-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 5,
+      "extractionInstance": 1,
+      "classification": "Reviewed upper second-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "first-raster-29-instance-1-detail-2",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 5,
+      "extractionInstance": 1,
+      "classification": "Reviewed upper second-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "first-raster-23-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 23,
+      "imageOccurrence": 2,
+      "extractionInstance": 0,
+      "classification": "Reviewed second-floor WC pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "first-raster-23-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 23,
+      "imageOccurrence": 2,
+      "extractionInstance": 0,
+      "classification": "Reviewed second-floor WC pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "first-一层藏品主题区-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        748,
+        250
+      ],
+      "classification": "节目地图把波普艺术、激浪派与观念艺术列为该楼层主题；锚点位于原图灰色展区内部，不表示具体展厅或作品位置。旧坐标落在图形外的文字空白处，已移除。",
+      "precision": "published-floor-theme-area-not-room-specific"
+    },
+    {
+      "featureId": "first-楼梯-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        618.11,
+        366.57
+      ],
+      "classification": "来源PDF中黑色楼梯象形图 path 49 的边界框中心。",
+      "precision": "vector-service-symbol-center"
+    },
+    {
+      "featureId": "first-电梯-南-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        640.91,
+        336.38
+      ],
+      "classification": "来源PDF中电梯象形图 occurrence 2 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "first-电梯-北-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        711.28,
+        152.98
+      ],
+      "classification": "来源PDF中电梯象形图 occurrence 5 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "first-卫生间-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        714.33,
+        396.85
+      ],
+      "classification": "来源PDF中WC象形图 occurrence 2 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "second-region-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourcePaths": [
+        "second-path-44-surface"
+      ],
+      "classification": "Exact source-derived boundary faces; reviewed source doorway cuts affect selection only, never masonry. Theme-floor selections use original published surface compounds without invented room partitions.",
+      "precision": "source-boundary-selection-only-not-building-geometry",
+      "selectionOnly": true,
+      "selectionCuts": []
+    },
+    {
+      "featureId": "second-path-44-surface",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 44,
+      "classification": "Reviewed compound grey fill is the complete second-upper-floor diagram with its published internal voids.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "second-path-45-detail",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "path": 45,
+      "classification": "Reviewed black stair pictogram retained as flat source detail.",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "second-raster-29-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 3,
+      "extractionInstance": 0,
+      "classification": "Reviewed third-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "second-raster-29-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 3,
+      "extractionInstance": 0,
+      "classification": "Reviewed third-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "second-raster-29-detail-2",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 29,
+      "imageOccurrence": 3,
+      "extractionInstance": 0,
+      "classification": "Reviewed third-floor lift pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "second-raster-23-detail-0",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 23,
+      "imageOccurrence": 3,
+      "extractionInstance": 0,
+      "classification": "Reviewed third-floor WC pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "second-raster-23-detail-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "imageXref": 23,
+      "imageOccurrence": 3,
+      "extractionInstance": 0,
+      "classification": "Reviewed third-floor WC pictogram retained at its exact PDF placement as flat detail.",
+      "traceParameters": {
+        "maxChannel": 200,
+        "tolerancePixels": 0.1,
+        "allInkIsDetail": true
+      },
+      "precision": "source-raster-proportional-not-surveyed"
+    },
+    {
+      "featureId": "second-二层藏品主题区-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        940,
+        225
+      ],
+      "classification": "节目地图把表现主义、豪布里希收藏、俄罗斯先锋派、摄影与毕加索列为该楼层主题；锚点位于原图灰色展区内部，不表示具体展厅或作品位置。旧坐标落在展区之间的白色空隙，已移除。",
+      "precision": "published-floor-theme-area-not-room-specific"
+    },
+    {
+      "featureId": "second-楼梯-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        852.82,
+        375.18
+      ],
+      "classification": "来源PDF中黑色楼梯象形图 path 45 的边界框中心。",
+      "precision": "vector-service-symbol-center"
+    },
+    {
+      "featureId": "second-电梯-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        877.78,
+        336.14
+      ],
+      "classification": "来源PDF中电梯象形图 occurrence 3 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    },
+    {
+      "featureId": "second-卫生间-1",
+      "sourceHash": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8",
+      "page": 1,
+      "sourceAnchor": [
+        899.72,
+        391.47
+      ],
+      "classification": "来源PDF中WC象形图 occurrence 3 的边界框中心。",
+      "precision": "embedded-service-symbol-center"
+    }
+  ],
+  "coverage": {
+    "floors": 4,
+    "labels": 18,
+    "features": 43
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "slug": "casa-batllo",
+  "status": "evidence-delta-no-geometry",
+  "reviewedAt": "2026-09-05",
+  "scope": "Current third-floor room semantics and attic/roof research performed after the v3 three-floor historical model was frozen.",
+  "publicLimitations": [
+    "官网列出三层 12 个房间及各自面积，但没有平面、相邻关系或相对位置；这些房间不进入地图地点、选择面或路线绑定。",
+    "新核验的阁楼与屋顶资料只有文字、照片和纵剖面，没有完整正投影；阁楼和屋顶仍不建模。",
+    "本增量不包含模型文件，也不改变已接入的三层历史几何。"
+  ],
+  "geometry": {
+    "changed": false,
+    "modelIncluded": false,
+    "scratchModelBaselineSha256": "a5ce1f24aab2ff793afa8c8a02dc82c256be0d443fa37231c0d1ae73be512c5d",
+    "reason": "None of the newly reviewed sources supplies an orthographic upper-floor boundary or room layout."
+  },
+  "officialThirdFloorInventory": {
+    "source": "https://privaterooms.casabatllo.es/",
+    "spatialStatus": "unlocated",
+    "rooms": [
+      {"name": "El Menjador", "areaSqm": 25},
+      {"name": "El Saló Gaudí", "areaSqm": 47},
+      {"name": "La Biblioteca", "areaSqm": 18},
+      {"name": "El Bar Clandestí", "areaSqm": 14},
+      {"name": "El Vestidor", "areaSqm": 9},
+      {"name": "La Suite", "areaSqm": 35},
+      {"name": "La Sala del Te", "areaSqm": 21},
+      {"name": "La Sala Batlló", "areaSqm": 24},
+      {"name": "L'Estudi", "areaSqm": 18},
+      {"name": "La Sala de Jocs", "areaSqm": 9},
+      {"name": "La Sala de Convidats", "areaSqm": 12},
+      {"name": "La Cuina", "areaSqm": 11}
+    ]
+  },
+  "reviewedSources": [
+    {
+      "url": "https://privaterooms.casabatllo.es/",
+      "authority": "official",
+      "result": "Twelve current third-floor room names and areas, but no plan or relative positions."
+    },
+    {
+      "url": "https://privaterooms.casabatllo.es/la-historia/",
+      "authority": "official",
+      "result": "Dated third-floor use and restoration history, but no reconstructable plan."
+    },
+    {
+      "url": "https://privaterooms.casabatllo.es/wp-content/uploads/2026/05/4-images.png",
+      "authority": "official",
+      "result": "Native-size visual inspection shows a four-photo collage, not a plan.",
+      "file": "investigated/casa-batllo-private-third-floor-4-images.png",
+      "sha256": "b8cb5d3b5ddcf038f8c6071cc9e3aaed2bbe5d9e7a68e6de5e3b8733d3ee08bb"
+    },
+    {
+      "url": "https://events.casabatllo.es/ca/golfes/",
+      "authority": "official",
+      "result": "Attic function, joint attic/roof offer and 240 square metre event area; no top-down plan."
+    },
+    {
+      "url": "https://www.casabatllo.es/wp-content/uploads/2026/07/Web_Events-Planol-CAT-2.jpg",
+      "authority": "official",
+      "result": "Native-size visual inspection confirms a labelled longitudinal section, not an orthographic floor plan; supports vertical level semantics only.",
+      "file": "investigated/casa-batllo-official-events-planol-cat-2.jpg",
+      "sha256": "2c0c1d0efddcf588dcd60eddbbef325e403aa7bc5a8fb7582c9bd8acfa5100bb"
+    },
+    {
+      "url": "https://upcommons.upc.edu/server/api/core/bitstreams/c81250f4-d191-462e-9103-e095df25499b/content",
+      "authority": "academic",
+      "result": "Full 2024 UPC thesis visually reviewed. Pages 76-77 describe roof organization and show a photograph and longitudinal section, not an orthographic plan.",
+      "file": "investigated/casa-batllo-la-coberta-com-a-paisatge.pdf",
+      "sha256": "d2b24aaaa8a2d2af00a798dc12da318d339b2e29d55d269c5bc3234a4bd26359",
+      "reviewPages": [38, 39, 40]
+    },
+    {
+      "url": "https://www.triangle.cat/pdfs/bat1-a.pdf",
+      "authority": "published-monograph-preview",
+      "result": "Attic/roof photographs and main-floor phase overlays only; no upper orthographic plan.",
+      "file": "investigated/casa-batllo-triangle-bat1-preview.pdf",
+      "sha256": "a85df0f57f0d5ed141e550e89f29e5d222d656dbfa6c4550d3bd9a4d9ba57bab",
+      "reviewPages": [6, 12]
+    },
+    {
+      "url": "https://www.triangle.cat/pdfs/bat4-a.pdf",
+      "authority": "published-monograph-preview",
+      "result": "Contents identify attic and flat-roof chapters, but accessible pages provide no complete upper orthographic plan.",
+      "file": "investigated/casa-batllo-triangle-bat4-preview.pdf",
+      "sha256": "bde90a0b460d6872bd76ab760b6e0ea69bd8c2a7f6195838bd2f5c558d8a71b9",
+      "reviewPages": [1, 11]
+    },
+    {
+      "url": "https://cgscholar.com/publishers/articles/access-to-world-heritage-sites",
+      "authority": "peer-reviewed-publisher",
+      "result": "2010 route-diagram paper is paywalled; publisher download denied, ResearchGate copy blocked and OpenAlex had no open copy. Indexed Image 10 is route-oriented, not a complete current survey."
+    }
+  ],
+  "unresolved": [
+    "Complete orthographic attic plan for the current visit",
+    "Complete orthographic roof plan for the current visit",
+    "Current fourth- and fifth-floor circulation and its connection to the attic",
+    "Boundaries and relative positions for the 12 named rooms in the current restored third-floor residence",
+    "Current second-floor temporary-exhibition layout",
+    "Basement Gaudi Cube / Gaudi Dome visitor layout"
+  ]
+}

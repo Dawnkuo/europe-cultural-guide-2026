@@ -1,0 +1,132 @@
+{
+  "scope": "Current source model runtime acceptance; physical-device performance remains unmeasured",
+  "reports": {
+    "browser": {
+      "target": "http://localhost:55838",
+      "timestamp": "2026-09-05T03:21:42.662Z",
+      "slug": "last-supper",
+      "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+      "sourceDigest": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "viewports": [
+        {
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "floors": [
+            {
+              "id": "L0",
+              "exactLabels": 12,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/browser/last-supper-1440-3d.png",
+            "work/map-review/browser/last-supper-1440-L0-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 625,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        },
+        {
+          "viewport": {
+            "width": 1094,
+            "height": 768
+          },
+          "floors": [
+            {
+              "id": "L0",
+              "exactLabels": 12,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/browser/last-supper-1094-3d.png",
+            "work/map-review/browser/last-supper-1094-L0-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 840,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "floors": [
+            {
+              "id": "L0",
+              "exactLabels": 12,
+              "minMaxZoom": true,
+              "viewRoundTrip": true,
+              "scrollEdges": {
+                "x": true,
+                "y": true
+              }
+            }
+          ],
+          "screenshots": [
+            "work/map-review/browser/last-supper-390-3d.png",
+            "work/map-review/browser/last-supper-390-L0-2d.png"
+          ],
+          "errors": [],
+          "gpuSamples": 518,
+          "keyboard": true,
+          "interruptedMouseDrag": true,
+          "passed": true
+        }
+      ]
+    },
+    "touch": {
+      "slug": "last-supper",
+      "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+      "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+      "errors": [],
+      "drag": true,
+      "pinch": true,
+      "cancellationRecovery": true,
+      "floorTaps": [
+        "L0"
+      ],
+      "passed": true
+    },
+    "performance": {
+      "slug": "last-supper",
+      "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+      "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+      "frames": 134,
+      "frameP50Ms": 16.699999999999818,
+      "frameP95Ms": 16.700000000000728,
+      "renderP95Ms": 4.4,
+      "contexts": {
+        "created": 7,
+        "lost": 6,
+        "live": 1
+      },
+      "errors": [],
+      "emulated30Fps": true
+    },
+    "offline": {
+      "revision": "c0359bf4d16aa96018fc",
+      "route": "/guides/last-supper/",
+      "hasMap": true,
+      "errors": [],
+      "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+      "passed": true
+    }
+  }
+}

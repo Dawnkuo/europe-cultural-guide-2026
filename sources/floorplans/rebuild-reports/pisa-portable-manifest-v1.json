@@ -1,0 +1,323 @@
+{
+  "group": "pisa",
+  "status": "portable-rebuild-validated",
+  "coverage": {
+    "venues": 5,
+    "routeStops": 23,
+    "bound": 14,
+    "unresolved": 9,
+    "modelFloorsOrSourcePlanGroups": 10,
+    "places": 34,
+    "features": 29542
+  },
+  "towerCoverageSemantics": "five source-plan groups, not eight independent floor plates",
+  "commands": {
+    "all": "python scripts/rebuild-pisa-portable.py all",
+    "deriveOnly": "python scripts/rebuild-pisa-portable.py derive",
+    "buildOnly": "python scripts/rebuild-pisa-portable.py build",
+    "validateOnly": "python scripts/rebuild-pisa-portable.py validate"
+  },
+  "dependencies": [
+    "PyMuPDF",
+    "Pillow",
+    "NumPy",
+    "OpenCV",
+    "Shapely"
+  ],
+  "originalInputs": [
+    {
+      "file": "sources/floorplans/camposanto-unifi-survey.pdf",
+      "sha256": "db701a2dee2ff52725e133fa4ea393c143fa34381de7987780b487e7f664df13",
+      "bytes": 12111319
+    },
+    {
+      "file": "sources/floorplans/opapisa-tower-caa-2025.pdf",
+      "sha256": "1bb8c25396700e8c8daa3bc89c652065d26ad8ae9e6370af41dd17cf553ded21",
+      "bytes": 1653280
+    },
+    {
+      "file": "sources/floorplans/opera-pisa-architect-project.pdf",
+      "sha256": "f7bfc501ea03aa032bb20168c31d20a365509ae7cd45f4bb39872af0efe6080d",
+      "bytes": 13330829
+    },
+    {
+      "file": "sources/floorplans/pisa-baptistery-hbim-2024.pdf",
+      "sha256": "8f6ff7b5a9263107646d3079bae336d39f1dbd7be95d46e0a4fb85bf18ffdb82",
+      "bytes": 1371852
+    },
+    {
+      "file": "sources/floorplans/pisa-baptistery-hbim-figure6.png",
+      "sha256": "6a95919009578790d0640aa0b22eb848340adc6dbc39dd17812aff29b6b9e91a",
+      "bytes": 2535741
+    },
+    {
+      "file": "sources/floorplans/pisa-baptistery-vr-first-floor.png",
+      "sha256": "b08ccd0c7b6388b351f6b416fc35bde1333821ade39d0f31621ef2ba5fde4092",
+      "bytes": 26254
+    },
+    {
+      "file": "sources/floorplans/soane-pisa-cathedral-plan-high.jpg",
+      "sha256": "15644619dfad71de232a654c999045c2731cb027c20235b06ea19173cd6d1c3a",
+      "bytes": 65556
+    },
+    {
+      "file": "sources/floorplans/tower-goodyear-1069.jpg",
+      "sha256": "73b5adfd52398d447c65b4d6dc7ed6d42db40e07f271ee5b52fb9ea9e23b997e",
+      "bytes": 911786
+    },
+    {
+      "file": "sources/floorplans/tower-goodyear-1070.jpg",
+      "sha256": "b8de1b54a99b36656cf4929e3e7a1c8d67a7d9d4f3f902b4b9e72e0b8f796291",
+      "bytes": 951068
+    },
+    {
+      "file": "sources/floorplans/tower-goodyear-1071.jpg",
+      "sha256": "acd3c1475c58915201b95eb9eb6e19fef86645c2761e9a399b1fe240a0819aa6",
+      "bytes": 927866
+    },
+    {
+      "file": "sources/floorplans/tower-goodyear-1073.jpg",
+      "sha256": "5066b4d2ec38a1f26789f21fbc1280fe0079e8cc443570cd9c15a6b2853a93a0",
+      "bytes": 822399
+    }
+  ],
+  "derivedSources": [
+    {
+      "file": "sources/floorplans/derived/base-source-derivation-manifest.json",
+      "sha256": "9392b723e15363b30a947b0228550e2e0c8704d8cbba686a646a2aa824662389",
+      "bytes": 4145
+    },
+    {
+      "file": "sources/floorplans/derived/camposanto-ground-plan.pdf",
+      "sha256": "f436726ee222f56afdca1660e4a730afbc0ad8895e0f87aec9d12d54ddb987ba",
+      "bytes": 131704
+    },
+    {
+      "file": "sources/floorplans/derived/leaning-tower-base-plan.pdf",
+      "sha256": "c3259fd7124408e8c33f9cc7664552db65f1ac5c547c6ab3a82a4881093891e7",
+      "bytes": 27307
+    },
+    {
+      "file": "sources/floorplans/derived/leaning-tower-goodyear-entry-first-source-pixels.pdf",
+      "sha256": "49465336933d572a8c1fa8424a84768d4cbb4a9308f306d3b8cb2737a5fff435",
+      "bytes": 34340
+    },
+    {
+      "file": "sources/floorplans/derived/leaning-tower-goodyear-galleries-1-3-source-pixels.pdf",
+      "sha256": "05963c729dac961271e7fc15b40470d60ed02652c00cef6defab86dc6628e543",
+      "bytes": 34326
+    },
+    {
+      "file": "sources/floorplans/derived/leaning-tower-goodyear-galleries-4-7-v4.pdf",
+      "sha256": "edd18ec04ca28fe8ed4500aadf9afd057a9cafb31f2be62ad1d29dddeb80e013",
+      "bytes": 38341
+    },
+    {
+      "file": "sources/floorplans/derived/leaning-tower-goodyear-upper-source-pixels.pdf",
+      "sha256": "657e340d35dbdc7fb75a972ee3ceb2f77aa20fe1c16087c7d57401fcbc54d797",
+      "bytes": 43683
+    },
+    {
+      "file": "sources/floorplans/derived/opera-pisa-ground-plan.pdf",
+      "sha256": "1504869cc6d38e2eebff3c2c8556bc2eeb5b695b776fbe206755867b5c30f44b",
+      "bytes": 47092
+    },
+    {
+      "file": "sources/floorplans/derived/pisa-baptistery-first-floor-source-pixels-v2.pdf",
+      "sha256": "8a5844cf630c808c4edebfad4f0e4e8c88fcf90c87aede37d87a58496e6f7c84",
+      "bytes": 15980
+    },
+    {
+      "file": "sources/floorplans/derived/pisa-baptistery-ground-plan.pdf",
+      "sha256": "7029712a259f51f4e7a83f1e7c532d00b4c1bc08eeaab37910bf5c4cf7ade686",
+      "bytes": 39733
+    },
+    {
+      "file": "sources/floorplans/derived/pisa-baptistery-hbim-figure6.pdf",
+      "sha256": "f6fb5ceac3c01f7158d8129dec1f416ab78794f0151ed2aea0032eb3f959b414",
+      "bytes": 4135879
+    },
+    {
+      "file": "sources/floorplans/derived/pisa-cathedral-ground-plan.pdf",
+      "sha256": "7425e6ba932ddb2ce17f13d409b443ec34098d7eca2393862b7285cd52cea27f",
+      "bytes": 8849
+    },
+    {
+      "file": "sources/floorplans/derived/pisa-cathedral-soane-sheet.pdf",
+      "sha256": "9001e1e16c93d60c471033f2156268dc11d00804a0018834c9c7ae347631a987",
+      "bytes": 68789
+    }
+  ],
+  "configs": [
+    {
+      "file": "sources/floorplans/venues/camposanto.json",
+      "sha256": "49495a733f3aae07d9a5477a64e85788e8cc3632342b5add379e9c74517bbca8",
+      "bytes": 6150
+    },
+    {
+      "file": "sources/floorplans/venues/leaning-tower.json",
+      "sha256": "c90221bed5f1f2252d6d6c2a80f55a390d9972e776c712db3df500ddbc621574",
+      "bytes": 18013
+    },
+    {
+      "file": "sources/floorplans/venues/opera-pisa.json",
+      "sha256": "e0ea22501996be1f382c4f3611c09f8295363a54980e864c4fb5efc38c029d12",
+      "bytes": 3531
+    },
+    {
+      "file": "sources/floorplans/venues/pisa-baptistery.json",
+      "sha256": "be5e71e3e220ae10e65b285b7e3cbc23d321af55335ea00d4130a8b8da40dfc3",
+      "bytes": 7334
+    },
+    {
+      "file": "sources/floorplans/venues/pisa-cathedral.json",
+      "sha256": "fcce202ade13794690a7daa9fe0270d8d38124b969f33dfe39f303f91ceea275",
+      "bytes": 4314
+    }
+  ],
+  "models": [
+    {
+      "file": "app/data/architectural-plans/camposanto.json",
+      "sha256": "ab7e822458b7bcb8df9aa135f2dc43c0be93591ba31a45c7c4b264f3b2b70009",
+      "bytes": 2658669
+    },
+    {
+      "file": "app/data/architectural-plans/leaning-tower.json",
+      "sha256": "06c452fe66229ac0096adc3e9aed75d527c02ae5f0a09bb9d8a2b278f16bed27",
+      "bytes": 5395488
+    },
+    {
+      "file": "app/data/architectural-plans/opera-pisa.json",
+      "sha256": "7fa446b2457c0962434d684e1fa056e1b306e077d82a8e0f8d8daf137a2ad523",
+      "bytes": 456506
+    },
+    {
+      "file": "app/data/architectural-plans/pisa-baptistery.json",
+      "sha256": "2956082fa16499a25f1c77723f936f26799d85d8feb387f8e4905463db3d6a76",
+      "bytes": 841619
+    },
+    {
+      "file": "app/data/architectural-plans/pisa-cathedral.json",
+      "sha256": "2e2c7aea30c86df07d833f57f7df7bf3b739af16217d71bd39551017b3586adf",
+      "bytes": 67943
+    }
+  ],
+  "evidence": [
+    {
+      "file": "sources/floorplans/evidence/camposanto.json",
+      "sha256": "18784fc28b98dc0307f463bdc3a88ccf2a4eb9780e39f0dead116459653c2c90",
+      "bytes": 3007962
+    },
+    {
+      "file": "sources/floorplans/evidence/leaning-tower.json",
+      "sha256": "93478d1473d1669fa044c66e63ea2f9605439d11acc958a37dfcc2fec8bb7fcb",
+      "bytes": 17190286
+    },
+    {
+      "file": "sources/floorplans/evidence/opera-pisa.json",
+      "sha256": "58755f2e0186e5310256fc6d257f9c4b781db60b333a7171b264c32ff90b0dae",
+      "bytes": 865986
+    },
+    {
+      "file": "sources/floorplans/evidence/pisa-baptistery.json",
+      "sha256": "24169e6a2b3118793bba4ef6ba47c6dd9905d38b305381eeb880374692a4c039",
+      "bytes": 1130041
+    },
+    {
+      "file": "sources/floorplans/evidence/pisa-cathedral.json",
+      "sha256": "d3ed0afb19eb47624eb0b36b2506e911b359138cd6131da7b5566e221b6b1095",
+      "bytes": 181596
+    }
+  ],
+  "scripts": [
+    {
+      "file": "scripts/architectural_preview.py",
+      "sha256": "431ee1dc5075abf3e405a89a84e1123d0c12eec0a71d1e37ce4f3b3ed381bfc0",
+      "bytes": 443
+    },
+    {
+      "file": "scripts/build-architectural-plans.py",
+      "sha256": "7f01ed5535871ea9deaef591087a1f97b9a8b638bb40c9cf89900cbd21d61daa",
+      "bytes": 24196
+    },
+    {
+      "file": "scripts/rebuild-pisa-baptistery-upper.py",
+      "sha256": "23907afa09e8944d19e3686f055720e3c859ae9c43f3935c985f969a1be76f8c",
+      "bytes": 11176
+    },
+    {
+      "file": "scripts/rebuild-pisa-base-sources.py",
+      "sha256": "16e04d95c0b4fd31139c2402a29704dcad6a5670fbc51bf1e46c10242bc113af",
+      "bytes": 9485
+    },
+    {
+      "file": "scripts/rebuild-pisa-portable.py",
+      "sha256": "85ead250e2e9fa6db7b09c5b4e67e82e44b4c1c8a5c8b76c53520498121f88c2",
+      "bytes": 2251
+    },
+    {
+      "file": "scripts/rebuild-pisa-tower-source-pixels-v7.py",
+      "sha256": "f93f21e22588a6df5dd10e5f4886a86cdb1d92256e85d49817b2cba9991907db",
+      "bytes": 24158
+    },
+    {
+      "file": "scripts/rebuild-pisa-tower-v4.py",
+      "sha256": "7123dd9eb9ce739138c4b88a0b45e87f07f8441e2d28ded9afa281867b964190",
+      "bytes": 15547
+    },
+    {
+      "file": "scripts/validate-pisa-route-bindings.py",
+      "sha256": "336a06d64afed7252a41e24cf061ad623f79b8cb27e84bc857d95178936b9260",
+      "bytes": 9021
+    },
+    {
+      "file": "scripts/write-pisa-portable-manifest.py",
+      "sha256": "b618acd053749bfcc893e0d183024abcede5c6dd10329e79aad596fc8022389f",
+      "bytes": 4081
+    }
+  ],
+  "reports": [
+    {
+      "file": "sources/floorplans/rebuild-reports/pisa-route-bindings-portable-v1.json",
+      "sha256": "f7556baf693f61c4f90bd90a96ad1f34ef4f98ee105c3028ebb9c02d811c6cf9",
+      "bytes": 9068
+    },
+    {
+      "file": "sources/floorplans/rebuild-reports/pisa-route-bindings-portable-v1.md",
+      "sha256": "c3cbaefa0e85573d387bfba2b578d8c147c0edcca3229e08b4ca9bdd78ac96a1",
+      "bytes": 1500
+    }
+  ],
+  "qa": [
+    {
+      "file": "qa/baptistery-upper-v2/pisa-baptistery-first-floor-audit-v2.json",
+      "sha256": "300e133ae0860c68dde608345b22f2eefcfc8b3581597ef0741985601efa23f3",
+      "bytes": 4595
+    },
+    {
+      "file": "qa/baptistery-upper-v2/pisa-baptistery-first-floor-contact-v2.png",
+      "sha256": "1d934a992982fd7bf75da328c61f7dbb332d14adfff31316f8b83e19d7e064a3",
+      "bytes": 203723
+    },
+    {
+      "file": "qa/pisa-route-portable-v1-validation.json",
+      "sha256": "1e94988a72c24089bea4aa3ecdf85215ca7121b3a773d90024cbc95c5310cbaf",
+      "bytes": 7104
+    },
+    {
+      "file": "qa/tower-v4/leaning-tower-galleries-4-7-v4-contact.png",
+      "sha256": "d5ee2bf557c91c5c4885eceb9f5dce2cc27d3d8d7c509549a1e7cc83662baafc",
+      "bytes": 587435
+    },
+    {
+      "file": "qa/tower-v4/leaning-tower-goodyear-galleries-4-7-v4-audit.json",
+      "sha256": "803f199175399a761ac22fd6e9c21d7ed64e38971fe04c3587e5f809b32db2e0",
+      "bytes": 7940
+    }
+  ],
+  "fixedProducts": {
+    "towerGalleries47DerivedSha256": "edd18ec04ca28fe8ed4500aadf9afd057a9cafb31f2be62ad1d29dddeb80e013",
+    "towerGalleries47ProducerSha256": "7123dd9eb9ce739138c4b88a0b45e87f07f8441e2d28ded9afa281867b964190",
+    "baptisteryUpperV2DerivedSha256": "8a5844cf630c808c4edebfad4f0e4e8c88fcf90c87aede37d87a58496e6f7c84"
+  }
+}

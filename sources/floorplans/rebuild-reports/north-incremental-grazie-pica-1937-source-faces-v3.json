@@ -1,0 +1,1455 @@
+{
+  "status": "皮卡1937年原生像素白区追踪候选；等待主线浏览器验收",
+  "source": {
+    "sha256": "9ffc21b257440d523715954e7bb830cc19baee7e81981c3870540912b8e6966a",
+    "page": 3,
+    "imageXref": 8,
+    "pixels": [
+      1420,
+      885
+    ]
+  },
+  "method": "选区障碍直接使用配置的5像素源墙分类。审核闭合段只参与连通域选择，不写入墙层。",
+  "printedSourceKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+  ],
+  "spaces": [
+    {
+      "id": "rosary-chapel",
+      "sourceKeys": [
+        "1"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          8248,
+          [
+            945,
+            320,
+            144,
+            61
+          ]
+        ]
+      ],
+      "pixelArea": 8248,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "solari-west-aisle",
+      "sourceKeys": [
+        "2"
+      ],
+      "selectionOnly": true,
+      "components": [
+        [
+          13985,
+          [
+            1062,
+            384,
+            49,
+            321
+          ]
+        ]
+      ],
+      "pixelArea": 13985,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "solari-central-nave",
+      "sourceKeys": [
+        "2"
+      ],
+      "selectionOnly": true,
+      "components": [
+        [
+          42130,
+          [
+            1114,
+            384,
+            133,
+            321
+          ]
+        ]
+      ],
+      "pixelArea": 42130,
+      "polygonCount": 1,
+      "holes": 2,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "solari-east-aisle",
+      "sourceKeys": [
+        "2"
+      ],
+      "selectionOnly": true,
+      "components": [
+        [
+          18198,
+          [
+            1250,
+            384,
+            69,
+            321
+          ]
+        ]
+      ],
+      "pixelArea": 18198,
+      "polygonCount": 1,
+      "holes": 12,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "tribune-core",
+      "sourceKeys": [
+        "3"
+      ],
+      "selectionOnly": true,
+      "components": [
+        [
+          26869,
+          [
+            1070,
+            197,
+            226,
+            160
+          ]
+        ]
+      ],
+      "pixelArea": 26869,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "tribune-apse",
+      "sourceKeys": [
+        "3"
+      ],
+      "selectionOnly": true,
+      "components": [
+        [
+          7732,
+          [
+            1144,
+            80,
+            77,
+            114
+          ]
+        ]
+      ],
+      "pixelArea": 7732,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "small-sacristy",
+      "sourceKeys": [
+        "4"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          4402,
+          [
+            1091,
+            81,
+            49,
+            110
+          ]
+        ]
+      ],
+      "pixelArea": 4402,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "frogs-cloister",
+      "sourceKeys": [
+        "5"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          16431,
+          [
+            852,
+            32,
+            237,
+            192
+          ]
+        ],
+        [
+          2534,
+          [
+            852,
+            88,
+            31,
+            86
+          ]
+        ]
+      ],
+      "pixelArea": 18965,
+      "polygonCount": 2,
+      "holes": 1,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "old-sacristy",
+      "sourceKeys": [
+        "6"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          12672,
+          [
+            702,
+            82,
+            147,
+            93
+          ]
+        ]
+      ],
+      "pixelArea": 12672,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "prior-cloister",
+      "sourceKeys": [
+        "7"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          6674,
+          [
+            760,
+            207,
+            136,
+            110
+          ]
+        ]
+      ],
+      "pixelArea": 6674,
+      "polygonCount": 1,
+      "holes": 9,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "new-sacristy",
+      "sourceKeys": [
+        "8"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          12816,
+          [
+            904,
+            228,
+            180,
+            89
+          ]
+        ]
+      ],
+      "pixelArea": 12816,
+      "polygonCount": 1,
+      "holes": 7,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "chapter-house",
+      "sourceKeys": [
+        "9"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          4297,
+          [
+            852,
+            320,
+            75,
+            61
+          ]
+        ]
+      ],
+      "pixelArea": 4297,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "locutory",
+      "sourceKeys": [
+        "10"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          4785,
+          [
+            764,
+            320,
+            85,
+            61
+          ]
+        ]
+      ],
+      "pixelArea": 4785,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "dead-cloister",
+      "sourceKeys": [
+        "11"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          28379,
+          [
+            762,
+            384,
+            296,
+            290
+          ]
+        ]
+      ],
+      "pixelArea": 28379,
+      "polygonCount": 1,
+      "holes": 1,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "northern-wing",
+      "sourceKeys": [
+        "12"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          7331,
+          [
+            702,
+            384,
+            57,
+            290
+          ]
+        ],
+        [
+          1050,
+          [
+            728,
+            415,
+            31,
+            35
+          ]
+        ],
+        [
+          1457,
+          [
+            728,
+            453,
+            31,
+            47
+          ]
+        ],
+        [
+          1457,
+          [
+            728,
+            503,
+            31,
+            47
+          ]
+        ],
+        [
+          1457,
+          [
+            728,
+            553,
+            31,
+            47
+          ]
+        ],
+        [
+          1457,
+          [
+            728,
+            603,
+            31,
+            47
+          ]
+        ]
+      ],
+      "pixelArea": 14209,
+      "polygonCount": 6,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    },
+    {
+      "id": "refectory",
+      "sourceKeys": [
+        "13"
+      ],
+      "selectionOnly": false,
+      "components": [
+        [
+          20702,
+          [
+            739,
+            677,
+            286,
+            74
+          ]
+        ]
+      ],
+      "pixelArea": 20702,
+      "polygonCount": 1,
+      "holes": 0,
+      "containsPlaceAnchor": true,
+      "wallIntersectionPixels": 0
+    }
+  ],
+  "selectionCuts": [
+    {
+      "id": "zone-6-top",
+      "sourcePixelSegment": [
+        [
+          700,
+          80
+        ],
+        [
+          884,
+          80
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-6-right",
+      "sourcePixelSegment": [
+        [
+          884,
+          80
+        ],
+        [
+          884,
+          178
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-6-bottom",
+      "sourcePixelSegment": [
+        [
+          884,
+          178
+        ],
+        [
+          700,
+          178
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-6-left",
+      "sourcePixelSegment": [
+        [
+          700,
+          178
+        ],
+        [
+          700,
+          80
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-5-outer-top",
+      "sourcePixelSegment": [
+        [
+          850,
+          30
+        ],
+        [
+          1090,
+          30
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-5-outer-right",
+      "sourcePixelSegment": [
+        [
+          1090,
+          30
+        ],
+        [
+          1090,
+          226
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-5-outer-bottom",
+      "sourcePixelSegment": [
+        [
+          1090,
+          226
+        ],
+        [
+          850,
+          226
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-5-outer-left",
+      "sourcePixelSegment": [
+        [
+          850,
+          226
+        ],
+        [
+          850,
+          30
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-5-court-top",
+      "sourcePixelSegment": [
+        [
+          900,
+          58
+        ],
+        [
+          1057,
+          58
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-5-court-right",
+      "sourcePixelSegment": [
+        [
+          1057,
+          58
+        ],
+        [
+          1057,
+          198
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-5-court-bottom",
+      "sourcePixelSegment": [
+        [
+          1057,
+          198
+        ],
+        [
+          900,
+          198
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-5-court-left",
+      "sourcePixelSegment": [
+        [
+          900,
+          198
+        ],
+        [
+          900,
+          58
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-7-outer-top",
+      "sourcePixelSegment": [
+        [
+          758,
+          205
+        ],
+        [
+          902,
+          205
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-7-outer-right",
+      "sourcePixelSegment": [
+        [
+          902,
+          205
+        ],
+        [
+          902,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-7-outer-bottom",
+      "sourcePixelSegment": [
+        [
+          902,
+          318
+        ],
+        [
+          758,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-7-outer-left",
+      "sourcePixelSegment": [
+        [
+          758,
+          318
+        ],
+        [
+          758,
+          205
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-7-court-top",
+      "sourcePixelSegment": [
+        [
+          792,
+          235
+        ],
+        [
+          876,
+          235
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-7-court-right",
+      "sourcePixelSegment": [
+        [
+          876,
+          235
+        ],
+        [
+          876,
+          306
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-7-court-bottom",
+      "sourcePixelSegment": [
+        [
+          876,
+          306
+        ],
+        [
+          792,
+          306
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-7-court-left",
+      "sourcePixelSegment": [
+        [
+          792,
+          306
+        ],
+        [
+          792,
+          235
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-8-top",
+      "sourcePixelSegment": [
+        [
+          897,
+          225
+        ],
+        [
+          1090,
+          225
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-8-right",
+      "sourcePixelSegment": [
+        [
+          1090,
+          225
+        ],
+        [
+          1090,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-8-bottom",
+      "sourcePixelSegment": [
+        [
+          1090,
+          318
+        ],
+        [
+          897,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-8-left",
+      "sourcePixelSegment": [
+        [
+          897,
+          318
+        ],
+        [
+          897,
+          225
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-9-top",
+      "sourcePixelSegment": [
+        [
+          850,
+          318
+        ],
+        [
+          928,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-9-right",
+      "sourcePixelSegment": [
+        [
+          928,
+          318
+        ],
+        [
+          928,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-9-bottom",
+      "sourcePixelSegment": [
+        [
+          928,
+          382
+        ],
+        [
+          850,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-9-left",
+      "sourcePixelSegment": [
+        [
+          850,
+          382
+        ],
+        [
+          850,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-10-top",
+      "sourcePixelSegment": [
+        [
+          762,
+          318
+        ],
+        [
+          850,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-10-right",
+      "sourcePixelSegment": [
+        [
+          850,
+          318
+        ],
+        [
+          850,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-10-bottom",
+      "sourcePixelSegment": [
+        [
+          850,
+          382
+        ],
+        [
+          762,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-10-left",
+      "sourcePixelSegment": [
+        [
+          762,
+          382
+        ],
+        [
+          762,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-1-top",
+      "sourcePixelSegment": [
+        [
+          928,
+          318
+        ],
+        [
+          1090,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-1-right",
+      "sourcePixelSegment": [
+        [
+          1090,
+          318
+        ],
+        [
+          1090,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-1-bottom",
+      "sourcePixelSegment": [
+        [
+          1090,
+          382
+        ],
+        [
+          928,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-1-left",
+      "sourcePixelSegment": [
+        [
+          928,
+          382
+        ],
+        [
+          928,
+          318
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-11-outer-top",
+      "sourcePixelSegment": [
+        [
+          760,
+          382
+        ],
+        [
+          1060,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-11-outer-right",
+      "sourcePixelSegment": [
+        [
+          1060,
+          382
+        ],
+        [
+          1060,
+          675
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-11-outer-bottom",
+      "sourcePixelSegment": [
+        [
+          1060,
+          675
+        ],
+        [
+          760,
+          675
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-11-outer-left",
+      "sourcePixelSegment": [
+        [
+          760,
+          675
+        ],
+        [
+          760,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-11-court-top",
+      "sourcePixelSegment": [
+        [
+          798,
+          410
+        ],
+        [
+          1028,
+          410
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-11-court-right",
+      "sourcePixelSegment": [
+        [
+          1028,
+          410
+        ],
+        [
+          1028,
+          644
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-11-court-bottom",
+      "sourcePixelSegment": [
+        [
+          1028,
+          644
+        ],
+        [
+          798,
+          644
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-11-court-left",
+      "sourcePixelSegment": [
+        [
+          798,
+          644
+        ],
+        [
+          798,
+          410
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-outer-top",
+      "sourcePixelSegment": [
+        [
+          700,
+          382
+        ],
+        [
+          760,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-outer-right",
+      "sourcePixelSegment": [
+        [
+          760,
+          382
+        ],
+        [
+          760,
+          675
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-outer-bottom",
+      "sourcePixelSegment": [
+        [
+          760,
+          675
+        ],
+        [
+          700,
+          675
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-outer-left",
+      "sourcePixelSegment": [
+        [
+          700,
+          675
+        ],
+        [
+          700,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-spine",
+      "sourcePixelSegment": [
+        [
+          726,
+          400
+        ],
+        [
+          726,
+          650
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-partition-451",
+      "sourcePixelSegment": [
+        [
+          726,
+          451
+        ],
+        [
+          760,
+          451
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-partition-501",
+      "sourcePixelSegment": [
+        [
+          726,
+          501
+        ],
+        [
+          760,
+          501
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-partition-551",
+      "sourcePixelSegment": [
+        [
+          726,
+          551
+        ],
+        [
+          760,
+          551
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-partition-601",
+      "sourcePixelSegment": [
+        [
+          726,
+          601
+        ],
+        [
+          760,
+          601
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-12-partition-651",
+      "sourcePixelSegment": [
+        [
+          726,
+          651
+        ],
+        [
+          760,
+          651
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-13-top",
+      "sourcePixelSegment": [
+        [
+          735,
+          675
+        ],
+        [
+          1035,
+          675
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-13-right",
+      "sourcePixelSegment": [
+        [
+          1035,
+          675
+        ],
+        [
+          1035,
+          752
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-13-bottom",
+      "sourcePixelSegment": [
+        [
+          1035,
+          752
+        ],
+        [
+          735,
+          752
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-13-left",
+      "sourcePixelSegment": [
+        [
+          735,
+          752
+        ],
+        [
+          735,
+          675
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-2-outer-top",
+      "sourcePixelSegment": [
+        [
+          1059,
+          382
+        ],
+        [
+          1320,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-2-outer-right",
+      "sourcePixelSegment": [
+        [
+          1320,
+          382
+        ],
+        [
+          1320,
+          706
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-2-outer-bottom",
+      "sourcePixelSegment": [
+        [
+          1320,
+          706
+        ],
+        [
+          1059,
+          706
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-2-outer-left",
+      "sourcePixelSegment": [
+        [
+          1059,
+          706
+        ],
+        [
+          1059,
+          382
+        ]
+      ],
+      "reason": "沿源墙中心补齐门窗或柱间缺口，仅用于选择面闭合；原墙像素保持不变。"
+    },
+    {
+      "id": "zone-2-west-column-axis",
+      "sourcePixelSegment": [
+        [
+          1112,
+          382
+        ],
+        [
+          1112,
+          706
+        ]
+      ],
+      "reason": "沿源柱列或开敞阈线划分语义选区；不是墙、门或通行状态。"
+    },
+    {
+      "id": "zone-2-east-column-axis",
+      "sourcePixelSegment": [
+        [
+          1248,
+          382
+        ],
+        [
+          1248,
+          706
+        ]
+      ],
+      "reason": "沿源柱列或开敞阈线划分语义选区；不是墙、门或通行状态。"
+    },
+    {
+      "id": "zone-3-north-threshold",
+      "sourcePixelSegment": [
+        [
+          1090,
+          195
+        ],
+        [
+          1265,
+          195
+        ]
+      ],
+      "reason": "沿源柱列或开敞阈线划分语义选区；不是墙、门或通行状态。"
+    },
+    {
+      "id": "zone-3-south-threshold",
+      "sourcePixelSegment": [
+        [
+          1090,
+          358
+        ],
+        [
+          1265,
+          358
+        ]
+      ],
+      "reason": "沿源柱列或开敞阈线划分语义选区；不是墙、门或通行状态。"
+    },
+    {
+      "id": "review-crop-top",
+      "sourcePixelSegment": [
+        [
+          650,
+          1
+        ],
+        [
+          1380,
+          1
+        ]
+      ],
+      "reason": "封闭审核裁切边缘，防止选区泄漏到图外背景。"
+    },
+    {
+      "id": "review-crop-right",
+      "sourcePixelSegment": [
+        [
+          1380,
+          1
+        ],
+        [
+          1380,
+          760
+        ]
+      ],
+      "reason": "封闭审核裁切边缘，防止选区泄漏到图外背景。"
+    },
+    {
+      "id": "review-crop-bottom",
+      "sourcePixelSegment": [
+        [
+          1380,
+          760
+        ],
+        [
+          650,
+          760
+        ]
+      ],
+      "reason": "封闭审核裁切边缘，防止选区泄漏到图外背景。"
+    },
+    {
+      "id": "review-crop-left",
+      "sourcePixelSegment": [
+        [
+          650,
+          760
+        ],
+        [
+          650,
+          1
+        ]
+      ],
+      "reason": "封闭审核裁切边缘，防止选区泄漏到图外背景。"
+    }
+  ],
+  "checks": {
+    "spaceCount": 16,
+    "sourceKeyCoverage": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "pairwiseFaceOverlapPixels": 0,
+    "faceWallIntersectionPixels": 0,
+    "zone12": "地面层北翼白区；保留1937年图注‘其上为图书馆’，不生成上层或现状用途。"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "florence-duomo",
+  "file": "florence-duomo-accessibility-study.pdf",
+  "url": "https://flore.unifi.it/retrieve/24ede0a0-28b1-4244-a64a-8738b8401ff1/03-VESSELLA%2BET%2BALII_compressed.pdf",
+  "sha256": "33bd6a6ed03902b92e356ab810802228dc205b4f092a190bb2a6259bd22046d2",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [15],
+    "basis": "Figure 6 is explicitly captioned as the cathedral ground-floor plan and includes a 0-50 m scale. Nave, crossing, radial apses, perimeter walls and piers are drawn in direct top view without perspective convergence. The red accessibility audit labels are annotations, not architecture, and are excluded by neutral-ink selection."
+  },
+  "review": "University of Florence architectural-accessibility study, Figure 6, visually checked at the native 1961 by 1448 image resolution. Only neutral dark structural ink is extracted. Red accessibility callouts, pale grid lines, captions, scale graphics and the detached baptistery footprint are outside the reviewed crop or rejected by colour/area filters. Where a red callout physically covers an original structural corner, the underlying line is unreadable and no replacement wall is inferred. Earlier coarse selectable rectangles were removed because they did not follow the actual inner wall boundaries.",
+  "limitations": [
+    "目前显示教堂底层可辨的墙体与柱墩，尚未包含穹顶、登顶楼梯及屋顶层。",
+    "局部墙线被原图标注遮挡，缺失处不补画；未核实空间保留文字导览，不提供地图定位。"
+  ],
+  "internalNotes": [
+    "这是大学建筑无障碍研究中的教堂底层平面，不是现行入场图或应急疏散图。",
+    "图源未记录票面指定的穹顶入口、463级登顶楼梯、穹顶内缘步道或屋顶露台，因此五个导览停点均未绑定。",
+    "图中红色无障碍问题标注和浅色分析网格不属于建筑边界，已从几何提取中排除。",
+    "部分红色标注实际遮住了承重墙角，原线无法从该图读取；模型只保留可辨的中性厚墙与柱墩，不补画被遮挡部分，也不声称几何完整。",
+    "中殿、中央交叉部和放射状礼拜堂目前只保留来源定位点；先前不贴合实际内墙的矩形选择面已删除，尚未沿可核验内边界建立连续地面。"
+  ],
+  "stopBindings": [],
+  "floors": [
+    {
+      "id": "main",
+      "label": "教堂底层 · 建筑平面",
+      "order": 0,
+      "page": 15,
+      "crop": [185, 95, 505, 305],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 111,
+          "rgbRange": [[0, 0, 0], [40, 40, 40]],
+          "wallKernel": 6,
+          "includeKinds": ["wall"],
+          "tolerancePixels": 0.25,
+          "minAreaPixels": 35,
+          "excludeRects": [
+            {"rect": [238, 156, 307, 172]},
+            {"rect": [327, 168, 366, 185]},
+            {"rect": [327, 212, 366, 230]},
+            {"rect": [366, 164, 414, 181]},
+            {"rect": [366, 232, 415, 249]}
+          ],
+          "reason": "Reviewed neutral dark structural ink from the University of Florence ground-floor plan. Thick perimeter walls and piers are walls. Bright red audit labels and pale analytical grids fall outside the selected RGB range; source corners physically covered by the labels are left unresolved rather than reconstructed."
+        }
+      ],
+      "places": [
+        {
+          "label": "中殿",
+          "name": "三廊式教堂中殿",
+          "at": [280, 200],
+          "kind": "room",
+          "evidence": "Anchor at the reviewed center of the long basilical body shown in the ground-floor plan; the three-nave arrangement is stated by the cathedral's official description.",
+          "precision": "reviewed-source-plan-zone-center-not-surveyed"
+        },
+        {
+          "label": "中央八角交叉部",
+          "name": "穹顶下方中央八角交叉部",
+          "at": [403, 200],
+          "kind": "room",
+          "evidence": "Anchor at the reviewed center of the open octagonal crossing beneath the dome.",
+          "precision": "reviewed-source-plan-zone-center-not-surveyed"
+        },
+        {
+          "label": "放射状礼拜堂",
+          "name": "三组各五间的放射状礼拜堂",
+          "at": [466, 200],
+          "kind": "area",
+          "evidence": "Anchor within the source-drawn eastern tribune group; the official cathedral description supports three apses, each with five radial chapels.",
+          "precision": "reviewed-source-plan-zone-center-not-individual-cell"
+        }
+      ]
+    }
+  ]
+}

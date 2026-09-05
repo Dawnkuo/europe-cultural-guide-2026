@@ -1,0 +1,41 @@
+{
+  "snapshotScope": [
+    "accademia-venice",
+    "doges-palace"
+  ],
+  "sources": [
+    {
+      "venue": "accademia-venice",
+      "file": "sources/floorplans/accademia-venice-2026.pdf",
+      "scratchPath": "/tmp/europe-map-rebuild-venice/sources/floorplans/accademia-venice-2026.pdf",
+      "url": "https://www.gallerieaccademia.it/wp-content/uploads/2026/06/Map_gallerie-accademia-venezia.pdf",
+      "sha256": "6809eac6370f94b3a12017d6e243e3789135a4f9c97d1dc810f7c3d462a11264",
+      "pages": [
+        1
+      ],
+      "floorCrops": {
+        "ground": [230, 215, 890, 1165],
+        "first": [1320, 215, 1975, 1165]
+      },
+      "projection": "orthographic",
+      "sourceCoordinateAudit": "/tmp/europe-map-rebuild-venice/work/accademia-geometry-audit/accademia-venice-source-coordinate-audit.png"
+    },
+    {
+      "venue": "doges-palace",
+      "file": "sources/floorplans/doges-palace-2025.pdf",
+      "scratchPath": "/tmp/europe-map-rebuild-venice/sources/floorplans/doges-palace-2025.pdf",
+      "url": "https://palazzoducale.visitmuve.it/wp-content/uploads/sites/2/2025/10/Guida-Ducale-ENG.pdf",
+      "sha256": "31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+      "pages": [4, 6, 7, 12, 16],
+      "floorCrops": {
+        "L0": [186, 465, 534, 697],
+        "loggia": [177, 453, 495, 759],
+        "L1": [197, 469, 558, 705],
+        "L2": [197, 587, 558, 648],
+        "attic": [189, 550, 558, 788]
+      },
+      "projection": "orthographic",
+      "sourceCoordinateAudit": "/tmp/europe-map-rebuild-venice/work/doge-geometry-audit/doges-palace-source-coordinate-audit.png"
+    }
+  ]
+}

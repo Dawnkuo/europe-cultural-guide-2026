@@ -556,12 +556,116 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L1-path-228-surface",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "path": 228,
+      "classification": "Original WC floor patch at the service leader endpoint",
+      "precision": "source-proportional"
+    },
+    {
       "featureId": "L1-path-231-surface",
       "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
       "page": 1,
       "path": 231,
       "classification": "remaining archaeology connection",
       "precision": "source-proportional"
+    },
+    {
+      "featureId": "L1-toilets",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        228
+      ],
+      "classification": "Official p1 drawing228 is the pale service floor at the museum end of WC leader229, not the detached icon frame205. Retain its exact printed footprint.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-canova",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        51,
+        52,
+        53,
+        83
+      ],
+      "classification": "Official p1 orange collection floor fills are the neoclassical rooms and Canova collection. Use all four original connected/disconnected floor polygons; do not infer individual room IDs or ballroom/artwork wall locations.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-history",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        42,
+        43
+      ],
+      "classification": "Official p1 green collection fills identify history and civilization of Venice. The source does not key the de Barbari map to a precise room; the guide's artwork stop binds only to this collection-level area.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-royal",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "classification": "Official p1 blue Royal Palace/Empress rooms use all six original fills, including the circular room perimeter without a rectangular replacement.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-royal-new",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        44
+      ],
+      "classification": "Official p1 separate northern royal-room enfilade original floor fill. Its reservation condition is not used to remove geometry.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-archaeology",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        231
+      ],
+      "classification": "Official p1 teal floor footprints of the neighboring National Archaeological Museum, including the source connector; not an assertion of ticket inclusion.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-marciana",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        19
+      ],
+      "classification": "Official p1 purple Marciana rooms floor, including its narrow two-room wing.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
+      "featureId": "L1-entry",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        39
+      ],
+      "classification": "Official p1 entrance arrow and stair core inside the original grey reception floor. No ground-level floor is inferred from this first-floor landing.",
+      "precision": "exact-reviewed-source-floor-footprint"
     },
     {
       "featureId": "L1-卡诺瓦-1",
@@ -571,8 +675,8 @@
         984,
         506
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-威尼斯史-1",
@@ -582,8 +686,8 @@
         879,
         501
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-王室套间-1",
@@ -593,8 +697,8 @@
         1063,
         531
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-王室新线-1",
@@ -604,8 +708,8 @@
         906,
         442
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-考古馆-1",
@@ -615,8 +719,8 @@
         757,
         500
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-图书馆-1",
@@ -626,8 +730,8 @@
         697,
         475
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L1-入口-1",
@@ -637,8 +741,85 @@
         1052,
         614
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-中央楼梯-1",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourceAnchor": [
+        872,
+        467
+      ],
+      "classification": "Official p1 first-floor central two-flight stair core, immediately north of the Venice history gallery; corresponds to the second-floor gallery entrance stair.",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "L1-售票-1",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourceAnchor": [
+        1035.7645263671875,
+        585.8422241210938
+      ],
+      "classification": "Museum-end endpoint of official p1 ticket-service leader, drawing195; not the external icon center.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L1-商店-1",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourceAnchor": [
+        1060.3128662109375,
+        586.0431518554688
+      ],
+      "classification": "Museum-end endpoint of official p1 museum-store leader, drawing193.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L1-咖啡馆-1",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourceAnchor": [
+        1035.7645263671875,
+        655.8095092773438
+      ],
+      "classification": "Museum-end endpoint of official p1 cafe leader, drawing197.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L1-寄存-1",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourceAnchor": [
+        1047.42236328125,
+        656.1575317382812
+      ],
+      "classification": "Museum-end endpoint of official p1 cloakroom leader, drawing169.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L1-无障碍电梯-1",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourceAnchor": [
+        1059.9183349609375,
+        651.4190063476562
+      ],
+      "classification": "Official p1 drawing167 connects the lift and wheelchair symbols to this first-floor point. No upper-floor landing is inferred.",
+      "precision": "printed-service-leader-endpoint"
+    },
+    {
+      "featureId": "L1-卫生间-1",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourceAnchor": [
+        882.9445190429688,
+        498.1861877441406
+      ],
+      "classification": "Museum-end endpoint of official p1 leader drawing229, inside the small service floor drawing228. The external symbol at drawing205 is not the service location.",
+      "precision": "printed-service-leader-endpoint"
     },
     {
       "featureId": "L2-path-233-surface",
@@ -749,7 +930,7 @@
       "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
       "page": 1,
       "path": 247,
-      "classification": "stair/service floor patch",
+      "classification": "uncoloured original floor patch inside the picture-gallery wing; not identified as a separate stair or service room",
       "precision": "source-proportional"
     },
     {
@@ -793,6 +974,17 @@
       "precision": "source-proportional"
     },
     {
+      "featureId": "L2-pictures",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "page": 1,
+      "sourcePaths": [
+        233,
+        235
+      ],
+      "classification": "Official p1 yellow picture-gallery footprint, retaining its alcoves and internal partition strokes. Other uncoloured rooms are not assigned invented collection names.",
+      "precision": "exact-reviewed-source-floor-footprint"
+    },
+    {
       "featureId": "L2-绘画馆-1",
       "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
       "page": 1,
@@ -800,8 +992,8 @@
         797,
         210
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
     },
     {
       "featureId": "L2-楼梯-1",
@@ -811,13 +1003,19 @@
         875,
         184
       ],
-      "classification": "reviewed printed room/service anchor",
-      "precision": "room-label-position-not-artwork-wall-position"
+      "classification": "Visually reviewed room, service or geometry anchor; not necessarily printed text",
+      "precision": "reviewed-map-position-not-surveyed"
+    },
+    {
+      "featureId": "picture-gallery-stairs",
+      "sourceHash": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+      "classification": "Official p1 floor strips show the matching two-flight stair core at the central north-wing junction on both levels. Upper visitor arrow enters the yellow picture gallery immediately west of this landing. This encodes connectivity, not survey registration.",
+      "precision": "documented-connection-not-surveyed-shaft"
     }
   ],
   "coverage": {
     "floors": 2,
-    "labels": 9,
-    "features": 88
+    "labels": 16,
+    "features": 89
   }
 }

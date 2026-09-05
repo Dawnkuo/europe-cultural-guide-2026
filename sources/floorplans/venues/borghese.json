@@ -1,31 +1,1299 @@
 {
   "slug": "borghese",
-  "sourceProjection":{"kind":"orthographic","pages":[10],"basis":"The sculpture-floor and garden diagram is an overhead plan with repeated aligned room boundaries. Curved exterior landscaping is not interpreted as perspective distortion."},
-  "file": "borghese-candidate-1.pdf",
-  "sha256": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
-  "url": "https://galleriaborghese.cultura.gov.it/en/wp-content/uploads/BirdCage_CS_04-05_ENG_Press-R.pdf",
-  "review": "Physical page 10 visually inspected. Orthographic sculpture-floor plan. Visible filled paths 53/60/61/62/65 are structural masonry with door gaps. Paths 63-67 and 81-162 are terrace, garden and stair detail, retained flat. Stair pictogram 54-59 is a symbol rather than its physical geometry. The second duplicated drawing stream is outside its clipping path and is not used. Roman room numerals I-VIII retained directly from text anchors. Exhibition hatching is not a wall or a current artwork position.",
-  "limitations": [
-    "本图覆盖雕塑层 I–VIII 厅、中央大厅、门廊及相邻花园；上层绘画馆平面资料尚待补齐。",
-    "建筑平面依据馆方专题展资料；不将当时的临时展品位置当作当前陈列。",
-    "原图只提供楼梯符号，未绘制上层落点，不生成跨层连线。"
+  "file": "borghese-official-visitor-brochure.pdf",
+  "sha256": "2e9b1a3d5fd11a45ca900747f6667596d024bc05b5a937237a63c19775e2c198",
+  "url": "https://www.gebart.it/wp-content/uploads/2018/05/Italiano.pdf",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [],
+    "basis": "Gebart visitor brochure contains three compact, top-down equal-axis plans for basement, sculpture floor, and Pinacoteca; each plan crop was visually reviewed. Extraction uses the source-pixel classified supplementary derivative."
+  },
+  "sourceFiles": [
+    {
+      "id": "reviewed-plan",
+      "file": "borghese-reviewed-plan.pdf",
+      "sha256": "437300b3c9c3a2611b7a5ca834e40ba12127d6ce683822adc4d1cf6a495679c0",
+      "url": "https://www.gebart.it/wp-content/uploads/2018/05/Italiano.pdf",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "basis": "Lossless source-pixel classification from the three orthographic plan crops. Black pixels are source wall ink inside named reviewed structural bands; gray pixels are source stair, threshold, terrace and column details. Blank source door gaps are not filled. No connected-component label removal or broad exclusion rectangle is used."
+      }
+    }
   ],
-  "floors": [{
-    "id": "L0", "label": "雕塑层 · I–VIII", "order": 0,
-    "page": 10, "crop": [49,120,546,294],
-    "labelPattern": "I|II|III|IV|V|VI|VII|VIII",
-    "expectedLabels": ["I","II","III","IV","V","VI","VII","VIII"],
-    "servicePlaces": [
-      {"label":"中央大厅","name":"Mariano Rossi 大厅","kind":"area","at":[412,215]},
-      {"label":"门廊","kind":"service","at":[413,275]},
-      {"label":"梯","name":"楼梯（上层落点待补）","kind":"service","at":[474,142]},
-      {"label":"花园","name":"Tramontana 秘密花园","kind":"area","at":[180,234]}
-    ],
-    "rules": [
-      {"ids":[53,60,61,62,65],"channel":"fill","kind":"wall","reason":"printed structural masonry, preserving every doorway"},
-      {"ids":[63,64,66,67],"kind":"detail","tone":"green","reason":"garden and terrace boundaries, not indoor partitions"},
-      {"ranges":[[68,83]],"kind":"detail","reason":"porch and terrace stair treads"},
-      {"ranges":[[84,162]],"kind":"detail","tone":"green","reason":"formal garden planting beds and fountain geometry"}
-    ]
-  }]
+  "review": "Official museum service-operator brochure inspected at native image resolution. Because printed room labels touch several walls, geometry is selected positively from actual neutral source pixels within named wall and detail bands rather than deleting whole connected components. All 72 named wall segments have source-coordinate pixel checkpoints, including the lift-adjacent north walls and vertical boundaries on every floor. The black wall layer is traced without simplification and retains single-pixel reviewed source components. A horizontal five-pixel closing is applied only within the reviewed P0 north-wall strip [247.0,437.2,352.6,438.3] to reconnect JPEG antialias breaks in the visibly continuous source wall; the QA record reports exactly 23 added pixels. B1 adds no wall pixels: exact source component rectangles remove the gift-box, headphones and paint-palette pictograms where they overlap reviewed wall bands, while narrowed positive detail bands retain the complete central upper stair, return and side treads without retaining the handbag or ticket pictograms. The B1 visitor-service space is limited to the central source-bounded hall. P0 chapel C begins below the source horizontal wall at y=450.4, leaving the separate northern lift and spiral-stair compartment as structural context only. P1 rooms 19/9 end at y=489.2 and rooms 20/10 begin at y=490.0 around the source wall; terrace T independently begins at y=499.5. P1 room 14 and vestibule V meet at the observed lift boundary x=466.4. The printed gray terrace fill is emitted only as flat detail and does not define or enlarge a room. Current room names are cross-checked to the Galleria Borghese official Villa page.",
+  "limitations": [
+    "紧凑型游客示意图，不是测绘图。",
+    "印刷编号、字母、箭头与服务图标不构成建筑几何；仅保留审阅过的墙线带及楼梯、门槛、露台和柱点细部内的来源像素。",
+    "灰色露台填块仅作平面细部，不作为墙线或扩大空间边界的依据。",
+    "各楼层图为独立配准，不宣称垂直对齐。"
+  ],
+  "floors": [
+    {
+      "id": "B1",
+      "label": "访客服务层",
+      "order": -1,
+      "sourceId": "reviewed-plan",
+      "page": 1,
+      "crop": [
+        95,
+        430,
+        210,
+        540
+      ],
+      "rules": [],
+      "places": [
+        {
+          "label": "售票服务",
+          "at": [
+            147,
+            487
+          ],
+          "name": "售票与访客服务区",
+          "kind": "service"
+        },
+        {
+          "label": "入口",
+          "at": [
+            147,
+            526
+          ],
+          "name": "地下层入口",
+          "kind": "service"
+        }
+      ],
+      "spaces": [
+        {
+          "id": "visitor-service-hall",
+          "label": "访客服务厅",
+          "placeId": "B1-售票服务-1",
+          "outer": [
+            [
+              129.1,
+              462.6
+            ],
+            [
+              172.2,
+              462.6
+            ],
+            [
+              172.2,
+              499.1
+            ],
+            [
+              129.1,
+              499.1
+            ],
+            [
+              129.1,
+              462.6
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:visitor-service-hall"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "reason": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+          "allInkIsDetail": false,
+          "tolerancePixels": 0,
+          "minAreaPixels": 0.1,
+          "occurrence": 0,
+          "excludeRects": [],
+          "rgbRange": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "xref": 5,
+          "reason": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 1.2,
+          "occurrence": 0,
+          "excludeRects": [],
+          "rgbRange": [
+            [
+              128,
+              128,
+              128
+            ],
+            [
+              128,
+              128,
+              128
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P0",
+      "label": "雕塑层",
+      "order": 0,
+      "sourceId": "reviewed-plan",
+      "page": 2,
+      "crop": [
+        245,
+        430,
+        365,
+        540
+      ],
+      "rules": [],
+      "places": [
+        {
+          "label": "P",
+          "at": [
+            300,
+            507
+          ],
+          "name": "门廊"
+        },
+        {
+          "label": "S",
+          "at": [
+            299,
+            482
+          ],
+          "name": "马里亚诺·罗西入口大厅"
+        },
+        {
+          "label": "C",
+          "at": [
+            326,
+            456
+          ],
+          "name": "小堂"
+        },
+        {
+          "label": "1",
+          "at": [
+            331,
+            501
+          ],
+          "name": "保利娜厅"
+        },
+        {
+          "label": "2",
+          "at": [
+            331,
+            477
+          ],
+          "name": "大卫厅"
+        },
+        {
+          "label": "3",
+          "at": [
+            342,
+            451
+          ],
+          "name": "阿波罗与达芙妮厅"
+        },
+        {
+          "label": "4",
+          "at": [
+            300,
+            451
+          ],
+          "name": "皇帝厅"
+        },
+        {
+          "label": "5",
+          "at": [
+            273.5,
+            451
+          ],
+          "name": "赫尔玛弗洛狄忒厅"
+        },
+        {
+          "label": "6",
+          "at": [
+            258,
+            451
+          ],
+          "name": "埃涅阿斯与安喀塞斯厅"
+        },
+        {
+          "label": "7",
+          "at": [
+            268,
+            478
+          ],
+          "name": "埃及厅"
+        },
+        {
+          "label": "8",
+          "at": [
+            268,
+            502
+          ],
+          "name": "西勒诺斯厅／卡拉瓦乔"
+        }
+      ],
+      "spaces": [
+        {
+          "id": "room-6",
+          "label": "埃涅阿斯与安喀塞斯厅",
+          "placeId": "P0-6-1",
+          "outer": [
+            [
+              247.9,
+              437.8
+            ],
+            [
+              268.7,
+              437.8
+            ],
+            [
+              268.7,
+              462.6
+            ],
+            [
+              247.9,
+              462.6
+            ],
+            [
+              247.9,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-6"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-5",
+          "label": "赫尔玛弗洛狄忒厅",
+          "placeId": "P0-5-1",
+          "outer": [
+            [
+              268.7,
+              437.8
+            ],
+            [
+              278,
+              437.8
+            ],
+            [
+              278,
+              462.6
+            ],
+            [
+              268.7,
+              462.6
+            ],
+            [
+              268.7,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-5"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-4",
+          "label": "皇帝厅",
+          "placeId": "P0-4-1",
+          "outer": [
+            [
+              278,
+              437.8
+            ],
+            [
+              321.5,
+              437.8
+            ],
+            [
+              321.5,
+              462.6
+            ],
+            [
+              278,
+              462.6
+            ],
+            [
+              278,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-4"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-C",
+          "label": "小堂",
+          "placeId": "P0-C-1",
+          "outer": [
+            [
+              321.5,
+              450.4
+            ],
+            [
+              331.3,
+              450.4
+            ],
+            [
+              331.3,
+              462.6
+            ],
+            [
+              321.5,
+              462.6
+            ],
+            [
+              321.5,
+              450.4
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-C"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-3",
+          "label": "阿波罗与达芙妮厅",
+          "placeId": "P0-3-1",
+          "outer": [
+            [
+              331.3,
+              437.8
+            ],
+            [
+              352,
+              437.8
+            ],
+            [
+              352,
+              462.6
+            ],
+            [
+              331.3,
+              462.6
+            ],
+            [
+              331.3,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-3"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-7",
+          "label": "埃及厅",
+          "placeId": "P0-7-1",
+          "outer": [
+            [
+              258.8,
+              462.6
+            ],
+            [
+              278,
+              462.6
+            ],
+            [
+              278,
+              489.4
+            ],
+            [
+              258.8,
+              489.4
+            ],
+            [
+              258.8,
+              462.6
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-7"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-S",
+          "label": "入口大厅",
+          "placeId": "P0-S-1",
+          "outer": [
+            [
+              278,
+              462.6
+            ],
+            [
+              321.5,
+              462.6
+            ],
+            [
+              321.5,
+              499.1
+            ],
+            [
+              278,
+              499.1
+            ],
+            [
+              278,
+              462.6
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-S"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-2",
+          "label": "大卫厅",
+          "placeId": "P0-2-1",
+          "outer": [
+            [
+              321.5,
+              462.6
+            ],
+            [
+              341.1,
+              462.6
+            ],
+            [
+              341.1,
+              489.4
+            ],
+            [
+              321.5,
+              489.4
+            ],
+            [
+              321.5,
+              462.6
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-2"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-8",
+          "label": "西勒诺斯厅",
+          "placeId": "P0-8-1",
+          "outer": [
+            [
+              258.8,
+              489.4
+            ],
+            [
+              278,
+              489.4
+            ],
+            [
+              278,
+              515
+            ],
+            [
+              258.8,
+              515
+            ],
+            [
+              258.8,
+              489.4
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-8"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-P",
+          "label": "门廊",
+          "placeId": "P0-P-1",
+          "outer": [
+            [
+              278,
+              499.1
+            ],
+            [
+              321.5,
+              499.1
+            ],
+            [
+              321.5,
+              515
+            ],
+            [
+              278,
+              515
+            ],
+            [
+              278,
+              499.1
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-P"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-1",
+          "label": "保利娜厅",
+          "placeId": "P0-1-1",
+          "outer": [
+            [
+              321.5,
+              489.4
+            ],
+            [
+              341.1,
+              489.4
+            ],
+            [
+              341.1,
+              515
+            ],
+            [
+              321.5,
+              515
+            ],
+            [
+              321.5,
+              489.4
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-1"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 11,
+          "reason": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+          "allInkIsDetail": false,
+          "tolerancePixels": 0,
+          "minAreaPixels": 0.1,
+          "occurrence": 0,
+          "excludeRects": [],
+          "rgbRange": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "xref": 11,
+          "reason": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 1.2,
+          "occurrence": 0,
+          "excludeRects": [],
+          "rgbRange": [
+            [
+              128,
+              128,
+              128
+            ],
+            [
+              128,
+              128,
+              128
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P1",
+      "label": "绘画馆层",
+      "order": 1,
+      "sourceId": "reviewed-plan",
+      "page": 3,
+      "crop": [
+        386,
+        430,
+        505,
+        540
+      ],
+      "rules": [],
+      "places": [
+        {
+          "label": "9",
+          "at": [
+            476,
+            477
+          ],
+          "name": "狄多厅"
+        },
+        {
+          "label": "10",
+          "at": [
+            476,
+            507
+          ],
+          "name": "赫拉克勒斯厅"
+        },
+        {
+          "label": "11",
+          "at": [
+            487,
+            457
+          ],
+          "name": "费拉拉绘画厅"
+        },
+        {
+          "label": "12",
+          "at": [
+            491.5,
+            447
+          ],
+          "name": "酒神女祭司厅"
+        },
+        {
+          "label": "13",
+          "at": [
+            481,
+            447
+          ],
+          "name": "荣誉厅"
+        },
+        {
+          "label": "14",
+          "at": [
+            446,
+            450
+          ],
+          "name": "兰弗兰科凉廊"
+        },
+        {
+          "label": "15",
+          "at": [
+            418.5,
+            451
+          ],
+          "name": "曙光厅"
+        },
+        {
+          "label": "16",
+          "at": [
+            398,
+            457
+          ],
+          "name": "花神厅"
+        },
+        {
+          "label": "17",
+          "at": [
+            408.5,
+            447
+          ],
+          "name": "昂热伯爵厅"
+        },
+        {
+          "label": "18",
+          "at": [
+            398,
+            447
+          ],
+          "name": "朱庇特与安提俄珀厅"
+        },
+        {
+          "label": "19",
+          "at": [
+            413,
+            477
+          ],
+          "name": "海伦与帕里斯厅"
+        },
+        {
+          "label": "20",
+          "at": [
+            413,
+            507
+          ],
+          "name": "普赛克厅"
+        },
+        {
+          "label": "T",
+          "at": [
+            445,
+            507
+          ],
+          "name": "露台"
+        },
+        {
+          "label": "V",
+          "at": [
+            473,
+            457
+          ],
+          "name": "前厅"
+        }
+      ],
+      "spaces": [
+        {
+          "id": "room-18",
+          "label": "朱庇特与安提俄珀厅",
+          "placeId": "P1-18-1",
+          "outer": [
+            [
+              393,
+              437.8
+            ],
+            [
+              403.7,
+              437.8
+            ],
+            [
+              403.7,
+              450.6
+            ],
+            [
+              393,
+              450.6
+            ],
+            [
+              393,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-18"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-17",
+          "label": "昂热伯爵厅",
+          "placeId": "P1-17-1",
+          "outer": [
+            [
+              403.7,
+              437.8
+            ],
+            [
+              413.8,
+              437.8
+            ],
+            [
+              413.8,
+              450.6
+            ],
+            [
+              403.7,
+              450.6
+            ],
+            [
+              403.7,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-17"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-16",
+          "label": "花神厅",
+          "placeId": "P1-16-1",
+          "outer": [
+            [
+              393,
+              450.6
+            ],
+            [
+              413.8,
+              450.6
+            ],
+            [
+              413.8,
+              462.8
+            ],
+            [
+              393,
+              462.8
+            ],
+            [
+              393,
+              450.6
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-16"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-15",
+          "label": "曙光厅",
+          "placeId": "P1-15-1",
+          "outer": [
+            [
+              413.8,
+              437.8
+            ],
+            [
+              423.2,
+              437.8
+            ],
+            [
+              423.2,
+              462.8
+            ],
+            [
+              413.8,
+              462.8
+            ],
+            [
+              413.8,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-15"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-14",
+          "label": "兰弗兰科凉廊",
+          "placeId": "P1-14-1",
+          "outer": [
+            [
+              423.2,
+              437.8
+            ],
+            [
+              466.4,
+              437.8
+            ],
+            [
+              466.4,
+              462.8
+            ],
+            [
+              423.2,
+              462.8
+            ],
+            [
+              423.2,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-14"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-V",
+          "label": "前厅",
+          "placeId": "P1-V-1",
+          "outer": [
+            [
+              466.4,
+              450.6
+            ],
+            [
+              476,
+              450.6
+            ],
+            [
+              476,
+              462.8
+            ],
+            [
+              466.4,
+              462.8
+            ],
+            [
+              466.4,
+              450.6
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-V"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-13",
+          "label": "荣誉厅",
+          "placeId": "P1-13-1",
+          "outer": [
+            [
+              476,
+              437.8
+            ],
+            [
+              486,
+              437.8
+            ],
+            [
+              486,
+              450.6
+            ],
+            [
+              476,
+              450.6
+            ],
+            [
+              476,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-13"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-12",
+          "label": "酒神女祭司厅",
+          "placeId": "P1-12-1",
+          "outer": [
+            [
+              486,
+              437.8
+            ],
+            [
+              497,
+              437.8
+            ],
+            [
+              497,
+              450.6
+            ],
+            [
+              486,
+              450.6
+            ],
+            [
+              486,
+              437.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-12"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-11",
+          "label": "费拉拉绘画厅",
+          "placeId": "P1-11-1",
+          "outer": [
+            [
+              476,
+              450.6
+            ],
+            [
+              497,
+              450.6
+            ],
+            [
+              497,
+              462.8
+            ],
+            [
+              476,
+              462.8
+            ],
+            [
+              476,
+              450.6
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-11"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-19",
+          "label": "海伦与帕里斯厅",
+          "placeId": "P1-19-1",
+          "outer": [
+            [
+              403.8,
+              462.8
+            ],
+            [
+              423.2,
+              462.8
+            ],
+            [
+              423.2,
+              489.2
+            ],
+            [
+              403.8,
+              489.2
+            ],
+            [
+              403.8,
+              462.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-19"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-9",
+          "label": "狄多厅",
+          "placeId": "P1-9-1",
+          "outer": [
+            [
+              466.4,
+              462.8
+            ],
+            [
+              486,
+              462.8
+            ],
+            [
+              486,
+              489.2
+            ],
+            [
+              466.4,
+              489.2
+            ],
+            [
+              466.4,
+              462.8
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-9"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-20",
+          "label": "普赛克厅",
+          "placeId": "P1-20-1",
+          "outer": [
+            [
+              403.8,
+              490.0
+            ],
+            [
+              423.2,
+              490.0
+            ],
+            [
+              423.2,
+              515
+            ],
+            [
+              403.8,
+              515
+            ],
+            [
+              403.8,
+              490.0
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-20"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-T",
+          "label": "露台",
+          "placeId": "P1-T-1",
+          "outer": [
+            [
+              423.2,
+              499.5
+            ],
+            [
+              466.4,
+              499.5
+            ],
+            [
+              466.4,
+              515
+            ],
+            [
+              423.2,
+              515
+            ],
+            [
+              423.2,
+              499.5
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-T"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        },
+        {
+          "id": "room-10",
+          "label": "赫拉克勒斯厅",
+          "placeId": "P1-10-1",
+          "outer": [
+            [
+              466.4,
+              490.0
+            ],
+            [
+              486,
+              490.0
+            ],
+            [
+              486,
+              515
+            ],
+            [
+              466.4,
+              515
+            ],
+            [
+              466.4,
+              490.0
+            ]
+          ],
+          "sourcePaths": [
+            "brochure-raster:room-10"
+          ],
+          "evidence": "Gebart visitor brochure printed room boundary.",
+          "tone": "neutral"
+        }
+      ],
+      "rasterLayers": [
+        {
+          "xref": 15,
+          "reason": "Actual neutral source wall pixels inside reviewed architectural bands; labels and service symbols outside those bands are absent, and source door gaps are retained.",
+          "allInkIsDetail": false,
+          "tolerancePixels": 0,
+          "minAreaPixels": 0.1,
+          "occurrence": 0,
+          "excludeRects": [],
+          "rgbRange": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "xref": 15,
+          "reason": "Actual neutral source pixels inside reviewed stair, threshold, terrace and column-detail regions; retained flat.",
+          "allInkIsDetail": true,
+          "tolerancePixels": 0.1,
+          "minAreaPixels": 1.2,
+          "occurrence": 0,
+          "excludeRects": [],
+          "rgbRange": [
+            [
+              128,
+              128,
+              128
+            ],
+            [
+              128,
+              128,
+              128
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "stopBindings": [
+    {
+      "stopIndex": 0,
+      "placeId": "B1-售票服务-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "P0-3-1"
+    },
+    {
+      "stopIndex": 2,
+      "placeId": "P0-4-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "P0-8-1"
+    },
+    {
+      "stopIndex": 4,
+      "placeId": "P1-9-1"
+    },
+    {
+      "stopIndex": 5,
+      "placeId": "B1-入口-1"
+    }
+  ]
 }

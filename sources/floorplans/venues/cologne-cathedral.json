@@ -1,27 +1,227 @@
 {
   "slug": "cologne-cathedral",
-  "sourceProjection":{"kind":"orthographic","pages":[13],"basis":"The Arnold Wolff nave drawing is a top-down architectural plan, with pier profiles and vault linework separately visible. It is not the visitor leaflet's cathedral elevation or aerial image."},
-  "stopBindings": [{"stopIndex":1,"placeId":"nave-唱诗班席-1"},{"stopIndex":3,"placeId":"nave-南耳堂-1"}],
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [13],
+    "basis": "The Arnold Wolff nave drawing is a top-down architectural plan, with pier profiles and vault linework separately visible. It is not the visitor leaflet's cathedral elevation or aerial image."
+  },
+  "stopBindings": [
+    {
+      "stopIndex": 0,
+      "placeId": "nave-西侧中央入口-1"
+    },
+    {
+      "stopIndex": 1,
+      "placeId": "nave-唱诗班席-1"
+    },
+    {
+      "stopIndex": 3,
+      "placeId": "nave-南耳堂-1"
+    },
+    {
+      "stopIndex": 5,
+      "placeId": "south-tower-access-2009-南塔登塔起点-1"
+    }
+  ],
   "file": "cologne-visitor.pdf",
   "url": "https://api.koelner-dom.de/uploads/2407_KW_Cologne_Cathedral_EN_9c90f29f5c.pdf",
   "sha256": "3c3aa37060e3003a57dc5ac776a5e869a59d3de29cca86715bb2a4ec9c8d742d",
-  "review": "Cologne Cathedral art competition publication, printed p11 / PDF p13. Arnold Wolff architectural ground plan, visually checked orthographic. Image72 contains only architectural ink, no textual legend. Thick black masonry and pier footprints are low walls; fine vault/rib lines stay flat. No room numbers printed, so none invented. Cardinal directions follow the west-to-east church axis, not screen north.",
-  "limitations": [
-    "本图保留教堂主层的柱墩、侧廊、耳堂和环形后殿。细线包含拱顶投影，按平面细节显示，不挤出成隔墙。",
-    "原图没有展厅编号，使用空间名称定位；墙高仅用于显示。",
-    "南塔、登塔楼梯和珍宝馆各层平面尚未核验，本图不代表完整组合票参观路线。"
+  "sourceFiles": [
+    {
+      "id": "south-tower-access-2009",
+      "file": "cologne-south-tower-access-plan-2009-review.pdf",
+      "url": "https://german-architects.com/images/CmsPageElementImage/76/41/00/5903b748d89043c6adb2346367d6201c/5903b748d89043c6adb2346367d6201c.c4b964ca.jpg",
+      "sha256": "7a57a71c2b3888365117b1d6aa70e3e4ca51e201c0312e4f61818fdd28ad14bb",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [1],
+        "basis": "The published Grundriss Tiefhof Ebene is a top-down plan: parallel wall axes, door swings, stair treads, room outlines and the labelled Turmfoyer/Tunnel route share one undistorted Cartesian drawing. The review PDF embeds the exact 450 by 459 source JPEG at native pixels without resampling or rectification."
+      }
+    }
   ],
-  "floors": [{
-    "id": "nave", "label": "教堂主层", "order": 0, "page": 13,
-    "crop": [61.8, 309.9, 411, 532], "rules": [],
-    "rasterLayers": [{"xref": 72, "maxChannel": 127, "wallKernel": 5, "tolerancePixels": 0.2, "reason": "Black masonry/column footprints separated from fine vault projection by a five-source-pixel opening; removed fine ink remains a flat detail layer."}],
-    "places": [
-      {"label":"中殿","name":"中殿","at":[163,429],"kind":"room"},
-      {"label":"交叉厅","name":"中殿与耳堂交叉厅","at":[251,429],"kind":"room"},
-      {"label":"唱诗班席","name":"东部唱诗班席区","at":[314,429],"kind":"room"},
-      {"label":"后殿回廊","name":"后殿环形回廊","at":[365,429],"kind":"room"},
-      {"label":"北耳堂","name":"北耳堂","at":[251,360],"kind":"room"},
-      {"label":"南耳堂","name":"南耳堂","at":[251,500],"kind":"room"}
-    ]
-  }]
+  "review": "The official visitor PDF page 13 and its Arnold Wolff nave drawing were visually checked. The present south-tower access level is supported separately by the 2009 Grundriss Tiefhof Ebene published with Kaspar Kraemer's completed entrance project for the Metropolitankapitel. The exact public JPEG was embedded at native pixels for deterministic extraction. Current official tower and treasury pages were checked, but no public orthographic plans were found for the 75-metre bell-frame level, 100-metre viewing platform or treasury floors. The medieval Riss D was inspected and rejected as present-day visitor geometry.",
+  "limitations": [
+    "教堂主层保留柱墩、侧廊、耳堂和环形后殿；细线包含拱顶投影，只作为平面细节显示，不抬升为隔墙。",
+    "导览停靠点0只绑定教堂主层西侧可识别的中央入口轴线，不包含中央票务处。停靠点1与3分别绑定唱诗班席和南耳堂。",
+    "2009年地下庭院层只表示现行南塔入口工程、基础通道、登塔前厅及图上明确标出的开始登塔位置；它不是塔内完整垂直路线。",
+    "停靠点2的Gero十字架和尚未取得平面的停靠点4珍宝馆保持未绑定。停靠点5只绑定地下入口层的登塔起点；75米钟架和100米观景平台没有公开正投影图，未建模。",
+    "Riss D是中世纪南塔设计图，不是现行参观路线；珍宝馆两层、塔内螺旋梯、钟架和观景平台均未据此补画。"
+  ],
+  "floors": [
+    {
+      "id": "south-tower-access-2009",
+      "label": "南塔登塔入口层（2009年地下庭院层）",
+      "order": -1,
+      "sourceId": "south-tower-access-2009",
+      "page": 1,
+      "crop": [52, 0, 450, 431],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "maxChannel": 160,
+          "wallKernel": 3,
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 0.5,
+          "includeKinds": ["wall"],
+          "flatRects": [
+            {"rect": [193, 76, 212, 151]},
+            {"rect": [217, 78, 278, 143]},
+            {"rect": [72, 283, 132, 316]},
+            {"rect": [164, 348, 205, 393]},
+            {"rect": [203, 67, 296, 88]},
+            {"rect": [302, 34, 338, 46]},
+            {"rect": [301, 211, 405, 226]},
+            {"rect": [123, 301, 173, 318]},
+            {"rect": [227, 301, 280, 318]},
+            {"rect": [305, 326, 360, 345]},
+            {"rect": [224, 343, 260, 358]},
+            {"rect": [264, 0, 286, 15]},
+            {"rect": [264, 414, 286, 431]}
+          ],
+          "reason": "Reviewed dark construction ink is separated with a three-source-pixel opening. Heavy black and deep-red wall/cut lines remain walls. Stair, lift and door-symbol regions plus the tightly bounded label rows are suppressed only in the wall channel, so labels cannot become raised masonry while intersecting source wall pixels outside those rows remain intact."
+        },
+        {
+          "xref": 5,
+          "maxChannel": 160,
+          "maxChroma": 12,
+          "wallKernel": 3,
+          "includeKinds": ["detail"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 0.5,
+          "excludeRects": [
+            {"rect": [264, 0, 286, 15]},
+            {"rect": [282, 15, 286, 24]},
+            {"rect": [282, 28, 286, 49]},
+            {"rect": [282, 53, 286, 276]},
+            {"rect": [282, 282, 286, 387]},
+            {"rect": [282, 393, 286, 403]},
+            {"rect": [282, 409, 286, 414]},
+            {"rect": [264, 414, 286, 431]},
+            {"rect": [203, 67, 296, 88]},
+            {"rect": [302, 34, 338, 46]},
+            {"rect": [301, 211, 405, 226]},
+            {"rect": [123, 301, 173, 318]},
+            {"rect": [227, 301, 280, 318]},
+            {"rect": [305, 326, 360, 345]},
+            {"rect": [224, 343, 260, 358]},
+            {"rect": [166, 311, 173, 318]},
+            {"rect": [226, 311, 233, 318]}
+          ],
+          "flatRects": [
+            {"rect": [193, 76, 212, 151]},
+            {"rect": [217, 78, 278, 143]},
+            {"rect": [72, 283, 132, 316]},
+            {"rect": [164, 348, 205, 393]}
+          ],
+          "reason": "Reviewed neutral dark ink retains stairs, lift outlines, door swings and fine construction boundaries as flat detail. Burgundy labels, arrows and the narrow A-A section line are excluded; the section-line rectangles stop before source wall bands at y=24-27, 49-52, 276-281, 387-392 and 403-408 so those original intersections are preserved rather than reconstructed."
+        }
+      ],
+      "places": [
+        {
+          "label": "地下庭院",
+          "name": "Tiefhof地下庭院",
+          "at": [235, 347],
+          "kind": "area",
+          "evidence": "锚点位于原图明确标注Tiefhof的灰色公共庭院中部，避开方向箭头和墙线。",
+          "precision": "printed-area-label-reviewed-center-not-surveyed"
+        },
+        {
+          "label": "教堂入口前厅与罗马地下室",
+          "name": "Foyer Domzugang mit Römischem Keller",
+          "at": [246, 317],
+          "kind": "room",
+          "evidence": "锚点位于原图同名文字所在的前厅区域；只保留图示组合名称，不推断地下遗址边界。",
+          "precision": "printed-combined-foyer-label-anchor-boundary-unresolved"
+        },
+        {
+          "label": "南塔基础通道",
+          "name": "南侧塔基通道一号",
+          "at": [286, 224],
+          "kind": "area",
+          "evidence": "锚点落在原图Südliches Fundament / Tunnel 1标注旁的纵向通道中心。",
+          "precision": "printed-tunnel-label-reviewed-centerline-not-surveyed"
+        },
+        {
+          "label": "南塔登塔起点",
+          "name": "登塔前厅与开始登塔位置",
+          "at": [207, 116],
+          "kind": "service",
+          "evidence": "原图在南塔前厅内明确标注Turmfoyer: Beginn Turmbesteigung；锚点取其左侧楼梯踏步中段。",
+          "precision": "printed-ascent-start-stair-anchor-not-upper-route"
+        },
+        {
+          "label": "公共卫生间入口",
+          "name": "公共卫生间入口",
+          "at": [330, 331],
+          "kind": "service",
+          "evidence": "锚点位于原图Zugang Öffent. Toilette标注的入口通道内，不把卫生间填充解释为墙体。",
+          "precision": "printed-service-entry-anchor-not-access-audit"
+        }
+      ]
+    },
+    {
+      "id": "nave",
+      "label": "教堂主层",
+      "order": 0,
+      "page": 13,
+      "crop": [61.8, 309.9, 411, 532],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 72,
+          "maxChannel": 127,
+          "wallKernel": 5,
+          "tolerancePixels": 0.2,
+          "reason": "Black masonry and column footprints are separated from fine vault projection by a five-source-pixel opening; removed fine ink remains flat detail."
+        }
+      ],
+      "places": [
+        {
+          "label": "西侧中央入口",
+          "name": "西侧中央入口轴线",
+          "at": [65.5, 429],
+          "kind": "service",
+          "evidence": "Arnold Wolff平面西端中央门洞轴线与官方现行访客说明中的西立面主要入口相符；锚点落在图示门洞边缘，不包含票务处。",
+          "precision": "reviewed-central-west-portal-edge-not-ticket-office"
+        },
+        {
+          "label": "中殿",
+          "name": "中殿",
+          "at": [163, 429],
+          "kind": "room"
+        },
+        {
+          "label": "交叉厅",
+          "name": "中殿与耳堂交叉厅",
+          "at": [251, 429],
+          "kind": "room"
+        },
+        {
+          "label": "唱诗班席",
+          "name": "东部唱诗班席区",
+          "at": [314, 429],
+          "kind": "room"
+        },
+        {
+          "label": "后殿回廊",
+          "name": "后殿环形回廊",
+          "at": [365, 429],
+          "kind": "room"
+        },
+        {
+          "label": "北耳堂",
+          "name": "北耳堂",
+          "at": [251, 360],
+          "kind": "room"
+        },
+        {
+          "label": "南耳堂",
+          "name": "南耳堂",
+          "at": [251, 500],
+          "kind": "room"
+        }
+      ]
+    }
+  ]
 }

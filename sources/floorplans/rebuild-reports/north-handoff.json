@@ -1,0 +1,94 @@
+{
+  "snapshot": "/tmp/europe-map-rebuild-north-handoff-2026-09-05",
+  "sourceRoot": "/tmp/europe-map-rebuild-north",
+  "status": "schema与最终序列化几何校验通过，等待主任务浏览器视觉QA",
+  "stableSlugs": [
+    "milan-duomo",
+    "santa-maria-grazie",
+    "sforza",
+    "galleria-vittorio",
+    "museum-ludwig",
+    "koln-triangle",
+    "notre-dame-towers"
+  ],
+  "liveFloorLabelCheck": {
+    "museum-ludwig": {
+      "basement": "地下层",
+      "ground": "底层",
+      "first": "一层",
+      "second": "二层"
+    }
+  },
+  "validation": {
+    "validateArchitecturalPlan": "7/7 通过",
+    "serializedShapely": "5319/5319 polygon 有效、非空、面积为正",
+    "duplicateFeatureIds": 0
+  },
+  "requiredConfigFiles": [
+    "sources/floorplans/venues/milan-duomo.json",
+    "sources/floorplans/venues/santa-maria-grazie.json",
+    "sources/floorplans/venues/sforza.json",
+    "sources/floorplans/venues/galleria-vittorio.json",
+    "sources/floorplans/venues/museum-ludwig.json",
+    "sources/floorplans/venues/koln-triangle.json",
+    "sources/floorplans/venues/notre-dame-towers.json"
+  ],
+  "requiredModelFiles": [
+    "app/data/architectural-plans/milan-duomo.json",
+    "app/data/architectural-plans/santa-maria-grazie.json",
+    "app/data/architectural-plans/sforza.json",
+    "app/data/architectural-plans/galleria-vittorio.json",
+    "app/data/architectural-plans/museum-ludwig.json",
+    "app/data/architectural-plans/koln-triangle.json",
+    "app/data/architectural-plans/notre-dame-towers.json"
+  ],
+  "requiredEvidenceFiles": [
+    "sources/floorplans/evidence/milan-duomo.json",
+    "sources/floorplans/evidence/santa-maria-grazie.json",
+    "sources/floorplans/evidence/sforza.json",
+    "sources/floorplans/evidence/galleria-vittorio.json",
+    "sources/floorplans/evidence/museum-ludwig.json",
+    "sources/floorplans/evidence/koln-triangle.json",
+    "sources/floorplans/evidence/notre-dame-towers.json"
+  ],
+  "requiredSourceFiles": [
+    {
+      "path": "sources/floorplans/duomo-polimi-annals-2010.pdf",
+      "sha256": "3b809fa503e1ff4da95e085937e8a796c887eeb4c2b390859eb93c277c9baa9f"
+    },
+    {
+      "path": "sources/floorplans/santa-maria-grazie-polimi-2024.pdf",
+      "sha256": "bdb42b20b4981f402eab2295760688c7c694dce632ac6da099ef629891885364"
+    },
+    {
+      "path": "sources/floorplans/sforza-polimi-fortmed-2024.pdf",
+      "sha256": "e6cbe669780d75ba15c3a950f9a35345c0234490f08076cff4d7285a09247808"
+    },
+    {
+      "path": "sources/floorplans/galleria-polimi-2016.pdf",
+      "sha256": "8d346ae41dd4b5272c8431bc03ebffa66190532521c4dd349bc6776f3fb422ef"
+    },
+    {
+      "path": "sources/floorplans/museum-ludwig-program-2021.pdf",
+      "sha256": "2ee1b2acb385f862a9a37abe8224cd5b24a3465abba9327126fcc1e4cb4b4ee8"
+    },
+    {
+      "path": "sources/floorplans/koln-triangle-architect.pdf",
+      "sha256": "0374f07240ef75e38d40c861410ff9bff6552226bd6f373107104750ff7dba7b"
+    },
+    {
+      "path": "sources/floorplans/notre-dame-dictionnaire-v2.pdf",
+      "sha256": "9f1ae751ae81ac962144d94abdf29f482fa66fa9b371898b5c0e23e24afc42e9"
+    },
+    {
+      "path": "sources/floorplans/notre-dame-dictionnaire-v2-page201-render.pdf",
+      "sha256": "0394060017e82ddbc323ed78d943143d2fc1bc79b58d2338eb3566688479ee21"
+    }
+  ],
+  "requiredReport": "sources/floorplans/rebuild-reports/north.json",
+  "reproductionHelper": "scripts/rebuild-north.py",
+  "excludedUnfinishedWork": [
+    "cologne-cathedral 配置、模型、证据",
+    "科隆塔楼与宝库研究下载件"
+  ]
+}

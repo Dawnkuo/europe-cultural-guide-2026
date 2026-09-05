@@ -1,0 +1,50 @@
+{
+  "slug": "vatican-post",
+  "status": "source-limited-exterior",
+  "installModel": false,
+  "reviewedOn": "2026-09-05",
+  "inspectionScope": "The current Saint Peter's Square mobile pavilion, not the different post office inside the Vatican Museums. Parent inspection of the architect's project gallery and eight-image contact sheet found photographs and oblique cutaways only. Occluded partitions and counter boundaries cannot be rectified into a complete overhead plan; no geometry was extracted.",
+  "review": "官方文字与建筑师项目照片／轴测图已经核查；未发现可验证的正投影室内平面。轴测图未作几何提取，文字所述十六边形也未转写成虚构平面。",
+  "sources": [
+    {
+      "url": "https://amdlcircle.com/projects/ufficio-postale-mobile-vaticano/",
+      "supports": "建筑师项目页面的2023至2024年项目介绍与图库；115平方米、十六边形体量及可移动隔断。未发布可完整读取的俯视室内平面。"
+    },
+    {
+      "url": "https://www.vaticanstate.va/en/news/1233-an-interview-with-mr-antonino-intersimone-director-of-the-directorate-of-telecommunications-and-information-systems.html",
+      "supports": "左半圆柱廊同址、圆形／十六边外形、木结构、可拆卸"
+    },
+    {
+      "url": "https://www.vaticanstate.va/it/novita/1248-inaugurato-il-nuovo-ufficio-postale-mobile-in-piazza-san-pietro-alla-presenza-del-cardinale-fernando-vergez-alzaga-e-del-direttore-generale-di-poste-italiane-giuseppe-lasco.html",
+      "supports": "三处工作台、中央等候区、无障碍、十六边外形"
+    },
+    {
+      "url": "https://www.archilovers.com/projects/333585/new-vatican-mobile-post-office.html",
+      "supports": "建筑师署名项目照片与轴测图；可移动木格栅隔断及服务功能顺序"
+    }
+  ],
+  "missing": [
+    "原始正投影室内平面",
+    "固定柜台坐标",
+    "地址填写位置",
+    "盖戳柜台或投递口位置"
+  ],
+  "stopBindings": [
+    {
+      "stopIndex": 0,
+      "unresolved": "官方资料确认位于圣伯多禄广场左半圆柱廊，但没有可安装的正投影场地平面。"
+    },
+    {
+      "stopIndex": 1,
+      "unresolved": "三处工作台存在，但没有正投影来源固定集邮柜台位置。"
+    },
+    {
+      "stopIndex": 2,
+      "unresolved": "咨询桌和等候区存在；可移动隔断使固定地址填写点无法证实。"
+    },
+    {
+      "stopIndex": 3,
+      "unresolved": "一般邮政柜台存在，但盖戳柜台或投递口没有独立定位。"
+    }
+  ]
+}

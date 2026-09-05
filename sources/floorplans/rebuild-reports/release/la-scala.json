@@ -1,0 +1,241 @@
+{
+  "slug": "la-scala",
+  "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared museum and restored-theatre plans. Retains all eight numbered museum rooms, irregular connecting spaces, foyer, auditorium and stage, with eight museum selection faces. Seat numbers are not reused as room identifiers.",
+    "floorCoverageReview": "Museum rooms1-8 and one documented theatre main level. Room9,library,upper boxes and backstage access are not asserted.",
+    "stopBindingReview": "Collection stop1 binds rooms1/3/4; stops5/6 bind theatre foyer, auditorium and stage. Other works lack supported exact room locations.",
+    "verticalConnectionReview": "Two independent buildings/levels have no verified connecting landing pair.",
+    "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+    "sourceDigest": "74a1f5fb0a3828df9f03c38efbf8100e5963fdf77475759dd3c95db9db9a3c33",
+    "sourceEvidence": "sources/floorplans/evidence/la-scala.json",
+    "comparedFloors": [
+      "museum",
+      "theatre"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:41:56.565Z",
+    "slug": "la-scala",
+    "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+    "sourceDigest": "74a1f5fb0a3828df9f03c38efbf8100e5963fdf77475759dd3c95db9db9a3c33",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "museum",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "theatre",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/la-scala-1440-3d.png",
+          "work/map-review/release-final/la-scala-1440-museum-2d.png",
+          "work/map-review/release-final/la-scala-1440-theatre-2d.png",
+          "work/map-review/release-final/la-scala-1440-museum-selection-2d.png",
+          "work/map-review/release-final/la-scala-1440-museum-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 866,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [
+          "museum-sala-1",
+          "museum-sala-3",
+          "museum-sala-4"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "museum",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "theatre",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/la-scala-1094-3d.png",
+          "work/map-review/release-final/la-scala-1094-museum-2d.png",
+          "work/map-review/release-final/la-scala-1094-theatre-2d.png",
+          "work/map-review/release-final/la-scala-1094-museum-selection-2d.png",
+          "work/map-review/release-final/la-scala-1094-museum-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1097,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [
+          "museum-sala-1",
+          "museum-sala-3",
+          "museum-sala-4"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "museum",
+            "exactLabels": 8,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "theatre",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/la-scala-390-3d.png",
+          "work/map-review/release-final/la-scala-390-museum-2d.png",
+          "work/map-review/release-final/la-scala-390-theatre-2d.png",
+          "work/map-review/release-final/la-scala-390-museum-selection-2d.png",
+          "work/map-review/release-final/la-scala-390-museum-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1068,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 12,
+        "selectedSpaces": [
+          "museum-sala-1",
+          "museum-sala-3",
+          "museum-sala-4"
+        ],
+        "stopTargets": 6,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "la-scala",
+    "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "museum",
+      "theatre"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "la-scala",
+    "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.5,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/la-scala/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 117.37069567737299,
+      "screenshot": "work/map-review/guide-pages-final/_guides_la-scala_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/la-scala/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 132.3591982331713,
+      "screenshot": "work/map-review/guide-pages-final/_guides_la-scala_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/la-scala/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 136.3794622678691,
+      "screenshot": "work/map-review/guide-pages-final/_guides_la-scala_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/la-scala/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+    "passed": true
+  }
+}

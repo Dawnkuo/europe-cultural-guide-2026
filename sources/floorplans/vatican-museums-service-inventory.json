@@ -1,0 +1,1879 @@
+{
+  "source": "sources/floorplans/vatican-museums-candidate-1.pdf",
+  "sha256": "a0c97704c9af1b096f9e9fa12061acd6998f112206af01c24b7cfda7dbf6c9ff",
+  "method": "Visible full-page render reviewed first; each retained instance is then anchored to the exact get_drawings() coloured service-circle bounds centre. Legend examples and clipped duplicate form copies are excluded.",
+  "counts": {
+    "first": 46,
+    "second": 7,
+    "basement": 6
+  },
+  "categoryCounts": {
+    "first": {
+      "accessible-elevator-assistance": 7,
+      "audioguide-desk": 4,
+      "baby-changing-table": 5,
+      "booking-voucher-change": 1,
+      "bookshop": 4,
+      "buy-ticket": 1,
+      "cafeteria-bistrot": 3,
+      "cafeteria-bistrot-utensils": 1,
+      "checkroom": 1,
+      "disabled-toilets": 1,
+      "elevator": 4,
+      "first-aid": 3,
+      "guided-tours-meeting-point": 1,
+      "information": 1,
+      "luggage-storage": 1,
+      "reception": 1,
+      "special-permits": 1,
+      "toilets": 4,
+      "vatican-post-office": 1,
+      "wheelchair-ramp": 1
+    },
+    "second": {
+      "accessible-elevator-assistance": 3,
+      "baby-changing-table": 1,
+      "bookshop": 1,
+      "disabled-toilets": 1,
+      "toilets": 1
+    },
+    "basement": {
+      "accessible-elevator-assistance": 2,
+      "baby-changing-table": 1,
+      "cafeteria-bistrot": 1,
+      "disabled-toilets": 1,
+      "toilets": 1
+    }
+  },
+  "services": [
+    {
+      "id": "first-service-01",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 141,
+      "drawingSeqno": 199,
+      "circleRect": [
+        59.738602,
+        170.985001,
+        68.3526,
+        179.675995
+      ],
+      "center": [
+        64.045601,
+        175.330498
+      ],
+      "label": "团队集合",
+      "name": "导览团集合点",
+      "category": "guided-tours-meeting-point",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        252,
+        253,
+        254
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-02",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 150,
+      "drawingSeqno": 208,
+      "circleRect": [
+        70.216003,
+        214.900009,
+        78.806999,
+        223.490005
+      ],
+      "center": [
+        74.511501,
+        219.195007
+      ],
+      "label": "购票",
+      "name": "购票处",
+      "category": "buy-ticket",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-03",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 158,
+      "drawingSeqno": 216,
+      "circleRect": [
+        85.910995,
+        330.835999,
+        94.501999,
+        339.426025
+      ],
+      "center": [
+        90.206497,
+        335.131012
+      ],
+      "label": "书店",
+      "name": "书店",
+      "category": "bookshop",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-04",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 161,
+      "drawingSeqno": 219,
+      "circleRect": [
+        78.806793,
+        260.923981,
+        87.397797,
+        269.514008
+      ],
+      "center": [
+        83.102295,
+        265.218994
+      ],
+      "label": "衣帽间",
+      "name": "衣帽间",
+      "category": "checkroom",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-05",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 163,
+      "drawingSeqno": 221,
+      "circleRect": [
+        78.806793,
+        279.880981,
+        87.397797,
+        288.471008
+      ],
+      "center": [
+        83.102295,
+        284.175995
+      ],
+      "label": "信息",
+      "name": "信息台",
+      "category": "information",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-06",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 166,
+      "drawingSeqno": 224,
+      "circleRect": [
+        160.584,
+        259.472992,
+        169.175003,
+        268.063019
+      ],
+      "center": [
+        164.879501,
+        263.768005
+      ],
+      "label": "语音导览",
+      "name": "语音导览台",
+      "category": "audioguide-desk",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-07",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 168,
+      "drawingSeqno": 226,
+      "circleRect": [
+        161.662003,
+        314.66098,
+        170.253006,
+        323.251007
+      ],
+      "center": [
+        165.957504,
+        318.955994
+      ],
+      "label": "邮局",
+      "name": "梵蒂冈邮局",
+      "category": "vatican-post-office",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-08",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 170,
+      "drawingSeqno": 228,
+      "circleRect": [
+        210.981003,
+        177.473007,
+        219.572006,
+        186.063004
+      ],
+      "center": [
+        215.276505,
+        181.768005
+      ],
+      "label": "咖啡厅",
+      "name": "咖啡厅／小酒馆",
+      "category": "cafeteria-bistrot",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-09",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 172,
+      "drawingSeqno": 230,
+      "circleRect": [
+        204.386993,
+        336.827972,
+        212.977997,
+        345.417999
+      ],
+      "center": [
+        208.682495,
+        341.122986
+      ],
+      "label": "书店",
+      "name": "书店",
+      "category": "bookshop",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-10",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 174,
+      "drawingSeqno": 232,
+      "circleRect": [
+        408.458008,
+        245.034012,
+        417.049011,
+        253.624008
+      ],
+      "center": [
+        412.75351,
+        249.32901
+      ],
+      "label": "书店",
+      "name": "书店",
+      "category": "bookshop",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-11",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 176,
+      "drawingSeqno": 234,
+      "circleRect": [
+        464.234985,
+        245.034012,
+        472.825989,
+        253.624008
+      ],
+      "center": [
+        468.530487,
+        249.32901
+      ],
+      "label": "书店",
+      "name": "书店",
+      "category": "bookshop",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-12",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 178,
+      "drawingSeqno": 236,
+      "circleRect": [
+        322.869995,
+        308.018982,
+        331.460999,
+        316.609009
+      ],
+      "center": [
+        327.165497,
+        312.313995
+      ],
+      "label": "餐饮",
+      "name": "咖啡厅／小酒馆（餐具图标）",
+      "category": "cafeteria-bistrot-utensils",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-13",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 180,
+      "drawingSeqno": 238,
+      "circleRect": [
+        312.139008,
+        308.018982,
+        320.730011,
+        316.609009
+      ],
+      "center": [
+        316.434509,
+        312.313995
+      ],
+      "label": "咖啡厅",
+      "name": "咖啡厅／小酒馆",
+      "category": "cafeteria-bistrot",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-14",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 182,
+      "drawingSeqno": 240,
+      "circleRect": [
+        779.073975,
+        247.274002,
+        787.664978,
+        255.863998
+      ],
+      "center": [
+        783.369476,
+        251.569
+      ],
+      "label": "咖啡厅",
+      "name": "咖啡厅／小酒馆",
+      "category": "cafeteria-bistrot",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-15",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 184,
+      "drawingSeqno": 242,
+      "circleRect": [
+        74.396805,
+        224.922012,
+        82.987801,
+        233.512009
+      ],
+      "center": [
+        78.692303,
+        229.21701
+      ],
+      "label": "语音导览",
+      "name": "语音导览台",
+      "category": "audioguide-desk",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-16",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 187,
+      "drawingSeqno": 245,
+      "circleRect": [
+        72.728699,
+        183.539017,
+        81.319702,
+        192.129013
+      ],
+      "center": [
+        77.0242,
+        187.834015
+      ],
+      "label": "语音导览",
+      "name": "语音导览台",
+      "category": "audioguide-desk",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        202,
+        216,
+        229
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-17",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 190,
+      "drawingSeqno": 248,
+      "circleRect": [
+        155.667999,
+        288.743988,
+        164.259003,
+        297.334015
+      ],
+      "center": [
+        159.963501,
+        293.039001
+      ],
+      "label": "语音导览",
+      "name": "语音导览台",
+      "category": "audioguide-desk",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-18",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 193,
+      "drawingSeqno": 251,
+      "circleRect": [
+        79.709305,
+        199.724014,
+        88.300301,
+        208.314011
+      ],
+      "center": [
+        84.004803,
+        204.019012
+      ],
+      "label": "凭证兑换",
+      "name": "预约凭证兑换",
+      "category": "booking-voucher-change",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-19",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 200,
+      "drawingSeqno": 258,
+      "circleRect": [
+        33.372799,
+        215.771988,
+        41.963799,
+        224.361984
+      ],
+      "center": [
+        37.668299,
+        220.066986
+      ],
+      "label": "接待",
+      "name": "接待处",
+      "category": "reception",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-20",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 202,
+      "drawingSeqno": 260,
+      "circleRect": [
+        69.409897,
+        263.639984,
+        78.0009,
+        272.230011
+      ],
+      "center": [
+        73.705399,
+        267.934998
+      ],
+      "label": "行李寄存",
+      "name": "行李寄存",
+      "category": "luggage-storage",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-21",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 233,
+      "drawingSeqno": 299,
+      "circleRect": [
+        38.798,
+        189.103012,
+        47.389,
+        197.693008
+      ],
+      "center": [
+        43.0935,
+        193.39801
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        244,
+        177,
+        112
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-22",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 236,
+      "drawingSeqno": 302,
+      "circleRect": [
+        48.659401,
+        189.103012,
+        57.250401,
+        197.693008
+      ],
+      "center": [
+        52.954901,
+        193.39801
+      ],
+      "label": "无障碍洗手间",
+      "name": "无障碍洗手间",
+      "category": "disabled-toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-23",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 245,
+      "drawingSeqno": 311,
+      "circleRect": [
+        33.4688,
+        227.278,
+        41.963799,
+        235.867996
+      ],
+      "center": [
+        37.716299,
+        231.572998
+      ],
+      "label": "特别许可",
+      "name": "特别许可",
+      "category": "special-permits",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-24",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 251,
+      "drawingSeqno": 317,
+      "circleRect": [
+        48.659599,
+        199.724014,
+        57.250599,
+        208.314011
+      ],
+      "center": [
+        52.955099,
+        204.019012
+      ],
+      "label": "婴儿护理",
+      "name": "婴儿护理台",
+      "category": "baby-changing-table",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-25",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 257,
+      "drawingSeqno": 323,
+      "circleRect": [
+        56.295498,
+        224.136002,
+        64.886497,
+        232.725998
+      ],
+      "center": [
+        60.590998,
+        228.431
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        246,
+        183,
+        122
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-26",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 260,
+      "drawingSeqno": 326,
+      "circleRect": [
+        69.425598,
+        249.350998,
+        78.016602,
+        257.94101
+      ],
+      "center": [
+        73.7211,
+        253.646004
+      ],
+      "label": "急救",
+      "name": "急救",
+      "category": "first-aid",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-27",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 262,
+      "drawingSeqno": 328,
+      "circleRect": [
+        61.296299,
+        215.061996,
+        69.887299,
+        223.651993
+      ],
+      "center": [
+        65.591799,
+        219.356995
+      ],
+      "label": "电梯",
+      "name": "电梯",
+      "category": "elevator",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        251,
+        221,
+        190
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-28",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 268,
+      "drawingSeqno": 334,
+      "circleRect": [
+        66.069,
+        229.862991,
+        74.660004,
+        238.452988
+      ],
+      "center": [
+        70.364502,
+        234.15799
+      ],
+      "label": "电梯",
+      "name": "电梯",
+      "category": "elevator",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        251,
+        215,
+        179
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-29",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 274,
+      "drawingSeqno": 340,
+      "circleRect": [
+        91.753006,
+        299.190979,
+        100.344002,
+        307.781006
+      ],
+      "center": [
+        96.048504,
+        303.485992
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        249,
+        205,
+        160
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-30",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 277,
+      "drawingSeqno": 343,
+      "circleRect": [
+        91.753006,
+        311.463989,
+        100.344002,
+        320.054016
+      ],
+      "center": [
+        96.048504,
+        315.759003
+      ],
+      "label": "电梯",
+      "name": "电梯",
+      "category": "elevator",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        252,
+        230,
+        206
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-31",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 283,
+      "drawingSeqno": 349,
+      "circleRect": [
+        111.744003,
+        281.312988,
+        120.334999,
+        289.903015
+      ],
+      "center": [
+        116.039501,
+        285.608002
+      ],
+      "label": "轮椅坡道",
+      "name": "轮椅坡道",
+      "category": "wheelchair-ramp",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-32",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 288,
+      "drawingSeqno": 354,
+      "circleRect": [
+        148.608994,
+        258.518982,
+        157.199997,
+        267.109009
+      ],
+      "center": [
+        152.904495,
+        262.813995
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        238,
+        147,
+        53
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-33",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 291,
+      "drawingSeqno": 357,
+      "circleRect": [
+        170.925995,
+        205.517014,
+        179.516998,
+        214.10701
+      ],
+      "center": [
+        175.221497,
+        209.812012
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        238,
+        146,
+        50
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-34",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 294,
+      "drawingSeqno": 360,
+      "circleRect": [
+        316.43399,
+        232.081009,
+        325.024994,
+        240.671005
+      ],
+      "center": [
+        320.729492,
+        236.376007
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-35",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 297,
+      "drawingSeqno": 363,
+      "circleRect": [
+        151.145996,
+        305.552002,
+        159.737,
+        314.142029
+      ],
+      "center": [
+        155.441498,
+        309.847015
+      ],
+      "label": "洗手间",
+      "name": "洗手间",
+      "category": "toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        244,
+        174,
+        105
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-36",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 302,
+      "drawingSeqno": 368,
+      "circleRect": [
+        151.145996,
+        314.66098,
+        159.737,
+        323.251007
+      ],
+      "center": [
+        155.441498,
+        318.955994
+      ],
+      "label": "婴儿护理",
+      "name": "婴儿护理台",
+      "category": "baby-changing-table",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-37",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 308,
+      "drawingSeqno": 374,
+      "circleRect": [
+        182.501999,
+        309.934998,
+        191.093002,
+        318.525024
+      ],
+      "center": [
+        186.797501,
+        314.230011
+      ],
+      "label": "电梯",
+      "name": "电梯",
+      "category": "elevator",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        255,
+        252,
+        248
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-38",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 314,
+      "drawingSeqno": 380,
+      "circleRect": [
+        225.248001,
+        349.455994,
+        233.839005,
+        358.046021
+      ],
+      "center": [
+        229.543503,
+        353.751007
+      ],
+      "label": "急救",
+      "name": "急救",
+      "category": "first-aid",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-39",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 316,
+      "drawingSeqno": 382,
+      "circleRect": [
+        290.677002,
+        308.018982,
+        299.268005,
+        316.609009
+      ],
+      "center": [
+        294.972504,
+        312.313995
+      ],
+      "label": "洗手间",
+      "name": "洗手间",
+      "category": "toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        242,
+        170,
+        98
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-40",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 321,
+      "drawingSeqno": 387,
+      "circleRect": [
+        301.40799,
+        308.018982,
+        309.998993,
+        316.609009
+      ],
+      "center": [
+        305.703491,
+        312.313995
+      ],
+      "label": "婴儿护理",
+      "name": "婴儿护理台",
+      "category": "baby-changing-table",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-41",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 327,
+      "drawingSeqno": 393,
+      "circleRect": [
+        779.073975,
+        258.174988,
+        787.664978,
+        266.765015
+      ],
+      "center": [
+        783.369476,
+        262.470001
+      ],
+      "label": "急救",
+      "name": "急救",
+      "category": "first-aid",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-42",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 329,
+      "drawingSeqno": 395,
+      "circleRect": [
+        664.38501,
+        220.401016,
+        672.976013,
+        228.991013
+      ],
+      "center": [
+        668.680511,
+        224.696014
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        237,
+        145,
+        48
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-43",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 333,
+      "drawingSeqno": 399,
+      "circleRect": [
+        790.700989,
+        247.275009,
+        799.291992,
+        255.865005
+      ],
+      "center": [
+        794.99649,
+        251.570007
+      ],
+      "label": "婴儿护理",
+      "name": "婴儿护理台",
+      "category": "baby-changing-table",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-44",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 338,
+      "drawingSeqno": 404,
+      "circleRect": [
+        790.760986,
+        258.518982,
+        799.35199,
+        267.109009
+      ],
+      "center": [
+        795.056488,
+        262.813995
+      ],
+      "label": "洗手间",
+      "name": "洗手间",
+      "category": "toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        251,
+        214,
+        177
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-45",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 345,
+      "drawingSeqno": 411,
+      "circleRect": [
+        148.776001,
+        107.820999,
+        157.367004,
+        116.410995
+      ],
+      "center": [
+        153.071503,
+        112.115997
+      ],
+      "label": "洗手间",
+      "name": "洗手间",
+      "category": "toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        249,
+        208,
+        166
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "first-service-46",
+      "floorId": "first",
+      "page": 1,
+      "drawingIndex": 350,
+      "drawingSeqno": 416,
+      "circleRect": [
+        148.776001,
+        97.249008,
+        157.367004,
+        105.839005
+      ],
+      "center": [
+        153.071503,
+        101.544006
+      ],
+      "label": "婴儿护理",
+      "name": "婴儿护理台",
+      "category": "baby-changing-table",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "second-service-01",
+      "floorId": "second",
+      "page": 2,
+      "drawingIndex": 67,
+      "drawingSeqno": 98,
+      "circleRect": [
+        492.464996,
+        161.378983,
+        502.27301,
+        171.186996
+      ],
+      "center": [
+        497.369003,
+        166.28299
+      ],
+      "label": "书店",
+      "name": "书店",
+      "category": "bookshop",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        35,
+        130,
+        169
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "second-service-02",
+      "floorId": "second",
+      "page": 2,
+      "drawingIndex": 70,
+      "drawingSeqno": 102,
+      "circleRect": [
+        48.155701,
+        143.125992,
+        56.853699,
+        151.822006
+      ],
+      "center": [
+        52.5047,
+        147.473999
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        249,
+        209,
+        167
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "second-service-03",
+      "floorId": "second",
+      "page": 2,
+      "drawingIndex": 85,
+      "drawingSeqno": 117,
+      "circleRect": [
+        529.106995,
+        98.300995,
+        538.846985,
+        108.042999
+      ],
+      "center": [
+        533.97699,
+        103.171997
+      ],
+      "label": "洗手间",
+      "name": "洗手间",
+      "category": "toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        242,
+        169,
+        97
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "second-service-04",
+      "floorId": "second",
+      "page": 2,
+      "drawingIndex": 95,
+      "drawingSeqno": 127,
+      "circleRect": [
+        529.106018,
+        87.220001,
+        538.846008,
+        96.962006
+      ],
+      "center": [
+        533.976013,
+        92.091003
+      ],
+      "label": "婴儿护理",
+      "name": "婴儿护理台",
+      "category": "baby-changing-table",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "second-service-05",
+      "floorId": "second",
+      "page": 2,
+      "drawingIndex": 100,
+      "drawingSeqno": 132,
+      "circleRect": [
+        528.803955,
+        109.083,
+        539.146973,
+        119.424995
+      ],
+      "center": [
+        533.975464,
+        114.253998
+      ],
+      "label": "无障碍洗手间",
+      "name": "无障碍洗手间",
+      "category": "disabled-toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "second-service-06",
+      "floorId": "second",
+      "page": 2,
+      "drawingIndex": 108,
+      "drawingSeqno": 140,
+      "circleRect": [
+        80.409401,
+        168.952988,
+        90.218399,
+        178.761002
+      ],
+      "center": [
+        85.3139,
+        173.856995
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        251,
+        213,
+        174
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "second-service-07",
+      "floorId": "second",
+      "page": 2,
+      "drawingIndex": 117,
+      "drawingSeqno": 149,
+      "circleRect": [
+        224.289001,
+        153.020004,
+        234.098007,
+        162.828018
+      ],
+      "center": [
+        229.193504,
+        157.924011
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        240,
+        157,
+        73
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "basement-service-01",
+      "floorId": "basement",
+      "page": 2,
+      "drawingIndex": 65,
+      "drawingSeqno": 96,
+      "circleRect": [
+        225.813995,
+        392.990997,
+        235.554001,
+        402.733002
+      ],
+      "center": [
+        230.683998,
+        397.862
+      ],
+      "label": "咖啡厅",
+      "name": "咖啡厅／小酒馆",
+      "category": "cafeteria-bistrot",
+      "fill": [
+        0.13,
+        0.51,
+        0.663
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "basement-service-02",
+      "floorId": "basement",
+      "page": 2,
+      "drawingIndex": 73,
+      "drawingSeqno": 105,
+      "circleRect": [
+        239.699997,
+        387.343018,
+        249.507996,
+        397.151001
+      ],
+      "center": [
+        244.603996,
+        392.247009
+      ],
+      "label": "婴儿护理",
+      "name": "婴儿护理台",
+      "category": "baby-changing-table",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        236,
+        137,
+        35
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "basement-service-03",
+      "floorId": "basement",
+      "page": 2,
+      "drawingIndex": 77,
+      "drawingSeqno": 109,
+      "circleRect": [
+        251.307999,
+        387.076019,
+        261.651001,
+        397.417999
+      ],
+      "center": [
+        256.4795,
+        392.247009
+      ],
+      "label": "无障碍洗手间",
+      "name": "无障碍洗手间",
+      "category": "disabled-toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        255,
+        255,
+        255
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "basement-service-04",
+      "floorId": "basement",
+      "page": 2,
+      "drawingIndex": 90,
+      "drawingSeqno": 122,
+      "circleRect": [
+        263.486023,
+        387.376007,
+        273.226013,
+        397.118011
+      ],
+      "center": [
+        268.356018,
+        392.247009
+      ],
+      "label": "洗手间",
+      "name": "洗手间",
+      "category": "toilets",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        252,
+        230,
+        206
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "basement-service-05",
+      "floorId": "basement",
+      "page": 2,
+      "drawingIndex": 111,
+      "drawingSeqno": 143,
+      "circleRect": [
+        30.628099,
+        422.596008,
+        40.437099,
+        432.403992
+      ],
+      "center": [
+        35.532599,
+        427.5
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        251,
+        219,
+        187
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    },
+    {
+      "id": "basement-service-06",
+      "floorId": "basement",
+      "page": 2,
+      "drawingIndex": 114,
+      "drawingSeqno": 146,
+      "circleRect": [
+        39.085297,
+        468.881012,
+        48.894299,
+        478.688995
+      ],
+      "center": [
+        43.989798,
+        473.785004
+      ],
+      "label": "无障碍电梯",
+      "name": "无障碍电梯与协助",
+      "category": "accessible-elevator-assistance",
+      "fill": [
+        0.922,
+        0.536,
+        0.137
+      ],
+      "centerRenderedRgb": [
+        237,
+        145,
+        48
+      ],
+      "precision": "PDF vector service-circle bounds centre; visible source instance"
+    }
+  ]
+}

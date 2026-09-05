@@ -1,0 +1,328 @@
+{
+  "slug": "leaning-tower",
+  "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared current base drawing and all four1910 measured-plan groups. Retains native variable column shapes, thick annular masonry, actual voids and tread/hatch details; four annotation-obscured or ambiguous column sites remain missing instead of filled with ideal circles. No universal cylinder or solid center is substituted.",
+    "floorCoverageReview": "Five source-plan groups, not eight separately measured physical floors. Two depictions of the first gallery are not treated as successive levels.",
+    "stopBindingReview": "Stops2/3 locate the documented ascent entrance and bell colonnade. Relief, precise outdoor anchors and upper ring platform remain unlocated.",
+    "verticalConnectionReview": "Three documented ascent segments; no cross-link between two depictions of the same physical level.",
+    "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+    "sourceDigest": "c393192a76ad386ad08ea06fceb4b0638800ffc19449783b9358fca662436184",
+    "sourceEvidence": "sources/floorplans/evidence/leaning-tower.json",
+    "comparedFloors": [
+      "base",
+      "entry-first",
+      "galleries-1-3",
+      "galleries-4-7",
+      "upper"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:42:49.838Z",
+    "slug": "leaning-tower",
+    "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+    "sourceDigest": "c393192a76ad386ad08ea06fceb4b0638800ffc19449783b9358fca662436184",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "base",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "entry-first",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "galleries-1-3",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "galleries-4-7",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/leaning-tower-1440-3d.png",
+          "work/map-review/release-final/leaning-tower-1440-base-2d.png",
+          "work/map-review/release-final/leaning-tower-1440-entry-first-2d.png",
+          "work/map-review/release-final/leaning-tower-1440-galleries-1-3-2d.png",
+          "work/map-review/release-final/leaning-tower-1440-galleries-4-7-2d.png",
+          "work/map-review/release-final/leaning-tower-1440-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 486,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 13,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "base",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "entry-first",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "galleries-1-3",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "galleries-4-7",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/leaning-tower-1094-3d.png",
+          "work/map-review/release-final/leaning-tower-1094-base-2d.png",
+          "work/map-review/release-final/leaning-tower-1094-entry-first-2d.png",
+          "work/map-review/release-final/leaning-tower-1094-galleries-1-3-2d.png",
+          "work/map-review/release-final/leaning-tower-1094-galleries-4-7-2d.png",
+          "work/map-review/release-final/leaning-tower-1094-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 608,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 13,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "base",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "entry-first",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "galleries-1-3",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "galleries-4-7",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "upper",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/leaning-tower-390-3d.png",
+          "work/map-review/release-final/leaning-tower-390-base-2d.png",
+          "work/map-review/release-final/leaning-tower-390-entry-first-2d.png",
+          "work/map-review/release-final/leaning-tower-390-galleries-1-3-2d.png",
+          "work/map-review/release-final/leaning-tower-390-galleries-4-7-2d.png",
+          "work/map-review/release-final/leaning-tower-390-upper-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1214,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 13,
+        "selectedSpaces": [],
+        "stopTargets": 2,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "leaning-tower",
+    "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "base",
+      "entry-first",
+      "galleries-1-3",
+      "galleries-4-7",
+      "upper"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "leaning-tower",
+    "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": 2.2,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/leaning-tower/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 84.40357118441518,
+      "screenshot": "work/map-review/guide-pages-final/_guides_leaning-tower_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/leaning-tower/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 97.44866880366759,
+      "screenshot": "work/map-review/guide-pages-final/_guides_leaning-tower_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/leaning-tower/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 124.3263279715895,
+      "screenshot": "work/map-review/guide-pages-final/_guides_leaning-tower_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/leaning-tower/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+    "passed": true
+  }
+}

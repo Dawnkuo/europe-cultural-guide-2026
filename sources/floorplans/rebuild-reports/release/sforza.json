@@ -1,0 +1,188 @@
+{
+  "slug": "sforza",
+  "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the Polimi2024 Piazza d'Armi-level raster in unrotated native720x480 page coordinates. Corrected all four anchors against its printed courtyard names and actual right-hand Filarete gate gap. Retains thick black core/rooms/towers and flat small linework; the red study circle and pale demolished Ghirlanda are excluded. Official2025 upper axonometric blocks were rejected rather than cloned as floor plates.",
+    "floorCoverageReview": "Principal courtyard-level historical fabric only. Upper museum galleries remain unavailable orthographic geometry.",
+    "stopBindingReview": "Stops0-2 bind Filarete doorway,piazza d'armi,Rocchetta and corte ducale. Collection stops3-5 remain text without false floor assignments.",
+    "verticalConnectionReview": "No reliable independent upper plans or paired landings; no fabricated connection.",
+    "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+    "sourceDigest": "e6cbe669780d75ba15c3a950f9a35345c0234490f08076cff4d7285a09247808",
+    "sourceEvidence": "sources/floorplans/evidence/sforza.json",
+    "comparedFloors": [
+      "ground"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:47:00.477Z",
+    "slug": "sforza",
+    "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+    "sourceDigest": "e6cbe669780d75ba15c3a950f9a35345c0234490f08076cff4d7285a09247808",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/sforza-1440-3d.png",
+          "work/map-review/release-final/sforza-1440-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 432,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/sforza-1094-3d.png",
+          "work/map-review/release-final/sforza-1094-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 492,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "ground",
+            "exactLabels": 4,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/sforza-390-3d.png",
+          "work/map-review/release-final/sforza-390-ground-2d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 280,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 4,
+        "selectedSpaces": [],
+        "stopTargets": 4,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "sforza",
+    "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "ground"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "sforza",
+    "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 1.6,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/sforza/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 109.58763679239115,
+      "screenshot": "work/map-review/guide-pages-final/_guides_sforza_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/sforza/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 125.73962134916614,
+      "screenshot": "work/map-review/guide-pages-final/_guides_sforza_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/sforza/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 100.03152131743326,
+      "screenshot": "work/map-review/guide-pages-final/_guides_sforza_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/sforza/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+    "passed": true
+  }
+}

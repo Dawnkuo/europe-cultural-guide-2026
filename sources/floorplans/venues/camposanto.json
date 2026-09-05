@@ -1,0 +1,112 @@
+{
+  "slug": "camposanto",
+  "file": "derived/camposanto-ground-plan-strict.pdf",
+  "url": "https://doi.org/10.36153/ARCHIMED-3-032",
+  "sha256": "a6ee767951badd43aa8d19ed6b87b2615f729bb0c9af9aa5efc35ad7c4525e73",
+  "sourceProjection": {
+    "kind": "orthographic",
+    "pages": [1],
+    "basis": "The University of Florence survey on PDF page 19 was visually checked as an orthographic laser-scanner and photogrammetric ground plan. The strict semantic raster classifies original perimeter, annex and 55 source-detected colonnade support profiles as structure; survey level targets and readings are excluded, while tomb paving remains flat source detail."
+  },
+  "stopBindings": [
+    {"stopIndex": 0, "placeId": "ground-中央庭院-1"},
+    {"stopIndex": 1, "placeId": "ground-生命与死亡壁画（南墙）-1"}
+  ],
+  "review": "University of Florence survey PDF page 19 / printed page 461, visually checked at four-times render scale. Directional classifiers retain only original source pixels for the monument perimeter and east-end structural walls; independently detected local source windows retain 55 actual colonnade support profiles without replacing their shape. Twenty-six in-scope survey level targets and adjacent readings are excluded. Tomb slabs, paving and courtyard crossings remain flat detail rather than walls. Current OPA evidence places the Buffalmacco Life and Death cycle on the south wall between the two monument accesses, the Old Testament cycle along the north wall, and Francesco Traini's Crucifixion back at its original southeast-corner position in March 2026. These cardinal claims are anchored against the measured plan; no individual panel width is inferred.",
+  "internalNotes": ["仅覆盖已测绘的底层平面；不虚构屋顶或不可进入的服务层。","外墙、东端附属房间墙体与55个实际测绘柱截面按源像素分类；墓板、铺地和庭院横向通道保持平面细节。","26个范围内高程测点及短数值读数已排除，不再误作墙体。","中央庭院与南墙生命／死亡壁画停点已有平面与馆方方位依据；不推测单幅壁画边界。","罗马石棺分布于多条回廊，地方纪念物亦分散陈列；现有资料没有逐件定位，因此相关停点保持未绑定。"],
+  "limitations": ["仅包含测绘所示底层庭院、四面回廊与东端附属房间；壁画只定位到有馆方证据的墙面区域，不表示单幅边界。","罗马石棺与地方纪念物缺少逐件现行位置，相关停点保持未绑定；屋顶、不可进入服务层和当前参观流线均未定位。"],
+  "floors": [
+    {
+      "id": "ground",
+      "label": "底层测绘平面",
+      "order": 0,
+      "page": 1,
+      "crop": [0, 0, 2000, 780],
+      "rules": [],
+      "rasterLayers": [
+        {
+          "xref": 5,
+          "rgbRange": [[0, 0, 0], [0, 0, 0]],
+          "wallKernel": 1,
+          "includeKinds": ["wall"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Black pixels are original survey pixels selected by reviewed perimeter/annex directional traces and 55 independently detected support windows. No source contour is closed, filled or regularized."
+        },
+        {
+          "xref": 5,
+          "rgbRange": [[128, 128, 128], [128, 128, 128]],
+          "wallKernel": 1,
+          "allInkIsDetail": true,
+          "includeKinds": ["detail"],
+          "tolerancePixels": 0.2,
+          "minAreaPixels": 1,
+          "reason": "Gray pixels are original tomb-slab, paving, door and courtyard-crossing survey linework kept flat. Level targets and their numeric readings are not emitted."
+        }
+      ],
+      "places": [
+        {
+          "label": "中央庭院",
+          "kind": "area",
+          "at": [950, 430],
+          "evidence": "Anchor placed in the center of the documented open rectangular court."
+        },
+        {
+          "label": "北廊",
+          "kind": "area",
+          "at": [950, 235],
+          "evidence": "Cardinal gallery-zone anchor within the surveyed north walk; no artwork assignment is implied."
+        },
+        {
+          "label": "东廊",
+          "kind": "area",
+          "at": [1670, 430],
+          "evidence": "Cardinal gallery-zone anchor within the surveyed east walk; no artwork assignment is implied."
+        },
+        {
+          "label": "南廊",
+          "kind": "area",
+          "at": [950, 630],
+          "evidence": "Cardinal gallery-zone anchor within the surveyed south walk; no artwork assignment is implied."
+        },
+        {
+          "label": "西廊",
+          "kind": "area",
+          "at": [205, 430],
+          "evidence": "Cardinal gallery-zone anchor within the surveyed west walk; no artwork assignment is implied."
+        },
+        {
+          "label": "生命与死亡壁画（南墙）",
+          "kind": "area",
+          "at": [810, 655],
+          "evidence": "The current OPA Camposanto page identifies the Life and Death cycle and its 2018 return to the original placement; the OPA 2023 budget specifies the south-wall frescoes between the monument's two accesses. Anchor is placed in that south-gallery span on the north-oriented measured plan, not on an inferred panel edge. Sources: https://www.opapisa.it/en/square-of-miracles/camposanto/ and https://www.opapisa.it/wp-content/uploads/2022/12/Bilancio_preventivo_2023.pdf"
+        },
+        {
+          "label": "旧约故事壁画（北墙）",
+          "kind": "area",
+          "at": [950, 210],
+          "evidence": "The current OPA Camposanto page explicitly places the Old Testament cycle by Taddeo Gaddi, Piero di Puccio and Benozzo Gozzoli along the northern wall. Anchor is placed in the north gallery against that wall on the measured plan. Source: https://www.opapisa.it/en/square-of-miracles/camposanto/"
+        },
+        {
+          "label": "特拉伊尼《受难图》（东南角）",
+          "kind": "area",
+          "at": [1570, 625],
+          "evidence": "OPA records that Francesco Traini's Crucifixion returned to its original wall position in March 2026; the 2020 OPA report identifies the east wall, and the University of Zurich's Written Camposanto research locates the original at the southeast corner. Anchor is placed at that corner of the north-oriented survey. Sources: https://www.opapisa.it/eventi/la-crocifissione-di-francesco-traini-torna-in-parete-al-camposanto-monumentale-di-pisa/ ; https://www.opapisa.it/wp-content/uploads/2021/06/Bilancio_sociale_2020.pdf ; https://dlf.uzh.ch/sites/camposanto/announcement/start-of-the-fresco-decoration-buonamico-buffalmacco-and-francesco-traini-c-1336/"
+        }
+      ]
+    }
+  ],
+  "sourceFiles": [
+    {
+      "id": "unifi-survey",
+      "file": "camposanto-unifi-survey.pdf",
+      "url": "https://doi.org/10.36153/ARCHIMED-3-032",
+      "sha256": "db701a2dee2ff52725e133fa4ea393c143fa34381de7987780b487e7f664df13",
+      "sourceProjection": {
+        "kind": "orthographic",
+        "pages": [],
+        "basis": "The complete scholarly survey is retained for provenance and visual audit. The primary one-page mask derives from its orthographic page 19 plan, while no model floor is extracted directly from this supplementary record."
+      }
+    }
+  ]
+}

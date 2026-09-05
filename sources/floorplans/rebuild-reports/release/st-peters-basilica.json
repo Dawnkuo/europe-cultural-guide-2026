@@ -1,0 +1,262 @@
+{
+  "slug": "st-peters-basilica",
+  "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared church and grotto plans with their complete inventories. Retains156 positioned markers,including repeated79 and historical grotto positions; unpositioned82 remains unpositioned. Native masonry-density extraction and twenty-eight source selection regions preserve actual chapels,pier voids,nave and curved grotto spaces. Printed numbers are HTML labels,not extruded glyphs.",
+    "floorCoverageReview": "Specialist church and grotto plans with historical names,independent registration and no measured distances. Dome platforms/inner ring/lantern lack verified plans.",
+    "stopBindingReview": "All seven original stops retain doorway,works,sanctuary,grotto and dome-elevator-entry bindings. Elevator entry is not a substitute for the missing dome levels.",
+    "verticalConnectionReview": "No independent floor-diagram alignment or historical/current stair relationship is inferred.",
+    "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+    "sourceDigest": "6a1dc0f4506c0dc2364a80812d21e8713f1c57771905299fa2ba9849d811e429",
+    "sourceEvidence": "sources/floorplans/evidence/st-peters-basilica.json",
+    "comparedFloors": [
+      "basilica",
+      "grottoes"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:47:44.664Z",
+    "slug": "st-peters-basilica",
+    "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+    "sourceDigest": "6a1dc0f4506c0dc2364a80812d21e8713f1c57771905299fa2ba9849d811e429",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "basilica",
+            "exactLabels": 86,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "grottoes",
+            "exactLabels": 70,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-peters-basilica-1440-3d.png",
+          "work/map-review/release-final/st-peters-basilica-1440-basilica-2d.png",
+          "work/map-review/release-final/st-peters-basilica-1440-grottoes-2d.png",
+          "work/map-review/release-final/st-peters-basilica-1440-basilica-selection-2d.png",
+          "work/map-review/release-final/st-peters-basilica-1440-basilica-selection-3d.png",
+          "work/map-review/release-final/st-peters-basilica-1440-grottoes-selection-2d.png",
+          "work/map-review/release-final/st-peters-basilica-1440-grottoes-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 509,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 156,
+        "selectedSpaces": [
+          "basilica-narthex",
+          "basilica-source-room-6",
+          "basilica-nave",
+          "basilica-crossing",
+          "basilica-apse",
+          "grottoes-peter-chapel",
+          "grottoes-confessio",
+          "basilica-right-transept"
+        ],
+        "stopTargets": 11,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "basilica",
+            "exactLabels": 86,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "grottoes",
+            "exactLabels": 70,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-peters-basilica-1094-3d.png",
+          "work/map-review/release-final/st-peters-basilica-1094-basilica-2d.png",
+          "work/map-review/release-final/st-peters-basilica-1094-grottoes-2d.png",
+          "work/map-review/release-final/st-peters-basilica-1094-basilica-selection-2d.png",
+          "work/map-review/release-final/st-peters-basilica-1094-basilica-selection-3d.png",
+          "work/map-review/release-final/st-peters-basilica-1094-grottoes-selection-2d.png",
+          "work/map-review/release-final/st-peters-basilica-1094-grottoes-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 659,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 156,
+        "selectedSpaces": [
+          "basilica-narthex",
+          "basilica-source-room-6",
+          "basilica-nave",
+          "basilica-crossing",
+          "basilica-apse",
+          "grottoes-peter-chapel",
+          "grottoes-confessio",
+          "basilica-right-transept"
+        ],
+        "stopTargets": 11,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "basilica",
+            "exactLabels": 86,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "grottoes",
+            "exactLabels": 70,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/st-peters-basilica-390-3d.png",
+          "work/map-review/release-final/st-peters-basilica-390-basilica-2d.png",
+          "work/map-review/release-final/st-peters-basilica-390-grottoes-2d.png",
+          "work/map-review/release-final/st-peters-basilica-390-basilica-selection-2d.png",
+          "work/map-review/release-final/st-peters-basilica-390-basilica-selection-3d.png",
+          "work/map-review/release-final/st-peters-basilica-390-grottoes-selection-2d.png",
+          "work/map-review/release-final/st-peters-basilica-390-grottoes-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 730,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 156,
+        "selectedSpaces": [
+          "basilica-narthex",
+          "basilica-source-room-6",
+          "basilica-nave",
+          "basilica-crossing",
+          "basilica-apse",
+          "grottoes-peter-chapel",
+          "grottoes-confessio",
+          "basilica-right-transept"
+        ],
+        "stopTargets": 11,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "st-peters-basilica",
+    "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "basilica",
+      "grottoes"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "st-peters-basilica",
+    "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": 5.8,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/st-peters-basilica/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 131.3385656249954,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-peters-basilica_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/st-peters-basilica/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 146.54063344796205,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-peters-basilica_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/st-peters-basilica/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 158.34726759050005,
+      "screenshot": "work/map-review/guide-pages-final/_guides_st-peters-basilica_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/st-peters-basilica/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+    "passed": true
+  }
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "pisa-cathedral",
+    "file": "derived/pisa-cathedral-ground-plan.pdf",
+    "sha256": "7425e6ba932ddb2ce17f13d409b443ec34098d7eca2393862b7285cd52cea27f",
+    "width": 504,
+    "height": 717,
+    "imageXref": 5,
+    "qa": "/tmp/europe-map-rebuild-pisa/qa/extracts/pisa-cathedral-ground-plan.png",
+    "parentFile": "sources/floorplans/soane-pisa-cathedral-plan-high.jpg",
+    "parentSha256": "15644619dfad71de232a654c999045c2731cb027c20235b06ea19173cd6d1c3a",
+    "parentPage": null,
+    "crop": [
+      23,
+      18,
+      527,
+      735
+    ],
+    "method": "neutral-ink threshold <174; components <3 px removed; external handwritten legend masked",
+    "auditSheet": {
+      "file": "derived/pisa-cathedral-soane-sheet.pdf",
+      "sha256": "9001e1e16c93d60c471033f2156268dc11d00804a0018834c9c7ae347631a987"
+    },
+    "transform": "translation/crop and uniform raster scale only; no skew or perspective warp"
+  },
+  {
+    "slug": "pisa-baptistery",
+    "file": "derived/pisa-baptistery-ground-plan.pdf",
+    "sha256": "7029712a259f51f4e7a83f1e7c532d00b4c1bc08eeaab37910bf5c4cf7ade686",
+    "width": 895,
+    "height": 898,
+    "imageXref": 5,
+    "qa": "/tmp/europe-map-rebuild-pisa/qa/extracts/pisa-baptistery-ground-plan.png",
+    "parentFile": "sources/floorplans/pisa-baptistery-hbim-figure6.png",
+    "parentSha256": "6a95919009578790d0640aa0b22eb848340adc6dbc39dd17812aff29b6b9e91a",
+    "parentPage": null,
+    "crop": [
+      1265,
+      1040,
+      2160,
+      1938
+    ],
+    "method": "grayscale plan-ink threshold <210; components <4 px removed; section trace retained for flat-detail classification",
+    "auditSheet": {
+      "file": "derived/pisa-baptistery-hbim-figure6.pdf",
+      "sha256": "f6fb5ceac3c01f7158d8129dec1f416ab78794f0151ed2aea0032eb3f959b414"
+    },
+    "transform": "translation/crop and uniform raster scale only; no skew or perspective warp"
+  },
+  {
+    "slug": "leaning-tower",
+    "file": "derived/leaning-tower-base-plan.pdf",
+    "sha256": "c3259fd7124408e8c33f9cc7664552db65f1ac5c547c6ab3a82a4881093891e7",
+    "width": 592,
+    "height": 616,
+    "imageXref": 5,
+    "qa": "/tmp/europe-map-rebuild-pisa/qa/extracts/leaning-tower-base-plan.png",
+    "parentFile": "sources/floorplans/opera-pisa-architect-project.pdf",
+    "parentSha256": "f7bfc501ea03aa032bb20168c31d20a365509ae7cd45f4bb39872af0efe6080d",
+    "parentPage": 3,
+    "crop": [
+      24,
+      346,
+      172,
+      500
+    ],
+    "method": "blue architectural ink isolated without affine transform; components <4 px removed",
+    "transform": "translation/crop and uniform raster scale only; no skew or perspective warp"
+  },
+  {
+    "slug": "opera-pisa",
+    "file": "derived/opera-pisa-ground-plan.pdf",
+    "sha256": "1504869cc6d38e2eebff3c2c8556bc2eeb5b695b776fbe206755867b5c30f44b",
+    "width": 1828,
+    "height": 1560,
+    "imageXref": 5,
+    "qa": "/tmp/europe-map-rebuild-pisa/qa/extracts/opera-pisa-ground-plan.png",
+    "parentFile": "sources/floorplans/opera-pisa-architect-project.pdf",
+    "parentSha256": "f7bfc501ea03aa032bb20168c31d20a365509ae7cd45f4bb39872af0efe6080d",
+    "parentPage": 3,
+    "crop": [
+      98,
+      340,
+      555,
+      730
+    ],
+    "method": "blue architectural ink; 3 px opening retains heavy walls; adjacent Tower inset excluded",
+    "transform": "translation/crop and uniform raster scale only; no skew or perspective warp"
+  },
+  {
+    "slug": "camposanto",
+    "file": "derived/camposanto-ground-plan.pdf",
+    "sha256": "f436726ee222f56afdca1660e4a730afbc0ad8895e0f87aec9d12d54ddb987ba",
+    "width": 2000,
+    "height": 780,
+    "imageXref": 5,
+    "qa": "/tmp/europe-map-rebuild-pisa/qa/extracts/camposanto-ground-plan.png",
+    "parentFile": "sources/floorplans/camposanto-unifi-survey.pdf",
+    "parentSha256": "db701a2dee2ff52725e133fa4ea393c143fa34381de7987780b487e7f664df13",
+    "parentPage": 19,
+    "crop": [
+      48,
+      58,
+      548,
+      253
+    ],
+    "method": "neutral survey ink threshold <235; components <2 px removed; all fine survey ink retained for flat-detail classification",
+    "transform": "translation/crop and uniform raster scale only; no skew or perspective warp"
+  },
+  {
+    "slug": "sinopie",
+    "file": "derived/sinopie-published-footprint.pdf",
+    "sha256": "687fd0c32844ef5616d3ee51ec04a10e41154f15dc0839cae2a198e450d59406",
+    "width": 169,
+    "height": 485,
+    "imageXref": 5,
+    "qa": "/tmp/europe-map-rebuild-pisa/qa/extracts/sinopie-published-footprint.png",
+    "parentFile": "sources/floorplans/opapisa-mappa-vert-2026.pdf",
+    "parentSha256": "f2aa23cd4bcd1f1217e6efe6ccc75cbc07164b3d7f2c68c67eccd67d4ea47d3d",
+    "parentPage": 1,
+    "crop": [
+      482.5,
+      292.5,
+      572.5,
+      535.0
+    ],
+    "method": "current-map gray building fill isolated; exterior footprint only; no interior walls inferred",
+    "transform": "translation/crop and uniform raster scale only; no skew or perspective warp"
+  }
+]

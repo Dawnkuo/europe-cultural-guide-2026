@@ -1,0 +1,303 @@
+{
+  "slug": "fenice",
+  "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+  "runtimeDigest": "3f38b4f2ae434fb6122295437f2e3b373cae7f7446d81e3f8515bb71f727c651",
+  "sourceReview": {
+    "geometryReview": "Compared the complete foyer and Apollinee plans and the separate auditorium crop. Retains horseshoe seating, the five named Apollinee rooms, real service/entry outlines and eight source regions. Gradient stage shading is not misreported as a complete closed stage face.",
+    "floorCoverageReview": "Three independent source diagrams; first-tier boxes do not locate the royal box on the floor above.",
+    "stopBindingReview": "Stops1/2/4 locate entrance/foyer,auditorium/first-tier and named Apollinee rooms. Canal water gate and royal box remain unlocated.",
+    "verticalConnectionReview": "The2018 and2023 sources disagree on the operational staircase; retain visible stair geometry but no guessed between-plan link.",
+    "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+    "sourceDigest": "d170c145ce13217b6082489e0f48217a3de3d8b72077f0723ca02c9bbfb7b0ff",
+    "sourceEvidence": "sources/floorplans/evidence/fenice.json",
+    "comparedFloors": [
+      "foyer",
+      "auditorium",
+      "apollinee"
+    ]
+  },
+  "browser": {
+    "target": "http://localhost:55838",
+    "timestamp": "2026-09-05T08:39:48.537Z",
+    "slug": "fenice",
+    "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+    "sourceDigest": "d170c145ce13217b6082489e0f48217a3de3d8b72077f0723ca02c9bbfb7b0ff",
+    "viewports": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "floors": [
+          {
+            "id": "foyer",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "auditorium",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "apollinee",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/fenice-1440-3d.png",
+          "work/map-review/release-final/fenice-1440-foyer-2d.png",
+          "work/map-review/release-final/fenice-1440-auditorium-2d.png",
+          "work/map-review/release-final/fenice-1440-apollinee-2d.png",
+          "work/map-review/release-final/fenice-1440-auditorium-selection-2d.png",
+          "work/map-review/release-final/fenice-1440-auditorium-selection-3d.png",
+          "work/map-review/release-final/fenice-1440-foyer-selection-2d.png",
+          "work/map-review/release-final/fenice-1440-foyer-selection-3d.png",
+          "work/map-review/release-final/fenice-1440-apollinee-selection-2d.png",
+          "work/map-review/release-final/fenice-1440-apollinee-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 569,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 10,
+        "selectedSpaces": [
+          "auditorium-platea",
+          "auditorium-first-tier-boxes",
+          "foyer-foyer",
+          "apollinee-sinopoli",
+          "apollinee-ammannati",
+          "apollinee-grande",
+          "apollinee-verdi",
+          "apollinee-dante"
+        ],
+        "stopTargets": 9,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 1094,
+          "height": 768
+        },
+        "floors": [
+          {
+            "id": "foyer",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "auditorium",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "apollinee",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/fenice-1094-3d.png",
+          "work/map-review/release-final/fenice-1094-foyer-2d.png",
+          "work/map-review/release-final/fenice-1094-auditorium-2d.png",
+          "work/map-review/release-final/fenice-1094-apollinee-2d.png",
+          "work/map-review/release-final/fenice-1094-auditorium-selection-2d.png",
+          "work/map-review/release-final/fenice-1094-auditorium-selection-3d.png",
+          "work/map-review/release-final/fenice-1094-foyer-selection-2d.png",
+          "work/map-review/release-final/fenice-1094-foyer-selection-3d.png",
+          "work/map-review/release-final/fenice-1094-apollinee-selection-2d.png",
+          "work/map-review/release-final/fenice-1094-apollinee-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 733,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 10,
+        "selectedSpaces": [
+          "auditorium-platea",
+          "auditorium-first-tier-boxes",
+          "foyer-foyer",
+          "apollinee-sinopoli",
+          "apollinee-ammannati",
+          "apollinee-grande",
+          "apollinee-verdi",
+          "apollinee-dante"
+        ],
+        "stopTargets": 9,
+        "passed": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "floors": [
+          {
+            "id": "foyer",
+            "exactLabels": 2,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "auditorium",
+            "exactLabels": 3,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          },
+          {
+            "id": "apollinee",
+            "exactLabels": 5,
+            "minMaxZoom": true,
+            "viewRoundTrip": true,
+            "scrollEdges": {
+              "x": true,
+              "y": true
+            }
+          }
+        ],
+        "screenshots": [
+          "work/map-review/release-final/fenice-390-3d.png",
+          "work/map-review/release-final/fenice-390-foyer-2d.png",
+          "work/map-review/release-final/fenice-390-auditorium-2d.png",
+          "work/map-review/release-final/fenice-390-apollinee-2d.png",
+          "work/map-review/release-final/fenice-390-auditorium-selection-2d.png",
+          "work/map-review/release-final/fenice-390-auditorium-selection-3d.png",
+          "work/map-review/release-final/fenice-390-foyer-selection-2d.png",
+          "work/map-review/release-final/fenice-390-foyer-selection-3d.png",
+          "work/map-review/release-final/fenice-390-apollinee-selection-2d.png",
+          "work/map-review/release-final/fenice-390-apollinee-selection-3d.png"
+        ],
+        "errors": [],
+        "gpuSamples": 1082,
+        "keyboard": true,
+        "interruptedMouseDrag": true,
+        "paintedLabels": 10,
+        "selectedSpaces": [
+          "auditorium-platea",
+          "auditorium-first-tier-boxes",
+          "foyer-foyer",
+          "apollinee-sinopoli",
+          "apollinee-ammannati",
+          "apollinee-grande",
+          "apollinee-verdi",
+          "apollinee-dante"
+        ],
+        "stopTargets": 9,
+        "passed": true
+      }
+    ]
+  },
+  "touch": {
+    "slug": "fenice",
+    "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+    "environment": "Chromium CDP touch input, 390x844; not a physical phone",
+    "errors": [],
+    "drag": true,
+    "pinch": true,
+    "cancellationRecovery": true,
+    "floorTaps": [
+      "foyer",
+      "auditorium",
+      "apollinee"
+    ],
+    "passed": true
+  },
+  "performance": {
+    "slug": "fenice",
+    "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+    "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
+    "frames": 134,
+    "frameP50Ms": 16.699999999999818,
+    "frameP95Ms": 16.700000000000273,
+    "renderP95Ms": 2.4,
+    "contexts": {
+      "created": 7,
+      "lost": 6,
+      "live": 1
+    },
+    "errors": [],
+    "emulated30Fps": true
+  },
+  "fullPages": [
+    {
+      "route": "/guides/fenice/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "errors": [],
+      "mapSpread": 91.84116405383807,
+      "screenshot": "work/map-review/guide-pages-final/_guides_fenice_-1440.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/fenice/",
+      "viewport": {
+        "width": 1094,
+        "height": 768
+      },
+      "errors": [],
+      "mapSpread": 105.46169503287854,
+      "screenshot": "work/map-review/guide-pages-final/_guides_fenice_-1094.png",
+      "passed": true
+    },
+    {
+      "route": "/guides/fenice/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": [],
+      "mapSpread": 114.85069131530403,
+      "screenshot": "work/map-review/guide-pages-final/_guides_fenice_-390.png",
+      "passed": true
+    }
+  ],
+  "offline": {
+    "revision": "b3029fc4fe115b7524e5",
+    "route": "/guides/fenice/",
+    "hasMap": true,
+    "errors": [],
+    "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+    "passed": true
+  }
+}
