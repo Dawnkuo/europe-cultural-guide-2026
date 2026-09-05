@@ -1672,6 +1672,9 @@ img {
   position: absolute;
   top: 0;
 }
+.guide-hero[data-guide='sagrada-familia'] > img {
+  object-position: 50% 25%;
+}
 .guide-hero__shade {
   background: linear-gradient(
     0deg,
@@ -1681,6 +1684,11 @@ img {
   );
   inset: 0;
   position: absolute;
+}
+.guide-hero[data-guide='sagrada-familia'] .guide-hero__shade {
+  background:
+    linear-gradient(90deg, rgb(4 11 16 / 48%), rgb(4 11 16 / 14%) 38%, transparent 65%),
+    linear-gradient(0deg, rgb(4 11 16 / 75%), transparent 75%);
 }
 .guide-hero__content {
   bottom: clamp(80px, 12vh, 130px);

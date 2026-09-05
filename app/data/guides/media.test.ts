@@ -3,9 +3,30 @@ import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { guideCatalog } from '../guides';
+import { guideMediaBySlug } from '../guide-media.generated';
 import dimensions from '../media-dimensions.generated.json';
 
 describe('guide highlight media', () => {
+  it('keeps dedicated hero photographs identical to their reviewed originals', () => {
+    const records: { path: string; sha256: string }[] = JSON.parse(
+      readFileSync('sources/media/hero-selections.json', 'utf8'),
+    );
+    for (const record of records) {
+      expect(createHash('sha256').update(readFileSync(`public${record.path}`)).digest('hex')).toBe(record.sha256);
+    }
+  });
+
+  it('uses a wide Sagrada Familia cover without changing its detail images or other covers', () => {
+    const sagrada = guideCatalog.find((g) => g.slug === 'sagrada-familia')!;
+    expect(sagrada.hero.src).toBe('/images/heroes/sagrada-familia-nave.jpg');
+    expect(sagrada.hero.alt).toContain('中殿全景');
+    expect(sagrada.highlights[0].image).toBe('/images/guides/sagrada-familia-01.jpg');
+    for (const guide of guideCatalog.filter((g) => g.slug !== 'sagrada-familia')) {
+      const media = guideMediaBySlug[guide.slug];
+      if (media) expect(guide.hero.src, guide.slug).toBe(media[0].image);
+    }
+  });
+
   it('has decoded dimensions for every guide hero and highlight', () => {
     const sizes: Record<string, { width: number; height: number }> = dimensions;
     for (const guide of guideCatalog) {

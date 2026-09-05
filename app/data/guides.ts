@@ -1,5 +1,6 @@
 import { cityProfiles } from './cities';
 import { guideMediaBySlug } from './guide-media.generated';
+import { guideHeroBySlug } from './guide-hero-media';
 import { guideContentBySlug } from './guides/content';
 import { expandGuideHighlights } from './guides/expanded';
 import { tripDays } from './trip';
@@ -224,7 +225,7 @@ export const guideCatalog: GuideRecord[] = [
 
     return {
       ...enrichedGuide,
-      hero: {
+      hero: guideHeroBySlug[guide.slug] ?? {
         src: media[0].image,
         alt: media[0].imageAlt,
       },
