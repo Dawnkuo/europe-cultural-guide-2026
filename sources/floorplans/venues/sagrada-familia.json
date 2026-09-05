@@ -1,0 +1,23 @@
+{
+  "slug": "sagrada-familia",
+  "sourceProjection":{"kind":"orthographic","pages":[12],"basis":"The published numbered general project plan was visually checked as an overhead plan. Its low resolution and inclusion of planned structures remain separate limitations, not corrected by assuming another projection."},
+  "stopBindings": [{"stopIndex":0,"placeId":"main-2-1"},{"stopIndex":1,"placeId":"main-11-1"},{"stopIndex":2,"placeId":"main-5-1"},{"stopIndex":4,"placeId":"main-3-1"}],
+  "file": "sagrada-triangle.pdf",
+  "url": "https://www.triangle.cat/pdfs/bsf4-a.pdf",
+  "sha256": "56d0ee92ae7c1ca2bb3760dbc4f6c8e3810b83a56a408ee81acae8c2f7686da7",
+  "review": "TRIANGLE POSTALS publisher's book sample, printed page 255, visually checked orthographic architectural project plan. Black architectural ink is in image 92; numbered labels are separate PDF text. Pale surrounding site marks and the photographic model are excluded. Published project layout includes future elements, not a claim of current completion or access. No tower or crypt floor inferred from this ground plan.",
+  "limitations": [
+    "本图为建筑规划主层平面，包含荣耀立面、洗礼堂等规划部分；不代表所有区域已建成或开放。",
+    "柱列、侧廊、后殿和原图全部重复编号均保留。小尺度细节受原始平面图分辨率限制，墙高仅用于显示。",
+    "地下教堂、受难立面塔及登塔通道的独立楼层平面仍待核验；不以主层复制成其他楼层。"
+  ],
+  "floors": [{
+    "id": "main", "label": "主层建筑平面", "order": 0, "page": 12,
+    "crop": [50, 94, 411, 413], "rules": [],
+    "rasterLayers": [{"xref": 92, "maxChannel": 135, "wallKernel": 1, "tolerancePixels": 0.2, "reason": "Reviewed dark architectural walls and columns including antialiased edges; the blue ground field has maximum channel >= 143. Pale site markings are not walls. Source labels are outside this image stream."}],
+    "labelPattern": "(?:[1-9]|1[0-6])",
+    "defaultPlaceKind": "area",
+    "labelNames": {"1":"荣耀立面","2":"诞生立面","3":"受难立面","4":"圣母升天礼拜堂及门廊","5":"后殿","6":"回廊","7":"学校建筑","8":"洗礼堂","9":"忏悔礼拜堂","10":"圣器室","11":"中殿","12":"侧廊","13":"耳堂","14":"主祭坛","15":"玫瑰礼拜堂","16":"通往地下教堂的楼梯"},
+    "expectedLabels": ["1","2","3","4","5","6","7","10","11","12","13","14","15","6","6","6","6","6","8","10","12","9","16","16","12","12"]
+  }]
+}

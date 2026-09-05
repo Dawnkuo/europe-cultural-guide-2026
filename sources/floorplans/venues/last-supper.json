@@ -1,0 +1,31 @@
+{
+ "slug":"last-supper","file":"last-supper-candidate-1.pdf",
+ "sourceProjection":{"kind":"orthographic","pages":[1],"basis":"The overhead site diagram has an orthogonal refectory and an independently angled ticket-office perimeter. That actual angled wall is retained; the source is not an oblique view."},
+ "stopBindings":[{"stopIndex":0,"placeId":"L0-售票处-1"},{"stopIndex":3,"placeId":"L0-晚餐-1"},{"stopIndex":4,"placeId":"L0-受难-1"},{"stopIndex":5,"placeId":"L0-出口-1"}],
+ "sha256":"81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+ "url":"https://cenacolovinciano.org/wp-content/uploads/2019/12/Map-Cenacolo-Vinciano.pdf",
+ "review":"Official orthographic plan p1. The ticket office is genuinely diagonal to the refectory, not an oblique projection. Preserve its angle. Paths0-35 are structural outlines except courtyard surface31; 39-45/57/60-63 are visitation arrows, excluded from walls. Paintings have explicit source wall bars54/55. The museum entrance is at lower right, not the ticket-office entrance at left. No numbered rooms exist on source; use actual place names, not invented numerical room IDs.",
+ "limitations":["包括食堂、售票处、寄存、书店、教学室、庭院与出入口；售票处的斜角保留原图。", "以两个壁画的实际所在墙面定位作品；图上比例及墙高不是实测尺寸。"],
+ "floors":[{"id":"L0","label":"底层 · 食堂与参观动线","order":0,"page":1,"crop":[234,157,623,482],
+  "spaces":[
+   {"id":"refectory","label":"食堂","placeId":"L0-食堂-1","tone":"gold","outer":[[507.2324,189.8471],[573.9824,189.8471],[573.9828,446.9477],[507.3828,446.9477],[507.3828,425.3479],[507.2324,414.8481],[507.2324,189.8471]],"sourcePaths":[4,5,6],"evidence":"Refectory boundary follows source path vertices; east and west door gaps are closed only by the floor polygon, never by added wall geometry."},
+   {"id":"classroom","label":"教学室","placeId":"L0-教学室-1","outer":[[425.4824,344.3465],[475.2214,344.4731],[473.9932,354.5961],[474.2324,368.4975],[474.2324,379.6725],[425.7074,379.6725],[425.4824,344.3465]],"sourcePaths":[10,11,12,13,14],"evidence":"Teaching room traced along the original room perimeter. Small north gaps and east doorway remain un-walled."},
+   {"id":"ticket-office","label":"售票处","placeId":"L0-售票处-1","outer":[[234.5324,361.5985],[277.5825,294.4745],[311.0325,313.8975],[268.4325,381.7955],[257.1819,375.0231],[247.2324,368.4975],[234.5324,361.5985]],"sourcePaths":[32,33,35],"evidence":"Ticket-office room traced from oblique structural lines, including both exact jamb endpoints of the entrance gap. The left boundary intersects path 35 at its original endpoint; this is a real angled room, not a projection correction. A floor-only join connects the small source rounding gap where path35 ends against path32; no wall is added."},
+   {"id":"bookshop","label":"书店","placeId":"L0-书店-1","outer":[[395.3322,187.4477],[479.4072,187.4477],[479.4072,220.9728],[394.1322,221.0478],[395.3322,187.4477]],"sourcePaths":[21,22,23,24,26,27,28,29],"evidence":"Both connected bookshop spaces share the printed Bookshop label. Interior partition retained separately; do not assign an invented second room number."}
+  ],
+  "openings":[
+   {"id":"refectory-east","spaceId":"refectory","segment":[[573.9824,321.4731],[573.9828,332.0477]],"sourcePaths":[5,6],"evidence":"Visible east wall gap at refectory entry from airlocks."},
+   {"id":"refectory-west","spaceId":"refectory","segment":[[507.2324,414.8481],[507.3828,425.3479]],"sourcePaths":[4,6],"evidence":"Visible west wall gap at the refectory exit."},
+   {"id":"classroom-east","spaceId":"classroom","segment":[[473.9932,354.5961],[474.2324,368.4975]],"sourcePaths":[13,14],"evidence":"Original gap in classroom east wall."},
+   {"id":"ticket-entry","spaceId":"ticket-office","segment":[[247.2324,368.4975],[257.1819,375.0231]],"sourcePaths":[32,33],"evidence":"Ticket-office entrance arrow explicitly points at this opening."}
+  ],
+  "places":[{"label":"食堂","at":[541,316]},{"label":"晚餐","name":"《最后的晚餐》所在墙面","at":[540,195]},{"label":"受难","name":"《基督受难》所在墙面","at":[540,441]},{"label":"售票处","kind":"service","at":[290,335]},{"label":"书店","kind":"service","at":[437,204]},{"label":"教学室","at":[451,362]},{"label":"咨询","kind":"service","at":[478,446]},{"label":"入口","kind":"service","at":[482,472]},{"label":"出口","kind":"service","at":[441,470]}],
+  "expectedLabels":["食堂","晚餐","受难","售票处","书店","教学室","咨询","入口","出口"],
+  "rules":[
+   {"ids":[31],"channel":"fill","kind":"surface","tone":"green","reason":"courtyard garden, using source curved contour"},
+   {"ranges":[[0,35],[47,51]],"ids":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,33,34,35,47,48,49,50,51],"kind":"wall","reason":"museum and ticket-office structural contours, keeping door gaps"},
+   {"ids":[56],"kind":"wall","reason":"information-room partition"},
+   {"ids":[36],"kind":"detail","reason":"locker outline, not enclosing wall"},
+   {"ids":[54,55],"kind":"detail","tone":"gold","reason":"actual Last Supper and Crucifixion artwork wall bars"}
+  ]}]
+}

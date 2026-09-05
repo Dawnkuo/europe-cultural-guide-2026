@@ -2,179 +2,53 @@
 
 import { lazy, Suspense, useEffect, useState } from 'react';
 import type { GuideRecord } from '../data/types';
-import {
-  getFloorPlanAvailability,
-  loadGuideFloorPlan,
-} from '../lib/guide-floorplan-loader';
-import type { StackedFloorPlan } from '../lib/floorplans/core';
+import availabilityData from '../data/floorplan-availability.json';
+import type { ArchitecturalPlan } from '../lib/architectural-plan';
+import { hasArchitecturalPlan, loadArchitecturalPlan } from '../lib/architectural-plan-loader';
 
-const GuideExteriorScene = lazy(() =>
-  import('./GuideExteriorScene').then((module) => ({
-    default: module.GuideExteriorScene,
-  })),
-);
-const GuideStackedFloorPlan = lazy(() =>
-  import('./GuideStackedFloorPlan').then((module) => ({
-    default: module.GuideStackedFloorPlan,
-  })),
-);
+const ArchitecturalMap = lazy(() => import('./ArchitecturalMap').then((module) => ({ default: module.ArchitecturalMap })));
+const GuideExteriorScene = lazy(() => import('./GuideExteriorScene').then((module) => ({ default: module.GuideExteriorScene })));
 
-const spatialLabels: Record<GuideRecord['spatial']['type'], string> = {
-  floorplan: '场馆空间',
-  site: '遗址关系',
-  viewpoints: '观察方位',
-  district: '街区节点',
-};
+function SpatialLoading({ message }: { message: string }) {
+  return <output aria-label="地图加载状态" aria-live="polite" className="guide-spatial__loading">{message}</output>;
+}
 
-function SpatialLoading({
-  label,
-  message,
-}: {
-  label: string;
-  message: string;
-}) {
-  return (
-    <output
-      aria-label={label}
-      aria-live="polite"
-      className="guide-spatial__loading"
-    >
-      {message}
-    </output>
-  );
+function ReviewedGuideSpatial({ guide }: { guide: GuideRecord }) {
+  const [plan, setPlan] = useState<ArchitecturalPlan>();
+  const [failed, setFailed] = useState(false);
+  const [exterior, setExterior] = useState(false);
+  useEffect(() => {
+    let live = true;
+    void loadArchitecturalPlan(guide.slug).then((data) => { if (live) setPlan(data); }).catch(() => { if (live) setFailed(true); });
+    return () => { live = false; };
+  }, [guide.slug]);
+  return <section className="guide-section guide-spatial" id="guide-spatial">
+    <div className="guide-section__heading"><p>01 / 场馆空间</p><h2>室内导览地图</h2><span>{plan ? plan.floors.map((floor) => floor.label).join(' · ') : guide.title}</span></div>
+    <fieldset className="guide-spatial__view-tabs" aria-label="内外视图">
+      <button type="button" aria-pressed={!exterior} onClick={() => setExterior(false)}>内部</button>
+      <button type="button" aria-pressed={exterior} onClick={() => setExterior(true)}>外观</button>
+    </fieldset>
+    <Suspense fallback={<SpatialLoading message="正在加载地图" />}>
+      {exterior && <GuideExteriorScene guide={guide} />}
+      <div hidden={exterior}>
+        {plan ? <ArchitecturalMap plan={plan} guide={guide} active={!exterior} /> : failed ? <div role="alert">平面数据加载失败，请重新载入页面。{guide.spatial.stops.map((stop, index) => <p key={`${index}-${stop}`}>{stop}</p>)}</div> : <SpatialLoading message="正在加载平面数据" />}
+      </div>
+    </Suspense>
+  </section>;
 }
 
 export function GuideSpatial({ guide }: { guide: GuideRecord }) {
-  const availability = getFloorPlanAvailability(guide.slug);
-  const expectsFloorPlan = availability === 'ready';
-  const sourceLimited = availability === 'source-limited';
-  const defaultView = expectsFloorPlan ? 'interior' : 'exterior';
-  const [viewSelection, setViewSelection] = useState<{
-    slug: string;
-    value: 'interior' | 'exterior';
-  }>(() => ({ slug: guide.slug, value: defaultView }));
-  const [loadResult, setLoadResult] = useState<{
-    floorPlan?: StackedFloorPlan;
-    slug: string;
-    state: 'loading' | 'ready' | 'failed';
-  }>(() => ({ slug: guide.slug, state: 'loading' }));
-  const view =
-    viewSelection.slug === guide.slug ? viewSelection.value : defaultView;
-  const floorPlan =
-    loadResult.slug === guide.slug ? loadResult.floorPlan : undefined;
-  const floorPlanState = !expectsFloorPlan
-    ? 'idle'
-    : loadResult.slug === guide.slug
-      ? loadResult.state
-      : 'loading';
+  return hasArchitecturalPlan(guide.slug) ? <ReviewedGuideSpatial key={guide.slug} guide={guide} /> : <ExteriorGuideSpatial guide={guide} />;
+}
 
-  function selectView(value: 'interior' | 'exterior') {
-    setViewSelection({ slug: guide.slug, value });
-  }
-
-  useEffect(() => {
-    if (!expectsFloorPlan) return;
-
-    let cancelled = false;
-    void loadGuideFloorPlan(guide.slug)
-      .then((loadedPlan) => {
-        if (cancelled) return;
-        if (!loadedPlan)
-          throw new Error(`${guide.slug}: floor plan unavailable`);
-        if (loadedPlan.routeStops.length !== guide.spatial.stops.length) {
-          throw new Error(`${guide.slug}: floor-plan route stop mismatch`);
-        }
-        setLoadResult({
-          floorPlan: loadedPlan,
-          slug: guide.slug,
-          state: 'ready',
-        });
-      })
-      .catch(() => {
-        if (cancelled) return;
-        setLoadResult({ slug: guide.slug, state: 'failed' });
-        setViewSelection({ slug: guide.slug, value: 'exterior' });
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [expectsFloorPlan, guide.slug, guide.spatial.stops.length]);
-
-  const isInterior = expectsFloorPlan && view === 'interior';
-
-  return (
-    <section className="guide-section guide-spatial" id="guide-spatial">
-      <div className="guide-section__heading">
-        <p>01 / {spatialLabels[guide.spatial.type]}</p>
-        <h2>{isInterior ? '分层室内导览地图' : '3D 导览地图'}</h2>
-        <span>{guide.spatial.title}</span>
-      </div>
-      {expectsFloorPlan && (
-        <div
-          aria-label="导览地图视图"
-          className="guide-spatial__view-tabs"
-          role="tablist"
-        >
-          <button
-            aria-selected={view === 'interior'}
-            onClick={() => selectView('interior')}
-            role="tab"
-            type="button"
-          >
-            内部
-          </button>
-          <button
-            aria-selected={view === 'exterior'}
-            onClick={() => selectView('exterior')}
-            role="tab"
-            type="button"
-          >
-            外观
-          </button>
-        </div>
-      )}
-      {sourceLimited && (
-        <output className="guide-spatial__data-status">内部平面资料待补</output>
-      )}
-      {floorPlanState === 'failed' && (
-        <div className="guide-spatial__data-status" role="alert">
-          室内平面加载失败，已切换至外观地图
-        </div>
-      )}
-      {isInterior ? (
-        floorPlanState === 'ready' && floorPlan ? (
-          <Suspense
-            fallback={
-              <SpatialLoading
-                label="室内地图加载状态"
-                message="正在加载室内地图"
-              />
-            }
-          >
-            <GuideStackedFloorPlan floorPlan={floorPlan} guide={guide} />
-          </Suspense>
-        ) : (
-          <SpatialLoading label="室内地图加载状态" message="正在加载室内平面" />
-        )
-      ) : (
-        <Suspense
-          fallback={
-            <SpatialLoading
-              label="外观地图加载状态"
-              message="正在加载外观地图"
-            />
-          }
-        >
-          <GuideExteriorScene guide={guide} />
-        </Suspense>
-      )}
-      <p className="guide-disclaimer">
-        {guide.spatial.note}{' '}
-        {isInterior
-          ? '室内图依据已核验的导览平面重新绘制，用于理解楼层、房间与参观顺序。'
-          : '外观模型用于理解建筑体量与周边空间关系。'}
-      </p>
-    </section>
-  );
+function ExteriorGuideSpatial({ guide }: { guide: GuideRecord }) {
+  const availability = (availabilityData as Record<string, string>)[guide.slug];
+  const interiorPending = availability === 'ready' || availability === 'source-limited';
+  return <section className="guide-section guide-spatial" id="guide-spatial">
+    <div className="guide-section__heading"><p>01 / 场馆空间</p><h2>3D 导览地图</h2><span>{guide.spatial.title}</span></div>
+    {interiorPending && <output className="guide-spatial__data-status">
+      {availability === 'source-limited' ? '内部平面资料待补' : '室内地图待重建'}。当前展示外观示意，未使用简化室内布局代替真实平面。
+    </output>}
+    <Suspense fallback={<SpatialLoading message="正在加载外观地图" />}><GuideExteriorScene guide={guide} /></Suspense>
+  </section>;
 }

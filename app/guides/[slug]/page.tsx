@@ -39,13 +39,13 @@ export default async function GuidePage({ params }: GuidePageProps) {
     <main className="subpage guide-page">
       <SiteNav active="guides" />
       <GuideHero guide={guide} />
-      <OnsiteGuide guide={guide} />
       <nav className="guide-local-nav" aria-label="本章目录">
         <a href="#guide-overview">理解</a>
         <a href="#guide-spatial">空间</a>
         <a href="#guide-highlights">看点</a>
         <a href="#guide-sequence">顺序</a>
         <a href="#guide-practical">攻略</a>
+        <OnsiteGuide guide={guide} />
       </nav>
       <section
         className="guide-overview"

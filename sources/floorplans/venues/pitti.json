@@ -1,0 +1,17 @@
+{
+ "slug":"pitti","file":"pitti-candidate-1.pdf",
+ "sourceProjection":{"kind":"orthographic","pages":[9],"basis":"The Palatine Gallery and royal-apartment illustration is an overhead plan with room boundaries and numbered anchors. Historical publication status does not change this projection assessment."},
+ "sha256":"48ffb473f8c1ad772e3873c9011de35e2426901b27c13e58f813c48c991ef244",
+ "url":"https://shop.uffizi.it/wp-content/uploads/2022/04/9788833400075-PITTIeng_assaggio.pdf",
+ "review":"Museum-published 2018 guide sample, p9 orthographic Palatine Gallery and royal apartments. All 29 numbered rooms extracted from the plan, excluding legend/list and external labels. Blue CAD fill paths define walls; isolated narrow repetitive strips are stair treads kept flat. Numbering is historical source inventory, not a promise of current exhibit placement. p6 Treasury/Mezzanine raster plan is too low-resolution to classify room boundaries reliably, and is not replaced by made-up geometry.",
+ "limitations":["本图覆盖帕拉蒂纳画廊与王室公寓所在一层，保留导览图全部 29 个编号。", "底层珍宝馆、夹层及其他馆区尚待补齐可辨识平面，没有使用推测楼层填充。", "编号依据馆方出版导览图，展品位置与开放情况仍须现场核对；墙高为示意。"],
+ "floors":[{"id":"L1","label":"一层 · 帕拉蒂纳画廊与王室公寓","order":1,"page":9,"crop":[31,117,377,288],
+  "labelPattern":"[0-9]+","expectedLabels":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"],
+  "rules":[
+   {"ids":[3,6,7,8,9,10],"channel":"fill","kind":"surface","tone":"blue","reason":"published royal apartments and adjacent rooms, exact footprints"},
+   {"ids":[11],"channel":"fill","kind":"surface","tone":"gold","reason":"Palatine collection floor, exact source contour"},
+   {"ranges":[[70,91],[95,110],[113,118],[121,124],[128,169],[199,229],[247,280],[295,300],[307,308],[309,320]],"channel":"fill","colors":[[0.267,0.548,0.794]],"kind":"detail","reason":"reviewed repeating stair strips, rail motifs and service pictograms remain flat"},
+   {"ranges":[[13,330]],"exclude":[120],"channel":"fill","colors":[[0.267,0.548,0.794]],"kind":"wall","reason":"remaining blue CAD wall profiles, door jambs and column footprints"},
+   {"ids":[120],"kind":"detail","reason":"courtyard fountain plan rather than room wall"}
+  ]}]
+}

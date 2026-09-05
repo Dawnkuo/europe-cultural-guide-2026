@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "uffizi", "file": "uffizi-2026.pdf",
+    "sourceProjection":{"kind":"orthographic","pages":[2],"basis":"Both exhibition floor diagrams were visually inspected as plan views. Offset grey print shadows are excluded, not used as geometry or as a projection axis."},
+    "sha256": "160dc6ddcc85d25026f8218cb24e85636b953e8b87261d79c9a9ae88d944c3bb",
+    "url": "https://www.datocms-assets.com/103094/1772716618-exe_broch_gli-uffizi_vers-gennaio2026_en.pdf",
+    "review": "PDF p2 visually checked: orthographic exhibit floors. Grey south-east offset paths are printed shadows, excluded. A11 and A12 share one printed area, separate labels retained. D22 has two printed anchors; neither is deduplicated. U+F47E is the font's digit 1. Source room partitions are open-ended wall strokes; do not close the gaps or infer a room polygon by proximity.",
+    "limitations": ["展厅平面保留图上比例；墙高与层间距仅用于显示，并非实测尺寸。", "涵盖一、二层展厅；底层接待区、瓦萨里走廊及跨层连接尚待补充核验。", "编号表示展厅位置，不代表作品在墙上的精确位置；图上空间不等于当天开放。"],
+    "stopBindings":[{"stopIndex":0,"placeId":"L2-A4-1"},{"stopIndex":1,"placeId":"L2-A9-1"},{"stopIndex":2,"placeId":"L2-A35-1"},{"stopIndex":3,"placeId":"L2-A38-1"},{"stopIndex":4,"placeId":"L1-D19-1"}],
+    "verticalLinks":[{"id":"lanzi-stairs","label":"兰齐楼梯","kind":"stairs","fromPlaceId":"L1-梯-1","toPlaceId":"L2-梯-1","evidence":"PDF p2: both explicitly named LANZI staircases, physical tread anchors rather than displaced label boxes. No intermediate corridor path inferred."}],
+    "floors": [
+      {"id": "L1", "label": "一层 · B / C / D / E", "order": 1, "page": 2, "crop": [230,740,810,1120],
+       "labelPattern": "[BCDE][0-9]+",
+       "servicePlaces":[{"label":"梯","name":"兰齐楼梯","kind":"service","at":[298,1058]}],
+       "expectedLabels": ["B1","B2","B3","B4","B5","B6","B7","B8","C1","C2","C3","C4","C5","C6","C7","C8","C9","C10","C11","C12","D1","D2","D3","D4","D5","D6","D7","D8","D9","D10","D11","D12","D13","D14","D15","D16","D17","D18","D19","D20","D21","D22","D22","D23","D24","D25","D26","D27","E4","E5","E6","E7"],
+       "rules": [
+         {"ids":[817],"channel":"fill","kind":"surface","tone":"neutral","reason":"actual pale floor silhouette, excluding its printed offset shadow"},
+         {"ids":[819],"channel":"fill","kind":"surface","tone":"teal","reason":"B wing floor area"},
+         {"ids":[820],"channel":"fill","kind":"surface","tone":"green","reason":"C wing floor area including temporarily closed rooms"},
+         {"ids":[821],"channel":"fill","kind":"surface","tone":"rose","reason":"D wing floor area"},
+         {"ids":[822],"channel":"fill","kind":"surface","tone":"teal","reason":"E wing floor area"},
+         {"colors":[[0.779,0.785,0.793]],"type":["s"],"kind":"wall","reason":"printed room partition strokes, including original door gaps"},
+         {"colors":[[0.577,0.586,0.596]],"type":["s"],"kind":"detail","reason":"stair treads and rail detail remain flat, not walls"}
+       ]},
+      {"id": "L2", "label": "二层 · A", "order": 2, "page": 2, "crop": [230,60,815,400],
+       "labelPattern": "A[0-9]+",
+       "servicePlaces":[{"label":"梯","name":"兰齐楼梯","kind":"service","at":[347,274]}],
+       "expectedLabels": ["A1","A2","A3","A4","A5","A6","A7","A8","A9","A10","A11","A12","A13","A14","A15","A16","A17","A18","A19","A20","A21","A22","A23","A24","A25","A26","A27","A28","A29","A30","A31","A32","A33","A34","A35","A36","A37","A38","A39","A40","A41","A42"],
+       "rules": [
+         {"ids":[1124],"channel":"fill","kind":"surface","tone":"neutral","reason":"actual pale floor silhouette, not shadow path 1116"},
+         {"ids":[1125],"channel":"fill","kind":"surface","tone":"blue","reason":"A wing floor area; original partitions are separately classified"},
+         {"colors":[[0.779,0.785,0.793]],"type":["s"],"kind":"wall","reason":"printed room partitions; do not generate walls from artwork callouts"},
+         {"colors":[[0.577,0.586,0.596]],"type":["s"],"kind":"detail","reason":"physical staircase treads and railing lines"}
+       ]}
+    ]
+  },
+  {
+    "slug":"la-scala", "file":"la-scala.pdf",
+    "sourceProjection":{"kind":"orthographic","pages":[2],"basis":"The plan's western gallery has parallel vertical walls and horizontal partitions; the northern rooms genuinely turn relative to that wing. No perspective or axonometric correction is applied to that architectural angle."},
+    "sha256":"74a1f5fb0a3828df9f03c38efbf8100e5963fdf77475759dd3c95db9db9a3c33",
+    "url":"https://www.museoscala.org/static/upload/map/mappa-del-museo-teatrale-1.pdf",
+    "review":"PDF p2 visually checked: orthographic, with an actually angled north wing. Do not straighten this architectural angle. Black source paths 0-144 are wall contours, 145-177 and 546 are display furniture, 178-231 are staircase details. Red artwork/audio-tour symbols are not rooms or walls. All eight Sala numbers manually transcribed at the source label positions.",
+    "limitations":["绘制博物馆一至八展厅；剧院观众厅、包厢和其他楼层不在此平面资料中。", "保留原图的真实转角；墙高为示意。室内编号不是演出票座位号。", "已闭合并核验的墙身保留厚度；中央未闭合轮廓保持平面线，不猜测墙身和房间边界。"],
+    "floors":[{"id":"museum","label":"博物馆 · 1–8 展厅","order":1,"page":2,"crop":[28,25,385,550],
+      "places":[{"label":"1","at":[106,459]},{"label":"2","at":[106,388]},{"label":"3","at":[106,272]},{"label":"4","at":[106,196]},{"label":"5","at":[105,97]},{"label":"6","at":[200,86]},{"label":"7","at":[259,78]},{"label":"8","at":[318,69]}],
+      "expectedLabels":["1","2","3","4","5","6","7","8"],
+      "wallProfiles":[{"id":"masonry","ids":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144],"endpointGrid":0.05,"expectedAreas":[13593.36,1055.58,685.07,590.7,590.7,559.6,209.81],"evidence":"Seven closed masonry profiles visually compared against p2, including perimeter and freestanding partitions. Source endpoint rounding is joined on a 0.05-PDF-unit grid (at most 0.036 displacement); no opening is bridged. Open central contours and the piano enclosure remain flat evidence. No Sala label lies inside any filled masonry profile."}],
+      "rules":[
+        {"ranges":[[0,144]],"kind":"detail","reason":"original architectural contours; closed masonry profiles are filled separately and unresolved open contours stay flat"},
+        {"ranges":[[145,231]],"kind":"detail","reason":"display cases and physical stair detail, not extruded walls"},
+        {"ids":[546],"kind":"detail","reason":"display case outline"}
+      ]}]
+  },
+  {
+    "slug":"accademia-florence", "file":"accademia-florence.pdf",
+    "sourceProjection":{"kind":"orthographic","pages":[6],"basis":"Both floor diagrams were visually checked as overhead plans, including the semicircular David tribune. Upper-level faint lower-floor context remains a separate flat detail rather than a projection transform."},
+    "stopBindings":[{"stopIndex":0,"placeId":"L0-2-1"},{"stopIndex":1,"placeId":"L0-3-1"},{"stopIndex":2,"placeId":"L0-4-1"},{"stopIndex":3,"placeId":"L0-5-1"}],
+    "sha256":"f01a1af6dfc684436e47e4aa48479a0c7d52573d66169ba11fed42e41dced2d9",
+    "url":"https://www.galleriaaccademiafirenze.it/wp-content/uploads/2026/02/Galleria-Accademia-Fi-Kit-visita-ENG.pdf",
+    "review":"PDF p6 visually checked: two orthographic diagrams. Numbers are outlined glyphs, not extractable text; full label inventory manually recorded, including 6a/6b/6c and service rooms 9/13/14. First-floor thin outlines indicate lower-level context, so they are flat context, not upper-floor rooms. Hatching is exhibition-category graphics, not dense stair treads.",
+    "limitations":["保留两层原图比例与全部编号；上层的淡线是下层位置参照，不是新增房间。", "展厅编号可用于定位，墙高与层间距为显示用途；尚未核验跨层通行路线。"],
+    "floors":[
+      {"id":"L0","label":"底层 · 大卫与主要展厅","order":0,"page":6,"crop":[142,307,495,550],
+       "places":[{"label":"1","name":"入口","at":[330,521]},{"label":"2","name":"巨像厅","at":[329,461]},{"label":"3","name":"囚徒长廊","at":[284,462]},{"label":"4","name":"大卫展厅","at":[284,350]},{"label":"5","name":"石膏模型馆","at":[165,377]},{"label":"6a","at":[224,377]},{"label":"6b","at":[198,377]},{"label":"6c","at":[253,377]},{"label":"7","name":"乐器馆","at":[476,410]},{"label":"8","name":"临时展厅","at":[364,410]},{"label":"9","name":"书店","at":[252,419]},{"label":"14","name":"出口","at":[284,521]}],
+       "expectedLabels":["1","2","3","4","5","6a","6b","6c","7","8","9","14"],
+       "sourceSpaces":[
+         {"id":"colossus","label":"巨像厅","placeId":"L0-2-1","sourcePaths":[290],"evidence":"p6: the independently bounded rectangular gallery 2, using its original floor fill without changing the surrounding wall gaps."},
+         {"id":"prisoners-david","label":"囚徒长廊与大卫展厅","placeId":"L0-3-1","sourcePaths":[524],"evidence":"p6: the continuous T-shaped gallery 3 and tribune 4 share one source floor footprint. The semicircular tribune is retained; no wall is invented between the two labels."},
+         {"id":"gipsoteca","label":"石膏模型馆","placeId":"L0-5-1","sourcePaths":[523],"evidence":"p6: the independent blue Gipsoteca 5 floor, exactly bounded by the published floor fill."},
+         {"id":"instruments","label":"乐器馆与通廊","placeId":"L0-7-1","sourcePaths":[526,527],"evidence":"p6: gallery 7 and its red connecting corridor use both original disconnected fill shapes; they are not replaced by a bounding rectangle."}
+       ],
+       "rules":[
+         {"ids":[523],"channel":"fill","kind":"surface","tone":"blue","reason":"Gipsoteca floor"},
+         {"ids":[290,524],"channel":"fill","kind":"surface","tone":"gold","reason":"main gallery floor, hatching excluded"},
+         {"ids":[526,527],"channel":"fill","kind":"surface","tone":"rose","reason":"musical instrument galleries"},
+         {"ids":[530,531,532,533,534,536,537,538,546],"kind":"wall","reason":"reviewed black structural contours; source symbol outlines excluded"}
+       ]},
+      {"id":"L1","label":"一层 · 哥特式绘画","order":1,"page":6,"crop":[142,568,500,809],
+       "places":[{"label":"10","at":[287,771]},{"label":"11","at":[287,709]},{"label":"12","at":[332,671]},{"label":"13","at":[287,795]}],
+       "expectedLabels":["10","11","12","13"],
+       "sourceSpaces":[{"id":"gothic-galleries","label":"哥特式绘画展区 10–12","placeId":"L1-10-1","sourcePaths":[3],"evidence":"p6: the continuous L-shaped upper gallery 10-12 is one published floor footprint, retaining all three independent place labels. Hatching is not converted into dividing walls."}],
+       "rules":[
+         {"ids":[3],"channel":"fill","kind":"surface","tone":"gold","reason":"first floor galleries 10-12"},
+         {"ids":[244,255,259,261,264,268,270],"kind":"wall","reason":"upper-floor structural contours"},
+         {"ids":[263,265,267],"kind":"detail","reason":"lower-level context only, not additional first-floor rooms"}
+       ]}
+    ]
+  },
+  {
+    "slug":"doges-palace","file":"doges-palace-2025.pdf",
+    "sourceProjection":{"kind":"orthographic","pages":[4,6,7,12,16],"basis":"Each of the five extracted diagrams was visually checked as an overhead plan, not the booklet's perspective illustrations. Their horizontal registration is unknown and is not inferred from the page layout."},
+    "stopBindings":[{"stopIndex":0,"placeId":"L0-1-1"},{"stopIndex":1,"placeId":"L0-2-1"},{"stopIndex":2,"placeId":"L1-5-1"},{"stopIndex":3,"placeId":"L1-27-1"},{"stopIndex":4,"placeId":"L2-22-1"},{"stopIndex":5,"placeId":"loggia-33-1"}],
+    "verticalLinks":[{"id":"censors-stair","label":"监察官阶梯","kind":"stairs","fromPlaceId":"L0-3-1","toPlaceId":"loggia-3-1","evidence":"PDF p4 describes Stair of the Censors leading from the courtyard to the loggia; p6 explicitly labels the corresponding landing 3."}],
+    "sha256":"31d59320ad2d0d509e2b4cbfca8fbb9fda1f683a4bccb2f1fc03e3bce0945cd1",
+    "url":"https://palazzoducale.visitmuve.it/wp-content/uploads/sites/2/2025/10/Guida-Ducale-ENG.pdf",
+    "review":"Orthographic diagrams on PDF pages 4/6/7/12/16 checked visually. Columns are solid black circles in architectural runs, not service-symbol circles. Wall strokes are >1 source unit, stair treads and handrails remain flat. Service leaders and PDF duplicate clipped drawing streams excluded. Page16's Piombi and attic/Great Council ceiling are drawn independently, not inferred from lower floors. All printed place numbers 1-38 retained, including duplicated cross-level stair/prison-entry labels; letter l has five distinct source anchors.",
+    "limitations":["五组平面包含庭院、回廊、叹息桥与监狱、总督公寓、议事厅和秘境屋架。", "秘境、屋架及其他限制区域仅作建筑位置展示，不代表已购票包含或当天开放。", "各层使用独立导览平面的原图比例；楼层错位和墙高用于显示，尚无核验过的逐步跨层导航。"],
+    "floors":[
+      {"id":"L0","label":"底层 · 庭院与建筑博物馆","order":0,"page":4,"crop":[186,465,534,697],
+       "labelPattern":"[123]","expectedLabels":["1","2","3"],
+       "rules":[
+        {"ids":[0,14,15],"channel":"fill","kind":"surface","tone":"neutral","reason":"ground floor and courtyard silhouette"},
+        {"ids":[5],"channel":"fill","kind":"surface","tone":"gold","reason":"Museo dell'Opera floor"},
+        {"ids":[4,6,7,8,9,10,11,12,13],"channel":"fill","kind":"surface","tone":"blue","reason":"enclosed service rooms and restricted museum spaces, retained as geometry"},
+        {"ranges":[[16,149]],"type":["s"],"colors":[[0.137,0.122,0.125]],"minWidth":1,"kind":"wall","reason":"thick structural contours, not external service leaders"},
+        {"ranges":[[17,117]],"channel":"fill","colors":[[0.137,0.122,0.125]],"kind":"wall","reason":"courtyard and exterior colonnade columns"},
+        {"ids":[3,58,99,148],"kind":"detail","reason":"well-heads and stair tread diagrams remain flat"}
+       ]},
+      {"id":"loggia","label":"回廊层 · 叹息桥与新监狱","order":0.5,"page":6,"crop":[177,453,495,759],
+       "labelPattern":"[0-9]+","expectedLabels":["3","4","32","33","34","35","36","37","38"],
+       "rules":[
+        {"ids":[63,65,68,69],"channel":"fill","kind":"surface","tone":"neutral","reason":"loggia-floor silhouette and service rooms"},
+        {"ids":[66,70],"channel":"fill","kind":"surface","tone":"green","reason":"administration rooms retained despite restricted access"},
+        {"ids":[71],"channel":"fill","kind":"surface","tone":"gold","reason":"state rooms at loggia level"},
+        {"ids":[73,128],"channel":"fill","kind":"surface","tone":"rose","reason":"New Prisons and bridge corridor outlines"},
+        {"ranges":[[63,182],[226,245]],"type":["s"],"colors":[[0.137,0.122,0.125]],"minWidth":1,"kind":"wall","reason":"reviewed thick prison, bridge and loggia walls"},
+        {"ranges":[[74,171],[229,235]],"channel":"fill","colors":[[0.137,0.122,0.125]],"kind":"wall","reason":"colonnade piers; service-anchor circles 174/179/214 excluded"},
+        {"ranges":[[63,182],[215,215],[236,242]],"type":["s"],"colors":[[0.137,0.122,0.125]],"minWidth":0.4,"maxWidth":0.5,"kind":"detail","reason":"stairs and railing lines, not vertical room partitions"}
+       ]},
+      {"id":"L1","label":"一层 · 总督公寓与大议会厅","order":1,"page":7,"crop":[197,469,558,705],
+       "labelPattern":"[0-9]+","expectedLabels":["5","6","7","8","9","10","11","12","13","14","24","25","26","27","28","29","30","31","32"],
+       "rules":[
+        {"ids":[61,65,258,263,275],"channel":"fill","kind":"surface","tone":"neutral","reason":"floor silhouette, service spaces and stair landings"},
+        {"ids":[62,279],"channel":"fill","kind":"surface","tone":"gold","reason":"institutional chambers, using printed polygons"},
+        {"ids":[63,269,271],"channel":"fill","kind":"surface","tone":"blue","reason":"Doge apartments and golden stair landing"},
+        {"ids":[64],"channel":"fill","kind":"surface","tone":"rose","reason":"prison entrance area"},
+        {"ranges":[[66,84],[173,175],[186,191],[270,274],[280,282]],"type":["s"],"colors":[[0.137,0.122,0.125]],"minWidth":1,"kind":"wall","reason":"main structural contours including original openings"},
+        {"ranges":[[66,84],[173,175],[186,191],[256,257],[280,282]],"type":["s"],"colors":[[0.137,0.122,0.125]],"maxWidth":0.6,"kind":"detail","reason":"thin stair and railing details"}
+       ]},
+      {"id":"L2","label":"二层 · 议事厅与军械库","order":2,"page":12,"crop":[197,587,558,648],
+       "labelPattern":"([0-9]+|[abc])","expectedLabels":["15","16","17","18","19","20","21","22","23","a","b","c"],
+       "rules":[
+        {"ids":[103],"channel":"fill","kind":"surface","tone":"gold","reason":"institutional second-floor rooms; grey lower-floor silhouette 102 excluded"},
+        {"ids":[104,105,106,128],"channel":"fill","kind":"surface","tone":"neutral","reason":"stairs and service spaces on this level"},
+        {"ids":[107],"channel":"fill","kind":"surface","tone":"rose","reason":"special itinerary rooms a-c"},
+        {"ids":[127],"channel":"fill","kind":"surface","tone":"blue","reason":"armoury interior footprint"},
+        {"ids":[130,132,134],"channel":"fill","kind":"surface","tone":"green","reason":"restricted north-west rooms retained"},
+        {"ranges":[[108,146]],"type":["s"],"colors":[[0.137,0.122,0.125]],"minWidth":1,"kind":"wall","reason":"second-floor architectural walls, not label leader 155"},
+        {"ranges":[[108,146]],"type":["s"],"colors":[[0.137,0.122,0.125]],"maxWidth":0.5,"kind":"detail","reason":"stair treads and railing details"}
+       ]},
+      {"id":"attic","label":"上层 · 秘境与屋架","order":3,"page":16,"crop":[189,550,558,788],
+       "labelPattern":"[defghilmn]","expectedLabels":["d","e","f","g","h","i","l","l","l","l","l","m","n"],
+       "rules":[
+        {"ids":[7,16,17,18,52],"channel":"fill","kind":"surface","tone":"rose","reason":"special itinerary and attic spaces shown on source map"},
+        {"ids":[49],"channel":"fill","kind":"surface","tone":"blue","reason":"Great Council ceiling context; not asserted as a visitor floor"},
+        {"ids":[8,20,21],"channel":"fill","kind":"surface","tone":"neutral","reason":"stair and internal void/context areas"},
+        {"ranges":[[1,59]],"type":["s"],"colors":[[0.137,0.122,0.125]],"minWidth":1,"kind":"wall","reason":"architectural partitions from the actual attic diagram"},
+        {"ranges":[[1,59]],"type":["s"],"colors":[[0.137,0.122,0.125]],"maxWidth":0.6,"kind":"detail","reason":"roof/ceiling joist and stair lines, not walls"}
+       ]}
+    ]
+  }
+]

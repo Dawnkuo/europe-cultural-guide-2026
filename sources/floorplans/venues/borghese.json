@@ -1,0 +1,31 @@
+{
+  "slug": "borghese",
+  "sourceProjection":{"kind":"orthographic","pages":[10],"basis":"The sculpture-floor and garden diagram is an overhead plan with repeated aligned room boundaries. Curved exterior landscaping is not interpreted as perspective distortion."},
+  "file": "borghese-candidate-1.pdf",
+  "sha256": "42edb4c4cfb5bfb69ea7544ca412cffb24b9d74d3c466b96634a6e0d57e30e05",
+  "url": "https://galleriaborghese.cultura.gov.it/en/wp-content/uploads/BirdCage_CS_04-05_ENG_Press-R.pdf",
+  "review": "Physical page 10 visually inspected. Orthographic sculpture-floor plan. Visible filled paths 53/60/61/62/65 are structural masonry with door gaps. Paths 63-67 and 81-162 are terrace, garden and stair detail, retained flat. Stair pictogram 54-59 is a symbol rather than its physical geometry. The second duplicated drawing stream is outside its clipping path and is not used. Roman room numerals I-VIII retained directly from text anchors. Exhibition hatching is not a wall or a current artwork position.",
+  "limitations": [
+    "本图覆盖雕塑层 I–VIII 厅、中央大厅、门廊及相邻花园；上层绘画馆平面资料尚待补齐。",
+    "建筑平面依据馆方专题展资料；不将当时的临时展品位置当作当前陈列。",
+    "原图只提供楼梯符号，未绘制上层落点，不生成跨层连线。"
+  ],
+  "floors": [{
+    "id": "L0", "label": "雕塑层 · I–VIII", "order": 0,
+    "page": 10, "crop": [49,120,546,294],
+    "labelPattern": "I|II|III|IV|V|VI|VII|VIII",
+    "expectedLabels": ["I","II","III","IV","V","VI","VII","VIII"],
+    "servicePlaces": [
+      {"label":"中央大厅","name":"Mariano Rossi 大厅","kind":"area","at":[412,215]},
+      {"label":"门廊","kind":"service","at":[413,275]},
+      {"label":"梯","name":"楼梯（上层落点待补）","kind":"service","at":[474,142]},
+      {"label":"花园","name":"Tramontana 秘密花园","kind":"area","at":[180,234]}
+    ],
+    "rules": [
+      {"ids":[53,60,61,62,65],"channel":"fill","kind":"wall","reason":"printed structural masonry, preserving every doorway"},
+      {"ids":[63,64,66,67],"kind":"detail","tone":"green","reason":"garden and terrace boundaries, not indoor partitions"},
+      {"ranges":[[68,83]],"kind":"detail","reason":"porch and terrace stair treads"},
+      {"ranges":[[84,162]],"kind":"detail","tone":"green","reason":"formal garden planting beds and fountain geometry"}
+    ]
+  }]
+}

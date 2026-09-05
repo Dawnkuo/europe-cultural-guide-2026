@@ -1,0 +1,35 @@
+{
+ "slug":"correr","file":"correr.pdf",
+ "sourceProjection":{"kind":"orthographic","pages":[1],"basis":"The two extracted floor strips are overhead visitor-plan diagrams with aligned parallel wings, not the adjacent photographic views. They remain independently positioned display diagrams."},
+ "stopBindings":[{"stopIndex":0,"placeId":"L1-入口-1"},{"stopIndex":2,"placeId":"L1-威尼斯史-1"},{"stopIndex":4,"placeId":"L2-绘画馆-1"}],
+ "sha256":"72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
+ "url":"https://correr.visitmuve.it/wp-content/uploads/sites/3/2026/01/MAPPA-PERCORSI-DI-VISITA-MUSEO-CORRER-2025.pdf",
+ "review":"Both source floor diagrams inspected. Already orthographic. First-floor outlines54-95/110 and second-floor outlines236-252 contain partitions; thin tread/curve lines56/82/238/240/242/243/245 are flat details. Legends and external service leaders are excluded. Source provides collection zones but no individual room IDs, so names are used without fabricating room numbers. Collection anchor coordinates lie inside their original colored areas.",
+ "limitations":["包含一层收藏、王室套间及二层绘画馆；原图没有逐室编号，地图不编造房号。", "考古博物馆与马尔恰纳图书馆作为相邻馆区保留，是否可进入以现场及票面为准。", "王室新路线的建筑空间保留，预约与开放条件不改变平面轮廓。"],
+ "floors":[
+  {"id":"L1","label":"一层 · 收藏与王室套间","order":1,"page":1,"crop":[684,421,1076,689],
+   "places":[{"label":"卡诺瓦","at":[984,506]},{"label":"威尼斯史","at":[879,501]},{"label":"王室套间","at":[1063,531]},{"label":"王室新线","at":[906,442]},{"label":"考古馆","at":[757,500]},{"label":"图书馆","at":[697,475]},{"label":"入口","kind":"service","at":[1052,614]}],
+   "expectedLabels":["卡诺瓦","威尼斯史","王室套间","王室新线","考古馆","图书馆","入口"],
+   "rules":[
+    {"ids":[19],"channel":"fill","kind":"surface","tone":"rose","reason":"Marciana rooms original floor footprint"},
+    {"ids":[20,21,29,30,31,32,33,34,35,36,37,38,39,40,41],"channel":"fill","kind":"surface","tone":"neutral","reason":"service and uncolored room floors, not courtyard fill"},
+    {"ranges":[[22,28]],"ids":[22,23,24,25,26,27,28],"channel":"fill","kind":"surface","tone":"teal","reason":"National Archaeological Museum wing"},
+    {"ids":[231],"channel":"fill","kind":"surface","tone":"teal","reason":"remaining archaeology connection"},
+    {"ids":[42,43],"channel":"fill","kind":"surface","tone":"green","reason":"Venetian history collection floor"},
+    {"ids":[44],"channel":"fill","kind":"surface","tone":"gold","reason":"royal rooms north enfilade"},
+    {"ranges":[[45,50]],"channel":"fill","kind":"surface","tone":"blue","reason":"Royal Palace and Empress's rooms"},
+    {"ids":[51,52,53,83],"channel":"fill","kind":"surface","tone":"gold","reason":"Canova and neoclassical rooms"},
+    {"ranges":[[54,95],[110,110]],"type":["s"],"minWidth":1,"kind":"wall","reason":"structural partition and perimeter strokes"},
+    {"ids":[56,82],"kind":"detail","reason":"stairs and circular room floor motif"}
+   ]},
+  {"id":"L2","label":"二层 · 绘画馆","order":2,"page":1,"crop":[711,129,1047,228],
+   "places":[{"label":"绘画馆","at":[797,210]},{"label":"楼梯","kind":"service","at":[875,184]}],
+   "expectedLabels":["绘画馆","楼梯"],
+   "rules":[
+    {"ids":[233,235],"channel":"fill","kind":"surface","tone":"gold","reason":"picture gallery floor"},
+    {"ids":[247],"channel":"fill","kind":"surface","tone":"neutral","reason":"stair/service floor patch"},
+    {"ranges":[[236,252]],"type":["s"],"minWidth":1,"kind":"wall","reason":"second-floor boundaries and individual room partitions"},
+    {"ids":[238,240,242,243,245],"kind":"detail","reason":"stair treads and landings"}
+   ]}
+ ]
+}

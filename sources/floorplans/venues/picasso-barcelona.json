@@ -1,0 +1,38 @@
+{
+  "slug":"picasso-barcelona","file":"picasso-barcelona-candidate-1.pdf",
+  "sourceProjection":{"kind":"orthographic","pages":[2,3],"basis":"Both visitor floor diagrams were visually reviewed as overhead plans of the connected palaces. Courtyard context and stair symbols are classified separately; there is no perspective transform."},
+  "sha256":"14d9f2035c5318ca1f14603596ec4c171f12326a467cc0660dec5a6556aed641",
+  "url":"https://museupicassobcn.cat/sites/default/files/inline-images/Museu/planol/PLANOL_EN.pdf",
+  "review":"Official orthographic visitor diagrams p2 and p3 visually checked. Retain actual plan simplification, not surveying precision. Room labels 1-16 were visually transcribed from the rendered plan because the page text extraction omitted them; the PDF encoding mechanism was not assumed. B1/B2 are two actual ceramic-area labels. Separate source wall polygons from arrows, stair treads, pictograms and text. First-floor pale courtyard context fills 37/38 are omitted as floor slabs, while their evidenced stair lines remain. No artwork wall position inferred from room-label center.",
+  "limitations":["两层按馆内导览平面绘制，保留全部展厅编号及底层服务区。", "平面属于展馆导览比例，不是建筑测绘；展览名称和开放范围可能变化。", "楼梯保留原图位置与踏步，跨层连接尚未作为可导航路径发布。"],
+  "floors":[
+    {"id":"L0","label":"底层 · 庭院与服务","order":0,"page":2,"crop":[181,324,1079,1699],
+     "places":[{"label":"寄存","kind":"service","at":[310,702]},{"label":"售票","kind":"service","at":[285,968]},{"label":"书店","kind":"service","at":[590,552]},{"label":"Meca","at":[300,1190]},{"label":"Mauri","at":[301,1308]},{"label":"礼堂","at":[906,1000]},{"label":"集合","kind":"service","at":[578,741]}],
+     "expectedLabels":["寄存","售票","书店","Meca","Mauri","礼堂","集合"],
+     "rules":[
+      {"ids":[2,3,4,5,6,7,8,13,14,30,31,98],"channel":"fill","kind":"surface","tone":"neutral","reason":"printed occupied floor areas, excluding street strip 1"},
+      {"ids":[0,9,10,11,12,39,47,48,49,67],"channel":"fill","kind":"surface","tone":"gold","reason":"visitor service and staircase areas"},
+      {"ranges":[[17,29],[173,208]],"exclude":[173,194,195,196],"channel":"fill","kind":"wall","reason":"reviewed source wall polygons and openings"},
+      {"ids":[35,38,96,100],"channel":"fill","kind":"wall","reason":"remaining perimeter and room walls"},
+      {"ranges":[[50,60],[63,66],[68,79],[81,94],[194,196]],"channel":"fill","kind":"detail","reason":"stair tread and balustrade polygons are flat detail"},
+      {"ids":[32,33,36,37],"kind":"detail","reason":"dashed source links across open circulation spaces, not solid walls"}
+     ]},
+    {"id":"L1","label":"一层 · 藏品与临展","order":1,"page":3,"crop":[181,263,976,1800],
+     "places":[{"label":"1","at":[605,1241]},{"label":"2","at":[752,1213]},{"label":"3","at":[906,1114]},{"label":"4","at":[897,878]},{"label":"5","at":[769,915]},{"label":"6","at":[719,1022]},{"label":"7","at":[602,1022]},{"label":"8","at":[618,840]},{"label":"9","at":[763,804]},{"label":"10","at":[763,693]},{"label":"11","at":[885,694]},{"label":"12","at":[355,644]},{"label":"13","at":[234,483]},{"label":"14","at":[584,389]},{"label":"15","at":[682,392]},{"label":"16","at":[669,564]},{"label":"B1","at":[382,938]},{"label":"B2","at":[382,742]}],
+     "expectedLabels":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","B1","B2"],
+     "sourceSpaces":[
+       {"id":"room-12","label":"12号展厅","placeId":"L1-12-1","sourcePaths":[119],"evidence":"p3: the bounded cyan gallery 12 uses its exact source floor polygon, without changing the two doorway gaps."},
+       {"id":"room-13","label":"13号展厅","placeId":"L1-13-1","sourcePaths":[34],"evidence":"p3: the long green gallery 13 is the complete original footprint including the connected northern end, not a rectangle around its number."}
+     ],
+     "rules":[
+      {"ids":[0,34,120],"channel":"fill","kind":"surface","tone":"green","reason":"printed gallery and temporary-exhibition floor areas"},
+      {"ids":[33],"channel":"fill","kind":"surface","tone":"gold","reason":"rooms 1-7, retaining doorway boundaries"},
+      {"ids":[35,41],"channel":"fill","kind":"surface","tone":"neutral","reason":"temporary-exhibition and lift spaces; pale courtyard context fills 37/38 are not upper-floor slabs"},
+      {"ids":[36],"channel":"fill","kind":"surface","tone":"rose","reason":"ceramics B1/B2 footprint"},
+      {"ids":[119],"channel":"fill","kind":"surface","tone":"teal","reason":"room 12 floor"},
+      {"ids":[121],"channel":"fill","kind":"surface","tone":"blue","reason":"rooms 8-11 floor"},
+      {"ids":[3,5,7,8,10,12,13,50,52,53,54,56,57,58,59,61,64,65,66,67,68,69,70,71,72,73,77,84,85,86,87,88,89,91,92,96,97,99,128,129,130,131,132,136,137,138,139,145,146,147,148,150,151,152,153,154,155,163,164,165,166,168,169,170,171,172,222,223,224],"channel":"fill","kind":"wall","reason":"reviewed room/perimeter partitions, excluding arrows and service glyphs"},
+      {"ranges":[[18,32],[173,212]],"channel":"fill","kind":"detail","reason":"staircases at original plan positions; no stairs inferred from hatching"}
+     ]}
+  ]
+}

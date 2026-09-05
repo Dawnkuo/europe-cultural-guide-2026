@@ -1,0 +1,173 @@
+'use client';
+
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
+import { ArrowUpDown, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
+import type { GuideRecord } from '../data/types';
+import { containsPoint, placeRoomLabels, planTones, polygonPath, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint, type PlanPlace } from '../lib/architectural-plan';
+import './architectural-map.css';
+
+/* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex -- The bounded map viewport is intentionally keyboard-focusable for arrow-key scrolling; room actions remain native buttons. */
+
+const ArchitecturalScene = lazy(() => import('./ArchitecturalScene'));
+
+export function ArchitecturalMap({ plan, guide, active = true }: { plan: ArchitecturalPlan; guide: GuideRecord; active?: boolean }) {
+  const [view, setView] = useState<'2d' | '3d'>('3d');
+  const [floorId, setFloorId] = useState(plan.floors[0].id);
+  const [selected, setSelected] = useState<string>();
+  const [zoom, setZoom] = useState(1);
+  const [sceneCommand, setSceneCommand] = useState({ id: 0, action: 'reset' });
+  const [webglFailed, setWebglFailed] = useState(false);
+  const root = useRef<HTMLDivElement>(null);
+  const [availableSize, setAvailableSize] = useState({ width: 1000, height: 560 });
+  const viewport = useRef<HTMLElement>(null);
+  const svg = useRef<SVGSVGElement>(null);
+  const drag = useRef<{ id: number; x: number; y: number; left: number; top: number; moved: boolean } | null>(null);
+  const floor = plan.floors.find((f) => f.id === floorId)!;
+  const floorPlaces = useMemo(() => plan.places.filter((p) => p.floorId === floorId), [plan, floorId]);
+  const pixelsPerUnit = Math.min((availableSize.width - 50) / (floor.bounds[2] - floor.bounds[0]), (availableSize.height - 50) / (floor.bounds[3] - floor.bounds[1]));
+  const minX = (floor.bounds[0] + floor.bounds[2]) / 2 - availableSize.width / pixelsPerUnit / 2;
+  const minY = (floor.bounds[1] + floor.bounds[3]) / 2 - availableSize.height / pixelsPerUnit / 2;
+  const maxX = minX + availableSize.width / pixelsPerUnit;
+  const maxY = minY + availableSize.height / pixelsPerUnit;
+  const labels = useMemo(() => {
+    const projected = floorPlaces.map((p) => ({ ...p, at: [(p.at[0] - minX) * pixelsPerUnit, (p.at[1] - minY) * pixelsPerUnit] as MapPoint }));
+    return placeRoomLabels(projected, 1, [availableSize.width, availableSize.height]).map((p) => ({
+      ...p, at: floorPlaces.find((source) => source.id === p.id)!.at,
+      displayAt: [p.displayAt[0] / pixelsPerUnit + minX, p.displayAt[1] / pixelsPerUnit + minY] as MapPoint,
+      width: p.width / pixelsPerUnit, height: p.height / pixelsPerUnit,
+    }));
+  }, [floorPlaces, pixelsPerUnit, minX, minY, availableSize]);
+  const current = plan.places.find((p) => p.id === selected);
+  const selectedSpace = spaceForPlace(plan, selected);
+  const orderedFloors = [...plan.floors].sort((a, b) => b.order - a.order);
+
+  useEffect(() => {
+    if (!root.current) return;
+    const observer = new ResizeObserver(([entry]) => {
+      if (entry.contentRect.width <= 0) return;
+      setAvailableSize({ width: Math.max(240, entry.contentRect.width), height: window.matchMedia('(max-width: 700px)').matches ? 460 : 560 });
+    });
+    observer.observe(root.current);
+    return () => observer.disconnect();
+  }, []);
+
+  function selectPlace(place: PlanPlace, focus = false) {
+    setSelected(place.id);
+    setFloorId(place.floorId);
+    if (focus && view === '2d') requestAnimationFrame(() => {
+      const node = svg.current?.querySelector<SVGGElement>(`[data-place-id="${place.id}"]`);
+      const host = viewport.current;
+      if (!node || !host) return;
+      const rect = node.getBoundingClientRect(), bounds = host.getBoundingClientRect();
+      host.scrollBy({ left: rect.x + rect.width / 2 - bounds.x - bounds.width / 2, top: rect.y + rect.height / 2 - bounds.y - bounds.height / 2 });
+    });
+  }
+
+  function command(action: string) {
+    setSceneCommand((old) => ({ id: old.id + 1, action }));
+    if (action === 'reset') {
+      setZoom(1);
+      viewport.current?.scrollTo({ left: 0, top: 0 });
+    } else setZoom((old) => Math.min(4, Math.max(1, old + (action === 'in' ? .5 : -.5))));
+  }
+
+  return (
+    <div ref={root} className="architectural-map" data-plan-version="2" data-guide-slug={plan.slug}>
+      <div className="architectural-map__toolbar">
+        <fieldset className="architectural-map__segments" aria-label="地图显示模式">
+          <button type="button" aria-pressed={view === '3d'} disabled={webglFailed} onClick={() => setView('3d')}>3D</button>
+          <button type="button" aria-pressed={view === '2d'} onClick={() => setView('2d')}>2D 俯视</button>
+        </fieldset>
+        <div className="architectural-map__tools">
+          <button type="button" aria-label="缩小地图" title="缩小" onClick={() => command('out')}><ZoomOut size={19} /></button>
+          <button type="button" aria-label="放大地图" title="放大" onClick={() => command('in')}><ZoomIn size={19} /></button>
+          <button type="button" aria-label="重置地图视角" title="重置视角" onClick={() => command('reset')}><RotateCcw size={18} /></button>
+        </div>
+      </div>
+      {webglFailed && <output className="architectural-map__notice">3D 当前不可用，已切换到可操作的俯视地图。</output>}
+      {view === '3d' ? active && <Suspense fallback={<div className="architectural-map__loading">正在加载分层地图</div>}>
+        <ArchitecturalScene plan={plan} floorId={floorId} selected={selected} command={sceneCommand} onSelect={(id) => { const p = plan.places.find((p) => p.id === id); if (p) selectPlace(p); }} onFailure={() => { setWebglFailed(true); setView('2d'); }} />
+      </Suspense> : <section
+        className="architectural-map__viewport" aria-label={`${guide.title}俯视地图，可滚动`} tabIndex={0} ref={viewport}
+        onClick={(event) => {
+          if (drag.current?.moved || (event.target as Element).closest('button')) return;
+          const matrix = svg.current?.getScreenCTM();
+          if (!matrix) return;
+          const point = new DOMPoint(event.clientX, event.clientY).matrixTransform(matrix.inverse());
+          const space = plan.spaces?.find((space) => space.floorId === floorId && space.polygons.some((p) => containsPoint(p,[point.x,point.y])));
+          const place = space && plan.places.find((p) => p.id === space.placeId);
+          if (place) selectPlace(place);
+        }}
+        onKeyDown={(event) => {
+          const move: Record<string, [number, number]> = { ArrowLeft: [-80,0], ArrowRight: [80,0], ArrowUp:[0,-80], ArrowDown:[0,80] };
+          if (event.target === event.currentTarget && move[event.key]) { event.preventDefault(); event.currentTarget.scrollBy(...move[event.key]); }
+        }}
+        onPointerDown={(event) => {
+          if (event.button !== 0 || event.pointerType === 'touch' || (event.target as Element).closest('button')) return;
+          drag.current = { id: event.pointerId, x: event.clientX, y: event.clientY, left: event.currentTarget.scrollLeft, top: event.currentTarget.scrollTop, moved: false };
+          event.currentTarget.setPointerCapture(event.pointerId);
+        }}
+        onPointerMove={(event) => {
+          const state = drag.current;
+          if (!state || state.id !== event.pointerId) return;
+          const dx = event.clientX - state.x, dy = event.clientY - state.y;
+          state.moved ||= Math.hypot(dx, dy) > 5;
+          if (state.moved) event.currentTarget.scrollTo(state.left - dx, state.top - dy);
+        }}
+        onPointerUp={(event) => { if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId); }}
+        onPointerCancel={() => { drag.current = null; }}
+        onLostPointerCapture={() => { setTimeout(() => { drag.current = null; }, 0); }}
+        onBlur={(event) => {
+          const state = drag.current;
+          if (state && event.currentTarget.hasPointerCapture(state.id)) event.currentTarget.releasePointerCapture(state.id);
+          drag.current = null;
+        }}
+      >
+        <svg ref={svg} aria-label={`${floor.label}完整俯视图`} viewBox={`${minX} ${minY} ${maxX-minX} ${maxY-minY}`} style={{ width: (maxX-minX)*pixelsPerUnit*zoom, height: (maxY-minY)*pixelsPerUnit*zoom }}>
+          <title>{floor.label}</title>
+          {floor.features.map((feature) => <g key={feature.id} data-feature-id={feature.id} data-space-id={spaceForFeature(plan, feature.id)?.id}
+            fill={selectedSpace && spaceForFeature(plan, feature.id)?.id === selectedSpace.id ? '#b99443' : planTones[feature.tone]} opacity={feature.kind === 'detail' ? .65 : 1}>
+            {feature.polygons.map((polygon, index) => <path key={index} d={polygonPath(polygon)} fillRule="evenodd" />)}
+          </g>)}
+          {labels.map((place) => <g key={place.id} data-place-id={place.id}>
+            <line x1={place.at[0]} y1={place.at[1]} x2={place.displayAt[0]} y2={place.displayAt[1]} stroke="#e7cc85" strokeWidth={1/pixelsPerUnit} />
+            <circle cx={place.at[0]} cy={place.at[1]} r={1.7/pixelsPerUnit} fill="#ead797" />
+            <foreignObject x={place.displayAt[0]-place.width/2} y={place.displayAt[1]-place.height/2} width={place.width} height={place.height}>
+              <button className="architectural-map__room" type="button" aria-label={`${place.label} ${place.name}`} aria-pressed={selected === place.id}
+                data-room-id={place.kind === 'room' ? place.id : undefined} style={{ fontSize:13/pixelsPerUnit, borderWidth:1/pixelsPerUnit, borderRadius:2/pixelsPerUnit }}
+                onClick={() => { if (!drag.current?.moved) selectPlace(place); }}>{place.label}</button>
+            </foreignObject>
+          </g>)}
+        </svg>
+      </section>}
+      <fieldset className="architectural-map__floors" aria-label="楼层">
+        {orderedFloors.map((f) => <button key={f.id} type="button" aria-pressed={floorId === f.id} onClick={() => { setFloorId(f.id); viewport.current?.scrollTo(0,0); }}>{f.label}</button>)}
+      </fieldset>
+      <div className="architectural-map__inspector">
+        <span>{floorPlaces.length} 个空间标记</span>
+        <strong>{current?.floorId === floorId ? `${current.label} · ${current.name === current.label ? '展厅' : current.name}` : floor.label}</strong>
+        <label>展厅<select aria-label="定位展厅" value={current?.floorId === floorId ? current.id : ''} onChange={(event) => { const p = plan.places.find((p) => p.id === event.target.value); if (p) selectPlace(p, true); }}>
+          <option value="">选择展厅</option>{floorPlaces.map((p) => <option key={p.id} value={p.id}>{p.label}{p.name !== p.label ? ` · ${p.name}` : ''}</option>)}
+        </select></label>
+      </div>
+      {plan.verticalLinks.length > 0 && <div className="architectural-map__connections">
+        {plan.verticalLinks.map((link) => {
+          const from = plan.places.find((p) => p.id === link.fromPlaceId)!;
+          const to = plan.places.find((p) => p.id === link.toPlaceId)!;
+          if (from.floorId !== floorId && to.floorId !== floorId) return null;
+          const target = from.floorId === floorId ? to : from;
+          return <button key={link.id} type="button" onClick={() => selectPlace(target, true)}><ArrowUpDown size={16} aria-hidden="true" />{link.label} → {plan.floors.find((f) => f.id === target.floorId)!.label}</button>;
+        })}
+      </div>}
+      <details open className="architectural-map__notes"><summary>平面范围与说明</summary>
+        <p>平面保留资料图上比例；墙高、层间距与楼层错位仅为示意，不代表实测尺寸或楼层的实际水平对齐。</p>
+        {plan.limitations.map((text) => <p key={text}>{text}</p>)}
+      </details>
+      <ol className="architectural-map__stops">{guide.spatial.stops.map((stop, index) => {
+        const binding = plan.stopBindings.find((b) => b.stopIndex === index);
+        const place = binding && plan.places.find((p) => p.id === binding.placeId);
+        return <li key={`${index}-${stop}`}>{place ? <button type="button" onClick={() => selectPlace(place, true)}>{stop}</button> : <span>{stop}</span>}</li>;
+      })}</ol>
+    </div>
+  );
+}

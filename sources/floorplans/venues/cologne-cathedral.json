@@ -1,0 +1,27 @@
+{
+  "slug": "cologne-cathedral",
+  "sourceProjection":{"kind":"orthographic","pages":[13],"basis":"The Arnold Wolff nave drawing is a top-down architectural plan, with pier profiles and vault linework separately visible. It is not the visitor leaflet's cathedral elevation or aerial image."},
+  "stopBindings": [{"stopIndex":1,"placeId":"nave-唱诗班席-1"},{"stopIndex":3,"placeId":"nave-南耳堂-1"}],
+  "file": "cologne-visitor.pdf",
+  "url": "https://api.koelner-dom.de/uploads/2407_KW_Cologne_Cathedral_EN_9c90f29f5c.pdf",
+  "sha256": "3c3aa37060e3003a57dc5ac776a5e869a59d3de29cca86715bb2a4ec9c8d742d",
+  "review": "Cologne Cathedral art competition publication, printed p11 / PDF p13. Arnold Wolff architectural ground plan, visually checked orthographic. Image72 contains only architectural ink, no textual legend. Thick black masonry and pier footprints are low walls; fine vault/rib lines stay flat. No room numbers printed, so none invented. Cardinal directions follow the west-to-east church axis, not screen north.",
+  "limitations": [
+    "本图保留教堂主层的柱墩、侧廊、耳堂和环形后殿。细线包含拱顶投影，按平面细节显示，不挤出成隔墙。",
+    "原图没有展厅编号，使用空间名称定位；墙高仅用于显示。",
+    "南塔、登塔楼梯和珍宝馆各层平面尚未核验，本图不代表完整组合票参观路线。"
+  ],
+  "floors": [{
+    "id": "nave", "label": "教堂主层", "order": 0, "page": 13,
+    "crop": [61.8, 309.9, 411, 532], "rules": [],
+    "rasterLayers": [{"xref": 72, "maxChannel": 127, "wallKernel": 5, "tolerancePixels": 0.2, "reason": "Black masonry/column footprints separated from fine vault projection by a five-source-pixel opening; removed fine ink remains a flat detail layer."}],
+    "places": [
+      {"label":"中殿","name":"中殿","at":[163,429],"kind":"room"},
+      {"label":"交叉厅","name":"中殿与耳堂交叉厅","at":[251,429],"kind":"room"},
+      {"label":"唱诗班席","name":"东部唱诗班席区","at":[314,429],"kind":"room"},
+      {"label":"后殿回廊","name":"后殿环形回廊","at":[365,429],"kind":"room"},
+      {"label":"北耳堂","name":"北耳堂","at":[251,360],"kind":"room"},
+      {"label":"南耳堂","name":"南耳堂","at":[251,500],"kind":"room"}
+    ]
+  }]
+}

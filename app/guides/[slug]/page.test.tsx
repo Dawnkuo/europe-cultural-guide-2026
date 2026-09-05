@@ -20,11 +20,13 @@ describe('GuidePage', () => {
       }),
     );
 
+    expect(within(screen.getByRole('navigation', { name: '本章目录' })).getByRole('button', { name: '开始现场导览' })).toBeInTheDocument();
+
     expect(
       screen.getByRole('heading', { name: '科隆大教堂' }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: '分层室内导览地图' }),
+      screen.getByRole('heading', { name: '室内导览地图' }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { name: '不可错过' }),

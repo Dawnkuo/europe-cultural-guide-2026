@@ -1,0 +1,633 @@
+{
+  "source": "https://cenacolovinciano.org/wp-content/uploads/2019/12/Map-Cenacolo-Vinciano.pdf",
+  "sha256": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+  "projection": {
+    "kind": "orthographic",
+    "pages": [
+      1
+    ],
+    "basis": "The overhead site diagram has an orthogonal refectory and an independently angled ticket-office perimeter. That actual angled wall is retained; the source is not an oblique view."
+  },
+  "transform": "translation only, equal x/y units; floor stacking is display-only",
+  "review": "Official orthographic plan p1. The ticket office is genuinely diagonal to the refectory, not an oblique projection. Preserve its angle. Paths0-35 are structural outlines except courtyard surface31; 39-45/57/60-63 are visitation arrows, excluded from walls. Paintings have explicit source wall bars54/55. The museum entrance is at lower right, not the ticket-office entrance at left. No numbered rooms exist on source; use actual place names, not invented numerical room IDs.",
+  "claims": [
+    {
+      "featureId": "L0-refectory",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        4,
+        5,
+        6
+      ],
+      "classification": "Refectory boundary follows source path vertices; east and west door gaps are closed only by the floor polygon, never by added wall geometry.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "L0-refectory-floor",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        4,
+        5,
+        6
+      ],
+      "classification": "Refectory boundary follows source path vertices; east and west door gaps are closed only by the floor polygon, never by added wall geometry.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "L0-classroom",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "classification": "Teaching room traced along the original room perimeter. Small north gaps and east doorway remain un-walled.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "L0-classroom-floor",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "classification": "Teaching room traced along the original room perimeter. Small north gaps and east doorway remain un-walled.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "L0-ticket-office",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        32,
+        33,
+        35
+      ],
+      "classification": "Ticket-office room traced from oblique structural lines, including both exact jamb endpoints of the entrance gap. The left boundary intersects path 35 at its original endpoint; this is a real angled room, not a projection correction. A floor-only join connects the small source rounding gap where path35 ends against path32; no wall is added.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "L0-ticket-office-floor",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        32,
+        33,
+        35
+      ],
+      "classification": "Ticket-office room traced from oblique structural lines, including both exact jamb endpoints of the entrance gap. The left boundary intersects path 35 at its original endpoint; this is a real angled room, not a projection correction. A floor-only join connects the small source rounding gap where path35 ends against path32; no wall is added.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "L0-bookshop",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29
+      ],
+      "classification": "Both connected bookshop spaces share the printed Bookshop label. Interior partition retained separately; do not assign an invented second room number.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "L0-bookshop-floor",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        28,
+        29
+      ],
+      "classification": "Both connected bookshop spaces share the printed Bookshop label. Interior partition retained separately; do not assign an invented second room number.",
+      "precision": "source-wall-boundaries-with-openings-closed-as-floor-only"
+    },
+    {
+      "featureId": "L0-refectory-east",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        5,
+        6
+      ],
+      "classification": "Visible east wall gap at refectory entry from airlocks.",
+      "precision": "documented-wall-gap-not-access-permission"
+    },
+    {
+      "featureId": "L0-refectory-west",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        4,
+        6
+      ],
+      "classification": "Visible west wall gap at the refectory exit.",
+      "precision": "documented-wall-gap-not-access-permission"
+    },
+    {
+      "featureId": "L0-classroom-east",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        13,
+        14
+      ],
+      "classification": "Original gap in classroom east wall.",
+      "precision": "documented-wall-gap-not-access-permission"
+    },
+    {
+      "featureId": "L0-ticket-entry",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourcePaths": [
+        32,
+        33
+      ],
+      "classification": "Ticket-office entrance arrow explicitly points at this opening.",
+      "precision": "documented-wall-gap-not-access-permission"
+    },
+    {
+      "featureId": "L0-path-0-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 0,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-1-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 1,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-2-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 2,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-3-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 3,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-4-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 4,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-5-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 5,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-6-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 6,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-7-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 7,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-8-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 8,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-9-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 9,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-10-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 10,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-11-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 11,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-12-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 12,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-13-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 13,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-14-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 14,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-15-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 15,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-16-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 16,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-17-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 17,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-18-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 18,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-19-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 19,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-20-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 20,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-21-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 21,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-22-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 22,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-23-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 23,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-24-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 24,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-25-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 25,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-26-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 26,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-27-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 27,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-28-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 28,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-29-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 29,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-30-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 30,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-31-surface",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 31,
+      "classification": "courtyard garden, using source curved contour",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-32-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 32,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-33-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 33,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-34-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 34,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-35-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 35,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-36-detail",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 36,
+      "classification": "locker outline, not enclosing wall",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-47-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 47,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-48-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 48,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-49-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 49,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-50-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 50,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-51-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 51,
+      "classification": "museum and ticket-office structural contours, keeping door gaps",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-54-detail",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 54,
+      "classification": "actual Last Supper and Crucifixion artwork wall bars",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-55-detail",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 55,
+      "classification": "actual Last Supper and Crucifixion artwork wall bars",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-path-56-wall",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "path": 56,
+      "classification": "information-room partition",
+      "precision": "source-proportional"
+    },
+    {
+      "featureId": "L0-食堂-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        541,
+        316
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    },
+    {
+      "featureId": "L0-晚餐-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        540,
+        195
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    },
+    {
+      "featureId": "L0-受难-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        540,
+        441
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    },
+    {
+      "featureId": "L0-售票处-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        290,
+        335
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    },
+    {
+      "featureId": "L0-书店-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        437,
+        204
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    },
+    {
+      "featureId": "L0-教学室-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        451,
+        362
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    },
+    {
+      "featureId": "L0-咨询-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        478,
+        446
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    },
+    {
+      "featureId": "L0-入口-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        482,
+        472
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    },
+    {
+      "featureId": "L0-出口-1",
+      "sourceHash": "81b54dcd55fbaf4fbe1317ac51d25e369b16a4f60b253028d2c2deedb041ec76",
+      "page": 1,
+      "sourceAnchor": [
+        441,
+        470
+      ],
+      "classification": "reviewed printed room/service anchor",
+      "precision": "room-label-position-not-artwork-wall-position"
+    }
+  ],
+  "coverage": {
+    "floors": 1,
+    "labels": 9,
+    "features": 49
+  }
+}
