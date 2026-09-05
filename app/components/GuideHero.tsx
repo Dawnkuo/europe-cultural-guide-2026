@@ -5,7 +5,7 @@ import { StatusLabel } from './StatusLabel';
 
 export function GuideHero({ guide }: { guide: GuideRecord }) {
   return (
-    <header className="guide-hero" id="guide-top">
+    <header className="guide-hero" data-guide={guide.slug} id="guide-top">
       {/* oxlint-disable-next-line next/no-img-element -- Static export uses local guide images. */}
       <img alt={guide.hero.alt} src={withBasePath(guide.hero.src)} />
       <div className="guide-hero__shade" />

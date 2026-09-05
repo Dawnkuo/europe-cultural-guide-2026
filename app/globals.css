@@ -1664,6 +1664,14 @@ img {
   object-fit: cover;
   width: 100%;
 }
+.guide-hero[data-guide='accademia-florence'] > img {
+  /* Frame David's head and shoulders; the artwork entry keeps the full statue. */
+  height: 250%;
+  left: 0;
+  object-position: 44% 8%;
+  position: absolute;
+  top: 0;
+}
 .guide-hero__shade {
   background: linear-gradient(
     0deg,
