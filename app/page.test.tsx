@@ -16,12 +16,12 @@ describe('journey overview', () => {
     expect(screen.getByLabelText('欧洲旅程总览地图')).toBeVisible();
   });
 
-  it('shows the known critical notices', () => {
-    render(<Home />);
+  it('does not show the removed departure notices or their navigation link', () => {
+    const { container } = render(<Home />);
 
-    expect(screen.getByText(/穹顶14:30，圣殿15:30/)).toBeVisible();
-    expect(screen.getByText(/比萨往返车票/)).toBeVisible();
-    expect(screen.queryByText(/晚到入住|Vikey|开门指引|退房方式/)).not.toBeInTheDocument();
+    expect(container.querySelector('#notices')).not.toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: '提醒' })).not.toBeInTheDocument();
+    expect(screen.queryByText(/出发前，先看清楚这些资料|穹顶14:30，圣殿15:30|比萨往返车票|晚到入住|Vikey|开门指引|退房方式/)).not.toBeInTheDocument();
   });
 
   it('exposes every shared page destination from the home header', () => {

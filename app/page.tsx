@@ -1,12 +1,6 @@
 'use client';
 
-import {
-  ArrowDown,
-  CalendarDays,
-  MapPin,
-  TicketCheck,
-  TrainFront,
-} from 'lucide-react';
+import { ArrowDown, CalendarDays, MapPin } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { EuropeMap } from './components/EuropeMap';
 import { OfflineStatus } from './components/OfflineStatus';
@@ -36,21 +30,6 @@ const cityCopy: Record<string, { country: string; chapter: string }> = {
   科隆: { country: '德国', chapter: '大教堂、莱茵河与北行巴黎的收束。' },
 };
 
-const notices = [
-  {
-    icon: TicketCheck,
-    label: '票面纠正',
-    title: '穹顶14:30，圣殿15:30',
-    body: '9月7日重新核对原始二维码邮件：原行程正确，网站此前写反，现已纠正。巴黎圣母院10月6日09:30三张登塔票也已补入。',
-  },
-  {
-    icon: TrainFront,
-    label: '交通待确认',
-    title: '比萨往返车票尚不可乘车',
-    body: '现有六份文件均标有非有效乘车票，需要补充实际电子票。',
-  },
-] as const;
-
 export default function Home() {
   const [selectedCity, setSelectedCity] = useState('罗马');
   const selectedItems = useMemo(
@@ -79,7 +58,6 @@ export default function Home() {
         </a>
         <nav aria-label="主导航">
           <a href="#journey-map">地图</a>
-          <a href="#notices">提醒</a>
           {sitePageLinks
             .filter((link) => link.id !== 'bookings')
             .map((link) => (
@@ -179,27 +157,6 @@ export default function Home() {
               查看逐日安排
             </a>
           </aside>
-        </div>
-      </section>
-
-      <section className="notices" id="notices">
-        <div className="section-heading">
-          <p className="eyebrow">Before departure</p>
-          <h2>出发前，先看清楚这些资料</h2>
-          <p>提醒只指出票面冲突、文件缺失和衔接风险，不调整既定行程。</p>
-        </div>
-        <div className="notice-list">
-          {notices.map(({ icon: Icon, label, title, body }, index) => (
-            <article className="notice-row" key={title}>
-              <span className="notice-row__number">0{index + 1}</span>
-              <Icon aria-hidden="true" className="notice-row__icon" size={26} />
-              <div>
-                <p>{label}</p>
-                <h3>{title}</h3>
-              </div>
-              <p className="notice-row__body">{body}</p>
-            </article>
-          ))}
         </div>
       </section>
 
