@@ -41,7 +41,7 @@ describe('ItineraryPage', () => {
     const dayHeadings = screen.getAllByRole('heading', { level: 2 });
     expect(dayHeadings[0]).toHaveTextContent('9月24日');
     expect(dayHeadings.at(-1)).toHaveTextContent('10月6日');
-    expect(screen.getByText('圣殿14:30；穹顶15:30')).toBeInTheDocument();
+    expect(screen.getByText('穹顶14:30；圣殿15:30')).toBeInTheDocument();
   });
 
   it('allows manual city filtering after following a city-specific link', async () => {
@@ -73,11 +73,14 @@ describe('ItineraryPage', () => {
     ).toBeInTheDocument();
   });
 
-  it('keeps alternatives separate and marks incomplete detail', () => {
+  it('keeps alternatives separate without marking restored days as missing', () => {
     render(<ItineraryPage />);
 
     expect(screen.getAllByText('当日备选').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('详细安排待补').length).toBe(3);
+    expect(screen.queryByText('详细安排待补')).not.toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Gaffel am Dom（科隆传统啤酒馆）' }),
+    ).toBeInTheDocument();
   });
 
   it('links cultural stops to their canonical guide chapter', () => {

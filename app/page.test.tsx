@@ -18,9 +18,9 @@ describe('journey overview', () => {
   it('shows the known critical notices', () => {
     render(<Home />);
 
-    expect(screen.getByText(/圣殿14:30/)).toBeVisible();
+    expect(screen.getByText(/穹顶14:30，圣殿15:30/)).toBeVisible();
     expect(screen.getByText(/比萨往返车票/)).toBeVisible();
-    expect(screen.getByText(/晚到入住/)).toBeVisible();
+    expect(screen.getByText('三处晚到入住已获批准')).toBeVisible();
   });
 
   it('prefixes internal links and public images for GitHub Pages', () => {

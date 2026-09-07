@@ -102,10 +102,12 @@ export type TripDay = {
 
 export type BookingRecord = {
   id: string;
+  itemIds?: string[];
   category: '门票' | '交通' | '住宿';
   title: string;
   date: string;
   status: VisitStatus;
+  actionRequired?: boolean;
   validity?: string;
   note?: string;
 };

@@ -312,6 +312,7 @@ const canonicalLocations: Record<string, TripMapLocation> = {
   ),
 
   'museum-ludwig': place('cologne', 6.9600217, 50.9408347, 'node', 633480736),
+  'gaffel-am-dom': place('cologne', 6.9568213, 50.9419049, 'node', 303222530),
   hohenzollern: place('cologne', 6.9657041, 50.9414376, 'way', 268130024),
   'koln-triangle': place('cologne', 6.9718364, 50.9403829, 'node', 13396033603),
   'cologne-cathedral': place('cologne', 6.958138, 50.9413035, 'way', 4532022),
@@ -362,6 +363,7 @@ const locationAliases: Record<string, string> = {
   'sagrada-passion-tower': 'sagrada-familia',
   'cologne-interior': 'cologne-cathedral',
   'cologne-tower-treasury': 'cologne-cathedral',
+  'cologne-treasury': 'cologne-cathedral',
 };
 
 export const unlocatedMapItems: Record<string, string> = {

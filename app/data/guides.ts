@@ -1,4 +1,5 @@
 import { cityProfiles } from './cities';
+import { bookingReviewDate } from './bookings';
 import { guideMediaBySlug } from './guide-media.generated';
 import { guideHeroBySlug } from './guide-hero-media';
 import { guideContentBySlug } from './guides/content';
@@ -50,7 +51,7 @@ const mergeDefinitions: MergeDefinition[] = [
   {
     slug: 'cologne-cathedral',
     title: '科隆大教堂',
-    itemIds: ['cologne-interior', 'cologne-tower-treasury'],
+    itemIds: ['cologne-interior', 'cologne-tower-treasury', 'cologne-treasury'],
   },
 ];
 
@@ -174,7 +175,7 @@ function buildFallbackGuide(
       {
         institution: '国庆行程与票务资料',
         title: `${title}行程记录`,
-        verifiedAt: '2026-09-02',
+        verifiedAt: bookingReviewDate,
         note: '当前记录票面时间、预订状态和到达说明；文化资料将在城市内容包中补齐。',
       },
     ],

@@ -50,8 +50,10 @@ export default function ItineraryPage() {
         </p>
         <div className="ticket-correction">
           <span>票面优先</span>
-          <strong>圣殿14:30；穹顶15:30</strong>
-          <p>原文档时间相反，页面保留冲突标记。</p>
+          <strong>穹顶14:30；圣殿15:30</strong>
+          <p>
+            9月7日复核原始二维码邮件：原文档正确，已纠正网站旧记录，并补齐10月4日至6日详细安排。
+          </p>
         </div>
       </header>
 

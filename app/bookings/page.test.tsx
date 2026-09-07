@@ -34,7 +34,9 @@ describe('BookingsPage', () => {
     expect(screen.getByRole('heading', { name: '门票' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '交通' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: '住宿' })).toBeInTheDocument();
-    expect(screen.getByText('圣殿14:30；穹顶15:30')).toBeInTheDocument();
+    expect(screen.getByText('穹顶14:30；圣殿15:30')).toBeInTheDocument();
+    expect(screen.getByText('巴黎圣母院双塔')).toBeInTheDocument();
+    expect(screen.queryByText('无固定入场时间')).not.toBeInTheDocument();
     expect(container.textContent).not.toMatch(/€|EUR|总价|金额/);
   });
 });
