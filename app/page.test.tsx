@@ -20,7 +20,7 @@ describe('journey overview', () => {
 
     expect(screen.getByText(/穹顶14:30，圣殿15:30/)).toBeVisible();
     expect(screen.getByText(/比萨往返车票/)).toBeVisible();
-    expect(screen.getByText('三处晚到入住已获批准')).toBeVisible();
+    expect(screen.queryByText(/晚到入住|Vikey|开门指引|退房方式/)).not.toBeInTheDocument();
   });
 
   it('prefixes internal links and public images for GitHub Pages', () => {

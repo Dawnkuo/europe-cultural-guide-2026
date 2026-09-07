@@ -3,7 +3,6 @@
 import {
   ArrowDown,
   CalendarDays,
-  Hotel,
   MapPin,
   TicketCheck,
   TrainFront,
@@ -48,12 +47,6 @@ const notices = [
     label: '交通待确认',
     title: '比萨往返车票尚不可乘车',
     body: '现有六份文件均标有非有效乘车票，需要补充实际电子票。',
-  },
-  {
-    icon: Hotel,
-    label: '入住安排',
-    title: '三处晚到入住已获批准',
-    body: '威尼斯9月27日凌晨00:00–01:00、佛罗伦萨9月27日20:00–21:00、罗马9月29日22:00–23:00均已批准。罗马Vikey登记已完成，开门指引及10月2日05:20退房方式待补。',
   },
 ] as const;
 
