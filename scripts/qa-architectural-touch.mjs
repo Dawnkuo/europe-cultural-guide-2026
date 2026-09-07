@@ -18,6 +18,7 @@ try {
       await page.goto(`http://localhost:55838/guides/${slug}/#guide-spatial`, { waitUntil: 'domcontentloaded' });
       const map = page.locator('.architectural-map');
       await map.scrollIntoViewIfNeeded();
+      await map.getByRole('button', { name: '3D', exact: true }).click();
       const canvas = map.locator('canvas');
       await canvas.waitFor({ timeout: 60000 });
       const session = await context.newCDPSession(page);

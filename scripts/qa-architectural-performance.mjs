@@ -31,6 +31,7 @@ try {
     await page.goto(`http://localhost:55838/guides/${slug}/#guide-spatial`, { waitUntil: 'domcontentloaded' });
     const map = page.locator('.architectural-map');
     await map.scrollIntoViewIfNeeded();
+    await map.getByRole('button', { name: '3D', exact: true }).click();
     await map.locator('canvas').waitFor({ timeout: 60000 });
     for (let cycle = 0; cycle < 6; cycle++) {
       await map.getByRole('button', { name: '2D 俯视', exact: true }).click();

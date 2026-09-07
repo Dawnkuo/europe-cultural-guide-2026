@@ -37,6 +37,7 @@ try {
         if (indoorRoutes.has(route)) {
           await map.waitFor({ timeout: 45000 });
           await map.scrollIntoViewIfNeeded();
+          await map.getByRole('button', { name: '3D', exact: true }).click();
           const canvas = map.locator('canvas');
           await canvas.waitFor({ timeout: 45000 });
           const pixels = await canvas.screenshot();

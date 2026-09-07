@@ -1,0 +1,1696 @@
+{
+  "baseCommit": "7385da618e2d6410801ec902868198fb3a07788d",
+  "previousRuntimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "a4d956c6c35c74d36bc39cabf16a35306228da4b8587c77f963324762514a28b",
+  "timestamp": "2026-09-07T09:45:17.559Z",
+  "scope": "Default indoor view/entrance-floor repair only. Not a new complete-interior, physical-device FPS or source-survey certification. Six unverified entrances remain explicitly identified as reference views.",
+  "proof": {
+    "geometry": "All 42 model files and source-evidence files are byte-identical to the baseline commit.",
+    "runtime": "ArchitecturalScene, map CSS, geometry library, visibility, marker component, outer GuideSpatial lifecycle, service worker and dependency lockfile are byte-identical. The 2D geometry/label/floor/route rendering tail and selection/reset/zoom handlers are byte-identical. Runtime differences are attached below.",
+    "changedRuntimeFiles": [
+      "app/components/ArchitecturalMap.tsx",
+      "app/lib/architectural-plan-loader.ts"
+    ],
+    "newFiles": [
+      "app/lib/architectural-entry.ts",
+      "app/data/architectural-entry-floors.json"
+    ],
+    "patch": "diff --git a/app/components/ArchitecturalMap.tsx b/app/components/ArchitecturalMap.tsx\nindex 15254a9..babb348 100644\n--- a/app/components/ArchitecturalMap.tsx\n+++ b/app/components/ArchitecturalMap.tsx\n@@ -8,6 +8,7 @@ import stopNotes from '../data/architectural-stop-notes.json';\n import { placeRoomLabels, placesForStop, placesWithGuideNumbers, planTones, polygonPath, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint, type PlanPlace } from '../lib/architectural-plan';\n import './architectural-map.css';\n import { PlanPlaceMarker } from './PlanPlaceMarker';\n+import { resolveArchitecturalEntry } from '../lib/architectural-entry';\n \n /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex -- The bounded map viewport is intentionally keyboard-focusable for arrow-key scrolling; room actions remain native buttons. */\n \n@@ -15,8 +16,9 @@ const ArchitecturalScene = lazy(() => import('./ArchitecturalScene'));\n \n export function ArchitecturalMap({ plan, guide, active = true }: { plan: ArchitecturalPlan; guide: GuideRecord; active?: boolean }) {\n   const visitorNotes = (mapNotes as Record<string, string[]>)[plan.slug] ?? plan.limitations;\n-  const [view, setView] = useState<'2d' | '3d'>('3d');\n-  const [floorId, setFloorId] = useState(plan.floors[0].id);\n+  const entry = useMemo(() => resolveArchitecturalEntry(plan), [plan]);\n+  const [view, setView] = useState<'2d' | '3d'>('2d');\n+  const [floorId, setFloorId] = useState(() => entry.floor.id);\n   const [selected, setSelected] = useState<string>();\n   const [activeStop, setActiveStop] = useState<number>();\n   const [zoom, setZoom] = useState(1);\n@@ -80,11 +82,11 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite\n   }\n \n   return (\n-    <div ref={root} className=\"architectural-map\" data-plan-version=\"2\" data-guide-slug={plan.slug}>\n+    <div ref={root} className=\"architectural-map\" data-plan-version=\"2\" data-guide-slug={plan.slug} data-entry-status={entry.status}>\n       <div className=\"architectural-map__toolbar\">\n         <fieldset className=\"architectural-map__segments\" aria-label=\"地图显示模式\">\n-          <button type=\"button\" aria-pressed={view === '3d'} disabled={webglFailed} onClick={() => setView('3d')}>3D</button>\n           <button type=\"button\" aria-pressed={view === '2d'} onClick={() => setView('2d')}>2D 俯视</button>\n+          <button type=\"button\" aria-pressed={view === '3d'} disabled={webglFailed} onClick={() => setView('3d')}>3D</button>\n         </fieldset>\n         <div className=\"architectural-map__tools\">\n           <button type=\"button\" aria-label=\"缩小地图\" title=\"缩小\" onClick={() => command('out')}><ZoomOut size={19} /></button>\n@@ -97,6 +99,7 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite\n         <span>展厅 / 空间</span>\n         <strong data-located-stops={locatedStops}>已定位 {locatedStops}/{guide.spatial.stops.length} 个步骤</strong>\n       </div>\n+      {entry.notice && <p className=\"architectural-map__notice\" data-entry-notice>{entry.notice}</p>}\n       {webglFailed && <output className=\"architectural-map__notice\">3D 当前不可用，已切换到可操作的俯视地图。</output>}\n       {view === '3d' ? active && <Suspense fallback={<div className=\"architectural-map__loading\">正在加载分层地图</div>}>\n         <ArchitecturalScene plan={plan} floorId={floorId} selected={selected} command={sceneCommand} onSelect={(id) => { const p = plan.places.find((p) => p.id === id); if (p) selectPlace(p); }} onFailure={() => { setWebglFailed(true); setView('2d'); }} />\n@@ -137,7 +140,7 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite\n         }}\n       >\n         <div className=\"architectural-map__plane\" style={{ width: availableSize.width * zoom, height: availableSize.height * zoom }}>\n-        <svg ref={svg} aria-label={`${floor.label}完整俯视图`} viewBox={`${minX} ${minY} ${maxX-minX} ${maxY-minY}`} style={{ width: (maxX-minX)*pixelsPerUnit*zoom, height: (maxY-minY)*pixelsPerUnit*zoom }}>\n+        <svg ref={svg} aria-label={`${floor.label}俯视图`} viewBox={`${minX} ${minY} ${maxX-minX} ${maxY-minY}`} style={{ width: (maxX-minX)*pixelsPerUnit*zoom, height: (maxY-minY)*pixelsPerUnit*zoom }}>\n           <title>{floor.label}</title>\n           {floor.features.map((feature) => <g key={feature.id} data-feature-id={feature.id} data-space-id={spaceForFeature(plan, feature.id)?.id}\n             fill={selectedSpace && spaceForFeature(plan, feature.id)?.id === selectedSpace.id ? '#b99443' : planTones[feature.tone]} opacity={feature.kind === 'detail' ? .65 : 1}>\ndiff --git a/app/lib/architectural-plan-loader.ts b/app/lib/architectural-plan-loader.ts\nindex 0193252..2b236f1 100644\n--- a/app/lib/architectural-plan-loader.ts\n+++ b/app/lib/architectural-plan-loader.ts\n@@ -1,4 +1,5 @@\n import { validateArchitecturalPlan, type ArchitecturalPlan } from './architectural-plan';\n+import { resolveArchitecturalEntry } from './architectural-entry';\n \n const modules = import.meta.glob<{ default: ArchitecturalPlan }>('../data/architectural-plans/*.json');\n \n@@ -12,5 +13,6 @@ export async function loadArchitecturalPlan(slug: string) {\n   const plan = (await load()).default;\n   const errors = validateArchitecturalPlan(plan);\n   if (errors.length) throw new Error(`Invalid architectural plan: ${errors.join('; ')}`);\n+  resolveArchitecturalEntry(plan);\n   return plan;\n }\n",
+    "preservedAcceptance": "Prior geometry/room/route/connection and performance evidence retains its original dates and source-limited scope; no existing failed result was changed to pass."
+  },
+  "freshDefaults": {
+    "base": "http://127.0.0.1:61211/europe-cultural-guide-2026",
+    "pages": [
+      {
+        "slug": "accademia-florence",
+        "width": 390,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "accademia-venice",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "barcelona-cathedral",
+        "width": 390,
+        "initialFloor": "main-level",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "borghese",
+        "width": 390,
+        "initialFloor": "B1",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "brera",
+        "width": 390,
+        "initialFloor": "gallery",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "camposanto",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "casa-batllo",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 9,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "cologne-cathedral",
+        "width": 390,
+        "initialFloor": "nave",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "colosseum",
+        "width": 390,
+        "initialFloor": "podium-level-3",
+        "entryStatus": "unmapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "correr",
+        "width": 390,
+        "initialFloor": "L1",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "doges-palace",
+        "width": 390,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 5,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "el-born",
+        "width": 390,
+        "initialFloor": "street-level",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "fenice",
+        "width": 390,
+        "initialFloor": "foyer",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "florence-duomo",
+        "width": 390,
+        "initialFloor": "main",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "galleria-vittorio",
+        "width": 390,
+        "initialFloor": "arcade",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "giunti-odeon",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "koln-triangle",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "unmapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "la-pedrera",
+        "width": 390,
+        "initialFloor": "historic-visitor-ground",
+        "entryStatus": "mapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "la-scala",
+        "width": 390,
+        "initialFloor": "museum",
+        "entryStatus": "unmapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "last-supper",
+        "width": 390,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "leaning-tower",
+        "width": 390,
+        "initialFloor": "entry-first",
+        "entryStatus": "mapped",
+        "floorCount": 5,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "medici-chapels",
+        "width": 390,
+        "initialFloor": "crypt-level",
+        "entryStatus": "mapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "mercato-centrale",
+        "width": 390,
+        "initialFloor": "ground-historic",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "milan-duomo",
+        "width": 390,
+        "initialFloor": "cathedral",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "museum-ludwig",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "notre-dame-towers",
+        "width": 390,
+        "initialFloor": "south-belfry-lower",
+        "entryStatus": "unmapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "opera-pisa",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "palau-musica",
+        "width": 390,
+        "initialFloor": "plan-I",
+        "entryStatus": "unmapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "pantheon",
+        "width": 390,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "picasso-barcelona",
+        "width": 390,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "pisa-baptistery",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "pisa-cathedral",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "pitti",
+        "width": 390,
+        "initialFloor": "L0",
+        "entryStatus": "unmapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "sagrada-familia",
+        "width": 390,
+        "initialFloor": "main",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "santa-maria-grazie",
+        "width": 390,
+        "initialFloor": "church",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "santa-maria-mar",
+        "width": 390,
+        "initialFloor": "main-level",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "sforza",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "st-mark-basilica",
+        "width": 390,
+        "initialFloor": "main",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "st-mark-campanile",
+        "width": 390,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "st-peters-basilica",
+        "width": 390,
+        "initialFloor": "basilica",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "uffizi",
+        "width": 390,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "vatican-museums",
+        "width": 390,
+        "initialFloor": "first",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "accademia-florence",
+        "width": 1440,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "accademia-venice",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "barcelona-cathedral",
+        "width": 1440,
+        "initialFloor": "main-level",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "borghese",
+        "width": 1440,
+        "initialFloor": "B1",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "brera",
+        "width": 1440,
+        "initialFloor": "gallery",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "camposanto",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "casa-batllo",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 9,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "cologne-cathedral",
+        "width": 1440,
+        "initialFloor": "nave",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "colosseum",
+        "width": 1440,
+        "initialFloor": "podium-level-3",
+        "entryStatus": "unmapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "correr",
+        "width": 1440,
+        "initialFloor": "L1",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "doges-palace",
+        "width": 1440,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 5,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "el-born",
+        "width": 1440,
+        "initialFloor": "street-level",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "fenice",
+        "width": 1440,
+        "initialFloor": "foyer",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "florence-duomo",
+        "width": 1440,
+        "initialFloor": "main",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "galleria-vittorio",
+        "width": 1440,
+        "initialFloor": "arcade",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "giunti-odeon",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "koln-triangle",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "unmapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "la-pedrera",
+        "width": 1440,
+        "initialFloor": "historic-visitor-ground",
+        "entryStatus": "mapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "la-scala",
+        "width": 1440,
+        "initialFloor": "museum",
+        "entryStatus": "unmapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "last-supper",
+        "width": 1440,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "leaning-tower",
+        "width": 1440,
+        "initialFloor": "entry-first",
+        "entryStatus": "mapped",
+        "floorCount": 5,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "medici-chapels",
+        "width": 1440,
+        "initialFloor": "crypt-level",
+        "entryStatus": "mapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "mercato-centrale",
+        "width": 1440,
+        "initialFloor": "ground-historic",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "milan-duomo",
+        "width": 1440,
+        "initialFloor": "cathedral",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "museum-ludwig",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "notre-dame-towers",
+        "width": 1440,
+        "initialFloor": "south-belfry-lower",
+        "entryStatus": "unmapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "opera-pisa",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "palau-musica",
+        "width": 1440,
+        "initialFloor": "plan-I",
+        "entryStatus": "unmapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "pantheon",
+        "width": 1440,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "picasso-barcelona",
+        "width": 1440,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "pisa-baptistery",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "pisa-cathedral",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "pitti",
+        "width": 1440,
+        "initialFloor": "L0",
+        "entryStatus": "unmapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "sagrada-familia",
+        "width": 1440,
+        "initialFloor": "main",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "santa-maria-grazie",
+        "width": 1440,
+        "initialFloor": "church",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "santa-maria-mar",
+        "width": 1440,
+        "initialFloor": "main-level",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "sforza",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "st-mark-basilica",
+        "width": 1440,
+        "initialFloor": "main",
+        "entryStatus": "mapped",
+        "floorCount": 1,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "st-mark-campanile",
+        "width": 1440,
+        "initialFloor": "ground",
+        "entryStatus": "mapped",
+        "floorCount": 4,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "st-peters-basilica",
+        "width": 1440,
+        "initialFloor": "basilica",
+        "entryStatus": "mapped",
+        "floorCount": 2,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "uffizi",
+        "width": 1440,
+        "initialFloor": "L0",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      },
+      {
+        "slug": "vatican-museums",
+        "width": 1440,
+        "initialFloor": "first",
+        "entryStatus": "mapped",
+        "floorCount": 3,
+        "reloadResetsToEntry": true,
+        "manual3d": true,
+        "nonblankCanvas": true,
+        "keyboardRotation": true,
+        "floorRoundTrip": true
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "freshOffline": {
+    "revision": "07429313d1a8dedde550",
+    "target": "http://127.0.0.1:61242/europe-cultural-guide-2026",
+    "scope": "Local exported GitHub Pages build; real Chromium offline reloads, lazy maps and cache inventory. Visual source fidelity is a separate review.",
+    "routes": [
+      {
+        "route": "/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/itinerary/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/cities/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/bookings/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/vatican-guide/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "first",
+        "modelDigest": "4f11d473b5e9b7c8f8efefbe85201800e072af54e53f5ae50822e831d8ed8a75",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/accademia-florence/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/accademia-venice/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/barcelona-cathedral/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main-level",
+        "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/barceloneta/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/borghese/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "B1",
+        "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/brera/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "gallery",
+        "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/bridge-of-sighs/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/camposanto/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/casa-batllo/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "3fdfb3b9a1367b057a771b238768df96dd4eaa28df47249f8a626f4c928c7a29",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/chocolate-museum/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/cologne-cathedral/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "nave",
+        "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/cologne-old-town/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/colosseum/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "podium-level-3",
+        "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/correr/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L1",
+        "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/doges-palace/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/el-born/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "street-level",
+        "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/fenice/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "foyer",
+        "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/florence-duomo/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main",
+        "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/galleria-vittorio/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "arcade",
+        "modelDigest": "1683ec93b7b4509e150b6b10ba71eafb41aa25fa59c705743377f8915ed278b1",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/gaudi-house/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/giunti-odeon/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "64a65857c2351159f618b2666cc964d9dfb9b38e67545d3746eb3ee4ae5e59c0",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/gondola/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/gothic-quarter/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/grand-canal/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/hohenzollern/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/koln-triangle/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "2e1babc3e297516d651ce9972fd2cb3ca086860df6987e2c1123c863f62ec6cf",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/la-pedrera/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "historic-visitor-ground",
+        "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/la-rambla/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/la-scala/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "museum",
+        "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/last-supper/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/leaning-tower/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "entry-first",
+        "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/medici-chapels/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "crypt-level",
+        "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/mercato-centrale/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground-historic",
+        "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/milan-duomo/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "cathedral",
+        "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/museum-ludwig/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/notre-dame-towers/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "south-belfry-lower",
+        "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/opera-pisa/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/palatine/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/palau-musica/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "plan-I",
+        "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/pantheon/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/park-guell/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/piazza-navona/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/piazza-venezia/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/piazzale-michelangelo/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/picasso-barcelona/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/pisa-baptistery/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/pisa-cathedral/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/pitti/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/ponte-vecchio/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/rheinauhafen/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/rialto/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/roman-forum/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/sagrada-familia/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main",
+        "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/santa-maria-grazie/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "church",
+        "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/santa-maria-mar/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main-level",
+        "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/seine/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/sforza/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/signoria/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/sinopie/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/spanish-steps/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/st-mark-basilica/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main",
+        "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/st-mark-campanile/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/st-mark-square/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/st-peters-basilica/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "basilica",
+        "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/st-peters-square/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/tiber/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/trastevere/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/trevi/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/turo-rovira/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/uffizi/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/vasari-corridor/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/vatican-museums/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "first",
+        "modelDigest": "4f11d473b5e9b7c8f8efefbe85201800e072af54e53f5ae50822e831d8ed8a75",
+        "routeNumbering": true,
+        "passed": true
+      },
+      {
+        "route": "/guides/vatican-post/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      },
+      {
+        "route": "/guides/vatican-surroundings/",
+        "hasMap": false,
+        "errors": [],
+        "passed": true
+      }
+    ],
+    "missingPrecache": []
+  }
+}

@@ -5,6 +5,7 @@ import sharp from 'sharp';
 import { githubPreview } from './github-preview-server.mjs';
 
 const root = 'dist/client';
+const entries = JSON.parse(await readFile('app/data/architectural-entry-floors.json', 'utf8'));
 const output = process.env.OFFLINE_QA_OUTPUT ?? 'work/map-review/offline';
 const preview = process.env.OFFLINE_QA_URL ? null : await githubPreview(root);
 const base = (process.env.OFFLINE_QA_URL ?? preview.url).replace(/\/$/, '');
@@ -59,7 +60,16 @@ try {
         const map = page.locator('.architectural-map');
         await map.waitFor({ timeout: 45000 });
         await map.scrollIntoViewIfNeeded();
+        if (await map.getByRole('button', { name: '2D 俯视', exact: true }).getAttribute('aria-pressed') !== 'true') throw new Error('Offline map must open in 2D');
+        const entry = entries[model.slug];
+        const entryFloor = model.floors.find((floor) => floor.id === (entry.floorId ?? entry.fallbackFloorId));
+        if (await map.getByRole('button', { name: entryFloor.label, exact: true }).getAttribute('aria-pressed') !== 'true') throw new Error('Offline entrance floor mismatch');
+        if (entry.status === 'unmapped' && await map.locator('[data-entry-notice]').textContent() !== entry.notice) throw new Error('Missing offline entrance limitation');
+        record.default2d = true;
+        record.entryFloor = entryFloor.id;
+        await map.getByRole('button', { name: '3D', exact: true }).click();
         await map.locator('canvas').waitFor({ timeout: 45000 });
+        if (await map.locator('.architectural-map__scene').getAttribute('data-active-floor') !== entryFloor.id) throw new Error('Offline 3D lost entrance floor');
         const pixels = await map.locator('canvas').screenshot();
         if ((await sharp(pixels).stats()).channels.slice(0, 3).every((c) => c.stdev < 1)) throw new Error('Offline WebGL is blank');
         await map.getByRole('button', { name: '2D 俯视', exact: true }).click();

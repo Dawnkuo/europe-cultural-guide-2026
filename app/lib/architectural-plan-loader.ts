@@ -1,4 +1,5 @@
 import { validateArchitecturalPlan, type ArchitecturalPlan } from './architectural-plan';
+import { resolveArchitecturalEntry } from './architectural-entry';
 
 const modules = import.meta.glob<{ default: ArchitecturalPlan }>('../data/architectural-plans/*.json');
 
@@ -12,5 +13,6 @@ export async function loadArchitecturalPlan(slug: string) {
   const plan = (await load()).default;
   const errors = validateArchitecturalPlan(plan);
   if (errors.length) throw new Error(`Invalid architectural plan: ${errors.join('; ')}`);
+  resolveArchitecturalEntry(plan);
   return plan;
 }

@@ -1,0 +1,179 @@
+{
+  "accademia-florence": {
+    "status": "mapped", "floorId": "L0", "placeId": "L0-1-1",
+    "basis": "Visitor plan: the entrance marker is on the ground floor, before the main galleries and David."
+  },
+  "accademia-venice": {
+    "status": "mapped", "floorId": "ground", "placeId": "ground-entrance-exit-1",
+    "basis": "Visitor plan: entrance/exit and reception are on the ground floor."
+  },
+  "barcelona-cathedral": {
+    "status": "mapped", "floorId": "main-level",
+    "basis": "The reviewed plan covers the cathedral entrance level, nave and cloister; it is not a roof or crypt plan."
+  },
+  "borghese": {
+    "status": "mapped", "floorId": "B1", "placeId": "B1-入口-1",
+    "basis": "Visitor brochure: basement entrance and reception/services precede the separate sculpture and painting floors."
+  },
+  "brera": {
+    "status": "mapped", "floorId": "gallery", "placeId": "gallery-入口-1",
+    "basis": "Visitor leaflet page 2 marks the museum entrance on the gallery level reached by the courtyard stairs, not the palace street level."
+  },
+  "camposanto": {
+    "status": "mapped", "floorId": "ground",
+    "basis": "Reviewed measured plan: the visitor entrance opens into the ground-level cloister around the courtyard."
+  },
+  "casa-batllo": {
+    "status": "mapped", "floorId": "ground", "placeId": "ground-街道入口-1",
+    "basis": "Reviewed ground-floor drawing retains the street entrance and public/private vestibules. The basement and principal floor are separate levels."
+  },
+  "cologne-cathedral": {
+    "status": "mapped", "floorId": "nave", "placeId": "nave-西侧中央入口-1",
+    "basis": "The west entrance opens into the cathedral main floor. The 2009 underground courtyard is the separate south-tower access, not the cathedral arrival floor."
+  },
+  "colosseum": {
+    "status": "unmapped", "fallbackFloorId": "podium-level-3",
+    "notice": "入口层导览平面尚缺，暂显示台基层考古图；此图未定位现代安检入口。",
+    "basis": "Only hypogeum and podium archaeological diagrams are present. Their source and limitations do not locate the modern visitor entrance."
+  },
+  "correr": {
+    "status": "mapped", "floorId": "L1", "placeId": "L1-入口-1",
+    "basis": "Museum visitor plan marks the entrance on L1, below the L2 painting galleries."
+  },
+  "doges-palace": {
+    "status": "mapped", "floorId": "L0",
+    "basis": "Official booklet page 4: ground-level courtyard (2), visitor services and Stair of the Censors (3) precede the loggia on page 6. Building museum (1) is not an entrance marker."
+  },
+  "el-born": {
+    "status": "mapped", "floorId": "street-level", "placeId": "street-level-北入口-1",
+    "basis": "The 2013 visitor plan places both the Ciutadella and Born entrances at street level above the archaeology."
+  },
+  "fenice": {
+    "status": "mapped", "floorId": "foyer", "placeId": "foyer-main-entrance-1",
+    "basis": "Reviewed plan marks the main entrance and foyer separately from the auditorium and Apollinee rooms."
+  },
+  "florence-duomo": {
+    "status": "mapped", "floorId": "main",
+    "basis": "The cathedral ground plan covers the nave arrival level. Dome-climb access and upper levels remain unlocated; this does not assign their entrance to the nave."
+  },
+  "galleria-vittorio": {
+    "status": "mapped", "floorId": "arcade", "placeId": "arcade-大教堂广场入口-1",
+    "basis": "Municipal 2015 plan: the Piazza del Duomo entrance opens into the ground-level arcade."
+  },
+  "giunti-odeon": {
+    "status": "mapped", "floorId": "ground", "placeId": "ground-入口门厅-1",
+    "basis": "Ground plan labels the entrance vestibule and former stalls/bookshop level; the balconies are upstairs."
+  },
+  "koln-triangle": {
+    "status": "unmapped", "fallbackFloorId": "ground",
+    "notice": "游客入口尚未在平面中定位，暂显示建筑底层；办公层不作为入场层。",
+    "basis": "Architectural drawings include ground, representative offices and event floor. The visitor entrance and last stairs to the viewing platform are expressly unlocated."
+  },
+  "la-pedrera": {
+    "status": "mapped", "floorId": "historic-visitor-ground",
+    "basis": "The reviewed visitor leaflet identifies the ground-level courtyard entry area separately from apartment, attic and roof."
+  },
+  "la-scala": {
+    "status": "unmapped", "fallbackFloorId": "museum",
+    "notice": "博物馆接待入口及相连楼梯尚未完整定位，暂显示博物馆展厅；剧院演出入口不作为博物馆入口。",
+    "basis": "Official museum sheet covers rooms 1-8; the separate +2.94 m theatre drawing does not verify museum arrival. No entrance marker or verified cross-sheet connection exists."
+  },
+  "last-supper": {
+    "status": "mapped", "floorId": "L0", "placeId": "L0-入口-1",
+    "basis": "The reviewed plan locates the visitor entrance and refectory on L0."
+  },
+  "leaning-tower": {
+    "status": "mapped", "floorId": "entry-first", "placeId": "entry-first-螺旋梯入口-1",
+    "basis": "Goodyear 1910 measured entrance-to-first-gallery drawing explicitly shows the spiral-stair entrance. The separate base structural sheet is not the arrival diagram."
+  },
+  "medici-chapels": {
+    "status": "mapped", "floorId": "crypt-level",
+    "basis": "Italian Ministry cultural-site catalogue describes the entrance-level octagonal crypt below the Chapel of the Princes; competition sheet page 41 supplies that crypt plan. Not inferred from the first artwork stop.",
+    "reference": "https://catalogo.beniculturali.it/CulturalInstituteOrSite/ICCD_CF_4360222254561"
+  },
+  "mercato-centrale": {
+    "status": "mapped", "floorId": "ground-historic",
+    "basis": "Historical market ground-floor plan is the street-arrival level; the upper hall is separate. Current stall layout and precise door operations are not asserted."
+  },
+  "milan-duomo": {
+    "status": "mapped", "floorId": "cathedral", "placeId": "cathedral-西侧入口-1",
+    "basis": "Cathedral main plan marks the west entrance; San Carlo crypt is a separate underground plan despite its position in the raw data array."
+  },
+  "museum-ludwig": {
+    "status": "mapped", "floorId": "ground", "placeId": "ground-入口-1",
+    "basis": "Visitor map marks the east entrance on ground, not the basement or upper collection floors."
+  },
+  "notre-dame-towers": {
+    "status": "unmapped", "fallbackFloorId": "south-belfry-lower",
+    "notice": "登塔入口层平面尚缺，暂显示南塔下层钟架图；钟架层不是入场层。",
+    "basis": "The only reviewed sheets are the two 1856 south-belfry timber structures; modern reception and entrance stairs are absent."
+  },
+  "opera-pisa": {
+    "status": "mapped", "floorId": "ground",
+    "basis": "Museum ground-level survey covers the entrance level and cloister, not upper-floor exhibition rooms."
+  },
+  "palau-musica": {
+    "status": "unmapped", "fallbackFloorId": "plan-I",
+    "notice": "现行接待入口与历史图的对应位置尚未确认，暂显示历史一层平面。",
+    "basis": "COAM 1973 sheets I-IV omit subsequent extensions; current visitor access via Placa del Palau or Sant Pere Mes Baix does not by itself establish a mapped entrance on these historical sheets.",
+    "reference": "https://www.palaumusica.cat/en/visites/practical-information_1159207"
+  },
+  "pantheon": {
+    "status": "mapped", "floorId": "L0",
+    "basis": "The portico and main doorway open onto the rotunda floor represented by the reviewed church-level plan."
+  },
+  "picasso-barcelona": {
+    "status": "mapped", "floorId": "L0",
+    "basis": "Official visitor plan locates reception and the Meca courtyard/stairs on the ground floor; the galleries are on L1."
+  },
+  "pisa-baptistery": {
+    "status": "mapped", "floorId": "ground",
+    "basis": "Survey distinguishes ground-level entrances and baptismal space from the upper gallery."
+  },
+  "pisa-cathedral": {
+    "status": "mapped", "floorId": "ground", "placeId": "ground-西端入口区-1",
+    "basis": "Reviewed ground plan locates the west entrance zone on the main cathedral floor."
+  },
+  "pitti": {
+    "status": "unmapped", "fallbackFloorId": "L0",
+    "notice": "底层新入口及接待庭院尚未完整纳入平面，暂显示同层的大公珍宝馆区域；不表示从珍宝馆入场。",
+    "basis": "Arrival is at courtyard/ground level. The mapped L0 treasury is incomplete for reception, and the July 2026 move to the southern entrance is not represented by this historical plan.",
+    "reference": "https://www.uffizi.it/en/news/nuovo-ingresso-per-la-reggia-granducale"
+  },
+  "sagrada-familia": {
+    "status": "mapped", "floorId": "main",
+    "basis": "The public basilica arrival floor is the main church plan, not the separate crypt level."
+  },
+  "santa-maria-grazie": {
+    "status": "mapped", "floorId": "church", "placeId": "church-教堂西入口-1",
+    "basis": "Reviewed church plan marks the west entrance; access to the Last Supper museum is a separate venue."
+  },
+  "santa-maria-mar": {
+    "status": "mapped", "floorId": "main-level", "placeId": "main-level-西立面入口-1",
+    "basis": "Reviewed main-level plan locates the west-facade entrance."
+  },
+  "sforza": {
+    "status": "mapped", "floorId": "ground", "placeId": "ground-菲拉雷特塔入口轴线-1",
+    "basis": "Courtyard-level measured plan identifies the Filarete tower entrance axis. Individual museum upper floors are not implied."
+  },
+  "st-mark-basilica": {
+    "status": "mapped", "floorId": "main",
+    "basis": "The reviewed main-floor plan covers the entrance narthex and basilica, not the elevated museum/terrace."
+  },
+  "st-mark-campanile": {
+    "status": "mapped", "floorId": "ground",
+    "basis": "The tower-base and Loggetta drawing represents ground-level arrival, below the ramp and bell chamber."
+  },
+  "st-peters-basilica": {
+    "status": "mapped", "floorId": "basilica",
+    "basis": "Basilica doorways enter the main church floor; the grottoes are a separate lower level."
+  },
+  "uffizi": {
+    "status": "mapped", "floorId": "L0", "placeId": "L0-1-1",
+    "basis": "Official visitor map labels Door 1 / museum entrance and reception on L0. The first art stop is upstairs on L2 and must not control initial floor selection."
+  },
+  "vatican-museums": {
+    "status": "mapped", "floorId": "first", "placeId": "first-入口-1",
+    "basis": "Official visitor plan places the museum entrance and reception in the entrance/first-level group; basement and second-level galleries are separate."
+  }
+}

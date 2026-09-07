@@ -14,6 +14,7 @@ export const mapRuntimeFiles = [
   'app/components/PlanPlaceMarker.tsx', 'app/components/architectural-map.css',
   'app/components/GuideSpatial.tsx', 'app/lib/architectural-plan.ts',
   'app/lib/architectural-plan-loader.ts', 'app/lib/architectural-visibility.ts',
+  'app/lib/architectural-entry.ts', 'app/data/architectural-entry-floors.json',
   'app/data/architectural-map-notes.json', 'app/data/architectural-stop-notes.json', 'public/sw.js', 'package-lock.json',
 ];
 

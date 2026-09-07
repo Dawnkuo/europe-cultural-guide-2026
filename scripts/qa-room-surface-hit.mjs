@@ -16,8 +16,7 @@ try {
     await page.goto('http://localhost:55838/guides/picasso-barcelona/#guide-spatial');
     const map = page.locator('.architectural-map');
     await map.scrollIntoViewIfNeeded();
-    await map.locator('canvas').waitFor();
-    await map.getByRole('button', { name: '2D 俯视', exact: true }).click();
+    await map.locator('.architectural-map__viewport').waitFor();
     await map.getByRole('button', { name: plan.floors.find((f) => f.id === 'L1').label, exact: true }).click();
     const place = plan.places.find((p) => p.id === 'L1-3-1');
     const expected = spaceForPlace(plan, place.id).placeId;

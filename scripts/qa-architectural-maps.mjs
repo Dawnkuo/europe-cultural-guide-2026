@@ -70,6 +70,8 @@ try {
         const map = page.locator('.architectural-map');
         await map.waitFor({ timeout: 45000 });
         await map.scrollIntoViewIfNeeded();
+        check(await map.getByRole('button', { name: '2D 俯视', exact: true }).getAttribute('aria-pressed') === 'true', 'Map must open in 2D');
+        await map.getByRole('button', { name: '3D', exact: true }).click();
         const canvas = map.locator('canvas');
         await canvas.waitFor({ timeout: 45000 });
         await page.waitForFunction(() => {

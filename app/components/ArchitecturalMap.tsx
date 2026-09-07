@@ -8,6 +8,7 @@ import stopNotes from '../data/architectural-stop-notes.json';
 import { placeRoomLabels, placesForStop, placesWithGuideNumbers, planTones, polygonPath, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint, type PlanPlace } from '../lib/architectural-plan';
 import './architectural-map.css';
 import { PlanPlaceMarker } from './PlanPlaceMarker';
+import { resolveArchitecturalEntry } from '../lib/architectural-entry';
 
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex -- The bounded map viewport is intentionally keyboard-focusable for arrow-key scrolling; room actions remain native buttons. */
 
@@ -15,8 +16,9 @@ const ArchitecturalScene = lazy(() => import('./ArchitecturalScene'));
 
 export function ArchitecturalMap({ plan, guide, active = true }: { plan: ArchitecturalPlan; guide: GuideRecord; active?: boolean }) {
   const visitorNotes = (mapNotes as Record<string, string[]>)[plan.slug] ?? plan.limitations;
-  const [view, setView] = useState<'2d' | '3d'>('3d');
-  const [floorId, setFloorId] = useState(plan.floors[0].id);
+  const entry = useMemo(() => resolveArchitecturalEntry(plan), [plan]);
+  const [view, setView] = useState<'2d' | '3d'>('2d');
+  const [floorId, setFloorId] = useState(() => entry.floor.id);
   const [selected, setSelected] = useState<string>();
   const [activeStop, setActiveStop] = useState<number>();
   const [zoom, setZoom] = useState(1);
@@ -80,11 +82,11 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
   }
 
   return (
-    <div ref={root} className="architectural-map" data-plan-version="2" data-guide-slug={plan.slug}>
+    <div ref={root} className="architectural-map" data-plan-version="2" data-guide-slug={plan.slug} data-entry-status={entry.status}>
       <div className="architectural-map__toolbar">
         <fieldset className="architectural-map__segments" aria-label="地图显示模式">
-          <button type="button" aria-pressed={view === '3d'} disabled={webglFailed} onClick={() => setView('3d')}>3D</button>
           <button type="button" aria-pressed={view === '2d'} onClick={() => setView('2d')}>2D 俯视</button>
+          <button type="button" aria-pressed={view === '3d'} disabled={webglFailed} onClick={() => setView('3d')}>3D</button>
         </fieldset>
         <div className="architectural-map__tools">
           <button type="button" aria-label="缩小地图" title="缩小" onClick={() => command('out')}><ZoomOut size={19} /></button>
@@ -97,6 +99,7 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
         <span>展厅 / 空间</span>
         <strong data-located-stops={locatedStops}>已定位 {locatedStops}/{guide.spatial.stops.length} 个步骤</strong>
       </div>
+      {entry.notice && <p className="architectural-map__notice" data-entry-notice>{entry.notice}</p>}
       {webglFailed && <output className="architectural-map__notice">3D 当前不可用，已切换到可操作的俯视地图。</output>}
       {view === '3d' ? active && <Suspense fallback={<div className="architectural-map__loading">正在加载分层地图</div>}>
         <ArchitecturalScene plan={plan} floorId={floorId} selected={selected} command={sceneCommand} onSelect={(id) => { const p = plan.places.find((p) => p.id === id); if (p) selectPlace(p); }} onFailure={() => { setWebglFailed(true); setView('2d'); }} />
@@ -137,7 +140,7 @@ export function ArchitecturalMap({ plan, guide, active = true }: { plan: Archite
         }}
       >
         <div className="architectural-map__plane" style={{ width: availableSize.width * zoom, height: availableSize.height * zoom }}>
-        <svg ref={svg} aria-label={`${floor.label}完整俯视图`} viewBox={`${minX} ${minY} ${maxX-minX} ${maxY-minY}`} style={{ width: (maxX-minX)*pixelsPerUnit*zoom, height: (maxY-minY)*pixelsPerUnit*zoom }}>
+        <svg ref={svg} aria-label={`${floor.label}俯视图`} viewBox={`${minX} ${minY} ${maxX-minX} ${maxY-minY}`} style={{ width: (maxX-minX)*pixelsPerUnit*zoom, height: (maxY-minY)*pixelsPerUnit*zoom }}>
           <title>{floor.label}</title>
           {floor.features.map((feature) => <g key={feature.id} data-feature-id={feature.id} data-space-id={spaceForFeature(plan, feature.id)?.id}
             fill={selectedSpace && spaceForFeature(plan, feature.id)?.id === selectedSpace.id ? '#b99443' : planTones[feature.tone]} opacity={feature.kind === 'detail' ? .65 : 1}>

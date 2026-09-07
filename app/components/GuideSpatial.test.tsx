@@ -91,6 +91,7 @@ describe('GuideSpatial', () => {
     const user = userEvent.setup();
     render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'medici-chapels')!} />);
     await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    await user.click(screen.getByRole('button', { name: '地下层 · 梅第奇墓穴' }));
     expect(document.querySelectorAll('svg [data-feature-id]').length).toBeGreaterThan(100);
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();
   });
@@ -125,6 +126,7 @@ describe('GuideSpatial', () => {
     const { container } = render(<GuideSpatial guide={guide} />);
     expect(screen.getByRole('heading', { name: '室内导览地图' })).toBeInTheDocument();
     await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    await user.click(screen.getByRole('button', { name: '一层 · B / C / D / E' }));
     expect(container.querySelectorAll('[data-room-id]')).toHaveLength(52);
     expect(container.querySelectorAll('[data-room-id^="L1-D22-"]')).toHaveLength(2);
     await user.click(screen.getByRole('button', { name: '二层 · A' }));
@@ -152,6 +154,8 @@ describe('GuideSpatial', () => {
   it('keeps the complete interactive plan when WebGL is unavailable', async () => {
     const user = userEvent.setup();
     render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'uffizi')!} />);
+    await user.click(await screen.findByRole('button', { name: '一层 · B / C / D / E' }));
+    await user.click(screen.getByRole('button', { name: '3D' }));
     await user.click(await screen.findByRole('button', { name: '模拟 WebGL 不可用' }));
     expect(screen.getByRole('button', { name: '3D' })).toBeDisabled();
     expect(document.querySelectorAll('[data-room-id]')).toHaveLength(52);
@@ -177,6 +181,7 @@ describe('GuideSpatial', () => {
     const user = userEvent.setup();
     render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'borghese')!} />);
     await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    await user.click(screen.getByRole('button', { name: '访客服务层' }));
     const paths = [...document.querySelectorAll('svg [data-feature-id] path')];
     expect(paths.length).toBeGreaterThan(50);
     expect(paths.some((path) => (path.getAttribute('d')?.match(/M/g)?.length ?? 0) > 1)).toBe(true);
@@ -227,6 +232,7 @@ describe('GuideSpatial', () => {
     const user = userEvent.setup();
     render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'uffizi')!} />);
     await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
+    await user.click(screen.getByRole('button', { name: '一层 · B / C / D / E' }));
     await user.click(screen.getByRole('button', { name: '兰齐楼梯 → 二层 · A' }));
     expect(screen.getByRole('button', { name: '二层 · A' })).toHaveAttribute('aria-pressed', 'true');
     await user.click(screen.getByRole('button', { name: '兰齐楼梯 → 一层 · B / C / D / E' }));
@@ -295,6 +301,7 @@ describe('GuideSpatial', () => {
     render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === 'fenice')!} />);
     await user.click(await screen.findByRole('button', { name: '2D 俯视' }));
     expect(screen.getByRole('button', { name: '一层 · 阿波罗厅群' })).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: '门厅层' }));
     expect(document.querySelectorAll('svg [data-feature-id]').length).toBeGreaterThan(100);
     expect(document.querySelector('.guide-floorplan')).not.toBeInTheDocument();
   });

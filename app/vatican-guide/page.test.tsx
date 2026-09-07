@@ -19,7 +19,8 @@ describe('VaticanGuidePage', () => {
       screen.getByRole('heading', { name: '梵蒂冈博物馆' }),
     ).toBeInTheDocument();
     await user.click(await screen.findByRole('button', { name: '2D 俯视' }, { timeout: 5000 }));
-    const floor = plan.floors[0];
+    const floor = plan.floors.find((item) => item.id === 'first')!;
+    expect(screen.getByRole('button', { name: floor.label })).toHaveAttribute('aria-pressed', 'true');
     const renderedIds = (attribute: string) => [...document.querySelectorAll(`.architectural-map [${attribute}]`)]
       .map((node) => node.getAttribute(attribute)!).sort((a, b) => a.localeCompare(b));
     expect(renderedIds('data-feature-id')).toEqual(floor.features.map((feature) => feature.id).sort((a, b) => a.localeCompare(b)));
