@@ -1,7 +1,7 @@
 'use client';
 
 import { Search, X } from 'lucide-react';
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { GuideHighlight } from '../data/types';
 import dimensions from '../data/media-dimensions.generated.json';
 import { withBasePath } from '../lib/paths';
@@ -23,7 +23,7 @@ export function HighlightBrowser({
   const [selected, setSelected] = useState<string | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const opener = useRef<HTMLElement | null>(null);
-  const titleId = useId();
+  const titleId = `${slug}-work-detail-title`;
   const records = items.map((item, index) => ({
     ...item,
     id: workId(slug, item, index),

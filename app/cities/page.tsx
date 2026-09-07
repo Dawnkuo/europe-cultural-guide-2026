@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
 import { SiteNav } from '../components/SiteNav';
 import { cityProfiles } from '../data/cities';
+import { guideForTripItem } from '../data/guides';
 import { tripDays } from '../data/trip';
 import { withBasePath } from '../lib/paths';
 
@@ -24,9 +25,9 @@ export default function CitiesPage() {
               ? ['罗马', '梵蒂冈']
               : [profile.name];
           const scheduled = tripDays
-            .flatMap((day) => day.items)
+            .flatMap((day) => day.items.map((item) => ({ item, date: day.date })))
             .filter(
-              (item) =>
+              ({ item }) =>
                 cityNames.includes(item.city) && item.routePoint !== false,
             );
           return (
@@ -54,9 +55,23 @@ export default function CitiesPage() {
                 <div className="city-chapter__stops">
                   <p>本次已排</p>
                   <div>
-                    {scheduled.slice(0, 8).map((item) => (
-                      <span key={item.id}>{item.title}</span>
-                    ))}
+                    {scheduled.map(({ item, date }) => {
+                      const guide = guideForTripItem(item);
+                      return (
+                        <a
+                          key={`${date}-${item.id}`}
+                          href={withBasePath(
+                            guide
+                              ? `/guides/${guide.slug}/`
+                              : `/itinerary/#${date}-${item.id}`,
+                          )}
+                          title={guide ? '查看景点导览' : '查看对应行程'}
+                        >
+                          <span>{item.title}</span>
+                          <ArrowUpRight aria-hidden="true" size={14} />
+                        </a>
+                      );
+                    })}
                   </div>
                 </div>
                 <a

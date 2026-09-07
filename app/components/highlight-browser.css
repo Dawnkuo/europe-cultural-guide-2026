@@ -18,7 +18,7 @@
 .highlight-browser__search {
   flex: 1 1 280px;
   min-width: 0;
-  border: 1px solid var(--line);
+  border: 1px solid var(--control-line);
   padding: 0 12px;
 }
 .highlight-browser__search input {
@@ -29,14 +29,14 @@
   font: inherit;
   font-size: 16px;
   min-height: 44px;
-  color: var(--ink);
+  color: var(--text);
 }
 .highlight-browser__filters select {
   min-height: 44px;
   max-width: 100%;
-  background: var(--white);
-  border: 1px solid var(--line);
-  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--control-line);
+  color: var(--text);
   padding: 8px;
   font: inherit;
 }
@@ -53,7 +53,7 @@
   display: block;
   border: 1px solid var(--line);
   background: transparent;
-  color: var(--ink);
+  color: var(--text);
   padding: 0;
   text-align: left;
   cursor: pointer;
@@ -63,16 +63,16 @@
   overflow: hidden;
 }
 .highlight-browser__grid article > button:hover {
-  border-color: #a17b32;
+  border-color: var(--gold);
 }
 .highlight-browser :is(button, input, select):focus-visible {
-  outline: 3px solid #a17b32;
+  outline: 3px solid var(--gold);
   outline-offset: 3px;
 }
 .highlight-browser__image {
   height: 230px;
   padding: 12px;
-  background: #eeeae2;
+  background: var(--surface-raised);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,9 +109,9 @@
   place-items: center;
   width: 44px;
   height: 44px;
-  border: 1px solid var(--line);
-  background: var(--white);
-  color: var(--ink);
+  border: 1px solid var(--control-line);
+  background: var(--surface);
+  color: var(--text);
   cursor: pointer;
 }
 .highlight-browser__empty {
@@ -124,10 +124,10 @@
   margin: auto;
   padding: 32px;
   overflow: auto;
-  border: 1px solid #a17b32;
+  border: 1px solid var(--gold);
   border-radius: 4px;
-  background: var(--white);
-  color: var(--ink);
+  background: var(--surface);
+  color: var(--text);
   overscroll-behavior: contain;
 }
 .highlight-detail[open] {
@@ -164,7 +164,7 @@
   grid-column: 1 / -1;
 }
 .highlight-detail__close:focus-visible {
-  outline: 3px solid #a17b32;
+  outline: 3px solid var(--gold);
   outline-offset: 3px;
 }
 .guide-highlight__context {
@@ -239,5 +239,24 @@
   }
   .highlight-detail__copy h3 {
     font-size: 26px;
+  }
+}
+@media (max-width: 700px) {
+  .highlight-browser__filters {
+    gap: 12px;
+  }
+  .highlight-browser__filters label {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .highlight-browser__filters select {
+    min-width: 0;
+    font-size: 16px;
+  }
+  .highlight-browser__filters label:not(.highlight-browser__search) {
+    flex-wrap: wrap;
+  }
+  .highlight-browser__caption h3 {
+    font-size: 18px;
   }
 }

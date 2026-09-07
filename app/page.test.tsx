@@ -1,6 +1,7 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import Home from './page';
+import { sitePageLinks } from './lib/site-navigation';
 
 describe('journey overview', () => {
   afterEach(() => vi.unstubAllEnvs());
@@ -23,6 +24,25 @@ describe('journey overview', () => {
     expect(screen.queryByText(/晚到入住|Vikey|开门指引|退房方式/)).not.toBeInTheDocument();
   });
 
+  it('exposes every shared page destination from the home header', () => {
+    render(<Home />);
+    const header = within(
+      screen.getByRole('navigation', { name: '主导航' }).closest('header')!,
+    );
+    for (const link of sitePageLinks) {
+      expect(header.getByRole('link', { name: link.label })).toHaveAttribute(
+        'href',
+        link.href,
+      );
+    }
+    expect(
+      within(screen.getByRole('navigation', { name: '主导航' })).getByRole(
+        'link',
+        { name: '景点导览' },
+      ),
+    ).toBeVisible();
+  });
+
   it('prefixes internal links and public images for GitHub Pages', () => {
     vi.stubEnv('NEXT_PUBLIC_BASE_PATH', '/europe-cultural-guide-2026');
     render(<Home />);
@@ -30,6 +50,10 @@ describe('journey overview', () => {
     expect(screen.getByRole('link', { name: '逐日行程' })).toHaveAttribute(
       'href',
       '/europe-cultural-guide-2026/itinerary/',
+    );
+    expect(screen.getByRole('link', { name: '景点导览' })).toHaveAttribute(
+      'href',
+      '/europe-cultural-guide-2026/guides/',
     );
     expect(
       screen.getByRole('img', { name: '从圣彼得广场望向圣彼得大教堂' }),

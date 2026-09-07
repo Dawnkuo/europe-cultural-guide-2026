@@ -271,7 +271,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
           canvas: activeCanvas,
           powerPreference: 'high-performance',
         });
-        renderer.setClearColor(0x0b0e0d, 1);
+        renderer.setClearColor(0x061019, 1);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
         renderer.outputColorSpace = THREE.SRGBColorSpace;
         renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -280,8 +280,8 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         renderer.shadowMap.type = THREE.PCFShadowMap;
 
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x0b0e0d);
-        scene.fog = new THREE.Fog(0x0b0e0d, 20, 42);
+        scene.background = new THREE.Color(0x061019);
+        scene.fog = new THREE.Fog(0x061019, 20, 42);
 
         const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
         camera.position.set(...layout.camera.position);
@@ -295,7 +295,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         controls.target.set(...layout.camera.target);
         controls.update();
 
-        scene.add(new THREE.HemisphereLight(0xf4ead7, 0x17201d, 2.2));
+        scene.add(new THREE.HemisphereLight(0xf4ead7, 0x162535, 2.2));
         const keyLight = new THREE.DirectionalLight(0xffe4b4, 4.5);
         keyLight.position.set(7, 13, 8);
         keyLight.castShadow = true;
@@ -312,7 +312,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
           color:
             layout.environment === 'park' || layout.environment === 'hillside'
               ? 0x172018
-              : 0x111715,
+              : 0x0c1b29,
           metalness: 0.03,
           roughness: 0.96,
         });
@@ -327,7 +327,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         ground.receiveShadow = true;
         root.add(ground);
 
-        const grid = new THREE.GridHelper(28, 28, layout.accent, 0x29312e);
+        const grid = new THREE.GridHelper(28, 28, layout.accent, 0x283b4c);
         grid.material.opacity = layout.environment === 'interior' ? 0.08 : 0.14;
         grid.material.transparent = true;
         root.add(grid);
@@ -357,7 +357,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
           const markerMaterial = new THREE.MeshStandardMaterial({
             color:
               index === 0
-                ? 0x78c7a4
+                ? 0x9eb5c8
                 : index === layout.nodes.length - 1
                   ? 0xf0d085
                   : layout.accent,

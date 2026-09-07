@@ -1,16 +1,10 @@
 import { OfflineStatus } from './OfflineStatus';
 import { withBasePath } from '../lib/paths';
+import { sitePageLinks } from '../lib/site-navigation';
 
 type SiteNavProps = {
-  active?: 'itinerary' | 'cities' | 'guides' | 'bookings';
+  active?: (typeof sitePageLinks)[number]['id'];
 };
-
-const links = [
-  { href: '/itinerary/', label: '逐日行程', id: 'itinerary' },
-  { href: '/cities/', label: '城市文化', id: 'cities' },
-  { href: '/guides/', label: '景点导览', id: 'guides' },
-  { href: '/bookings/', label: '凭证状态', id: 'bookings' },
-] as const;
 
 export function SiteNav({ active }: SiteNavProps) {
   return (
@@ -20,7 +14,7 @@ export function SiteNav({ active }: SiteNavProps) {
         <strong>欧洲纪行 2026</strong>
       </a>
       <nav aria-label="主导航">
-        {links.map((link) => (
+        {sitePageLinks.map((link) => (
           <a
             aria-current={active === link.id ? 'page' : undefined}
             href={withBasePath(link.href)}

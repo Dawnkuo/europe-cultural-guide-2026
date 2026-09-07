@@ -31,6 +31,7 @@ export function GuideIndex({ guides }: { guides: GuideRecord[] }) {
           <span>城市</span>
           {cities.map((value) => (
             <button
+              aria-pressed={city === value}
               data-active={city === value}
               key={value}
               onClick={() => setCity(value)}
@@ -45,6 +46,7 @@ export function GuideIndex({ guides }: { guides: GuideRecord[] }) {
           {(['全部', 'landmark', 'museum', 'district'] as const).map(
             (value) => (
               <button
+                aria-pressed={kind === value}
                 data-active={kind === value}
                 key={value}
                 onClick={() => setKind(value)}
@@ -68,7 +70,7 @@ export function GuideIndex({ guides }: { guides: GuideRecord[] }) {
               <span className="guide-index__number">
                 {String(index + 1).padStart(2, '0')}
               </span>
-              <div className="guide-index__media">
+              <div className="guide-index__media" data-guide={guide.slug}>
                 {/* oxlint-disable-next-line next/no-img-element -- Static export keeps local images base-path safe. */}
                 <img alt={guide.hero.alt} src={withBasePath(guide.hero.src)} />
               </div>

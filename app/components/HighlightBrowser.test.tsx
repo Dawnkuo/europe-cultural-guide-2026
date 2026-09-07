@@ -1,5 +1,6 @@
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { renderToString } from 'react-dom/server';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { guideCatalog } from '../data/guides';
 import { HighlightBrowser } from './HighlightBrowser';
@@ -17,6 +18,15 @@ beforeEach(() => {
 });
 
 describe('collection browsing', () => {
+  it('keeps the dialog title reference stable across server and client root prefixes', () => {
+    for (const identifierPrefix of ['server-', 'client-']) {
+      const dom = new DOMParser().parseFromString(renderToString(
+        <HighlightBrowser slug={guide.slug} items={guide.highlights} />,
+        { identifierPrefix },
+      ), 'text/html');
+      expect(dom.querySelector('dialog')?.getAttribute('aria-labelledby')).toBe('uffizi-work-detail-title');
+    }
+  });
   it('shows every work in order without pagination or a load-more step', () => {
     render(<HighlightBrowser slug={guide.slug} items={guide.highlights} />);
     expect(screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual(
@@ -52,6 +62,7 @@ describe('collection browsing', () => {
     const button = screen.getByRole('button', { name: /诸圣教堂圣母/ });
     await user.click(button);
     const dialog = screen.getByRole('dialog');
+    expect(dialog).toHaveAccessibleName('《诸圣教堂圣母》');
     expect(
       within(dialog).getByRole('heading', { name: '《诸圣教堂圣母》' }),
     ).toBeInTheDocument();

@@ -41,7 +41,7 @@ export type BuildGuideSceneLayoutInput = {
   stops: string[];
 };
 
-const accents = [0xc9a35f, 0xb95f4c, 0x6f9a8d, 0x8b7dac, 0xb58655];
+const accents = [0xc9a85a, 0xe0c279, 0x9eb5c8];
 
 function hashText(value: string) {
   let hash = 2166136261;

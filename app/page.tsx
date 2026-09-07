@@ -12,6 +12,7 @@ import { EuropeMap } from './components/EuropeMap';
 import { OfflineStatus } from './components/OfflineStatus';
 import { tripDays } from './data/trip';
 import { withBasePath } from './lib/paths';
+import { sitePageLinks } from './lib/site-navigation';
 
 export const dynamic = 'force-static';
 
@@ -79,8 +80,13 @@ export default function Home() {
         <nav aria-label="主导航">
           <a href="#journey-map">地图</a>
           <a href="#notices">提醒</a>
-          <a href={withBasePath('/itinerary/')}>逐日行程</a>
-          <a href={withBasePath('/cities/')}>城市文化</a>
+          {sitePageLinks
+            .filter((link) => link.id !== 'bookings')
+            .map((link) => (
+              <a href={withBasePath(link.href)} key={link.id}>
+                {link.label}
+              </a>
+            ))}
         </nav>
         <div className="header-actions">
           <OfflineStatus />

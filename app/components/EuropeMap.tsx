@@ -13,42 +13,42 @@ const cities = [
   {
     name: '巴黎',
     coordinates: [2.3522, 48.8566] as [number, number],
-    tone: '#d8ff4f',
+    tone: '#e0c279',
   },
   {
     name: '米兰',
     coordinates: [9.19, 45.4642] as [number, number],
-    tone: '#ff5f4d',
+    tone: '#c9a85a',
   },
   {
     name: '威尼斯',
     coordinates: [12.3155, 45.4408] as [number, number],
-    tone: '#40d5c2',
+    tone: '#9eb5c8',
   },
   {
     name: '佛罗伦萨',
     coordinates: [11.2558, 43.7696] as [number, number],
-    tone: '#ffc857',
+    tone: '#e0c279',
   },
   {
     name: '比萨',
     coordinates: [10.4017, 43.7228] as [number, number],
-    tone: '#ffd68a',
+    tone: '#c9a85a',
   },
   {
     name: '罗马',
     coordinates: [12.4964, 41.9028] as [number, number],
-    tone: '#f05b72',
+    tone: '#e0c279',
   },
   {
     name: '巴塞罗那',
     coordinates: [2.1734, 41.3851] as [number, number],
-    tone: '#4ea1ff',
+    tone: '#9eb5c8',
   },
   {
     name: '科隆',
     coordinates: [6.9603, 50.9375] as [number, number],
-    tone: '#cfb8ff',
+    tone: '#c9a85a',
   },
 ] as const;
 
@@ -125,7 +125,7 @@ export function EuropeMap({ selectedCity, onSelectCity }: EuropeMapProps) {
         className="europe-map__canvas"
         viewBox={`0 0 ${width} ${height}`}
       >
-        <rect width={width} height={height} fill="#111514" />
+        <rect width={width} height={height} fill="var(--surface-deep)" />
         <g aria-hidden="true">
           {geography.features
             .filter((country) =>
@@ -134,16 +134,16 @@ export function EuropeMap({ selectedCity, onSelectCity }: EuropeMapProps) {
             .map((country, index) => (
               <path
                 d={path(country) ?? undefined}
-                fill="#252b29"
+                fill="var(--surface-raised)"
                 key={country.id ?? index}
-                stroke="#4a524e"
+                stroke="var(--control-line)"
                 strokeWidth="0.7"
               />
             ))}
           <path
             d={routePath}
             fill="none"
-            stroke="#f5f2ea"
+            stroke="var(--gold-bright)"
             strokeDasharray="3 8"
             strokeLinecap="round"
             strokeWidth="2.4"
@@ -157,7 +157,7 @@ export function EuropeMap({ selectedCity, onSelectCity }: EuropeMapProps) {
                 transform={`translate(${point[0]} ${point[1]})`}
               >
                 <circle
-                  fill="#111514"
+                  fill="var(--surface-deep)"
                   r="12"
                   stroke={city.tone}
                   strokeWidth="2"
