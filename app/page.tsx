@@ -7,6 +7,7 @@ import { OfflineStatus } from './components/OfflineStatus';
 import { tripDays } from './data/trip';
 import { withBasePath } from './lib/paths';
 import { sitePageLinks } from './lib/site-navigation';
+import { formatJourneyStep, journeyCityOrder } from './lib/journey-route';
 
 export const dynamic = 'force-static';
 
@@ -161,11 +162,11 @@ export default function Home() {
       </section>
 
       <section className="journey-strip" aria-label="旅程城市顺序">
-        {Object.entries(cityCopy).map(([name, value], index) => (
-          <div key={name}>
-            <span>{String(index + 1).padStart(2, '0')}</span>
+        {journeyCityOrder.map((name, index) => (
+          <div key={index}>
+            <span>{formatJourneyStep(index)}</span>
             <strong>{name}</strong>
-            <small>{value.country}</small>
+            <small>{cityCopy[name].country}</small>
           </div>
         ))}
       </section>

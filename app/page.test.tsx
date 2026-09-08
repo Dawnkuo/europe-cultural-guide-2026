@@ -24,6 +24,14 @@ describe('journey overview', () => {
     expect(screen.queryByText(/出发前，先看清楚这些资料|穹顶14:30，圣殿15:30|比萨往返车票|晚到入住|Vikey|开门指引|退房方式/)).not.toBeInTheDocument();
   });
 
+  it('keeps the city sequence strip consistent with numbered return visits on the map', () => {
+    const { container } = render(<Home />);
+    expect([...container.querySelectorAll('.journey-strip strong')].map((node) => node.textContent))
+      .toEqual(['巴黎', '米兰', '威尼斯', '佛罗伦萨', '比萨', '佛罗伦萨', '罗马', '巴塞罗那', '科隆', '巴黎']);
+    expect([...container.querySelectorAll('.journey-strip span')].map((node) => node.textContent))
+      .toEqual(['01', '02', '03', '04', '05', '06', '07', '08', '09', '10']);
+  });
+
   it('exposes every shared page destination from the home header', () => {
     render(<Home />);
     const header = within(

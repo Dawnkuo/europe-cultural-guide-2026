@@ -281,32 +281,63 @@ img {
 }
 
 .europe-map {
-  aspect-ratio: 1000 / 620;
-  min-height: 420px;
+  height: 560px;
+  min-width: 0;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
 .europe-map__canvas {
+  display: block;
   height: 100%;
   width: 100%;
 }
 .europe-map__markers {
   inset: 0;
   position: absolute;
+  pointer-events: none;
 }
 .europe-map__marker {
+  align-items: center;
   background: var(--surface-deep);
   border: 1px solid var(--marker-color);
   border-radius: 2px;
   color: var(--text);
   cursor: pointer;
-  font-size: 11px;
-  min-height: 28px;
-  padding: 5px 8px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 8px;
+  height: 44px;
+  justify-content: center;
+  padding: 0 8px;
+  pointer-events: auto;
   position: absolute;
-  transform: translate(-50%, calc(-100% - 13px));
+  transform: translate(-50%, -50%);
   white-space: nowrap;
+}
+.europe-map__steps {
+  display: flex;
+  flex-shrink: 0;
+  gap: 3px;
+}
+.europe-map__steps b {
+  align-items: center;
+  background: var(--marker-color);
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: var(--surface-deep);
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+.europe-map__marker:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 4px;
 }
 .europe-map__marker:hover,
 .europe-map__marker[data-active='true'] {
@@ -421,7 +452,7 @@ img {
 .journey-strip {
   background: var(--surface-panel);
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   overflow-x: auto;
   padding: 0 clamp(20px, 4vw, 64px);
 }
@@ -429,7 +460,7 @@ img {
   border-left: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  min-width: 145px;
+  min-width: 0;
   padding: 30px 18px;
 }
 .journey-strip > div:last-child {
@@ -3067,25 +3098,7 @@ img {
     padding-right: 16px;
   }
   .europe-map {
-    aspect-ratio: auto;
-    min-height: 470px;
-    overflow: visible;
-  }
-  .europe-map__canvas {
-    height: 320px;
-  }
-  .europe-map__markers {
-    display: grid;
-    gap: 7px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    inset: auto 0 0;
-    position: absolute;
-  }
-  .europe-map__marker {
-    min-height: 34px;
-    position: static;
-    transform: none;
-    white-space: normal;
+    height: 500px;
   }
   .notice-list {
     margin-top: 44px;
@@ -3681,7 +3694,7 @@ img {
     line-height: 1.2;
   }
   .journey-strip {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .journey-strip > div {
     min-width: 0;
