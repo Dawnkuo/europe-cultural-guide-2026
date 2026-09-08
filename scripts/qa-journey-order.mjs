@@ -32,6 +32,18 @@ async function checkMap(page) {
   })));
   assert.deepEqual(legs.map(({ from, to }) => [from, to]), order.slice(1).map((to, index) => [order[index], to]));
   assert(legs.every((leg) => leg.arrow?.startsWith('url(#journey-direction-')));
+  const palette = await map.evaluate((root) => [...root.querySelectorAll('[data-city]')].map((label) => {
+    const city = label.dataset.city;
+    return {
+      city,
+      border: getComputedStyle(label).borderTopColor,
+      badges: [...label.querySelectorAll('b')].map((badge) => getComputedStyle(badge).backgroundColor),
+      point: getComputedStyle(root.querySelector(`[data-city-anchor="${city}"] circle:last-child`)).fill,
+      leader: getComputedStyle(root.querySelector(`[data-city-leader="${city}"]`)).stroke,
+    };
+  }));
+  assert.equal(new Set(palette.map((city) => city.border)).size, 8, 'Every city needs its own color');
+  for (const city of palette) assert([city.point, city.leader, ...city.badges].every((color) => color === city.border), 'Inconsistent city color: ' + city.city);
   // Read every rectangle in one frame so scrolling cannot skew comparisons.
   const { bounds, labels, anchors } = await map.evaluate((map) => ({
     bounds: map.getBoundingClientRect().toJSON(),

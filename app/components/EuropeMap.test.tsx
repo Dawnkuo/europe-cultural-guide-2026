@@ -1,9 +1,20 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
-import { EuropeMap } from './EuropeMap';
+import { EuropeMap, mapCities } from './EuropeMap';
 import { journeyCityOrder } from '../lib/journey-route';
 
 describe('EuropeMap', () => {
+  it('gives every city a unique color shared by its label, anchor and leader', () => {
+    const { container } = render(<EuropeMap selectedCity="罗马" onSelectCity={() => {}} />);
+    expect(new Set(mapCities.map((city) => city.tone)).size).toBe(mapCities.length);
+    for (const city of mapCities) {
+      const button = screen.getByRole('button', { name: `查看${city.name}行程` });
+      expect(button.style.getPropertyValue('--marker-color')).toBe(city.tone);
+      expect(container.querySelector(`[data-city-anchor="${city.name}"] circle`)).toHaveAttribute('stroke', city.tone);
+      expect(container.querySelector(`[data-city-anchor="${city.name}"] circle:last-child`)).toHaveAttribute('fill', city.tone);
+      expect(container.querySelector(`[data-city-leader="${city.name}"]`)).toHaveAttribute('stroke', city.tone);
+    }
+  });
   it('renders the local map and all itinerary cities', () => {
     render(<EuropeMap selectedCity="罗马" onSelectCity={() => {}} />);
 
