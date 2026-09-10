@@ -32,8 +32,8 @@ export async function generateGuidePrecache({ output, slugs, nestedExportDirecto
         await collect(path);
       }
       else if (entry.name !== 'sw.js' && entry.name !== 'guide-precache.json') {
-        if (/\.(?:js|css|woff2?|png|jpe?g|webp|svg|avif|rsc|json|webmanifest)$/i.test(entry.name)) assets.push(`/${relative(output, path).split(sep).join('/')}`);
-        if (/\.(?:html|js|css|woff2?|png|jpe?g|webp|svg|avif|rsc|json|webmanifest)$/i.test(entry.name)) revisionFiles.push(path);
+        if (/\.(?:js|css|woff2?|png|jpe?g|webp|svg|avif|rsc|json|webmanifest|glb)$/i.test(entry.name)) assets.push(`/${relative(output, path).split(sep).join('/')}`);
+        if (/\.(?:html|js|css|woff2?|png|jpe?g|webp|svg|avif|rsc|json|webmanifest|glb)$/i.test(entry.name)) revisionFiles.push(path);
       }
     }
   }

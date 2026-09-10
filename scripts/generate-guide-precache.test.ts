@@ -24,6 +24,7 @@ describe('generateGuidePrecache', () => {
     await writeFile(join(output, 'assets', 'uffizi-plan-hash.js'), 'map data');
     await writeFile(join(output, 'assets', 'ArchitecturalScene-hash.js'), 'lazy renderer');
     await writeFile(join(output, 'assets', 'guide.css'), 'styles');
+    await writeFile(join(output, 'assets', 'st-peters.glb'), 'geometry');
     await writeFile(join(output, 'guides', 'pantheon.rsc'), 'static route payload');
     await mkdir(join(output, 'europe-cultural-guide-2026', '_next'), { recursive: true });
     await writeFile(join(output, 'europe-cultural-guide-2026', '_next', 'duplicate.js'), 'nested exporter copy');
@@ -47,6 +48,7 @@ describe('generateGuidePrecache', () => {
     expect(manifest.assets).toEqual([
       '/assets/ArchitecturalScene-hash.js',
       '/assets/guide.css',
+      '/assets/st-peters.glb',
       '/assets/uffizi-plan-hash.js',
       '/guides/pantheon.rsc',
     ]);
@@ -67,13 +69,13 @@ describe('generateGuidePrecache', () => {
     const output = await mkdtemp(join(tmpdir(), 'guide-precache-version-'));
     await mkdir(join(output,'guides'),{recursive:true});
     await writeFile(join(output,'guides/index.html'),'guide index');
-    await writeFile(join(output,'map.js'),'first map');
+    await writeFile(join(output,'model.glb'),'first model');
     const options = { output, slugs: [], serviceWorkerTemplate: "const CACHE = 'europe-cultural-guide-v9';\n" };
     await generateGuidePrecache(options);
     const first = await readFile(join(output,'sw.js'),'utf8');
     await generateGuidePrecache(options);
     expect(await readFile(join(output,'sw.js'),'utf8')).toBe(first);
-    await writeFile(join(output,'map.js'),'corrected map');
+    await writeFile(join(output,'model.glb'),'corrected model');
     await generateGuidePrecache(options);
     expect(await readFile(join(output,'sw.js'),'utf8')).not.toBe(first);
     expect(await readFile(join(output,'sw.js'),'utf8')).toMatch(/europe-cultural-guide-v9-[a-f0-9]{20}/);

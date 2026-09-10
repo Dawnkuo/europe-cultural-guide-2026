@@ -1,0 +1,41 @@
+{
+  "sourceUrl": "https://virtual-cdn.basilicasanpietro.va/basilica-viewer/gltf/basilica_low_241217_opt.glb",
+  "configUrl": "https://virtual-cdn.basilicasanpietro.va/basilica-viewer/config/basilicaconfig_2025.json",
+  "sourcePath": "work/experience/st-peters-source/basilica_low_241217_opt.glb",
+  "outputPath": "public/models/st-peters-exterior.glb",
+  "sourceSha256": "da626a28c1c791908cb0872f40ccdd44e1ec7ab491bb5600063e6b20be9417b5",
+  "outputSha256": "c674af8ffc340d7362ee044b5f3e00312abe91d0484989ed4cb12ea7294f6508",
+  "sourceBytes": 14733672,
+  "outputBytes": 7101684,
+  "operation": "Exterior subtree only; original transforms, vertices, colors, normals and triangles retained. No simplification. Meshopt triangle encoding may cyclically rotate a triangle index triplet without changing its geometry.",
+  "accessors": [
+    {
+      "semantic": "POSITION",
+      "sourceAccessor": 73,
+      "outputAccessor": 0,
+      "count": 684737,
+      "decodedSha256": "490743179646bf36962c9f9a22fed2dc9be61169efaf3e0bf7037f9f228fa301"
+    },
+    {
+      "semantic": "NORMAL",
+      "sourceAccessor": 74,
+      "outputAccessor": 1,
+      "count": 684737,
+      "decodedSha256": "8a10ebe546e78321710615d13bc03771b070db5773ef8254dbb00cf8de35a463"
+    },
+    {
+      "semantic": "COLOR_0",
+      "sourceAccessor": 75,
+      "outputAccessor": 2,
+      "count": 684737,
+      "decodedSha256": "4af845c7632aee499177ef114577b1d8d57e253dde6f9fc0ff027bfe3d588262"
+    },
+    {
+      "semantic": "indices",
+      "sourceAccessor": 76,
+      "outputAccessor": 3,
+      "count": 1504509,
+      "decodedSha256": "ceeb7b8e27f49e236f182cf5afbc676b289a90c65a7fbb0b85b52ab8dd4bf776"
+    }
+  ]
+}

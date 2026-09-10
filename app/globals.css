@@ -2267,6 +2267,67 @@ img {
   right: 18px;
   top: 21px;
 }
+.guide-spatial-3d--compound {
+  display: block;
+}
+.guide-spatial-3d--compound .guide-spatial-3d__stage {
+  height: min(680px, 70svh);
+  min-height: 360px;
+}
+.guide-spatial-3d--compound .guide-spatial-3d__nodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+.guide-spatial-3d__regions {
+  display: grid;
+  min-width: 0;
+  margin: 0;
+  border: 0;
+  grid-template-columns: .6fr 1fr 1fr;
+  gap: 4px;
+  padding: 8px;
+  background: #0c1b29;
+  border-top: 1px solid #4c4836;
+}
+.guide-spatial-3d__regions--four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.guide-spatial-3d__regions button {
+  min-width: 0;
+  min-height: 44px;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: #c9d2d6;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.guide-spatial-3d__regions button[aria-pressed='true'] {
+  background: #d5b96b1c;
+  border-color: #d5b96b;
+  color: #e8cd83;
+}
+.guide-spatial-3d__regions button:focus-visible {
+  outline: 2px solid #e8cd83;
+  outline-offset: -3px;
+}
+.guide-spatial-3d--pisa .guide-spatial-3d__canvas,
+.guide-spatial-3d--sighs .guide-spatial-3d__canvas {
+  top: 68px;
+  height: calc(100% - 68px);
+}
+.guide-spatial-3d--pisa .guide-spatial-3d__fallback,
+.guide-spatial-3d--sighs .guide-spatial-3d__fallback {
+  top: 68px;
+}
+@media (max-width: 640px) {
+  .guide-spatial-3d--compound .guide-spatial-3d__stage {
+    height: min(480px, 62svh);
+    min-height: 320px;
+  }
+}
 .guide-spatial-3d__legend span {
   align-items: center;
   color: var(--text-secondary);
@@ -2292,6 +2353,8 @@ img {
   background: var(--surface-panel);
   color: var(--text-secondary);
   display: flex;
+  flex-direction: column;
+  gap: 12px;
   font-size: 12px;
   inset: 0;
   justify-content: center;
@@ -2300,6 +2363,31 @@ img {
   position: absolute;
   text-align: center;
   z-index: 1;
+}
+.guide-spatial-3d__fallback--image {
+  background: #061019;
+  padding: 16px;
+}
+.guide-spatial-3d__fallback img {
+  width: 100%;
+  height: auto;
+  max-height: calc(100% - 100px);
+  object-fit: contain;
+}
+.guide-spatial-3d__fallback button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #d5b96b;
+  color: #e8cd83;
+  background: transparent;
+  cursor: pointer;
+}
+.guide-spatial-3d__fallback button:focus-visible {
+  outline: 2px solid #e8cd83;
+  outline-offset: 3px;
 }
 .guide-spatial-3d__nodes {
   background: var(--surface-panel);
@@ -2311,7 +2399,8 @@ img {
 .guide-spatial-3d__nodes li + li {
   border-top: 1px solid var(--line);
 }
-.guide-spatial-3d__nodes button {
+.guide-spatial-3d__nodes button,
+.guide-spatial-3d__unlocated-stop {
   align-items: start;
   background: transparent;
   border: 0;
@@ -2325,6 +2414,7 @@ img {
   text-align: left;
   width: 100%;
 }
+.guide-spatial-3d__unlocated-stop { cursor: default; }
 .guide-spatial-3d__nodes button:hover,
 .guide-spatial-3d__nodes button[data-active='true'] {
   background: var(--surface-raised);
@@ -3460,7 +3550,8 @@ img {
   .guide-spatial-3d__nodes li + li {
     border-left: 0;
   }
-  .guide-spatial-3d__nodes button {
+  .guide-spatial-3d__nodes button,
+  .guide-spatial-3d__unlocated-stop {
     min-height: 74px;
     padding: 15px;
   }

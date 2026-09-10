@@ -1,10 +1,11 @@
-import { configure, render, screen } from '@testing-library/react';
+import { cleanup, configure, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { guideCatalog } from '../data/guides';
 import { GuideSpatial } from './GuideSpatial';
 import * as architecturalLoader from '../lib/architectural-plan-loader';
 import pantheonPlan from '../data/architectural-plans/pantheon.json';
+import { resolveArchitecturalEntry } from '../lib/architectural-entry';
 
 beforeEach(() => {
   configure({ asyncUtilTimeout: 3000 });
@@ -13,6 +14,7 @@ beforeEach(() => {
   Object.defineProperty(HTMLElement.prototype, 'scrollBy', { configurable: true, value: vi.fn() });
 });
 afterEach(() => {
+  cleanup();
   configure({ asyncUtilTimeout: 1000 });
   vi.unstubAllGlobals();
   Reflect.deleteProperty(HTMLElement.prototype, 'scrollTo');
@@ -24,6 +26,18 @@ vi.mock('./ArchitecturalScene', () => ({ default: ({ onFailure }: { onFailure: (
 }));
 
 describe('GuideSpatial', () => {
+  it.each(guideCatalog.filter((guide) => architecturalLoader.hasArchitecturalPlan(guide.slug)).map((guide) => guide.slug))('keeps %s on its reviewed entrance floor in 2D', async (slug) => {
+    const guide = guideCatalog.find((item) => item.slug === slug)!;
+    const plan = await architecturalLoader.loadArchitecturalPlan(slug);
+    const entry = resolveArchitecturalEntry(plan);
+    const { container } = render(<GuideSpatial guide={guide} />);
+    expect(await screen.findByRole('button', { name: '2D 俯视' })).toHaveAttribute('aria-pressed', 'true');
+    const buttons = [...container.querySelectorAll('.architectural-map__floors button')];
+    expect(buttons.find((button) => button.textContent === entry.floor.label)).toHaveAttribute('aria-pressed', 'true');
+    expect(buttons.filter((button) => button.getAttribute('aria-pressed') === 'true')).toHaveLength(1);
+    expect(container.querySelector('.architectural-map__viewport svg')).toHaveAttribute('aria-label', `${entry.floor.label}俯视图`);
+    expect(screen.queryByRole('button', { name: '模拟 WebGL 不可用' })).not.toBeInTheDocument();
+  });
   it('shows Uffizi guide step 2 separately from the source room A9 and focuses the same room', async () => {
     const user = userEvent.setup();
     const guide = guideCatalog.find((item) => item.slug === 'uffizi')!;
@@ -113,11 +127,10 @@ describe('GuideSpatial', () => {
     expect(
       screen.getByRole('button', { name: '暂停自动旋转' }),
     ).toBeInTheDocument();
-    expect(screen.getAllByRole('button', { name: /聚焦/ })).toHaveLength(
-      guide.spatial.stops.length,
-    );
-    expect(screen.getByText('起点')).toBeInTheDocument();
-    expect(screen.getByText('终点')).toBeInTheDocument();
+    expect(screen.queryAllByRole('button', { name: /聚焦/ })).toHaveLength(0);
+    expect(document.querySelectorAll('.guide-spatial-3d__unlocated-stop')).toHaveLength(guide.spatial.stops.length);
+    expect(screen.queryByText('起点')).not.toBeInTheDocument();
+    expect(screen.queryByText('终点')).not.toBeInTheDocument();
   });
 
   it('loads the reviewed source plan and preserves every printed Uffizi label in 2D', async () => {
@@ -201,7 +214,7 @@ describe('GuideSpatial', () => {
     const unavailable = vi.spyOn(architecturalLoader, 'hasArchitecturalPlan').mockReturnValue(false);
     try {
       render(<GuideSpatial guide={guideCatalog.find((item) => item.slug === slug)!} />);
-      expect(screen.getByRole('status')).toHaveTextContent('室内地图待重建');
+      expect(screen.getAllByRole('status').some(element => element.textContent?.includes('室内地图待重建'))).toBe(true);
       expect(screen.queryByRole('button', { name: '内部' })).not.toBeInTheDocument();
       expect(document.querySelector('.guide-floorplan')).not.toBeInTheDocument();
     } finally {
@@ -286,7 +299,7 @@ describe('GuideSpatial', () => {
     const unavailable = vi.spyOn(architecturalLoader, 'hasArchitecturalPlan').mockReturnValue(false);
     try {
       render(<GuideSpatial guide={guide} />);
-      expect(screen.getByRole('status')).toHaveTextContent('内部平面资料待补');
+      expect(screen.getAllByRole('status').some(element => element.textContent?.includes('内部平面资料待补'))).toBe(true);
       expect(screen.queryByRole('button', { name: '内部' })).not.toBeInTheDocument();
       expect(
         await screen.findByRole('region', { name: /凤凰歌剧院.*三维空间示意/ }),

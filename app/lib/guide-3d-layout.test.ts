@@ -51,14 +51,9 @@ describe('buildGuideSceneLayout', () => {
         /landmark-massing|documented-floorplan|urban-topography/,
       );
       expect(scene.parts.length, guide.slug).toBeGreaterThanOrEqual(5);
-      expect(
-        scene.nodes.map((node) => node.label),
-        guide.slug,
-      ).toEqual(guide.spatial.stops);
-      expect(
-        new Set(scene.nodes.map((node) => node.position.join(','))).size,
-        guide.slug,
-      ).toBe(guide.spatial.stops.length);
+      expect(scene.unlocatedStops, guide.slug).toEqual(guide.spatial.stops);
+      expect(scene.nodes, `${guide.slug}: no invented exterior stop positions`).toEqual([]);
+      expect(scene.paths, `${guide.slug}: no invented exterior walking route`).toEqual([]);
     }
   });
 
