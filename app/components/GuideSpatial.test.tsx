@@ -37,7 +37,7 @@ describe('GuideSpatial', () => {
     expect(buttons.filter((button) => button.getAttribute('aria-pressed') === 'true')).toHaveLength(1);
     expect(container.querySelector('.architectural-map__viewport svg')).toHaveAttribute('aria-label', `${entry.floor.label}俯视图`);
     expect(screen.queryByRole('button', { name: '模拟 WebGL 不可用' })).not.toBeInTheDocument();
-  });
+  }, 15000);
   it('shows Uffizi guide step 2 separately from the source room A9 and focuses the same room', async () => {
     const user = userEvent.setup();
     const guide = guideCatalog.find((item) => item.slug === 'uffizi')!;

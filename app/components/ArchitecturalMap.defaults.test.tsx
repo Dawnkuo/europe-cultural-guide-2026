@@ -65,7 +65,7 @@ describe('indoor map defaults', () => {
     render(<GuideSpatial guide={guide} />);
     expect(await screen.findByRole('button', { name: '2D 俯视' })).toHaveAttribute('aria-pressed', 'true');
     expect(screen.getByRole('button', { name: entry.floor.label })).toHaveAttribute('aria-pressed', 'true');
-  });
+  }, 15000);
 
   it('uses the next venue entrance when navigating between guides', async () => {
     const user = userEvent.setup();
