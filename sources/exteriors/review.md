@@ -204,9 +204,14 @@ the research mesh nor the procedural study increments completed coverage.
 - Four upper window columns; eight mask balconies and a distinct attic tulip;
   projecting noble-floor glass bay; left-of-centre turret and four-arm cross;
   non-symmetric dragon ridge. These are not repeated anonymous house primitives.
-- Front coordinates follow the elevation. Depth, balcony relief and rear bulk
-  are approximate massing, not a reconstructed interior or measured whole-site
-  footprint. Ceramic discs are a material pattern, not a count of original tiles.
+- Front coordinates follow the elevation. The rear shell now follows OSM
+  relation r9427554, including its two courtyard voids. Match the frontage nodes
+  6357891348/6357891279 on w679019065 to model x=-3.125/+3.125, z=0;
+  this preserves one uniform scale and places Passeig de Gracia in front.
+  Registration and reproducible source coordinates are recorded in
+  `context/reviewed-facades.json` and `app/data/casa-batllo-footprint.json`.
+  Shell height and balcony relief remain approximate; no indoor layout is
+  inferred. Ceramic discs are a material pattern, not a count of original tiles.
 - Sources are for internal verification. Neither original source image nor PDF
   is embedded in the public map.
 

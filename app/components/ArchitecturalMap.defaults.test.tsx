@@ -44,6 +44,11 @@ describe('indoor map defaults', () => {
     expect(screen.getByRole('button', { name: entry.floor.label })).toHaveAttribute('aria-pressed', 'true');
     expect(container.querySelector('.architectural-map__viewport svg')).toHaveAttribute('aria-label', `${entry.floor.label}俯视图`);
     expect(container.querySelector('.architectural-map')).toHaveAttribute('data-entry-status', entry.status);
+    const viewport=container.querySelector('.architectural-map__viewport') as HTMLElement;
+    const plane=viewport.querySelector('.architectural-map__plane') as HTMLElement;
+    expect(viewport.dataset.zoom).toBe('1');
+    expect(parseFloat(plane.style.width)).toBeLessThanOrEqual(1000);
+    expect(parseFloat(plane.style.height)).toBeLessThanOrEqual(parseFloat(viewport.style.height));
     if (entry.notice) expect(container.querySelector('[data-entry-notice]')).toHaveTextContent(entry.notice);
     else expect(container.querySelector('[data-entry-notice]')).not.toBeInTheDocument();
   });
@@ -55,11 +60,15 @@ describe('indoor map defaults', () => {
     const entry = resolveArchitecturalEntry(plan);
     const other = plan.floors.find((floor) => floor.id !== entry.floor.id)!;
     const { unmount } = render(<GuideSpatial guide={guide} />);
+    await user.click(await screen.findByRole('button', { name: '放大地图' }));
+    expect(document.querySelector('.architectural-map__viewport')).toHaveAttribute('data-zoom','1.5');
     await user.click(await screen.findByRole('button', { name: other.label }));
+    expect(document.querySelector('.architectural-map__viewport')).toHaveAttribute('data-zoom','1');
     await user.click(screen.getByRole('button', { name: '3D' }));
     expect(await screen.findByTestId('webgl-scene')).toHaveAttribute('data-floor-id', other.id);
     await user.click(screen.getByRole('button', { name: '2D 俯视' }));
     await user.click(screen.getByRole('button', { name: '重置地图视角' }));
+    expect(document.querySelector('.architectural-map__viewport')).toHaveAttribute('data-zoom','1');
     expect(screen.getByRole('button', { name: other.label })).toHaveAttribute('aria-pressed', 'true');
     unmount();
     render(<GuideSpatial guide={guide} />);

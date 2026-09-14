@@ -402,7 +402,7 @@ export const milanVeniceGuideContent = defineGuideContent({
     sequence: [
       {
         title: '提前30分钟核验',
-        body: '携带预约凭证和所需身份证明到票务处；行程虽记09:30已订，但缺少PDF，必须事先找回有效票据。',
+        body: '携带所持门票和所需身份证明到票务处，按票面入场时间办理核验。',
       },
       {
         title: '完成强制寄存',
@@ -425,7 +425,7 @@ export const milanVeniceGuideContent = defineGuideContent({
       '所有访客必须预约；每批最多40人，食堂停留15分钟。',
       '官方要求提前30分钟到达，迟到可能失去参观资格且无法补入下一批。',
       '行李须寄存，食物和饮料不得带入；现场流程包括多道空气调节门。',
-      '行程记录09:30但票据文件夹缺少PDF，当前仍属待确认，不应只凭行程文字前往。',
+      '携带所持门票和所需身份证明，实际入场时间以票面为准。',
     ],
     sources: [
       {
@@ -1066,11 +1066,11 @@ export const milanVeniceGuideContent = defineGuideContent({
         body: '它位于总督宫东侧，西端接宫殿司法空间，东端接新监狱，并非跨越大运河。',
       },
       {
-        title: '西面主视角在稻草桥',
+        title: '南侧主视角在稻草桥',
         body: 'Ponte della Paglia靠近潟湖，人流最多但能同时看到总督宫、叹息桥和新监狱的连接关系。',
       },
       {
-        title: '东面可由卡诺尼卡桥反看',
+        title: '北侧可由卡诺尼卡桥反看',
         body: '绕到Ponte de la Canonica可从相反方向观察桥体、运河纵深和总督宫接口，视线通常更接近桥面高度。',
       },
     ],

@@ -1,0 +1,487 @@
+{
+  "version": "2026-09-14",
+  "sites": [
+    {
+      "slug": "la-pedrera",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "r8974896"
+      ],
+      "coordinateOrigin": [
+        2.1617621,
+        41.3953996
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/la-pedrera.json",
+      "scope": "Footprint retains both mapped courtyards. Roof element totals follow the institution; individual relief and placement are approximate, not surveyed.",
+      "notes": [
+        "Roof counts: 6 stair exits, 2 ventilation towers, 29 chimneys. Placements and balcony rhythm are schematic; both OSM courtyard holes are preserved."
+      ],
+      "architecturalSources": [
+        "https://www.lapedrera.com/en/casa-mila/architecture/"
+      ]
+    },
+    {
+      "slug": "galleria-vittorio",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w166623705"
+      ],
+      "coordinateOrigin": [
+        9.1900059,
+        45.4656422
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/galleria-vittorio.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.lombardiabeniculturali.it/architetture/schede/LMD80-00142/"
+      ]
+    },
+    {
+      "slug": "ponte-vecchio",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "r5342094"
+      ],
+      "coordinateOrigin": [
+        11.253158,
+        43.7680254
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/ponte-vecchio.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.feelflorence.it/it/esperienze-itinerari/firenze-rilievo"
+      ]
+    },
+    {
+      "slug": "st-mark-campanile",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w252637693"
+      ],
+      "coordinateOrigin": [
+        12.3390443,
+        45.4340361
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/st-mark-campanile.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.basilicasanmarco.it/en/bell-tower/"
+      ]
+    },
+    {
+      "slug": "st-mark-square",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w410344923",
+        "w138803888",
+        "w206333242",
+        "w252637693"
+      ],
+      "coordinateOrigin": [
+        12.3386717,
+        45.4342571
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/st-mark-square.json",
+      "scope": "Mapped square and its named bordering buildings, not a reconstructed complete palace interior.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.veneziaunica.it/en/things-to-do-in-venice/monuments-and-theatres",
+        "https://www.basilicasanmarco.it/en/bell-tower/"
+      ]
+    },
+    {
+      "slug": "rialto",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "r2289364"
+      ],
+      "coordinateOrigin": [
+        12.3356548,
+        45.4380688
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/rialto.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.veneziaunica.it/en/things-to-do-in-venice/monuments-and-theatres/rialto-bridge"
+      ]
+    },
+    {
+      "slug": "fenice",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w813451645"
+      ],
+      "coordinateOrigin": [
+        12.3338572,
+        45.4337096
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/fenice.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.teatrolafenice.it/en/la-fenice-foundation/la-fenice-malibran-history/"
+      ]
+    },
+    {
+      "slug": "gondola",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [],
+      "coordinateOrigin": null,
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": null,
+      "scope": "Movable vessel, not a fixed embarkation point. Hull proportions are illustrative.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.veneziaunica.it/en/content/gondola"
+      ]
+    },
+    {
+      "slug": "piazzale-michelangelo",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w233265215"
+      ],
+      "coordinateOrigin": [
+        11.2649932,
+        43.7628279
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/piazzale-michelangelo.json",
+      "scope": "Terrace outline and mapped monument positions; no invented hillside topography.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.feelflorence.it/en/points-interest/piazzale-michelangelo"
+      ]
+    },
+    {
+      "slug": "mercato-centrale",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w480015428"
+      ],
+      "coordinateOrigin": [
+        11.2532087,
+        43.7765847
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/mercato-centrale.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.mercatocentrale.com/florence/florence/"
+      ]
+    },
+    {
+      "slug": "signoria",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "r1461712",
+        "w43284457"
+      ],
+      "coordinateOrigin": [
+        11.2558641,
+        43.7695737
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/signoria.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.feelflorence.it/en/points-interest/loggia-de-lanzi",
+        "https://www.feelflorence.it/it/esperienze-itinerari/firenze-rilievo"
+      ]
+    },
+    {
+      "slug": "giunti-odeon",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w307153259",
+        "w485934061"
+      ],
+      "coordinateOrigin": [
+        11.2525624,
+        43.7709968
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/giunti-odeon.json",
+      "scope": "Historic palace exterior and cinema massing; does not expose or invent the auditorium interior.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.feelflorence.it/it/punti-di-interesse/giunti-odeon-libreria-e-cinema"
+      ]
+    },
+    {
+      "slug": "colosseum",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "r1834818"
+      ],
+      "coordinateOrigin": [
+        12.491903,
+        41.8909421
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/colosseum.json",
+      "scope": "Current outline and surviving north facade; arcade rhythm and fragment heights are schematic. No complete ancient seating bowl or rebuilt southern outer wall.",
+      "notes": [],
+      "architecturalSources": [
+        "https://colosseo.it/restauri/colosseo/",
+        "https://art.torvergata.it/handle/2108/25987"
+      ]
+    },
+    {
+      "slug": "roman-forum",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w131451564",
+        "r1766532",
+        "r1841078",
+        "r1841079",
+        "r1841089",
+        "r1841090",
+        "w49824161",
+        "w23913953"
+      ],
+      "coordinateOrigin": [
+        12.4867296,
+        41.8916414
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/roman-forum.json",
+      "scope": "Surviving fabric and archaeological envelopes are distinguished. Unknown ruined wall heights use a low schematic section, not a reconstruction of intact temples.",
+      "notes": [
+        "Low perimeter sections describe mapped archaeological extents, not surveyed surviving wall-by-wall heights."
+      ],
+      "architecturalSources": [
+        "https://colosseo.it/en/area/the-roman-forum/"
+      ]
+    },
+    {
+      "slug": "palatine",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "r1805347",
+        "r1805355",
+        "r1857984",
+        "r1860920",
+        "r1860919",
+        "w132581385"
+      ],
+      "coordinateOrigin": [
+        12.4871093,
+        41.8893064
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/palatine.json",
+      "scope": "Archaeological extents and low remains only. Terrain elevation and intact ancient palaces are not fabricated.",
+      "notes": [
+        "No invented complete palaces or artificial hillside. Model preserves six named archaeological extents and schematic low sections."
+      ],
+      "architecturalSources": [
+        "https://colosseo.it/en/area/the-palatine/"
+      ]
+    },
+    {
+      "slug": "piazza-venezia",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "r1849830"
+      ],
+      "coordinateOrigin": [
+        12.4823704,
+        41.8962446
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/piazza-venezia.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://vive.cultura.gov.it/it/vittoriano/cosa-vedere/ingresso-principale",
+        "https://vive.cultura.gov.it/en/map"
+      ]
+    },
+    {
+      "slug": "trevi",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "r13448560",
+        "w131235596"
+      ],
+      "coordinateOrigin": [
+        12.4832848,
+        41.9009778
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/trevi.json",
+      "scope": "Architectural surround and water basin; figurative sculpture is omitted, not replaced by claimed replicas.",
+      "notes": [],
+      "architecturalSources": [
+        "https://simartweb.comune.roma.it/dettaglio-bene/1884676456"
+      ]
+    },
+    {
+      "slug": "spanish-steps",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w54044477"
+      ],
+      "coordinateOrigin": [
+        12.4830824,
+        41.906391
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/spanish-steps.json",
+      "scope": "Stair boundary w134400816, three mapped landing areas and connecting flights drive a continuous supported mass. Landing heights, terrace widths and ground cutaway are approximate, not surveyed terrain or pedestrian navigation.",
+      "notes": [
+        "Full stair area w134400816 and landing polygons w1416143815, w54572036, w54572034 replace disconnected path strips. Every tread and landing has support to the common datum. Landing levels 6.5/12/16 m, upper street 22 m and church 24 m are display approximations, not terrain survey. OSM step_count tags are not treated as a consistent measured vertical profile."
+      ],
+      "architecturalSources": [
+        "https://www.turismoroma.it/en/places/spanish-steps"
+      ]
+    },
+    {
+      "slug": "piazza-navona",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w52333460"
+      ],
+      "coordinateOrigin": [
+        12.4731178,
+        41.8989282
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/piazza-navona.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.turismoroma.it/en/places/piazza-navona"
+      ]
+    },
+    {
+      "slug": "vatican-post",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w535197902"
+      ],
+      "coordinateOrigin": [
+        12.4576689,
+        41.9015775
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/vatican-post.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.postevaticane.va/"
+      ]
+    },
+    {
+      "slug": "park-guell",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w672895475",
+        "w672895651",
+        "r14718228",
+        "r14718230"
+      ],
+      "coordinateOrigin": [
+        2.1524576,
+        41.4142348
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/park-guell.json",
+      "scope": "Monumental zone, not all park terrain; column rhythm and decorative roof elements are approximate.",
+      "notes": [
+        "Column rhythm is approximate, not an asserted 86-position survey. No model of the entire park terrain."
+      ],
+      "architecturalSources": [
+        "https://parkguell.barcelona/en/park-guell/emblematic-features",
+        "https://www.lapedrera.com/en/work-antoni-gaudi/park-guell/"
+      ]
+    },
+    {
+      "slug": "turo-rovira",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w142894789"
+      ],
+      "coordinateOrigin": [
+        2.1615417,
+        41.4192618
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/turo-rovira.json",
+      "scope": "Present remains, not restored artillery or an invented terrain model.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.barcelona.cat/museuhistoria/es/patrimonios/los-espacios-del-museo/turo-de-la-rovira"
+      ]
+    },
+    {
+      "slug": "palau-musica",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w671830491",
+        "w671830480"
+      ],
+      "coordinateOrigin": [
+        2.1752316,
+        41.3875837
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/palau-musica.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.palaumusica.cat/en/how-was-the-palau-de-la-musica-catalana-built_1676131"
+      ]
+    },
+    {
+      "slug": "hohenzollern",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w258521129"
+      ],
+      "coordinateOrigin": [
+        6.9657041,
+        50.9414376
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/hohenzollern.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://magazine.cologne-tourism.com/cologne/a-city-of-seven-bridges/"
+      ]
+    },
+    {
+      "slug": "koln-triangle",
+      "method": "source-coordinate-exterior-massing",
+      "sourceOutlineIds": [
+        "w21113435"
+      ],
+      "coordinateOrigin": [
+        6.9718364,
+        50.9403829
+      ],
+      "osmLicense": "ODbL 1.0; OpenStreetMap contributors",
+      "sourceFile": "sources/exteriors/context/raw/koln-triangle.json",
+      "scope": "Mapped footprint and identifiable structural massing. Unrecorded elevations, window rhythm and relief are schematic, not surveyed.",
+      "notes": [],
+      "architecturalSources": [
+        "https://www.supergelb-architekten.de/projekt/koelntriangle"
+      ]
+    }
+  ]
+}

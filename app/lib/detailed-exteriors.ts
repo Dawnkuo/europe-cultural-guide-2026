@@ -1,5 +1,6 @@
 import type * as ThreeType from 'three';
 import type { Vec3 } from './guide-3d-models';
+import casaFootprint from '../data/casa-batllo-footprint.json' with { type: 'json' };
 
 type Merge = (
   geometries: ThreeType.BufferGeometry[],
@@ -124,9 +125,14 @@ export function buildDetailedExterior(
     );
   }
   if (slug === 'sagrada-familia') {
+    const naveWidth = 4.3;
+    const windowThickness = .035;
+    // Separate the applied window panel from the wall, including its back
+    // face. Nearly coplanar geometry flickers during camera rotation.
+    const windowCenterX = naveWidth / 2 + .02 + windowThickness / 2;
     // Booklet 10, p.2: the two built apostle groups flank the crossing;
     // they are not two rows across the front/back ends of the nave.
-    box('nave', [0, 1.4, 0.7], [4.3, 2.8, 7.7]);
+    box('nave', [0, 1.4, 0.7], [naveWidth, 2.8, 7.7]);
     box('transept', [0, 1.55, -1], [6.2, 3.1, 2.8]);
     add(
       'apse',
@@ -141,8 +147,8 @@ export function buildDetailedExterior(
         box('aisle-pier', [x, 1.45, z], [0.16, 2.9, 0.2], light);
         box(
           'aisle-window',
-          [x * 1.025, 1.62, z + 0.4],
-          [0.035, 1.32, 0.48],
+          [Math.sign(x) * windowCenterX, 1.62, z + 0.4],
+          [windowThickness, 1.32, 0.48],
           shadow,
         );
         add('aisle-pinnacle', new THREE.ConeGeometry(0.22, 1.3, 8), light, [
@@ -268,7 +274,15 @@ export function buildDetailedExterior(
       (1595 - y) / 100,
       z,
     ];
-    box('rear-massing', [0, 4.8, -2.4], [6.25, 9.6, 4.8], stone);
+    const shell = casaFootprint.geometry.map(polygon => {
+      const shape = new THREE.Shape(polygon[0].map(([x,z]) => new THREE.Vector2(x,-z)));
+      shape.holes = polygon.slice(1).map(ring => new THREE.Path(ring.map(([x,z]) => new THREE.Vector2(x,-z))));
+      return shape;
+    });
+    const rear = new THREE.ExtrudeGeometry(shell, {depth:9.6, bevelEnabled:false});
+    rear.rotateX(-Math.PI/2);
+    add('rear-massing', rear, stone);
+    group.userData.footprintSource = casaFootprint.sourceId;
     const face = new THREE.Shape();
     const outline = [
       [305, 1595],

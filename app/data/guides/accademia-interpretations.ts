@@ -1,0 +1,193 @@
+import type { GuideHighlight } from '../types';
+
+const source = (slug: string) => `https://www.galleriaaccademiafirenze.it/opere/${slug}/`;
+
+export const accademiaInterpretations: Record<string, Partial<GuideHighlight>> = {
+  'accademia-florence-highlight-1': {
+    category: '米开朗琪罗雕塑', material: '白色大理石', dimensions: '含雕成的底座高517厘米', inventoryNumber: 'Inv. Scult. n. 1076', sortYear: 1501, priority: 1,
+    location: '底层 · 4 大卫展厅 · Tribuna del David',
+    sourceIds: [source('david-michelangelo')],
+    background: '委托最初来自佛罗伦萨大教堂，雕像原拟置于教堂外部扶壁；1504年，城市决定把它放在旧宫入口，使圣经人物承担共和国的政治象征。米开朗琪罗接手的不是全新石料，而是已经被前人开凿又放弃的石块。今天展厅里的独立圆雕，与最初设想的高处观看条件不同；绕行时可以比较各个方向，但不宜把手与头的比例只归结为一种未经证实的透视计算。',
+    observations: [
+      '先从正面分辨承重的右腿与松弛的左腿，接着看髋部和肩部并不平行。身体站得稳，头却转向一侧，平衡与警戒同时发生。',
+      '移到左肩一侧看投石带，再看垂下的右手。武器没有被夸张地举起，也没有歌利亚的断头，画面停在行动前，而不是胜利庆典。',
+      '从侧面比较眉骨、颈部与手背的起伏，最后看腿后的树桩支撑。阴影会随视角变化；石材支撑和身体姿态是同一件雕像的结构问题。',
+    ],
+  },
+  'accademia-florence-highlight-2': {
+    category: '米开朗琪罗雕塑', creator: '米开朗琪罗·博纳罗蒂', period: '约1530—1534年', material: '大理石，未完成', sortYear: 1530, priority: 1,
+    location: '底层 · 3 囚徒长廊 · Galleria dei Prigioni',
+    image: '/images/details/accademia-young.webp', imageAlt: '四尊囚徒之一：青年囚徒的完整石像',
+    sourceIds: ['schiavo-giovane-michelangelo', 'atlante-michelangelo', 'prigione-che-si-ridesta-michelangelo', 'prigione-barbuto-michelangelo'].map(source),
+    background: '这四尊男性像属于朱利奥二世陵墓不断缩减的计划。作品留在米开朗琪罗的工作室，后来赠予科西莫一世，曾在波波里花园的布翁塔伦蒂洞窟陈设，1909年迁入本馆。它们不是卢浮宫的另外两尊《奴隶》，也不是四个相同的“从石中挣脱”姿势。未完成保留了开凿过程；我们可以讨论被束缚的视觉感受，却不能因此认定每一处未凿石块都是艺术家刻意留下的最终效果。',
+    observations: [
+      '《青年囚徒》抬起的左臂遮住一部分脸，另一臂向后收；《有须囚徒》胸腹的完成度更高。比较两者的头、胸与腿，完成程度并不统一。',
+      '《阿特拉斯》肩上仍压着大片方整石料，脸只略微显出。“阿特拉斯”是由姿势产生的称呼，不意味着石块上原本已经刻好一个天球。',
+      '《觉醒的囚徒》躯干与头部扭转，但身体仍与周围石料相连。看凿痕如何使光碎裂，再与《有须囚徒》较连贯的胸部明暗作比较。',
+    ],
+    gallery: [
+      { src: '/images/details/accademia-young.webp', alt: '青年囚徒全像，左臂上举、头部与腿部仍留有粗凿表面', caption: '青年囚徒 · 高256厘米' },
+      { src: '/images/details/accademia-atlas.webp', alt: '阿特拉斯囚徒全像，肩部上方保留大块方整石料', caption: '阿特拉斯 · 高277厘米' },
+      { src: '/images/details/accademia-awakening.webp', alt: '觉醒的囚徒全像，躯干从粗糙石块中侧转显现', caption: '觉醒的囚徒 · 高267厘米' },
+      { src: '/images/details/accademia-bearded.webp', alt: '有须囚徒全像，胸腹完成度较高，双腿仍受石料与带状形体牵连', caption: '有须囚徒 · 高263厘米' },
+    ],
+    displayNote: '四张图对应四件不同原作，不是同一件的四个视角。',
+  },
+  'accademia-florence-highlight-3': {
+    category: '石膏模型与艺术教育', material: '石膏模型与铸模；展厅并陈十九世纪绘画', sortYear: 1800, priority: 2,
+    location: '底层 · 5 石膏模型馆 · Gipsoteca',
+    sourceIds: ['https://www.galleriaaccademiafirenze.it/collezioni/'],
+    background: '十九世纪大厅保存巴托里尼及其学生潘帕洛尼的石膏模型，也陈列曾在学院学习或任教者的绘画。巴托里尼去世后，意大利国家购入其模型收藏，把工作室中的制作材料转为公共博物馆的教学与研究资源。这里的白色并不等同于《大卫》的大理石：模型可以通过塑造、翻制与修改形成，观看时应把形体、表面和制作阶段分开。',
+    observations: [
+      '在一件完整人物与旁边的胸像之间来回看：同样表现人，前者必须组织站姿和衣褶，后者把身份压缩到头颈、肩部和服饰。',
+      '近看允许接近的表面，寻找接缝、补接与小点，再退回整件的轮廓。不同痕迹可能来自翻模、修补或制作过程，不宜把每一个黑点都解释为同一种用途。',
+      '抬头比较墙上绘画与密集石膏。绘画依靠颜色和画面边界安排空间，雕塑则占据你行走的空间，展厅本身呈现不同媒介的教学关系。',
+    ],
+  },
+  'accademia-matthew': {
+    category: '米开朗琪罗雕塑', creator: '米开朗琪罗·博纳罗蒂', period: '约1503—1506年', material: '大理石，未完成', dimensions: '高271厘米', inventoryNumber: 'Inv. Scult. n. 1077', sortYear: 1503, priority: 1,
+    location: '底层 · 3 囚徒长廊 · Galleria dei Prigioni', sourceIds: [source('san-matteo-michelangelo')],
+    gallery: [
+      { src: '/images/collection/accademia-matthew-9fed3d9817.jpg', alt: '未完成圣马太的完整石块与雕成的躯体', caption: '全像 · 原存石块' },
+      { src: '/images/details/accademia-matthew.webp', alt: '圣马太头部、胸部和抬高膝部的局部', caption: '局部 · 头、躯干与膝部' },
+    ],
+    background: '《圣马太》不是朱利奥二世陵墓的囚徒之一，而是佛罗伦萨大教堂十二使徒委托中唯一开始雕刻的一尊。合同于1505年解除，馆方认为米开朗琪罗可能在1506年仍继续工作；头与躯干反向扭转和《拉奥孔》的联系，是支持这一判断的线索之一，不是确凿的制作日记。1831年移入美术学院，1909年进入相邻美术馆，与四尊《囚徒》在陈列上相遇。',
+    observations: [
+      '先辨认高起的膝部，再追踪身体重心向上转到肩部的方向。人物没有安静站直，身体像在狭窄石块内寻找转身的余地。',
+      '看头部回转与胸廓朝向的差别，再比较手边的书。它提示福音作者的身份，不能因为作品未完成就把它也叫作一尊囚徒。',
+      '比较衣褶已经被切出的深沟与侧面未清除的石料。完成部分和保留块体同时可见，适合与长廊另一端《大卫》的连续表面比较。',
+    ],
+  },
+  'accademia-sabines': {
+    category: '雕塑模型与制作', creator: '詹博洛尼亚（让·德·布洛涅）', period: '约1581年', material: '未烧制泥塑', dimensions: '高416厘米', inventoryNumber: 'Inv. Scult. n. 1071', sortYear: 1581, priority: 1,
+    location: '底层 · 2 巨像厅 · Sala del Colosso', sourceIds: [source('ratto-sabine-giambologna')],
+    image: '/images/details/accademia-sabines.webp', imageAlt: '詹博洛尼亚原大泥塑模型全貌，三个人物呈螺旋式上升',
+    background: '群像构思先追求三个人体的复杂运动和多角度观看，罗马历史中的“劫掠萨宾妇女”题名后来才被提出。这里保存的是原大制作模型，材料为自然干燥的泥而非烧陶、石膏或大理石；佣兵凉廊中才是大理石成品。这样脆弱的大型十六世纪模型能留存至今很少见，观看时既要理解螺旋构图，也要记住它曾是材料转换过程中的一环。',
+    observations: [
+      '从最低处蜷伏人物沿中间男子的躯干向上看，直到女子抬起的手。三具身体借遮挡交织在一起，不是简单叠在同一垂直轴上。',
+      '换到另一个许可的观看位置，观察刚才隐藏的手臂和脸如何出现。没有一个正面能同时交代所有关系，多视点是这件作品的重要特征。',
+      '比较泥塑表面的颜色、接合与大块转折，不要用白色大理石成品的光洁度要求它。此处模型与广场上的成品可以对读，但不因而增加行程停点。',
+    ],
+  },
+  'accademia-perugino': {
+    category: '文艺复兴绘画', creator: '彼得罗·佩鲁吉诺', period: '1500年', material: '木板油画', dimensions: '中央画板415 × 246厘米', inventoryNumber: 'Inv. 1890 n. 8366', sortYear: 1500, priority: 1,
+    location: '底层 · 2 巨像厅 · Sala del Colosso',
+    sourceIds: ['https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0900160658', 'https://www.galleriaaccademiafirenze.it/wp-content/uploads/2025/09/GAFI_Elenco_opere_escluse_da_prestito-1.pdf'],
+    summary: '圣母在奏乐天使间升起，下方站着瓦隆布罗萨传统中的圣徒与大天使米迦勒。地面人物不是围绕空墓的十二使徒，画面把修院的崇敬对象与天上景象并置。',
+    background: '这幅巨型祭坛画于1498年获委托，1500年已经置于瓦隆布罗萨本笃会修院教堂主祭坛。修院被撤销后，画作1810年被运往法国，1817年返意并进入学院美术馆。中央画板把天界、圣徒和远景分层组织，原用途与今天展厅中的平视观看不同；下方圣本笃、若望·瓜尔贝托等人的身份，联系的是具体宗教团体，而不是一种通用的升天场景。',
+    lookFor: '找右侧披甲的米迦勒，与穿修会服装的圣徒比较；再沿中轴向上看到圣母、奏乐天使和顶部圣父。',
+    observations: [
+      '先看右边米迦勒的铠甲与兵器，再比较其他人物的服装、书与姿态。道具帮助区分圣徒，不能把所有地面男子都当作使徒。',
+      '沿圣徒之间露出的远景看向地平线。小尺度风景把巨大的画面向后打开，与前景整齐、相对静止的人物形成距离。',
+      '向上比较奏乐天使的排列与圣母衣袍的轮廓，最后看顶端圣父。几个层次由中轴连接，不是同一批人物在连续道路上移动。',
+    ],
+  },
+  'accademia-viola': {
+    category: '历史乐器', creator: '安东尼奥·斯特拉迪瓦里', period: '1690年', material: '云杉与枫木，饰象牙、乌木和珍珠母贝', inventoryNumber: 'Inv. Cherubini 1988/15', sortYear: 1690, priority: 1,
+    location: '底层 · 7 乐器馆 · Museo degli Strumenti Musicali', sourceIds: [source('viola-tenore-stradivari')],
+    background: '这件次中音中提琴属于1690年为费迪南多·德·梅第奇准备的五件弦乐器组合。组合后来分散，馆内还保存同组大提琴，不能把展柜中的乐器视为五件完整团聚。许多古老弦乐器后来改过琴颈角度与指板，以适应新的演奏要求；这件中提琴的重要性在于保留原有结构，宫廷装饰与音乐技术的证据同时留在物件上。',
+    observations: [
+      '由琴头沿琴颈看到指板与琴身的接合，比较长短比例。这里关心的是保留下来的历史构造，不是凭手机照片测定演奏尺寸。',
+      '看琴身边缘镶饰、木纹与纹章。珍贵材料既表现赞助人的身份，也依附在能够发声的木制结构上，并非贴到普通器物上的无关装饰。',
+      '比较面板、音孔和琴桥的排列，再看附近音乐生活绘画中的持琴姿势。可以利用现场提供的声音展示理解乐器，不触碰或要求试奏原作。',
+    ],
+  },
+};
+
+export const accademiaAdditions: GuideHighlight[] = [
+  {
+    id: 'accademia-botticelli', title: '《圣母子、幼年施洗约翰与两位天使》', originalTitle: 'Madonna con Bambino, San Giovannino e due angeli', category: '文艺复兴绘画',
+    creator: '桑德罗·波提切利', period: '约1465—1470年', material: '木板蛋彩', dimensions: '含框98.5 × 76.2厘米', inventoryNumber: 'Inv. 1890 n. 3166', sortYear: 1465, priority: 2,
+    location: '底层 · 2 巨像厅 · Sala del Colosso', sourceIds: [source('madonna-con-bambino-san-giovannino-botticelli'), 'https://www.galleriaaccademiafirenze.it/visita/'],
+    image: '/images/details/accademia-botticelli.webp', imageAlt: '波提切利圣母子完整画面，圣婴横卧于前景，两位天使与幼年约翰环绕圣母',
+    summary: '圣婴向母亲伸去，旁边天使与幼年约翰通过目光形成亲密的围合。一位天使看向观众，将画内的小圈子向外打开。',
+    whyItMatters: '早期波提切利把私宅祈祷图像、温柔人物关系与佛罗伦萨服饰联系起来，不同于大型公共祭坛画的观看尺度。',
+    background: '这是一类供显贵家庭私人敬拜的室内绘画，最初委托人与住所尚不明确，1900年从圣母新医院进入佛罗伦萨博物馆收藏。年轻波提切利借鉴菲利波·利皮和韦罗基奥相关构图，但以人物目光使画面连成柔和对话。华丽衣服既符合宗教图像的庄严，也暗示拥有艺术品的家庭的物质地位，不能据此推定某个具体家族。',
+    lookFor: '沿圣婴、圣母与约翰的目光绕一圈，找到唯一朝观众看的天使，再比较衣服边饰与面部柔和的明暗。',
+    observations: [
+      '先看圣婴伸向圣母的小手，再追到圣母低垂的视线。身体接触和目光形成两条不同的联系，亲密感不只来自微笑。',
+      '找到朝外看的天使，与其他看向圣婴的人物比较。一个朝外的目光让观者仿佛站在画内人物圈子的边缘。',
+      '看圣母衣饰的金边与轻薄面纱，再与圣婴的裸露皮肤比较。线条、颜色与衣料质感分别承担不同的表达任务。',
+    ],
+  },
+  {
+    id: 'accademia-tree', title: '《生命之树》', originalTitle: 'L’Albero della Vita', category: '金地绘画',
+    creator: '帕奇诺·迪·博纳圭达', period: '约1310—1315年', material: '木板蛋彩与金箔', dimensions: '含框271 × 170.5厘米', inventoryNumber: 'Inv. 1890 n. 8459', sortYear: 1310, priority: 1,
+    location: '底层 · 十三世纪与十四世纪早期绘画厅', sourceIds: [source('albero-della-vita-pacino-bonaguida'), 'https://www.galleriaaccademiafirenze.it/visita/'],
+    image: '/images/details/accademia-tree.webp', imageAlt: '生命之树完整金地祭坛画，十字架伸出十二枝条，圆形小场景密布其间',
+    summary: '基督的十字架化为一棵长出十二枝条的树，枝条间的圆形故事把耶稣生平、受难与荣耀组织成可反复阅读的图像。',
+    whyItMatters: '作品不是简单装饰的故事拼贴，而是把神学文本转换为帮助修女默想的视觉结构，展示金地绘画如何承担阅读功能。',
+    background: '画作来自蒙蒂切利方济各会女修院，其图像结构依据波纳文图拉的《生命之树》。故事由下向上、从左到右展开，枝端的红色果实与十二个默想主题相连。底端另有创世故事，顶端展开天堂。右上没有光环的修女可能与修院历史有关，但身份并不确定，不宜把一种推测写成已被确认的肖像。',
+    lookFor: '先读一层枝条的圆形小场景，再看枝条上的文字与红色果实，最后比较底部创世和顶部天堂两个区域。',
+    observations: [
+      '从树的最低一层向上看，每次先读左侧再到右侧。圆框像阅读单元，枝条则把分散画面接回十字架这一共同中心。',
+      '放大一个圆框，比较里面的小人物、建筑和动作。远看是规律排列，近看各个故事的姿态与场景并不相同。',
+      '比较下方的岩地与上方密集的天堂人物。金色底面没有消除层次，轮廓、大小与排列仍然区分不同的精神空间。',
+    ],
+    displayNote: '展厅名称已核对；尚未将该名称与现有地图的细分编号逐一核合，暂不生成作品定位。',
+  },
+  {
+    id: 'accademia-monaco', title: '《天使报喜与四位圣徒》', originalTitle: 'Annunciazione e santi', category: '金地绘画',
+    creator: '洛伦佐·莫纳科', period: '约1410—1415年', material: '木板蛋彩与金箔', dimensions: '206 × 232厘米', inventoryNumber: 'Inv. 1890 n. 8458', sortYear: 1410, priority: 2,
+    location: '学院美术馆 · 晚期哥特绘画收藏，现展室待核', sourceIds: [source('annunciazione-e-santi-lorenzo-monaco')],
+    image: '/images/details/accademia-monaco.webp', imageAlt: '莫纳科金地多联祭坛画，中央天使向圣母报喜，两侧站立四位圣徒，尖顶部分有空缺',
+    summary: '中央加百列俯身向圣母报喜，两侧圣徒保持更直立的姿态。金色、转色衣褶与尖拱画框共同组织多联画的节奏。',
+    whyItMatters: '画家同时是修士与细密画家，精细金箔处理和鲜明色彩说明晚期哥特艺术并非文艺复兴之前等待被替代的单一阶段。',
+    background: '来自圣普罗科洛教堂的多联画在拿破仑时期宗教机构撤销后曾被拆开，后来重新组合，画框有十九世纪部分，底座小画和若干尖顶圆画已经缺失。现存金色帷幕则保留细密加工与绘制的花纹。应把重组后的框架、空缺位置和原存画板一起观看，不把完整外轮廓误认为所有部件均为十五世纪原状。',
+    lookFor: '比较中央两人的动作与两侧四位圣徒的直立姿态，观察金色帷幕上的纹理，并留意尖顶的空缺。',
+    observations: [
+      '沿加百列的身体曲线移向后退的圣母，比较衣褶颜色由亮转暗的变化。动作与变色衣料共同让中央场景流动起来。',
+      '从左侧圣凯瑟琳脚边的轮形属性看到安东尼的杖，再比较右侧人物服装。圣徒身份靠具体属性区分，不能只看光环。',
+      '看画框顶部的空圆框与中央仍存的祝福圣父。缺失并非本来就留白，复合边框也不能直接当作建筑测绘尺寸使用。',
+    ],
+    displayNote: '作品收藏身份已确认；当前固定展室尚未核实，不生成地图坐标。',
+  },
+  {
+    id: 'accademia-cassone', title: '《婚礼舞蹈》：阿迪马里画板', originalTitle: 'Danza di una festa nuziale (Cassone Adimari)', category: '文艺复兴绘画',
+    creator: '乔瓦尼·迪·塞尔·乔瓦尼，绰号斯凯贾', period: '约1450年', material: '木板蛋彩与金箔', dimensions: '88.5 × 303厘米', inventoryNumber: 'Inv. 1890 n. 8457', sortYear: 1450, priority: 2,
+    location: '底层 · 十五世纪绘画厅 · Sala del Quattrocento', sourceIds: [source('cassone-adimari-lo-scheggia'), 'https://www.galleriaaccademiafirenze.it/visita/'],
+    image: '/images/details/accademia-cassone.webp', imageAlt: '婚礼舞蹈横向完整画板，华服男女在棚幔下成对舞蹈，远处可见洗礼堂',
+    summary: '华服男女在临时棚幔下成对缓舞，乐师与携带器物的仆人分布两侧，佛罗伦萨的建筑成为城市婚礼的背景。',
+    whyItMatters: '这件世俗绘画把婚礼、奢华服装和家庭身份纳入收藏，能与邻近宗教画比较不同的委托用途。',
+    background: '“阿迪马里婚礼箱”是沿用的旧称。作品过去被认为是婚礼箱正面，并与1420年的一场婚礼联系；现馆方解释它原属挂墙的木制装饰板，风格年代约为十五世纪中叶。作者斯凯贾是马萨乔的弟弟，擅长豪华家具绘画。画中的具体婚礼身份不宜根据旧称强行确定，建筑和服饰仍提供了观看当时城市生活的窗口。',
+    lookFor: '先横向看整条舞队，再放大手指相接的舞伴与衣服纹饰，最后辨认左边凉廊和远处洗礼堂。',
+    observations: [
+      '由一对舞伴的手追向相邻人物，观察慢舞如何以间隔和重复组织横长画面。它不是人群无规则地挤在街上。',
+      '比较金线、珍珠和衣摆形成的边缘，再看仆人搬运器皿的动作。不同社会角色不仅靠站位，也靠服饰与工作区分。',
+      '放大背景的洗礼堂与左端建筑。城市地标与临时棚幔共同搭成舞台，画内距离不能直接换算成今天步行距离。',
+    ],
+    displayNote: '旧称保留以便识别，实际并非已确认的婚礼箱正面；展厅细分编号尚待核合，不生成地图定位。',
+  },
+  {
+    id: 'accademia-pontormo', title: '《维纳斯与丘比特》', originalTitle: 'Venere e Cupido', category: '矫饰主义绘画',
+    creator: '蓬托尔莫，根据米开朗琪罗的构图稿', period: '约1532—1534年', material: '木板油画', dimensions: '含框162 × 225厘米', inventoryNumber: 'Inv. 1890 n. 1570', sortYear: 1532, priority: 2,
+    location: '学院美术馆 · 十六世纪绘画收藏，现展室待核', sourceIds: [source('venere-e-cupido')],
+    image: '/images/details/accademia-pontormo.webp', imageAlt: '蓬托尔莫维纳斯与丘比特完整画面，横卧女神扭转身体，丘比特从上方靠近，左侧有面具与器物',
+    summary: '横卧的维纳斯转动上身，丘比特俯近她的脸。身体有近乎雕塑般的体积，周围面具、花与箭具使亲密姿态带上寓意。',
+    whyItMatters: '它把米开朗琪罗的形体构思转为绘画，也连接诗歌与爱情寓意；作者是蓬托尔莫，不是米开朗琪罗亲手绘制的油画。',
+    background: '画作原为银行家巴尔托洛梅奥·贝蒂尼的房间制作，那里的但丁、彼特拉克与薄伽丘肖像使爱情主题与文学相联系。米开朗琪罗提供构图稿，蓬托尔莫将其转化为色彩与油画表面。作品后来被带入旧宫，维纳斯的裸身曾被补绘衣料遮盖，十九世纪又移除这些覆盖；今天的可见形象经历过收藏与修复的干预。',
+    lookFor: '比较女神扭转的上身与伸展的双腿，再看丘比特的主动接近及左侧面具，分开观看身体动作与寓意道具。',
+    observations: [
+      '沿女神膝部、腹部到肩部寻找连续转折，再与丘比特俯身的短弧线比较。两个人体用了不同节奏，不只是大小不同。',
+      '看维纳斯面对亲吻时的神情，与丘比特的动作强度比较。两者的回应差异，为感官欲望与精神爱情的解读留下空间。',
+      '寻找一侧的面具、花和箭具，再回到人物。道具可以提示爱情的双面与短暂，但不必给画中每一块暗色都强加单一象征。',
+    ],
+    displayNote: '当前固定展室尚未核实，保留作品介绍而不生成地图定位。',
+  },
+  {
+    id: 'accademia-spinet', title: '克里斯托福里椭圆形斯皮内琴', originalTitle: 'Spinetta ovale', category: '历史乐器',
+    creator: '巴尔托洛梅奥·克里斯托福里', period: '1690年', material: '玫瑰木与柏木', inventoryNumber: 'Inv. Eredità Bardini n. 3376', sortYear: 1690, priority: 2,
+    location: '底层 · 7 乐器馆 · Museo degli Strumenti Musicali', sourceIds: [source('spinetta-ovale-bartolomeo-cristofori')],
+    image: '/images/details/accademia-spinet.webp', imageAlt: '椭圆形斯皮内琴全貌，长琴身向左右伸展，键盘从前缘中央突出',
+    summary: '键盘从长而两端收尖的琴身前缘伸出，琴弦通过拨弦发声。它出自后来发明钢琴的克里斯托福里，但本身不是以琴槌击弦的钢琴。',
+    whyItMatters: '造琴者既处理造型也试验声音，原作与现代演奏复制品的分工，说明保存历史器物不等于必须恢复其实际使用。',
+    background: '克里斯托福里受梅第奇宫廷延揽，负责乐器维护、搬移与制造。这件1690年作品后来在斯特凡诺·巴尔迪尼的收藏中被重新发现；莱比锡另藏一件1693年同类乐器，并非本件。馆方另有2001年制作的复制品，用来探索可能的历史声音而不改造原作。观看或聆听展示时应区分实物、复制品和声音记录。',
+    lookFor: '看中央键盘与横长琴箱的比例，再比较两端弧线；听展示声音时区分拨弦与击弦机制，不把造琴者的所有作品统称钢琴。',
+    observations: [
+      '先看键盘位于长边中央，而不是现代三角钢琴那样接在一端。结构让演奏者与琴身形成不同的空间关系。',
+      '比较琴箱两侧逐渐收尖的曲线和上表面弦列所在区域。外形服务于内部安排，不只是为宫廷陈设做一个椭圆装饰盒。',
+      '把它与同厅弦乐器的琴桥、弦和共鸣箱相比较。两者都用弦与木材，却通过不同动作激发声音，乐器收藏因此也能作为技术史来读。',
+    ],
+    displayNote: '定位为乐器展区参考，不是展柜坐标；2001年的演奏复制品与1690年原作分开说明。',
+  },
+];

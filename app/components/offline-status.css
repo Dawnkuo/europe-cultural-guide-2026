@@ -1,0 +1,17 @@
+.offline-mark { cursor: pointer; background: transparent; color: inherit; border: 0; padding: 10px; min-width: 44px; min-height: 44px; }
+.offline-panel { width: min(480px, calc(100% - 32px)); max-height: calc(100dvh - 48px); overflow-y: auto; padding: 24px; color: var(--text); background: var(--surface); border: 1px solid var(--line); }
+.offline-panel::backdrop { background: rgb(0 0 0 / 72%); }
+.offline-panel header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.offline-panel h2 { font-family: inherit; font-weight: 600; font-size: 24px; line-height: 1.3; margin: 0; }
+.offline-panel header button { background: none; border: 0; color: var(--text); width: 44px; height: 44px; display: grid; place-items: center; }
+.offline-panel p { font-size: 15px; line-height: 1.7; margin: 16px 0; }
+.offline-panel .offline-panel-status { display: flex; align-items: center; gap: 10px; color: var(--gold); font-weight: 600; }
+.offline-panel progress { appearance: none; width: 100%; height: 10px; border: 0; background: var(--surface-panel); color: var(--gold); accent-color: var(--gold); }
+.offline-panel progress::-webkit-progress-bar { background: var(--surface-panel); }
+.offline-panel progress::-webkit-progress-value { background: var(--gold); }
+.offline-panel progress::-moz-progress-bar { background: var(--gold); }
+.offline-panel .offline-count, .offline-panel .offline-version { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.offline-panel .offline-retry { display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid var(--gold); color: var(--gold); background: transparent; min-height: 44px; padding: 8px 16px; }
+.offline-retry:disabled { opacity: .5; cursor: not-allowed; }
+.offline-mark:focus-visible, .offline-panel button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+@media (max-width: 760px) { .offline-panel { padding: 16px; } }

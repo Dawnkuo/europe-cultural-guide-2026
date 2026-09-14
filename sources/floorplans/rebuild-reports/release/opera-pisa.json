@@ -1,7 +1,7 @@
 {
   "slug": "opera-pisa",
   "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared the architect's ground-floor project drawing: actual building wings, cloister and courtyard void are retained with the visible partitions, not a simplified museum rectangle.",
     "floorCoverageReview": "Ground project level only; upper rooms, present exhibition partitions and vertical landings are missing.",
@@ -15,8 +15,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T10:01:15.815Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:57:05.585Z",
     "slug": "opera-pisa",
     "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
     "sourceDigest": "ecaaab6aa30ec9f8f2581a847b181831805ec4ebeed263eb3a0527ad8303b078",
@@ -32,6 +32,8 @@
             "exactLabels": 3,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -40,11 +42,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/opera-pisa-1440-3d.png",
-          "work/map-review/release-final/opera-pisa-1440-ground-2d.png"
+          "work/map-review/release-shard-0/opera-pisa-1440-3d.png",
+          "work/map-review/release-shard-0/opera-pisa-1440-ground-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 912,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 3,
@@ -64,6 +66,8 @@
             "exactLabels": 3,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -72,11 +76,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/opera-pisa-1094-3d.png",
-          "work/map-review/release-final/opera-pisa-1094-ground-2d.png"
+          "work/map-review/release-shard-0/opera-pisa-1094-3d.png",
+          "work/map-review/release-shard-0/opera-pisa-1094-ground-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 734,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 3,
@@ -96,6 +100,8 @@
             "exactLabels": 3,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -104,11 +110,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/opera-pisa-390-3d.png",
-          "work/map-review/release-final/opera-pisa-390-ground-2d.png"
+          "work/map-review/release-shard-0/opera-pisa-390-3d.png",
+          "work/map-review/release-shard-0/opera-pisa-390-ground-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 394,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 3,
@@ -138,8 +144,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 1.7,
+    "frameP95Ms": 16.800000000000182,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -156,7 +162,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 164.7472881580971,
+      "mapSpread": 170.14816690057827,
       "screenshot": "work/map-review/guide-pages-final/_guides_opera-pisa_-1440.png",
       "passed": true
     },
@@ -167,7 +173,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 150.83518563092156,
+      "mapSpread": 160.0434414041597,
       "screenshot": "work/map-review/guide-pages-final/_guides_opera-pisa_-1094.png",
       "passed": true
     },
@@ -178,22 +184,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 117.5981158063054,
+      "mapSpread": 100.50344551497969,
       "screenshot": "work/map-review/guide-pages-final/_guides_opera-pisa_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/opera-pisa/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "ground",
     "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

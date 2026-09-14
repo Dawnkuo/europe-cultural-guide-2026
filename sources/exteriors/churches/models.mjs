@@ -206,7 +206,12 @@ export function sanMarco() {
   for(const x of [-28,-17,-6.5,6.5,17,28]){w.box('facade-crowning-support',x,13,38,1.4,9,1.4,'trim');w.pinnacle('facade-crowning',x,38,22,7,.75,'trim');}
   xs.forEach((x,i)=>w.recess('lower-facade-recess',x,.3,39.1,ws[i]-2.5,i===2?14.5:11.5,0,false));
   w.box('south-treasury',26,0,19,10,17,22,'marble');
-  return w.finish();
+  const root=w.finish();
+  // These elevated facade parts overhang the ground outline. The church owns
+  // them; clipping only to that outline leaves floating context blocks.
+  root.userData.sourceOutlineIds=['w138800932'];
+  root.userData.sourceBuildingPartIds=['w431003581','w431003619','w431003685'];
+  return root;
 }
 
 export function grazie() {

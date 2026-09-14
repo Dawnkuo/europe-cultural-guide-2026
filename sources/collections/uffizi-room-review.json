@@ -1,0 +1,33 @@
+{
+  "reviewedAt": "2026-09-09",
+  "plan": {
+    "url": "https://www.datocms-assets.com/103094/1772716618-exe_broch_gli-uffizi_vers-gennaio2026_en.pdf",
+    "printedRevision": "July 2026 update",
+    "sha256": "160dc6ddcc85d25026f8218cb24e85636b953e8b87261d79c9a9ae88d944c3bb",
+    "page": 2,
+    "reviewImage": "work/experience/uffizi-plan-current-p2.png",
+    "geometryChanged": false
+  },
+  "reinstallation": {
+    "url": "https://www.uffizi.it/en/news/the-new-permanent-installation-of-the-botticelli-rooms",
+    "publishedAt": "2026-06-16",
+    "limitation": "Names adjacent Botticelli rooms and the Pollaiolo/Virtues room but supplies no numeric room IDs. Conflicts with the July-labelled PDF's A9 summary and A10-A12 work-in-progress legend. Do not infer new IDs from narrative adjacency or closure status."
+  },
+  "overrides": [
+    { "id": "uffizi-urbino-diptych", "placeId": "L2-A25-1", "evidence": "Exact Duke portrait thumbnail labelled A25 Piero della Francesca; old catalogue A9 retained only in raw acquisition." },
+    { "id": "uffizi-venus-urbino", "placeId": "L1-D23-1", "evidence": "Exact reclining Venus thumbnail labelled D23 Titian, matched by the D23 room legend; D22 is not this room." },
+    { "id": "uffizi-medusa", "placeId": "L1-E4-1", "evidence": "Exact shield thumbnail labelled E4 Caravaggio and E4 Medusa in the legend." },
+    { "id": "uffizi-artemisia-judith", "placeId": "L1-E4-1", "evidence": "Exact Uffizi Judith thumbnail labelled E4 Artemisia; supersedes the catalogue D29 field." },
+    { "id": "uffizi-bacchus", "placeId": "L1-E5-1", "evidence": "E5 Caravaggio Il Bacco in the room legend; supersedes the catalogue D32 field." }
+  ],
+  "qualifiedReferences": [
+    { "id": "uffizi-highlight-1", "placeId": "L2-A9-1", "reason": "July PDF explicitly names Spring and Venus at A9, but new installation text describes facing rooms without numeric IDs. Public note limits A9 to a reference, not an exact current hanging position." },
+    { "id": "uffizi-birth-venus", "placeId": "L2-A9-1", "reason": "Exact Venus thumbnail and legend at A9, with the same unresolved installation discrepancy as Spring." }
+  ],
+  "unmapped": [
+    { "id": "uffizi-fortitude", "reason": "June news explicitly moves/reinstalls the Virtues in the Pollaiolo room without giving its number. Old catalogue A9 is not accepted as a current precise location." },
+    { "id": "uffizi-botticelli-magi", "reason": "June news places the Lami Adoration at the opening of the new Botticelli display but does not identify a numbered room. Catalogue A11 and plan construction notice do not establish its current position." },
+    { "id": "uffizi-three-trees", "reason": "Paper collection object; no confirmed current display room. The E7 Rembrandt painting label is not evidence for this print." }
+  ],
+  "scope": "Room-level references only, not wall coordinates or navigation. All authored works remain readable. All geometry, room numbers, itinerary order and booked timings remain unchanged; closure notices do not delete geometry."
+}

@@ -41,6 +41,18 @@ describe('source-derived architectural plans', () => {
     for (const label of labels) expect(Math.hypot(label.displayAt[0]-label.at[0], label.displayAt[1]-label.at[1])).toBeLessThanOrEqual(28.00001);
     expect(placeRoomLabels(points, 1, [350, 460])).toHaveLength(source.length);
   });
+  it('keeps floor captions free of overlapping room and route labels on narrow scenes', () => {
+    const place = plans[0].places[0];
+    const points = [{ ...place, label: '101', kind: 'room' as const, guideNumbers: [], at: [130, 150] as [number, number] }];
+    const captions = [{ displayAt: [62, 150] as [number, number], width: 100, height: 30 }];
+    const labels = placeSceneLabels(points, [350, 460], place.id, captions);
+    expect(labels).toHaveLength(1);
+    for (const label of labels) for (const caption of captions) {
+      expect(Math.abs(label.displayAt[0] - caption.displayAt[0]) >= (label.width + caption.width) / 2 + 7 || Math.abs(label.displayAt[1] - caption.displayAt[1]) >= (label.height + caption.height) / 2 + 7).toBe(true);
+    }
+    expect(points[0].at).toEqual([130, 150]);
+    expect(placeRoomLabels(points, 1, [350, 460])).toHaveLength(1);
+  });
 
   it('selects source-only room faces ahead of overlapping collection groups', () => {
     const plan = plans.find((p) => p.slug === 'picasso-barcelona')!;

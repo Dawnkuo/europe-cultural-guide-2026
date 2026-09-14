@@ -9,8 +9,8 @@ import { guideContentBySlug } from './content';
 describe('venue-scale collection coverage', () => {
   it('does not truncate large institutions to a fixed three-item template', () => {
     const minimums = {
-      uffizi: 21,
-      'vatican-museums': 26,
+      uffizi: 32,
+      'vatican-museums': 35,
       borghese: 18,
       brera: 11,
       pitti: 9,
@@ -28,7 +28,7 @@ describe('venue-scale collection coverage', () => {
       ).toBeGreaterThanOrEqual(minimum);
     }
     expect(Object.keys(collectionExpansion).length).toBeGreaterThanOrEqual(30);
-    expect(Object.values(collectionExpansion).flat()).toHaveLength(168);
+    expect(Object.values(collectionExpansion).flat().length).toBeGreaterThanOrEqual(177);
   });
 
   it('renders every authored addition with unique identity, factual evidence and three substantive reading layers', () => {

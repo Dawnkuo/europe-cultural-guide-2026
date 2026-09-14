@@ -1,0 +1,280 @@
+.guide-practical__content {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.7fr) minmax(0, 1.7fr);
+  gap: 48px;
+  color: var(--text);
+}
+.guide-visitor-information {
+  margin-bottom: 40px;
+  color: var(--text);
+}
+.guide-visitor-information__topics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 48px;
+}
+.guide-visitor-information__topics article {
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+  min-width: 0;
+}
+.guide-visitor-information h3 {
+  margin: 0 0 14px;
+  font: 600 1.1875rem/1.55 var(--font-ui);
+}
+.guide-visitor-information__topics h3 {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.guide-visitor-information__topics h3 svg {
+  flex: 0 0 21px;
+  margin-top: 4px;
+  color: var(--gold);
+}
+.guide-visitor-information p {
+  margin: 10px 0;
+  font: 400 1rem/1.85 var(--font-ui);
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.guide-visitor-information__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: 12px;
+}
+.guide-visitor-information__links :is(a, button) {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 6px 0;
+  color: var(--gold-bright);
+  background: transparent;
+  border: 0;
+  text-decoration: none;
+  font: 500 0.875rem/1.6 var(--font-ui);
+  text-align: left;
+  cursor: pointer;
+}
+.guide-visitor-information__links svg {
+  flex-shrink: 0;
+}
+.guide-visitor-information__links :is(a, button):hover {
+  text-decoration: underline;
+}
+.guide-visitor-information__links button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  text-decoration: none;
+}
+.guide-visitor-information__faq {
+  margin-top: 26px;
+}
+.guide-visitor-information__faq details {
+  border-top: 1px solid var(--line);
+}
+.guide-visitor-information__faq details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.guide-visitor-information__faq summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  min-height: 56px;
+  padding: 16px 0;
+  font: 500 1rem/1.7 var(--font-ui);
+  list-style: none;
+  cursor: pointer;
+}
+.guide-visitor-information__faq summary::-webkit-details-marker {
+  display: none;
+}
+.guide-visitor-information__faq summary svg {
+  flex: 0 0 19px;
+  color: var(--gold);
+}
+.guide-visitor-information__faq details[open] summary svg {
+  transform: rotate(180deg);
+}
+.guide-visitor-information__faq details > div {
+  max-width: 900px;
+  padding: 0 0 18px;
+}
+.guide-visitor-information__faq details > div p {
+  margin-top: 0;
+}
+.guide-visitor-information :is(a, button, summary):focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 4px;
+}
+.guide-visitor-information p.guide-visitor-information__date {
+  margin-top: 18px;
+  font-size: 0.75rem;
+}
+@media (max-width: 960px) {
+  .guide-visitor-information__topics {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 420px) {
+  .guide-visitor-information__topics article {
+    padding: 22px 0;
+  }
+  .guide-visitor-information h3 {
+    font-size: 1.125rem;
+  }
+  .guide-visitor-information__faq summary {
+    font-size: 1rem;
+  }
+}
+.guide-visit-summary h3,
+.guide-preparation h3 {
+  margin: 0;
+  font: 600 18px/1.5 var(--font-ui);
+}
+.guide-visit-summary h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.guide-visit-summary h3 svg {
+  color: var(--gold);
+}
+.guide-visit-summary ul,
+.guide-preparation ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+.guide-visit-summary li {
+  border-top: 1px solid var(--line);
+}
+.guide-visit-summary li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.guide-visit-summary a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 16px;
+  min-height: 44px;
+  padding: 18px 0;
+  text-decoration: none;
+  color: inherit;
+}
+.guide-visit-summary a > span:first-child {
+  color: var(--muted);
+  font-size: 14px;
+}
+.guide-visit-summary a strong {
+  color: var(--gold-bright);
+  font-size: 17px;
+}
+.guide-visit-summary a > span:nth-child(3) {
+  color: var(--muted);
+  font-size: 13px;
+}
+.guide-visit-summary a svg {
+  justify-self: end;
+}
+.guide-visit-summary a:hover strong {
+  text-decoration: underline;
+}
+.guide-preparation:only-child {
+  grid-column: 1 / -1;
+}
+.guide-preparation header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 44px;
+}
+.guide-preparation header > span {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 13px;
+}
+.guide-preparation header > button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--gold);
+  cursor: pointer;
+}
+.guide-preparation header > button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.guide-preparation li {
+  border-top: 1px solid var(--line);
+}
+.guide-preparation li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.guide-preparation label {
+  display: grid;
+  grid-template-columns: 20px 24px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  padding: 20px 0;
+  font-size: 15px;
+  line-height: 1.8;
+  cursor: pointer;
+}
+.guide-preparation input {
+  width: 20px;
+  height: 20px;
+  margin: 4px 0 0;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+.guide-preparation__number {
+  color: var(--gold);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.guide-preparation label > span:last-child {
+  overflow-wrap: anywhere;
+}
+.guide-preparation > output {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+}
+.guide-practical__content :is(a, button, input):focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 4px;
+}
+@media (max-width: 960px) {
+  .guide-practical__content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+  .guide-visit-summary a {
+    grid-template-columns: auto minmax(0, 1fr) auto 18px;
+    align-items: center;
+    gap: 12px;
+  }
+  .guide-visit-summary a strong {
+    text-align: right;
+  }
+}
+@media (max-width: 420px) {
+  .guide-visit-summary a {
+    grid-template-columns: 1fr auto;
+  }
+  .guide-preparation label {
+    grid-template-columns: 20px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .guide-preparation__number {
+    display: none;
+  }
+}

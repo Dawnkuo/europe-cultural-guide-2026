@@ -20,5 +20,6 @@ export function resolveArchitecturalEntry(plan: ArchitecturalPlan, entry = entri
     throw new Error(`Entrance marker is not on its declared floor: ${plan.slug}/${entry.placeId}`);
   }
   if (entry.status === 'unmapped' && !entry.notice.trim()) throw new Error(`Missing entrance limitation: ${plan.slug}`);
-  return { floor, status: entry.status, notice: entry.status === 'unmapped' ? entry.notice : undefined };
+  const place = entry.status === 'mapped' ? plan.places.find(item => item.id === entry.placeId) : undefined;
+  return { floor, place, status: entry.status, notice: entry.status === 'unmapped' ? entry.notice : undefined };
 }

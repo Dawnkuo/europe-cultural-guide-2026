@@ -1,0 +1,3439 @@
+{
+  "slug": "koln-triangle",
+  "status": "available",
+  "source": "https://api.openstreetmap.org/api/0.6/map.json?bbox=6.967844721217935,50.93786762871003,6.975828078782065,50.942898171289976",
+  "fetchedAt": "2026-09-12T12:31:41.958Z",
+  "bbox": [
+    6.967844721217935,
+    50.93786762871003,
+    6.975828078782065,
+    50.942898171289976
+  ],
+  "registration": "source-coordinate",
+  "counts": {
+    "buildings": 255,
+    "roads": 416,
+    "walls": 82,
+    "taggedHeights": 39,
+    "levelHeights": 163,
+    "estimatedHeights": 53
+  },
+  "issues": [
+    {
+      "id": "r3781535",
+      "issue": "incomplete-or-invalid-building-outline"
+    },
+    {
+      "id": "r11280522",
+      "issue": "koln-triangle: missing way 823881794"
+    }
+  ],
+  "roadFeatures": [
+    {
+      "id": "w4532206",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w9490814",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w9621579",
+      "kind": "secondary",
+      "width": 12,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w15949374",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w20826917",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w20826923",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w20826924",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w21113882",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w22950649",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w22950760",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w22962350",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": true
+    },
+    {
+      "id": "w22962351",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "tagged",
+      "bridge": true
+    },
+    {
+      "id": "w23048843",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w26658883",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27002037",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27002520",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27002524",
+      "kind": "tertiary",
+      "width": 9,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27002966",
+      "kind": "tertiary_link",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27002967",
+      "kind": "tertiary_link",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27003199",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27003200",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27003201",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27003202",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27004080",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27004402",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27004581",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27004855",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w27004856",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27008005",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27341061",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27341062",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w27341063",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w33046305",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w33046306",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w33046307",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w33047382",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w34495260",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w34495271",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w34495273",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w34495274",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w36690313",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w36691756",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": true
+    },
+    {
+      "id": "w37131474",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w37131475",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w37131476",
+      "kind": "tertiary",
+      "width": 12,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w37131477",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w37374454",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w37374455",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w37374457",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w37744227",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w44638121",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w44638123",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w44638368",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w44684426",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w44684427",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w44684548",
+      "kind": "steps",
+      "width": 1,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w44684550",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w44684806",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w44684809",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w44684810",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w44694043",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w45333810",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w48274492",
+      "kind": "unclassified",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w48274790",
+      "kind": "secondary",
+      "width": 9,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w50752510",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w50805379",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w52072927",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w52073623",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w52099160",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w52099161",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w59850453",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w59850454",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w59850457",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w59910733",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w120312036",
+      "kind": "secondary",
+      "width": 9,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w120312038",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w120313584",
+      "kind": "tertiary_link",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w120315042",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w120315043",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w120315045",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w120316923",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w130857895",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w130857896",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w130857897",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w130857898",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w130857899",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w132405221",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w132405222",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w132405233",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w132405244",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w132405273",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w132405274",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w132405276",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w132405285",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w145398206",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w147637300",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w147646203",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w147646205",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w147646206",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w147646207",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w147658022",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w147689673",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w147699582",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w149664989",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w149664993",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w149664997",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w149665000",
+      "kind": "secondary_link",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w160259990",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w160259995",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w160260005",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w176517870",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w186649781",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w191383912",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w191383913",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w194781923",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w194781924",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w202439462",
+      "kind": "unclassified",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w205961481",
+      "kind": "secondary",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w210469120",
+      "kind": "secondary",
+      "width": 12,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w217750681",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w217750682",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w217750684",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w230475118",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w232503632",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w265229086",
+      "kind": "steps",
+      "width": 1,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w265229087",
+      "kind": "path",
+      "width": 1,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w265229089",
+      "kind": "path",
+      "width": 1,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w268165218",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w268165223",
+      "kind": "pedestrian",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w285120672",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w290912816",
+      "kind": "path",
+      "width": 1.5,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w293135763",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": true
+    },
+    {
+      "id": "w293136637",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w293136638",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w293136639",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w293136640",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w297582271",
+      "kind": "service",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w306242995",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w306242996",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w328976899",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w331813532",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w332286476",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w332287591",
+      "kind": "secondary_link",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w332287592",
+      "kind": "secondary",
+      "width": 9,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w332299540",
+      "kind": "secondary",
+      "width": 9,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w332301933",
+      "kind": "secondary",
+      "width": 12,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w332305006",
+      "kind": "secondary",
+      "width": 12,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w350549925",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w350549926",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w361038762",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w361038763",
+      "kind": "steps",
+      "width": 1,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w361038764",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w361039385",
+      "kind": "steps",
+      "width": 3,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w361039386",
+      "kind": "steps",
+      "width": 9,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w361039387",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w361042035",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w361210648",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w375972797",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w400528189",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w400528190",
+      "kind": "secondary",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w401291481",
+      "kind": "residential",
+      "width": 9,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w401291482",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w401978417",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w401980143",
+      "kind": "tertiary",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w401980145",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w401980147",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w402025096",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w413024818",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w413024819",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w413024820",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w413024821",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415290919",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415350389",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w415350390",
+      "kind": "tertiary",
+      "width": 9,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w415350391",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w415350392",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415350394",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415350396",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w415350397",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415350398",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415352314",
+      "kind": "tertiary",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w415352315",
+      "kind": "tertiary_link",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w415353887",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w415361368",
+      "kind": "tertiary_link",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w415361369",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415361370",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w415361371",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415361372",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w415556240",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w415556242",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w417595830",
+      "kind": "steps",
+      "width": 4,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w417595839",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w417595843",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w417595850",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w417624045",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w438468298",
+      "kind": "steps",
+      "width": 4,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w451050955",
+      "kind": "steps",
+      "width": 9,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w451050960",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w460775170",
+      "kind": "steps",
+      "width": 3,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w460775172",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w460779797",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w460783478",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w460788491",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w484617223",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w484617224",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w484617225",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w484617226",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w485954506",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": true
+    },
+    {
+      "id": "w504231390",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": true
+    },
+    {
+      "id": "w552610960",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w552610961",
+      "kind": "steps",
+      "width": 5,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w552610962",
+      "kind": "steps",
+      "width": 5,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w552610963",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w552610964",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w552610965",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w552610966",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w552610967",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w555483867",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w555483868",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w555483870",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w555483872",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w555483873",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w555483874",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w555483875",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w555483876",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": true
+    },
+    {
+      "id": "w555483877",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w557319904",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w565922464",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w565922467",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w598403817",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w626912248",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w638453702",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w640892919",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w640892920",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w663108813",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w663108814",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w663108815",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w663108816",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w663108817",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w663108818",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w663108819",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w663108820",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w675690805",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w675690809",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w677500969",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w691473570",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w769127824",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w769127826",
+      "kind": "living_street",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w785048046",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w794454615",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w794454616",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w794454617",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w794454618",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w795965521",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w797046380",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w827942179",
+      "kind": "tertiary_link",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w856385014",
+      "kind": "living_street",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w867533631",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w867533632",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w867533633",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w868545059",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w870762519",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w872741573",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": true
+    },
+    {
+      "id": "w885164363",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w885164364",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w885165759",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w886181497",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w887572760",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w887572765",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w887587355",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w887587356",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w887587361",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w887587362",
+      "kind": "steps",
+      "width": 1.7,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w887587363",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w887587364",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w887587365",
+      "kind": "steps",
+      "width": 1.7,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w887587366",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w887587369",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w901827380",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w901827381",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w954885239",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w962853325",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w962853329",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w964582873",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w964582875",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w964582877",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w964582878",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w967829307",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w991713399",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w992479899",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w995343651",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w995343653",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w995343654",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w995343655",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w995343656",
+      "kind": "tertiary",
+      "width": 12,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w995343657",
+      "kind": "tertiary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1011193833",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1011698905",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1030695664",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w1030695665",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1046110204",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1046110205",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1046110206",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1046110207",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1046110208",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1046110209",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1046110210",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1050504608",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1050504609",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1071464379",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1078553226",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1078553227",
+      "kind": "steps",
+      "width": 1.5,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w1083610524",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1083610525",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1083613315",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1101686022",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1101686024",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1101686025",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1148287596",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1149532118",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1161134890",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1168070666",
+      "kind": "living_street",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1168070667",
+      "kind": "living_street",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1168070668",
+      "kind": "living_street",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1168070669",
+      "kind": "living_street",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1170048423",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1170048448",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1172849454",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1172849457",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1172849458",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1183401496",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1183404208",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1193422681",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1207024325",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1256480459",
+      "kind": "secondary",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1256480460",
+      "kind": "secondary",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1256480461",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1256480462",
+      "kind": "secondary",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1265002479",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1265002480",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1266882921",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1266882922",
+      "kind": "steps",
+      "width": 1.5,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w1273311487",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1293652653",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1293652654",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1293652656",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1295680106",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1295842271",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1322139009",
+      "kind": "living_street",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1367277294",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1367277295",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1377037517",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1382706726",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1385958447",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1385958448",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1385958449",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1386918369",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1386918370",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1386918371",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1391176361",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1391176362",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1391176363",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1392025026",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1392648614",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1392648615",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1396458706",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1396458707",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1396458708",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1396458709",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1396458710",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1396458711",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1414924859",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1414924864",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1423315363",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1423825554",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1423825555",
+      "kind": "service",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1423825556",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1435747062",
+      "kind": "secondary",
+      "width": 9,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1435747063",
+      "kind": "cycleway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1435747064",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1450732851",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1458565244",
+      "kind": "footway",
+      "width": 9,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w1458565245",
+      "kind": "steps",
+      "width": 9,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w1458565246",
+      "kind": "steps",
+      "width": 9,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w1458565247",
+      "kind": "footway",
+      "width": 9,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w1458565248",
+      "kind": "service",
+      "width": 3.5,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1464598073",
+      "kind": "path",
+      "width": 1,
+      "widthSource": "tagged",
+      "bridge": false
+    },
+    {
+      "id": "w1465522130",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1465522131",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1465522132",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1465522133",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1465522134",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1465522135",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1465522136",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1465522137",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1465522138",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1525308891",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1525308892",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1525308893",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1525308894",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1539586188",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1539831075",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1539831076",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1539831077",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1539831078",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1539831079",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1539831080",
+      "kind": "residential",
+      "width": 6,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1550195465",
+      "kind": "residential",
+      "width": 3,
+      "widthSource": "lanes",
+      "bridge": false
+    },
+    {
+      "id": "w1551535582",
+      "kind": "steps",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1551535583",
+      "kind": "footway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1555189718",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1555189719",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1555189720",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1555189721",
+      "kind": "cycleway",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1555190501",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    },
+    {
+      "id": "w1555190502",
+      "kind": "path",
+      "width": 2,
+      "widthSource": "estimated",
+      "bridge": false
+    }
+  ],
+  "wallFeatures": [
+    {
+      "id": "w44638330",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w44684805",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w44684807",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w44693247",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w52072926",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w63127255",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w130857900",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w194781925",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w194781926",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w256156997",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w256157138",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w268165232",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w268165233",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w268165234",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w268165235",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w330042827",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w331813531",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w332286475",
+      "height": 2,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w361022828",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w361038759",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w361038761",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w361039383",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w361039384",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w361041841",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w361041868",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w361210350",
+      "height": 0.5,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w361210351",
+      "height": 0.5,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w413024816",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w415350388",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w415361367",
+      "height": 2,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w417595817",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w451053951",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w460773575",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w460775171",
+      "height": 0.3,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w460775174",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w460778505",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w460778506",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w460779802",
+      "height": 0.3,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w460788492",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w461379357",
+      "height": 2,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w463103147",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w552610953",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w555483864",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w688398083",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w795965519",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w870762217",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w885164360",
+      "height": 2,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w885164361",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w885260853",
+      "height": 0.5,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w887587357",
+      "height": 0.4,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w887587358",
+      "height": 0.4,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w887587360",
+      "height": 0.4,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w887587367",
+      "height": 2,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w962853327",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w962853328",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w962853330",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w962853332",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w962853333",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w962853334",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w1030695666",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1079244275",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1172993034",
+      "height": 0.5,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w1176897625",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1176897631",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1176897632",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1176897633",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1450732850",
+      "height": 1,
+      "heightSource": "tagged",
+      "width": 0.4
+    },
+    {
+      "id": "w1465057798",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465057799",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465057800",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465057801",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465522139",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465522140",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465522141",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465522142",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465522143",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465522147",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1465522150",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1467299392",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1467299393",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1550196920",
+      "height": 2.4,
+      "heightSource": "estimated",
+      "width": 0.4
+    },
+    {
+      "id": "w1551535585",
+      "height": 1.5,
+      "heightSource": "estimated",
+      "width": 0.4
+    }
+  ]
+}

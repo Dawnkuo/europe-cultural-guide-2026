@@ -1,4 +1,4 @@
-import { writeFile, mkdir, copyFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import * as T from 'three';
 import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
@@ -23,7 +23,13 @@ const destinations = [
 ];
 const directory=new URL('../public/models/churches/',import.meta.url);
 await mkdir(directory,{recursive:true});
-const report=[];
+const selected = new Set(process.argv.slice(2));
+for (const slug of selected) if (!destinations.some(d => d[0] === slug)) throw new Error(`Unknown church: ${slug}`);
+const report=selected.size ? JSON.parse(await readFile(new URL('catalog.json',directory),'utf8')) : [];
+function record(entry) {
+  const index=report.findIndex(item=>item.slug===entry.slug);
+  if(index<0)report.push(entry);else report[index]=entry;
+}
 
 function topView(root,slug) {
   const faces=[];
@@ -49,9 +55,9 @@ function topView(root,slug) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${bounds.min.x-pad} ${bounds.min.z-pad} ${size.x+pad*2} ${size.z+pad*2}" role="img" aria-label="${slug} exterior top view"><rect x="${bounds.min.x-pad}" y="${bounds.min.z-pad}" width="${size.x+pad*2}" height="${size.z+pad*2}" fill="#061019"/>${faces.sort((a,b)=>a.height-b.height).map(f=>`<polygon points="${f.points}" fill="${f.color}" stroke="${f.color}" stroke-width="0.004"/>`).join('')}</svg>`;
 }
 
-for(const [slug,title,city] of destinations) {
+for(const [slug,title,city] of destinations.filter(([slug])=>!selected.size||selected.has(slug))) {
   if(slug==='st-peters-basilica') {
-    report.push({slug,title,city,asset:'../st-peters-exterior.glb',fallback:'../st-peters-exterior.webp',method:'retained-official-exterior',triangles:501503});
+    record({slug,title,city,asset:'../st-peters-exterior.glb',fallback:'../st-peters-exterior.webp',method:'retained-official-exterior',triangles:501503});
     continue;
   }
   let root;
@@ -92,7 +98,7 @@ for(const [slug,title,city] of destinations) {
   const binary=await new GLTFExporter().parseAsync(positioned,{binary:true});
   await writeFile(new URL(`${slug}.glb`,directory),Buffer.from(binary));
   const entry={slug,title,city,asset:`${slug}.glb`,fallback:`${slug}.svg`,method:slug==='milan-duomo'?'approved-milan':builders[slug]?'new-massing':'retained-reviewed-massing',triangles,vertices,bytes:binary.byteLength,geometryHash:hash.digest('hex'),bounds:originalBounds.getSize(new T.Vector3()).toArray(),featureCounts:root.userData.featureCounts??{}};
-  report.push(entry);console.log(`${slug}: ${triangles} triangles, ${Math.round(binary.byteLength/1024)} KB`);
+  record(entry);console.log(`${slug}: ${triangles} triangles, ${Math.round(binary.byteLength/1024)} KB`);
   const materials=new Set();root.traverse(o=>{if(o.isMesh){o.geometry.dispose();materials.add(o.material);}});materials.forEach(m=>m.dispose());
 }
 await writeFile(new URL('catalog.json',directory),JSON.stringify(report,null,2)+'\n');
@@ -100,7 +106,7 @@ await writeFile(new URL('../sources/exteriors/churches/build-report.json',import
 // The approved standalone preview and the main guide consume identical bytes.
 const preview=new URL('../../outputs/milan-cathedral-massing/church-models/',import.meta.url);
 await mkdir(preview,{recursive:true});
-for(const item of report){
+for(const item of report.filter(item=>!selected.size||selected.has(item.slug))){
   const source=new URL(item.asset,directory),target=new URL(`${item.slug}.glb`,preview);
   await copyFile(source,target);
   await copyFile(new URL(item.fallback,directory),new URL(`${item.slug}.${item.slug==='st-peters-basilica'?'webp':'svg'}`,preview));

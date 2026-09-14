@@ -4,6 +4,7 @@ import { guideMediaBySlug } from './guide-media.generated';
 import { guideHeroBySlug } from './guide-hero-media';
 import { guideContentBySlug } from './guides/content';
 import { expandGuideHighlights } from './guides/expanded';
+import { enrichGuideInterpretation } from './guide-interpretation';
 import { tripDays } from './trip';
 import type { GuideRecord, TripItem } from './types';
 
@@ -237,6 +238,7 @@ export const guideCatalog: GuideRecord[] = [
     };
   })
   .map(expandGuideHighlights)
+  .map(enrichGuideInterpretation)
   .sort((left, right) => {
     const leftDate = left.scheduledVisits[0]?.date ?? '';
     const rightDate = right.scheduledVisits[0]?.date ?? '';

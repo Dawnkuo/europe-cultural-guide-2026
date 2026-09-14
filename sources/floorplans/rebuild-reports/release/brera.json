@@ -1,7 +1,7 @@
 {
   "slug": "brera",
   "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared the official gallery leaflet with the complete overhead render: irregular north galleries, open courtyard, perimeter columns, stair treads and lower room sequence are retained. All thirty-five printed gallery identifiers include1A; unprinted16/17/25/26 are not fabricated. Thirty-four selection faces preserve the shared1/6 room.",
     "floorCoverageReview": "The published principal Pinacoteca level, not the palace ground floor or other La Grande Brera institutions.",
@@ -15,8 +15,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T09:53:05.184Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:49:59.542Z",
     "slug": "brera",
     "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
     "sourceDigest": "f60d3d81dba635652fac312a8ec833a810b15bacf0452425cb2d2a598922a298",
@@ -32,6 +32,8 @@
             "exactLabels": 40,
             "guideNumbers": 10,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -46,7 +48,7 @@
           "work/map-review/release-final/brera-1440-gallery-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 550,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 40,
@@ -76,6 +78,8 @@
             "exactLabels": 40,
             "guideNumbers": 10,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -90,7 +94,7 @@
           "work/map-review/release-final/brera-1094-gallery-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 715,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 40,
@@ -120,6 +124,8 @@
             "exactLabels": 40,
             "guideNumbers": 10,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 2.25,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -134,7 +140,7 @@
           "work/map-review/release-final/brera-390-gallery-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 837,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 40,
@@ -175,7 +181,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 7.1,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -192,7 +198,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 111.73414084877642,
+      "mapSpread": 107.70321699119803,
       "screenshot": "work/map-review/guide-pages-final/_guides_brera_-1440.png",
       "passed": true
     },
@@ -203,7 +209,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 126.4726594026809,
+      "mapSpread": 116.61882940623994,
       "screenshot": "work/map-review/guide-pages-final/_guides_brera_-1094.png",
       "passed": true
     },
@@ -214,22 +220,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 141.20113016154576,
+      "mapSpread": 129.73880451443094,
       "screenshot": "work/map-review/guide-pages-final/_guides_brera_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/brera/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "gallery",
     "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

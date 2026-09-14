@@ -1,7 +1,7 @@
 {
   "slug": "santa-maria-mar",
   "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared the academic orthographic composite plan: west entry,nave piers,side chapels and ambulatory/apse are retained. All four descriptive zones correspond to visible building areas; vault/detail lines do not become extra partitions.",
     "floorCoverageReview": "Main church only; crypt,museum,towers and multi-level roof have no reviewed plans. No room numbering exists in this source.",
@@ -15,8 +15,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T10:04:05.183Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:58:20.291Z",
     "slug": "santa-maria-mar",
     "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
     "sourceDigest": "d4056b802a37ee8e096393b931738c856a85425faf7a54e3b98ff2a20188c131",
@@ -32,6 +32,8 @@
             "exactLabels": 4,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -40,11 +42,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/santa-maria-mar-1440-3d.png",
-          "work/map-review/release-final/santa-maria-mar-1440-main-level-2d.png"
+          "work/map-review/release-shard-0/santa-maria-mar-1440-3d.png",
+          "work/map-review/release-shard-0/santa-maria-mar-1440-main-level-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 379,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 4,
@@ -64,6 +66,8 @@
             "exactLabels": 4,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -72,11 +76,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/santa-maria-mar-1094-3d.png",
-          "work/map-review/release-final/santa-maria-mar-1094-main-level-2d.png"
+          "work/map-review/release-shard-0/santa-maria-mar-1094-3d.png",
+          "work/map-review/release-shard-0/santa-maria-mar-1094-main-level-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 310,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 4,
@@ -96,6 +100,8 @@
             "exactLabels": 4,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -104,11 +110,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/santa-maria-mar-390-3d.png",
-          "work/map-review/release-final/santa-maria-mar-390-main-level-2d.png"
+          "work/map-review/release-shard-0/santa-maria-mar-390-3d.png",
+          "work/map-review/release-shard-0/santa-maria-mar-390-main-level-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 199,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 4,
@@ -139,7 +145,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.800000000000182,
-    "renderP95Ms": 2.1,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -156,7 +162,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 124.55360410515479,
+      "mapSpread": 141.37236243682423,
       "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-1440.png",
       "passed": true
     },
@@ -167,7 +173,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 120.85247531164416,
+      "mapSpread": 141.69537879560903,
       "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-1094.png",
       "passed": true
     },
@@ -178,22 +184,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 106.96624027745423,
+      "mapSpread": 97.58323698731257,
       "screenshot": "work/map-review/guide-pages-final/_guides_santa-maria-mar_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/santa-maria-mar/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "main-level",
     "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

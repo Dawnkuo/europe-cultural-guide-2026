@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
 import { pathToFileURL } from "node:url";
-import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js";
+import { MeshoptDecoder, MeshoptEncoder } from "meshoptimizer";
 
 const aligned = (value) => (value + 3) & ~3;
 const hash = (value) => createHash("sha256").update(value).digest("hex");
@@ -50,8 +50,6 @@ export async function decodeAccessor(source, index) {
 }
 
 export async function extractExterior(input) {
-  // Encoding is an optional acquisition step; the shipped asset uses Three's decoder.
-  const { MeshoptEncoder } = await import("meshoptimizer");
   await MeshoptEncoder.ready;
   const source = readGlb(input);
   const parent = source.json.nodes.find(

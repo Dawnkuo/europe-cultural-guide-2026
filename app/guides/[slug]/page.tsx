@@ -7,6 +7,7 @@ import { OnsiteGuide } from '../../components/OnsiteGuide';
 import { SiteNav } from '../../components/SiteNav';
 import { guideBySlug, guideCatalog } from '../../data/guides';
 import { withBasePath } from '../../lib/paths';
+import { GuideExperience } from '../../components/GuideExperience';
 
 export const dynamic = 'force-static';
 export const dynamicParams = false;
@@ -36,7 +37,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
   }
 
   return (
-    <main className="subpage guide-page">
+    <GuideExperience key={guide.slug} guide={guide}><main className="subpage guide-page">
       <SiteNav active="guides" />
       <GuideHero guide={guide} />
       <nav className="guide-local-nav" aria-label="本章目录">
@@ -69,6 +70,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
       <GuideHighlights guide={guide} />
       <GuideSequence guide={guide} />
       <GuidePractical guide={guide} />
-    </main>
+    </main></GuideExperience>
   );
 }

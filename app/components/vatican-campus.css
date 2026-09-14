@@ -1,0 +1,78 @@
+.vatican-campus { background:#061019; color:#eae6da; border:1px solid #665b3d; min-width:0; }
+.vatican-campus__modes { display:flex; gap:4px; padding:8px 12px; margin:0; min-width:0; border:0; border-bottom:1px solid #665b3d; }
+.vatican-campus__modes button { min-width:96px; min-height:44px; padding:8px 14px; border:1px solid transparent; background:transparent; color:#c4d0d7; font-size:15px; cursor:pointer; }
+.vatican-campus__modes button[aria-pressed=true] { color:#f0d184; border-color:#ba9952; background:#25312f; }
+.vatican-campus__three { min-width:0; }
+.vatican-campus__three-stage { position:relative; width:100%; height:640px; overflow:hidden; touch-action:none; }
+.vatican-campus__three-stage canvas { display:block; width:100%; height:100%; }
+.vatican-campus__three-stage:focus-visible { outline:3px solid #f0d38b; outline-offset:-3px; }
+.vatican-campus__three-selected { position:absolute; left:16px; bottom:16px; max-width:calc(100% - 32px); padding:7px 10px; border:1px solid #ba9952; color:#f0d184; background:#061019; font-size:14px; pointer-events:none; }
+.vatican-campus__scope { margin:0; padding:12px 16px; color:#bac7cf; font-size:14px; line-height:1.7; border-top:1px solid #665b3d; }
+.vatican-campus__three-loading { min-height:440px; display:grid; place-items:center; color:#c4d0d7; }
+.vatican-campus__module-failure { min-height:440px; padding:24px; display:flex; flex-direction:column; gap:16px; align-items:center; justify-content:center; color:#c4d0d7; }
+.vatican-campus__module-failure button { min-height:44px; padding:8px 12px; background:#0b1b28; color:#e8c977; border:1px solid #665b3d; cursor:pointer; }
+.vatican-campus__tools { display:flex; align-items:center; gap:8px; padding:10px 16px; background:#0b1b28; border-bottom:1px solid #665b3d; }
+.vatican-campus__tools span { display:flex; align-items:center; gap:8px; margin-right:auto; font-size:14px; color:#c4d0d7; }
+.vatican-campus__tools output { min-width:48px; font-size:14px; text-align:right; }
+.vatican-campus__tools button { display:grid; place-items:center; width:44px; height:44px; color:#e8c977; background:transparent; border:1px solid transparent; cursor:pointer; }
+.vatican-campus__tools button:disabled { opacity:.4; cursor:default; }
+.vatican-campus__tools button:not(:disabled):hover { border-color:#b49651; }
+.vatican-campus button:focus-visible, .vatican-campus a:focus-visible, .vatican-campus__stage:focus-visible { outline:3px solid #f0d38b; outline-offset:-3px; }
+.vatican-campus__body { display:grid; grid-template-columns:minmax(0,1fr) 260px; align-items:start; }
+.vatican-campus__stage { position:relative; min-width:0; overflow:hidden; touch-action:none; }
+.vatican-campus .vatican-campus__viewport, .vatican-campus .vatican-campus__content { width:100%; }
+.vatican-campus__canvas { position:relative; width:calc(100% - 32px); margin:16px; flex-shrink:0; aspect-ratio:1430/1240; }
+.vatican-campus__canvas img { display:block; width:100%; height:100%; object-fit:contain; }
+.vatican-campus__leaders { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+.vatican-campus__leaders line { stroke:#bbac7b; stroke-width:1; }
+.vatican-campus__leaders circle { fill:#f0d184; }
+.vatican-campus__label { position:absolute; min-height:32px; white-space:nowrap; font-size:14px; line-height:1.4; padding:5px 8px; color:#e9dfc1; background:#061019; border:1px solid #6d654e; cursor:pointer; }
+.vatican-campus__label[aria-pressed=true] { color:#f0d184; border-color:#f0d184; }
+.vatican-campus__pin { position:absolute; display:grid; place-items:center; width:44px; height:44px; border-radius:50%; color:#0b1822; background:#f0d184; box-shadow:0 0 0 3px #061019; pointer-events:none; }
+.vatican-campus__regions { padding:16px; background:#0b1b28; border-left:1px solid #665b3d; }
+.vatican-campus h3 { margin:0 0 12px; font-size:20px; line-height:1.4; letter-spacing:0; }
+.vatican-campus__list { display:grid; gap:4px; }
+.vatican-campus__list button { text-align:left; min-height:44px; padding:8px 10px; font-size:15px; line-height:1.4; background:transparent; border:1px solid transparent; color:#bac7cf; cursor:pointer; }
+.vatican-campus__list button:hover { color:#f0d184; background:#122838; }
+.vatican-campus__list button[aria-pressed=true] { color:#f0d184; border-color:#ba9952; background:#25312f; }
+.vatican-campus__detail { border-top:1px solid #665b3d; padding:20px; }
+.vatican-campus__detail p { max-width:75ch; margin:0; font-size:16px; line-height:1.8; color:#bdc8ce; }
+.vatican-campus__links { display:flex; flex-wrap:wrap; gap:12px; margin-top:14px; }
+.vatican-campus__links:empty { display:none; }
+.vatican-campus__links button, .vatican-campus__links a { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:8px 12px; background:#0b1b28; color:#e8c977; border:1px solid #665b3d; font-size:15px; line-height:1.5; cursor:pointer; text-decoration:none; }
+.vatican-campus__failure { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; padding:24px; background:#061019; }
+.vatican-campus__failure button { min-height:44px; padding:8px 12px; background:#0b1b28; color:#e8c977; border:1px solid #665b3d; }
+@media (max-width:1100px), (orientation:portrait) {
+  .vatican-campus__body { grid-template-columns:minmax(0,1fr); }
+  .vatican-campus__regions { border-left:0; border-top:1px solid #665b3d; padding:14px; }
+  .vatican-campus__list { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .vatican-campus__label, .vatican-campus__leaders { display:none; }
+}
+@media (max-width:600px) {
+  .vatican-campus__three-stage { height:440px; }
+  .vatican-campus__tools { gap:4px; padding:8px; }
+  .vatican-campus__list { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .vatican-campus__list button { font-size:14px; padding:8px; overflow-wrap:anywhere; }
+  .vatican-campus__detail { padding:16px; }
+  .vatican-campus h3 { font-size:18px; }
+}
+.vatican-library { margin-block: 1rem; border-block: 1px solid var(--border, #475047); }
+.vatican-library > summary { padding: 1rem 0; color: #e7ca82; cursor: pointer; font-size: 1rem; }
+.vatican-library > summary:focus-visible { outline: 2px solid #e7ca82; outline-offset: 3px; }
+.vatican-library__plan { display: block; width: 100%; height: 260px; background: #061019; }
+.vatican-library__plan.is-portrait { display: none; }
+.vatican-library__viewport { height: 260px; overflow: hidden; touch-action: none; }
+.vatican-library__viewport:focus-visible { outline: 2px solid #e7ca82; outline-offset: -2px; }
+.vatican-library .vatican-library__transform, .vatican-library .vatican-library__content { width: 100%; height: 100%; }
+.vatican-library__legend { display: flex; flex-wrap: wrap; gap: 8px 28px; padding: 12px 12px 12px 32px; margin: 0; color: #c4d0d7; font-size: 14px; }
+.vatican-library__legend li { list-style: none; }
+.vatican-library__legend span { color: #e7ca82; margin-right: 5px; }
+.vatican-library .vatican-campus__tools span { min-width: 0; }
+.vatican-library .vatican-campus__tools button { flex: 0 0 44px; }
+.vatican-library .vatican-campus__three-stage { height: 440px; }
+@media (max-width: 640px) {
+  .vatican-library .vatican-campus__three-stage { height: 380px; }
+  .vatican-library__viewport, .vatican-library__plan { height: 380px; }
+  .vatican-library__plan.is-landscape { display: none; }
+  .vatican-library__plan.is-portrait { display: block; }
+}

@@ -1,7 +1,7 @@
 {
   "slug": "milan-duomo",
   "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared the cathedral authority's actual main-floor/security attachment and separate Scurolo di San Carlo inset. Retains continuous black structural walls, piers, transepts, choir and apse; red camera-coverage hatching, entry glyphs and lettering are not masonry. The crypt crop excludes the neighboring baptistery overlay and the locator inset.",
     "floorCoverageReview": "Main church and San Carlo crypt. The31m/45m terraces have no reviewed orthographic plan and are not cloned from the nave.",
@@ -16,8 +16,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T10:00:32.025Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:56:46.792Z",
     "slug": "milan-duomo",
     "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
     "sourceDigest": "4397e81e57eec8b278e6eb02a66f70e292881e1618f0acc2660e13fb10e13515",
@@ -33,6 +33,8 @@
             "exactLabels": 2,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -44,6 +46,8 @@
             "exactLabels": 4,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -52,12 +56,12 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/milan-duomo-1440-3d.png",
-          "work/map-review/release-final/milan-duomo-1440-crypt-san-carlo-2d.png",
-          "work/map-review/release-final/milan-duomo-1440-cathedral-2d.png"
+          "work/map-review/release-shard-0/milan-duomo-1440-3d.png",
+          "work/map-review/release-shard-0/milan-duomo-1440-crypt-san-carlo-2d.png",
+          "work/map-review/release-shard-0/milan-duomo-1440-cathedral-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 140,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 6,
@@ -77,6 +81,8 @@
             "exactLabels": 2,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -88,6 +94,8 @@
             "exactLabels": 4,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -96,12 +104,12 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/milan-duomo-1094-3d.png",
-          "work/map-review/release-final/milan-duomo-1094-crypt-san-carlo-2d.png",
-          "work/map-review/release-final/milan-duomo-1094-cathedral-2d.png"
+          "work/map-review/release-shard-0/milan-duomo-1094-3d.png",
+          "work/map-review/release-shard-0/milan-duomo-1094-crypt-san-carlo-2d.png",
+          "work/map-review/release-shard-0/milan-duomo-1094-cathedral-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 180,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 6,
@@ -121,6 +129,8 @@
             "exactLabels": 2,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -132,6 +142,8 @@
             "exactLabels": 4,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -140,12 +152,12 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/milan-duomo-390-3d.png",
-          "work/map-review/release-final/milan-duomo-390-crypt-san-carlo-2d.png",
-          "work/map-review/release-final/milan-duomo-390-cathedral-2d.png"
+          "work/map-review/release-shard-0/milan-duomo-390-3d.png",
+          "work/map-review/release-shard-0/milan-duomo-390-crypt-san-carlo-2d.png",
+          "work/map-review/release-shard-0/milan-duomo-390-cathedral-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 254,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 6,
@@ -177,7 +189,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.2,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -194,7 +206,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 68.8881515021358,
+      "mapSpread": 83.68531276810832,
       "screenshot": "work/map-review/guide-pages-final/_guides_milan-duomo_-1440.png",
       "passed": true
     },
@@ -205,7 +217,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 85.74391230089654,
+      "mapSpread": 90.85989153767412,
       "screenshot": "work/map-review/guide-pages-final/_guides_milan-duomo_-1094.png",
       "passed": true
     },
@@ -216,22 +228,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 90.51122655878487,
+      "mapSpread": 111.1673242539003,
       "screenshot": "work/map-review/guide-pages-final/_guides_milan-duomo_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/milan-duomo/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "cathedral",
     "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

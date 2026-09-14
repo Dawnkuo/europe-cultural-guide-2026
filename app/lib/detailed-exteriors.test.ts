@@ -4,6 +4,26 @@ import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js
 import { buildDetailedExterior } from './detailed-exteriors';
 
 describe('source-reviewed exterior silhouettes', () => {
+  it('keeps Sagrada aisle windows visibly in front of the wall on both sides', () => {
+    const model = buildDetailedExterior(THREE, mergeGeometries, 'sagrada-familia')!;
+    model.updateMatrixWorld(true);
+    expect(model.userData.featureCounts['aisle-window']).toBe(12);
+    for (const side of [-1, 1]) for (const bay of [3, 4, 5]) {
+      const z = -2.7 + bay * 1.14 + .4;
+      for (const angle of [-.25, 0, .25]) {
+        const origin = new THREE.Vector3(side * 4, 1.62, z + angle);
+        const direction = new THREE.Vector3(side * 2.15, 1.62, z).sub(origin).normalize();
+        const hit = new THREE.Raycaster(origin, direction).intersectObject(model, true)[0];
+        expect((hit.object as THREE.Mesh<THREE.BufferGeometry, THREE.MeshStandardMaterial>).material.color.getHex()).toBe(0x304b4e);
+        expect(Math.abs(hit.point.x) - 2.15).toBeGreaterThan(.02);
+      }
+    }
+    model.traverse(object => {
+      if (!(object instanceof THREE.Mesh)) return;
+      object.geometry.dispose();
+      (object.material as THREE.Material).dispose();
+    });
+  });
   it.each(['sagrada-familia', 'casa-batllo', 'pantheon'])(
     'builds finite, bounded and batched geometry for %s',
     (slug) => {

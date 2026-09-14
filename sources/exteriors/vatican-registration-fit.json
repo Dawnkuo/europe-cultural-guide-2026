@@ -1,0 +1,44 @@
+{
+  "id": "vatican-horizontal-registration-v1",
+  "coefficients": {
+    "a": 0.037694703625716953,
+    "b": 2.160052845571907,
+    "tx": 639.453170280671,
+    "ty": 1673.5970633468105
+  },
+  "formula": [
+    "u=a*x-b*z+tx",
+    "v=b*x+a*z+ty"
+  ],
+  "pixelsPerMeshUnit": 2.160381722368694,
+  "holdout": [
+    {
+      "id": "north-fountain",
+      "predicted": [
+        775.9017092057088,
+        2286.3046904886946
+      ],
+      "observed": [
+        776,
+        2288
+      ],
+      "residualPixels": 1.6981564767019668,
+      "accepted": true
+    },
+    {
+      "id": "south-fountain",
+      "predicted": [
+        519.1675596286191,
+        2290.1811472371483
+      ],
+      "observed": [
+        517,
+        2292
+      ],
+      "residualPixels": 2.8295830287434036,
+      "accepted": true
+    }
+  ],
+  "completeCompound": false,
+  "verticalRegistration": "unknown-outside-official-mesh"
+}

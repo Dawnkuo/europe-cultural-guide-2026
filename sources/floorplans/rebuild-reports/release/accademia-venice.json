@@ -1,7 +1,7 @@
 {
   "slug": "accademia-venice",
   "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared both museum leaflet floors with their 2D renderings. Ground-floor Arabic and first-floor Roman identifiers retain their identities, including XXIV and the irregular VI area. Forty-two source-connected gallery selection regions preserve real partitions, shared openings, courtyards and service spaces.",
     "floorCoverageReview": "Both published visitor levels. VIa/VIb lack separately recoverable locations and are explicitly unresolved, not silently substituted with new rooms.",
@@ -16,8 +16,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T09:52:17.025Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:48:54.750Z",
     "slug": "accademia-venice",
     "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
     "sourceDigest": "6809eac6370f94b3a12017d6e243e3789135a4f9c97d1dc810f7c3d462a11264",
@@ -33,6 +33,8 @@
             "exactLabels": 19,
             "guideNumbers": 15,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -44,6 +46,8 @@
             "exactLabels": 29,
             "guideNumbers": 8,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -61,7 +65,7 @@
           "work/map-review/release-final/accademia-venice-1440-ground-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 613,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 48,
@@ -103,6 +107,8 @@
             "exactLabels": 19,
             "guideNumbers": 15,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -114,6 +120,8 @@
             "exactLabels": 29,
             "guideNumbers": 8,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -131,7 +139,7 @@
           "work/map-review/release-final/accademia-venice-1094-ground-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 810,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 48,
@@ -173,6 +181,8 @@
             "exactLabels": 19,
             "guideNumbers": 15,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -184,6 +194,8 @@
             "exactLabels": 29,
             "guideNumbers": 8,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -201,7 +213,7 @@
           "work/map-review/release-final/accademia-venice-390-ground-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 1063,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 48,
@@ -254,8 +266,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 4.9,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -272,7 +284,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 94.53804146183117,
+      "mapSpread": 94.70779438578975,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-1440.png",
       "passed": true
     },
@@ -283,7 +295,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 104.66149933469843,
+      "mapSpread": 102.3092786724118,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-1094.png",
       "passed": true
     },
@@ -294,22 +306,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 114.93482029079972,
+      "mapSpread": 116.38011094473708,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-venice_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/accademia-venice/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "ground",
     "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

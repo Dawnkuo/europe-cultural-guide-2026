@@ -13,6 +13,7 @@ export type ArchitecturalFloor = {
   order: number;
   bounds: [number, number, number, number];
   features: PlanFeature[];
+  legend?: Array<{ tone: string; label: string }>;
 };
 export type PlanPlace = {
   id: string;
@@ -21,6 +22,7 @@ export type PlanPlace = {
   name: string;
   kind: 'room' | 'service' | 'area' | 'object';
   at: MapPoint;
+  showLabel?: boolean;
   // Derived display metadata, separate from the source's room number.
   guideNumbers?: number[];
 };
@@ -96,8 +98,9 @@ export function guideNumberWidth(numbers: number[] = []) {
   return numbers.length ? Math.max(20, numbers.join('·').length * 8 + 8) : 0;
 }
 
-function placeLabelWidth(place: PlanPlace) {
-  const room = Math.max(26, (serviceMarkerKind(place) ? 14 : roomLabelWidth(place.label)) + 12);
+export function placeLabelWidth(place: PlanPlace) {
+  const icon = serviceMarkerKind(place);
+  const room = Math.max(26, (icon ? 14 + (place.showLabel ? roomLabelWidth(place.label) + 4 : 0) : roomLabelWidth(place.label)) + 12);
   const badge = guideNumberWidth(place.guideNumbers);
   return room + (badge ? badge + 4 : 0);
 }
@@ -107,6 +110,10 @@ export function independentFloorScale(floor: ArchitecturalFloor, span = 16) {
   return span / Math.max(floor.bounds[2] - floor.bounds[0], floor.bounds[3] - floor.bounds[1]);
 }
 
+// Display-space heights, not surveyed metres. Markers must clear the wall extrusion.
+export const planWallHeight = .28;
+export const planAnchorLift = planWallHeight + .018 + .04;
+
 export function planFloorGap(plan: ArchitecturalPlan) {
   const gap = plan.display?.floorGap;
   return typeof gap === 'number' && Number.isFinite(gap) && gap >= 3 && gap <= 10 ? gap : 7.5;
@@ -115,6 +122,7 @@ export function planFloorGap(plan: ArchitecturalPlan) {
 export const planTones: Record<string, string> = {
   neutral: '#243c47', stone: '#f0dfb8', gold: '#9b7d40',
   blue: '#476d87', teal: '#367e80', green: '#527c65', rose: '#94616b',
+  foundation: '#1a2b35', circulation: '#375565', courtyard: '#476963',
 };
 
 export function polygonPath(polygon: MapPolygon) {
@@ -163,10 +171,12 @@ function roomLabelWidth(label: string) {
   return width;
 }
 
-function packLabelRows(places: PlanPlace[], pixelsPerUnit: number, extent: [number, number]): PlacedLabel[] {
-  const gap = 2 / pixelsPerUnit, margin = 3;
+type LabelMetrics = { height?: number; gap?: number };
+
+function packLabelRows(places: PlanPlace[], pixelsPerUnit: number, extent: [number, number], metrics: LabelMetrics): PlacedLabel[] {
+  const gap = (metrics.gap ?? 2) / pixelsPerUnit, margin = 3;
   const labels = places.map((place) => ({ ...place, displayAt: [...place.at] as MapPoint,
-    width: placeLabelWidth(place) / pixelsPerUnit, height: 23 / pixelsPerUnit }));
+    width: placeLabelWidth(place) / pixelsPerUnit, height: (metrics.height ?? 23) / pixelsPerUnit }));
   const rows: Array<{ labels: PlacedLabel[]; width: number }> = [];
   for (const label of labels.sort((a, b) => b.width - a.width || a.id.localeCompare(b.id))) {
     const row = rows.filter((r) => r.width + gap + label.width <= extent[0] - margin * 2)
@@ -174,7 +184,7 @@ function packLabelRows(places: PlanPlace[], pixelsPerUnit: number, extent: [numb
     if (row) { row.labels.push(label); row.width += gap + label.width; }
     else rows.push({ labels: [label], width: label.width });
   }
-  const rowHeight = 23 / pixelsPerUnit;
+  const rowHeight = (metrics.height ?? 23) / pixelsPerUnit;
   const height = rows.length * (rowHeight + gap) - gap;
   if (height > extent[1] - margin * 2 || rows.some((row) => row.width > extent[0] - margin * 2)) {
     throw new Error('Map label extent is too small for the complete place inventory');
@@ -194,15 +204,15 @@ function packLabelRows(places: PlanPlace[], pixelsPerUnit: number, extent: [numb
 }
 
 // Move labels, never their canonical room anchors. All IDs survive every zoom.
-export function placeRoomLabels(places: PlanPlace[], pixelsPerUnit: number, extent?: [number, number]): PlacedLabel[] {
+export function placeRoomLabels(places: PlanPlace[], pixelsPerUnit: number, extent?: [number, number], metrics: LabelMetrics = {}): PlacedLabel[] {
   const placed: PlacedLabel[] = [];
   for (const place of [...places].sort((a, b) => a.at[1] - b.at[1] || a.at[0] - b.at[0] || a.id.localeCompare(b.id))) {
     const width = placeLabelWidth(place) / pixelsPerUnit;
-    const height = 23 / pixelsPerUnit;
+    const height = (metrics.height ?? 23) / pixelsPerUnit;
     const within = (at: MapPoint) => !extent || (at[0] >= width / 2 + 3 && at[1] >= height / 2 + 3 && at[0] + width / 2 + 3 <= extent[0] && at[1] + height / 2 + 3 <= extent[1]);
     const collides = (at: MapPoint) => placed.some((other) =>
-      Math.abs(at[0] - other.displayAt[0]) < (width + other.width) / 2 + 2 / pixelsPerUnit &&
-      Math.abs(at[1] - other.displayAt[1]) < (height + other.height) / 2 + 2 / pixelsPerUnit);
+      Math.abs(at[0] - other.displayAt[0]) < (width + other.width) / 2 + (metrics.gap ?? 2) / pixelsPerUnit &&
+      Math.abs(at[1] - other.displayAt[1]) < (height + other.height) / 2 + (metrics.gap ?? 2) / pixelsPerUnit);
     const origin: MapPoint = extent ? [Math.max(width / 2 + 3, Math.min(extent[0] - width / 2 - 3, place.at[0])), Math.max(height / 2 + 3, Math.min(extent[1] - height / 2 - 3, place.at[1]))] : [...place.at];
     let displayAt: MapPoint = [...origin];
     let found = within(displayAt) && !collides(displayAt);
@@ -216,7 +226,7 @@ export function placeRoomLabels(places: PlanPlace[], pixelsPerUnit: number, exte
     }
     // Radial greedy placement can strand usable space after a camera rotation.
     // Repack the complete set into bounded rows instead of dropping a marker.
-    if (!found && extent) return packLabelRows(places, pixelsPerUnit, extent);
+    if (!found && extent) return packLabelRows(places, pixelsPerUnit, extent, metrics);
     if (!found) throw new Error(`Cannot place room label ${place.id}`);
     placed.push({ ...place, displayAt, width, height });
   }
@@ -234,7 +244,9 @@ export function planViewBounds(floor: ArchitecturalFloor, labels: PlacedLabel[])
 
 // Scene labels stay near their projected anchors. The complete numbered
 // inventory remains in the 2D plan and the accessible location selector.
-export function placeSceneLabels(places: PlanPlace[], extent: [number, number], selectedId?: string): PlacedLabel[] {
+export type LabelObstacle = { displayAt: MapPoint; width: number; height: number };
+
+export function placeSceneLabels(places: PlanPlace[], extent: [number, number], selectedId?: string, reserved: LabelObstacle[] = []): PlacedLabel[] {
   const placed: PlacedLabel[] = [];
   const ordered = [...places].sort((a, b) => Number(b.id === selectedId) - Number(a.id === selectedId) || Number(Boolean(b.guideNumbers?.length)) - Number(Boolean(a.guideNumbers?.length)) || a.at[1] - b.at[1] || a.at[0] - b.at[0] || a.id.localeCompare(b.id));
   for (const place of ordered) {
@@ -242,7 +254,7 @@ export function placeSceneLabels(places: PlanPlace[], extent: [number, number], 
     const height = 24;
     const candidates: MapPoint[] = [[...place.at]];
     for (const distance of [16, 28]) for (let i = 0; i < 8; i++) candidates.push([place.at[0] + Math.cos(i * Math.PI / 4) * distance, place.at[1] + Math.sin(i * Math.PI / 4) * distance]);
-    const displayAt = candidates.find((p) => p[0] >= width / 2 + 3 && p[1] >= height / 2 + 3 && p[0] + width / 2 + 3 <= extent[0] && p[1] + height / 2 + 3 <= extent[1] && placed.every((other) => Math.abs(p[0] - other.displayAt[0]) >= (width + other.width) / 2 + 7 || Math.abs(p[1] - other.displayAt[1]) >= (height + other.height) / 2 + 7));
+    const displayAt = candidates.find((p) => p[0] >= width / 2 + 3 && p[1] >= height / 2 + 3 && p[0] + width / 2 + 3 <= extent[0] && p[1] + height / 2 + 3 <= extent[1] && [...placed, ...reserved].every((other) => Math.abs(p[0] - other.displayAt[0]) >= (width + other.width) / 2 + 7 || Math.abs(p[1] - other.displayAt[1]) >= (height + other.height) / 2 + 7));
     if (displayAt) placed.push({ ...place, displayAt, width, height });
   }
   return placed;

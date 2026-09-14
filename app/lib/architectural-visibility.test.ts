@@ -1,9 +1,23 @@
 import { describe, expect, it } from 'vitest';
-import { BoxGeometry, Mesh, MeshBasicMaterial, OrthographicCamera, Raycaster, Vector3 } from 'three';
+import { BoxGeometry, DoubleSide, Mesh, MeshBasicMaterial, OrthographicCamera, Raycaster, Vector3 } from 'three';
 import { focusPlanAnchor, isPlanAnchorVisible } from './architectural-visibility';
+import { planAnchorLift, planWallHeight } from './architectural-plan';
 import { MeshBVH, acceleratedRaycast, disposeBoundsTree } from 'three-mesh-bvh';
 
 describe('architectural label occlusion', () => {
+  it('keeps an entrance marker above raised display walls without disabling occlusion', () => {
+    const wall = new Mesh(new BoxGeometry(2, planWallHeight, 2), new MeshBasicMaterial({ side: DoubleSide }));
+    wall.position.y = .018 + planWallHeight / 2;
+    wall.updateMatrixWorld();
+    const camera = new OrthographicCamera(-8, 8, 8, -8, .1, 100);
+    camera.position.set(0, 12, .01); camera.lookAt(0, 0, 0); camera.updateMatrixWorld();
+    const raycaster = new Raycaster();
+    expect(isPlanAnchorVisible(new Vector3(0, .14, 0), camera, [wall], raycaster)).toBe(false);
+    expect(isPlanAnchorVisible(new Vector3(0, planAnchorLift, 0), camera, [wall], raycaster)).toBe(true);
+    wall.position.y += 3; wall.updateMatrixWorld();
+    expect(isPlanAnchorVisible(new Vector3(0, planAnchorLift, 0), camera, [wall], raycaster)).toBe(false);
+    wall.geometry.dispose(); wall.material.dispose();
+  });
   it('focuses a masked lower-floor stop from a clear angle without hiding or moving the floor', () => {
     const camera = new OrthographicCamera(-10, 10, 10, -10, .1, 100);
     const geometry = new BoxGeometry(10, .1, 10);

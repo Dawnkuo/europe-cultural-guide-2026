@@ -1,7 +1,7 @@
 {
   "slug": "st-mark-basilica",
   "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared the published main plan and full letter/number legend. All forty-seven positioned identifiers,chapels,narthex,treasury and genuine Byzantine wall/pier fabric remain. Source stippled masonry is classified separately from black outlines,stairs and dome projections, which stay flat.",
     "floorCoverageReview": "Published main church/narthex/chapel/treasury level only; museum/loggia upper plan is absent.",
@@ -15,8 +15,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T10:04:23.694Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:56:47.059Z",
     "slug": "st-mark-basilica",
     "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
     "sourceDigest": "3262fdff479ebc50a32a7c8982fc5880ea231ff8139d012a5be2ceb6674c383c",
@@ -32,6 +32,8 @@
             "exactLabels": 47,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -40,11 +42,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/st-mark-basilica-1440-3d.png",
-          "work/map-review/release-final/st-mark-basilica-1440-main-2d.png"
+          "work/map-review/release-shard-2/st-mark-basilica-1440-3d.png",
+          "work/map-review/release-shard-2/st-mark-basilica-1440-main-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 485,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 47,
@@ -64,6 +66,8 @@
             "exactLabels": 47,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -72,11 +76,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/st-mark-basilica-1094-3d.png",
-          "work/map-review/release-final/st-mark-basilica-1094-main-2d.png"
+          "work/map-review/release-shard-2/st-mark-basilica-1094-3d.png",
+          "work/map-review/release-shard-2/st-mark-basilica-1094-main-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 630,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 47,
@@ -96,6 +100,8 @@
             "exactLabels": 47,
             "guideNumbers": 4,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 2.25,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -104,11 +110,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/st-mark-basilica-390-3d.png",
-          "work/map-review/release-final/st-mark-basilica-390-main-2d.png"
+          "work/map-review/release-shard-2/st-mark-basilica-390-3d.png",
+          "work/map-review/release-shard-2/st-mark-basilica-390-main-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 640,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 47,
@@ -139,7 +145,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 4.4,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -156,7 +162,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 173.7934681316669,
+      "mapSpread": 157.8342277679508,
       "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-basilica_-1440.png",
       "passed": true
     },
@@ -167,7 +173,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 193.5576714255469,
+      "mapSpread": 170.66520969462977,
       "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-basilica_-1094.png",
       "passed": true
     },
@@ -178,22 +184,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 188.18393947335747,
+      "mapSpread": 154.96977985138656,
       "screenshot": "work/map-review/guide-pages-final/_guides_st-mark-basilica_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/st-mark-basilica/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "main",
     "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

@@ -21,6 +21,23 @@ function dispose(root: T.Object3D) {
 }
 
 describe('church exterior delivery', () => {
+  it('ships Sagrada window panels separated from the wall in the actual GLB', async () => {
+    const bytes = await readFile(new URL('sagrada-familia.glb', directory));
+    const root = (await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.length), '')).scene;
+    root.updateMatrixWorld(true);
+    const normalized = root.children.find(child => typeof child.userData.scaleToDisplay === 'number')!;
+    expect(normalized).toBeDefined();
+    for (const side of [-1, 1]) for (const bay of [3, 4, 5]) for (const angle of [-.25, 0, .25]) {
+      const z = -2.7 + bay * 1.14 + .4;
+      const origin = new T.Vector3(side * 4, 1.62, z + angle).applyMatrix4(normalized.matrixWorld);
+      const wall = new T.Vector3(side * 2.15, 1.62, z).applyMatrix4(normalized.matrixWorld);
+      const hit = new T.Raycaster(origin, wall.clone().sub(origin).normalize()).intersectObject(root, true)[0];
+      expect((hit.object as T.Mesh<T.BufferGeometry, T.MeshStandardMaterial>).material.color.getHex()).toBe(0x304b4e);
+      const local = normalized.worldToLocal(hit.point.clone());
+      expect(Math.abs(local.x) - 2.15).toBeGreaterThan(.02);
+    }
+    dispose(root);
+  });
   it('covers every selected site with local geometry, evidence and fallback', async () => {
     expect(catalog.map((x: {slug: string}) => x.slug).sort()).toEqual([...churchExteriorSlugs, 'st-peters-basilica'].sort());
     expect(evidence.sites.map((x: {slug: string}) => x.slug).sort()).toEqual(catalog.map((x: {slug: string}) => x.slug).sort());

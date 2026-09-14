@@ -1,7 +1,7 @@
 {
   "slug": "correr",
   "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared the two official collection diagrams, including royal suites and adjacent archaeological/library wings. Keeps sixteen source places and nine connected selection regions; room outlines are not replaced by equal-width thematic blocks.",
     "floorCoverageReview": "Published first-floor collections and upper picture gallery; surrounding institutions are context, not a claim of ticket access.",
@@ -16,8 +16,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T09:55:16.197Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:53:28.692Z",
     "slug": "correr",
     "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
     "sourceDigest": "72a359f7f6f67c405933911997567605f39f1ad34d13de561c06a8dc7ed49006",
@@ -33,6 +33,8 @@
             "exactLabels": 14,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -44,6 +46,8 @@
             "exactLabels": 2,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -52,16 +56,16 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/correr-1440-3d.png",
-          "work/map-review/release-final/correr-1440-L1-2d.png",
-          "work/map-review/release-final/correr-1440-L2-2d.png",
-          "work/map-review/release-final/correr-1440-L1-selection-2d.png",
-          "work/map-review/release-final/correr-1440-L1-selection-3d.png",
-          "work/map-review/release-final/correr-1440-L2-selection-2d.png",
-          "work/map-review/release-final/correr-1440-L2-selection-3d.png"
+          "work/map-review/release-shard-1/correr-1440-3d.png",
+          "work/map-review/release-shard-1/correr-1440-L1-2d.png",
+          "work/map-review/release-shard-1/correr-1440-L2-2d.png",
+          "work/map-review/release-shard-1/correr-1440-L1-selection-2d.png",
+          "work/map-review/release-shard-1/correr-1440-L1-selection-3d.png",
+          "work/map-review/release-shard-1/correr-1440-L2-selection-2d.png",
+          "work/map-review/release-shard-1/correr-1440-L2-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 458,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 16,
@@ -86,6 +90,8 @@
             "exactLabels": 14,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -97,6 +103,8 @@
             "exactLabels": 2,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -105,16 +113,16 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/correr-1094-3d.png",
-          "work/map-review/release-final/correr-1094-L1-2d.png",
-          "work/map-review/release-final/correr-1094-L2-2d.png",
-          "work/map-review/release-final/correr-1094-L1-selection-2d.png",
-          "work/map-review/release-final/correr-1094-L1-selection-3d.png",
-          "work/map-review/release-final/correr-1094-L2-selection-2d.png",
-          "work/map-review/release-final/correr-1094-L2-selection-3d.png"
+          "work/map-review/release-shard-1/correr-1094-3d.png",
+          "work/map-review/release-shard-1/correr-1094-L1-2d.png",
+          "work/map-review/release-shard-1/correr-1094-L2-2d.png",
+          "work/map-review/release-shard-1/correr-1094-L1-selection-2d.png",
+          "work/map-review/release-shard-1/correr-1094-L1-selection-3d.png",
+          "work/map-review/release-shard-1/correr-1094-L2-selection-2d.png",
+          "work/map-review/release-shard-1/correr-1094-L2-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 596,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 16,
@@ -139,6 +147,8 @@
             "exactLabels": 14,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -150,6 +160,8 @@
             "exactLabels": 2,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -158,16 +170,16 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/correr-390-3d.png",
-          "work/map-review/release-final/correr-390-L1-2d.png",
-          "work/map-review/release-final/correr-390-L2-2d.png",
-          "work/map-review/release-final/correr-390-L1-selection-2d.png",
-          "work/map-review/release-final/correr-390-L1-selection-3d.png",
-          "work/map-review/release-final/correr-390-L2-selection-2d.png",
-          "work/map-review/release-final/correr-390-L2-selection-3d.png"
+          "work/map-review/release-shard-1/correr-390-3d.png",
+          "work/map-review/release-shard-1/correr-390-L1-2d.png",
+          "work/map-review/release-shard-1/correr-390-L2-2d.png",
+          "work/map-review/release-shard-1/correr-390-L1-selection-2d.png",
+          "work/map-review/release-shard-1/correr-390-L1-selection-3d.png",
+          "work/map-review/release-shard-1/correr-390-L2-selection-2d.png",
+          "work/map-review/release-shard-1/correr-390-L2-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 470,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 16,
@@ -204,7 +216,7 @@
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 4.8,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -221,7 +233,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 125.64109055825439,
+      "mapSpread": 126.07745632857947,
       "screenshot": "work/map-review/guide-pages-final/_guides_correr_-1440.png",
       "passed": true
     },
@@ -232,7 +244,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 142.5610072046055,
+      "mapSpread": 136.4958780596551,
       "screenshot": "work/map-review/guide-pages-final/_guides_correr_-1094.png",
       "passed": true
     },
@@ -243,22 +255,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 133.22016557104817,
+      "mapSpread": 116.67155503327913,
       "screenshot": "work/map-review/guide-pages-final/_guides_correr_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/correr/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "L1",
     "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

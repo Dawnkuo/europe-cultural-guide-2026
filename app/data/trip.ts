@@ -79,9 +79,9 @@ export const tripDays: TripDay[] = [
         time: "09:30–09:45",
         title: "《最后的晚餐》",
         city: "米兰",
-        status: "待确认",
+        status: "已订",
         kind: "museum",
-        note: "行程记录为已订09:30，但票据文件夹中缺少PDF。",
+        note: "你已确认持票；参观时段沿用既定行程，实际入场以所持门票为准。",
         routePoint: true,
       },
       {

@@ -19,6 +19,7 @@ async function install(failAt?: number) {
       registration: { scope: 'https://example.test/europe-cultural-guide-2026/' },
       addEventListener: (type: string, handler: typeof handlers extends Map<string, infer V> ? V : never) => handlers.set(type, handler),
       skipWaiting: vi.fn(),
+      clients: { matchAll: vi.fn(async () => []) },
     },
     caches: { open: async () => cache },
     fetch: async () => new Response(JSON.stringify({ version: 2, routes: ['/guides/uffizi/'], assets: Array.from({ length: 1000 }, (_, i) => `/images/${i}.jpg`) })),

@@ -40,6 +40,14 @@ export type GuideHighlight = {
   sourceIds?: string[];
   image?: string;
   imageAlt?: string;
+  background?: string;
+  observations?: string[];
+  material?: string;
+  dimensions?: string;
+  inventoryNumber?: string;
+  sortYear?: number;
+  priority?: 1 | 2 | 3;
+  gallery?: Array<{ src: string; alt: string; caption?: string }>;
 };
 
 export type GuideSource = {

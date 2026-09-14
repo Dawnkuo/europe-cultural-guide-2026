@@ -1,7 +1,7 @@
 {
   "slug": "pitti",
   "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared ground,mezzanine,first and second published diagrams. Preserves all available numbered treasure rooms and Palatine/royal suite divisions, with sixty-three places and six supported region selections. Second floor remains a collection-zone outline, not falsely detailed rooms. Closure notices do not delete treasure-room geometry.",
     "floorCoverageReview": "Four source diagrams of unequal detail and independent scale. Second-floor individual-room layout remains missing.",
@@ -18,8 +18,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T10:03:01.957Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:57:55.216Z",
     "slug": "pitti",
     "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
     "sourceDigest": "48ffb473f8c1ad772e3873c9011de35e2426901b27c13e58f813c48c991ef244",
@@ -35,6 +35,8 @@
             "exactLabels": 14,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -46,6 +48,8 @@
             "exactLabels": 14,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -57,6 +61,8 @@
             "exactLabels": 31,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -68,6 +74,8 @@
             "exactLabels": 4,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -76,18 +84,18 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/pitti-1440-3d.png",
-          "work/map-review/release-final/pitti-1440-L0-2d.png",
-          "work/map-review/release-final/pitti-1440-MZ-2d.png",
-          "work/map-review/release-final/pitti-1440-L1-2d.png",
-          "work/map-review/release-final/pitti-1440-L2-2d.png",
-          "work/map-review/release-final/pitti-1440-L1-selection-2d.png",
-          "work/map-review/release-final/pitti-1440-L1-selection-3d.png",
-          "work/map-review/release-final/pitti-1440-L2-selection-2d.png",
-          "work/map-review/release-final/pitti-1440-L2-selection-3d.png"
+          "work/map-review/release-shard-0/pitti-1440-3d.png",
+          "work/map-review/release-shard-0/pitti-1440-L0-2d.png",
+          "work/map-review/release-shard-0/pitti-1440-MZ-2d.png",
+          "work/map-review/release-shard-0/pitti-1440-L1-2d.png",
+          "work/map-review/release-shard-0/pitti-1440-L2-2d.png",
+          "work/map-review/release-shard-0/pitti-1440-L1-selection-2d.png",
+          "work/map-review/release-shard-0/pitti-1440-L1-selection-3d.png",
+          "work/map-review/release-shard-0/pitti-1440-L2-selection-2d.png",
+          "work/map-review/release-shard-0/pitti-1440-L2-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 460,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 63,
@@ -112,6 +120,8 @@
             "exactLabels": 14,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -123,6 +133,8 @@
             "exactLabels": 14,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -134,6 +146,8 @@
             "exactLabels": 31,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -145,6 +159,8 @@
             "exactLabels": 4,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -153,18 +169,18 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/pitti-1094-3d.png",
-          "work/map-review/release-final/pitti-1094-L0-2d.png",
-          "work/map-review/release-final/pitti-1094-MZ-2d.png",
-          "work/map-review/release-final/pitti-1094-L1-2d.png",
-          "work/map-review/release-final/pitti-1094-L2-2d.png",
-          "work/map-review/release-final/pitti-1094-L1-selection-2d.png",
-          "work/map-review/release-final/pitti-1094-L1-selection-3d.png",
-          "work/map-review/release-final/pitti-1094-L2-selection-2d.png",
-          "work/map-review/release-final/pitti-1094-L2-selection-3d.png"
+          "work/map-review/release-shard-0/pitti-1094-3d.png",
+          "work/map-review/release-shard-0/pitti-1094-L0-2d.png",
+          "work/map-review/release-shard-0/pitti-1094-MZ-2d.png",
+          "work/map-review/release-shard-0/pitti-1094-L1-2d.png",
+          "work/map-review/release-shard-0/pitti-1094-L2-2d.png",
+          "work/map-review/release-shard-0/pitti-1094-L1-selection-2d.png",
+          "work/map-review/release-shard-0/pitti-1094-L1-selection-3d.png",
+          "work/map-review/release-shard-0/pitti-1094-L2-selection-2d.png",
+          "work/map-review/release-shard-0/pitti-1094-L2-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 592,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 63,
@@ -189,6 +205,8 @@
             "exactLabels": 14,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -200,6 +218,8 @@
             "exactLabels": 14,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -211,6 +231,8 @@
             "exactLabels": 31,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 3.375,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -222,6 +244,8 @@
             "exactLabels": 4,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -230,18 +254,18 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/pitti-390-3d.png",
-          "work/map-review/release-final/pitti-390-L0-2d.png",
-          "work/map-review/release-final/pitti-390-MZ-2d.png",
-          "work/map-review/release-final/pitti-390-L1-2d.png",
-          "work/map-review/release-final/pitti-390-L2-2d.png",
-          "work/map-review/release-final/pitti-390-L1-selection-2d.png",
-          "work/map-review/release-final/pitti-390-L1-selection-3d.png",
-          "work/map-review/release-final/pitti-390-L2-selection-2d.png",
-          "work/map-review/release-final/pitti-390-L2-selection-3d.png"
+          "work/map-review/release-shard-0/pitti-390-3d.png",
+          "work/map-review/release-shard-0/pitti-390-L0-2d.png",
+          "work/map-review/release-shard-0/pitti-390-MZ-2d.png",
+          "work/map-review/release-shard-0/pitti-390-L1-2d.png",
+          "work/map-review/release-shard-0/pitti-390-L2-2d.png",
+          "work/map-review/release-shard-0/pitti-390-L1-selection-2d.png",
+          "work/map-review/release-shard-0/pitti-390-L1-selection-3d.png",
+          "work/map-review/release-shard-0/pitti-390-L2-selection-2d.png",
+          "work/map-review/release-shard-0/pitti-390-L2-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 1262,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 63,
@@ -279,8 +303,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 4,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -297,7 +321,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 93.09060732201776,
+      "mapSpread": 102.47667993742422,
       "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-1440.png",
       "passed": true
     },
@@ -308,7 +332,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 111.09108344751192,
+      "mapSpread": 111.07923828179503,
       "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-1094.png",
       "passed": true
     },
@@ -319,22 +343,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 141.77660485249078,
+      "mapSpread": 150.14722221624953,
       "screenshot": "work/map-review/guide-pages-final/_guides_pitti_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/pitti/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "L0",
     "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

@@ -26,32 +26,49 @@ async function screenshotMap(page, path) {
 }
 
 async function checkLabelPixels(map, floorId) {
+  const labels = await map.locator('.architectural-map__2d-labels button').all();
+  const painted = new Set();
   const viewport = map.locator('.architectural-map__viewport');
-  const buffer = await viewport.screenshot({ style: '.subnav,.guide-local-nav{visibility:hidden!important}' });
-  const labels = await viewport.evaluate((host) => {
-    const bounds = host.getBoundingClientRect();
-    return [...host.querySelectorAll('[data-place-id] button')].map((button) => {
-      const sourceText = button.querySelector('[data-place-label]');
-      const node = sourceText.classList.contains('sr-only') ? button : sourceText;
-      const rect = node.getBoundingClientRect();
-      // Narrow glyphs can paint one pixel outside a fractional text box.
-      // The text margin remains well inside the button, excluding its border.
-      return { label: node.textContent, x: rect.x - bounds.x, y: rect.y - bounds.y, width: rect.width, height: rect.height, inset: node === button ? 3 : -1 };
+  for (const [index, button] of labels.entries()) {
+    if (painted.has(index)) continue;
+    await button.scrollIntoViewIfNeeded();
+    const buffer = await viewport.screenshot({ style: '.subnav,.guide-local-nav{visibility:hidden!important}' });
+    const metadata = await sharp(buffer).metadata();
+    const visible = await map.locator('.architectural-map__2d-labels button').evaluateAll(nodes => {
+      const viewport = nodes[0]?.closest('.architectural-map__viewport')?.getBoundingClientRect();
+      if (!viewport) return [];
+      return nodes.flatMap((button, index) => {
+        const text = button.querySelector('[data-place-label]');
+        const node = text?.classList.contains('sr-only') ? button.querySelector('svg') : text;
+        if (!node) return [];
+        const rect = node.getBoundingClientRect();
+        const left = rect.left - viewport.left, top = rect.top - viewport.top;
+        if (rect.width <= 0 || rect.height <= 0 || left < 0 || top < 0 || left + rect.width > viewport.width || top + rect.height > viewport.height) return [];
+        return [{ index, label: text.textContent, left, top, width: rect.width, height: rect.height, viewportWidth: viewport.width, viewportHeight: viewport.height }];
+      });
     });
-  });
-  const { data, info } = await sharp(buffer).removeAlpha().raw().toBuffer({ resolveWithObject: true });
-  for (const label of labels) {
-    let ink = 0;
-    for (let y = Math.ceil(label.y + label.inset); y < Math.floor(label.y + label.height - label.inset); y++) {
-      for (let x = Math.ceil(label.x + label.inset); x < Math.floor(label.x + label.width - label.inset); x++) {
-        if (x < 0 || y < 0 || x >= info.width || y >= info.height) continue;
-        const offset = (y * info.width + x) * info.channels;
-        if (data[offset] > 170 && data[offset + 1] > 140 && data[offset + 2] > 100) ink++;
-      }
+    // One viewport capture verifies every fully visible glyph, not just the scrolled target.
+    for (const glyph of visible) {
+      if (painted.has(glyph.index)) continue;
+      const sx = metadata.width / glyph.viewportWidth, sy = metadata.height / glyph.viewportHeight;
+      const left = Math.floor(glyph.left * sx), top = Math.floor(glyph.top * sy);
+      const width = Math.min(metadata.width - left, Math.ceil(glyph.width * sx));
+      const height = Math.min(metadata.height - top, Math.ceil(glyph.height * sy));
+      const { channels } = await sharp(buffer).extract({ left, top, width, height }).stats();
+      check(channels.slice(0, 3).some(channel => channel.stdev > 8), `Label has no painted glyph pixels: ${floorId}/${glyph.label}`);
+      painted.add(glyph.index);
     }
-    check(ink >= 3, `Label has no painted glyph pixels: ${floorId}/${label.label}`);
+    if (painted.has(index)) continue;
+    // Oversized labels still receive an individual glyph capture.
+    const text = button.locator('[data-place-label]');
+    const label = await text.textContent();
+    const node = (await text.getAttribute('class'))?.includes('sr-only') ? button.locator('svg').first() : text;
+    const glyph = await node.screenshot({ style: '.subnav,.guide-local-nav{visibility:hidden!important}' });
+    const { channels } = await sharp(glyph).stats();
+    check(channels.slice(0, 3).some(channel => channel.stdev > 8), `Label has no painted glyph pixels: ${floorId}/${label}`);
+    painted.add(index);
   }
-  return labels.length;
+  return painted.size;
 }
 
 try {
@@ -121,17 +138,26 @@ try {
             check(JSON.stringify(badges) === JSON.stringify(expectedBadges), `Guide numbers differ from stop bindings: ${floor.id}`);
           };
           const readLabels = () => map.locator('.architectural-map__2d-labels [data-place-id]').evaluateAll((nodes) => nodes.map((node) => ({ id: node.dataset.placeId, label: node.querySelector('[data-place-label]')?.textContent })).sort((a, b) => a.id.localeCompare(b.id)));
-          const labelPaint = await map.locator('.architectural-map__2d-labels button').evaluateAll((nodes) => nodes.map((node) => {
+          const readPaint = () => map.locator('.architectural-map__2d-labels button').evaluateAll((nodes) => nodes.map((node) => {
             const rect = node.getBoundingClientRect(), style = getComputedStyle(node);
             return { label: node.textContent, width: rect.width, height: rect.height, fontSize: Number.parseFloat(style.fontSize), visible: style.visibility === 'visible' && style.display !== 'none' && Number(style.opacity) > 0 };
           }));
-          check(labelPaint.every((label) => label.visible && label.width >= 24 && label.height >= 21 && label.fontSize >= 12), `Unpaintable room label: ${floor.id}`);
+          const overview = await map.locator('.architectural-map__viewport').evaluate(host => {
+            const plane = host.querySelector('.architectural-map__plane').getBoundingClientRect();
+            return { fits: plane.width <= host.clientWidth + 1 && plane.height <= host.clientHeight + 1, zoom: Number(host.dataset.zoom) };
+          });
+          check(overview.fits && overview.zoom === 1, `Initial map does not fit the viewport: ${floor.id}`);
+          check((await readPaint()).every(label => label.visible && label.width > 0 && label.height > 0), `Hidden overview label: ${floor.id}`);
           check(await map.locator('foreignObject').count() === 0, '2D labels must not depend on embedded HTML inside scaled SVG');
           check(JSON.stringify(await readLabels()) === JSON.stringify(expected), `Missing/changed room labels at minimum zoom: ${floor.id}`);
           await checkBadges();
           const path = join(output, `${prefix}-${floor.id}-2d.png`);
           result.screenshots.push(path);
           await screenshotMap(page, path);
+          const readable = labels => labels.every(label => label.visible && label.width >= 24 && label.height >= 21 && label.fontSize >= 12);
+          for (let step = 0; step < 20 && !readable(await readPaint()); step++) await map.getByRole('button', { name: '放大地图', exact: true }).click();
+          check(readable(await readPaint()), `Labels cannot reach readable size: ${floor.id}`);
+          const readingZoom = Number(await map.locator('.architectural-map__viewport').getAttribute('data-zoom'));
           const paintedLabels = await checkLabelPixels(map, floor.id);
           for (let i = 0; i < 6; i++) await map.getByRole('button', { name: '放大地图', exact: true }).click();
           await page.waitForFunction(() => {
@@ -158,15 +184,23 @@ try {
           }
           const firstBinding = model.stopBindings.find((binding) => model.places.find((p) => p.id === binding.placeId)?.floorId === floor.id);
           if (firstBinding) {
-            await map.getByRole('combobox', { name: '定位地点', exact: true }).selectOption(firstBinding.placeId);
+            // Test a fresh explicit focus, independently of the preserved selection above.
+            await page.reload({ waitUntil: 'domcontentloaded' });
+            await map.waitFor();
+            await map.getByRole('button', { name: floor.label, exact: true }).click();
             await map.getByRole('button', { name: '3D', exact: true }).click();
             await canvas.waitFor();
+            // Opening 3D fits every floor; an explicit selection then focuses its anchor.
+            await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+            const picker = map.getByRole('combobox', { name: '定位地点', exact: true });
+            check(await picker.inputValue() === '', '3D focus check must start without an existing selection');
+            await picker.selectOption(firstBinding.placeId);
             const badge = map.locator(`.architectural-map__scene-labels [data-place-id="${firstBinding.placeId}"] [data-guide-numbers]`);
             await badge.waitFor({ state: 'visible', timeout: 15000 });
             check((await badge.getAttribute('data-guide-numbers')).split(',').includes(String(firstBinding.stopIndex + 1)), `Focused 3D guide number missing: ${floor.id}`);
             await map.getByRole('button', { name: '2D 俯视', exact: true }).click();
           }
-          result.floors.push({ id: floor.id, exactLabels: expected.length, guideNumbers: expectedBadges.length, minMaxZoom: true, viewRoundTrip: true, scrollEdges: reached });
+          result.floors.push({ id: floor.id, exactLabels: expected.length, guideNumbers: expectedBadges.length, minMaxZoom: true, overviewFit: true, readingZoom, viewRoundTrip: true, scrollEdges: reached });
         }
         result.selectedSpaces = [];
         const capturedSelectionFloors = new Set();

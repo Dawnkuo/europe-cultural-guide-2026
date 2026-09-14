@@ -29,9 +29,9 @@ export const bookingRecords: BookingRecord[] = [
     category: '门票',
     title: '《最后的晚餐》',
     date: '9月26日',
-    status: '待确认',
-    validity: '原表09:30；缺票',
-    note: '行程写已订，文件夹未找到凭证；缺凭证不等于未预订。',
+    status: '已订',
+    validity: '行程09:30',
+    note: '你已确认持票；参观时段沿用既定行程，实际入场以所持门票为准。',
   },
   {
     id: 'sforza',

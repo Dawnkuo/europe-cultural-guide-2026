@@ -1,0 +1,852 @@
+[
+  {
+    "slug": "la-pedrera",
+    "asset": "la-pedrera.glb",
+    "fallback": "la-pedrera.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "two-open-courtyards",
+      "undulating-stone-facade",
+      "iron-balconies",
+      "sculptural-roof"
+    ],
+    "featureCounts": {
+      "dual-courtyard-envelope": 1,
+      "undulating-stone-bands": 2538,
+      "street-window-recesses": 95,
+      "balcony-slab": 32,
+      "iron-balcony-bars": 288,
+      "iron-balcony-rail": 32,
+      "courtyard-windows": 80,
+      "roof-parapet": 3,
+      "six-stairwell-exits": 6,
+      "roof-door": 6,
+      "two-ventilation-towers": 2,
+      "ventilation-caps": 2,
+      "twenty-nine-chimneys": 29,
+      "chimney-dark-vent": 29
+    },
+    "triangles": 100141,
+    "bytes": 5431628,
+    "geometryHash": "7d8d7092eb8ffeb74f30ea895e5ac71007aa02b349282d67908338d916776192",
+    "bounds": [
+      64.73349571228027,
+      33,
+      53.67465019226074
+    ],
+    "sourceOutlineIds": [
+      "r8974896"
+    ]
+  },
+  {
+    "slug": "galleria-vittorio",
+    "asset": "galleria-vittorio.glb",
+    "fallback": "galleria-vittorio.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "cross-vaults",
+      "octagonal-glass-dome",
+      "open-triumphal-entrance"
+    ],
+    "featureCounts": {
+      "cross-gallery-walls": 1,
+      "facade-windows": 318,
+      "barrel-vault": 4,
+      "vault-iron-ribs": 1032,
+      "octagonal-glass-dome": 1,
+      "octagonal-glass-dome-rib": 192,
+      "triumphal-entrance": 1
+    },
+    "triangles": 39006,
+    "bytes": 1921560,
+    "geometryHash": "8cbb5b84ffd6bed5cf72a46795e960ce8e0140d507e49ee13f8b1e2a7f8ea303",
+    "bounds": [
+      105.28623580932617,
+      48.31998443603516,
+      179.60546875
+    ],
+    "sourceOutlineIds": [
+      "w166623705"
+    ]
+  },
+  {
+    "slug": "ponte-vecchio",
+    "asset": "ponte-vecchio.glb",
+    "fallback": "ponte-vecchio.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "three-open-arches",
+      "projecting-shops",
+      "elevated-corridor"
+    ],
+    "featureCounts": {
+      "open-bridge-arches": 3,
+      "bridge-deck": 33,
+      "bridge-shops": 52,
+      "shop-roofs": 52,
+      "vasari-elevated-corridor": 1,
+      "facade-windows": 54,
+      "roof": 1
+    },
+    "triangles": 6210,
+    "bytes": 364876,
+    "geometryHash": "6bfdf2f05a07fd7a82383b16e937758d83c1fa4f9bbbbb00aa6571143bbbaf2d",
+    "bounds": [
+      66.63400268554688,
+      24.542277336120605,
+      107.14500045776367
+    ],
+    "sourceOutlineIds": [
+      "r5342094"
+    ]
+  },
+  {
+    "slug": "st-mark-campanile",
+    "asset": "st-mark-campanile.glb",
+    "fallback": "st-mark-campanile.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "brick-shaft",
+      "open-belfry",
+      "pyramidal-spire"
+    ],
+    "featureCounts": {
+      "tower": 1,
+      "tower-belfry": 8,
+      "tower-attic": 1,
+      "tower-pyramidal-spire": 1,
+      "tower-finial": 1,
+      "tower-shaft-band": 4
+    },
+    "triangles": 2160,
+    "bytes": 126092,
+    "geometryHash": "1872fd57f9b82579a4cf3401cd4d6807eb485f9daf97582055a13671a5855fb8",
+    "bounds": [
+      16.22000026702881,
+      98.5999984741211,
+      16.333999633789062
+    ],
+    "sourceOutlineIds": [
+      "w252637693"
+    ]
+  },
+  {
+    "slug": "st-mark-square",
+    "asset": "st-mark-square.glb",
+    "fallback": "st-mark-square.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "procuratie-arcades",
+      "marciana-loggia",
+      "campanile"
+    ],
+    "featureCounts": {
+      "procuratie-upper-storeys": 3,
+      "facade-windows": 990,
+      "roof": 3,
+      "procuratie-ground-arcades": 330,
+      "tower": 1,
+      "tower-belfry": 8,
+      "tower-attic": 1,
+      "tower-pyramidal-spire": 1,
+      "tower-finial": 1,
+      "tower-shaft-band": 4
+    },
+    "triangles": 121776,
+    "bytes": 6579816,
+    "geometryHash": "33686d2720df63ac6296c7a1df21926ab6df664882f9dc7779fea107be8bf895",
+    "bounds": [
+      212.9318389892578,
+      98.5999984741211,
+      208.86290740966797
+    ],
+    "sourceOutlineIds": [
+      "w410344923",
+      "w138803888",
+      "w206333242",
+      "w252637693"
+    ]
+  },
+  {
+    "slug": "rialto",
+    "asset": "rialto.glb",
+    "fallback": "rialto.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "single-open-span",
+      "ascending-shops",
+      "central-porticoes"
+    ],
+    "featureCounts": {
+      "open-bridge-arches": 1,
+      "bridge-deck": 32,
+      "bridge-shops": 52,
+      "shop-roofs": 52,
+      "central-porticoes": 2
+    },
+    "triangles": 3062,
+    "bytes": 196680,
+    "geometryHash": "9e0391bce98a08c9eef0e2085293a3495f71448c2e9ed16d41ca34cb0ec3d746",
+    "bounds": [
+      50.98299860954285,
+      30.646493911743164,
+      48.156999588012695
+    ],
+    "sourceOutlineIds": [
+      "r2289364"
+    ]
+  },
+  {
+    "slug": "fenice",
+    "asset": "fenice.glb",
+    "fallback": "fenice.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "classical-entrance",
+      "auditorium-envelope",
+      "raised-stage-house"
+    ],
+    "featureCounts": {
+      "palace": 1,
+      "facade-windows": 240,
+      "storey-bands": 4,
+      "roof": 2,
+      "raised-stage-house": 1,
+      "classical-entrance": 3,
+      "cornice": 1
+    },
+    "triangles": 10410,
+    "bytes": 450732,
+    "geometryHash": "ceda2cec7de01dee2579341f3b6a8b4bd720a577def910c75826a25a56db4843",
+    "bounds": [
+      77.93071746826172,
+      37.599998474121094,
+      62.44600200653076
+    ],
+    "sourceOutlineIds": [
+      "w813451645"
+    ]
+  },
+  {
+    "slug": "gondola",
+    "asset": "gondola.glb",
+    "fallback": "gondola.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "curved-open-hull",
+      "seating",
+      "ferro",
+      "oar"
+    ],
+    "featureCounts": {
+      "open-curved-gondola-hull": 1,
+      "hull-floor": 1,
+      "passenger-seats": 2,
+      "raised-bow-stern": 2,
+      "silver-ferro": 1,
+      "ferro-teeth": 6,
+      "single-oar": 1
+    },
+    "triangles": 872,
+    "bytes": 58084,
+    "geometryHash": "16a35143559b360fb25346273416cd014ff7e49a637f07cb135cc9d1195edf23",
+    "bounds": [
+      10.900000095367432,
+      1.399999976158142,
+      3.8617714047431946
+    ],
+    "sourceOutlineIds": []
+  },
+  {
+    "slug": "piazzale-michelangelo",
+    "asset": "piazzale-michelangelo.glb",
+    "fallback": "piazzale-michelangelo.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "mapped-belvedere",
+      "terrace-balustrade",
+      "mapped-monument"
+    ],
+    "featureCounts": {
+      "mapped-belvedere": 1,
+      "belvedere-balustrade": 77,
+      "bronze-david-monument-plinth": 1,
+      "bronze-monument-massing": 1,
+      "bronze-monument-head": 1
+    },
+    "triangles": 1180,
+    "bytes": 63700,
+    "geometryHash": "883db1feefcff0cc5f565caa80c0b65509a2897c9c118762925ba3fca6b23d62",
+    "bounds": [
+      168.78495025634766,
+      7.159999828785658,
+      101.67231369018555
+    ],
+    "sourceOutlineIds": [
+      "w233265215"
+    ]
+  },
+  {
+    "slug": "mercato-centrale",
+    "asset": "mercato-centrale.glb",
+    "fallback": "mercato-centrale.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "iron-and-glass-hall",
+      "raised-roof-lantern",
+      "masonry-base"
+    ],
+    "featureCounts": {
+      "market-masonry-base": 1,
+      "market-glazed-hall": 1,
+      "iron-uprights": 61,
+      "iron-hall-roof": 1,
+      "raised-glass-lantern": 1,
+      "roof": 1
+    },
+    "triangles": 9366,
+    "bytes": 323464,
+    "geometryHash": "581d9d0505585d35ba64d17a33a84034e7fb17d76a48115c5892f5ff616e0c7a",
+    "bounds": [
+      104.42309188842773,
+      17.200000762939457,
+      107.90962982177734
+    ],
+    "sourceOutlineIds": [
+      "w480015428"
+    ]
+  },
+  {
+    "slug": "signoria",
+    "asset": "signoria.glb",
+    "fallback": "signoria.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "palazzo-vecchio",
+      "arnolfo-tower",
+      "open-lanzi-loggia"
+    ],
+    "featureCounts": {
+      "palazzo-vecchio": 1,
+      "facade-windows": 749,
+      "storey-bands": 35,
+      "roof": 1,
+      "arnolfo-tower": 1,
+      "arnolfo-tower-belfry": 8,
+      "arnolfo-tower-attic": 1,
+      "arnolfo-tower-pyramidal-spire": 1,
+      "arnolfo-tower-finial": 1,
+      "arnolfo-tower-shaft-band": 4,
+      "palace-crenellations": 114,
+      "lanzi-open-loggia": 6,
+      "lanzi-roof": 1
+    },
+    "triangles": 34301,
+    "bytes": 1481920,
+    "geometryHash": "2ccae25c0338d862698cc0df5288b0660f4125730ba77dca06971f9973611194",
+    "bounds": [
+      175.38351821899414,
+      94,
+      89.87340950965881
+    ],
+    "sourceOutlineIds": [
+      "r1461712",
+      "w43284457"
+    ]
+  },
+  {
+    "slug": "giunti-odeon",
+    "asset": "giunti-odeon.glb",
+    "fallback": "giunti-odeon.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "strozzino-street-envelope",
+      "arched-palace-facade",
+      "cinema-roof"
+    ],
+    "featureCounts": {
+      "strozzino-palace": 1,
+      "facade-windows": 147,
+      "storey-bands": 4,
+      "roof": 1,
+      "cinema-envelope": 1,
+      "cinema-roof": 1
+    },
+    "triangles": 5524,
+    "bytes": 242168,
+    "geometryHash": "a62c25b8c2816f88ae3611bf753778af6af79c58908a3812d646f41eff6d5a39",
+    "bounds": [
+      38.274253845214844,
+      21.2323169708252,
+      45.11454772949219
+    ],
+    "sourceOutlineIds": [
+      "w307153259",
+      "w485934061"
+    ]
+  },
+  {
+    "slug": "colosseum",
+    "asset": "colosseum.glb",
+    "fallback": "colosseum.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "surviving-outer-wall",
+      "open-arcade-orders",
+      "open-arena",
+      "ruin-fragments"
+    ],
+    "featureCounts": {
+      "surviving-arcade-piers": 496,
+      "arcade-arch-heads": 4090,
+      "arcade-entablatures": 44,
+      "surviving-upper-fabric": 31,
+      "mapped-low-remains": 16
+    },
+    "triangles": 296004,
+    "bytes": 17335288,
+    "geometryHash": "992bcfecd71a7801a0e85a8c9b0dd7de6f62b273e1904644f76f5866e5e39c28",
+    "bounds": [
+      177.92742919921875,
+      48.50000000000001,
+      145.2614631652832
+    ],
+    "sourceOutlineIds": [
+      "r1834818"
+    ]
+  },
+  {
+    "slug": "roman-forum",
+    "asset": "roman-forum.glb",
+    "fallback": "roman-forum.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "mapped-ruin-envelopes",
+      "standing-curia",
+      "triumphal-arches",
+      "romulus-rotunda"
+    ],
+    "featureCounts": {
+      "archaeological-extent": 3,
+      "mapped-ruin-perimeters": 3,
+      "standing-curia": 1,
+      "facade-windows": 125,
+      "storey-bands": 5,
+      "roof": 1,
+      "romulus-rotunda": 1,
+      "romulus-dome": 1,
+      "antoninus-standing-columns": 6,
+      "antoninus-entablature": 1,
+      "triumphal-openings": 3,
+      "triumphal-attic": 2,
+      "triumphal-opening": 1
+    },
+    "triangles": 9905,
+    "bytes": 431576,
+    "geometryHash": "a2342e4853cf4d3dfabfa9e7a55b7f2ad4dfac870f4b9b3ce1bf9be0fd3041db",
+    "bounds": [
+      424.0671081542969,
+      29,
+      282.7281036376953
+    ],
+    "sourceOutlineIds": [
+      "w131451564",
+      "r1766532",
+      "r1841078",
+      "r1841079",
+      "r1841089",
+      "r1841090",
+      "w49824161",
+      "w23913953"
+    ]
+  },
+  {
+    "slug": "palatine",
+    "asset": "palatine.glb",
+    "fallback": "palatine.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "domus-flavia-outline",
+      "domus-augustana-outline",
+      "stadium-outline",
+      "tiberiana-remains"
+    ],
+    "featureCounts": {
+      "named-palace-archaeological-extent": 6,
+      "palatine-remains": 6
+    },
+    "triangles": 7132,
+    "bytes": 386552,
+    "geometryHash": "61355411bcc640b7e9567082ea2362380945796ed23a68f4b3391ce07ed618ba",
+    "bounds": [
+      290.66046142578125,
+      5.150000058114529,
+      477.552001953125
+    ],
+    "sourceOutlineIds": [
+      "r1805347",
+      "r1805355",
+      "r1857984",
+      "r1860920",
+      "r1860919",
+      "w132581385"
+    ]
+  },
+  {
+    "slug": "piazza-venezia",
+    "asset": "piazza-venezia.glb",
+    "fallback": "piazza-venezia.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "vittoriano-terraces",
+      "open-upper-portico",
+      "paired-propylaea"
+    ],
+    "featureCounts": {
+      "vittoriano-stepped-terraces": 6,
+      "mapped-high-propylaea": 60,
+      "upper-open-portico": 27,
+      "upper-portico-roof": 1
+    },
+    "triangles": 8712,
+    "bytes": 471620,
+    "geometryHash": "74fe38f9668612d6c0a2ac766d5ff6a8f21d55048b6d8aa827669667ebd5b0a2",
+    "bounds": [
+      159.10299682617188,
+      70.00000000000001,
+      165.71099853515625
+    ],
+    "sourceOutlineIds": [
+      "r1849830"
+    ]
+  },
+  {
+    "slug": "trevi",
+    "asset": "trevi.glb",
+    "fallback": "trevi.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "palazzo-poli",
+      "triumphal-fountain-front",
+      "rocky-water-basin"
+    ],
+    "featureCounts": {
+      "palazzo-poli": 1,
+      "facade-windows": 215,
+      "storey-bands": 5,
+      "roof": 1,
+      "fountain-basin": 1,
+      "fountain-water": 1,
+      "fountain-pedestal": 1,
+      "fountain-bowl": 1,
+      "central-triumphal-fountain-niche": 1,
+      "fountain-corinthian-columns": 4,
+      "fountain-rock-base": 9
+    },
+    "triangles": 9637,
+    "bytes": 466088,
+    "geometryHash": "d2b8112144e5a3aaac61e0d2f4d5e7649dce8213f1e8bc5a424554d248da6f97",
+    "bounds": [
+      58.82636642456055,
+      29.998647689819336,
+      70.96238899230957
+    ],
+    "sourceOutlineIds": [
+      "r13448560",
+      "w131235596"
+    ]
+  },
+  {
+    "slug": "spanish-steps",
+    "asset": "spanish-steps.glb",
+    "fallback": "spanish-steps.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "full-stair-area",
+      "three-mapped-landings",
+      "continuous-ground-support",
+      "trinita-twin-towers"
+    ],
+    "featureCounts": {
+      "continuous-stair-treads-support": 435,
+      "continuous-stair-treads": 435,
+      "tread-joints": 2224,
+      "landing-w1416143815-support": 1,
+      "landing-w1416143815": 1,
+      "landing-w54572036-support": 1,
+      "landing-w54572036": 1,
+      "landing-w54572034-support": 1,
+      "landing-w54572034": 1,
+      "upper-street-terrace-support": 1,
+      "upper-street-terrace": 1,
+      "church-ground-cutaway-support": 1,
+      "church-ground-cutaway": 1,
+      "church-entrance-landing-support": 1,
+      "church-entrance-landing": 1,
+      "church-approach-treads-support": 69,
+      "church-approach-treads": 69,
+      "trinita-church": 1,
+      "roof": 3,
+      "trinita-twin-bell-towers": 2,
+      "fountain-basin": 1,
+      "fountain-water": 1,
+      "fountain-pedestal": 1,
+      "fountain-bowl": 1
+    },
+    "triangles": 55271,
+    "bytes": 3271392,
+    "geometryHash": "81a0a4e0f6a3144cff4ab6dfa3decb8c333b81b83912868ea8729a35b8e98eb1",
+    "bounds": [
+      158.166015625,
+      53.00000000000001,
+      77.05570650100708
+    ],
+    "sourceOutlineIds": [
+      "w54044477"
+    ]
+  },
+  {
+    "slug": "piazza-navona",
+    "asset": "piazza-navona.glb",
+    "fallback": "piazza-navona.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "stadium-shaped-square",
+      "three-mapped-fountains",
+      "sant-agnese-dome"
+    ],
+    "featureCounts": {
+      "sant-agnese-envelope": 1,
+      "roof": 1,
+      "sant-agnese-drum": 1,
+      "sant-agnese-dome": 1,
+      "sant-agnese-dome-rib": 192,
+      "fountain-basin": 3,
+      "fountain-water": 3,
+      "obelisk-base": 1,
+      "obelisk": 1,
+      "obelisk-tip": 1,
+      "fountain-pedestal": 2,
+      "fountain-bowl": 2,
+      "sant-agnese-bell-tower": 2,
+      "sant-agnese-bell-cap": 2
+    },
+    "triangles": 15822,
+    "bytes": 624536,
+    "geometryHash": "f0ae5c4420f2a5f5b2d358649b37d8e3e93c8e5a764b389a83f16bf3917968c6",
+    "bounds": [
+      74.24090480804443,
+      41.3199462890625,
+      204.85106658935547
+    ],
+    "sourceOutlineIds": [
+      "w52333460"
+    ]
+  },
+  {
+    "slug": "vatican-post",
+    "asset": "vatican-post.glb",
+    "fallback": "vatican-post.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "mapped-post-office-pavilion",
+      "window-bays",
+      "flat-roof"
+    ],
+    "featureCounts": {
+      "post-office-pavilion": 1,
+      "facade-windows": 13,
+      "flat-roof-cornice": 1
+    },
+    "triangles": 484,
+    "bytes": 33420,
+    "geometryHash": "71c280843409d24aa274859779482916248e1b6ce74445fee023d90e4c2f2d48",
+    "bounds": [
+      12.672085285186768,
+      4.300000190734863,
+      12.87462568283081
+    ],
+    "sourceOutlineIds": [
+      "w535197902"
+    ]
+  },
+  {
+    "slug": "park-guell",
+    "asset": "park-guell.glb",
+    "fallback": "park-guell.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "entrance-pavilions",
+      "hypostyle-hall",
+      "nature-square",
+      "curved-bench"
+    ],
+    "featureCounts": {
+      "entrance-pavilion": 2,
+      "facade-windows": 20,
+      "pavilion-organic-roof": 2,
+      "pavilion-roof-tower": 6,
+      "hypostyle-columns": 72,
+      "nature-square": 1,
+      "serpentine-bench": 87,
+      "monumental-zone-stairs": 57
+    },
+    "triangles": 9768,
+    "bytes": 456528,
+    "geometryHash": "2ba8099058a34d6c3033ddd66a8144477e4f66468b0e658b3900991aadcbe6a7",
+    "bounds": [
+      109.68822479248047,
+      21.000000000000007,
+      112.30430603027344
+    ],
+    "sourceOutlineIds": [
+      "w672895475",
+      "w672895651",
+      "r14718228",
+      "r14718230"
+    ]
+  },
+  {
+    "slug": "turo-rovira",
+    "asset": "turo-rovira.glb",
+    "fallback": "turo-rovira.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "mapped-battery-footprint",
+      "surviving-walls",
+      "officers-pavilion"
+    ],
+    "featureCounts": {
+      "battery-platform": 1,
+      "surviving-battery-boundaries": 1,
+      "officers-pavilion": 1,
+      "facade-windows": 7,
+      "roof": 1
+    },
+    "triangles": 644,
+    "bytes": 38856,
+    "geometryHash": "e24cbc2f4c80fc6864bc7ee8d4b2ca18ab48b05e273c957c2c1ab563810e1e36",
+    "bounds": [
+      84.41476821899414,
+      3.539999723434448,
+      55.62699890136719
+    ],
+    "sourceOutlineIds": [
+      "w142894789"
+    ]
+  },
+  {
+    "slug": "palau-musica",
+    "asset": "palau-musica.glb",
+    "fallback": "palau-musica.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "brick-corner-facades",
+      "columned-balcony",
+      "concert-hall-roof",
+      "modern-glass-annex"
+    ],
+    "featureCounts": {
+      "concert-hall-envelope": 1,
+      "roof": 1,
+      "facade-windows": 153,
+      "polychrome-balcony-columns": 51,
+      "balcony-base": 51,
+      "modern-petit-palau-annex": 1,
+      "cornice": 1
+    },
+    "triangles": 8834,
+    "bytes": 388564,
+    "geometryHash": "08807aeb7c7e66bdd9d8b1f0f37def269ffd8940a5c8c95e1641a4f00a27bea4",
+    "bounds": [
+      55.71772766113281,
+      24.999979019165043,
+      70.73046875
+    ],
+    "sourceOutlineIds": [
+      "w671830491",
+      "w671830480"
+    ]
+  },
+  {
+    "slug": "hohenzollern",
+    "asset": "hohenzollern.glb",
+    "fallback": "hohenzollern.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "three-river-spans",
+      "parallel-steel-arches",
+      "suspended-decks"
+    ],
+    "featureCounts": {
+      "rail-deck": 3,
+      "steel-arch-trusses": 432,
+      "cross-bracing": 144,
+      "vertical-hangers": 198
+    },
+    "triangles": 18612,
+    "bytes": 957072,
+    "geometryHash": "0c7895768c8d300d34c1024be45e62f0795350fff4fad89c3cb4c61a8947df0b",
+    "bounds": [
+      415.8857116699219,
+      24.520626068115234,
+      42.65786552429199
+    ],
+    "sourceOutlineIds": [
+      "w258521129"
+    ]
+  },
+  {
+    "slug": "koln-triangle",
+    "asset": "koln-triangle.glb",
+    "fallback": "koln-triangle.svg",
+    "category": "landmark",
+    "method": "source-coordinate-exterior-massing",
+    "features": [
+      "rounded-triangular-footprint",
+      "glass-storeys",
+      "observation-roof"
+    ],
+    "featureCounts": {
+      "rounded-triangle-tower": 1,
+      "horizontal-glazing-bands": 29,
+      "vertical-glazing-mullions": 40,
+      "observation-terrace-railing": 1
+    },
+    "triangles": 11528,
+    "bytes": 625704,
+    "geometryHash": "410d2e59f4be051c39c779b368bd73ca90e484669daa70d544eb765af1e9a317",
+    "bounds": [
+      30.84500026702881,
+      104.4000015258789,
+      31.832999229431152
+    ],
+    "sourceOutlineIds": [
+      "w21113435"
+    ]
+  }
+]

@@ -139,17 +139,24 @@
 .highlight-detail::backdrop {
   background: rgb(0 9 16 / 82%);
 }
-.highlight-detail__close {
+.highlight-detail__toolbar {
   position: sticky;
   top: 0;
   grid-column: 1 / -1;
-  justify-self: end;
+  display: flex;
+  justify-content: flex-end;
+  padding-block: 8px;
+  background: var(--surface);
+  box-shadow: 0 -32px 0 var(--surface);
   z-index: 1;
 }
 .highlight-detail__image {
   display: flex;
   justify-content: center;
 }
+.highlight-detail__expand { position: relative; display: block; width: 100%; padding: 0; border: 0; background: #061019; color: var(--gold-bright); cursor: zoom-in; }
+.highlight-detail__expand > img { display: block; margin-inline: auto; }
+.highlight-detail__expand > span { position: absolute; bottom: 8px; right: 8px; display: grid; place-items: center; width: 44px; height: 44px; background: var(--surface); border: 1px solid var(--line); }
 .highlight-detail__image img {
   width: auto;
   height: auto;
@@ -203,6 +210,23 @@
 .highlight-detail__copy h4 {
   font-size: 16px;
   margin: 24px 0 8px;
+}
+.highlight-detail__copy ol {
+  display: grid;
+  gap: 14px;
+  margin: 16px 0;
+  padding-inline-start: 1.7em;
+  list-style: decimal outside;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.highlight-detail__copy li {
+  padding-inline-start: 4px;
+  overflow-wrap: anywhere;
+}
+.highlight-detail__copy li::marker {
+  color: var(--gold-bright);
+  font-weight: 600;
 }
 .highlight-detail__copy em {
   display: block;

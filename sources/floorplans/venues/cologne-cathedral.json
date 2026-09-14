@@ -50,12 +50,97 @@
   "floors": [
     {
       "id": "south-tower-access-2009",
-      "label": "南塔登塔入口层（2009年地下庭院层）",
+      "label": "南塔入口 · 地下庭院层",
+      "legend": [
+        {"tone":"foundation", "label":"塔基实体"},
+        {"tone":"circulation", "label":"前厅 / 通道"},
+        {"tone":"courtyard", "label":"地下庭院"}
+      ],
       "order": -1,
       "sourceId": "south-tower-access-2009",
       "page": 1,
       "crop": [52, 0, 450, 431],
       "rules": [],
+      "contextSurfaces": [
+        {
+          "id": "tower-foundation", "tone": "foundation",
+          "polygons": [
+            {"outer": [[85,26],[271,26],[271,49],[191,49],[191,155],[271,155],[271,275],[94,273],[93,278],[72,276],[85,26]]},
+            {"outer": [[299,26],[450,26],[450,33],[438,44],[425,31],[379,31],[379,170],[427,170],[427,161],[430,160],[450,160],[450,290],[390,286],[390,296],[318,292],[318,276],[299,276],[299,155],[309,155],[309,49],[299,49],[299,26]]}
+          ],
+          "sourcePaths": ["image-xref-5:grey-foundation-boundaries"],
+          "evidence": "The broad cool-grey source fill is the south-tower foundation, not empty traversable rooms. Manually followed its visible edges at native 450x459 pixels (approximately 1-2 pixel reading uncertainty); retained the real slanted west edge and right-hand context cutout. This flat contextual footprint excludes both tunnels and the Turmfoyer. It must not become a selectable room, added wall height or route."
+        },
+        {
+          "id": "foyer-central-core", "tone": "foundation",
+          "polygons": [{"outer": [[248,89],[270,111],[248,133],[226,111],[248,89]]}],
+          "sourcePaths": ["image-xref-5:turmfoyer-central-diamond"],
+          "evidence": "The grey diamond has a closed printed boundary inside the Turmfoyer. It is excluded from the foyer floor. Its architectural function is not identified by this source, so it receives neither a lift label nor a visitor route."
+        },
+        {
+          "id": "archaeology-outline", "tone": "foundation",
+          "polygons": [{"outer": [[178,277],[218,277],[218,299],[215,299],[215,307],[219,307],[219,321],[179,321],[179,312],[182,312],[182,299],[178,299],[178,277]]}],
+          "sourcePaths": ["image-xref-5:unlabelled-outline-between-parking-and-foyer"],
+          "evidence": "Flat context follows the light unlabelled outline between parking entrance and foyer. No separate archaeology-room boundary, entrance or visitor permission is inferred."
+        }
+      ],
+      "spaces": [
+        {
+          "id":"turmfoyer", "label":"登塔前厅", "placeId":"south-tower-access-2009-登塔前厅-1", "tone":"circulation", "scope":"room",
+          "outer":[[195,53],[273,53],[273,50],[297,50],[297,53],[305,53],[305,152],[195,152],[195,53]],
+          "holes":[[[248,87],[272,111],[248,135],[224,111],[248,87]]],
+          "sourcePaths":["image-xref-5:turmfoyer-inner-edge"],
+          "evidence":"Follows the warm-grey Turmfoyer inner boundary and preserves its central diamond as a hole. Floor closures at tunnel thresholds are not walls. Source uncertainty is approximately 1-2 native pixels, not surveying accuracy."
+        },
+        {
+          "id":"south-tunnel", "label":"南侧基础通道", "placeId":"south-tower-access-2009-南塔基础通道-1", "tone":"circulation", "scope":"room",
+          "outer":[[275,154],[295,154],[295,277],[275,277],[275,154]],
+          "sourcePaths":["image-xref-5:tunnel-1-parallel-inner-edges"],
+          "evidence":"The two parallel inner edges of the explicitly labelled Tunnel 1 bound the narrow south passage. Its open ends remain thresholds; no wall is drawn across them."
+        },
+        {
+          "id":"north-tunnel", "label":"北侧基础通道", "placeId":"south-tower-access-2009-北侧基础通道-1", "tone":"circulation", "scope":"room",
+          "outer":[[275,26],[295,26],[295,50],[275,50],[275,26]],
+          "sourcePaths":["image-xref-5:tunnel-2-parallel-inner-edges"],
+          "evidence":"The source explicitly marks Tunnel 2 above the Turmfoyer. Preserve only its visible segment within this source crop; do not infer a cross-floor endpoint or extend it into the nave plan."
+        },
+        {
+          "id":"entry-foyer", "label":"入口前厅", "placeId":"south-tower-access-2009-教堂入口前厅与罗马地下室-1", "tone":"circulation", "scope":"room",
+          "outer":[[230,279],[298,279],[298,300],[295,300],[295,321],[230,321],[230,279]],
+          "sourcePaths":["image-xref-5:foyer-domzugang-visible-fill"],
+          "evidence":"Only the filled foreground foyer with the printed combined Foyer Domzugang mit Roemischem Keller label is traced. The separate archaeological footprint is not assigned to this room."
+        },
+        {
+          "id":"tiefhof", "label":"地下庭院", "placeId":"south-tower-access-2009-地下庭院-1", "tone":"courtyard", "scope":"room",
+          "outer":[[136,326],[295,326],[295,387],[207,387],[207,350],[136,350],[136,326]],
+          "sourcePaths":["image-xref-5:tiefhof-warm-grey-floor"],
+          "evidence":"The warm-grey open Tiefhof fill is distinct from the foundation. Preserve the notch around the stair, including its real stepped boundary, rather than filling the entire rectangular frontage."
+        },
+        {
+          "id":"parking-access", "label":"停车场入口", "placeId":"south-tower-access-2009-停车场入口-1", "tone":"circulation", "scope":"room",
+          "outer":[[68,284],[165,284],[165,321],[68,321],[68,284]],
+          "sourcePaths":["image-xref-5:zugang-tiefgarage"],
+          "evidence":"The labelled Zugang Tiefgarage entry bay, bounded above by the heavy wall and below by the glazed opening line. The car park beyond the left door is outside this drawing and is not added."
+        },
+        {
+          "id":"toilet-access", "label":"卫生间入口", "placeId":"south-tower-access-2009-公共卫生间入口-1", "tone":"circulation", "scope":"room",
+          "outer":[[300,320],[357,320],[370,320],[370,348],[300,348],[300,320]],
+          "sourcePaths":["image-xref-5:zugang-oeffentliche-toilette"],
+          "evidence":"Only the explicitly labelled entry corridor receives circulation fill. The cross-hatched zones around it do not document cubicles or complete toilet layouts and are not turned into visitor rooms."
+        },
+        {
+          "id":"court-stairs", "label":"庭院入口楼梯", "placeId":"south-tower-access-2009-庭院入口楼梯-1", "tone":"neutral", "scope":"room",
+          "outer":[[105,350],[159,350],[159,354],[162,354],[162,353],[183,353],[187,369],[187,387],[105,387],[105,350]],
+          "sourcePaths":["image-xref-5:wide-stair-treads-south-of-tiefhof"],
+          "evidence":"Follows the visible broad exterior stair footprint leading down from the square. Its top landing is not on this level; the shape adds no new cross-floor coordinates."
+        },
+        {
+          "id":"court-lift", "label":"庭院电梯", "placeId":"south-tower-access-2009-庭院电梯-1", "tone":"neutral", "scope":"room",
+          "outer":[[106,331],[128,331],[128,344],[106,344],[106,331]],
+          "sourcePaths":["image-xref-5:rectangular-lift-at-tiefhof-stair-head"],
+          "evidence":"The small rectangular shaft beside the exterior stair matches the entrance lift described by Kaspar Kraemer's completed project. It serves the entrance courtyard, not the upper bell tower."
+        }
+      ],
       "rasterLayers": [
         {
           "xref": 5,
@@ -83,9 +168,10 @@
         },
         {
           "xref": 5,
-          "maxChannel": 160,
+          "maxChannel": 185,
           "maxChroma": 12,
           "wallKernel": 3,
+          "allInkIsDetail": true,
           "includeKinds": ["detail"],
           "tolerancePixels": 0.2,
           "minAreaPixels": 0.5,
@@ -114,7 +200,7 @@
             {"rect": [72, 283, 132, 316]},
             {"rect": [164, 348, 205, 393]}
           ],
-          "reason": "Reviewed neutral dark ink retains stairs, lift outlines, door swings and fine construction boundaries as flat detail. Burgundy labels, arrows and the narrow A-A section line are excluded; the section-line rectangles stop before source wall bands at y=24-27, 49-52, 276-281, 387-392 and 403-408 so those original intersections are preserved rather than reconstructed."
+          "reason": "Neutral construction ink up to channel 185 retains the JPEG's anti-aliased edges that threshold 160 broke into fragments. All of this channel remains flat detail, including overlapping heavy ink; only the separately reviewed 160 channel supplies walls. Burgundy labels, arrows and the narrow A-A section line are excluded; the section-line rectangles stop before source wall bands at y=24-27, 49-52, 276-281, 387-392 and 403-408. The source's foyer/courtyard fill is about channel 199 and the foundation about 206, so those are not misclassified as construction ink."
         }
       ],
       "places": [
@@ -128,14 +214,16 @@
         },
         {
           "label": "教堂入口前厅与罗马地下室",
+          "displayLabel": "入口前厅",
           "name": "Foyer Domzugang mit Römischem Keller",
-          "at": [246, 317],
+          "at": [253, 300],
           "kind": "room",
-          "evidence": "锚点位于原图同名文字所在的前厅区域；只保留图示组合名称，不推断地下遗址边界。",
+          "evidence": "锚点位于原图组合名称所在的前厅填充区域；显示短名不把旁侧考古遗址合并成可通行房间。",
           "precision": "printed-combined-foyer-label-anchor-boundary-unresolved"
         },
         {
           "label": "南塔基础通道",
+          "displayLabel": "南侧基础通道",
           "name": "南侧塔基通道一号",
           "at": [286, 224],
           "kind": "area",
@@ -144,7 +232,9 @@
         },
         {
           "label": "南塔登塔起点",
-          "name": "登塔前厅与开始登塔位置",
+          "displayLabel": "登塔楼梯",
+          "name": "登塔前厅内的登塔起点楼梯",
+          "showLabel": true,
           "at": [207, 116],
           "kind": "service",
           "evidence": "原图在南塔前厅内明确标注Turmfoyer: Beginn Turmbesteigung；锚点取其左侧楼梯踏步中段。",
@@ -152,11 +242,37 @@
         },
         {
           "label": "公共卫生间入口",
+          "displayLabel": "卫生间",
           "name": "公共卫生间入口",
           "at": [330, 331],
           "kind": "service",
           "evidence": "锚点位于原图Zugang Öffent. Toilette标注的入口通道内，不把卫生间填充解释为墙体。",
-          "precision": "printed-service-entry-anchor-not-access-audit"
+          "precision": "printed-service-entry-anchor-not-access-audit",
+          "showLabel": true
+        },
+        {
+          "label": "南塔基础实体", "displayLabel": "南塔基座 · 实体", "name": "南塔基础实体，非通道", "kind": "area", "at": [139,204],
+          "evidence": "锚点位于原图大块灰色塔基实体内；上下通道和塔内前厅均不包含在实体填充中。"
+        },
+        {
+          "label": "登塔前厅", "name": "Turmfoyer 登塔前厅", "kind": "room", "at": [270,74],
+          "evidence": "原图 Turmfoyer: Beginn Turmbesteigung 标注对应的前厅，锚点在中央菱形之外。"
+        },
+        {
+          "label": "北侧基础通道", "name": "Tunnel 2 北侧基础通道", "kind": "area", "at": [285,38],
+          "evidence": "对应原图顶部明确印出的 Tunnel 2；不推断源图之外的连接。"
+        },
+        {
+          "label": "停车场入口", "name": "Zugang Tiefgarage 停车场入口", "kind": "service", "at": [143,306], "showLabel": true,
+          "evidence": "原图左下方明确印出的 Zugang Tiefgarage 区域；不是教堂或登塔入口。"
+        },
+        {
+          "label": "庭院入口楼梯", "displayLabel": "庭院楼梯", "name": "广场通往地下庭院的楼梯", "kind": "service", "at": [147,372], "showLabel": true,
+          "evidence": "原图庭院南侧宽楼梯踏步；建筑师项目说明确认广场与地下庭院由宽露天楼梯相连。"
+        },
+        {
+          "label": "庭院电梯", "name": "广场与地下庭院间的电梯，不通往塔顶", "kind": "service", "at": [117,337], "showLabel": true,
+          "evidence": "原图宽楼梯侧小型矩形电梯井，结合建筑师项目说明核对；不为缺少平面的广场层生成楼层连接。"
         }
       ]
     },

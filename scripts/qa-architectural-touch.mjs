@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
 const output = 'work/map-review/touch';
+const baseUrl = (process.env.MAP_QA_URL ?? 'http://localhost:55838').replace(/\/$/, '');
 await mkdir(output, { recursive: true });
 const hash = (buffer) => createHash('sha256').update(buffer).digest('hex');
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
@@ -15,7 +16,7 @@ try {
     page.on('pageerror', (error) => errors.push(error.message));
     const report = { slug, modelDigest: hash(JSON.stringify(model)), environment: 'Chromium CDP touch input, 390x844; not a physical phone', errors };
     try {
-      await page.goto(`http://localhost:55838/guides/${slug}/#guide-spatial`, { waitUntil: 'domcontentloaded' });
+      await page.goto(`${baseUrl}/guides/${slug}/#guide-spatial`, { waitUntil: 'domcontentloaded' });
       const map = page.locator('.architectural-map');
       await map.scrollIntoViewIfNeeded();
       await map.getByRole('button', { name: '3D', exact: true }).click();

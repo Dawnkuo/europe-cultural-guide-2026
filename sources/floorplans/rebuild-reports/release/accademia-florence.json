@@ -1,7 +1,7 @@
 {
   "slug": "accademia-florence",
   "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared both official floor crops: irregular main galleries, the Tribune, side collection rooms, upper galleries and the underlying lower-level reference remain distinct. Keeps 6a/6b/6c separately and all twenty place identifiers. Five source-connected selection areas do not introduce new partitions.",
     "floorCoverageReview": "Both published visitor levels; lower-level reference lines on the upper diagram stay flat.",
@@ -16,8 +16,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T09:51:50.940Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:48:27.008Z",
     "slug": "accademia-florence",
     "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
     "sourceDigest": "f01a1af6dfc684436e47e4aa48479a0c7d52573d66169ba11fed42e41dced2d9",
@@ -33,6 +33,8 @@
             "exactLabels": 14,
             "guideNumbers": 8,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -44,6 +46,8 @@
             "exactLabels": 6,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -59,7 +63,7 @@
           "work/map-review/release-final/accademia-florence-1440-L0-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 417,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 20,
@@ -84,6 +88,8 @@
             "exactLabels": 14,
             "guideNumbers": 8,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -95,6 +101,8 @@
             "exactLabels": 6,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -110,7 +118,7 @@
           "work/map-review/release-final/accademia-florence-1094-L0-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 516,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 20,
@@ -135,6 +143,8 @@
             "exactLabels": 14,
             "guideNumbers": 8,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -146,6 +156,8 @@
             "exactLabels": 6,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -161,7 +173,7 @@
           "work/map-review/release-final/accademia-florence-390-L0-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 608,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 20,
@@ -197,8 +209,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 3.9,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -215,7 +227,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 110.97514324701488,
+      "mapSpread": 106.38538255188016,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-florence_-1440.png",
       "passed": true
     },
@@ -226,7 +238,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 123.55293676153666,
+      "mapSpread": 115.13473883622817,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-florence_-1094.png",
       "passed": true
     },
@@ -237,22 +249,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 127.75989692281406,
+      "mapSpread": 114.10956778739471,
       "screenshot": "work/map-review/guide-pages-final/_guides_accademia-florence_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/accademia-florence/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "L0",
     "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

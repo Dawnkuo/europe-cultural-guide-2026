@@ -1,13 +1,13 @@
 {
   "slug": "cologne-cathedral",
-  "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "modelDigest": "15f95bfba42cd6b45744201c7667b9e999b3131a266cc8b4881fdf0464b87596",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
-    "geometryReview": "Compared the main church plan and the actual2009 underground south-tower access drawing. Keeps nave piers, aisles, transepts, radiating apse and foundation-access passage. Vault diagonals remain flat details, not partitions. Rejected medieval tower elevation is not repurposed as present-day tower levels.",
+    "geometryReview": "Recompared the current rendered underground plan with cologne-south-tower-access-plan-2009.jpg on 2026-09-14: solid tower foundations and the foyer central core remain flat context, distinct from the Turmfoyer, Tunnel 1/2, entrance foyer and Tiefhof circulation surfaces. Courtyard notches, stairs, lift and service-entry markers follow the source drawing; no upper tower level is inferred. The main church floor is byte-equivalent as structured data to its previously reviewed version, retaining nave piers, aisles, transepts and radiating apse; vault diagonals remain details rather than partitions.",
     "floorCoverageReview": "Church main level and2009 tower-access courtyard only. Treasury, spiral staircase levels, bells and observation deck remain missing plans.",
     "stopBindingReview": "Stops0,1,3 bind the west central doorway, choir and south transept; stop5 locates only the documented start of tower ascent. Gero cross and treasury stay unlocated.",
     "verticalConnectionReview": "No continuous tower ascent or treasury connection without documented paired landings.",
-    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "modelDigest": "15f95bfba42cd6b45744201c7667b9e999b3131a266cc8b4881fdf0464b87596",
     "sourceDigest": "3c3aa37060e3003a57dc5ac776a5e869a59d3de29cca86715bb2a4ec9c8d742d",
     "sourceEvidence": "sources/floorplans/evidence/cologne-cathedral.json",
     "comparedFloors": [
@@ -16,10 +16,10 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T09:54:21.060Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:52:43.629Z",
     "slug": "cologne-cathedral",
-    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "modelDigest": "15f95bfba42cd6b45744201c7667b9e999b3131a266cc8b4881fdf0464b87596",
     "sourceDigest": "3c3aa37060e3003a57dc5ac776a5e869a59d3de29cca86715bb2a4ec9c8d742d",
     "viewports": [
       {
@@ -30,9 +30,11 @@
         "floors": [
           {
             "id": "south-tower-access-2009",
-            "exactLabels": 5,
+            "exactLabels": 11,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -44,6 +46,8 @@
             "exactLabels": 7,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -54,14 +58,18 @@
         "screenshots": [
           "work/map-review/release-final/cologne-cathedral-1440-3d.png",
           "work/map-review/release-final/cologne-cathedral-1440-south-tower-access-2009-2d.png",
-          "work/map-review/release-final/cologne-cathedral-1440-nave-2d.png"
+          "work/map-review/release-final/cologne-cathedral-1440-nave-2d.png",
+          "work/map-review/release-final/cologne-cathedral-1440-south-tower-access-2009-selection-2d.png",
+          "work/map-review/release-final/cologne-cathedral-1440-south-tower-access-2009-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 613,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
-        "paintedLabels": 12,
-        "selectedSpaces": [],
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "south-tower-access-2009-turmfoyer"
+        ],
         "stopTargets": 4,
         "routeNumbering": true,
         "passed": true
@@ -74,9 +82,11 @@
         "floors": [
           {
             "id": "south-tower-access-2009",
-            "exactLabels": 5,
+            "exactLabels": 11,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -88,6 +98,8 @@
             "exactLabels": 7,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -98,14 +110,18 @@
         "screenshots": [
           "work/map-review/release-final/cologne-cathedral-1094-3d.png",
           "work/map-review/release-final/cologne-cathedral-1094-south-tower-access-2009-2d.png",
-          "work/map-review/release-final/cologne-cathedral-1094-nave-2d.png"
+          "work/map-review/release-final/cologne-cathedral-1094-nave-2d.png",
+          "work/map-review/release-final/cologne-cathedral-1094-south-tower-access-2009-selection-2d.png",
+          "work/map-review/release-final/cologne-cathedral-1094-south-tower-access-2009-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 735,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
-        "paintedLabels": 12,
-        "selectedSpaces": [],
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "south-tower-access-2009-turmfoyer"
+        ],
         "stopTargets": 4,
         "routeNumbering": true,
         "passed": true
@@ -118,9 +134,11 @@
         "floors": [
           {
             "id": "south-tower-access-2009",
-            "exactLabels": 5,
+            "exactLabels": 11,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -132,6 +150,8 @@
             "exactLabels": 7,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -142,14 +162,18 @@
         "screenshots": [
           "work/map-review/release-final/cologne-cathedral-390-3d.png",
           "work/map-review/release-final/cologne-cathedral-390-south-tower-access-2009-2d.png",
-          "work/map-review/release-final/cologne-cathedral-390-nave-2d.png"
+          "work/map-review/release-final/cologne-cathedral-390-nave-2d.png",
+          "work/map-review/release-final/cologne-cathedral-390-south-tower-access-2009-selection-2d.png",
+          "work/map-review/release-final/cologne-cathedral-390-south-tower-access-2009-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 626,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
-        "paintedLabels": 12,
-        "selectedSpaces": [],
+        "paintedLabels": 18,
+        "selectedSpaces": [
+          "south-tower-access-2009-turmfoyer"
+        ],
         "stopTargets": 4,
         "routeNumbering": true,
         "passed": true
@@ -158,7 +182,7 @@
   },
   "touch": {
     "slug": "cologne-cathedral",
-    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "modelDigest": "15f95bfba42cd6b45744201c7667b9e999b3131a266cc8b4881fdf0464b87596",
     "environment": "Chromium CDP touch input, 390x844; not a physical phone",
     "errors": [],
     "drag": true,
@@ -172,12 +196,12 @@
   },
   "performance": {
     "slug": "cologne-cathedral",
-    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "modelDigest": "15f95bfba42cd6b45744201c7667b9e999b3131a266cc8b4881fdf0464b87596",
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
     "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.9,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -194,7 +218,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 114.18498208639048,
+      "mapSpread": 127.01901238937197,
       "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-1440.png",
       "passed": true
     },
@@ -205,7 +229,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 130.63333931119303,
+      "mapSpread": 137.096263043488,
       "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-1094.png",
       "passed": true
     },
@@ -216,22 +240,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 122.00542814506423,
+      "mapSpread": 121.110885085699,
       "screenshot": "work/map-review/guide-pages-final/_guides_cologne-cathedral_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/cologne-cathedral/",
     "hasMap": true,
     "errors": [],
-    "modelDigest": "1377869460488e5e17f79900f838c03f0a09c27eee36c98824f09880317952ae",
+    "default2d": true,
+    "entryFloor": "nave",
+    "modelDigest": "15f95bfba42cd6b45744201c7667b9e999b3131a266cc8b4881fdf0464b87596",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

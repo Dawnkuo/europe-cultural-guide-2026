@@ -1,0 +1,64 @@
+.highlight-browser__location { display: flex; gap: .4rem; align-items: center; color: var(--gold); margin-top: .7rem; font-size: .875rem; }
+.highlight-browser__location svg { flex-shrink: 0; }
+.highlight-detail__gallery { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .75rem; }
+.highlight-detail .highlight-detail__image { display: block; }
+.highlight-detail__image > img { display: block; margin-inline: auto; }
+.highlight-detail__gallery button { width: 72px; height: 72px; border: 1px solid var(--line); background: var(--surface); padding: 4px; }
+.highlight-detail__gallery button[aria-pressed="true"] { border-color: var(--gold); }
+.highlight-detail__gallery button img { width: 100%; height: 100%; object-fit: contain; }
+.highlight-detail__facts { display: grid; gap: .75rem; }
+.highlight-detail__facts > div { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: .75rem; }
+.highlight-detail__facts dt { color: var(--muted); }
+.highlight-detail__facts dd { margin: 0; }
+.highlight-detail__map-links { margin-top: 1.5rem; display: grid; gap: .65rem; }
+.highlight-detail__map-links button, .onsite-guide__location button, .onsite-guide__work button { display: inline-flex; justify-content: center; align-items: center; gap: .5rem; min-height: 44px; padding: .65rem 1rem; border: 1px solid var(--gold); background: var(--gold); color: #07121c; font: inherit; font-weight: 600; }
+.highlight-detail__map-links p { color: var(--muted); font-size: .875rem; }
+.guide-room-works { padding: 1.25rem; background: #0c1b29; border-top: 1px solid var(--line); }
+.guide-room-works header { display: flex; gap: 1rem; align-items: baseline; justify-content: space-between; margin-bottom: 1rem; }
+.guide-room-works h3 { font-size: 1.125rem; margin: 0; color: var(--text); }
+.guide-room-works header > span { color: var(--muted); font-size: .875rem; flex-shrink: 0; }
+.guide-room-works > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
+.guide-room-works button { display: flex; min-width: 0; gap: .75rem; align-items: center; padding: .65rem; text-align: left; color: var(--text); background: #081522; border: 1px solid var(--line); font: inherit; }
+.guide-room-works button img { width: 56px; height: 64px; object-fit: contain; flex-shrink: 0; }
+.guide-room-works button > span { flex: 1; min-width: 0; }
+.guide-room-works button strong { display: block; font-size: 1rem; }
+.guide-room-works button small { display: block; margin-top: .25rem; font-size: .875rem; color: var(--muted); overflow-wrap: anywhere; }
+.guide-room-works button > svg { flex-shrink: 0; }
+.guide-room-works button:hover { border-color: var(--gold); }
+.guide-location-preview { margin: 0; padding: .75rem; background: #061019; border: 1px solid var(--line); }
+.guide-location-preview svg { width: 100%; height: 240px; display: block; }
+.guide-location-preview figcaption { font-size: .875rem; color: var(--gold); padding-top: .65rem; }
+.architectural-map:fullscreen { overflow-y: auto; background: var(--surface-deep); }
+.architectural-map__layers { display: flex; flex-wrap: wrap; gap: 1.5rem; padding: .75rem 1.25rem; margin: 0; border: 0; border-bottom: 1px solid var(--line); }
+.architectural-map__layers label { display: flex; align-items: center; gap: .6rem; min-height: 44px; }
+.architectural-map__layers input { width: 18px; height: 18px; accent-color: var(--gold); }
+.onsite-guide::backdrop { background: rgb(0 5 10 / 88%); }
+.onsite-guide__storage-note { display: block; color: var(--gold); font-size: 14px; line-height: 1.6; margin-bottom: 16px; }
+.onsite-guide .onsite-guide__stage { align-self: stretch; min-height: 0; overflow-y: auto; overscroll-behavior: contain; max-width: 1100px; padding: 1.5rem 2rem; }
+.onsite-guide .onsite-guide__stage h3 { font-size: 2rem; line-height: 1.4; }
+.onsite-guide .onsite-guide__stage > p:not(.eyebrow) { font-family: var(--font-ui); font-size: 1rem; line-height: 1.8; }
+.onsite-guide__location { display: grid; gap: .75rem; margin-block: 1.5rem; }
+.onsite-guide__location label { display: flex; gap: .75rem; align-items: center; }
+.onsite-guide__location select { min-width: 0; flex: 1; min-height: 44px; color: var(--text); background: #102231; border: 1px solid var(--line); padding: .5rem; font: inherit; }
+.onsite-guide .onsite-guide__work { display: grid; grid-template-columns: minmax(100px, 35%) minmax(0, 1fr); gap: 1.25rem; background: transparent; border-top: 1px solid var(--line); padding: 1.25rem 0; }
+.onsite-guide__work > img { width: 100%; max-height: 320px; object-fit: contain; background: #061019; }
+.onsite-guide__work h4 { margin: .5rem 0; }
+.onsite-guide__work button { margin-top: .5rem; }
+.onsite-guide .onsite-guide__next { padding-block: 1rem; color: var(--gold); border-top: 1px solid var(--line); font-size: 1rem; }
+@media (max-width: 1000px) { .guide-room-works > div { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .guide-room-works > div { grid-template-columns: minmax(0, 1fr); }
+  .guide-room-works { padding: 1rem; }
+  .onsite-guide .onsite-guide__work { grid-template-columns: minmax(0, 1fr); }
+  .onsite-guide .onsite-guide__stage { padding: 1.25rem; }
+  .onsite-guide .onsite-guide__stage h3 { font-size: 1.5rem; }
+  .guide-location-preview svg { height: 200px; }
+}
+.architectural-map__scene-labels button.architectural-map__floor-caption { left: 12px; width: 150px; min-height: 30px; transform: translateY(-50%); padding: 5px 8px; font-size: 11px; line-height: 18px; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 0; border-left: 2px solid #547182; background: #091722; color: #bdcbd2; }
+.architectural-map__scene-labels button.architectural-map__floor-caption[aria-pressed=true] { border-color: var(--gold); color: var(--gold-bright); background: #142633; }
+@media (max-width: 600px) { .architectural-map__scene-labels button.architectural-map__floor-caption { width: 100px; font-size: 10px; padding-inline: 5px; } }
+.guide-sequence__connections { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.guide-sequence__connections button { display: inline-flex; align-items: center; text-align: left; min-height: 44px; background: var(--surface-panel); border: 1px solid var(--line); color: var(--text); padding: 8px 12px; gap: 8px; font-size: 13px; line-height: 1.4; }
+.guide-sequence__connections button:hover, .guide-sequence__connections button:focus-visible { border-color: var(--gold); }
+.guide-sequence__connections img { height: 44px; width: 44px; object-fit: contain; flex: 0 0 44px; }
+.guide-sequence__connections span { font-family: var(--font-body); font-size: 13px; color: var(--text); }

@@ -5,11 +5,13 @@ import { resolve, extname, sep } from 'node:path';
 
 const types = { '.html': 'text/html', '.rsc': 'text/x-component', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.avif': 'image/avif', '.woff2': 'font/woff2' };
 
-export async function githubPreview(output = 'dist/client', basePath = '/europe-cultural-guide-2026') {
+export async function githubPreview(output = 'dist/client', basePath = '/europe-cultural-guide-2026', unavailablePaths = new Set()) {
   const root = resolve(output);
   const server = createServer(async (request, response) => {
     try {
       const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+      // Test-only fault injection exercises real worker download/retry behavior.
+      if (unavailablePaths.has(pathname)) { response.writeHead(503, { 'Cache-Control': 'no-store' }).end('Temporarily unavailable'); return; }
       if (!pathname.startsWith(`${basePath}/`)) { response.writeHead(404).end(); return; }
       let file = resolve(root, `.${pathname.slice(basePath.length)}`);
       if (file !== root && !file.startsWith(`${root}${sep}`)) { response.writeHead(403).end(); return; }

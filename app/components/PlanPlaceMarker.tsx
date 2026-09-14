@@ -15,8 +15,8 @@ export function PlanPlaceMarker({ place, zoom = 1, descriptionId }: { place: Pla
   return <>
     {place.guideNumbers?.length ? <span className="architectural-map__route-number" data-guide-numbers={place.guideNumbers.join(',')} aria-hidden="true"
       style={{ width: guideNumberWidth(place.guideNumbers) * zoom, height: 20 * zoom, fontSize: 11 * zoom, marginRight: 4 * zoom }}>{place.guideNumbers.join('·')}</span> : null}
-    {Icon && <Icon size="1.15em" aria-hidden="true" />}
-    <span data-place-label className={Icon ? 'sr-only' : undefined}>{place.label}</span>
+    {Icon && <Icon size="1.15em" aria-hidden="true" style={place.showLabel ? { marginRight: 4 * zoom, flexShrink: 0 } : undefined} />}
+    <span data-place-label className={Icon && !place.showLabel ? 'sr-only' : undefined}>{place.label}</span>
     {descriptionId && <span id={descriptionId} className="sr-only">导览步骤 {place.guideNumbers?.join('、')}</span>}
   </>;
 }

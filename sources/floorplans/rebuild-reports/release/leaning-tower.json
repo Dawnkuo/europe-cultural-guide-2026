@@ -1,7 +1,7 @@
 {
   "slug": "leaning-tower",
   "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared current base drawing and all four1910 measured-plan groups. Retains native variable column shapes, thick annular masonry, actual voids and tread/hatch details; four annotation-obscured or ambiguous column sites remain missing instead of filled with ideal circles. No universal cylinder or solid center is substituted.",
     "floorCoverageReview": "Five source-plan groups, not eight separately measured physical floors. Two depictions of the first gallery are not treated as successive levels.",
@@ -19,8 +19,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T09:59:43.093Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:56:33.864Z",
     "slug": "leaning-tower",
     "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
     "sourceDigest": "c393192a76ad386ad08ea06fceb4b0638800ffc19449783b9358fca662436184",
@@ -36,6 +36,8 @@
             "exactLabels": 2,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -47,6 +49,8 @@
             "exactLabels": 2,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -58,6 +62,8 @@
             "exactLabels": 3,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -69,6 +75,8 @@
             "exactLabels": 3,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -80,6 +88,8 @@
             "exactLabels": 3,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -88,15 +98,15 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/leaning-tower-1440-3d.png",
-          "work/map-review/release-final/leaning-tower-1440-base-2d.png",
-          "work/map-review/release-final/leaning-tower-1440-entry-first-2d.png",
-          "work/map-review/release-final/leaning-tower-1440-galleries-1-3-2d.png",
-          "work/map-review/release-final/leaning-tower-1440-galleries-4-7-2d.png",
-          "work/map-review/release-final/leaning-tower-1440-upper-2d.png"
+          "work/map-review/release-shard-0/leaning-tower-1440-3d.png",
+          "work/map-review/release-shard-0/leaning-tower-1440-base-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-1440-entry-first-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-1440-galleries-1-3-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-1440-galleries-4-7-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-1440-upper-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 486,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 13,
@@ -116,6 +126,8 @@
             "exactLabels": 2,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -127,6 +139,8 @@
             "exactLabels": 2,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -138,6 +152,8 @@
             "exactLabels": 3,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -149,6 +165,8 @@
             "exactLabels": 3,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -160,6 +178,8 @@
             "exactLabels": 3,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -168,15 +188,15 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/leaning-tower-1094-3d.png",
-          "work/map-review/release-final/leaning-tower-1094-base-2d.png",
-          "work/map-review/release-final/leaning-tower-1094-entry-first-2d.png",
-          "work/map-review/release-final/leaning-tower-1094-galleries-1-3-2d.png",
-          "work/map-review/release-final/leaning-tower-1094-galleries-4-7-2d.png",
-          "work/map-review/release-final/leaning-tower-1094-upper-2d.png"
+          "work/map-review/release-shard-0/leaning-tower-1094-3d.png",
+          "work/map-review/release-shard-0/leaning-tower-1094-base-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-1094-entry-first-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-1094-galleries-1-3-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-1094-galleries-4-7-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-1094-upper-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 608,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 13,
@@ -196,6 +216,8 @@
             "exactLabels": 2,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -207,6 +229,8 @@
             "exactLabels": 2,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -218,6 +242,8 @@
             "exactLabels": 3,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -229,6 +255,8 @@
             "exactLabels": 3,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -240,6 +268,8 @@
             "exactLabels": 3,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -248,15 +278,15 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/leaning-tower-390-3d.png",
-          "work/map-review/release-final/leaning-tower-390-base-2d.png",
-          "work/map-review/release-final/leaning-tower-390-entry-first-2d.png",
-          "work/map-review/release-final/leaning-tower-390-galleries-1-3-2d.png",
-          "work/map-review/release-final/leaning-tower-390-galleries-4-7-2d.png",
-          "work/map-review/release-final/leaning-tower-390-upper-2d.png"
+          "work/map-review/release-shard-0/leaning-tower-390-3d.png",
+          "work/map-review/release-shard-0/leaning-tower-390-base-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-390-entry-first-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-390-galleries-1-3-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-390-galleries-4-7-2d.png",
+          "work/map-review/release-shard-0/leaning-tower-390-upper-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 1214,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 13,
@@ -290,8 +320,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.69999999999891,
-    "frameP95Ms": 16.799999999999272,
-    "renderP95Ms": 2.8,
+    "frameP95Ms": 16.700000000000728,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -308,7 +338,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 85.6021259382553,
+      "mapSpread": 101.2248781518095,
       "screenshot": "work/map-review/guide-pages-final/_guides_leaning-tower_-1440.png",
       "passed": true
     },
@@ -319,7 +349,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 97.44866880366759,
+      "mapSpread": 109.7213299262418,
       "screenshot": "work/map-review/guide-pages-final/_guides_leaning-tower_-1094.png",
       "passed": true
     },
@@ -330,22 +360,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 124.3263279715895,
+      "mapSpread": 157.50608744128908,
       "screenshot": "work/map-review/guide-pages-final/_guides_leaning-tower_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/leaning-tower/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "entry-first",
     "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

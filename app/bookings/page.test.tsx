@@ -4,6 +4,17 @@ import BookingsPage from './page';
 import { bookingRecords } from '../data/bookings';
 
 describe('BookingsPage', () => {
+  it('shows the Last Supper as booked without a missing-ticket warning', () => {
+    render(<BookingsPage />);
+    const row = screen.getByRole('rowheader', {
+      name: '9月26日 《最后的晚餐》',
+    }).closest('tr')!;
+    expect(within(row).getByText('已订')).toBeInTheDocument();
+    expect(within(row).getByText('行程09:30')).toBeInTheDocument();
+    expect(row.textContent).not.toMatch(/待确认|缺票|缺凭证|未找到凭证/);
+    expect(row.querySelector('.booking-row__note svg')).toBeNull();
+  });
+
   it('provides native tables with column headers, row headers and complete records', () => {
     render(<BookingsPage />);
     for (const category of ['门票', '交通', '住宿']) {

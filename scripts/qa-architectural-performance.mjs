@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
 const output = 'work/map-review/performance';
+const baseUrl = (process.env.MAP_QA_URL ?? 'http://localhost:55838').replace(/\/$/, '');
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-webgl', '--ignore-gpu-blocklist'] });
 const percentile = (values, fraction) => [...values].sort((a, b) => a - b)[Math.floor((values.length - 1) * fraction)];
@@ -28,7 +29,7 @@ try {
     const page = await context.newPage();
     const errors = [];
     page.on('pageerror', (error) => errors.push(error.message));
-    await page.goto(`http://localhost:55838/guides/${slug}/#guide-spatial`, { waitUntil: 'domcontentloaded' });
+    await page.goto(`${baseUrl}/guides/${slug}/#guide-spatial`, { waitUntil: 'domcontentloaded' });
     const map = page.locator('.architectural-map');
     await map.scrollIntoViewIfNeeded();
     await map.getByRole('button', { name: '3D', exact: true }).click();

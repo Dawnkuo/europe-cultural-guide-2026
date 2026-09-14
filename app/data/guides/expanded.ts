@@ -6,7 +6,11 @@ import { expandedBarcelona } from './expanded-barcelona';
 import { expandedChurches } from './expanded-churches';
 import { expandedVatican } from './expanded-vatican';
 import { expandedRomeExtra } from './expanded-rome-extra';
+import { expandedUffizi } from './expanded-uffizi';
+import { accademiaAdditions } from './accademia-interpretations';
 import rawMetadata from './collection-metadata.generated.json';
+import referenceMetadata from './collection-reference-metadata.json';
+import uffiziArchive from './uffizi-archive.generated.json';
 
 type Metadata = Pick<
   GuideHighlight,
@@ -15,7 +19,10 @@ type Metadata = Pick<
   building?: string;
   missingImage?: boolean;
 };
-const metadata: Record<string, Metadata> = rawMetadata;
+const metadata: Record<string, Metadata> = { ...rawMetadata, ...referenceMetadata };
+for (const [id, fields] of Object.entries(uffiziArchive)) {
+  metadata[id] = { ...metadata[id], ...fields };
+}
 export const collectionExpansion: Record<string, AuthoredHighlight[]> = {
   ...expandedPaintings,
   ...expandedItaly,
@@ -23,6 +30,7 @@ export const collectionExpansion: Record<string, AuthoredHighlight[]> = {
   ...expandedChurches,
   ...expandedVatican,
   ...expandedRomeExtra,
+  uffizi: [...expandedPaintings.uffizi, ...expandedUffizi],
 };
 
 const displayNotes: Record<string, string> = {
@@ -144,5 +152,5 @@ export function expandGuideHighlights(guide: GuideRecord): GuideRecord {
       !(guide.slug === 'borghese' && index === 2) &&
       !(guide.slug === 'cologne-cathedral' && index === 1),
   );
-  return { ...guide, highlights: [...retained, ...additionsFor(guide.slug)] };
+  return { ...guide, highlights: [...retained, ...additionsFor(guide.slug), ...(guide.slug === 'accademia-florence' ? accademiaAdditions : [])] };
 }

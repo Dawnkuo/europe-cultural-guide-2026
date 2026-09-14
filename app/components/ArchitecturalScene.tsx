@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import type * as THREE from 'three';
 import type { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { independentFloorScale, planFloorGap, placesWithGuideNumbers, placeSceneLabels, planTones, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type MapPoint } from '../lib/architectural-plan';
+import { independentFloorScale, planFloorGap, planWallHeight, planAnchorLift, placesWithGuideNumbers, placeSceneLabels, planTones, spaceAtPoint, spaceForFeature, spaceForPlace, type ArchitecturalPlan, type LabelObstacle, type MapPoint } from '../lib/architectural-plan';
 import { focusPlanAnchor, isPlanAnchorVisible } from '../lib/architectural-visibility';
 import { PlanPlaceMarker } from './PlanPlaceMarker';
 
@@ -14,6 +14,9 @@ type Props = {
   command: { id: number; action: string };
   onSelect: (id: string) => void;
   onFailure: () => void;
+  onFloorSelect?: (id: string) => void;
+  showServices?: boolean;
+  showRoute?: boolean;
 };
 
 export default function ArchitecturalScene(props: Props) {
@@ -24,6 +27,8 @@ export default function ArchitecturalScene(props: Props) {
   const execute = useRef<(action: string) => void>(() => {});
   const labelNodes = useRef(new Map<string, HTMLButtonElement>());
   const leaderNodes = useRef(new Map<string, SVGLineElement>());
+  const floorLabelNodes = useRef(new Map<string, HTMLButtonElement>());
+  const floorLeaderNodes = useRef(new Map<string, SVGLineElement>());
   const labelDrag = useRef(false);
 
   useEffect(() => { latest.current = props; redraw.current(); }, [props]);
@@ -54,15 +59,21 @@ export default function ArchitecturalScene(props: Props) {
       disposers.push(() => { renderer.dispose(); renderer.forceContextLoss(); renderer.domElement.remove(); });
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
       renderer.setClearColor('#061019');
+      renderer.outputColorSpace = Three.SRGBColorSpace;
+      renderer.toneMapping = Three.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.15;
       container.insertBefore(renderer.domElement, container.firstChild);
       const canvas = renderer.domElement;
       canvas.tabIndex = 0;
       canvas.setAttribute('aria-label', '分层室内地图，方向键旋转，加减键缩放');
       const scene = new Three.Scene();
-      scene.add(new Three.AmbientLight(0xffffff, 1.7));
-      const light = new Three.DirectionalLight(0xfff1d0, 2.2);
+      scene.add(new Three.HemisphereLight(0xe8f2ff, 0x24394b, 1.45));
+      const light = new Three.DirectionalLight(0xfff1d0, 2.6);
       light.position.set(-12, 28, 14);
       scene.add(light);
+      const rim = new Three.DirectionalLight(0x91b7cc, 1.2);
+      rim.position.set(16, 12, -20);
+      scene.add(rim);
       const camera = new Three.OrthographicCamera(-12,12,12,-12,.1,200);
       let controls: OrbitControls;
       const floors = [...plan.floors].sort((a,b) => a.order-b.order);
@@ -74,6 +85,7 @@ export default function ArchitecturalScene(props: Props) {
       };
       const materials: Array<{ floorId: string; material: THREE.MeshStandardMaterial; kind: string; color: THREE.Color; spaceId?: string }> = [];
       const detailLines: Array<{ floorId: string; material: THREE.LineBasicMaterial }> = [];
+      const wallEdges: Array<{ floorId: string; material: THREE.LineBasicMaterial }> = [];
       for (const floor of floors) {
         const scale = independentFloorScale(floor);
         const buckets = new Map<string, THREE.BufferGeometry[]>();
@@ -93,7 +105,7 @@ export default function ArchitecturalScene(props: Props) {
             }
             const shape = new Three.Shape(polygon.outer.map(([x,y]) => new Three.Vector2(x,y)));
             for (const ring of polygon.holes) shape.holes.push(new Three.Path(ring.map(([x,y]) => new Three.Vector2(x,y))));
-            const depth = feature.kind === 'wall' ? .11/scale : .012/scale;
+            const depth = feature.kind === 'wall' ? planWallHeight/scale : .018/scale;
             const geometry = new Three.ExtrudeGeometry(shape, { depth, bevelEnabled: false, steps: 1, curveSegments: 6 });
             liveGeometries.add(geometry);
             const position = geometry.getAttribute('position');
@@ -115,8 +127,8 @@ export default function ArchitecturalScene(props: Props) {
           liveGeometries.add(geometry);
           geometry.boundsTree = new MeshBVH(geometry);
           const [kind,tone,spaceId] = key.split(':');
-          const material = new Three.MeshStandardMaterial({ color: planTones[tone] ?? '#b9a67d', side: Three.DoubleSide, roughness: 1,
-            transparent: true, opacity: 1, depthWrite: true });
+          const material = new Three.MeshStandardMaterial({ color: planTones[tone] ?? '#b9a67d', side: Three.DoubleSide, roughness: .82,
+            metalness: .04, opacity: 1, depthWrite: true });
           disposers.push(() => material.dispose());
           const mesh = new Three.Mesh(geometry,material);
           mesh.raycast = acceleratedRaycast;
@@ -124,6 +136,16 @@ export default function ArchitecturalScene(props: Props) {
           mesh.userData.spaceId = spaceId;
           scene.add(mesh);
           materials.push({ floorId: floor.id, material, kind, color: material.color.clone(), spaceId });
+          if (kind === 'wall') {
+            const edges = new Three.EdgesGeometry(geometry, 32);
+            liveGeometries.add(edges);
+            const edgeMaterial = new Three.LineBasicMaterial({ color: '#f3dfad', transparent: true, opacity: .26, depthWrite: false });
+            disposers.push(() => edgeMaterial.dispose());
+            const lines = new Three.LineSegments(edges, edgeMaterial);
+            lines.raycast = () => {};
+            scene.add(lines);
+            wallEdges.push({ floorId: floor.id, material: edgeMaterial });
+          }
         }
         if (detailEdges.length) {
           const geometry = new Three.BufferGeometry();
@@ -140,7 +162,7 @@ export default function ArchitecturalScene(props: Props) {
       const connections = plan.verticalLinks.map((link) => {
         const from = plan.places.find((place) => place.id === link.fromPlaceId)!;
         const to = plan.places.find((place) => place.id === link.toPlaceId)!;
-        const geometry = new Three.BufferGeometry().setFromPoints([projectPoint(from.floorId, from.at, .14), projectPoint(to.floorId, to.at, .14)]);
+        const geometry = new Three.BufferGeometry().setFromPoints([projectPoint(from.floorId, from.at, planAnchorLift), projectPoint(to.floorId, to.at, planAnchorLift)]);
         liveGeometries.add(geometry);
         const material = new Three.LineDashedMaterial({ color: '#e8bd5e', dashSize: .12, gapSize: .08, transparent: true, opacity: .3 });
         disposers.push(() => material.dispose());
@@ -160,6 +182,7 @@ export default function ArchitecturalScene(props: Props) {
       selectionMesh.raycast = () => {};
       scene.add(selectionMesh);
       const labelRaycaster = new Three.Raycaster();
+      const inactiveColor = new Three.Color('#2f4858');
       labelRaycaster.firstHitOnly = true;
       const occluders = scene.children.filter((object) => object instanceof Three.Mesh);
       const draw = () => {
@@ -195,16 +218,17 @@ export default function ArchitecturalScene(props: Props) {
         container.dataset.selectedSpaceId = selectionMesh.visible ? selectionId ?? '' : '';
         container.dataset.selectionVertices = selectionMesh.visible ? String(selectionGeometry!.getAttribute('position').count) : '0';
         for (const record of materials) {
-          record.material.opacity = record.floorId === floorId ? 1 : (record.kind === 'surface' ? .5 : .65);
           record.material.color.copy(record.color);
+          if (record.floorId !== floorId) record.material.color.lerp(inactiveColor, .28);
           if (record.spaceId && record.spaceId === selectedSpace?.id) record.material.color.set('#b99443');
         }
         for (const { floorId: lineFloor, material } of detailLines) material.opacity = lineFloor === floorId ? .4 : .22;
+        for (const { floorId: lineFloor, material } of wallEdges) material.opacity = lineFloor === floorId ? .32 : .16;
         for (const { link, material } of connections) material.opacity = selected === link.fromPlaceId || selected === link.toPlaceId ? 1 : .3;
         if (selected && selected !== selectedId) {
           const place = plan.places.find((p) => p.id === selected);
           if (place) {
-            focusPlanAnchor(projectPoint(place.floorId, place.at, .14), camera, controls.target, occluders, labelRaycaster);
+            focusPlanAnchor(projectPoint(place.floorId, place.at, planAnchorLift), camera, controls.target, occluders, labelRaycaster);
           }
           selectedId = selected;
         }
@@ -212,8 +236,29 @@ export default function ArchitecturalScene(props: Props) {
         camera.updateMatrixWorld();
         renderer.render(scene,camera);
         const width = container.clientWidth, height = container.clientHeight;
-        const points = numberedPlaces.filter((place) => place.floorId === floorId).flatMap((place) => {
-          const anchor = projectPoint(place.floorId,place.at,.14);
+        const captions = floors.map(floor => {
+          const anchor = projectPoint(floor.id, [floor.bounds[0], (floor.bounds[1] + floor.bounds[3]) / 2], .1).project(camera);
+          return { id: floor.id, x: (anchor.x + 1) * width / 2, y: (1 - anchor.y) * height / 2 };
+        }).sort((a,b) => a.y - b.y);
+        const gap = Math.min(38, (height - 40) / Math.max(1, captions.length));
+        let previous = -gap;
+        const reserved: LabelObstacle[] = [];
+        captions.forEach((caption, index) => {
+          const y = Math.max(previous + gap, Math.min(height - 24 - (captions.length - index - 1) * gap, Math.max(24, caption.y)));
+          previous = y;
+          const label = floorLabelNodes.current.get(caption.id);
+          if (label) {
+            label.style.top = `${y}px`;
+            reserved.push({ displayAt: [label.offsetLeft + label.offsetWidth / 2, y], width: label.offsetWidth, height: label.offsetHeight });
+          }
+          const leader = floorLeaderNodes.current.get(caption.id);
+          if (leader) {
+            leader.setAttribute('x1', String(label ? label.offsetLeft + label.offsetWidth : 12)); leader.setAttribute('y1', String(y));
+            leader.setAttribute('x2', String(caption.x)); leader.setAttribute('y2', String(caption.y));
+          }
+        });
+        const points = numberedPlaces.filter((place) => place.floorId === floorId && (latest.current.showServices !== false || place.kind !== 'service')).flatMap((place) => {
+          const anchor = projectPoint(place.floorId,place.at,planAnchorLift);
           const visible = isPlanAnchorVisible(anchor,camera,occluders,labelRaycaster);
           const button = labelNodes.current.get(place.id);
           if (button) { button.style.visibility = 'hidden'; button.tabIndex = -1; }
@@ -222,9 +267,9 @@ export default function ArchitecturalScene(props: Props) {
           if (!visible) return [];
           const point = anchor.project(camera);
           if (button) { button.dataset.anchorX = String((point.x + 1) * width / 2); button.dataset.anchorY = String((1 - point.y) * height / 2); }
-          return { ...place, at: [(point.x+1)*width/2, (1-point.y)*height/2] as MapPoint };
+          return { ...place, guideNumbers: latest.current.showRoute === false ? [] : place.guideNumbers, at: [(point.x+1)*width/2, (1-point.y)*height/2] as MapPoint };
         });
-        const visibleLabels = placeSceneLabels(points, [width, height], selected);
+        const visibleLabels = placeSceneLabels(points, [width, height], selected, reserved);
         for (const place of visibleLabels) {
           const button = labelNodes.current.get(place.id);
           if (button) { button.style.visibility = 'visible'; button.tabIndex = 0; button.style.transform = `translate(${place.displayAt[0]}px,${place.displayAt[1]}px) translate(-50%,-50%)`; }
@@ -271,7 +316,8 @@ export default function ArchitecturalScene(props: Props) {
         camera.position.add(offset); controls.target.add(offset);
         const halfWidth = (right - left) / 2, halfHeight = (top - bottom) / 2;
         const aspect = container.clientWidth/container.clientHeight;
-        const half = Math.max(halfHeight,halfWidth/aspect)*1.15;
+        const padding = 40;
+        const half = Math.max(halfHeight / (1 - padding * 2 / container.clientHeight), halfWidth / (aspect * (1 - padding * 2 / container.clientWidth))) * 1.15;
         camera.left = -half*aspect; camera.right = half*aspect; camera.top = half; camera.bottom = -half;
         camera.zoom = 1; camera.updateProjectionMatrix();
         selectedId = focusSelection ? undefined : latest.current.selected;
@@ -294,7 +340,7 @@ export default function ArchitecturalScene(props: Props) {
       const resize = () => {
         if (cancelled || !container.isConnected) return;
         if (!container.clientWidth || !container.clientHeight) return;
-        renderer.setSize(container.clientWidth,container.clientHeight,false); fit(true);
+        renderer.setSize(container.clientWidth,container.clientHeight,false); fit();
         if (process.env.NODE_ENV === 'development') {
           // Read the same scene/camera on the GPU, without preserving the main
           // drawing buffer or adding a continuous animation loop in production.
@@ -337,7 +383,7 @@ export default function ArchitecturalScene(props: Props) {
         // Respect opaque geometry: do not select an interior through another floor.
         const index = floors.findIndex((floor) => floor.id === latest.current.floorId);
         const floor = floors[index];
-        const floorPlane = new Three.Plane(new Three.Vector3(0, 1, 0), -(index * 7.5 + .04));
+        const floorPlane = new Three.Plane(new Three.Vector3(0, 1, 0), -(index * planFloorGap(plan) + .04));
         const intersection = raycaster.ray.intersectPlane(floorPlane, new Three.Vector3());
         if (!intersection) return;
         const hit = raycaster.intersectObjects(scene.children,false).find((hit) => hit.object instanceof Three.Mesh);
@@ -385,12 +431,14 @@ export default function ArchitecturalScene(props: Props) {
     return () => { cancelled = true; cleanup(); };
   }, [props.plan, numberedPlaces]);
 
-  const places = numberedPlaces.filter((place) => place.floorId === props.floorId);
+  const places = numberedPlaces.filter((place) => place.floorId === props.floorId && (props.showServices !== false || place.kind !== 'service')).map(place => ({ ...place, guideNumbers: props.showRoute === false ? [] : place.guideNumbers }));
   return <div ref={host} className="architectural-map__scene" data-active-floor={props.floorId}>
     <div className="architectural-map__scene-labels">
       <svg width="100%" height="100%" aria-hidden="true" style={{ position:'absolute',inset:0 }}>
+        {props.plan.floors.map(floor => <line key={`floor-${floor.id}`} ref={node => { if (node) floorLeaderNodes.current.set(floor.id,node); else floorLeaderNodes.current.delete(floor.id); }} stroke={floor.id === props.floorId ? '#d5ba76' : '#547182'} strokeWidth="1" opacity=".55" />)}
         {places.map((place) => <line key={place.id} ref={(node) => { if (node) leaderNodes.current.set(place.id,node); else leaderNodes.current.delete(place.id); }} stroke="#d5ba76" strokeWidth="1" opacity=".6" />)}
       </svg>
+      {props.plan.floors.map(floor => <button key={`floor-${floor.id}`} type="button" className="architectural-map__floor-caption" title={floor.label} aria-label={`选择楼层：${floor.label}`} aria-pressed={floor.id === props.floorId} ref={node => { if (node) floorLabelNodes.current.set(floor.id,node); else floorLabelNodes.current.delete(floor.id); }} onClick={event => { if (!labelDrag.current || event.detail === 0) props.onFloorSelect?.(floor.id); }}>{floor.label}</button>)}
       {places.map((place) => <button key={place.id} type="button" ref={(node) => { if (node) labelNodes.current.set(place.id,node); else labelNodes.current.delete(place.id); }}
         data-place-id={place.id} title={place.name} data-place-kind={place.kind} aria-label={`${place.label} ${place.name}`} aria-describedby={place.guideNumbers?.length ? `${props.plan.slug}-${place.id}-guide-3d` : undefined} aria-pressed={props.selected === place.id} onClick={(event) => { if (!labelDrag.current || event.detail === 0) props.onSelect(place.id); }}><PlanPlaceMarker place={place} descriptionId={place.guideNumbers?.length ? `${props.plan.slug}-${place.id}-guide-3d` : undefined} /></button>)}
     </div>

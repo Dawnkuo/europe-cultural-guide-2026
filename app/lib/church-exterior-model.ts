@@ -2,6 +2,8 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { withBasePath } from './paths';
 import { hasChurchExterior } from './church-exterior-registry';
+import { hasMuseumExterior } from './museum-exterior-registry';
+import { hasLandmarkExterior } from './landmark-exterior-registry';
 
 export function disposeChurchTextures(model: THREE.Object3D | undefined) {
   const textures = new Set<THREE.Texture>();
@@ -27,7 +29,21 @@ function disposeModel(model: THREE.Object3D) {
 
 export async function loadChurchExterior(slug: string, signal: AbortSignal, anisotropy = 4) {
   if (!hasChurchExterior(slug)) throw new Error(`Unsupported church exterior: ${slug}`);
-  const response = await fetch(withBasePath(`/models/churches/${slug}.glb`), { signal });
+  return loadMassingAsset('churches', slug, signal, anisotropy);
+}
+
+export async function loadMuseumExterior(slug: string, signal: AbortSignal, anisotropy = 4) {
+  if (!hasMuseumExterior(slug)) throw new Error(`Unsupported museum exterior: ${slug}`);
+  return loadMassingAsset('museums', slug, signal, anisotropy);
+}
+
+export async function loadLandmarkExterior(slug: string, signal: AbortSignal, anisotropy = 4) {
+  if (!hasLandmarkExterior(slug)) throw new Error(`Unsupported landmark exterior: ${slug}`);
+  return loadMassingAsset('landmarks', slug, signal, anisotropy);
+}
+
+async function loadMassingAsset(family: 'churches' | 'museums' | 'landmarks', slug: string, signal: AbortSignal, anisotropy: number) {
+  const response = await fetch(withBasePath(`/models/${family}/${slug}.glb`), { signal });
   if (!response.ok) throw new Error(`Church model: HTTP ${response.status}`);
   const bytes = await response.arrayBuffer();
   signal.throwIfAborted();
@@ -38,7 +54,7 @@ export async function loadChurchExterior(slug: string, signal: AbortSignal, anis
     const targets: THREE.MeshStandardMaterial[] = [];
     model.traverse(object => {
       if (!(object instanceof THREE.Mesh)) return;
-      object.castShadow = true;
+      object.castShadow = object.userData.surfaceRole !== 'ground';
       object.receiveShadow = true;
       for (const material of Array.isArray(object.material) ? object.material : [object.material]) {
         if (material instanceof THREE.MeshStandardMaterial && ['marble', 'trim'].includes(material.name)) targets.push(material);
@@ -61,7 +77,7 @@ export async function loadChurchExterior(slug: string, signal: AbortSignal, anis
         model.userData.materialStatus = 'textured';
       }
     } else model.userData.materialStatus = 'building-palette';
-    model.userData.id = `church-massing:${slug}`;
+    model.userData.id = `${family === 'churches' ? 'church' : family === 'museums' ? 'museum' : 'landmark'}-massing:${slug}`;
     model.userData.scope = 'evidence-backed-exterior-massing';
     return model;
   } catch (error) { disposeModel(model); throw error; }

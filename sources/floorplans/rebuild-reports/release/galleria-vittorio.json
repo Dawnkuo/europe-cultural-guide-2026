@@ -1,7 +1,7 @@
 {
   "slug": "galleria-vittorio",
   "modelDigest": "1683ec93b7b4509e150b6b10ba71eafb41aa25fa59c705743377f8915ed278b1",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared the complete2015 municipal existing-ground-floor PDF, normalized only for page rotation. Replaced the rejected coarse cross. All14255 native stroked features retain shops, doors, stairs, octagonal center and arcade detail. Reviewed all791 nontrivial black-channel faces;314 sufficiently resolved masonry profiles are extruded. Closed shops, lifts and stair pockets are explicitly excluded, while unresolved thin profiles remain flat. The full pinned1885-face graph validates topology and individual source-path provenance.",
     "floorCoverageReview": "Full2015 ground-level source, not current tenants or undocumented upper/roof floors. No fictitious public-floor polygon seals the octagon.",
@@ -15,8 +15,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T09:57:07.662Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:55:01.136Z",
     "slug": "galleria-vittorio",
     "modelDigest": "1683ec93b7b4509e150b6b10ba71eafb41aa25fa59c705743377f8915ed278b1",
     "sourceDigest": "0ab3ce78886cb0fe6856d108d07344cb1efc5d49bea1d69301aedff3bf636516",
@@ -32,6 +32,8 @@
             "exactLabels": 5,
             "guideNumbers": 5,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -40,11 +42,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/galleria-vittorio-1440-3d.png",
-          "work/map-review/release-final/galleria-vittorio-1440-arcade-2d.png"
+          "work/map-review/release-shard-0/galleria-vittorio-1440-3d.png",
+          "work/map-review/release-shard-0/galleria-vittorio-1440-arcade-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 662,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 5,
@@ -64,6 +66,8 @@
             "exactLabels": 5,
             "guideNumbers": 5,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -72,11 +76,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/galleria-vittorio-1094-3d.png",
-          "work/map-review/release-final/galleria-vittorio-1094-arcade-2d.png"
+          "work/map-review/release-shard-0/galleria-vittorio-1094-3d.png",
+          "work/map-review/release-shard-0/galleria-vittorio-1094-arcade-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 847,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 5,
@@ -96,6 +100,8 @@
             "exactLabels": 5,
             "guideNumbers": 5,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -104,11 +110,11 @@
           }
         ],
         "screenshots": [
-          "work/map-review/release-final/galleria-vittorio-390-3d.png",
-          "work/map-review/release-final/galleria-vittorio-390-arcade-2d.png"
+          "work/map-review/release-shard-0/galleria-vittorio-390-3d.png",
+          "work/map-review/release-shard-0/galleria-vittorio-390-arcade-2d.png"
         ],
         "errors": [],
-        "gpuSamples": 589,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 5,
@@ -137,9 +143,9 @@
     "modelDigest": "1683ec93b7b4509e150b6b10ba71eafb41aa25fa59c705743377f8915ed278b1",
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
-    "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 2.3,
+    "frameP50Ms": 16.69999999999891,
+    "frameP95Ms": 16.799999999999272,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -156,7 +162,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 127.34194879799475,
+      "mapSpread": 126.63471867603272,
       "screenshot": "work/map-review/guide-pages-final/_guides_galleria-vittorio_-1440.png",
       "passed": true
     },
@@ -167,7 +173,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 140.4413305664456,
+      "mapSpread": 137.12925813393056,
       "screenshot": "work/map-review/guide-pages-final/_guides_galleria-vittorio_-1094.png",
       "passed": true
     },
@@ -178,22 +184,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 123.99272951320117,
+      "mapSpread": 110.57244009747075,
       "screenshot": "work/map-review/guide-pages-final/_guides_galleria-vittorio_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/galleria-vittorio/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "arcade",
     "modelDigest": "1683ec93b7b4509e150b6b10ba71eafb41aa25fa59c705743377f8915ed278b1",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

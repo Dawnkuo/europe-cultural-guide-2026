@@ -1,0 +1,159 @@
+.artwork-viewer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #061019;
+  color: var(--text);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+.artwork-viewer[open] {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+}
+.artwork-viewer::backdrop {
+  background: #061019;
+}
+.artwork-viewer header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: max(8px, env(safe-area-inset-top))
+    max(16px, env(safe-area-inset-right)) 8px
+    max(16px, env(safe-area-inset-left));
+  border-bottom: 1px solid var(--line);
+}
+.artwork-viewer h3 {
+  margin: 0;
+  font: 600 18px/1.5 var(--font-ui);
+  overflow-wrap: anywhere;
+}
+.artwork-viewer button {
+  width: 44px;
+  height: 44px;
+  padding: 9px;
+  flex: 0 0 44px;
+  display: grid;
+  place-items: center;
+  color: var(--gold-bright);
+  background: var(--surface-panel);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+.artwork-viewer button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.artwork-viewer :is(button, section):focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: -3px;
+}
+.artwork-viewer__tools,
+.artwork-viewer__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.artwork-viewer__tools {
+  padding: 8px;
+  background: var(--surface);
+}
+.artwork-viewer output {
+  font: 500 14px/1.5 var(--font-ui);
+  font-variant-numeric: tabular-nums;
+  min-width: 56px;
+  text-align: center;
+}
+.artwork-viewer__stage {
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  touch-action: none;
+}
+.artwork-viewer__stage .artwork-viewer__viewport,
+.artwork-viewer__stage .artwork-viewer__canvas {
+  width: 100%;
+  height: 100%;
+  /* The zoom engine owns interpolation, including reduced-motion updates. */
+  transition-property: none;
+}
+.artwork-viewer__stage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  user-select: none;
+}
+.artwork-viewer__viewport {
+  cursor: grab;
+}
+.artwork-viewer__viewport:active {
+  cursor: grabbing;
+}
+.artwork-viewer footer {
+  padding: 8px max(16px, env(safe-area-inset-right))
+    max(12px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+}
+.artwork-viewer footer p {
+  margin: 8px auto 0;
+  max-width: 800px;
+  max-height: 80px;
+  overflow-y: auto;
+  font: 400 14px/1.6 var(--font-ui);
+  text-align: center;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.artwork-viewer__error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #061019;
+}
+.artwork-viewer__error button {
+  width: auto;
+}
+@media (max-width: 600px) {
+  .artwork-viewer h3 {
+    font-size: 16px;
+  }
+  .artwork-viewer footer p {
+    max-height: 66px;
+    font-size: 13px;
+  }
+}
+@media (max-height: 500px) {
+  .artwork-viewer header {
+    padding-block: 4px;
+  }
+  .artwork-viewer footer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-block: 4px;
+  }
+  .artwork-viewer footer p {
+    text-align: left;
+    margin: 0;
+    flex: 1;
+  }
+  .artwork-viewer__tools {
+    padding-block: 4px;
+  }
+}

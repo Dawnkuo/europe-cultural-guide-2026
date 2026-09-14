@@ -78,4 +78,22 @@ describe("exterior model geometry", () => {
             }
       }
   });
+
+  it('keeps complete scenes inside the frame throughout overview rotation', () => {
+    for(const size of [[12,60,20],[560,40,560],[300,25,35]])
+      for(const aspect of [.36,.6,1,1.8,2.4]){
+        const distance=perspectiveFitDistance(Math.hypot(...size)/2,aspect,35,1.22);
+        const camera=new THREE.PerspectiveCamera(35,aspect,.1,distance*5);
+        for(let angle=0;angle<Math.PI*2;angle+=Math.PI/12){
+          camera.position.set(Math.cos(angle),.7,Math.sin(angle)).normalize().multiplyScalar(distance);
+          camera.lookAt(0,0,0);camera.updateMatrixWorld();
+          for(const x of [-size[0]/2,size[0]/2])for(const y of [-size[1]/2,size[1]/2])for(const z of [-size[2]/2,size[2]/2]){
+            const p=new THREE.Vector3(x,y,z).project(camera);
+            expect(Math.abs(p.x)).toBeLessThan(.84);
+            expect(Math.abs(p.y)).toBeLessThan(.84);
+            expect(p.z).toBeGreaterThan(-1);expect(p.z).toBeLessThan(1);
+          }
+        }
+      }
+  });
 });

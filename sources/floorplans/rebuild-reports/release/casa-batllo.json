@@ -1,7 +1,7 @@
 {
   "slug": "casa-batllo",
   "modelDigest": "3fdfb3b9a1367b057a771b238768df96dd4eaa28df47249f8a626f4c928c7a29",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Visually compared all nine plan levels against both pinned 2000px architect-supplied KKAA plates and the longitudinal section. Orthographic crops preserve equal-axis source geometry. Thick neutral cut masonry is separate from flat treads, ceiling projections, glazing and furniture. Ten strictly closed source-white components provide selective floor surfaces; unknown open faces are not invented.",
     "floorCoverageReview": "Nine plan levels: basement, ground, noble, first, second, third, fourth, attic and rooftop. The publication explicitly assigns the first-through-third common drawing to three levels. Roof is not counted as an enclosed storey. Current 2026 private rooms and temporary-exhibition partitions are not asserted by this 2021 source.",
@@ -23,8 +23,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T10:55:25.967Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:52:10.859Z",
     "slug": "casa-batllo",
     "modelDigest": "3fdfb3b9a1367b057a771b238768df96dd4eaa28df47249f8a626f4c928c7a29",
     "sourceDigest": "894881441edfdbdc862751d528678eddaf181389738954f3b04b68304a92f149",
@@ -40,6 +40,8 @@
             "exactLabels": 6,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -51,6 +53,8 @@
             "exactLabels": 6,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -62,6 +66,8 @@
             "exactLabels": 7,
             "guideNumbers": 5,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -73,6 +79,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -84,6 +92,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -95,6 +105,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -106,6 +118,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -117,6 +131,8 @@
             "exactLabels": 7,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -128,6 +144,8 @@
             "exactLabels": 6,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -136,21 +154,21 @@
           }
         ],
         "screenshots": [
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-3d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-basement-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-ground-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-noble-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-upper-1-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-upper-2-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-upper-3-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-upper-4-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-attic-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-rooftop-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-noble-selection-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1440-noble-selection-3d.png"
+          "work/map-review/release-final/casa-batllo-1440-3d.png",
+          "work/map-review/release-final/casa-batllo-1440-basement-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-ground-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-noble-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-upper-1-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-upper-2-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-upper-3-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-upper-4-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-attic-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-rooftop-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-noble-selection-2d.png",
+          "work/map-review/release-final/casa-batllo-1440-noble-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 1052,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 52,
@@ -173,6 +191,8 @@
             "exactLabels": 6,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -184,6 +204,8 @@
             "exactLabels": 6,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -195,6 +217,8 @@
             "exactLabels": 7,
             "guideNumbers": 5,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -206,6 +230,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -217,6 +243,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -228,6 +256,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -239,6 +269,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -250,6 +282,8 @@
             "exactLabels": 7,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -261,6 +295,8 @@
             "exactLabels": 6,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -269,21 +305,21 @@
           }
         ],
         "screenshots": [
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-3d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-basement-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-ground-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-noble-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-upper-1-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-upper-2-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-upper-3-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-upper-4-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-attic-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-rooftop-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-noble-selection-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-1094-noble-selection-3d.png"
+          "work/map-review/release-final/casa-batllo-1094-3d.png",
+          "work/map-review/release-final/casa-batllo-1094-basement-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-ground-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-noble-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-upper-1-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-upper-2-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-upper-3-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-upper-4-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-attic-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-rooftop-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-noble-selection-2d.png",
+          "work/map-review/release-final/casa-batllo-1094-noble-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 1351,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 52,
@@ -306,6 +342,8 @@
             "exactLabels": 6,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -317,6 +355,8 @@
             "exactLabels": 6,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -328,6 +368,8 @@
             "exactLabels": 7,
             "guideNumbers": 5,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -339,6 +381,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -350,6 +394,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -361,6 +407,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -372,6 +420,8 @@
             "exactLabels": 5,
             "guideNumbers": 0,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -383,6 +433,8 @@
             "exactLabels": 7,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -394,6 +446,8 @@
             "exactLabels": 6,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -402,21 +456,21 @@
           }
         ],
         "screenshots": [
-          "work/casa-nine-levels/browser-final/casa-batllo-390-3d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-basement-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-ground-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-noble-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-upper-1-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-upper-2-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-upper-3-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-upper-4-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-attic-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-rooftop-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-noble-selection-2d.png",
-          "work/casa-nine-levels/browser-final/casa-batllo-390-noble-selection-3d.png"
+          "work/map-review/release-final/casa-batllo-390-3d.png",
+          "work/map-review/release-final/casa-batllo-390-basement-2d.png",
+          "work/map-review/release-final/casa-batllo-390-ground-2d.png",
+          "work/map-review/release-final/casa-batllo-390-noble-2d.png",
+          "work/map-review/release-final/casa-batllo-390-upper-1-2d.png",
+          "work/map-review/release-final/casa-batllo-390-upper-2-2d.png",
+          "work/map-review/release-final/casa-batllo-390-upper-3-2d.png",
+          "work/map-review/release-final/casa-batllo-390-upper-4-2d.png",
+          "work/map-review/release-final/casa-batllo-390-attic-2d.png",
+          "work/map-review/release-final/casa-batllo-390-rooftop-2d.png",
+          "work/map-review/release-final/casa-batllo-390-noble-selection-2d.png",
+          "work/map-review/release-final/casa-batllo-390-noble-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 1378,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 52,
@@ -457,8 +511,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.69999999999891,
-    "frameP95Ms": 16.700000000000728,
-    "renderP95Ms": 5,
+    "frameP95Ms": 16.799999999999272,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -475,8 +529,8 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 139.95429563755962,
-      "screenshot": "work/casa-nine-levels/pages/_guides_casa-batllo_-1440.png",
+      "mapSpread": 150.946782538523,
+      "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-1440.png",
       "passed": true
     },
     {
@@ -486,8 +540,8 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 147.83672965050275,
-      "screenshot": "work/casa-nine-levels/pages/_guides_casa-batllo_-1094.png",
+      "mapSpread": 131.67825923868782,
+      "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-1094.png",
       "passed": true
     },
     {
@@ -497,16 +551,18 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 152.8646619405155,
-      "screenshot": "work/casa-nine-levels/pages/_guides_casa-batllo_-390.png",
+      "mapSpread": 176.6357107957409,
+      "screenshot": "work/map-review/guide-pages-final/_guides_casa-batllo_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "97a2678e3b030649be9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/casa-batllo/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "ground",
     "modelDigest": "3fdfb3b9a1367b057a771b238768df96dd4eaa28df47249f8a626f4c928c7a29",
     "routeNumbering": true,
     "passed": true

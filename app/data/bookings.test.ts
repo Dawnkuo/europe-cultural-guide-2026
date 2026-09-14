@@ -65,6 +65,29 @@ describe('September 7 booking reconciliation', () => {
     ).toContain('NOT VALID FOR TRAVEL');
   });
 
+  it('keeps the user-confirmed Last Supper ticket booked across records and its guide', () => {
+    const booking = bookingRecords.find((record) => record.id === 'last-supper')!;
+    const item = items.find((entry) => entry.id === 'last-supper')!;
+    const guide = guideForTripItem(item)!;
+    expect(booking.status).toBe('已订');
+    expect(bookingNeedsAction(booking)).toBe(false);
+    expect(booking.validity).toBe('行程09:30');
+    expect(booking.note).toContain('你已确认持票');
+    expect(item.status).toBe('已订');
+    expect(item.time).toBe('09:30–09:45');
+    expect(guide.scheduledVisits).toEqual([
+      expect.objectContaining({
+        itemId: 'last-supper',
+        date: '2026-09-26',
+        time: '09:30–09:45',
+        status: '已订',
+      }),
+    ]);
+    expect(JSON.stringify({ booking, item, guide })).not.toMatch(
+      /缺票|缺少PDF|缺凭证|待确认|未找到凭证|必须事先找回/,
+    );
+  });
+
   it('uses the approved Florence arrival window without claiming the fee is paid', () => {
     const hotel = bookingRecords.find((record) => record.id === 'florence-hotel')!;
     const train = items.find((item) => item.id === 'italo-8927')!;

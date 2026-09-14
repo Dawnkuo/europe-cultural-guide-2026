@@ -1,0 +1,469 @@
+{
+  "accademia-florence": {
+    "scope": "官方游客图底层及一层；主展厅与金地画层均在。作品位置只确认到展厅，不是逐件墙位。",
+    "gaps": [],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "accademia-venice": {
+    "scope": "官方底层及一层均在；不能把 VI 总区代替全部附厅。",
+    "gaps": [
+      "VIa、VIb 附厅尚未分别定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "barcelona-cathedral": {
+    "scope": "只有主堂及回廊。",
+    "gaps": [
+      "圣欧拉利娅地下墓室",
+      "屋顶",
+      "地下室与屋顶连接"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "borghese": {
+    "scope": "三层来源图均在；层间导览并未完成。",
+    "gaps": [
+      "服务层、雕塑层、绘画层之间的楼梯/电梯配对"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "brera": {
+    "scope": "来源主展层已在；不代表布雷拉宫全部楼层及附属机构。",
+    "gaps": [
+      "拿破仑庭院与上层入口的跨层关系"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "camposanto": {
+    "scope": "底层回廊与庭院；不能把南墙定位当作每幅壁画均已定位。",
+    "gaps": [
+      "石棺与铭文逐件定位",
+      "地方纪念碑逐件定位"
+    ],
+    "partialStops": {
+      "2": "目前定位到南墙区域，不是每幅壁画的独立位置。"
+    },
+    "sharedPlans": []
+  },
+  "casa-batllo": {
+    "scope": "2021 图纸七张不同平面表达九个层级，屋顶不是额外室内楼层。",
+    "gaps": [
+      "2026 私人住宅与展览房间对应",
+      "Gaudí Cube / Gaudí Dôme 对应空间",
+      "各组烟囱的独立点位",
+      "共用一至三层图不证明各层现状完全一致"
+    ],
+    "partialStops": {
+      "5": "龙脊及露台已有位置，未确认各组烟囱的独立点位。"
+    },
+    "sharedPlans": [
+      {
+        "floors": [
+          "upper-1",
+          "upper-2",
+          "upper-3"
+        ],
+        "note": "三层沿用图纸明确共用的平面；各层现状、隔间与陈设未分别核定。"
+      }
+    ]
+  },
+  "chocolate-museum": {
+    "scope": "目前仅外观，航拍不是室内图。",
+    "gaps": [
+      "所有室内楼层、展区、生产线及温室的平面",
+      "室内六个导览步骤"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "cologne-cathedral": {
+    "scope": "仅主教堂与南塔地下入口层；入口层不等于登顶地图。",
+    "gaps": [
+      "珍宝馆地下展层",
+      "塔内螺旋梯",
+      "钟室",
+      "约 100 米观景平台",
+      "格罗十字架定位"
+    ],
+    "partialStops": {
+      "2": "只确认到唱诗席区域，非三王圣龛逐件位置。",
+      "6": "只有登塔起点；螺旋梯、钟室及观景台尚未绘出。"
+    },
+    "sharedPlans": []
+  },
+  "colosseum": {
+    "scope": "两张考古主题图，不是完整现代游客平面。",
+    "gaps": [
+      "完整上层看台",
+      "现代入口、升降井与通行连接"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "correr": {
+    "scope": "来源两层均在；旧验收写五步，当前实际六步，不能复用旧的全步骤完成结论。",
+    "gaps": [
+      "第 6 步出口段定位",
+      "德巴尔巴里城市图与木版逐件位置"
+    ],
+    "partialStops": {
+      "2": "目前定位到卡诺瓦区域，非全部新古典宫室。",
+      "4": "仅定位到威尼斯历史展区，不是作品墙位。"
+    },
+    "sharedPlans": []
+  },
+  "doges-palace": {
+    "scope": "五张来源图含庭院、回廊/监狱、两层主厅及上层；路线定位到厅组，非每件展品。",
+    "gaps": [],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "el-born": {
+    "scope": "2013 街面层展馆示意；街区三个室外步骤不应被统计成室内漏层。",
+    "gaps": [
+      "地下遗址街巷、住宅与排水结构",
+      "进入遗址的层间路径"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "fenice": {
+    "scope": "门厅、池座/第一层包厢和阿波罗厅三幅图并非整座剧院。",
+    "gaps": [
+      "皇家包厢所在层",
+      "更高包厢层",
+      "运河水门位置",
+      "阿波罗厅与观众厅的可靠跨层连接"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "florence-duomo": {
+    "scope": "仅教堂地面层，不能代表已订的登穹顶活动。",
+    "gaps": [
+      "登穹顶入口及完整楼梯",
+      "穹顶双壳间通道",
+      "内环",
+      "顶部露台",
+      "五个导览步骤的地图定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "galleria-vittorio": {
+    "scope": "当前导览为地面公共拱廊，已有整幅底层图；没有把楼上店铺/办公室标成游客楼层。",
+    "gaps": [],
+    "partialStops": {
+      "4": "纹章目前定位到八角厅，不是每块马赛克的准确点位。"
+    },
+    "sharedPlans": []
+  },
+  "gaudi-house": {
+    "scope": "目前仅外观，花园航拍不能作为住宅内部。",
+    "gaps": [
+      "住宅逐层平面",
+      "生活空间、家具及用品定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "giunti-odeon": {
+    "scope": "三张改造项目楼层图齐；第 4 步的镜厅不能用观众厅装饰区冒充。",
+    "gaps": [
+      "镜厅的准确房间对应"
+    ],
+    "partialStops": {
+      "4": "只定位观众厅装饰区域，未定位镜厅。"
+    },
+    "sharedPlans": []
+  },
+  "koln-triangle": {
+    "scope": "现有底层、9–27 标准办公层、28 活动层；28 活动层不是观景平台。",
+    "gaps": [
+      "真正的公众观景平台",
+      "通往观景台的末段楼梯",
+      "游客入口及电梯路线",
+      "全部五个观景导览步骤定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "la-pedrera": {
+    "scope": "四张历史游客图涵盖庭院、公寓、阁楼与屋顶，不是整栋所有楼层。",
+    "gaps": [
+      "临时展厅与地下礼堂平面",
+      "私人/其他住宅层的独立平面",
+      "当前跨层游客路径"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "la-scala": {
+    "scope": "现有 1–8 室和剧院 +2.94 米层，不能代表八个导览步骤。",
+    "gaps": [
+      "第九室及图书馆区域",
+      "历史包厢层",
+      "票面楼层的座席/站位区域",
+      "博物馆/演出入口和跨层路线"
+    ],
+    "partialStops": {
+      "7": "池座/舞台有对应层图，全部层叠包厢未绘全。"
+    },
+    "sharedPlans": []
+  },
+  "last-supper": {
+    "scope": "官方单层参观图的票务、寄存、闸室、两幅壁画与出口均已绑定。",
+    "gaps": [],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "leaning-tower": {
+    "scope": "五个图幅，其中包含一至三、四至七分组图，不能把五张图说成五个真实楼层。",
+    "gaps": [
+      "历史分组图与每一实际楼层的对应复核",
+      "顶部环台",
+      "入口浮雕与外柱廊点位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "medici-chapels": {
+    "scope": "四幅图是墓穴/圣器室/王公礼拜堂分图，不等于四个对齐建筑楼层。",
+    "gaps": [
+      "圣洛伦佐珍宝区",
+      "四幅独立图之间的层间连接"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "mercato-centrale": {
+    "scope": "历史底层与改造上层均在，不代表现在摊位布局。",
+    "gaps": [
+      "当前商户分区",
+      "两层准确楼梯/电梯连接"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "milan-duomo": {
+    "scope": "只有教堂层及圣嘉禄地下圣堂。",
+    "gaps": [
+      "约 31 米第一层露台",
+      "约 45 米中央露台",
+      "屋顶交通",
+      "考古遗址层的独立平面"
+    ],
+    "partialStops": {
+      "3": "只定位唱诗席区域，圣巴多罗买雕像尚无独立点位。"
+    },
+    "sharedPlans": []
+  },
+  "museum-ludwig": {
+    "scope": "四张 2021 分区图齐，不是逐间建筑测绘；不能把楼层主题当作所有藏品位置。",
+    "gaps": [
+      "逐展厅与逐件藏品定位",
+      "楼梯/电梯配对"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "notre-dame-towers": {
+    "scope": "两幅 1856 南塔钟架木构图不是双塔完整参观地图。",
+    "gaps": [
+      "北塔",
+      "下层接待及四叶厅",
+      "奇美拉长廊及 69 米平台",
+      "现行双塔楼梯与连接"
+    ],
+    "partialStops": {
+      "3": "仅南塔历史木构，未确认现行双向楼梯。",
+      "5": "仅历史大钟悬挂区，未含庭院/屋顶视点。"
+    },
+    "sharedPlans": []
+  },
+  "opera-pisa": {
+    "scope": "目前只画建筑师项目底层及回廊。",
+    "gaps": [
+      "上层礼仪收藏",
+      "当前全部展厅分隔和编号",
+      "层间连接",
+      "雕塑、墓葬物等藏品定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "palau-musica": {
+    "scope": "四张 1973 历史图齐，不是当前完整游客图。",
+    "gaps": [
+      "后期新增建筑空间",
+      "当前门厅及 Lluís Millet 厅对应",
+      "现行跨层通道"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "pantheon": {
+    "scope": "游客门廊/圆厅/祭坛单层及 18 个来源编号齐；广场步骤独立于室内定位。",
+    "gaps": [],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "picasso-barcelona": {
+    "scope": "官方两层图及六个展厅组定位齐；作品位置精度为展厅组。",
+    "gaps": [],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "pisa-baptistery": {
+    "scope": "底层及女性楼廊均在；不把穹顶维护图当游客层。",
+    "gaps": [
+      "上下楼廊两条螺旋梯的落点和连接"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "pisa-cathedral": {
+    "scope": "仅历史主教堂地面图；不能证明现代陈设齐全。",
+    "gaps": [
+      "重组后的讲坛精确位置",
+      "圣拉涅利门",
+      "西立面观察点"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "pitti": {
+    "scope": "四个来源层级均在，但二层仅主题区轮廓，不能称逐间完成。",
+    "gaps": [
+      "二层现代艺术与服装馆逐间图",
+      "庭院入口关系",
+      "各馆之间的楼梯/电梯连接"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "sagrada-familia": {
+    "scope": "主层项目图和地下教堂齐，不能代表已订登塔路线。",
+    "gaps": [
+      "受难立面塔的电梯、楼层平台及下行梯",
+      "博物馆与学校的独立室内平面",
+      "项目规划部分与已建现状的区分"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "santa-maria-grazie": {
+    "scope": "历史教堂/修道院主层；图例中的图书馆不等于另有完整楼层。",
+    "gaps": [
+      "侧礼拜堂完整定位",
+      "回廊现行入口关系",
+      "1937 测绘与战后陈设差异"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "santa-maria-mar": {
+    "scope": "仅教堂主层。",
+    "gaps": [
+      "地下室",
+      "侧廊博物馆",
+      "塔楼及屋顶",
+      "玫瑰窗与 Born 一侧入口定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "sforza": {
+    "scope": "庭院层图不能代替城堡博物馆逐层图。",
+    "gaps": [
+      "古代艺术博物馆室内展厅",
+      "舞厅/月份挂毯",
+      "上层博物馆",
+      "旧西班牙医院与隆达尼尼展厅",
+      "馆内跨层连接"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "sinopie": {
+    "scope": "未提取可靠室内图，不把建筑外框当展厅地图。",
+    "gaps": [
+      "所有展陈层及展品分区",
+      "四个导览步骤定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "st-mark-basilica": {
+    "scope": "主层 47 个编号/字母齐，仍缺全套票核心上层。",
+    "gaps": [
+      "上层博物馆与女性楼廊",
+      "Foresti 楼梯",
+      "原青铜驷马及立面马廊",
+      "圣彼得门定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "st-mark-campanile": {
+    "scope": "四张 1912 重建截面齐，不是当前四个游客楼层。",
+    "gaps": [
+      "当前电梯井与停靠点",
+      "现行游客入口",
+      "钟室三个观景方向",
+      "顶端天使定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "st-peters-basilica": {
+    "scope": "只有主殿及墓穴；旧验收写七步，当前十步，穹顶入口不代表穹顶路线。",
+    "gaps": [
+      "屋顶平台及电梯终点",
+      "穹顶内环",
+      "灯笼顶部观景台",
+      "墓穴/穹顶跨层连接",
+      "原图 82 号位置"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "uffizi": {
+    "scope": "官方底层与两层展区齐，109 个定位标记；瓦萨里走廊是独立待补项目。",
+    "gaps": [],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "vasari-corridor": {
+    "scope": "已有资料仍未形成可靠室内模型，不计为重建完成。",
+    "gaps": [
+      "完整走廊内部平面及转折/楼梯",
+      "五个导览步骤的室内位置"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "vatican-museums": {
+    "scope": "三张官方展区图齐；展区编号不等于各博物馆每个房间都已重建。",
+    "gaps": [
+      "超出官方展区图精度的逐间展厅及藏品坐标",
+      "完整馆内跨层通道"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  },
+  "vatican-post": {
+    "scope": "仅外观及文字清单，不从文字猜布局。",
+    "gaps": [
+      "邮局内部服务区平面",
+      "柜台及投递口定位"
+    ],
+    "partialStops": {},
+    "sharedPlans": []
+  }
+}

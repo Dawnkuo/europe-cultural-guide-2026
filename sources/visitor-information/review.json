@@ -1,0 +1,155 @@
+{
+  "verifiedAt": "2026-09-09",
+  "scope": [
+    "vatican-museums",
+    "st-peters-basilica",
+    "st-peters-square",
+    "vatican-post",
+    "accademia-florence"
+  ],
+  "sources": {
+    "accademia-visit": {
+      "kind": "primary-web",
+      "url": "https://www.galleriaaccademiafirenze.it/visita/",
+      "note": "Retrieved 2026-09-09: entrance/security; no indoor cloakroom but MyAccademia luggage storage; large bags prohibited, water <=0.5L; accessible entrance60/lift. Same page conflicts on accessible toilet ground versus semibasement. Preserve uncertainty and no toilet pin. No unverified storage charge, bag dimensions, early-arrival requirement or audio language. Snapshot work/experience/accademia-sources/visit.html."
+    },
+    "accademia-collections": {
+      "kind": "primary-web",
+      "url": "https://www.galleriaaccademiafirenze.it/collezioni/",
+      "note": "Ground and upper collection context, Gipsoteca models, historic instrument collection and sound displays. Not a guarantee of current display of every catalogued work."
+    },
+    "accademia-map": {
+      "kind": "reviewed-local",
+      "file": "sources/floorplans/evidence/accademia-florence.json",
+      "note": "Retain the accepted two-floor plan and its entrance/lift/stair place IDs; no inferred missing room or fixture positions."
+    },
+    "accademia-david": {
+      "kind": "primary-web",
+      "url": "https://www.galleriaaccademiafirenze.it/opere/david-michelangelo/",
+      "note": "Original marble; cathedral commission, Palazzo Vecchio installation, height includes carved base."
+    },
+    "accademia-matthew": {
+      "kind": "primary-web",
+      "url": "https://www.galleriaaccademiafirenze.it/opere/san-matteo-michelangelo/",
+      "note": "Cathedral apostle project, distinct from JuliusII tomb. Catalogue ca1503-1506, post-contract work is probable not certain."
+    },
+    "accademia-prisoners": {
+      "kind": "primary-web",
+      "url": "https://www.galleriaaccademiafirenze.it/opere/schiavo-giovane-michelangelo/",
+      "note": "Four Florentine unfinished figures for JuliusII tomb; later Boboli display and1909 museum transfer."
+    },
+    "accademia-sabines": {
+      "kind": "primary-web",
+      "url": "https://www.galleriaaccademiafirenze.it/opere/ratto-sabine-giambologna/",
+      "note": "Full-size unfired clay model, not plaster or marble; later title and multiple viewpoints."
+    },
+    "accademia-spinet": {
+      "kind": "primary-web",
+      "url": "https://www.galleriaaccademiafirenze.it/opere/spinetta-ovale-bartolomeo-cristofori/",
+      "note": "1690 original is a plucked-string keyboard; distinct1693 Leipzig instrument and2001 playable reconstruction."
+    },
+    "mv-arrival": {
+      "kind": "primary-web",
+      "url": "https://www.museivaticani.va/content/museivaticani/en/info/come-raggiungerci.html",
+      "note": "Viale Vaticano address; Ottaviano and Cipro on line A. No new pedestrian time, distance or early-tour meeting point is inferred."
+    },
+    "mv-advice": {
+      "kind": "primary-web",
+      "url": "https://www.museivaticani.va/content/museivaticani/en/organizza-visita/consigli-utili.html",
+      "note": "Dress, bags, photography, Sistine silence and no mobile use, food, family support, lost property, works on loan and no visitor Wi-Fi. Concise original Chinese operational paraphrases, not reproduction of the page."
+    },
+    "mv-cloakroom": {
+      "kind": "primary-web",
+      "url": "https://www.museivaticani.va/content/museivaticani/en/organizza-visita/servizi-per-i-visitatori/guardaroba.html",
+      "note": "Free cloakroom after entrance security; collection from exit hall below Momo stair; wheelchair availability, identity document and deposit."
+    },
+    "mv-food": {
+      "kind": "primary-web",
+      "url": "https://www.museivaticani.va/content/museivaticani/en/organizza-visita/servizi-per-i-visitatori/ristorazione.html",
+      "note": "Food service exists within the museums. No menu, price, shop opening hours or hydration fixture location asserted."
+    },
+    "mv-map": {
+      "kind": "reviewed-local",
+      "file": "sources/floorplans/evidence/vatican-museums.json",
+      "note": "Only existing source-reviewed place IDs are linked. Service points do not establish walking paths. Interior place bindings do not substitute the user's tour meeting point."
+    },
+    "sp-access": {
+      "kind": "primary-web",
+      "url": "https://www.basilicasanpietro.va/en/help/the-basilica",
+      "note": "Free ordinary basilica entry versus paid reserved services; individual access QR emails; security in right hemicycle facing basilica; dress, photography and accessibility. No universal entry-to-dome timing adopted."
+    },
+    "sp-dome": {
+      "kind": "primary-web",
+      "url": "https://www.basilicasanpietro.va/en/help/the-dome",
+      "note": "551 total steps or320 remaining after lift; terrace services; single admission; assigned Sobieski/Lambertini route; weather changes. FAQ item6 says basilica90minutes before dome, but item19 explicitly distinguishes order by assigned route. The universal90minute claim is rejected. User's issued QR order remains controlling."
+    },
+    "sp-visits": {
+      "kind": "primary-web",
+      "url": "https://www.basilicasanpietro.va/en/visits",
+      "note": "Basilica, treasury, dome, necropolis and grottoes are distinct experiences; no luggage-storage service."
+    },
+    "sp-welcome": {
+      "kind": "primary-web",
+      "url": "https://www.basilicasanpietro.va/en/new-welcome-area",
+      "note": "Welcome area toilets. No coordinate asserted because this page supplies no accepted plan position."
+    },
+    "sp-grottoes": {
+      "kind": "primary-web",
+      "url": "https://www.basilicasanpietro.va/en/visit-to-the-vatican-grottoes",
+      "note": "Grottoes free of charge and no photography. Opening hours are not copied into itinerary."
+    },
+    "sp-necropolis": {
+      "kind": "primary-web",
+      "url": "https://visite.basilicasanpietro.va/en/booking/necropolivaticana",
+      "note": "Separate controlled guided visit. No booking made, forms submitted, tariff copied or age condition inferred from older Scavi pages."
+    },
+    "sp-necropolis-photo": {
+      "kind": "primary-web",
+      "url": "https://www.basilicasanpietro.va/en/faq/is-it-possible-to-take-photographs-during-the-visit",
+      "note": "Photography/video not permitted inside the necropolis."
+    },
+    "sp-map": {
+      "kind": "reviewed-local",
+      "file": "sources/floorplans/evidence/st-peters-basilica.json",
+      "note": "Existing grottoes place is an architectural orientation target, not access permission or a necropolis tour location."
+    },
+    "post-offices": {
+      "kind": "primary-web",
+      "url": "https://www.postevaticane.va/it/uffici-postali",
+      "note": "Italian directory: San Pietro Monday-Sunday08:30-18:30; Arco delle Campane Monday-Saturday08:30-19:15; museums Monday-Saturday08:30-18:30. Conflicts with English useful-information page on San Pietro Sunday opening; Sunday remains unconfirmed."
+    },
+    "post-services": {
+      "kind": "primary-web",
+      "url": "https://www.postevaticane.va/en/the-service/postal-services/useful-information",
+      "note": "English page lists San Pietro Monday-Saturday08:30-18:30, unlike Italian directory. Supports postal collection/stamping/forwarding and philatelic distinction. No unpublished international delivery promise."
+    },
+    "post-building": {
+      "kind": "primary-web",
+      "url": "https://www.vaticanstate.va/it/novita/1212-un-nuovo-ufficio-postale-per-piazza-san-pietro.html",
+      "note": "12December2024 announcement of19December inauguration; left hemicycle, circular demountable timber office. Used for external orientation only, no invented counter/furniture geometry."
+    },
+    "existing-bookings": {
+      "kind": "reviewed-local",
+      "file": "app/data/trip.ts",
+      "note": "Existing confirmed itinerary stays unchanged. Visitor copy does not re-infer exact times from current product pages or duplicate private QR codes."
+    },
+    "access-uncertainty": {
+      "kind": "editorial",
+      "note": "No primary evidence located granting this user's tour automatic access to the Sistine-to-basilica passage. Do not promise either availability or permanent prohibition. Follow staff; preserve geometry independently from current permissions."
+    },
+    "editorial-advice": {
+      "kind": "editorial",
+      "note": "Plain preparation advice (water, shoes, address preparation, no delivery-date guarantee), not a ticket obligation, medical clearance, measured route or guaranteed service."
+    }
+  },
+  "notClaimed": [
+    "Complete museum or building coverage",
+    "Current access to every mapped space",
+    "Exact private tour assembly coordinates",
+    "Guaranteed queue or delivery times",
+    "Universal90minute basilica-first rule",
+    "ConfirmedSunday opening for SanPietro post office",
+    "Physical device acceptance",
+    "Public deployment"
+  ]
+}

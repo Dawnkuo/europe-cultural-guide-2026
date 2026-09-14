@@ -1,7 +1,7 @@
 {
   "slug": "borghese",
   "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
-  "runtimeDigest": "f928221cee48d044a007fbc2688069ea68cce7f8c1d65aeb3b80a6898d1d13ba",
+  "runtimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
   "sourceReview": {
     "geometryReview": "Compared the three compact official visitor diagrams. Retains basement services, sculpture-level rooms and upper painting rooms with twenty-seven place identifiers. Structural bands exclude printed letters, service icons and arrows; stair/tread and terrace details remain flat. Twenty-six selection regions do not promote terrace shading into masonry.",
     "floorCoverageReview": "Basement, principal and upper collection levels are independent source diagrams, not a surveyed vertical registration.",
@@ -17,8 +17,8 @@
     ]
   },
   "browser": {
-    "target": "http://localhost:55838",
-    "timestamp": "2026-09-05T09:52:49.406Z",
+    "target": "http://127.0.0.1:55869/europe-cultural-guide-2026",
+    "timestamp": "2026-09-14T09:49:40.087Z",
     "slug": "borghese",
     "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
     "sourceDigest": "2e9b1a3d5fd11a45ca900747f6667596d024bc05b5a937237a63c19775e2c198",
@@ -34,6 +34,8 @@
             "exactLabels": 2,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -45,6 +47,8 @@
             "exactLabels": 11,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -56,6 +60,8 @@
             "exactLabels": 14,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -76,7 +82,7 @@
           "work/map-review/release-final/borghese-1440-P1-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 633,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 27,
@@ -102,6 +108,8 @@
             "exactLabels": 2,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -113,6 +121,8 @@
             "exactLabels": 11,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -124,6 +134,8 @@
             "exactLabels": 14,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -144,7 +156,7 @@
           "work/map-review/release-final/borghese-1094-P1-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 833,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 27,
@@ -170,6 +182,8 @@
             "exactLabels": 2,
             "guideNumbers": 2,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -181,6 +195,8 @@
             "exactLabels": 11,
             "guideNumbers": 3,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -192,6 +208,8 @@
             "exactLabels": 14,
             "guideNumbers": 1,
             "minMaxZoom": true,
+            "overviewFit": true,
+            "readingZoom": 1.5,
             "viewRoundTrip": true,
             "scrollEdges": {
               "x": true,
@@ -212,7 +230,7 @@
           "work/map-review/release-final/borghese-390-P1-selection-3d.png"
         ],
         "errors": [],
-        "gpuSamples": 1475,
+        "gpuSamples": 0,
         "keyboard": true,
         "interruptedMouseDrag": true,
         "paintedLabels": 27,
@@ -250,8 +268,8 @@
     "environment": "390x844 Chromium, desktop CPU throttled 4x; not a physical mobile device",
     "frames": 134,
     "frameP50Ms": 16.699999999999818,
-    "frameP95Ms": 16.700000000000273,
-    "renderP95Ms": 4.2,
+    "frameP95Ms": 16.799999999999727,
+    "renderP95Ms": null,
     "contexts": {
       "created": 7,
       "lost": 6,
@@ -268,7 +286,7 @@
         "height": 1000
       },
       "errors": [],
-      "mapSpread": 100.46281922748805,
+      "mapSpread": 106.2232001047816,
       "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-1440.png",
       "passed": true
     },
@@ -279,7 +297,7 @@
         "height": 768
       },
       "errors": [],
-      "mapSpread": 117.44960426881502,
+      "mapSpread": 114.91906622320535,
       "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-1094.png",
       "passed": true
     },
@@ -290,22 +308,20 @@
         "height": 844
       },
       "errors": [],
-      "mapSpread": 139.9627921682026,
+      "mapSpread": 136.2681124228029,
       "screenshot": "work/map-review/guide-pages-final/_guides_borghese_-390.png",
       "passed": true
     }
   ],
   "offline": {
-    "revision": "456d77b72f06f2ff8c9e",
+    "revision": "43153d52a90865d86581",
     "route": "/guides/borghese/",
     "hasMap": true,
     "errors": [],
+    "default2d": true,
+    "entryFloor": "B1",
     "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
     "routeNumbering": true,
     "passed": true
-  },
-  "runtimeCarryForward": {
-    "evidence": "sources/floorplans/rebuild-reports/casa-batllo-default-runtime-equivalence.json",
-    "previousRuntimeDigest": "5c6cef5f91c60547b8698966be917b436c1d706da557638eb5a793142f48b22c"
   }
 }

@@ -1,0 +1,51 @@
+{
+  "scope": "horizontal source registration only, not terrain or navigation",
+  "sourceImage": {
+    "path": "work/experience/vatican-compound-source/state-plan-native.png",
+    "size": [2067, 2923],
+    "pdfSha256": "fa1697d17ed7247aa471c7d1f6e3492c5ac57de3218e57a2b65bb3e2f54cdb9a",
+    "north": "right",
+    "measurementUncertaintyPixels": 2
+  },
+  "mesh": {
+    "path": "public/models/st-peters-exterior.glb",
+    "sha256": "c674af8ffc340d7362ee044b5f3e00312abe91d0484989ed4cb12ea7294f6508",
+    "coordinates": "original GLTF world X,Z, before standalone viewer normalization"
+  },
+  "fit": [
+    {
+      "id": "main-dome-axis",
+      "meshXZ": [-37.31291943005382, 0.021606342382102305],
+      "imageXY": [638, 1593],
+      "selection": "Mean horizontal position of the 182 source mesh vertices above world Y=125; independently identified main dome centre in the native plan."
+    },
+    {
+      "id": "square-obelisk",
+      "meshXZ": [284.4212787572, 1.0066170800999004],
+      "imageXY": [648, 2288],
+      "selection": "Highest mesh point within radius 5 of world XZ=[284,0]; centre of the square obelisk symbol in the native plan."
+    }
+  ],
+  "holdout": [
+    {
+      "id": "north-fountain",
+      "meshXZ": [284.6696603716, -58.2013540566],
+      "imageXY": [776, 2288],
+      "selection": "Horizontal centre of the mesh fountain crown, checked against its top-view footprint; centre of the separate northern fountain symbol, not used in fitting.",
+      "tolerancePixels": 5
+    },
+    {
+      "id": "south-fountain",
+      "meshXZ": [284.3902310554, 60.6492643892],
+      "imageXY": [517, 2292],
+      "selection": "Top point of the southern mesh fountain, checked against its top-view footprint; centre of the southern fountain symbol, not used in fitting.",
+      "tolerancePixels": 5
+    }
+  ],
+  "constraints": [
+    "One uniform horizontal scale and rotation; never independent X/Z stretching.",
+    "Mesh altitude is preserved internally. The flat campus context is placed below the mesh's minimum as a display plane, not a common site elevation.",
+    "Braccio Nuovo is not included in this fit. Its historical-to-current horizontal registration and common vertical datum remain unaccepted.",
+    "The campus vector is a flat building-relationship map, not reconstructed museum roofs, facades, rooms or terrain."
+  ]
+}

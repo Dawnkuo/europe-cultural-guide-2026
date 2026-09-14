@@ -1,6 +1,6 @@
 "use client";
 
-import { Pause, Play, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
+import { Maximize, Pause, Play, RotateCcw, ZoomIn, ZoomOut } from "lucide-react";
 import {
   lazy,
   useEffect,
@@ -18,6 +18,11 @@ import type {
 import { buildGuideExteriorSceneLayout } from "../lib/guide-exterior-layout";
 import { withBasePath } from "../lib/paths";
 import { hasChurchExterior } from '../lib/church-exterior-registry';
+import { hasMuseumExterior } from '../lib/museum-exterior-registry';
+import { hasLandmarkExterior } from '../lib/landmark-exterior-registry';
+import landmarkCameras from '../data/landmark-exterior-cameras.json';
+import type { ContextLayer, ExteriorContextData } from '../lib/exterior-context';
+import './exterior-context.css';
 import {
   perspectiveBoxFitDistance,
   perspectiveFitDistance,
@@ -107,7 +112,7 @@ function makeTrianglePrism(THREE: typeof ThreeType) {
   return geometry;
 }
 
-function geometryFor(THREE: typeof ThreeType, modelPart: GuideScenePart) {
+export function exteriorPartGeometry(THREE: typeof ThreeType, modelPart: GuideScenePart) {
   const { kind } = modelPart;
   const special = specialExteriorGeometry(THREE, kind);
   if (special) return special;
@@ -235,20 +240,26 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
   const focusNodeRef = useRef<FocusNode>(() => undefined);
   const zoomRef = useRef<(factor: number) => void>(() => undefined);
   const focusRegionRef = useRef<(id: string | null) => void>(() => undefined);
+  const contextLayersRef = useRef<Partial<Record<ContextLayer, ThreeType.Group>>>({});
+  const contextFocusRef = useRef<() => void>(() => undefined);
+  const legacySceneRef = useRef<(show: boolean) => void>(() => undefined);
+  const [legacyScene, setLegacyScene] = useState(false);
+  const [contextData, setContextData] = useState<ExteriorContextData | null>(null);
+  const [contextStatus, setContextStatus] = useState('loading');
+  const [enabledLayers, setEnabledLayers] = useState<Record<ContextLayer,boolean>>({ buildings: true, roads: true, walls: true, land: true });
+  const enabledLayersRef = useRef(enabledLayers);
   const hasStPetersContext = [
     "st-peters-basilica",
     "st-peters-square",
   ].includes(guide.slug);
-  const hasBraccioContext = guide.slug === 'vatican-museums';
+  const hasMuseumContext = hasMuseumExterior(guide.slug);
+  const hasLandmarkContext = hasLandmarkExterior(guide.slug);
+  const hasBraccioContext = guide.slug === 'vatican-museums' && !hasMuseumContext;
   const hasPisaContext = guide.slug === 'leaning-tower';
   const hasSighsContext = guide.slug === 'bridge-of-sighs';
   const hasChurchContext = hasChurchExterior(guide.slug);
-  const useBoxFraming = hasStPetersContext || hasBraccioContext || hasPisaContext || hasSighsContext || hasChurchContext;
-  const defaultRegion = hasStPetersContext
-    ? guide.slug === "st-peters-square"
-      ? "square"
-      : "basilica"
-    : null;
+  const useBoxFraming = hasStPetersContext || hasBraccioContext || hasPisaContext || hasSighsContext || hasChurchContext || hasMuseumContext || hasLandmarkContext;
+  const defaultRegion = null;
   const [region, setRegion] = useState<string | null>(defaultRegion);
   const [rotationOverride, setRotationOverride] = useState<boolean | null>(
     null,
@@ -271,6 +282,11 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
   useEffect(() => {
     rotatingRef.current = rotating;
   }, [rotating]);
+
+  useEffect(() => {
+    enabledLayersRef.current = enabledLayers;
+    for (const [id, group] of Object.entries(contextLayersRef.current)) if (group) group.visible = enabledLayers[id as ContextLayer];
+  }, [enabledLayers]);
 
   useEffect(() => {
     const canvasElement = canvasRef.current;
@@ -320,7 +336,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         renderer.toneMapping = THREE.ACESFilmicToneMapping;
         renderer.toneMappingExposure = 1.12;
         renderer.shadowMap.enabled = true;
-        renderer.shadowMap.type = THREE.PCFShadowMap;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
         const scene = new THREE.Scene();
         releaseOnError = () => {
@@ -409,10 +425,10 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         ground.receiveShadow = true;
         root.add(ground);
 
-        if (hasChurchContext) {
-          const { loadChurchExterior, disposeChurchTextures } = await import('../lib/church-exterior-model');
+        if (hasChurchContext || hasMuseumContext || hasLandmarkContext) {
+          const { loadChurchExterior, loadMuseumExterior, loadLandmarkExterior, disposeChurchTextures } = await import('../lib/church-exterior-model');
           if (disposed) { releaseOnError?.(); return; }
-          detailed = await loadChurchExterior(guide.slug, abort.signal, Math.min(8, renderer.capabilities.getMaxAnisotropy()));
+          detailed = await (hasLandmarkContext ? loadLandmarkExterior : hasMuseumContext ? loadMuseumExterior : loadChurchExterior)(guide.slug, abort.signal, Math.min(8, renderer.capabilities.getMaxAnisotropy()));
           releaseChurchTextures = () => disposeChurchTextures(detailed);
           if (disposed) { releaseOnError?.(); return; }
           buildings.add(detailed);
@@ -449,7 +465,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
           if (detailed) buildings.add(detailed);
         }
         for (const modelPart of detailed ? [] : layout.parts) {
-          const geometry = geometryFor(THREE, modelPart);
+          const geometry = exteriorPartGeometry(THREE, modelPart);
           const material = materialFor(THREE, modelPart, layout.accent);
           const mesh = new THREE.Mesh(geometry, material);
           mesh.position.set(...modelPart.position);
@@ -457,6 +473,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
           mesh.scale.set(...modelPart.scale);
           mesh.castShadow = modelPart.material !== "water";
           mesh.receiveShadow = true;
+          mesh.userData.contextGround = ["water", "garden", "route"].includes(modelPart.material);
           buildings.add(mesh);
           if (
             !["water", "garden", "route", "glass"].includes(modelPart.material)
@@ -474,27 +491,71 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         }
 
         const bounds = new THREE.Box3().setFromObject(buildings);
+        const legacyBounds = bounds.clone();
+        let surroundings: ThreeType.Group | undefined;
+        let areaContext = false;
+        try {
+          const { fetchExteriorContext, buildExteriorContext, landmarkAnchorBounds } = await import('../lib/exterior-context');
+          const data = await fetchExteriorContext(guide.slug, abort.signal);
+          if (disposed) { releaseOnError?.(); return; }
+          if (data) {
+            const basilica = hasStPetersContext ? ((detailed?.userData.focusRegions ?? []) as {id:string;min:[number,number,number];max:[number,number,number]}[]).find(r=>r.id==='basilica') : undefined;
+            const anchorBounds = basilica ? new THREE.Box3(new THREE.Vector3(...basilica.min),new THREE.Vector3(...basilica.max)) : detailed ? bounds : landmarkAnchorBounds(buildings);
+            if(basilica && detailed) data.registration.scale = detailed.scale.x;
+            const environment = buildExteriorContext(data, anchorBounds);
+            surroundings = environment.root;
+            root.add(surroundings);
+            ground.visible = false;
+            if (!detailed) buildings.children.forEach(child => { if (child.userData.contextGround) child.visible = false; });
+            areaContext = data.registration.locationPrecision === 'area-representative' || data.composition?.mode === 'separate-unregistered';
+            if (areaContext) {
+              const standalone=data.composition?.mode==='separate-unregistered';
+              setLegacyScene(standalone);
+              buildings.visible = standalone;
+              ground.visible = standalone;
+              surroundings.visible = !standalone;
+              if(standalone&&!detailed)buildings.children.forEach(child=>{if(child.userData.contextGround)child.visible=true;});
+              if(!standalone)bounds.copy(new THREE.Box3().setFromObject(surroundings));
+            }
+            contextLayersRef.current = environment.layers;
+            for (const id of Object.keys(environment.layers) as ContextLayer[]) environment.layers[id].visible = enabledLayersRef.current[id];
+            setContextData(data);
+            setContextStatus('ready');
+            activeCanvas.dataset.context = 'ready';
+            activeCanvas.dataset.contextCounts = JSON.stringify(data.counts);
+          } else { setContextStatus('no-location'); activeCanvas.dataset.context = 'no-location'; }
+        } catch {
+          if (disposed) { releaseOnError?.(); return; }
+          setContextStatus('unavailable');
+          activeCanvas.dataset.context = 'unavailable';
+        }
         if (hasPisaContext) ground.position.y = bounds.min.y - 0.03;
-        const sphere = bounds.getBoundingSphere(new THREE.Sphere());
         let compactBraccioFrame = activeCanvas.clientWidth < 640;
         const homeDirection = hasStPetersContext
           ? new THREE.Vector3(3, 6, 15).normalize()
           : hasBraccioContext ? new THREE.Vector3(compactBraccioFrame ? 18 : 3, 12, -10).normalize()
           : hasPisaContext ? new THREE.Vector3(2, 1.1, 10).normalize()
           : hasSighsContext ? new THREE.Vector3(7, 4, 16).normalize()
-          : hasChurchContext ? new THREE.Vector3(1.38, .96, 1.78).normalize()
+          : hasLandmarkContext ? new THREE.Vector3().fromArray((landmarkCameras as Record<string,number[]>)[guide.slug]).normalize()
+          : hasChurchContext || hasMuseumContext ? new THREE.Vector3(1.38, .96, 1.78).normalize()
           : new THREE.Vector3(...layout.camera.position)
               .sub(new THREE.Vector3(...layout.camera.target))
               .normalize();
-        let framingBounds = bounds.clone();
+        const overviewBounds = () => bounds.clone();
+        let framingBounds = overviewBounds();
         let framingDirection = homeDirection.clone();
         let overview = true;
+        let wholeOverview = true;
         function fitOverview(resetDirection = false) {
           const direction = resetDirection
             ? framingDirection
             : camera.position.clone().sub(controls.target).normalize();
-          const distance = useBoxFraming
-            ? perspectiveBoxFitDistance(
+          const frameSphere = framingBounds.getBoundingSphere(new THREE.Sphere());
+          // Full overviews use a rotation-safe frame. The surroundings button
+          // expands it to the whole neighbourhood; detail regions stay local.
+          const distance = wholeOverview
+            ? perspectiveFitDistance(frameSphere.radius, camera.aspect, camera.fov, 1.22)
+            : perspectiveBoxFitDistance(
                 framingBounds.getSize(new THREE.Vector3()).toArray() as [
                   number,
                   number,
@@ -503,17 +564,38 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
                 direction.toArray() as [number, number, number],
                 camera.aspect,
                 camera.fov,
-              )
-            : perspectiveFitDistance(sphere.radius, camera.aspect, camera.fov);
+                1.22,
+              );
           controls.maxDistance = Math.max(120, distance * 2);
-          const center = useBoxFraming
-            ? framingBounds.getCenter(new THREE.Vector3())
-            : sphere.center;
+          const center = frameSphere.center;
           controls.target.copy(center);
           camera.position.copy(center).addScaledVector(direction, distance);
+          camera.far = Math.max(250,distance*5);
+          camera.updateProjectionMatrix();
           controls.update();
+          activeCanvas.dataset.framing = wholeOverview ? 'complete' : 'detail';
+          activeCanvas.dataset.fitBounds = JSON.stringify({min:framingBounds.min.toArray(),max:framingBounds.max.toArray()});
         }
+        contextFocusRef.current = () => {
+          if (!surroundings) return;
+          if(areaContext){setLegacyScene(false);legacySceneRef.current(false);return;}
+          framingBounds = new THREE.Box3().setFromObject(surroundings).union(bounds);
+          framingDirection = homeDirection.clone();
+          wholeOverview = true;
+          overview = true;
+          fitOverview(true);
+        };
+        legacySceneRef.current = (show) => {
+          if (!areaContext || !surroundings) return;
+          buildings.visible=show;ground.visible=show;surroundings.visible=!show;
+          if (!detailed) buildings.children.forEach(child => { if (child.userData.contextGround) child.visible = show; });
+          bounds.copy(show ? legacyBounds : new THREE.Box3().setFromObject(surroundings));
+          framingBounds=overviewBounds();wholeOverview=true;overview=true;
+          fitOverview(true);
+        };
         focusRegionRef.current = (id) => {
+          if(areaContext){setLegacyScene(true);legacySceneRef.current(true);}
+          wholeOverview = id === null;
           framingDirection = id === 'square' ? new THREE.Vector3(3, 12, 12).normalize()
             : hasBraccioContext && id === 'portico' ? new THREE.Vector3(3, 8, -16).normalize()
             : hasBraccioContext && id === 'hemicycle' ? new THREE.Vector3(6, 12, 15).normalize()
@@ -534,7 +616,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
                 new THREE.Vector3(...region.min),
                 new THREE.Vector3(...region.max),
               )
-            : bounds.clone();
+            : overviewBounds();
           overview = true;
           fitOverview(true);
         };
@@ -597,6 +679,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
           group.add(halo);
 
           root.add(group);
+          group.visible = !areaContext;
           nodeGroups.push(group);
           markerMaterials.push(markerMaterial);
           pickTargets.push(marker, halo);
@@ -623,6 +706,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
           );
           line.computeLineDistances();
           root.add(line);
+          line.visible = !areaContext;
         }
 
         function focusNode(index: number | null) {
@@ -635,9 +719,10 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
             markerMaterials[nodeIndex].emissiveIntensity = selected ? 0.45 : 0;
           });
           if (index === null) {
+            wholeOverview = true;
             overview = true;
             root.rotation.y = 0;
-            framingBounds = bounds.clone();
+            framingBounds = overviewBounds();
             framingDirection = homeDirection.clone();
             fitOverview(true);
           } else {
@@ -745,6 +830,8 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         if (useBoxFraming) focusRegionRef.current(defaultRegion);
 
         let previousTime = performance.now();
+        let performanceStart = previousTime;
+        let performanceFrames = 0;
         let contextLost = false;
         let visible = !useBoxFraming || activeCanvas.getBoundingClientRect().top < window.innerHeight;
         function render(timestamp = performance.now()) {
@@ -761,8 +848,13 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
             .join(",");
           activeCanvas.dataset.drawCalls = String(renderer.info.render.calls);
           activeCanvas.dataset.triangles = String(renderer.info.render.triangles);
+          performanceFrames++;
+          if (timestamp-performanceStart>1000) {
+            activeCanvas.dataset.fps = (performanceFrames*1000/(timestamp-performanceStart)).toFixed(1);
+            performanceStart=timestamp;performanceFrames=0;
+          }
           activeCanvas.dataset.model = detailed?.userData.id ?? guide.slug;
-          if (hasChurchContext) activeCanvas.dataset.material = detailed?.userData.materialStatus ?? 'building-palette';
+          if (hasChurchContext || hasMuseumContext || hasLandmarkContext) activeCanvas.dataset.material = detailed?.userData.materialStatus ?? 'building-palette';
           if (hasPisaContext || hasSighsContext) activeCanvas.dataset.features = JSON.stringify(detailed?.userData.featureCounts);
           activeCanvas.dataset.rendered = "true";
           if (!useBoxFraming || (visible && !document.hidden)) frame = requestAnimationFrame(render);
@@ -780,6 +872,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         if (useBoxFraming) {
           const resume = () => {
             cancelAnimationFrame(frame);
+            performanceStart=performance.now();performanceFrames=0;
             activeCanvas.dataset.suspended = String(!visible || document.hidden);
             if (visible && !document.hidden && !disposed) render();
           };
@@ -840,9 +933,12 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
       focusNodeRef.current = () => undefined;
       zoomRef.current = () => undefined;
       focusRegionRef.current = () => undefined;
+      contextFocusRef.current = () => undefined;
+      contextLayersRef.current = {};
+      legacySceneRef.current = () => undefined;
       unmountScene?.();
     };
-  }, [guide.slug, layout, hasStPetersContext, hasBraccioContext, hasPisaContext, hasSighsContext, hasChurchContext, useBoxFraming, defaultRegion, attempt]);
+  }, [guide.slug, layout, hasStPetersContext, hasBraccioContext, hasPisaContext, hasSighsContext, hasChurchContext, hasMuseumContext, hasLandmarkContext, useBoxFraming, defaultRegion, attempt]);
 
   function toggleRotation() {
     setRotationOverride(!rotating);
@@ -866,6 +962,7 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
           ref={canvasRef}
         />
         <div className="guide-spatial-3d__toolbar">
+          <button type="button" disabled={!ready || contextStatus !== 'ready'} aria-label="查看景点周边全景" title="周边全景" onClick={() => { setLegacyScene(false); legacySceneRef.current(false); contextFocusRef.current(); }}><Maximize size={17} aria-hidden="true" /></button>
           <button
             disabled={!ready}
             type="button"
@@ -915,8 +1012,16 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
         </div>
         {webglFailed && (
           <div
-            className={`guide-spatial-3d__fallback${hasStPetersContext || hasPisaContext || hasSighsContext || hasChurchContext ? " guide-spatial-3d__fallback--image" : ""}`}
+            className={`guide-spatial-3d__fallback${hasStPetersContext || hasPisaContext || hasSighsContext || hasChurchContext || hasMuseumContext || hasLandmarkContext ? " guide-spatial-3d__fallback--image" : ""}`}
           >
+            {hasLandmarkContext && (
+              // eslint-disable-next-line @next/next/no-img-element -- Generated from the same local model, including offline fallback.
+              <img src={withBasePath(`/models/landmarks/${guide.slug}.svg`)} width={1000} height={1000} alt={`${guide.title}建筑外观俯视图`} />
+            )}
+            {hasMuseumContext && (
+              // eslint-disable-next-line @next/next/no-img-element -- source-derived offline SVG, no image optimization service
+              <img src={withBasePath(`/models/museums/${guide.slug}.svg`)} width={1000} height={1000} alt={`${guide.title}建筑外观俯视图`} />
+            )}
             {hasChurchContext && (
               // oxlint-disable-next-line next/no-img-element -- Generated from the exact local exterior geometry; no WebGL is required.
               <img src={withBasePath(`/models/churches/${guide.slug}.svg`)} width={1000} height={1000} alt={`${guide.title}建筑外观俯视图`} />
@@ -959,6 +1064,25 @@ export function GuideExteriorScene({ guide }: { guide: GuideRecord }) {
             正在加载外观模型
           </output>
         )}
+      </div>
+      <div className="exterior-context" aria-label="周边地图图层">
+        {contextStatus === 'ready' && contextData ? <>
+          <fieldset aria-label="周边图层">
+            {([['buildings','周边建筑'],['roads','道路'],['walls','围墙'],['land','绿地与水域']] as const).map(([id,label]) => <label key={id}><input type="checkbox" disabled={legacyScene} checked={enabledLayers[id]} onChange={event=>setEnabledLayers(previous=>({...previous,[id]:event.target.checked}))} />{label}</label>)}
+            {(contextData.registration.locationPrecision==='area-representative'||contextData.composition?.mode==='separate-unregistered')&&<label><input type="checkbox" checked={legacyScene} onChange={event=>{setLegacyScene(event.target.checked);legacySceneRef.current(event.target.checked);}} />{contextData.composition?.mode==='separate-unregistered'?'独立建筑外观':'原示意场景'}</label>}
+          </fieldset>
+          <details><summary>{contextData.counts.buildings} 个源建筑体块 · 高度说明</summary>
+            <p>{contextData.counts.taggedHeights} 个有标注高度，{contextData.counts.levelHeights} 个按楼层推算，{contextData.counts.estimatedHeights} 个缺少高度，使用估算体量。一栋建筑可能包含多个高低不同的体块；道路宽度与未标注的墙高为示意，地形未纳入。</p>
+            {contextData.sourceIssues>0&&<p>{contextData.sourceIssues} 个源记录因边界或几何不完整未绘制。未标注的道路、围墙和建筑不代表现场不存在。</p>}
+            {contextData.composition?.mode==='separate-unregistered'
+              ? <p>建筑轮廓、园区位置或地面高程尚未完成可靠配准，周边地图与建筑外观分开展示。</p>
+              : <>
+                {contextData.registration.mode!=='source-coordinate'&&<p>现有地标按位置与轮廓近似配准，不代表测绘级精度。</p>}
+                {!!contextData.composition?.buildings.length&&<p>主体模型与普通体块重合的局部以主体轮廓合并显示；原始地图记录保留，合并边界不是测绘结果。</p>}
+              </>}
+          </details>
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a>
+        </> : <output>{contextStatus === 'no-location' ? '未指定固定上船点，不生成周边范围。' : contextStatus === 'unavailable' ? '周边数据暂不可用，地标模型仍可操作。' : '正在加载周边数据'}</output>}
       </div>
       {hasBraccioContext && <fieldset className="guide-spatial-3d__regions guide-spatial-3d__regions--four" aria-label="新翼建筑范围">
         {[{ id: null, label: '新翼全景' }, { id: 'gallery', label: '长廊' }, { id: 'portico', label: '八柱门廊' }, { id: 'hemicycle', label: '半圆厅' }].map(option => <button key={option.id ?? 'all'} type="button" disabled={!ready} aria-pressed={region === option.id} onClick={() => { setRegion(option.id); focusRegionRef.current(option.id); }}>{option.label}</button>)}
