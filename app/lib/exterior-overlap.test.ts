@@ -11,6 +11,7 @@ import { offset, intersect } from '../../sources/exteriors/context/geometry.mjs'
 import { area, bounds, readFootprints } from '../../sources/exteriors/museums/footprints.mjs';
 
 const read=(slug:string):ExteriorContextData=>JSON.parse(fs.readFileSync(`public/maps/exterior-context/${slug}.json`,'utf8'));
+const museumSources: { sites: { slug: string; parts: { key: string }[] }[] } = JSON.parse(fs.readFileSync('sources/exteriors/museums/source-manifest.json', 'utf8'));
 
 describe('landmark and mapped-neighbour overlap audit', () => {
   const report: object[] = [];
@@ -32,6 +33,12 @@ describe('landmark and mapped-neighbour overlap audit', () => {
     const bvh=new MeshBVH(geometry);
     const collisions:string[]=[];
     const features=composedContextFeatures(data);
+    const represented = new Set(museumSources.sites.find(site => site.slug === guide.slug)?.parts.map(part => part.key) ?? []);
+    root.traverse(object => {
+      for (const id of object.userData.sourceBuildingPartIds ?? []) represented.add(id);
+    });
+    // Surface intersections miss a duplicate shell that surrounds the subject.
+    const duplicateSources = features.buildings.filter(part => represented.has(part.id)).map(part => part.id);
     for(const b of [...features.buildings,...features.walls.map(w=>({...w,minHeight:0}))]){
       const points=b.geometry.flatMap(p=>p[0]);
       const box=new THREE.Box3().setFromPoints(points.flatMap(([x,z])=>[new THREE.Vector3(x,b.minHeight,z),new THREE.Vector3(x,b.height,z)])).applyMatrix4(matrix);
@@ -47,9 +54,10 @@ describe('landmark and mapped-neighbour overlap audit', () => {
       other.dispose();
     }
     report.push({slug:guide.slug,mode:data.registration.mode,neighbours:data.buildings.length,rendered:features.buildings.length,
-      adjusted:data.composition!.buildings.length,collisions:[...new Set(collisions)]});
+      adjusted:data.composition!.buildings.length,collisions:[...new Set(collisions)],duplicateSources});
     geometry.dispose();disposeStPetersModel(root);
     expect([...new Set(collisions)]).toEqual([]);
+    expect(duplicateSources, 'A represented part cannot also be a neighbouring building').toEqual([]);
     expect(matrix.elements.every(Number.isFinite)).toBe(true);
   },30000);
 

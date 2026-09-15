@@ -13,6 +13,7 @@ const rectangle=(x,z,w,d,angle=0)=>{const c=Math.cos(angle),s=Math.sin(angle);co
 export function buildMuseum(item){
  const source=readFootprints(item.slug),campus=selectedGeometry(source,item.keys),w=workshop(item.slug),review=[];
  const usePartEnvelope=item.slug==='correr';
+ const preservePartFootprint=usePartEnvelope||['sforza','doges-palace'].includes(item.slug);
  const whole=item.groundCourts?clipping.difference(campus,...item.groundCourts.map(k=>source.polygon(k))):campus;
  function solid(g,bottom,height,mat,name,topCap=true){
   if(height<=0)return;
@@ -139,7 +140,8 @@ export function buildMuseum(item){
  if(!['medici-chapels','museum-ludwig'].includes(item.slug))roof(base,baseHeight,3,item.roof,'primary-roof',item.slug==='la-scala'?'flat':'hipped');
  rhythm(base,lower,baseHeight-lower);band(base,baseHeight-.5);
  for(const p of parts){
-  const t=p.tags,g=usePartEnvelope?p.geometry:clipping.intersection(p.geometry,whole),height=number(t.height,number(t['building:levels'],3)*4.2),bottom=number(t.min_height,0),roofType=t['roof:shape']||'flat';
+  // Reviewed tower crowns and wings extend beyond the parent ground outline.
+  const t=p.tags,g=preservePartFootprint?p.geometry:clipping.intersection(p.geometry,whole),height=number(t.height,number(t['building:levels'],3)*4.2),bottom=number(t.min_height,0),roofType=t['roof:shape']||'flat';
   const rise=number(t['roof:height'],['gabled','hipped','pyramidal','dome'].includes(roofType)?3:0),eave=Math.max(bottom,height-rise);
   const mat=t['building:material']==='glass'?'glass':t['building:material']==='metal'?'zinc':t['building:material']==='marble'?'marble':item.material;
   body(g,bottom,eave-bottom,mat,'mapped-part');
@@ -188,10 +190,10 @@ export function buildMuseum(item){
   const g=source.polygon('w215289671');body(g,23,2,'limestone','sistine-envelope');roof(g,25,3.5,'tile','sistine-roof','gabled');
  }
  const root=w.finish();root.userData.id=`museum-massing:${item.slug}`;
+ root.userData.sourceBuildingPartIds=parts.map(part=>part.key);
  if(item.slug==='correr')root.userData.surfaceCleanup=resolveCoplanarSurfaces(root,correrSurfacePriority);
  if(usePartEnvelope){
   root.userData.envelopeMethod='source-parts-with-ground-outline';
-  root.userData.sourceBuildingPartIds=parts.map(part=>part.key);
  }
  for(const mesh of root.children)if(['retained-campus-ground','courtyard-ground'].includes(mesh.name)){
   mesh.material=mesh.material.clone();mesh.material.side=T.FrontSide;
@@ -200,6 +202,7 @@ export function buildMuseum(item){
  root.userData.scope='evidence-backed-exterior-massing';root.userData.sourceOutlineIds=item.keys;
  root.userData.heightPrecision='OSM tagged heights where present; otherwise documented approximate massing';
  const manifest={slug:item.slug,outlineIds:item.keys,retainedGroundCourts:item.groundCourts??[],source:source.data.source,additionalSources:source.data.additionalSources,parts:review,footprintArea:area(campus),courtyardHoles:campus.reduce((n,p)=>n+p.length-1,0),estimatedEnvelopeHeight:item.height,limitations:['Not a measured architectural survey.','Roof subdivisions, window rhythms and cornices are schematic, not exact counts.','No rooms, doors, stairs or indoor routes are inferred from this exterior.',item.scope].filter(Boolean)};
+ if(preservePartFootprint)manifest.partBoundaryMethod='Retain owned part outlines, including overhangs outside the parent ground outline.';
  if(usePartEnvelope)manifest.envelopeConstruction={method:'source-parts-with-ground-outline',partCount:parts.length,outlineResidualArea:area(clipping.difference(whole,covered)),outlineRole:'Ground footprint only; no unsupported full-height residual strips.',roofRidges:'Gabled polygons split on their ridge before triangulation.'};
  return {root,manifest,footprint:campus};
 }
