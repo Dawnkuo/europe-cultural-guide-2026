@@ -29,5 +29,5 @@ describe('VaticanGuidePage', () => {
     expect(screen.queryByText(/室内地图待重建/)).not.toBeInTheDocument();
     expect(document.querySelector('.guide-floorplan')).not.toBeInTheDocument();
     expect(screen.queryByTitle(/完整离线导览/)).not.toBeInTheDocument();
-  });
+  }, 15000);
 });

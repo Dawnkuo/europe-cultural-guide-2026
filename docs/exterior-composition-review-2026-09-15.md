@@ -92,3 +92,16 @@ or deployment. The subsequent requested release is recorded below.
   complete 80-route offline matrix. Evidence: `work/repair-release-local/`.
 - Florence Duomo remains on the original local model plus OSM. Its model hash
   is `f53dd136ab20e32f1d8f7a0c12d82c15e795ab3b73c38735ebdc078b94b6e34a`.
+
+## CI Follow-Up
+
+- First publishing attempt `34957266782` stopped before deployment: 1,171 tests
+  passed; six dense-map integration cases exceeded the default 5-second limit
+  and one lazy campus view exceeded Testing Library's 1-second lookup limit.
+  The previous production version was not replaced by this failed run.
+- Restore the 15-second entry-map test budget previously introduced in
+  `f69f6b3`, which the later release had overwritten. Apply the same budget to
+  the two other full-plan interaction tests that exceeded 5 seconds, and wait
+  up to 10 seconds for the lazy campus view, matching its existing plan wait.
+- Cap CI at two workers, matching local full-suite verification. No assertions,
+  fixtures, model assets or production components were removed or weakened.

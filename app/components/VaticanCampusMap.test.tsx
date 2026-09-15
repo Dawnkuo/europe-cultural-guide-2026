@@ -76,7 +76,7 @@ describe('Vatican campus orientation', () => {
     // This integration test loads and validates the real, large floor-plan chunk.
     expect(await screen.findByRole('button', { name: '2D 俯视' }, { timeout: 10000 })).toHaveAttribute('aria-pressed', 'true');
     await user.click(screen.getByRole('button', { name: '馆区总览' }));
-    await user.click(await screen.findByRole('button', { name: '西侧长廊' }));
+    await user.click(await screen.findByRole('button', { name: '西侧长廊' }, { timeout: 10000 }));
     await user.click(screen.getByRole('button', { name: '地图廊' }));
     expect(screen.getByRole('button', { name: '内部' })).toHaveAttribute('aria-pressed', 'true');
     await waitFor(() => {

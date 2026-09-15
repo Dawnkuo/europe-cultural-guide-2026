@@ -39,7 +39,7 @@ describe('GuideSpatial', () => {
     expect(container.querySelector('.architectural-map__viewport svg')).toHaveAttribute('aria-label', `${entry.floor.label}俯视图`);
     expect(container.querySelector('.architectural-map')).toHaveAttribute('data-entry-status', entry.status);
     expect(screen.queryByRole('button', { name: '模拟 WebGL 不可用' })).not.toBeInTheDocument();
-  });
+  }, 15000);
   it('shows Uffizi guide step 2 separately from the source room A9 and focuses the same room', async () => {
     const user = userEvent.setup();
     const guide = guideCatalog.find((item) => item.slug === 'uffizi')!;
@@ -104,7 +104,7 @@ describe('GuideSpatial', () => {
     const foundation = document.querySelector('[data-feature-id="south-tower-access-2009-tower-foundation-context"]')!;
     expect(foundation).toHaveAttribute('fill', '#1a2b35');
     expect(foundation).not.toHaveAttribute('data-space-id');
-  });
+  }, 15000);
 
   it('renders service icons with complete names and keeps gallery numbers as visible text', async () => {
     const user = userEvent.setup();
