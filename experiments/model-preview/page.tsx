@@ -1,5 +1,5 @@
-import { ExteriorModelPreview } from '../components/ExteriorModelPreview';
-import { SiteNav } from '../components/SiteNav';
+import { ExteriorModelPreview } from '../../app/components/ExteriorModelPreview';
+import { SiteNav } from '../../app/components/SiteNav';
 
 export const dynamic = 'force-static';
 

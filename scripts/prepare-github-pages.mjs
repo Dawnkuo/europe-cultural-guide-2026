@@ -1,11 +1,12 @@
-import { copyFile, cp, mkdir, readdir, readFile } from 'node:fs/promises';
+import { copyFile, cp, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { generateGuidePrecache } from './generate-guide-precache.mjs';
+import { pruneProductionResources } from './prune-production-resources.mjs';
 
 const output = join(process.cwd(), 'dist', 'client');
 const repository =
   process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'europe-cultural-guide-2026';
-const routes = ['bookings', 'cities', 'guides', 'itinerary', 'vatican-guide', 'models'];
+const routes = ['bookings', 'cities', 'guides', 'itinerary', 'vatican-guide'];
 
 for (const route of routes) {
   const directory = join(output, route);
@@ -29,6 +30,11 @@ await cp(join(output, repository, '_next'), join(output, '_next'), {
   recursive: true,
 });
 
+const cleanup = await pruneProductionResources({ output, appRoot: join(process.cwd(), 'app'), nestedExportDirectory: repository });
+const reportDirectory = join(process.cwd(), 'work', 'production-cleanup');
+await mkdir(reportDirectory, { recursive: true });
+await writeFile(join(reportDirectory, 'pruned.json'), `${JSON.stringify(cleanup, null, 2)}\n`);
+
 const guideRoutes = await generateGuidePrecache({
   output,
   slugs: guidePages.map((page) => page.slice(0, -'.html'.length)).sort(),
@@ -39,3 +45,4 @@ const guideRoutes = await generateGuidePrecache({
 console.log(
   `Prepared ${routes.length} top-level routes and ${guideRoutes.length - 1} native guide routes for GitHub Pages.`,
 );
+console.log(`Removed ${cleanup.removed.length} redundant export files (${(cleanup.removedBytes / 1_000_000).toFixed(1)} MB). Source assets are unchanged.`);
