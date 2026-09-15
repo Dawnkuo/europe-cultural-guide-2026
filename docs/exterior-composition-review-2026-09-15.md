@@ -105,3 +105,9 @@ or deployment. The subsequent requested release is recorded below.
   up to 10 seconds for the lazy campus view, matching its existing plan wait.
 - Cap CI at two workers, matching local full-suite verification. No assertions,
   fixtures, model assets or production components were removed or weakened.
+- Second attempt `34957853119`: 1,177 passed, with the legacy Vatican route's
+  inner 5-second button lookup still timing out. Scope this lookup to the map
+  section rather than the entire collection chapter, and match the existing
+  10-second lazy-plan wait. Both Vatican URLs independently passed real
+  production-browser offline maps, campus selection and room navigation in
+  `work/repair-vatican-ci-check/`.

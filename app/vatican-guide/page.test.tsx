@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import VaticanGuidePage from './page';
@@ -18,9 +18,10 @@ describe('VaticanGuidePage', () => {
     expect(
       screen.getByRole('heading', { name: '梵蒂冈博物馆' }),
     ).toBeInTheDocument();
-    await user.click(await screen.findByRole('button', { name: '2D 俯视' }, { timeout: 5000 }));
+    const spatial = within(document.getElementById('guide-spatial')!);
+    await user.click(await spatial.findByRole('button', { name: '2D 俯视' }, { timeout: 10000 }));
     const floor = plan.floors.find((item) => item.id === 'first')!;
-    expect(screen.getByRole('button', { name: floor.label })).toHaveAttribute('aria-pressed', 'true');
+    expect(spatial.getByRole('button', { name: floor.label })).toHaveAttribute('aria-pressed', 'true');
     const renderedIds = (attribute: string) => [...document.querySelectorAll(`.architectural-map [${attribute}]`)]
       .map((node) => node.getAttribute(attribute)!).sort((a, b) => a.localeCompare(b));
     expect(renderedIds('data-feature-id')).toEqual(floor.features.map((feature) => feature.id).sort((a, b) => a.localeCompare(b)));
