@@ -3,10 +3,9 @@
 import { ArrowDown, CalendarDays, MapPin } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { EuropeMap } from './components/EuropeMap';
-import { OfflineStatus } from './components/OfflineStatus';
+import { SiteNav } from './components/SiteNav';
 import { tripDays } from './data/trip';
 import { withBasePath } from './lib/paths';
-import { sitePageLinks } from './lib/site-navigation';
 import { formatJourneyStep, journeyCityOrder } from './lib/journey-route';
 
 export const dynamic = 'force-static';
@@ -52,28 +51,7 @@ export default function Home() {
         跳到旅程地图
       </a>
 
-      <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="返回总览顶部">
-          <span>EU</span>
-          <strong>欧洲纪行</strong>
-        </a>
-        <nav aria-label="主导航">
-          <a href="#journey-map">地图</a>
-          {sitePageLinks
-            .filter((link) => link.id !== 'bookings')
-            .map((link) => (
-              <a href={withBasePath(link.href)} key={link.id}>
-                {link.label}
-              </a>
-            ))}
-        </nav>
-        <div className="header-actions">
-          <OfflineStatus />
-          <a className="header-action" href={withBasePath('/bookings/')}>
-            凭证状态
-          </a>
-        </div>
-      </header>
+      <SiteNav />
 
       <section className="hero" id="top">
         {/* oxlint-disable-next-line next/no-img-element -- Static export uses a local hero image. */}

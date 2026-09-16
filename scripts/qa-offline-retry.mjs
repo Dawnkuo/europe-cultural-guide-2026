@@ -23,12 +23,12 @@ try {
   await trigger.click();
   const panel = page.getByRole('dialog', { name: '离线导览', exact: true });
   assert.match(await panel.locator('.offline-panel-status').textContent(), /未完成/);
-  assert.equal(await panel.getByRole('button', { name: '重试下载' }).isEnabled(), true);
+  assert.equal(await panel.getByRole('button', { name: /重试下载|继续下载/ }).isEnabled(), true);
   await page.screenshot({ path: `${output}/failed-mobile.png` });
   report.initialFailure = true;
 
   unavailable.clear();
-  await panel.getByRole('button', { name: '重试下载' }).click();
+  await panel.getByRole('button', { name: /重试下载|继续下载/ }).click();
   await page.waitForFunction(() => document.querySelector('dialog[open] progress')?.getAttribute('max') > 0, null, { timeout: 30000 });
   await page.waitForFunction(() => document.querySelector('dialog[open] .offline-panel-status')?.textContent.includes('已缓存'), null, { timeout: 240000 });
   const counts = await panel.locator('progress').evaluate(progress => ({ completed: progress.value, total: progress.max }));

@@ -585,13 +585,14 @@ img {
   gap: 28px;
 }
 .subnav nav a {
+  border-bottom: 2px solid transparent;
   color: var(--muted);
   font-size: 14px;
   white-space: nowrap;
   padding: 23px 0 20px;
 }
 .subnav nav a[aria-current='page'] {
-  border-bottom: 2px solid var(--gold-bright);
+  border-bottom-color: var(--gold-bright);
   color: var(--text);
 }
 .offline-mark {
@@ -1636,6 +1637,7 @@ img {
   font-size: 12px;
   gap: 8px;
   margin-top: 34px;
+  margin-right: 24px;
 }
 
 /* Attraction guide directory */
@@ -3214,6 +3216,8 @@ img {
   .subnav {
     padding: 0 16px;
   }
+  .subnav nav { gap: 4px; justify-content: space-between; }
+  .subnav nav a { min-width: 44px; justify-content: center; }
   .subnav__brand strong {
     display: none;
   }

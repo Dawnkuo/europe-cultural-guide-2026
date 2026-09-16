@@ -5,6 +5,13 @@ import { guideCatalog } from '../data/guides';
 import { GuidePractical } from './GuidePractical';
 
 describe('guide preparation', () => {
+  it('links supported attractions to the matching offline-compatible photo filter', () => {
+    const supported = guideCatalog.find(guide => guide.slug === 'milan-duomo')!;
+    const { rerender } = render(<GuidePractical guide={supported} />);
+    expect(screen.getByRole('link', { name: '拍摄机位与实拍参考' })).toHaveAttribute('href', '/photo-spots/#guide=milan-duomo');
+    rerender(<GuidePractical guide={guideCatalog.find(guide => guide.slug === 'uffizi')!} />);
+    expect(screen.getByRole('link', { name: '拍摄机位与实拍参考' })).toHaveAttribute('href', '/photo-spots/#guide=uffizi');
+  });
   const guide = guideCatalog.find((guide) => guide.slug === 'uffizi')!;
   const values = new Map<string, string>();
   const original = Object.getOwnPropertyDescriptor(window, 'localStorage');

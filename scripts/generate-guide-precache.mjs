@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { join, relative, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-export async function generateGuidePrecache({ output, slugs, nestedExportDirectory = '', serviceWorkerTemplate = '' }) {
+export async function generateGuidePrecache({ output, slugs, extraRoutes = /** @type {string[]} */ ([]), nestedExportDirectory = '', serviceWorkerTemplate = '' }) {
   const guideRoot = join(output, 'guides');
   const requested =
     slugs ??
@@ -21,7 +21,11 @@ export async function generateGuidePrecache({ output, slugs, nestedExportDirecto
     }
   }
 
-  const routes = ['/guides/', ...requested.map((slug) => `/guides/${slug}/`)];
+  for (const route of extraRoutes) {
+    if (!/^\/[a-z0-9-]+\/$/.test(route)) throw new Error(`Invalid offline route: ${route}`);
+    await access(join(output, route.slice(1), 'index.html'));
+  }
+  const routes = [...new Set(['/guides/', ...requested.map((slug) => `/guides/${slug}/`), ...extraRoutes])];
   const assets = [];
   const revisionFiles = [];
   async function collect(directory) {
@@ -39,11 +43,17 @@ export async function generateGuidePrecache({ output, slugs, nestedExportDirecto
   }
   await collect(output);
   const hash = createHash('sha256').update(serviceWorkerTemplate ?? '');
-  for (const path of revisionFiles.sort((a,b)=>a.localeCompare(b))) hash.update(relative(output,path)).update('\0').update(await readFile(path));
+  const integrity = {};
+  for (const path of revisionFiles.sort((a,b)=>a.localeCompare(b))) {
+    const bytes = await readFile(path);
+    const url = `/${relative(output, path).split(sep).join('/')}`;
+    hash.update(relative(output,path)).update('\0').update(bytes);
+    integrity[url.endsWith('/index.html') ? url.slice(0, -10) : url] = createHash('sha256').update(bytes).digest('hex');
+  }
   const revision = hash.digest('hex').slice(0,20);
   await writeFile(
     join(output, 'guide-precache.json'),
-    `${JSON.stringify({ version: 2, revision, routes, assets: assets.sort((a, b) => a.localeCompare(b)) }, null, 2)}\n`,
+    `${JSON.stringify({ version: 2, revision, routes, assets: assets.sort((a, b) => a.localeCompare(b)), integrity }, null, 2)}\n`,
   );
   if (serviceWorkerTemplate) {
     const pattern = /const CACHE = '(europe-cultural-guide-v\d+)';/;

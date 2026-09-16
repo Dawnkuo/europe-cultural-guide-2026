@@ -2,6 +2,9 @@ const CACHE = 'europe-cultural-guide-v9';
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '');
 const scoped = (path) => `${BASE_PATH}${path}`;
 const READY = scoped('/offline-ready');
+const CHECKPOINT = scoped('/offline-progress');
+const REVISION = CACHE.match(/-([a-f0-9]{20})$/)?.[1];
+const VERIFIED = 'X-Offline-Sha256';
 let progress = { completed: 0, total: 0, phase: 'checking' };
 let downloadTask;
 
@@ -35,34 +38,67 @@ const CORE = [
   '/map-data/paris.json',
 ].map(scoped);
 
-async function installOfflineRoutes() {
-  const cache = await caches.open(CACHE);
+async function manifestFor(cache) {
   const manifestUrl = scoped('/guide-precache.json');
-
-  const response = await fetch(manifestUrl, { cache: 'no-store' });
+  const response = await cache.match(manifestUrl) ?? await fetch(manifestUrl, { cache: 'no-store' });
   if (!response.ok) throw new Error(`Guide manifest ${response.status}`);
   const manifest = await response.clone().json();
-  if (manifest.version !== 2 || !Array.isArray(manifest.assets) || !Array.isArray(manifest.routes)) throw new Error('Incomplete offline manifest');
+  if (manifest.version !== 2 || !Array.isArray(manifest.assets) || !Array.isArray(manifest.routes) || !manifest.integrity) throw new Error('Incomplete offline manifest');
+  if (REVISION && manifest.revision !== REVISION) throw new Error('Offline release changed; update the service worker');
   if ([...manifest.routes, ...manifest.assets].some((path) => typeof path !== 'string' || !path.startsWith('/') || path.startsWith('//') || path.includes('..'))) throw new Error('Invalid offline resource path');
-  const guideRoutes = manifest.routes.map(scoped);
-  const guideAssets = manifest.assets.map(scoped);
-  const resources = [...new Set([...CORE, ...guideRoutes, ...guideAssets])];
-  progress = { completed: 0, total: resources.length, phase: 'downloading' };
-  await publishProgress();
-  for (let start = 0; start < resources.length; start += 16) {
-    await cache.addAll(resources.slice(start, start + 16));
-    progress.completed = Math.min(start + 16, resources.length);
-    await publishProgress();
-  }
+  const resources = [...new Set([...CORE, ...manifest.routes.map(scoped), ...manifest.assets.map(scoped)])];
+  if (resources.some(url => !/^[a-f0-9]{64}$/.test(manifest.integrity[url.slice(BASE_PATH.length)]))) throw new Error('Missing offline resource checksum');
   await cache.put(manifestUrl, response);
+  return { resources, integrity: manifest.integrity };
+}
+
+async function checkpoint(cache) {
+  await cache.put(CHECKPOINT, Response.json({ version: CACHE, ...progress }));
+  await publishProgress();
+}
+
+async function installOfflineRoutes() {
+  const cache = await caches.open(CACHE);
+  const { resources, integrity } = await manifestFor(cache);
+  const missing = [];
+  for (const url of resources) {
+    const saved = await cache.match(url);
+    if (saved?.status !== 200 || saved.headers.get(VERIFIED) !== integrity[url.slice(BASE_PATH.length)]) missing.push(url);
+  }
+  progress = { completed: resources.length - missing.length, total: resources.length, phase: 'downloading' };
+  if (missing.length) await cache.delete(READY);
+  await checkpoint(cache);
+  // Each verified response commits independently. A failed peer must not roll
+  // back completed files; cache entries are also the resume journal after a kill.
+  for (let start = 0; start < missing.length; start += 4) {
+    const results = await Promise.allSettled(missing.slice(start, start + 4).map(async url => {
+      const response = await fetch(url, { cache: 'no-store' });
+      if (response.status !== 200) throw new Error(`Offline resource ${response.status}: ${url}`);
+      const bytes = await response.arrayBuffer();
+      const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), byte => byte.toString(16).padStart(2, '0')).join('');
+      if (digest !== integrity[url.slice(BASE_PATH.length)]) throw new Error(`Offline resource checksum mismatch: ${url}`);
+      const headers = new Headers(response.headers);
+      // fetch() has decoded the body; copied transfer headers no longer apply.
+      headers.delete('content-encoding');
+      headers.delete('content-length');
+      headers.set(VERIFIED, digest);
+      await cache.put(url, new Response(bytes, { status: 200, headers }));
+      progress.completed += 1;
+    }));
+    await checkpoint(cache);
+    const failure = results.find(result => result.status === 'rejected');
+    if (failure) throw failure.reason;
+  }
   progress.phase = 'ready';
   await cache.put(READY, Response.json({ version: CACHE, ...progress, savedAt: new Date().toISOString() }));
+  await cache.delete(CHECKPOINT);
   await publishProgress();
 }
 
 function download() {
   if (!downloadTask) downloadTask = installOfflineRoutes().catch(async (error) => {
     progress.phase = 'failed';
+    await (await caches.open(CACHE)).put(CHECKPOINT, Response.json({ version: CACHE, ...progress })).catch(() => {});
     await publishProgress();
     throw error;
   }).finally(() => { downloadTask = undefined; });
@@ -76,9 +112,9 @@ self.addEventListener('message', (event) => {
   }
   if (event.data?.type !== 'OFFLINE_STATUS') return;
   event.waitUntil(caches.open(CACHE).then(async (cache) => {
-    const marker = await cache.match(READY);
+    const marker = await cache.match(READY) ?? await cache.match(CHECKPOINT);
     const saved = marker ? await marker.clone().json().catch(() => ({})) : {};
-    event.source?.postMessage({ type: 'OFFLINE_STATUS', ...saved, ...progress, ready: Boolean(marker), version: CACHE,
+    event.source?.postMessage({ type: 'OFFLINE_STATUS', ...(downloadTask ? progress : marker ? saved : progress), ready: saved.phase === 'ready', version: CACHE,
       completed: downloadTask ? progress.completed : saved.completed ?? 0,
       total: downloadTask ? progress.total : saved.total ?? 0 });
   }));
@@ -110,9 +146,12 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     fetch(event.request)
       .then(async (response) => {
-        if (response.ok) {
+        if (response.status === 200) {
           const cache = await caches.open(CACHE);
-          await cache.put(event.request, response.clone());
+          // Keep the verified offline snapshot coherent until the next release
+          // activates, even while online navigation is showing newer documents.
+          const saved = await cache.match(event.request);
+          if (!saved?.headers.get(VERIFIED)) await cache.put(event.request, response.clone());
         }
         return response;
       })

@@ -18,6 +18,7 @@ describe('CitiesPage scheduled destinations', () => {
         .filter((item) => names.includes(item.city) && item.routePoint !== false)
         .map((item) => ({ item, date: day.date })));
       const chapter = document.getElementById(profile.name)!;
+      expect(within(chapter).getByRole('link', { name: `查看${profile.name}机位` })).toHaveAttribute('href', `${basePath}/photo-spots/#city=${encodeURIComponent(profile.name)}`);
       const links = within(chapter.querySelector('.city-chapter__stops') as HTMLElement).getAllByRole('link');
       expect(links).toHaveLength(items.length);
 

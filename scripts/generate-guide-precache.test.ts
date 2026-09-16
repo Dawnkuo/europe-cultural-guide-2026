@@ -1,10 +1,24 @@
 import { mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { createHash } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
 import { generateGuidePrecache } from './generate-guide-precache.mjs';
 
 describe('generateGuidePrecache', () => {
+  it('requires and hashes extra native pages for offline filter deep links', async () => {
+    const output = await mkdtemp(join(tmpdir(), 'photo-precache-'));
+    await mkdir(join(output, 'guides'), { recursive: true });
+    await writeFile(join(output, 'guides/index.html'), 'guides');
+    await expect(generateGuidePrecache({ output, slugs: [], extraRoutes: ['/photo-spots/'] })).rejects.toThrow();
+    await mkdir(join(output, 'photo-spots'));
+    await writeFile(join(output, 'photo-spots/index.html'), 'photo spots');
+    await generateGuidePrecache({ output, slugs: [], extraRoutes: ['/photo-spots/'] });
+    const manifest = JSON.parse(await readFile(join(output, 'guide-precache.json'), 'utf8'));
+    expect(manifest.routes).toContain('/photo-spots/');
+    expect(manifest.integrity['/photo-spots/']).toBe(createHash('sha256').update('photo spots').digest('hex'));
+    await expect(generateGuidePrecache({ output, slugs: [], extraRoutes: ['/../'] })).rejects.toThrow('Invalid offline route');
+  });
   it('writes every verified static guide route to the offline manifest', async () => {
     const output = await mkdtemp(join(tmpdir(), 'guide-precache-'));
     await mkdir(join(output, 'guides', 'pantheon'), { recursive: true });
@@ -53,6 +67,9 @@ describe('generateGuidePrecache', () => {
       '/guides/pantheon.rsc',
     ]);
     expect(manifest.revision).toMatch(/^[a-f0-9]{20}$/);
+    expect(manifest.integrity['/guides/pantheon/']).toBe(createHash('sha256').update('pantheon').digest('hex'));
+    expect(manifest.integrity['/assets/st-peters.glb']).toBe(createHash('sha256').update('geometry').digest('hex'));
+    expect(Object.keys(manifest.integrity).some(path => path.includes('/europe-cultural-guide-2026/'))).toBe(false);
   });
 
   it('fails when a requested guide was not exported', async () => {

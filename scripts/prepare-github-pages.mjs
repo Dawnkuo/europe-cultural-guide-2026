@@ -6,7 +6,7 @@ import { pruneProductionResources } from './prune-production-resources.mjs';
 const output = join(process.cwd(), 'dist', 'client');
 const repository =
   process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'europe-cultural-guide-2026';
-const routes = ['bookings', 'cities', 'guides', 'itinerary', 'vatican-guide'];
+const routes = ['bookings', 'cities', 'guides', 'itinerary', 'vatican-guide', 'photo-spots'];
 
 for (const route of routes) {
   const directory = join(output, route);
@@ -39,10 +39,11 @@ const guideRoutes = await generateGuidePrecache({
   output,
   slugs: guidePages.map((page) => page.slice(0, -'.html'.length)).sort(),
   nestedExportDirectory: repository,
+  extraRoutes: ['/photo-spots/'],
   serviceWorkerTemplate: await readFile(join(process.cwd(),'public/sw.js'),'utf8'),
 });
 
 console.log(
-  `Prepared ${routes.length} top-level routes and ${guideRoutes.length - 1} native guide routes for GitHub Pages.`,
+  `Prepared ${routes.length} top-level routes and ${guidePages.length} native guide routes for GitHub Pages (${guideRoutes.length} manifest routes).`,
 );
 console.log(`Removed ${cleanup.removed.length} redundant export files (${(cleanup.removedBytes / 1_000_000).toFixed(1)} MB). Source assets are unchanged.`);

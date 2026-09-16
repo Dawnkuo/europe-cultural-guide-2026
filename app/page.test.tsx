@@ -51,6 +51,22 @@ describe('journey overview', () => {
     ).toBeVisible();
   });
 
+  it('uses the unchanged shared header instead of a separate home menu', () => {
+    render(<Home />);
+    const nav = screen.getByRole('navigation', { name: '主导航' });
+    expect(nav.closest('header')).toHaveClass('subnav');
+    expect(within(nav).getAllByRole('link').map(link => [link.textContent, link.getAttribute('href')])).toEqual([
+      ['逐日行程', '/itinerary/'],
+      ['城市文化', '/cities/'],
+      ['景点导览', '/guides/'],
+      ['凭证状态', '/bookings/'],
+      ['机位', '/photo-spots/'],
+    ]);
+    expect(screen.getByRole('link', { name: /欧洲纪行 2026/ })).toHaveAttribute('href', '/');
+    expect(screen.getByRole('link', { name: '查看旅程地图' })).toHaveAttribute('href', '#journey-map');
+    expect(nav.querySelector('[aria-current="page"]')).not.toBeInTheDocument();
+  });
+
   it('prefixes internal links and public images for GitHub Pages', () => {
     vi.stubEnv('NEXT_PUBLIC_BASE_PATH', '/europe-cultural-guide-2026');
     render(<Home />);

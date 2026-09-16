@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Camera } from 'lucide-react';
 import { SiteNav } from '../components/SiteNav';
 import { cityProfiles } from '../data/cities';
 import { guideForTripItem } from '../data/guides';
@@ -81,6 +81,7 @@ export default function CitiesPage() {
                 >
                   查看相关日期 <ArrowUpRight aria-hidden="true" size={16} />
                 </a>
+                <a href={withBasePath(`/photo-spots/#city=${encodeURIComponent(profile.name)}`)}><Camera aria-hidden="true" size={16} />查看{profile.name}机位<ArrowUpRight aria-hidden="true" size={16} /></a>
               </div>
             </article>
           );

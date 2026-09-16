@@ -1,0 +1,1026 @@
+{
+  "checkedAt": "2026-09-16",
+  "spots": 99,
+  "indoor": 51,
+  "outdoor": 42,
+  "terrace": 6,
+  "mediaBytes": 25939004,
+  "cities": [
+    {
+      "city": "巴黎",
+      "total": 4,
+      "indoor": 1,
+      "outdoor": 2,
+      "terrace": 1
+    },
+    {
+      "city": "米兰",
+      "total": 9,
+      "indoor": 5,
+      "outdoor": 3,
+      "terrace": 1
+    },
+    {
+      "city": "威尼斯",
+      "total": 13,
+      "indoor": 8,
+      "outdoor": 4,
+      "terrace": 1
+    },
+    {
+      "city": "佛罗伦萨",
+      "total": 14,
+      "indoor": 9,
+      "outdoor": 5,
+      "terrace": 0
+    },
+    {
+      "city": "比萨",
+      "total": 8,
+      "indoor": 5,
+      "outdoor": 3,
+      "terrace": 0
+    },
+    {
+      "city": "罗马与梵蒂冈",
+      "total": 21,
+      "indoor": 8,
+      "outdoor": 12,
+      "terrace": 1
+    },
+    {
+      "city": "巴塞罗那",
+      "total": 23,
+      "indoor": 12,
+      "outdoor": 10,
+      "terrace": 1
+    },
+    {
+      "city": "科隆",
+      "total": 7,
+      "indoor": 3,
+      "outdoor": 3,
+      "terrace": 1
+    }
+  ],
+  "guides": [
+    {
+      "slug": "la-scala",
+      "title": "斯卡拉歌剧院",
+      "city": "米兰",
+      "ids": [
+        "scala-auditorium"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "galleria-vittorio",
+      "title": "埃马努埃莱二世长廊",
+      "city": "米兰",
+      "ids": [
+        "milan-galleria"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "milan-duomo",
+      "title": "米兰大教堂与露台",
+      "city": "米兰",
+      "ids": [
+        "milan-nave-new",
+        "milan-roof",
+        "milan-duomo"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "last-supper",
+      "title": "《最后的晚餐》",
+      "city": "米兰",
+      "ids": [
+        "supper-room"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": "已有馆舍外景；食堂厅内实拍与现行摄影许可待补充。"
+    },
+    {
+      "slug": "santa-maria-grazie",
+      "title": "圣玛利亚感恩教堂",
+      "city": "米兰",
+      "ids": [
+        "supper-room",
+        "grazie-nave-new"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "sforza",
+      "title": "斯福尔扎城堡",
+      "city": "米兰",
+      "ids": [
+        "sforza-courtyard"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "brera",
+      "title": "布雷拉美术馆",
+      "city": "米兰",
+      "ids": [
+        "brera-gallery"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "ponte-vecchio",
+      "title": "老桥",
+      "city": "佛罗伦萨",
+      "ids": [
+        "vasari-new",
+        "florence-bridge"
+      ],
+      "indoor": 0,
+      "outdoor": 2,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "doges-palace",
+      "title": "总督宫",
+      "city": "威尼斯",
+      "ids": [
+        "sighs-bridge",
+        "doge-council",
+        "doge-stair-new"
+      ],
+      "indoor": 3,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "bridge-of-sighs",
+      "title": "叹息桥外观",
+      "city": "威尼斯",
+      "ids": [
+        "sighs-bridge"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "st-mark-campanile",
+      "title": "圣马可钟楼",
+      "city": "威尼斯",
+      "ids": [
+        "mark-view"
+      ],
+      "indoor": 0,
+      "outdoor": 0,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "st-mark-square",
+      "title": "圣马可广场",
+      "city": "威尼斯",
+      "ids": [
+        "mark-view",
+        "mark-square-new"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "correr",
+      "title": "科雷尔博物馆",
+      "city": "威尼斯",
+      "ids": [
+        "correr-hall-new"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "st-mark-basilica",
+      "title": "圣马可大教堂全套",
+      "city": "威尼斯",
+      "ids": [
+        "mark-nave-new",
+        "mark-square-new"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "rialto",
+      "title": "里亚托桥",
+      "city": "威尼斯",
+      "ids": [
+        "venice-rialto"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "grand-canal",
+      "title": "大运河",
+      "city": "威尼斯",
+      "ids": [
+        "venice-accademia",
+        "venice-rialto"
+      ],
+      "indoor": 0,
+      "outdoor": 2,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "fenice",
+      "title": "凤凰歌剧院",
+      "city": "威尼斯",
+      "ids": [
+        "fenice-hall",
+        "fenice-stage-wide"
+      ],
+      "indoor": 2,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "accademia-venice",
+      "title": "威尼斯学院美术馆",
+      "city": "威尼斯",
+      "ids": [
+        "venice-gallery-new"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "gondola",
+      "title": "贡多拉",
+      "city": "威尼斯",
+      "ids": [
+        "gondola-basin"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "florence-duomo",
+      "title": "圣母百花大教堂",
+      "city": "佛罗伦萨",
+      "ids": [
+        "florence-nave",
+        "florence-panorama"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "leaning-tower",
+      "title": "比萨斜塔",
+      "city": "比萨",
+      "ids": [
+        "opera-pisa-new",
+        "pisa-west",
+        "pisa-east"
+      ],
+      "indoor": 0,
+      "outdoor": 3,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "pisa-cathedral",
+      "title": "比萨主教座堂",
+      "city": "比萨",
+      "ids": [
+        "pisa-nave",
+        "pisa-west",
+        "pisa-east"
+      ],
+      "indoor": 1,
+      "outdoor": 2,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "pisa-baptistery",
+      "title": "比萨洗礼堂",
+      "city": "比萨",
+      "ids": [
+        "pisa-baptistery-font"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "camposanto",
+      "title": "纪念墓园",
+      "city": "比萨",
+      "ids": [
+        "camposanto-gallery"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "sinopie",
+      "title": "壁画草图博物馆",
+      "city": "比萨",
+      "ids": [
+        "sinopie-new"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "opera-pisa",
+      "title": "大教堂博物馆",
+      "city": "比萨",
+      "ids": [
+        "opera-pisa-new",
+        "pisa-opera-room"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "piazzale-michelangelo",
+      "title": "米开朗琪罗广场",
+      "city": "佛罗伦萨",
+      "ids": [
+        "florence-panorama"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "accademia-florence",
+      "title": "学院美术馆",
+      "city": "佛罗伦萨",
+      "ids": [
+        "david-hall-new",
+        "florence-plaster"
+      ],
+      "indoor": 2,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "mercato-centrale",
+      "title": "中央市场",
+      "city": "佛罗伦萨",
+      "ids": [
+        "market-hall-new"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "medici-chapels",
+      "title": "梅第奇礼拜堂",
+      "city": "佛罗伦萨",
+      "ids": [
+        "medici-princes-new"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "signoria",
+      "title": "领主广场与佣兵凉廊",
+      "city": "佛罗伦萨",
+      "ids": [
+        "signoria-new"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "giunti-odeon",
+      "title": "Giunti Odeon书店",
+      "city": "佛罗伦萨",
+      "ids": [
+        "odeon-reading"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "uffizi",
+      "title": "乌菲兹美术馆",
+      "city": "佛罗伦萨",
+      "ids": [
+        "uffizi-corridor",
+        "uffizi-tribuna"
+      ],
+      "indoor": 2,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "vasari-corridor",
+      "title": "瓦萨里走廊",
+      "city": "佛罗伦萨",
+      "ids": [
+        "vasari-new"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": "已有桥面外景；走廊内部实拍待补充。"
+    },
+    {
+      "slug": "pitti",
+      "title": "皮蒂宫",
+      "city": "佛罗伦萨",
+      "ids": [
+        "pitti-venus",
+        "pitti-courtyard"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "pantheon",
+      "title": "万神殿",
+      "city": "罗马",
+      "ids": [
+        "pantheon-oculus",
+        "pantheon-round"
+      ],
+      "indoor": 2,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "borghese",
+      "title": "博尔盖塞美术馆",
+      "city": "罗马",
+      "ids": [
+        "borghese-hall",
+        "borghese-apollo"
+      ],
+      "indoor": 2,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "colosseum",
+      "title": "斗兽场地下层与竞技场",
+      "city": "罗马",
+      "ids": [
+        "colosseum-arena",
+        "rome-colosseum"
+      ],
+      "indoor": 0,
+      "outdoor": 2,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "roman-forum",
+      "title": "古罗马广场",
+      "city": "罗马",
+      "ids": [
+        "forum-new"
+      ],
+      "indoor": 0,
+      "outdoor": 0,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "palatine",
+      "title": "帕拉蒂尼山",
+      "city": "罗马",
+      "ids": [
+        "palatine-stadium"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "piazza-venezia",
+      "title": "威尼斯广场",
+      "city": "罗马",
+      "ids": [
+        "venezia-vittoriano"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "trevi",
+      "title": "特雷维喷泉",
+      "city": "罗马",
+      "ids": [
+        "trevi-front"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "spanish-steps",
+      "title": "西班牙台阶",
+      "city": "罗马",
+      "ids": [
+        "spanish-stairs"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "piazza-navona",
+      "title": "纳沃纳广场",
+      "city": "罗马",
+      "ids": [
+        "navona-fountain"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "vatican-museums",
+      "title": "梵蒂冈博物馆",
+      "city": "梵蒂冈",
+      "ids": [
+        "vatican-rotunda",
+        "maps-new",
+        "vatican-stairs"
+      ],
+      "indoor": 3,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": "已含圆厅、地图廊与出口楼梯；西斯廷礼拜堂禁拍，不提供拍摄机位。"
+    },
+    {
+      "slug": "st-peters-basilica",
+      "title": "圣彼得大教堂",
+      "city": "梵蒂冈",
+      "ids": [
+        "peter-nave-wide",
+        "rome-vatican"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "st-peters-square",
+      "title": "圣彼得广场",
+      "city": "梵蒂冈",
+      "ids": [
+        "vatican-post-facade",
+        "rome-vatican"
+      ],
+      "indoor": 0,
+      "outdoor": 2,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "vatican-post",
+      "title": "梵蒂冈邮局",
+      "city": "梵蒂冈",
+      "ids": [
+        "vatican-post-facade"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "vatican-surroundings",
+      "title": "梵蒂冈周边",
+      "city": "罗马",
+      "ids": [
+        "vatican-borgo"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "tiber",
+      "title": "台伯河沿线",
+      "city": "罗马",
+      "ids": [
+        "tiber-bridge"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "trastevere",
+      "title": "特拉斯提弗列区",
+      "city": "罗马",
+      "ids": [
+        "trastevere-square"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "sagrada-familia",
+      "title": "圣家堂",
+      "city": "巴塞罗那",
+      "ids": [
+        "sagrada-nave-official",
+        "sagrada-glass",
+        "barcelona-sagrada"
+      ],
+      "indoor": 2,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "gaudi-house",
+      "title": "高迪故居博物馆",
+      "city": "巴塞罗那",
+      "ids": [
+        "gaudi-house-garden",
+        "gaudi-house-room"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "park-guell",
+      "title": "桂尔公园",
+      "city": "巴塞罗那",
+      "ids": [
+        "barcelona-guell"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "turo-rovira",
+      "title": "焦糖山（Turó de la Rovira）",
+      "city": "巴塞罗那",
+      "ids": [
+        "rovira-city"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "la-pedrera",
+      "title": "米拉之家 Sunrise 清晨参观",
+      "city": "巴塞罗那",
+      "ids": [
+        "pedrera-roof",
+        "pedrera-courtyard",
+        "pedrera-attic-wide"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "casa-batllo",
+      "title": "巴特罗之家（铂金票）",
+      "city": "巴塞罗那",
+      "ids": [
+        "batllo-room-wide",
+        "batllo-salon",
+        "batllo-stair",
+        "batllo-lightwell"
+      ],
+      "indoor": 4,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "palau-musica",
+      "title": "加泰罗尼亚音乐宫",
+      "city": "巴塞罗那",
+      "ids": [
+        "palau-hall",
+        "palau-balcony"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "barcelona-cathedral",
+      "title": "巴塞罗那主教座堂",
+      "city": "巴塞罗那",
+      "ids": [
+        "barcelona-cathedral-nave"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "picasso-barcelona",
+      "title": "毕加索博物馆",
+      "city": "巴塞罗那",
+      "ids": [
+        "picasso-gallery-new"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": "已有宫殿庭院；馆藏展厅实拍待补充。"
+    },
+    {
+      "slug": "santa-maria-mar",
+      "title": "圣玛利亚海洋教堂",
+      "city": "巴塞罗那",
+      "ids": [
+        "mar-nave"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "el-born",
+      "title": "博恩区",
+      "city": "巴塞罗那",
+      "ids": [
+        "born-hall"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "barceloneta",
+      "title": "巴塞罗内塔海滩",
+      "city": "巴塞罗那",
+      "ids": [
+        "barceloneta-beach"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "gothic-quarter",
+      "title": "哥特区夜景",
+      "city": "巴塞罗那",
+      "ids": [
+        "bisbe-full"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "la-rambla",
+      "title": "兰布拉大道",
+      "city": "巴塞罗那",
+      "ids": [
+        "rambla-boqueria"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "museum-ludwig",
+      "title": "路德维希博物馆",
+      "city": "科隆",
+      "ids": [
+        "ludwig-foyer"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "hohenzollern",
+      "title": "霍亨索伦桥",
+      "city": "科隆",
+      "ids": [
+        "cologne-river",
+        "cologne-triangle"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "koln-triangle",
+      "title": "科隆三角大厦观景台",
+      "city": "科隆",
+      "ids": [
+        "cologne-triangle"
+      ],
+      "indoor": 0,
+      "outdoor": 0,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "cologne-cathedral",
+      "title": "科隆大教堂",
+      "city": "科隆",
+      "ids": [
+        "cologne-aisle-wide",
+        "cologne-river",
+        "cologne-triangle"
+      ],
+      "indoor": 1,
+      "outdoor": 1,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "cologne-old-town",
+      "title": "科隆老城",
+      "city": "科隆",
+      "ids": [
+        "cologne-oldtown"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "rheinauhafen",
+      "title": "莱茵港",
+      "city": "科隆",
+      "ids": [
+        "rheinauhafen-crane"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "chocolate-museum",
+      "title": "巧克力博物馆",
+      "city": "科隆",
+      "ids": [
+        "chocolate-fountain"
+      ],
+      "indoor": 1,
+      "outdoor": 0,
+      "terrace": 0,
+      "note": null
+    },
+    {
+      "slug": "notre-dame-towers",
+      "title": "巴黎圣母院双塔",
+      "city": "巴黎",
+      "ids": [
+        "paris-tower-view",
+        "notredame-restored",
+        "paris-facade",
+        "paris-seine"
+      ],
+      "indoor": 1,
+      "outdoor": 2,
+      "terrace": 1,
+      "note": null
+    },
+    {
+      "slug": "seine",
+      "title": "塞纳河周边",
+      "city": "巴黎",
+      "ids": [
+        "paris-seine"
+      ],
+      "indoor": 0,
+      "outdoor": 1,
+      "terrace": 0,
+      "note": null
+    }
+  ],
+  "indoorPolicyUnverified": [
+    "notredame-restored",
+    "grazie-nave-new",
+    "fenice-hall",
+    "fenice-stage-wide",
+    "venice-gallery-new",
+    "odeon-reading",
+    "david-hall-new",
+    "florence-plaster",
+    "market-hall-new",
+    "pisa-nave",
+    "pisa-baptistery-font",
+    "camposanto-gallery",
+    "sinopie-new",
+    "pisa-opera-room",
+    "pantheon-oculus",
+    "pantheon-round",
+    "borghese-hall",
+    "borghese-apollo",
+    "gaudi-house-room",
+    "batllo-room-wide",
+    "batllo-salon",
+    "batllo-stair",
+    "batllo-lightwell",
+    "barcelona-cathedral-nave",
+    "mar-nave",
+    "born-hall",
+    "chocolate-fountain"
+  ]
+}

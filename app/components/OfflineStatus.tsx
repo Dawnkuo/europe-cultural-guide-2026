@@ -58,6 +58,12 @@ export function OfflineStatus() {
   const panel = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
   const registrationRef = useRef<ServiceWorkerRegistration | null>(null);
+  const wasOnline = useRef(online);
+
+  useEffect(() => {
+    if (!wasOnline.current && online && cacheState !== 'ready') setAttempt(value => value + 1);
+    wasOnline.current = online;
+  }, [online, cacheState]);
 
   useEffect(() => {
     if (development) return;
@@ -71,6 +77,7 @@ export function OfflineStatus() {
       const data = event.data;
       if (data?.type !== 'OFFLINE_STATUS' && data?.type !== 'OFFLINE_PROGRESS')
         return;
+      if (installing && event.source && event.source !== registrationRef.current?.installing) return;
       if (
         typeof data.completed === 'number' &&
         typeof data.total === 'number'
@@ -102,8 +109,8 @@ export function OfflineStatus() {
         );
       }
     };
-    const request = () =>
-      workers.controller?.postMessage({ type: 'OFFLINE_STATUS' });
+    const target = () => registrationRef.current?.installing ?? registrationRef.current?.waiting ?? registrationRef.current?.active ?? workers.controller;
+    const request = () => target()?.postMessage({ type: 'OFFLINE_STATUS' });
     workers.addEventListener('message', receive);
     workers.addEventListener('controllerchange', request);
     void workers
@@ -111,11 +118,11 @@ export function OfflineStatus() {
       .then(async (registered) => {
         if (!live) return;
         registrationRef.current = registered;
-        if (attempt > 0 && registered.active)
-          registered.active.postMessage({ type: 'OFFLINE_RETRY' });
+        let watched: ServiceWorker | null = null;
         const watch = () => {
           const worker = registered.installing;
-          if (!worker) return;
+          if (!worker || worker === watched) return;
+          watched = worker;
           installing = true;
           setCacheState('checking');
           const change = () => {
@@ -133,8 +140,15 @@ export function OfflineStatus() {
           registered.removeEventListener('updatefound', watch),
         );
         watch();
+        if (attempt > 0) {
+          if (!registered.installing) await registered.update();
+          if (!live) return;
+          watch();
+          target()?.postMessage({ type: 'OFFLINE_RETRY' });
+        }
+        request();
         const registration = await workers.ready;
-        if (live) registration.active?.postMessage({ type: 'OFFLINE_STATUS' });
+        if (live && !installing) registration.active?.postMessage({ type: 'OFFLINE_STATUS' });
       })
       .catch(() => {
         if (live) setCacheState('failed');
@@ -149,9 +163,7 @@ export function OfflineStatus() {
 
   function retry() {
     setCacheState('checking');
-    if (registrationRef.current?.active)
-      registrationRef.current.active.postMessage({ type: 'OFFLINE_RETRY' });
-    else setAttempt((value) => value + 1);
+    setAttempt((value) => value + 1);
   }
 
   const Icon = offline ? WifiOff : Wifi;
@@ -231,8 +243,8 @@ export function OfflineStatus() {
               {cacheState === 'ready'
                 ? '行程、景点文字、图片和地图已保存到此设备，可断网访问。浏览器清理网站数据后需要重新下载。'
                 : cacheState === 'failed'
-                  ? '下载未完成，暂不能确认所有页面离线可读。请保持联网后重试，并检查设备可用空间。'
-                  : '正在保存行程、景点文字、图片与地图。请保持联网并等待下载完成。'}
+                  ? '下载未完成，已保存的文件会保留。联网后继续下载缺失资源；若仍失败，请检查设备可用空间。'
+                  : '正在保存缺失的离线资源，已完成的文件无需重复下载。'}
             </p>
             {progress.savedAt && (
               <p className="offline-count">
@@ -253,7 +265,7 @@ export function OfflineStatus() {
               ) : (
                 <RefreshCw size={18} />
               )}
-              {cacheState === 'failed' ? '重试下载' : '重新下载'}
+              {cacheState === 'failed' ? progress.completed > 0 ? '继续下载' : '重试下载' : cacheState === 'checking' ? '正在下载' : '检查更新'}
             </button>
           </>
         )}

@@ -3,4 +3,5 @@ export const sitePageLinks = [
   { href: '/cities/', label: '城市文化', id: 'cities' },
   { href: '/guides/', label: '景点导览', id: 'guides' },
   { href: '/bookings/', label: '凭证状态', id: 'bookings' },
+  { href: '/photo-spots/', label: '机位', id: 'photo-spots' },
 ] as const;

@@ -1,0 +1,727 @@
+{
+  "scope": "Only the offline worker changed in the pinned map runtime. Geometry, styles, controls, source plans and dependency lock are byte-identical to the reviewed base. Prior visual/touch/performance evidence is retained, not claimed as freshly rerun. Every offline route and the resumable downloader were re-tested.",
+  "base": "5cd37c4",
+  "previousRuntimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
+  "currentRuntimeDigest": "b08b76b186cbc80a2ef79a6f1ab0501aee9886124f27b495dd1953ab0324cca5",
+  "revision": "396b75f9c0fc852cf74a",
+  "unchanged": {
+    "app/components/ArchitecturalMap.tsx": "a1e92c036c0284999cad7a5725641c447f222c46ae943e7e6c71cd4a8cf6ef9d",
+    "app/components/ArchitecturalScene.tsx": "4a92dd95992ad4e6932a5989f63a4248380b0e8ce31dff7026f1f6d9fbed3b7f",
+    "app/components/PlanPlaceMarker.tsx": "10ae5e61b1cd4a4bacd85c6c51c22ac73714406ad8ba98d9676b56697b6fe4ef",
+    "app/components/architectural-map.css": "1029be7b21f37b8ee40f1adf4bd7e0b5691a3f56d3a288c55f7078f1e3de86b0",
+    "app/components/GuideSpatial.tsx": "6b03d38f20993cfca05cf1dbd9f1984f5e730c0f793583366994e01bf5ee6c30",
+    "app/lib/architectural-plan.ts": "463f29581eeee0b053931308a5e926adc8f893d9c5d35afe35c6fb833c6e9a9d",
+    "app/lib/architectural-plan-loader.ts": "aa30b5c953a386d392f5787ca4742ce8e3a762e42554559dd4a1f35fa98221ea",
+    "app/lib/architectural-visibility.ts": "ab8e061d21b61f455944041c449b98469b94dc21950d5940f6d379f192f5ecae",
+    "app/lib/architectural-entry.ts": "4eade58b7b7e5555810faacb8cc90ac902ca4cff3f1b2665b95f53a65c469a74",
+    "app/data/architectural-entry-floors.json": "10321fdbee62b3a4784eab9360e238ced302cdda882243d4008bf7dd7fe42c21",
+    "app/data/architectural-map-notes.json": "9a5ea307b8cbd15a9a745619f60434337e6a6ef00c33c24669bcca6d5f5d6b31",
+    "app/data/architectural-stop-notes.json": "799386a0feca9503d9b62a50a7b32f6a59af7656774993c26e3f4d20c9f977eb",
+    "package-lock.json": "0af84de552aa4949446c343af753f4b8f7e662a7168a4b7c5d14233da218405b"
+  },
+  "changed": {
+    "public/sw.js": {
+      "before": "d34aa74eaa326ca9cfe761fc704bd093c654066883a23a004b713b0f9ff8367e",
+      "after": "d7eede928d3091345496052aa74a4f5a77f7d3bc68332eaae1e8e778e3e5f842"
+    }
+  },
+  "resume": {
+    "revision": "396b75f9c0fc852cf74a",
+    "steps": [
+      {
+        "name": "interrupted download retains successful files",
+        "completed": 751,
+        "total": 971,
+        "cached": {
+          "ready": false,
+          "files": 753
+        }
+      },
+      {
+        "name": "reload resumes without repeating verified files",
+        "completed": 754,
+        "total": 971
+      },
+      {
+        "name": "browser restart restores the persisted cache",
+        "completed": 757,
+        "total": 971
+      },
+      {
+        "name": "real network disconnect during active downloading preserves progress",
+        "completed": 773,
+        "total": 971
+      },
+      {
+        "name": "reconnection automatically completes missing files",
+        "completed": 971,
+        "total": 971,
+        "reusedRequestCounts": {
+          "/europe-cultural-guide-2026/itinerary/": 1,
+          "/europe-cultural-guide-2026/cities/": 1,
+          "/europe-cultural-guide-2026/bookings/": 1,
+          "/europe-cultural-guide-2026/guides/uffizi/": 1,
+          "/europe-cultural-guide-2026/guides/sforza/": 1
+        }
+      },
+      {
+        "name": "completed package reloads offline",
+        "routes": 3
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "offlineRoutes": 80,
+  "venues": [
+    {
+      "slug": "accademia-florence",
+      "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/accademia-florence.json",
+      "offline": {
+        "route": "/guides/accademia-florence/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "3e78744683d34f9ada7b46d7ad927ee049a400724524152cbb2ae4f55e26ef99",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "accademia-venice",
+      "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/accademia-venice.json",
+      "offline": {
+        "route": "/guides/accademia-venice/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "96b9f356b76baea420f843964b97ab3a32f47057b77ff1ef2d0201bb37df53af",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "barcelona-cathedral",
+      "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/barcelona-cathedral.json",
+      "offline": {
+        "route": "/guides/barcelona-cathedral/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main-level",
+        "modelDigest": "866140d8331bb7a517f2682a80111d1f5349febd2450ae98d54aae76a7e44d98",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "borghese",
+      "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/borghese.json",
+      "offline": {
+        "route": "/guides/borghese/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "B1",
+        "modelDigest": "7e4b9f2c1a3dd10a9881aa96026102bfc3d1e40110c2f03713fa2b75eac389dc",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "brera",
+      "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/brera.json",
+      "offline": {
+        "route": "/guides/brera/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "gallery",
+        "modelDigest": "08b92fbeccd107dcfa24ada908f140868f13985bab5b3340d337b0434bca111d",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "camposanto",
+      "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/camposanto.json",
+      "offline": {
+        "route": "/guides/camposanto/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "dabf5712589c5fbe603457438b879610dd688d7a26aa60d2946e361653706e40",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "casa-batllo",
+      "modelDigest": "3fdfb3b9a1367b057a771b238768df96dd4eaa28df47249f8a626f4c928c7a29",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/casa-batllo.json",
+      "offline": {
+        "route": "/guides/casa-batllo/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "3fdfb3b9a1367b057a771b238768df96dd4eaa28df47249f8a626f4c928c7a29",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "cologne-cathedral",
+      "modelDigest": "15f95bfba42cd6b45744201c7667b9e999b3131a266cc8b4881fdf0464b87596",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/cologne-cathedral.json",
+      "offline": {
+        "route": "/guides/cologne-cathedral/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "nave",
+        "modelDigest": "15f95bfba42cd6b45744201c7667b9e999b3131a266cc8b4881fdf0464b87596",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "colosseum",
+      "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/colosseum.json",
+      "offline": {
+        "route": "/guides/colosseum/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "podium-level-3",
+        "modelDigest": "f22de85edc4f1ab4e1c1be783dfb11b404f070dc2fc0825bfdf091273a093856",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "correr",
+      "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/correr.json",
+      "offline": {
+        "route": "/guides/correr/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L1",
+        "modelDigest": "4ee9bd9a3c085afa3781664cd9aba9b80d35209454b31c3176451763f62155e5",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "doges-palace",
+      "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/doges-palace.json",
+      "offline": {
+        "route": "/guides/doges-palace/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "290ea9504065fbca2f0216930fb0fbaed47bac4e6afa698f7897b4aeb8da58f7",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "el-born",
+      "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/el-born.json",
+      "offline": {
+        "route": "/guides/el-born/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "street-level",
+        "modelDigest": "ae911c9bc9144d7bd718cb39d35103ff58df870a24e87b199db117910d2d1e52",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "fenice",
+      "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/fenice.json",
+      "offline": {
+        "route": "/guides/fenice/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "foyer",
+        "modelDigest": "beeae4fa41f388288be4f2f4b19c1e777f454dbd7785dde1c0ba03a4ed69cf0b",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "florence-duomo",
+      "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/florence-duomo.json",
+      "offline": {
+        "route": "/guides/florence-duomo/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main",
+        "modelDigest": "88ff30f2b410f21779f7047222eeea4c28af36fb0a775049c956afe72efdbe30",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "galleria-vittorio",
+      "modelDigest": "1683ec93b7b4509e150b6b10ba71eafb41aa25fa59c705743377f8915ed278b1",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/galleria-vittorio.json",
+      "offline": {
+        "route": "/guides/galleria-vittorio/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "arcade",
+        "modelDigest": "1683ec93b7b4509e150b6b10ba71eafb41aa25fa59c705743377f8915ed278b1",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "giunti-odeon",
+      "modelDigest": "64a65857c2351159f618b2666cc964d9dfb9b38e67545d3746eb3ee4ae5e59c0",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/giunti-odeon.json",
+      "offline": {
+        "route": "/guides/giunti-odeon/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "64a65857c2351159f618b2666cc964d9dfb9b38e67545d3746eb3ee4ae5e59c0",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "koln-triangle",
+      "modelDigest": "2e1babc3e297516d651ce9972fd2cb3ca086860df6987e2c1123c863f62ec6cf",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/koln-triangle.json",
+      "offline": {
+        "route": "/guides/koln-triangle/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "2e1babc3e297516d651ce9972fd2cb3ca086860df6987e2c1123c863f62ec6cf",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "la-pedrera",
+      "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/la-pedrera.json",
+      "offline": {
+        "route": "/guides/la-pedrera/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "historic-visitor-ground",
+        "modelDigest": "cb08adbd80a45f549acaefc2d13d8ba0106afbf1a24b605f4a84640f6a03a804",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "la-scala",
+      "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/la-scala.json",
+      "offline": {
+        "route": "/guides/la-scala/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "museum",
+        "modelDigest": "6b69715e9dacf8e097a4cb95e369d7fbc1f83ee1f49e1865ab24d0f9eca5bdb1",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "last-supper",
+      "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/last-supper.json",
+      "offline": {
+        "route": "/guides/last-supper/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "afb1e1ebf618c58e7578be47062d848ff93f221981dd2060809478b0e767e940",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "leaning-tower",
+      "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/leaning-tower.json",
+      "offline": {
+        "route": "/guides/leaning-tower/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "entry-first",
+        "modelDigest": "005c027effea2a23e436b4cb2f37692ae7f3c56b820263030fac7033c8b080ed",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "medici-chapels",
+      "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/medici-chapels.json",
+      "offline": {
+        "route": "/guides/medici-chapels/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "crypt-level",
+        "modelDigest": "d1330bb3ddd6925bf23ccd091b39c66bd0ac916d0428c8a81abb48b0d1b7b15e",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "mercato-centrale",
+      "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/mercato-centrale.json",
+      "offline": {
+        "route": "/guides/mercato-centrale/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground-historic",
+        "modelDigest": "417b3ede5e1b050b874ceeefb85d4071df3e003378d9f37bc430cc19a2a469ff",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "milan-duomo",
+      "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/milan-duomo.json",
+      "offline": {
+        "route": "/guides/milan-duomo/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "cathedral",
+        "modelDigest": "c732ab928a3fab869123b1a9a8cf39cbe1c0c76f8084fd02e28c80a1f9992af7",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "museum-ludwig",
+      "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/museum-ludwig.json",
+      "offline": {
+        "route": "/guides/museum-ludwig/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "c7ed08449cdbab3c9491c759d277e689fe4ae892831c04f083b7fbf728e06cf4",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "notre-dame-towers",
+      "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/notre-dame-towers.json",
+      "offline": {
+        "route": "/guides/notre-dame-towers/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "south-belfry-lower",
+        "modelDigest": "e3edd5e6f106daa1ae856b369cdc319e48d32fc3ff65e50a3b523a7753279c93",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "opera-pisa",
+      "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/opera-pisa.json",
+      "offline": {
+        "route": "/guides/opera-pisa/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "25fd4e44993317ffb9344ae99771363d63d8a55f3f2dcf29614210195a76ed17",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "palau-musica",
+      "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/palau-musica.json",
+      "offline": {
+        "route": "/guides/palau-musica/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "plan-I",
+        "modelDigest": "8c69c9b0524357f352575c1397dc176e0e110813997010bbe1e54a3ab218018b",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "pantheon",
+      "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/pantheon.json",
+      "offline": {
+        "route": "/guides/pantheon/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "3b282d50e64547e53f27439fd85972c0d38d78d7092239a32a9176d3ac9bd8f3",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "picasso-barcelona",
+      "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/picasso-barcelona.json",
+      "offline": {
+        "route": "/guides/picasso-barcelona/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "8375b5197a27e0eb6d50479751cbd35056f5d924486a72908f58d74b53a75db7",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "pisa-baptistery",
+      "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/pisa-baptistery.json",
+      "offline": {
+        "route": "/guides/pisa-baptistery/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "7153390118722978c586dfd37be79687d31354cf3890a2518b36b9f3da922ff0",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "pisa-cathedral",
+      "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/pisa-cathedral.json",
+      "offline": {
+        "route": "/guides/pisa-cathedral/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "d0a428ad265084827fe3c5726de56eeea36fdfa99b3789cba3445fbef9870851",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "pitti",
+      "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/pitti.json",
+      "offline": {
+        "route": "/guides/pitti/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "54df597f0844dd48d1dd5e20d3833a25a5c56f8a713e8d9aca9657fad559a240",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "sagrada-familia",
+      "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/sagrada-familia.json",
+      "offline": {
+        "route": "/guides/sagrada-familia/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main",
+        "modelDigest": "150cb70bb11b7f2fefa555ee9d6cd6158c4f97652480d4dd4aaf6734f5b1a7de",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "santa-maria-grazie",
+      "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/santa-maria-grazie.json",
+      "offline": {
+        "route": "/guides/santa-maria-grazie/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "church",
+        "modelDigest": "f31cf31ff90d51a25e74ed01fdc231a102bfe8394980e25f3cfaa9e918c515d9",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "santa-maria-mar",
+      "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/santa-maria-mar.json",
+      "offline": {
+        "route": "/guides/santa-maria-mar/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main-level",
+        "modelDigest": "e53bf1badbb9d555d32838dbd2a54d2ca13a4ff54046b37931ac36d70f641ebd",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "sforza",
+      "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/sforza.json",
+      "offline": {
+        "route": "/guides/sforza/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "397d4a89bd9f841de482255859f2e6e0384f04dc69f272a688e5fafd5b207a5e",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "st-mark-basilica",
+      "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/st-mark-basilica.json",
+      "offline": {
+        "route": "/guides/st-mark-basilica/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "main",
+        "modelDigest": "41894d5e6dfc9d715cf7f9bce780cb7a7435c5a0b5d90f61f4ffd6e591b115cb",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "st-mark-campanile",
+      "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/st-mark-campanile.json",
+      "offline": {
+        "route": "/guides/st-mark-campanile/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "ground",
+        "modelDigest": "71c18e52b627e757eebb26e41fd8f2cf92c814fb43fcbd8718b57d5fe17c3b47",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "st-peters-basilica",
+      "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/st-peters-basilica.json",
+      "offline": {
+        "route": "/guides/st-peters-basilica/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "basilica",
+        "modelDigest": "26f1c8e7fc56ed561a5be8d2ddadd40158231b42ebee8c146bce35b8766e2ecb",
+        "routeNumbering": true,
+        "firstOpenedExteriorOffline": true,
+        "firstOpenedSistineFocusOffline": true,
+        "firstOpenedRegisteredCompoundOffline": true,
+        "firstOpenedLibraryStudyOffline": true,
+        "firstOpenedCampusOffline": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "uffizi",
+      "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/uffizi.json",
+      "offline": {
+        "route": "/guides/uffizi/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "L0",
+        "modelDigest": "6deeef62e3f41a6f8631eabdd637f5cb7ed055b9d1a357573fadbe847ea701f3",
+        "routeNumbering": true,
+        "passed": true
+      }
+    },
+    {
+      "slug": "vatican-museums",
+      "modelDigest": "4f11d473b5e9b7c8f8efefbe85201800e072af54e53f5ae50822e831d8ed8a75",
+      "priorRuntimeEvidence": "sources/floorplans/rebuild-reports/release/vatican-museums.json",
+      "offline": {
+        "route": "/guides/vatican-museums/",
+        "hasMap": true,
+        "errors": [],
+        "default2d": true,
+        "entryFloor": "first",
+        "modelDigest": "4f11d473b5e9b7c8f8efefbe85201800e072af54e53f5ae50822e831d8ed8a75",
+        "routeNumbering": true,
+        "firstOpenedMuseumExteriorOffline": true,
+        "museumContextCounts": {
+          "buildings": 646,
+          "roads": 824,
+          "walls": 180,
+          "taggedHeights": 293,
+          "levelHeights": 39,
+          "estimatedHeights": 314
+        },
+        "firstOpenedSistineFocusOffline": true,
+        "firstOpenedRegisteredCompoundOffline": true,
+        "firstOpenedLibraryStudyOffline": true,
+        "campusRoomLink": "second-8-1",
+        "firstOpenedCampusOffline": true,
+        "passed": true
+      }
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 'use client';
 
-import { ArrowUpRight, CalendarDays, RotateCcw } from 'lucide-react';
+import { ArrowUpRight, CalendarDays, Camera, RotateCcw } from 'lucide-react';
 import { useMemo, useState, useSyncExternalStore } from 'react';
 import type { GuideRecord } from '../data/types';
 import { withBasePath } from '../lib/paths';
 import { GuideVisitorInformation } from './GuideVisitorInformation';
 import './guide-practical.css';
+import { photoSpotsForGuide } from '../data/photo-spots';
 
 function subscribeToPreparation(notify: () => void) {
   window.addEventListener('storage', notify);
@@ -119,6 +120,11 @@ export function GuidePractical({ guide }: { guide: GuideRecord }) {
       </div>
       <GuideVisitorInformation slug={guide.slug} />
       <div className="guide-practical__content">
+        {photoSpotsForGuide(guide.slug).length > 0 && (
+          <a className="guide-photo-link" href={withBasePath(`/photo-spots/#guide=${guide.slug}`)}>
+            <Camera size={18} aria-hidden="true" />拍摄机位与实拍参考<ArrowUpRight size={16} aria-hidden="true" />
+          </a>
+        )}
         {guide.scheduledVisits.length > 0 && (
           <div className="guide-visit-summary">
             <h3>
