@@ -73,9 +73,14 @@ describe('photo spot directory', () => {
   it('shows every real photo and valid local guide link, with source and license', () => {
     vi.stubEnv('NEXT_PUBLIC_BASE_PATH', '/europe-cultural-guide-2026');
     render(<PhotoSpots guides={guides} schedule={schedule} />);
-    expect(screen.getAllByRole('article')).toHaveLength(photoSpots.length);
+    const cards = new Map(
+      screen.getAllByRole('article').map((card) => [card.dataset.spot, card]),
+    );
+    expect(cards.size).toBe(photoSpots.length);
     for (const spot of photoSpots) {
-      const card = within(screen.getByRole('article', { name: spot.title }));
+      const element = cards.get(spot.id)!;
+      expect(element).toHaveAccessibleName(spot.title);
+      const card = within(element);
       expect(
         card.getByRole('img', { name: spot.alt }).getAttribute('src'),
       ).toMatch(/^\/europe-cultural-guide-2026\/images\/photo-spots\//);
