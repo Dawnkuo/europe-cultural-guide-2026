@@ -58,9 +58,10 @@ describe('OfflineStatus', () => {
     await waitFor(() => expect(workers.register).toHaveBeenCalled());
     fireEvent.click(screen.getByRole('button', { name: /离线导览：/ }));
     const dialog = screen.getByRole('dialog', { name: '离线导览' });
-    await act(() => workers.dispatchEvent(new MessageEvent('message', { data: { type: 'OFFLINE_PROGRESS', phase: 'downloading', completed: 16, total: 120, version: 'test-version' } })));
+    await act(() => workers.dispatchEvent(new MessageEvent('message', { data: { type: 'OFFLINE_PROGRESS', phase: 'downloading', completed: 16, total: 120, reused: 12, downloaded: 4, version: 'test-version' } })));
     expect(within(dialog).getByRole('progressbar')).toHaveAttribute('value', '16');
     expect(within(dialog).getByText('16 / 120 项资源')).toBeInTheDocument();
+    expect(within(dialog).getByText('已复用 12 项 · 已下载 4 项')).toBeInTheDocument();
     expect(within(dialog).getByRole('button', { name: '正在下载' })).toBeDisabled();
     await act(() => workers.dispatchEvent(new MessageEvent('message', { data: { type: 'OFFLINE_PROGRESS', phase: 'failed', completed: 16, total: 120 } })));
     fireEvent.click(within(dialog).getByRole('button', { name: '继续下载' }));

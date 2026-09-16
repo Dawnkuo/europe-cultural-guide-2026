@@ -5,7 +5,8 @@ const READY = scoped('/offline-ready');
 const CHECKPOINT = scoped('/offline-progress');
 const REVISION = CACHE.match(/-([a-f0-9]{20})$/)?.[1];
 const VERIFIED = 'X-Offline-Sha256';
-let progress = { completed: 0, total: 0, phase: 'checking' };
+const TRANSFER = 'X-Offline-Transfer';
+let progress = { completed: 0, total: 0, reused: 0, downloaded: 0, phase: 'checking' };
 let downloadTask;
 
 async function publishProgress() {
@@ -57,32 +58,80 @@ async function checkpoint(cache) {
   await publishProgress();
 }
 
+async function previousPackages() {
+  const sources = [];
+  for (const name of (await caches.keys()).reverse()) {
+    if (name === CACHE || !/^europe-cultural-guide-v\d+(?:-[a-f0-9]{20})?$/.test(name)) continue;
+    const cache = await caches.open(name);
+    const response = await cache.match(scoped('/guide-precache.json'));
+    if (response?.status !== 200) continue;
+    const manifest = await response.json().catch(() => null);
+    const revision = name.match(/-([a-f0-9]{20})$/)?.[1];
+    if (manifest?.version !== 2 || !Array.isArray(manifest.assets) || !Array.isArray(manifest.routes) || (revision && manifest.revision !== revision)) continue;
+    sources.push({ cache, integrity: manifest.integrity });
+  }
+  return sources;
+}
+
+async function verifiedResponse(response, expected, transfer) {
+  if (response?.status !== 200) return null;
+  const bytes = await response.arrayBuffer();
+  const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), byte => byte.toString(16).padStart(2, '0')).join('');
+  if (digest !== expected) return null;
+  const headers = new Headers(response.headers);
+  // fetch() has decoded the body; copied transfer headers no longer apply.
+  headers.delete('content-encoding');
+  headers.delete('content-length');
+  headers.set(VERIFIED, digest);
+  headers.set(TRANSFER, transfer);
+  return new Response(bytes, { status: 200, headers });
+}
+
+async function reuseResource(cache, sources, url, expected) {
+  for (const source of sources) {
+    const recorded = source.integrity?.[url.slice(BASE_PATH.length)];
+    if (recorded && recorded !== expected) continue;
+    // Old releases without checksum headers are eligible only after hashing
+    // their actual bytes against the new manifest. Never trust a URL or header.
+    const response = await verifiedResponse(await source.cache.match(url), expected, 'reused').catch(() => null);
+    if (!response) continue;
+    await cache.put(url, response);
+    return true;
+  }
+  return false;
+}
+
 async function installOfflineRoutes() {
   const cache = await caches.open(CACHE);
   const { resources, integrity } = await manifestFor(cache);
   const missing = [];
+  let reused = 0;
   for (const url of resources) {
     const saved = await cache.match(url);
     if (saved?.status !== 200 || saved.headers.get(VERIFIED) !== integrity[url.slice(BASE_PATH.length)]) missing.push(url);
+    else if (saved.headers.get(TRANSFER) === 'reused') reused += 1;
   }
-  progress = { completed: resources.length - missing.length, total: resources.length, phase: 'downloading' };
+  const completed = resources.length - missing.length;
+  progress = { completed, total: resources.length, reused, downloaded: completed - reused, phase: 'downloading' };
   if (missing.length) await cache.delete(READY);
   await checkpoint(cache);
+  const sources = missing.length ? await previousPackages() : [];
   // Each verified response commits independently. A failed peer must not roll
   // back completed files; cache entries are also the resume journal after a kill.
   for (let start = 0; start < missing.length; start += 4) {
     const results = await Promise.allSettled(missing.slice(start, start + 4).map(async url => {
+      const expected = integrity[url.slice(BASE_PATH.length)];
+      if (await reuseResource(cache, sources, url, expected)) {
+        progress.reused += 1;
+        progress.completed += 1;
+        return;
+      }
       const response = await fetch(url, { cache: 'no-store' });
       if (response.status !== 200) throw new Error(`Offline resource ${response.status}: ${url}`);
-      const bytes = await response.arrayBuffer();
-      const digest = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), byte => byte.toString(16).padStart(2, '0')).join('');
-      if (digest !== integrity[url.slice(BASE_PATH.length)]) throw new Error(`Offline resource checksum mismatch: ${url}`);
-      const headers = new Headers(response.headers);
-      // fetch() has decoded the body; copied transfer headers no longer apply.
-      headers.delete('content-encoding');
-      headers.delete('content-length');
-      headers.set(VERIFIED, digest);
-      await cache.put(url, new Response(bytes, { status: 200, headers }));
+      const verified = await verifiedResponse(response, expected, 'downloaded');
+      if (!verified) throw new Error(`Offline resource checksum mismatch: ${url}`);
+      await cache.put(url, verified);
+      progress.downloaded += 1;
       progress.completed += 1;
     }));
     await checkpoint(cache);

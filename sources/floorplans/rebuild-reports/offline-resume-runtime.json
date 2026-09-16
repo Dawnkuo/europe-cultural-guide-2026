@@ -1,9 +1,9 @@
 {
   "scope": "Only the offline worker changed in the pinned map runtime. Geometry, styles, controls, source plans and dependency lock are byte-identical to the reviewed base. Prior visual/touch/performance evidence is retained, not claimed as freshly rerun. Every offline route and the resumable downloader were re-tested.",
-  "base": "5cd37c4",
-  "previousRuntimeDigest": "9409c00487ca78715d2b1d4eab49d7b976ef2fac9e267d917cbd2f3c0fdd855e",
-  "currentRuntimeDigest": "b08b76b186cbc80a2ef79a6f1ab0501aee9886124f27b495dd1953ab0324cca5",
-  "revision": "396b75f9c0fc852cf74a",
+  "base": "259f6ee",
+  "previousRuntimeDigest": "b08b76b186cbc80a2ef79a6f1ab0501aee9886124f27b495dd1953ab0324cca5",
+  "currentRuntimeDigest": "cff2f1771f3d74e4a8f2477490c5a11bacfcb0848f64a649863c0c87b7656258",
+  "revision": "6d6e3d703df77a570efb",
   "unchanged": {
     "app/components/ArchitecturalMap.tsx": "a1e92c036c0284999cad7a5725641c447f222c46ae943e7e6c71cd4a8cf6ef9d",
     "app/components/ArchitecturalScene.tsx": "4a92dd95992ad4e6932a5989f63a4248380b0e8ce31dff7026f1f6d9fbed3b7f",
@@ -21,41 +21,41 @@
   },
   "changed": {
     "public/sw.js": {
-      "before": "d34aa74eaa326ca9cfe761fc704bd093c654066883a23a004b713b0f9ff8367e",
-      "after": "d7eede928d3091345496052aa74a4f5a77f7d3bc68332eaae1e8e778e3e5f842"
+      "before": "d7eede928d3091345496052aa74a4f5a77f7d3bc68332eaae1e8e778e3e5f842",
+      "after": "a9f07ccd7a9fb778ceeb29e90520ee4609f93fbb1ba1f71ca233049a6681d29f"
     }
   },
   "resume": {
-    "revision": "396b75f9c0fc852cf74a",
+    "revision": "6d6e3d703df77a570efb",
     "steps": [
       {
         "name": "interrupted download retains successful files",
-        "completed": 751,
-        "total": 971,
+        "completed": 855,
+        "total": 1077,
         "cached": {
           "ready": false,
-          "files": 753
+          "files": 857
         }
       },
       {
         "name": "reload resumes without repeating verified files",
-        "completed": 754,
-        "total": 971
+        "completed": 858,
+        "total": 1077
       },
       {
         "name": "browser restart restores the persisted cache",
-        "completed": 757,
-        "total": 971
+        "completed": 861,
+        "total": 1077
       },
       {
         "name": "real network disconnect during active downloading preserves progress",
-        "completed": 773,
-        "total": 971
+        "completed": 881,
+        "total": 1077
       },
       {
         "name": "reconnection automatically completes missing files",
-        "completed": 971,
-        "total": 971,
+        "completed": 1077,
+        "total": 1077,
         "reusedRequestCounts": {
           "/europe-cultural-guide-2026/itinerary/": 1,
           "/europe-cultural-guide-2026/cities/": 1,
@@ -72,7 +72,7 @@
     "errors": [],
     "passed": true
   },
-  "offlineRoutes": 80,
+  "offlineRoutes": 81,
   "venues": [
     {
       "slug": "accademia-florence",

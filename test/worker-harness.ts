@@ -12,6 +12,7 @@ export function workerHarness(assetCount = 20) {
   const failed = new Set<string>();
   const invalid = new Set<string>();
   const quota = new Set<string>();
+  const bodies = new Map<string, string>();
   const assets = Array.from({ length: assetCount }, (_, i) => `/images/${i}.jpg`);
   const routes = ['/guides/uffizi/'];
   let core: string[] = [];
@@ -44,9 +45,9 @@ export function workerHarness(assetCount = 20) {
     if (failed.has(key(url)) || failed.has('*')) throw new Error('Asset fetch failed');
     if (key(url).endsWith('/guide-precache.json')) return Response.json({
       version: 2, revision, routes, assets,
-      integrity: Object.fromEntries([...core.map(path => path.slice(base.length)), ...routes, ...assets].map(path => [path, sha('asset')])),
+      integrity: Object.fromEntries([...core.map(path => path.slice(base.length)), ...routes, ...assets].map(path => [path, sha(bodies.get(base + path) ?? 'asset')])),
     });
-    return new Response(invalid.has(key(url)) ? 'wrong release or HTML error' : 'asset');
+    return new Response(invalid.has(key(url)) ? 'wrong release or HTML error' : bodies.get(key(url)) ?? 'asset');
   });
   const caches = {
     open: vi.fn(async (name: string) => cache(name)),
@@ -72,5 +73,5 @@ export function workerHarness(assetCount = 20) {
     }
     return { event, postMessage, self, stored: stores.get(name) ?? (cache(name), stores.get(name)!), cache: cache(name) };
   }
-  return { start, stores, caches, network, failed, invalid, quota, assets, base, setRevision: (value: string) => { revision = value; }, maxInFlight: () => maxInFlight };
+  return { start, stores, caches, network, failed, invalid, quota, bodies, assets, base, setRevision: (value: string) => { revision = value; }, maxInFlight: () => maxInFlight };
 }

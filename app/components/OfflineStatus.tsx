@@ -51,6 +51,8 @@ export function OfflineStatus() {
   const [progress, setProgress] = useState({
     completed: 0,
     total: 0,
+    reused: 0,
+    downloaded: 0,
     version: '',
     savedAt: '',
   });
@@ -85,6 +87,8 @@ export function OfflineStatus() {
         setProgress({
           completed: data.completed,
           total: data.total,
+          reused: data.reused ?? 0,
+          downloaded: data.downloaded ?? 0,
           version: data.version ?? '',
           savedAt: data.savedAt ?? '',
         });
@@ -237,6 +241,12 @@ export function OfflineStatus() {
                   {progress.completed.toLocaleString()} /{' '}
                   {progress.total.toLocaleString()} 项资源
                 </p>
+                {(progress.reused > 0 || progress.downloaded > 0) && (
+                  <p className="offline-count">
+                    已复用 {progress.reused.toLocaleString()} 项 · 已下载{' '}
+                    {progress.downloaded.toLocaleString()} 项
+                  </p>
+                )}
               </>
             )}
             <p>
